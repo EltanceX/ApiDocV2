@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/IContentReader/JsonReader.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_json_reader_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">JsonReader.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_json_reader_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Text.Json;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game_1_1_i_content_reader.html">Game.IContentReader</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_array_reader.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_array_reader.html">JsonArrayReader</a> : <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_i_content_reader.html">IContentReader</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_array_reader.html#ac2744e53c8d9371a5c59f00845bee6ad">    5</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_json_array_reader.html#ac2744e53c8d9371a5c59f00845bee6ad">Type</a> =&gt; <span class="stringliteral">&quot;System.Text.Json.Nodes.JsonArray&quot;</span>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_array_reader.html#a929dd4aecb0255e9714c6010f2119ecf">    6</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span>[] <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_json_array_reader.html#a929dd4aecb0255e9714c6010f2119ecf">DefaultSuffix</a> =&gt; [<span class="stringliteral">&quot;json&quot;</span>];</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_array_reader.html#ab96fb2614a1ccb1bfc9fe798052222b4">    8</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">object</span> <a class="code hl_function" href="class_game_1_1_i_content_reader_1_1_json_array_reader.html#ab96fb2614a1ccb1bfc9fe798052222b4">Get</a>(<a class="code hl_class" href="class_game_1_1_content_info.html">ContentInfo</a>[] contents) {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            JsonElement element = JsonDocument.Parse(<span class="keyword">new</span> StreamReader(contents[0].Duplicate()).ReadToEnd(), <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html">JsonDocumentReader</a>.<a class="code hl_variable" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#ae886c90bb0d554e0a3ec121517333c8b">DefaultJsonOptions</a>).RootElement;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            <span class="keywordflow">return</span> element.ValueKind == JsonValueKind.Array ? element : <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidDataException($<span class="stringliteral">&quot;{contents[0].Filename}is not Json array&quot;</span>);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        }</div>
+</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    }</div>
+</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_model_reader.html">   14</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_model_reader.html">JsonModelReader</a> : <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_i_content_reader.html">IContentReader</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_model_reader.html#a447aada1b4ed0434bdc7b2d585fb189f">   15</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_json_model_reader.html#a447aada1b4ed0434bdc7b2d585fb189f">Type</a> =&gt; <span class="stringliteral">&quot;Game.JsonModel&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_model_reader.html#abd740c82765f6d5ac4fb396b78a00cf7">   16</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span>[] <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_json_model_reader.html#abd740c82765f6d5ac4fb396b78a00cf7">DefaultSuffix</a> =&gt; [<span class="stringliteral">&quot;json&quot;</span>];</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_model_reader.html#a921b996f45c08fd1642ac556f8a4883f">   17</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">object</span> <a class="code hl_function" href="class_game_1_1_i_content_reader_1_1_json_model_reader.html#a921b996f45c08fd1642ac556f8a4883f">Get</a>(<a class="code hl_class" href="class_game_1_1_content_info.html">ContentInfo</a>[] contents) =&gt; <a class="code hl_namespace" href="namespace_game.html">Game</a>.<a class="code hl_class" href="class_game_1_1_json_model_reader.html">JsonModelReader</a>.<a class="code hl_function" href="class_game_1_1_json_model_reader.html#abb4a5c97d116404a9670071052b74480">Load</a>(contents[0].Duplicate());</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_object_reader.html">   20</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_object_reader.html">JsonObjectReader</a> : <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_i_content_reader.html">IContentReader</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_object_reader.html#a6bbc2c06ad51da3e525aa67c9366f449">   21</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_json_object_reader.html#a6bbc2c06ad51da3e525aa67c9366f449">Type</a> =&gt; <span class="stringliteral">&quot;System.Text.Json.Nodes.JsonObject&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_object_reader.html#a3e3dc5368fa3a08b01abd87727b1282d">   22</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span>[] <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_json_object_reader.html#a3e3dc5368fa3a08b01abd87727b1282d">DefaultSuffix</a> =&gt; [<span class="stringliteral">&quot;json&quot;</span>];</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_object_reader.html#a95122a901896abc2b6494cf38693cf35">   24</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">object</span> <a class="code hl_function" href="class_game_1_1_i_content_reader_1_1_json_object_reader.html#a95122a901896abc2b6494cf38693cf35">Get</a>(<a class="code hl_class" href="class_game_1_1_content_info.html">ContentInfo</a>[] contents) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            JsonElement element = JsonDocument.Parse(<span class="keyword">new</span> StreamReader(contents[0].Duplicate()).ReadToEnd(), <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html">JsonDocumentReader</a>.<a class="code hl_variable" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#ae886c90bb0d554e0a3ec121517333c8b">DefaultJsonOptions</a>).RootElement;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">return</span> element.ValueKind == JsonValueKind.Object ? element : <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidDataException($<span class="stringliteral">&quot;{contents[0].Filename}is not Json object&quot;</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html">   30</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html">JsonDocumentReader</a> : <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_i_content_reader.html">IContentReader</a> {</div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#ae886c90bb0d554e0a3ec121517333c8b">   31</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> readonly JsonDocumentOptions <a class="code hl_variable" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#ae886c90bb0d554e0a3ec121517333c8b">DefaultJsonOptions</a> = <span class="keyword">new</span> JsonDocumentOptions {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            AllowTrailingCommas = <span class="keyword">true</span>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            CommentHandling = JsonCommentHandling.Skip</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        };</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#aec29912ad4608229196c395411040ca3">   35</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#aec29912ad4608229196c395411040ca3">Type</a> =&gt; <span class="stringliteral">&quot;System.Text.Json.JsonDocument&quot;</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#ad1c20b6bf72b75402fb588f0a5622e1f">   36</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span>[] <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#ad1c20b6bf72b75402fb588f0a5622e1f">DefaultSuffix</a> =&gt; [<span class="stringliteral">&quot;json&quot;</span>];</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#acd6681715ca57e49c049da524a2ee3b8">   37</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">object</span> <a class="code hl_function" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#acd6681715ca57e49c049da524a2ee3b8">Get</a>(<a class="code hl_class" href="class_game_1_1_content_info.html">ContentInfo</a>[] contents) =&gt; JsonDocument.Parse(<span class="keyword">new</span> StreamReader(contents[0].Duplicate()).ReadToEnd(), <a class="code hl_variable" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#ae886c90bb0d554e0a3ec121517333c8b">DefaultJsonOptions</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="ttc" id="aclass_game_1_1_content_info_html"><div class="ttname"><a href="class_game_1_1_content_info.html">Game.ContentInfo</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00008">ContentManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_i_content_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_i_content_reader.html">Game.IContentReader.IContentReader</a></div><div class="ttdef"><b>定义</b> <a href="_i_content_reader_8cs_source.html#l00002">IContentReader.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_array_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_array_reader.html">Game.IContentReader.JsonArrayReader</a></div><div class="ttdef"><b>定义</b> <a href="#l00004">JsonReader.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_array_reader_html_a929dd4aecb0255e9714c6010f2119ecf"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_array_reader.html#a929dd4aecb0255e9714c6010f2119ecf">Game.IContentReader.JsonArrayReader.DefaultSuffix</a></div><div class="ttdeci">override string[] DefaultSuffix</div><div class="ttdef"><b>定义</b> <a href="#l00006">JsonReader.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_array_reader_html_ab96fb2614a1ccb1bfc9fe798052222b4"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_array_reader.html#ab96fb2614a1ccb1bfc9fe798052222b4">Game.IContentReader.JsonArrayReader.Get</a></div><div class="ttdeci">override object Get(ContentInfo[] contents)</div><div class="ttdef"><b>定义</b> <a href="#l00008">JsonReader.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_array_reader_html_ac2744e53c8d9371a5c59f00845bee6ad"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_array_reader.html#ac2744e53c8d9371a5c59f00845bee6ad">Game.IContentReader.JsonArrayReader.Type</a></div><div class="ttdeci">override string Type</div><div class="ttdef"><b>定义</b> <a href="#l00005">JsonReader.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_document_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_document_reader.html">Game.IContentReader.JsonDocumentReader</a></div><div class="ttdef"><b>定义</b> <a href="#l00030">JsonReader.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_document_reader_html_acd6681715ca57e49c049da524a2ee3b8"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#acd6681715ca57e49c049da524a2ee3b8">Game.IContentReader.JsonDocumentReader.Get</a></div><div class="ttdeci">override object Get(ContentInfo[] contents)</div><div class="ttdef"><b>定义</b> <a href="#l00037">JsonReader.cs:37</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_document_reader_html_ad1c20b6bf72b75402fb588f0a5622e1f"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#ad1c20b6bf72b75402fb588f0a5622e1f">Game.IContentReader.JsonDocumentReader.DefaultSuffix</a></div><div class="ttdeci">override string[] DefaultSuffix</div><div class="ttdef"><b>定义</b> <a href="#l00036">JsonReader.cs:36</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_document_reader_html_ae886c90bb0d554e0a3ec121517333c8b"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#ae886c90bb0d554e0a3ec121517333c8b">Game.IContentReader.JsonDocumentReader.DefaultJsonOptions</a></div><div class="ttdeci">static readonly JsonDocumentOptions DefaultJsonOptions</div><div class="ttdef"><b>定义</b> <a href="#l00031">JsonReader.cs:31</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_document_reader_html_aec29912ad4608229196c395411040ca3"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_document_reader.html#aec29912ad4608229196c395411040ca3">Game.IContentReader.JsonDocumentReader.Type</a></div><div class="ttdeci">override string Type</div><div class="ttdef"><b>定义</b> <a href="#l00035">JsonReader.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_model_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_model_reader.html">Game.IContentReader.JsonModelReader</a></div><div class="ttdef"><b>定义</b> <a href="#l00014">JsonReader.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_model_reader_html_a447aada1b4ed0434bdc7b2d585fb189f"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_model_reader.html#a447aada1b4ed0434bdc7b2d585fb189f">Game.IContentReader.JsonModelReader.Type</a></div><div class="ttdeci">override string Type</div><div class="ttdef"><b>定义</b> <a href="#l00015">JsonReader.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_model_reader_html_a921b996f45c08fd1642ac556f8a4883f"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_model_reader.html#a921b996f45c08fd1642ac556f8a4883f">Game.IContentReader.JsonModelReader.Get</a></div><div class="ttdeci">override object Get(ContentInfo[] contents)</div><div class="ttdef"><b>定义</b> <a href="#l00017">JsonReader.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_model_reader_html_abd740c82765f6d5ac4fb396b78a00cf7"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_model_reader.html#abd740c82765f6d5ac4fb396b78a00cf7">Game.IContentReader.JsonModelReader.DefaultSuffix</a></div><div class="ttdeci">override string[] DefaultSuffix</div><div class="ttdef"><b>定义</b> <a href="#l00016">JsonReader.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_object_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_object_reader.html">Game.IContentReader.JsonObjectReader</a></div><div class="ttdef"><b>定义</b> <a href="#l00020">JsonReader.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_object_reader_html_a3e3dc5368fa3a08b01abd87727b1282d"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_object_reader.html#a3e3dc5368fa3a08b01abd87727b1282d">Game.IContentReader.JsonObjectReader.DefaultSuffix</a></div><div class="ttdeci">override string[] DefaultSuffix</div><div class="ttdef"><b>定义</b> <a href="#l00022">JsonReader.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_object_reader_html_a6bbc2c06ad51da3e525aa67c9366f449"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_object_reader.html#a6bbc2c06ad51da3e525aa67c9366f449">Game.IContentReader.JsonObjectReader.Type</a></div><div class="ttdeci">override string Type</div><div class="ttdef"><b>定义</b> <a href="#l00021">JsonReader.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_object_reader_html_a95122a901896abc2b6494cf38693cf35"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_object_reader.html#a95122a901896abc2b6494cf38693cf35">Game.IContentReader.JsonObjectReader.Get</a></div><div class="ttdeci">override object Get(ContentInfo[] contents)</div><div class="ttdef"><b>定义</b> <a href="#l00024">JsonReader.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_json_model_reader_html"><div class="ttname"><a href="class_game_1_1_json_model_reader.html">Game.JsonModelReader</a></div><div class="ttdef"><b>定义</b> <a href="_json_model_reader_8cs_source.html#l00008">JsonModelReader.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_json_model_reader_html_abb4a5c97d116404a9670071052b74480"><div class="ttname"><a href="class_game_1_1_json_model_reader.html#abb4a5c97d116404a9670071052b74480">Game.JsonModelReader.Load</a></div><div class="ttdeci">static JsonModel Load(Stream stream)</div><div class="ttdef"><b>定义</b> <a href="_json_model_reader_8cs_source.html#l00098">JsonModelReader.cs:98</a></div></div>
+<div class="ttc" id="anamespace_game_1_1_i_content_reader_html"><div class="ttname"><a href="namespace_game_1_1_i_content_reader.html">Game.IContentReader</a></div><div class="ttdef"><b>定义</b> <a href="_assembly_reader_8cs_source.html#l00003">AssemblyReader.cs:3</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_3d07399411a84b9de93867618487ea8a.html">IContentReader</a></li><li class="navelem"><a href="_json_reader_8cs.html">JsonReader.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

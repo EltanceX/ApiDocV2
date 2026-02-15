@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Component/ComponentDamage.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_component_damage_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ComponentDamage.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_damage_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_component_damage.html">ComponentDamage</a> : <a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a09c48687f975c608d0615213ccb1915d">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> <a class="code hl_variable" href="class_game_1_1_component_damage.html#a09c48687f975c608d0615213ccb1915d">m_subsystemTerrain</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a67c9e2045a8e368b2e8b130c99f30f87">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a> <a class="code hl_variable" href="class_game_1_1_component_damage.html#a67c9e2045a8e368b2e8b130c99f30f87">m_subsystemAudio</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a1534f76687c997341e4faab73e1f9863">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_particles.html">SubsystemParticles</a> <a class="code hl_variable" href="class_game_1_1_component_damage.html#a1534f76687c997341e4faab73e1f9863">m_subsystemParticles</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a46a2411a0cf79f11949c89b5986fd64f">   13</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> <a class="code hl_variable" href="class_game_1_1_component_damage.html#a46a2411a0cf79f11949c89b5986fd64f">m_componentBody</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#abe1dd6ae31549373e7db5330507204c1">   15</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_on_fire.html">ComponentOnFire</a> <a class="code hl_variable" href="class_game_1_1_component_damage.html#abe1dd6ae31549373e7db5330507204c1">m_componentOnFire</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#ac95c4819c41bb27aa4994827d096ca94">   17</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_damage.html#ac95c4819c41bb27aa4994827d096ca94">m_lastHitpoints</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a821b59af42dc498714d576f9b03bfcb5">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_damage.html#a821b59af42dc498714d576f9b03bfcb5">m_fallResilience</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#aaba4d58a533abc4db9b0cf56229133d4">   21</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_damage.html#aaba4d58a533abc4db9b0cf56229133d4">m_fireResilience</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a9700b2dadca963121c621d08e3b7222c">   23</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_component_damage.html#a9700b2dadca963121c621d08e3b7222c">m_debrisTextureSlot</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a6709d9c834ea9bc686ae81a59ce56ff5">   25</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_damage.html#a6709d9c834ea9bc686ae81a59ce56ff5">m_debrisStrength</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a3ac65607dd2a17594407746abe930fef">   27</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_damage.html#a3ac65607dd2a17594407746abe930fef">m_debrisScale</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">   29</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a9730aca72ef27bceabd6cb0f59ff2cac">   31</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_damage.html#a9730aca72ef27bceabd6cb0f59ff2cac">HitpointsChange</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#ad4ad825f024aaa409647926bea41abfb">   33</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_damage.html#ad4ad825f024aaa409647926bea41abfb">AttackResilience</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a597ec04d958d4752b4c15249a800336e">   35</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_component_damage.html#a597ec04d958d4752b4c15249a800336e">DamageSoundName</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#ad947cb3193562706f978bbcd625a4a8f">   37</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_component_damage.html#ad947cb3193562706f978bbcd625a4a8f">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_component_damage.html#ad947cb3193562706f978bbcd625a4a8f">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_component_damage.html#ad947cb3193562706f978bbcd625a4a8f">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#ac3f332405ed495a340789d70fbeae494">   39</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_damage.html#ac3f332405ed495a340789d70fbeae494">Damage</a>(<span class="keywordtype">float</span> amount) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span> (amount &gt; 0f</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                &amp;&amp; <a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a> &gt; 0f) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a> = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(<a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a> - amount, 0f);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a915c1c97e8613103d4bb76d643150435">   46</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_damage.html#a915c1c97e8613103d4bb76d643150435">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> position = <a class="code hl_variable" href="class_game_1_1_component_damage.html#a46a2411a0cf79f11949c89b5986fd64f">m_componentBody</a>.Position;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a> &lt;= 0f) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <a class="code hl_variable" href="class_game_1_1_component_damage.html#a1534f76687c997341e4faab73e1f9863">m_subsystemParticles</a>.AddParticleSystem(</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_block_debris_particle_system.html">BlockDebrisParticleSystem</a>(</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        <a class="code hl_variable" href="class_game_1_1_component_damage.html#a09c48687f975c608d0615213ccb1915d">m_subsystemTerrain</a>,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        position + <a class="code hl_variable" href="class_game_1_1_component_damage.html#a46a2411a0cf79f11949c89b5986fd64f">m_componentBody</a>.StanceBoxSize.Y / 2f * <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae470b2f3e4a3f639fa05966fc3e36665">UnitY</a>,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                        <a class="code hl_variable" href="class_game_1_1_component_damage.html#a6709d9c834ea9bc686ae81a59ce56ff5">m_debrisStrength</a>,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                        <a class="code hl_variable" href="class_game_1_1_component_damage.html#a3ac65607dd2a17594407746abe930fef">m_debrisScale</a>,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">White</a>,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                        <a class="code hl_variable" href="class_game_1_1_component_damage.html#a9700b2dadca963121c621d08e3b7222c">m_debrisTextureSlot</a></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    )</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                );</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <a class="code hl_variable" href="class_game_1_1_component_damage.html#a67c9e2045a8e368b2e8b130c99f30f87">m_subsystemAudio</a>.PlayRandomSound(<a class="code hl_property" href="class_game_1_1_component_damage.html#a597ec04d958d4752b4c15249a800336e">DamageSoundName</a>, 1f, 0f, <a class="code hl_variable" href="class_game_1_1_component_damage.html#a46a2411a0cf79f11949c89b5986fd64f">m_componentBody</a>.Position, 4f, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.RemoveEntity(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_damage.html#a46a2411a0cf79f11949c89b5986fd64f">m_componentBody</a>.CrushedTime &gt; 0f) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <a class="code hl_function" href="class_game_1_1_component_damage.html#ac3f332405ed495a340789d70fbeae494">Damage</a>(1f * dt);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordtype">float</span> num = MathF.Abs(<a class="code hl_variable" href="class_game_1_1_component_damage.html#a46a2411a0cf79f11949c89b5986fd64f">m_componentBody</a>.CollisionVelocityChange.Y);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">if</span> (num &gt; <a class="code hl_variable" href="class_game_1_1_component_damage.html#a821b59af42dc498714d576f9b03bfcb5">m_fallResilience</a>) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordtype">float</span> amount = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ae53d67075557cfc4ba49c8b435cf4e9a">Sqr</a>(<a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(num - <a class="code hl_variable" href="class_game_1_1_component_damage.html#a821b59af42dc498714d576f9b03bfcb5">m_fallResilience</a>, 0f)) / 15f;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <a class="code hl_function" href="class_game_1_1_component_damage.html#ac3f332405ed495a340789d70fbeae494">Damage</a>(amount);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">if</span> (position.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a> &lt; -10f</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                || position.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a> &gt; 276f) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <a class="code hl_function" href="class_game_1_1_component_damage.html#ac3f332405ed495a340789d70fbeae494">Damage</a>(<a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_damage.html#abe1dd6ae31549373e7db5330507204c1">m_componentOnFire</a> != <span class="keyword">null</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                &amp;&amp; (<a class="code hl_variable" href="class_game_1_1_component_damage.html#abe1dd6ae31549373e7db5330507204c1">m_componentOnFire</a>.IsOnFire || <a class="code hl_variable" href="class_game_1_1_component_damage.html#abe1dd6ae31549373e7db5330507204c1">m_componentOnFire</a>.TouchesFire)) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <a class="code hl_function" href="class_game_1_1_component_damage.html#ac3f332405ed495a340789d70fbeae494">Damage</a>(dt / <a class="code hl_variable" href="class_game_1_1_component_damage.html#aaba4d58a533abc4db9b0cf56229133d4">m_fireResilience</a>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_property" href="class_game_1_1_component_damage.html#a9730aca72ef27bceabd6cb0f59ff2cac">HitpointsChange</a> = <a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a> - <a class="code hl_variable" href="class_game_1_1_component_damage.html#ac95c4819c41bb27aa4994827d096ca94">m_lastHitpoints</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#ac95c4819c41bb27aa4994827d096ca94">m_lastHitpoints</a> = <a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a7f53bf141a480d3dac239ae62177daf9">   82</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_damage.html#a7f53bf141a480d3dac239ae62177daf9">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#a09c48687f975c608d0615213ccb1915d">m_subsystemTerrain</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#a67c9e2045a8e368b2e8b130c99f30f87">m_subsystemAudio</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#a1534f76687c997341e4faab73e1f9863">m_subsystemParticles</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_particles.html">SubsystemParticles</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#a46a2411a0cf79f11949c89b5986fd64f">m_componentBody</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#abe1dd6ae31549373e7db5330507204c1">m_componentOnFire</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_on_fire.html">ComponentOnFire</a>&gt;();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;Hitpoints&quot;</span>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <a class="code hl_property" href="class_game_1_1_component_damage.html#ad4ad825f024aaa409647926bea41abfb">AttackResilience</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;AttackResilience&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#a821b59af42dc498714d576f9b03bfcb5">m_fallResilience</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;FallResilience&quot;</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#aaba4d58a533abc4db9b0cf56229133d4">m_fireResilience</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;FireResilience&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#a9700b2dadca963121c621d08e3b7222c">m_debrisTextureSlot</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;DebrisTextureSlot&quot;</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#a6709d9c834ea9bc686ae81a59ce56ff5">m_debrisStrength</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;DebrisStrength&quot;</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_variable" href="class_game_1_1_component_damage.html#a3ac65607dd2a17594407746abe930fef">m_debrisScale</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;DebrisScale&quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_property" href="class_game_1_1_component_damage.html#a597ec04d958d4752b4c15249a800336e">DamageSoundName</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;DestructionSoundName&quot;</span>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_game_1_1_component_damage.html#a7b807c76edd1a359b437e81b5d5080d0">   98</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_damage.html#a7b807c76edd1a359b437e81b5d5080d0">Save</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_entity_to_id_map.html">EntityToIdMap</a> entityToIdMap) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            valuesDictionary.SetValue(<span class="stringliteral">&quot;Hitpoints&quot;</span>, <a class="code hl_property" href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Hitpoints</a>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ae53d67075557cfc4ba49c8b435cf4e9a"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ae53d67075557cfc4ba49c8b435cf4e9a">Engine.MathUtils.Sqr</a></div><div class="ttdeci">static int Sqr(int x)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00043">MathUtils.cs:43</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_debris_particle_system_html"><div class="ttname"><a href="class_game_1_1_block_debris_particle_system.html">Game.BlockDebrisParticleSystem</a></div><div class="ttdef"><b>定义</b> <a href="_block_debris_particle_system_8cs_source.html#l00005">BlockDebrisParticleSystem.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_body_html"><div class="ttname"><a href="class_game_1_1_component_body.html">Game.ComponentBody</a></div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00007">ComponentBody.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html"><div class="ttname"><a href="class_game_1_1_component_damage.html">Game.ComponentDamage</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">ComponentDamage.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a09c48687f975c608d0615213ccb1915d"><div class="ttname"><a href="class_game_1_1_component_damage.html#a09c48687f975c608d0615213ccb1915d">Game.ComponentDamage.m_subsystemTerrain</a></div><div class="ttdeci">SubsystemTerrain m_subsystemTerrain</div><div class="ttdef"><b>定义</b> <a href="#l00007">ComponentDamage.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a1534f76687c997341e4faab73e1f9863"><div class="ttname"><a href="class_game_1_1_component_damage.html#a1534f76687c997341e4faab73e1f9863">Game.ComponentDamage.m_subsystemParticles</a></div><div class="ttdeci">SubsystemParticles m_subsystemParticles</div><div class="ttdef"><b>定义</b> <a href="#l00011">ComponentDamage.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a29b82338cae218cdb489c1ece7f12373"><div class="ttname"><a href="class_game_1_1_component_damage.html#a29b82338cae218cdb489c1ece7f12373">Game.ComponentDamage.Hitpoints</a></div><div class="ttdeci">float Hitpoints</div><div class="ttdef"><b>定义</b> <a href="#l00029">ComponentDamage.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a3ac65607dd2a17594407746abe930fef"><div class="ttname"><a href="class_game_1_1_component_damage.html#a3ac65607dd2a17594407746abe930fef">Game.ComponentDamage.m_debrisScale</a></div><div class="ttdeci">float m_debrisScale</div><div class="ttdef"><b>定义</b> <a href="#l00027">ComponentDamage.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a46a2411a0cf79f11949c89b5986fd64f"><div class="ttname"><a href="class_game_1_1_component_damage.html#a46a2411a0cf79f11949c89b5986fd64f">Game.ComponentDamage.m_componentBody</a></div><div class="ttdeci">ComponentBody m_componentBody</div><div class="ttdef"><b>定义</b> <a href="#l00013">ComponentDamage.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a597ec04d958d4752b4c15249a800336e"><div class="ttname"><a href="class_game_1_1_component_damage.html#a597ec04d958d4752b4c15249a800336e">Game.ComponentDamage.DamageSoundName</a></div><div class="ttdeci">string DamageSoundName</div><div class="ttdef"><b>定义</b> <a href="#l00035">ComponentDamage.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a6709d9c834ea9bc686ae81a59ce56ff5"><div class="ttname"><a href="class_game_1_1_component_damage.html#a6709d9c834ea9bc686ae81a59ce56ff5">Game.ComponentDamage.m_debrisStrength</a></div><div class="ttdeci">float m_debrisStrength</div><div class="ttdef"><b>定义</b> <a href="#l00025">ComponentDamage.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a67c9e2045a8e368b2e8b130c99f30f87"><div class="ttname"><a href="class_game_1_1_component_damage.html#a67c9e2045a8e368b2e8b130c99f30f87">Game.ComponentDamage.m_subsystemAudio</a></div><div class="ttdeci">SubsystemAudio m_subsystemAudio</div><div class="ttdef"><b>定义</b> <a href="#l00009">ComponentDamage.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a7b807c76edd1a359b437e81b5d5080d0"><div class="ttname"><a href="class_game_1_1_component_damage.html#a7b807c76edd1a359b437e81b5d5080d0">Game.ComponentDamage.Save</a></div><div class="ttdeci">override void Save(ValuesDictionary valuesDictionary, EntityToIdMap entityToIdMap)</div><div class="ttdef"><b>定义</b> <a href="#l00098">ComponentDamage.cs:98</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a7f53bf141a480d3dac239ae62177daf9"><div class="ttname"><a href="class_game_1_1_component_damage.html#a7f53bf141a480d3dac239ae62177daf9">Game.ComponentDamage.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary, IdToEntityMap idToEntityMap)</div><div class="ttdef"><b>定义</b> <a href="#l00082">ComponentDamage.cs:82</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a821b59af42dc498714d576f9b03bfcb5"><div class="ttname"><a href="class_game_1_1_component_damage.html#a821b59af42dc498714d576f9b03bfcb5">Game.ComponentDamage.m_fallResilience</a></div><div class="ttdeci">float m_fallResilience</div><div class="ttdef"><b>定义</b> <a href="#l00019">ComponentDamage.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a915c1c97e8613103d4bb76d643150435"><div class="ttname"><a href="class_game_1_1_component_damage.html#a915c1c97e8613103d4bb76d643150435">Game.ComponentDamage.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00046">ComponentDamage.cs:46</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a9700b2dadca963121c621d08e3b7222c"><div class="ttname"><a href="class_game_1_1_component_damage.html#a9700b2dadca963121c621d08e3b7222c">Game.ComponentDamage.m_debrisTextureSlot</a></div><div class="ttdeci">int m_debrisTextureSlot</div><div class="ttdef"><b>定义</b> <a href="#l00023">ComponentDamage.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_a9730aca72ef27bceabd6cb0f59ff2cac"><div class="ttname"><a href="class_game_1_1_component_damage.html#a9730aca72ef27bceabd6cb0f59ff2cac">Game.ComponentDamage.HitpointsChange</a></div><div class="ttdeci">float HitpointsChange</div><div class="ttdef"><b>定义</b> <a href="#l00031">ComponentDamage.cs:31</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_aaba4d58a533abc4db9b0cf56229133d4"><div class="ttname"><a href="class_game_1_1_component_damage.html#aaba4d58a533abc4db9b0cf56229133d4">Game.ComponentDamage.m_fireResilience</a></div><div class="ttdeci">float m_fireResilience</div><div class="ttdef"><b>定义</b> <a href="#l00021">ComponentDamage.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_abe1dd6ae31549373e7db5330507204c1"><div class="ttname"><a href="class_game_1_1_component_damage.html#abe1dd6ae31549373e7db5330507204c1">Game.ComponentDamage.m_componentOnFire</a></div><div class="ttdeci">ComponentOnFire m_componentOnFire</div><div class="ttdef"><b>定义</b> <a href="#l00015">ComponentDamage.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_ac3f332405ed495a340789d70fbeae494"><div class="ttname"><a href="class_game_1_1_component_damage.html#ac3f332405ed495a340789d70fbeae494">Game.ComponentDamage.Damage</a></div><div class="ttdeci">virtual void Damage(float amount)</div><div class="ttdef"><b>定义</b> <a href="#l00039">ComponentDamage.cs:39</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_ac95c4819c41bb27aa4994827d096ca94"><div class="ttname"><a href="class_game_1_1_component_damage.html#ac95c4819c41bb27aa4994827d096ca94">Game.ComponentDamage.m_lastHitpoints</a></div><div class="ttdeci">float m_lastHitpoints</div><div class="ttdef"><b>定义</b> <a href="#l00017">ComponentDamage.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_ad4ad825f024aaa409647926bea41abfb"><div class="ttname"><a href="class_game_1_1_component_damage.html#ad4ad825f024aaa409647926bea41abfb">Game.ComponentDamage.AttackResilience</a></div><div class="ttdeci">float AttackResilience</div><div class="ttdef"><b>定义</b> <a href="#l00033">ComponentDamage.cs:33</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_damage_html_ad947cb3193562706f978bbcd625a4a8f"><div class="ttname"><a href="class_game_1_1_component_damage.html#ad947cb3193562706f978bbcd625a4a8f">Game.ComponentDamage.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00037">ComponentDamage.cs:37</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_on_fire_html"><div class="ttname"><a href="class_game_1_1_component_on_fire.html">Game.ComponentOnFire</a></div><div class="ttdef"><b>定义</b> <a href="_component_on_fire_8cs_source.html#l00006">ComponentOnFire.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_audio_html"><div class="ttname"><a href="class_game_1_1_subsystem_audio.html">Game.SubsystemAudio</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00008">SubsystemAudio.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_particles_html"><div class="ttname"><a href="class_game_1_1_subsystem_particles.html">Game.SubsystemParticles</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_particles_8cs_source.html#l00007">SubsystemParticles.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html">Game.SubsystemTerrain</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00006">SubsystemTerrain.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html"><div class="ttname"><a href="class_game_entity_system_1_1_component.html">GameEntitySystem.Component</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00007">Component.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a4b812f6825600e5419612a580d3094ff"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">GameEntitySystem.Component.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00012">Component.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a771baadae7a12358301d000d2e127421"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">GameEntitySystem.Component.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00016">Component.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_to_id_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity_to_id_map.html">GameEntitySystem.EntityToIdMap</a></div><div class="ttdef"><b>定义</b> <a href="_entity_to_id_map_8cs_source.html#l00005">EntityToIdMap.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html">GameEntitySystem.IdToEntityMap</a></div><div class="ttdef"><b>定义</b> <a href="_id_to_entity_map_8cs_source.html#l00005">IdToEntityMap.cs:5</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_a4e57f347f3c15133444b3f62f18a8221"><div class="ttname"><a href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">Engine.Color.White</a></div><div class="ttdeci">static Color White</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00015">Color.cs:15</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a314e02a8d3f359d653a67338b4e8f68f"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Engine.Vector3.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00005">Vector3.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ae470b2f3e4a3f639fa05966fc3e36665"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ae470b2f3e4a3f639fa05966fc3e36665">Engine.Vector3.UnitY</a></div><div class="ttdeci">static readonly Vector3 UnitY</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00015">Vector3.cs:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_0ae50620953341a2d59f4b8faa145d4c.html">Component</a></li><li class="navelem"><a href="_component_damage_8cs.html">ComponentDamage.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

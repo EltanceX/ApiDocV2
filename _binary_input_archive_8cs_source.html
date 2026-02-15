@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Serialization/BinaryInputArchive.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_binary_input_archive_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BinaryInputArchive.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_binary_input_archive_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_serialization.html">Engine.Serialization</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_engine_1_1_serialization_1_1_binary_input_archive.html">BinaryInputArchive</a> : <a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a2a44efe87eb4cf25b0f2b0a36c4b0fe5">InputArchive</a>, IDisposable {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a0933aa12e73fc5e1755c8ce8d23fb43c">    3</a></span>        Dictionary&lt;int, string&gt; <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a0933aa12e73fc5e1755c8ce8d23fb43c">m_stringIds</a> = [];</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">    5</a></span>        <a class="code hl_class" href="class_engine_1_1_serialization_1_1_engine_binary_reader.html">EngineBinaryReader</a> <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aadf2c9cf2f0d581efc221c3ae7442e12">    7</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aadf2c9cf2f0d581efc221c3ae7442e12">Use7BitInts</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aa8c3eade70b1ba569cbabb3d8ddb9d5e">    9</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aa8c3eade70b1ba569cbabb3d8ddb9d5e">Stream</a> <a class="code hl_property" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aa8c3eade70b1ba569cbabb3d8ddb9d5e">Stream</a> =&gt; <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.BaseStream;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_engine_1_1_serialization_1_1_binary_input_archive.html">BinaryInputArchive</a>(<a class="code hl_property" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aa8c3eade70b1ba569cbabb3d8ddb9d5e">Stream</a> stream, <span class="keywordtype">int</span> version = 0, <span class="keywordtype">object</span> context = <span class="keyword">null</span>) : base(version, context) =&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a> = new <a class="code hl_class" href="class_engine_1_1_serialization_1_1_engine_binary_reader.html">EngineBinaryReader</a>(stream);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a62c4d5907be44b8b6b8dfa464abea22a">   14</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a62c4d5907be44b8b6b8dfa464abea22a">Reset</a>(<a class="code hl_property" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aa8c3eade70b1ba569cbabb3d8ddb9d5e">Stream</a> stream, <span class="keywordtype">int</span> version = 0, <span class="keywordtype">object</span> context = <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_engine_1_1_serialization_1_1_engine_binary_reader.html">EngineBinaryReader</a>(stream);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a0933aa12e73fc5e1755c8ce8d23fb43c">m_stringIds</a>.Clear();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a62c4d5907be44b8b6b8dfa464abea22a">Reset</a>(version, context);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#acc3c717a2223937008b272c2baa0fc1a">   20</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#acc3c717a2223937008b272c2baa0fc1a">Dispose</a>() {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_class" href="class_engine_1_1_utilities.html">Utilities</a>.Dispose(ref <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a6b03e821466f1d3b4953466d50e76d98">   24</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a6b03e821466f1d3b4953466d50e76d98">Serialize</a>(<span class="keywordtype">string</span> name, ref sbyte value) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadSByte();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a45b299a6bede93d137a3f0405add6f0d">   28</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a45b299a6bede93d137a3f0405add6f0d">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">byte</span> value) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadByte();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a505b967609f35549022db5917325be05">   32</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a505b967609f35549022db5917325be05">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">short</span> value) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadInt16();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a204647333ac72c498cbab67f82ed98c4">   36</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a204647333ac72c498cbab67f82ed98c4">Serialize</a>(<span class="keywordtype">string</span> name, ref ushort value) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadUInt16();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a2c5e33e4c1c0b67e0e6f80900ab35ab6">   40</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a2c5e33e4c1c0b67e0e6f80900ab35ab6">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aadf2c9cf2f0d581efc221c3ae7442e12">Use7BitInts</a> ? <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.Read7BitEncodedInt() : <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadInt32();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5bf3b951de4530df2830a34d0890dbbc">   44</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5bf3b951de4530df2830a34d0890dbbc">Serialize</a>(<span class="keywordtype">string</span> name, ref uint value) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadUInt32();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a39e1d471ab02a5ff5705047c025a7297">   48</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a39e1d471ab02a5ff5705047c025a7297">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">long</span> value) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadInt64();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#ae5fb85f1246e74cea3a3f177faa413b7">   52</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#ae5fb85f1246e74cea3a3f177faa413b7">Serialize</a>(<span class="keywordtype">string</span> name, ref ulong value) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadUInt64();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aff403120db8caa647291e661c9a0f333">   56</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aff403120db8caa647291e661c9a0f333">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">float</span> value) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadSingle();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a98885e1b38fea4504008e5a7e9ee3794">   60</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a98885e1b38fea4504008e5a7e9ee3794">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">double</span> value) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadDouble();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aa3117a2a5c906ee24241380a1841883b">   64</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aa3117a2a5c906ee24241380a1841883b">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">bool</span> value) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadBoolean();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1f5083a7f8e4413d976e239760774d39">   68</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1f5083a7f8e4413d976e239760774d39">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">char</span> value) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadChar();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#ad1f61657b00a4e4fd6c59b94dbea1045">   72</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#ad1f61657b00a4e4fd6c59b94dbea1045">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">string</span> value) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordtype">int</span> num = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.Read7BitEncodedInt();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">if</span> (num == 0) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                value = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a0933aa12e73fc5e1755c8ce8d23fb43c">m_stringIds</a>.TryGetValue(num, out <span class="keywordtype">string</span> value2)) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                value = <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.ReadString();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a0933aa12e73fc5e1755c8ce8d23fb43c">m_stringIds</a>.Add(num, value);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                value = value2;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#af7ce0c5fdbdd0f1c95b8fe190828d295">   86</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#af7ce0c5fdbdd0f1c95b8fe190828d295">Serialize</a>(<span class="keywordtype">string</span> name, ref <span class="keywordtype">byte</span>[] value) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            value = <span class="keyword">new</span> <span class="keywordtype">byte</span>[<a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.Read7BitEncodedInt()];</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.Read(value, 0, value.Length) != value.Length) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aba94d1cd1f7fa3ea227300354960f556">   93</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aba94d1cd1f7fa3ea227300354960f556">Serialize</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">int</span> length, ref <span class="keywordtype">byte</span>[] value) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            value = <span class="keyword">new</span> <span class="keywordtype">byte</span>[length];</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">m_reader</a>.Read(value, 0, value.Length) != length) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5877da533e859fc747c26e5bb8449110">  100</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5877da533e859fc747c26e5bb8449110">SerializeCollection&lt;T&gt;</a>(<span class="keywordtype">string</span> name, ICollection&lt;T&gt; collection) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <a class="code hl_class" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a> serializeData = <a class="code hl_function" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d">GetSerializeData</a>(typeof(T), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keyword">using </span>IEnumerator&lt;T&gt; enumerator = collection.Count &gt; 0 ? collection.GetEnumerator() : <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordtype">int</span> value = 0;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a6b03e821466f1d3b4953466d50e76d98">Serialize</a>(<span class="keyword">null</span>, ref value);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordtype">bool</span> flag = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; value; i++) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                <span class="keywordflow">if</span> (flag</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    &amp;&amp; enumerator != <span class="keyword">null</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    &amp;&amp; enumerator.MoveNext()) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    T value2 = enumerator.Current;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    <a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2">ReadObject</a>(<span class="keyword">null</span>, serializeData, ref value2, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                T value3 = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2">ReadObject</a>(<span class="keyword">null</span>, serializeData, ref value3, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                collection.Add(value3);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                flag = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
+</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1eacd8d91dc40f42c63fef5de2e85c19">  121</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1eacd8d91dc40f42c63fef5de2e85c19">SerializeDictionary&lt;K, V&gt;</a>(<span class="keywordtype">string</span> name, IDictionary&lt;K, V&gt; dictionary) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <a class="code hl_class" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a> serializeData = <a class="code hl_function" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d">GetSerializeData</a>(typeof(K), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <a class="code hl_class" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a> serializeData2 = <a class="code hl_function" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d">GetSerializeData</a>(typeof(V), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordtype">int</span> value = 0;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a6b03e821466f1d3b4953466d50e76d98">Serialize</a>(<span class="keyword">null</span>, ref value);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; value; i++) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                <span class="keywordtype">object</span> value2 = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                <span class="keywordtype">object</span> value3 = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                <a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2">ReadObject</a>(<span class="keyword">null</span>, serializeData, ref value2, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                <span class="keywordflow">if</span> (dictionary.TryGetValue((K)value2, out V value4)) {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                    value3 = value4;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                    <a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2">ReadObject</a>(<span class="keyword">null</span>, serializeData2, ref value3, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                    <a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2">ReadObject</a>(<span class="keyword">null</span>, serializeData2, ref value3, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                    dictionary.Add((K)value2, (V)value3);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        }</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="foldopen" id="foldopen00141" data-start="{" data-end="}">
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#abb2ac2a33fe505efcff866b152c02204">  141</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#abb2ac2a33fe505efcff866b152c02204">ReadObjectInfo</a>(out <span class="keywordtype">int</span>? objectId, out <span class="keywordtype">bool</span> isReference, out Type runtimeType) {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keywordtype">int</span> value = 0;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a6b03e821466f1d3b4953466d50e76d98">Serialize</a>(<span class="keyword">null</span>, ref value);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            isReference = (value &amp; 1) == 0;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <span class="keywordtype">bool</span> flag = (value &amp; 2) != 0;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keywordflow">if</span> ((value &amp; 4) != 0) {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                <span class="keywordtype">string</span> value2 = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <a class="code hl_function" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a6b03e821466f1d3b4953466d50e76d98">Serialize</a>(<span class="keyword">null</span>, ref value2);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                runtimeType = <a class="code hl_class" href="class_engine_1_1_serialization_1_1_type_cache.html">TypeCache</a>.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_type_cache.html#a513797ad03c6705956ccdbd15367b91d">FindType</a>(value2, <span class="keyword">false</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                runtimeType = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            objectId = flag ? <span class="keyword">new</span> <span class="keywordtype">int</span>?(value &gt;&gt; 4) : <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        }</div>
+</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    }</div>
+</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_archive_1_1_serialize_data_html"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">Engine.Serialization.Archive.SerializeData</a></div><div class="ttdef"><b>定义</b> <a href="_archive_8cs_source.html#l00024">Archive.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_archive_html_a07f3724f6dbb2d5ba48af669d2664d2d"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d">Engine.Serialization.Archive.GetSerializeData</a></div><div class="ttdeci">static SerializeData GetSerializeData(Type type, bool allowEmptySerializer)</div><div class="ttdef"><b>定义</b> <a href="_archive_8cs_source.html#l00206">Archive.cs:206</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html">Engine.Serialization.BinaryInputArchive</a></div><div class="ttdef"><b>定义</b> <a href="#l00002">BinaryInputArchive.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a0933aa12e73fc5e1755c8ce8d23fb43c"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a0933aa12e73fc5e1755c8ce8d23fb43c">Engine.Serialization.BinaryInputArchive.m_stringIds</a></div><div class="ttdeci">Dictionary&lt; int, string &gt; m_stringIds</div><div class="ttdef"><b>定义</b> <a href="#l00003">BinaryInputArchive.cs:3</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a1eacd8d91dc40f42c63fef5de2e85c19"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1eacd8d91dc40f42c63fef5de2e85c19">Engine.Serialization.BinaryInputArchive.SerializeDictionary&lt; K, V &gt;</a></div><div class="ttdeci">override void SerializeDictionary&lt; K, V &gt;(string name, IDictionary&lt; K, V &gt; dictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00121">BinaryInputArchive.cs:121</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a1f5083a7f8e4413d976e239760774d39"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1f5083a7f8e4413d976e239760774d39">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref char value)</div><div class="ttdef"><b>定义</b> <a href="#l00068">BinaryInputArchive.cs:68</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a204647333ac72c498cbab67f82ed98c4"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a204647333ac72c498cbab67f82ed98c4">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref ushort value)</div><div class="ttdef"><b>定义</b> <a href="#l00036">BinaryInputArchive.cs:36</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a2c5e33e4c1c0b67e0e6f80900ab35ab6"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a2c5e33e4c1c0b67e0e6f80900ab35ab6">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref int value)</div><div class="ttdef"><b>定义</b> <a href="#l00040">BinaryInputArchive.cs:40</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a39e1d471ab02a5ff5705047c025a7297"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a39e1d471ab02a5ff5705047c025a7297">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref long value)</div><div class="ttdef"><b>定义</b> <a href="#l00048">BinaryInputArchive.cs:48</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a45b299a6bede93d137a3f0405add6f0d"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a45b299a6bede93d137a3f0405add6f0d">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref byte value)</div><div class="ttdef"><b>定义</b> <a href="#l00028">BinaryInputArchive.cs:28</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a505b967609f35549022db5917325be05"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a505b967609f35549022db5917325be05">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref short value)</div><div class="ttdef"><b>定义</b> <a href="#l00032">BinaryInputArchive.cs:32</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a5877da533e859fc747c26e5bb8449110"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5877da533e859fc747c26e5bb8449110">Engine.Serialization.BinaryInputArchive.SerializeCollection&lt; T &gt;</a></div><div class="ttdeci">override void SerializeCollection&lt; T &gt;(string name, ICollection&lt; T &gt; collection)</div><div class="ttdef"><b>定义</b> <a href="#l00100">BinaryInputArchive.cs:100</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a5bf3b951de4530df2830a34d0890dbbc"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5bf3b951de4530df2830a34d0890dbbc">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref uint value)</div><div class="ttdef"><b>定义</b> <a href="#l00044">BinaryInputArchive.cs:44</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a62c4d5907be44b8b6b8dfa464abea22a"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a62c4d5907be44b8b6b8dfa464abea22a">Engine.Serialization.BinaryInputArchive.Reset</a></div><div class="ttdeci">BinaryInputArchive(Stream stream, int version=0, object context=null) void Reset(Stream stream, int version=0, object context=null)</div><div class="ttdef"><b>定义</b> <a href="#l00014">BinaryInputArchive.cs:14</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a6b03e821466f1d3b4953466d50e76d98"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a6b03e821466f1d3b4953466d50e76d98">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref sbyte value)</div><div class="ttdef"><b>定义</b> <a href="#l00024">BinaryInputArchive.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a76eb2a85b24a2df0fc66bac2d83e4e82"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a76eb2a85b24a2df0fc66bac2d83e4e82">Engine.Serialization.BinaryInputArchive.m_reader</a></div><div class="ttdeci">EngineBinaryReader m_reader</div><div class="ttdef"><b>定义</b> <a href="#l00005">BinaryInputArchive.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_a98885e1b38fea4504008e5a7e9ee3794"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a98885e1b38fea4504008e5a7e9ee3794">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref double value)</div><div class="ttdef"><b>定义</b> <a href="#l00060">BinaryInputArchive.cs:60</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_aa3117a2a5c906ee24241380a1841883b"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aa3117a2a5c906ee24241380a1841883b">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref bool value)</div><div class="ttdef"><b>定义</b> <a href="#l00064">BinaryInputArchive.cs:64</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_aa8c3eade70b1ba569cbabb3d8ddb9d5e"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aa8c3eade70b1ba569cbabb3d8ddb9d5e">Engine.Serialization.BinaryInputArchive.Stream</a></div><div class="ttdeci">Stream Stream</div><div class="ttdef"><b>定义</b> <a href="#l00009">BinaryInputArchive.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_aadf2c9cf2f0d581efc221c3ae7442e12"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aadf2c9cf2f0d581efc221c3ae7442e12">Engine.Serialization.BinaryInputArchive.Use7BitInts</a></div><div class="ttdeci">bool Use7BitInts</div><div class="ttdef"><b>定义</b> <a href="#l00007">BinaryInputArchive.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_aba94d1cd1f7fa3ea227300354960f556"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aba94d1cd1f7fa3ea227300354960f556">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, int length, ref byte[] value)</div><div class="ttdef"><b>定义</b> <a href="#l00093">BinaryInputArchive.cs:93</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_abb2ac2a33fe505efcff866b152c02204"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#abb2ac2a33fe505efcff866b152c02204">Engine.Serialization.BinaryInputArchive.ReadObjectInfo</a></div><div class="ttdeci">override void ReadObjectInfo(out int? objectId, out bool isReference, out Type runtimeType)</div><div class="ttdef"><b>定义</b> <a href="#l00141">BinaryInputArchive.cs:141</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_acc3c717a2223937008b272c2baa0fc1a"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#acc3c717a2223937008b272c2baa0fc1a">Engine.Serialization.BinaryInputArchive.Dispose</a></div><div class="ttdeci">override void Dispose()</div><div class="ttdef"><b>定义</b> <a href="#l00020">BinaryInputArchive.cs:20</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_ad1f61657b00a4e4fd6c59b94dbea1045"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#ad1f61657b00a4e4fd6c59b94dbea1045">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref string value)</div><div class="ttdef"><b>定义</b> <a href="#l00072">BinaryInputArchive.cs:72</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_ae5fb85f1246e74cea3a3f177faa413b7"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#ae5fb85f1246e74cea3a3f177faa413b7">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref ulong value)</div><div class="ttdef"><b>定义</b> <a href="#l00052">BinaryInputArchive.cs:52</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_af7ce0c5fdbdd0f1c95b8fe190828d295"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#af7ce0c5fdbdd0f1c95b8fe190828d295">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref byte[] value)</div><div class="ttdef"><b>定义</b> <a href="#l00086">BinaryInputArchive.cs:86</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_binary_input_archive_html_aff403120db8caa647291e661c9a0f333"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_binary_input_archive.html#aff403120db8caa647291e661c9a0f333">Engine.Serialization.BinaryInputArchive.Serialize</a></div><div class="ttdeci">override void Serialize(string name, ref float value)</div><div class="ttdef"><b>定义</b> <a href="#l00056">BinaryInputArchive.cs:56</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_engine_binary_reader_html"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_engine_binary_reader.html">Engine.Serialization.EngineBinaryReader</a></div><div class="ttdef"><b>定义</b> <a href="_engine_binary_reader_8cs_source.html#l00004">EngineBinaryReader.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_input_archive_html_a20c7ddd2b4a32d00198ab3798fa912f2"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2">Engine.Serialization.InputArchive.ReadObject</a></div><div class="ttdeci">virtual void ReadObject(string name, SerializeData staticSerializeData, ref object value, bool allowOverwriteOfExistingObject)</div><div class="ttdef"><b>定义</b> <a href="_input_archive_8cs_source.html#l00122">InputArchive.cs:122</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_input_archive_html_a2a44efe87eb4cf25b0f2b0a36c4b0fe5"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_input_archive.html#a2a44efe87eb4cf25b0f2b0a36c4b0fe5">Engine.Serialization.InputArchive.InputArchive</a></div><div class="ttdeci">InputArchive(int version, object context)</div><div class="ttdef"><b>定义</b> <a href="_input_archive_8cs_source.html#l00009">InputArchive.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_type_cache_html"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_type_cache.html">Engine.Serialization.TypeCache</a></div><div class="ttdef"><b>定义</b> <a href="_type_cache_8cs_source.html#l00004">TypeCache.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_type_cache_html_a513797ad03c6705956ccdbd15367b91d"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_type_cache.html#a513797ad03c6705956ccdbd15367b91d">Engine.Serialization.TypeCache.FindType</a></div><div class="ttdeci">static Type FindType(string typeName, bool skipSystemAssemblies, bool throwIfNotFound)</div><div class="ttdef"><b>定义</b> <a href="_type_cache_8cs_source.html#l00087">TypeCache.cs:87</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_utilities_html"><div class="ttname"><a href="class_engine_1_1_utilities.html">Engine.Utilities</a></div><div class="ttdef"><b>定义</b> <a href="_utilities_8cs_source.html#l00004">Utilities.cs:4</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_serialization_html"><div class="ttname"><a href="namespace_engine_1_1_serialization.html">Engine.Serialization</a></div><div class="ttdef"><b>定义</b> <a href="_archive_8cs_source.html#l00004">Archive.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_9e0ae2170a7078bc790002cf3ddea284.html">Engine.Serialization</a></li><li class="navelem"><a href="_binary_input_archive_8cs.html">BinaryInputArchive.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

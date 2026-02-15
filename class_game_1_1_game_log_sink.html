@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Game.GameLogSink</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_game_1_1_game_log_sink.html','','class_game_1_1_game_log_sink-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game.GameLogSink</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Game.GameLogSink 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_game_log_sink__inherit__graph.png" border="0" usemap="#a_game_8_game_log_sink_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_game_8_game_log_sink_inherit__map" id="a_game_8_game_log_sink_inherit__map">
+<area shape="rect" title=" " alt="" coords="56,80,199,107"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html" title=" " alt="" coords="5,5,122,32"/>
+<area shape="poly" title=" " alt="" coords="86,42,119,79,114,80,84,46"/>
+<area shape="rect" title=" " alt="" coords="146,5,237,32"/>
+<area shape="poly" title=" " alt="" coords="173,43,140,82,137,77,168,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Game.GameLogSink 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_game_log_sink__coll__graph.png" border="0" usemap="#a_game_8_game_log_sink_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_8_game_log_sink_coll__map" id="a_game_8_game_log_sink_coll__map">
+<area shape="rect" title=" " alt="" coords="56,80,199,107"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html" title=" " alt="" coords="5,5,122,32"/>
+<area shape="poly" title=" " alt="" coords="86,42,119,79,114,80,84,46"/>
+<area shape="rect" title=" " alt="" coords="146,5,237,32"/>
+<area shape="poly" title=" " alt="" coords="173,43,140,82,137,77,168,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ade04606ad811055da25a9b780f922325" id="r_ade04606ad811055da25a9b780f922325"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ade04606ad811055da25a9b780f922325">GameLogSink</a> ()</td></tr>
+<tr class="memitem:aec5dbc4a19e69770206f13b08ddc71e7" id="r_aec5dbc4a19e69770206f13b08ddc71e7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aec5dbc4a19e69770206f13b08ddc71e7">Log</a> (<a class="el" href="namespace_engine.html#a76f65dd21e137e07d0839591f565cccd">LogType</a> type, string message)</td></tr>
+<tr class="memitem:a40012c60591eb8ea20c87cb427486bd7" id="r_a40012c60591eb8ea20c87cb427486bd7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a40012c60591eb8ea20c87cb427486bd7">Dispose</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a1962167a9afcf0503f8ed6ebac19ab42" id="r_a1962167a9afcf0503f8ed6ebac19ab42"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a1962167a9afcf0503f8ed6ebac19ab42">GetRecentLog</a> (int bytesCount)</td></tr>
+<tr class="memitem:a14a02bc0baf83f7d64f976cdb5ed4f2f" id="r_a14a02bc0baf83f7d64f976cdb5ed4f2f"><td class="memItemLeft">static List&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a14a02bc0baf83f7d64f976cdb5ed4f2f">GetRecentLogLines</a> (int bytesCount)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:af609166c6c717ce46587bf07bdd284d1" id="r_af609166c6c717ce46587bf07bdd284d1"><td class="memItemLeft">static Stream&#160;</td><td class="memItemRight"><a class="el" href="#af609166c6c717ce46587bf07bdd284d1">m_stream</a></td></tr>
+<tr class="memitem:aa42ed77f5c041258a9c163103b69aadc" id="r_aa42ed77f5c041258a9c163103b69aadc"><td class="memItemLeft">static StreamWriter&#160;</td><td class="memItemRight"><a class="el" href="#aa42ed77f5c041258a9c163103b69aadc">m_writer</a></td></tr>
+<tr class="memitem:a19df09b4bf105a0679e5d198b23810ee" id="r_a19df09b4bf105a0679e5d198b23810ee"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a19df09b4bf105a0679e5d198b23810ee">errorOfInstantiation</a></td></tr>
+<tr class="memitem:af04063703bee628d6f043847a94aaed3" id="r_af04063703bee628d6f043847a94aaed3"><td class="memItemLeft">const string&#160;</td><td class="memItemRight"><a class="el" href="#af04063703bee628d6f043847a94aaed3">fName</a> = &quot;GameLogSink&quot;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00008">8</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="ade04606ad811055da25a9b780f922325" name="ade04606ad811055da25a9b780f922325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade04606ad811055da25a9b780f922325">&#9670;&#160;</a></span>GameLogSink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Game.GameLogSink.GameLogSink </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00016">16</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_game_log_sink_ade04606ad811055da25a9b780f922325_cgraph.png" border="0" usemap="#aclass_game_1_1_game_log_sink_ade04606ad811055da25a9b780f922325_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_game_log_sink_ade04606ad811055da25a9b780f922325_cgraph" id="aclass_game_1_1_game_log_sink_ade04606ad811055da25a9b780f922325_cgraph">
+<area shape="rect" title=" " alt="" coords="5,224,234,251"/>
+<area shape="rect" href="class_engine_1_1_storage.html#ada4eee2385d71f7a9a359107511171e4" title=" " alt="" coords="290,5,490,32"/>
+<area shape="poly" title=" " alt="" coords="126,222,147,186,181,136,226,85,252,62,280,42,294,37,290,40,283,46,256,66,230,89,186,140,152,188,130,225"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a1d731cbadc483958430619e69000394a" title=" " alt="" coords="287,56,494,83"/>
+<area shape="poly" title=" " alt="" coords="131,222,192,163,234,129,280,99,314,86,310,90,283,104,237,133,195,167,135,225"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a98b9838a25eb638c4d8d14f48e524eed" title=" " alt="" coords="547,107,736,133"/>
+<area shape="poly" title=" " alt="" coords="137,222,198,181,238,159,281,143,344,128,410,118,534,114,529,116,410,124,345,133,282,148,240,164,201,185,140,226"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a2b7cc231544f9d4b41993955d0c3c6ff" title=" " alt="" coords="307,157,474,200"/>
+<area shape="poly" title=" " alt="" coords="184,221,293,198,289,202,186,226"/>
+<area shape="rect" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0" title=" " alt="" coords="331,325,450,352"/>
+<area shape="poly" title=" " alt="" coords="146,248,208,280,283,311,319,323,314,324,281,316,206,284,146,254"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a4c0d6d5f22194e452303345db65ece1f" title=" " alt="" coords="301,275,480,301"/>
+<area shape="poly" title=" " alt="" coords="195,249,303,270,298,273,195,254"/>
+<area shape="rect" href="class_engine_1_1_log.html#aa6253fafb5f70f91507047f962fcbcba" title=" " alt="" coords="313,376,468,403"/>
+<area shape="poly" title=" " alt="" coords="135,249,196,304,238,335,283,362,301,371,296,371,280,366,235,340,193,308,134,254"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea" title=" " alt="" coords="307,224,474,251"/>
+<area shape="poly" title=" " alt="" coords="233,235,294,236,289,238,235,240"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a4acc9fdb18a4efbbfcb8e984d1879794" title=" " alt="" coords="282,427,499,453"/>
+<area shape="poly" title=" " alt="" coords="129,248,154,283,188,328,232,374,283,412,295,421,290,420,280,417,228,378,184,331,149,286,129,254"/>
+<area shape="poly" title=" " alt="" coords="460,81,560,102,555,104,461,86"/>
+<area shape="rect" href="class_engine_1_1_storage.html#aa326df4b280247fc7de010be525b8033" title=" " alt="" coords="787,132,998,159"/>
+<area shape="poly" title=" " alt="" coords="736,127,774,133,769,134,737,132"/>
+<area shape="rect" href="class_engine_1_1_storage.html#ab18cf85c64dab09f4a0687b3f445c87b" title=" " alt="" coords="784,81,1001,108"/>
+<area shape="poly" title=" " alt="" coords="736,108,771,106,766,108,738,113"/>
+<area shape="rect" href="class_engine_1_1_log.html#aeec71e1f21824c2398a876ff9b1cf589" title=" " alt="" coords="582,351,702,377"/>
+<area shape="poly" title=" " alt="" coords="450,342,569,356,564,357,450,347"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html#a7428b3c7c6cc5b17701ad73d606de84e" title=" " alt="" coords="822,351,963,377"/>
+<area shape="poly" title=" " alt="" coords="702,361,809,364,803,364,703,367"/>
+<area shape="poly" title=" " alt="" coords="468,379,569,371,563,372,469,384"/>
+<area shape="poly" title=" " alt="" coords="464,221,498,210,559,176,609,144,614,142,562,181,500,214,467,226"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a40012c60591eb8ea20c87cb427486bd7" name="a40012c60591eb8ea20c87cb427486bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40012c60591eb8ea20c87cb427486bd7">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.GameLogSink.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00128">128</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1962167a9afcf0503f8ed6ebac19ab42" name="a1962167a9afcf0503f8ed6ebac19ab42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1962167a9afcf0503f8ed6ebac19ab42">&#9670;&#160;</a></span>GetRecentLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Game.GameLogSink.GetRecentLog </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>bytesCount</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00068">68</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_game_log_sink_a1962167a9afcf0503f8ed6ebac19ab42_cgraph.png" border="0" usemap="#aclass_game_1_1_game_log_sink_a1962167a9afcf0503f8ed6ebac19ab42_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_game_log_sink_a1962167a9afcf0503f8ed6ebac19ab42_cgraph" id="aclass_game_1_1_game_log_sink_a1962167a9afcf0503f8ed6ebac19ab42_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,236,32"/>
+<area shape="rect" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c" title="获取在当前语言类名键对应的字符串" alt="" coords="284,5,467,32"/>
+<area shape="poly" title=" " alt="" coords="236,16,271,19,265,19,236,21"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_game_log_sink_a1962167a9afcf0503f8ed6ebac19ab42_icgraph.png" border="0" usemap="#aclass_game_1_1_game_log_sink_a1962167a9afcf0503f8ed6ebac19ab42_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_game_log_sink_a1962167a9afcf0503f8ed6ebac19ab42_icgraph" id="aclass_game_1_1_game_log_sink_a1962167a9afcf0503f8ed6ebac19ab42_icgraph">
+<area shape="rect" title=" " alt="" coords="282,5,512,32"/>
+<area shape="rect" href="class_game_1_1_view_game_log_dialog.html#aaf5735b34fb21a8cad0453fdbaa97655" title=" " alt="" coords="5,5,234,32"/>
+<area shape="poly" title=" " alt="" coords="263,19,234,21,234,16,268,19"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a14a02bc0baf83f7d64f976cdb5ed4f2f" name="a14a02bc0baf83f7d64f976cdb5ed4f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a02bc0baf83f7d64f976cdb5ed4f2f">&#9670;&#160;</a></span>GetRecentLogLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; string &gt; Game.GameLogSink.GetRecentLogLines </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>bytesCount</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00083">83</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_game_log_sink_a14a02bc0baf83f7d64f976cdb5ed4f2f_cgraph.png" border="0" usemap="#aclass_game_1_1_game_log_sink_a14a02bc0baf83f7d64f976cdb5ed4f2f_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_game_log_sink_a14a02bc0baf83f7d64f976cdb5ed4f2f_cgraph" id="aclass_game_1_1_game_log_sink_a14a02bc0baf83f7d64f976cdb5ed4f2f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,215,48"/>
+<area shape="rect" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c" title="获取在当前语言类名键对应的字符串" alt="" coords="263,13,446,40"/>
+<area shape="poly" title=" " alt="" coords="215,24,250,27,244,27,215,29"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_game_log_sink_a14a02bc0baf83f7d64f976cdb5ed4f2f_icgraph.png" border="0" usemap="#aclass_game_1_1_game_log_sink_a14a02bc0baf83f7d64f976cdb5ed4f2f_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_game_log_sink_a14a02bc0baf83f7d64f976cdb5ed4f2f_icgraph" id="aclass_game_1_1_game_log_sink_a14a02bc0baf83f7d64f976cdb5ed4f2f_icgraph">
+<area shape="rect" title=" " alt="" coords="588,5,797,48"/>
+<area shape="rect" href="class_game_1_1_view_game_log_dialog.html#a5133b98f7376744c73283b580bdeeba0" title=" " alt="" coords="282,13,540,40"/>
+<area shape="poly" title=" " alt="" coords="569,27,540,29,540,24,575,27"/>
+<area shape="rect" href="class_game_1_1_view_game_log_dialog.html#aaf5735b34fb21a8cad0453fdbaa97655" title=" " alt="" coords="5,13,234,40"/>
+<area shape="poly" title=" " alt="" coords="263,27,234,29,234,24,269,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec5dbc4a19e69770206f13b08ddc71e7" name="aec5dbc4a19e69770206f13b08ddc71e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5dbc4a19e69770206f13b08ddc71e7">&#9670;&#160;</a></span>Log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.GameLogSink.Log </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_engine.html#a76f65dd21e137e07d0839591f565cccd">LogType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="interface_engine_1_1_i_log_sink.html#a7428b3c7c6cc5b17701ad73d606de84e">Engine.ILogSink</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a19df09b4bf105a0679e5d198b23810ee" name="a19df09b4bf105a0679e5d198b23810ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19df09b4bf105a0679e5d198b23810ee">&#9670;&#160;</a></span>errorOfInstantiation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Game.GameLogSink.errorOfInstantiation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af04063703bee628d6f043847a94aaed3" name="af04063703bee628d6f043847a94aaed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af04063703bee628d6f043847a94aaed3">&#9670;&#160;</a></span>fName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string Game.GameLogSink.fName = &quot;GameLogSink&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af609166c6c717ce46587bf07bdd284d1" name="af609166c6c717ce46587bf07bdd284d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af609166c6c717ce46587bf07bdd284d1">&#9670;&#160;</a></span>m_stream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stream Game.GameLogSink.m_stream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa42ed77f5c041258a9c163103b69aadc" name="aa42ed77f5c041258a9c163103b69aadc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42ed77f5c041258a9c163103b69aadc">&#9670;&#160;</a></span>m_writer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">StreamWriter Game.GameLogSink.m_writer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a> 第 <a class="el" href="_game_log_sink_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Game/<a class="el" href="_game_log_sink_8cs_source.html">GameLogSink.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game.html">Game</a></li><li class="navelem"><a href="class_game_1_1_game_log_sink.html">GameLogSink</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

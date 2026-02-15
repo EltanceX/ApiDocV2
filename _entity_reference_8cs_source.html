@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Game/EntityReference.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_entity_reference_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">EntityReference.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_entity_reference_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">    6</a></span>        <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44abbb93ef26e3c101ff11cdd21cab08a94">    7</a></span>            <a class="code hl_property" href="struct_game_1_1_entity_reference.html#a1e1a8d40c60fc03674d932c411535402">Null</a>,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44a509820290d57f333403f490dde7316f4">    8</a></span>            <a class="code hl_function" href="struct_game_1_1_entity_reference.html#af09864fb9eb94c376d15f880cde2863d">Local</a>,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44ac8d6ce2485fc8e4dd6fb5b762f15227e">    9</a></span>            <a class="code hl_enumvalue" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44ac8d6ce2485fc8e4dd6fb5b762f15227e">ByEntityId</a>,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44ad572e395b366eb1af9e0210077b1c0b8">   10</a></span>            <a class="code hl_enumvalue" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44ad572e395b366eb1af9e0210077b1c0b8">ByEntityName</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        }</div>
+</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">   13</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a> <a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#a5700322df93743f2f0ae04743e74068b">   15</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="struct_game_1_1_entity_reference.html#a5700322df93743f2f0ae04743e74068b">m_entityReference</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#adfcc4850e211809ca4e69372ed18b3c2">   17</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="struct_game_1_1_entity_reference.html#adfcc4850e211809ca4e69372ed18b3c2">m_componentReference</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#a02c25ecf2f9cf05d3462afc479cfd88f">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="struct_game_1_1_entity_reference.html#a02c25ecf2f9cf05d3462afc479cfd88f">ReferenceString</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keyword">get</span> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> == <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Null) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;null:&quot;</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> == <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Local) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    <span class="keywordflow">return</span> $<span class="stringliteral">&quot;local:{m_componentReference}&quot;</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> == <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityId) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    <span class="keywordflow">return</span> $<span class="stringliteral">&quot;id:{m_entityReference}:{m_componentReference}&quot;</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> == <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityName) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    <span class="keywordflow">return</span> $<span class="stringliteral">&quot;name:{m_entityReference}:{m_componentReference}&quot;</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;Unknown entity reference type.&quot;</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#a1e1a8d40c60fc03674d932c411535402">   37</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> <a class="code hl_property" href="struct_game_1_1_entity_reference.html#a1e1a8d40c60fc03674d932c411535402">Null</a> =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#a93d992867958446dad552b0f95bffda7">   39</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#a93d992867958446dad552b0f95bffda7">GetEntity</a>(<a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> localEntity, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap, <span class="keywordtype">bool</span> throwIfNotFound) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> == <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Null) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                entity = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> == <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Local) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                entity = localEntity;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> == <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityId) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <span class="keywordtype">int</span>.Parse(<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#a5700322df93743f2f0ae04743e74068b">m_entityReference</a>, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                entity = localEntity.<a class="code hl_property" href="class_game_entity_system_1_1_entity.html#af35da1c74bc3ada00de0225bf29310d2">Project</a>.<a class="code hl_function" href="class_game_entity_system_1_1_project.html#a3c6704d421bf670fa46ea07aac9c094b">FindEntity</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> != <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityName) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;Unknown entity reference type.&quot;</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                entity = localEntity.<a class="code hl_property" href="class_game_entity_system_1_1_entity.html#af35da1c74bc3ada00de0225bf29310d2">Project</a>.<a class="code hl_function" href="class_game_entity_system_1_1_project.html#a53148ce255301ec218c2257fba4bf646">FindSubsystem</a>&lt;<a class="code hl_class" href="class_game_1_1_subsystem_names.html">SubsystemNames</a>&gt;(<span class="keyword">true</span>).FindEntityByName(<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#a5700322df93743f2f0ae04743e74068b">m_entityReference</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">if</span> (entity != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="keywordflow">return</span> entity;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> (throwIfNotFound) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Required entity \&quot;{ReferenceString}\&quot; not found.&quot;</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#adac63a8e5a110132d370ca808ef5d17c">   66</a></span>        <span class="keyword">public</span> T <a class="code hl_function" href="struct_game_1_1_entity_reference.html#adac63a8e5a110132d370ca808ef5d17c">GetComponent&lt;T&gt;</a>(<a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> localEntity, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap, <span class="keywordtype">bool</span> throwIfNotFound) where T : <span class="keyword">class </span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity = <a class="code hl_function" href="struct_game_1_1_entity_reference.html#a93d992867958446dad552b0f95bffda7">GetEntity</a>(localEntity, idToEntityMap, throwIfNotFound);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">if</span> (entity == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">return</span> entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;T&gt;(<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#adfcc4850e211809ca4e69372ed18b3c2">m_componentReference</a>, throwIfNotFound);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#ac1f051f6430a435d4a419de34adb28b1">   74</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#ac1f051f6430a435d4a419de34adb28b1">IsNullOrEmpty</a>() {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> != 0</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                &amp;&amp; (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> != <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Local || !<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#adfcc4850e211809ca4e69372ed18b3c2">m_componentReference</a>))</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                &amp;&amp; (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> != <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityId || !(<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#a5700322df93743f2f0ae04743e74068b">m_entityReference</a> == <span class="stringliteral">&quot;0&quot;</span>))) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">m_referenceType</a> == <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityName) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    <span class="keywordflow">return</span> <span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="struct_game_1_1_entity_reference.html#a5700322df93743f2f0ae04743e74068b">m_entityReference</a>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#af09864fb9eb94c376d15f880cde2863d">   86</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#af09864fb9eb94c376d15f880cde2863d">Local</a>(<a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a> component) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> result = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Local;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            result.m_componentReference = component != <span class="keyword">null</span> ? component.ValuesDictionary.DatabaseObject.Name : <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#a369e9d47ba0e30e6793a4a51d1b23c61">   93</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#a369e9d47ba0e30e6793a4a51d1b23c61">FromId</a>(<a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a> component) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">if</span> (component?.<a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <span class="keywordflow">return</span> <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> result = <a class="code hl_function" href="struct_game_1_1_entity_reference.html#a369e9d47ba0e30e6793a4a51d1b23c61">FromId</a>(component.<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            result.m_componentReference = component != <span class="keyword">null</span> ? component.ValuesDictionary.DatabaseObject.Name : <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#a44750d61986f60b8e85f87929293b67f">  102</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#a44750d61986f60b8e85f87929293b67f">FromId</a>(<a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordtype">int</span> num = entity.<a class="code hl_variable" href="class_game_entity_system_1_1_entity.html#a82ec371ff35f890d482479a5c2480978">Id</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> result = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityId;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            result.m_entityReference = num.ToString(CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            result.m_componentReference = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#a6298df1cc15fb7545877f1c3cb39237d">  111</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#a6298df1cc15fb7545877f1c3cb39237d">FromId</a>(<a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity, <a class="code hl_class" href="class_game_entity_system_1_1_entity_to_id_map.html">EntityToIdMap</a> entityToIdMap) =&gt; <a class="code hl_function" href="struct_game_1_1_entity_reference.html#a6298df1cc15fb7545877f1c3cb39237d">FromId</a>(entity);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#acda8ef515bfae23b384e43447dc9a9eb">  113</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#acda8ef515bfae23b384e43447dc9a9eb">FromId</a>(<a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a> component, <a class="code hl_class" href="class_game_entity_system_1_1_entity_to_id_map.html">EntityToIdMap</a> entityToIdMap) =&gt; <a class="code hl_function" href="struct_game_1_1_entity_reference.html#acda8ef515bfae23b384e43447dc9a9eb">FromId</a>(component);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#aafc0e02381f12f98ed2c4cd6bd5c5627">  115</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#aafc0e02381f12f98ed2c4cd6bd5c5627">FromName</a>(<a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a> component) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordtype">string</span> entityReference = component != <span class="keyword">null</span> ? component.<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_name.html">ComponentName</a>&gt;(<span class="keyword">null</span>, <span class="keyword">true</span>).Name : <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> result = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityName;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            result.m_entityReference = entityReference;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            result.m_componentReference = component != <span class="keyword">null</span> ? component.ValuesDictionary.DatabaseObject.Name : <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#a0e9882db8cf640c477622fd4da497b1b">  124</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#a0e9882db8cf640c477622fd4da497b1b">FromName</a>(<a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity) {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordtype">string</span> entityReference = entity != <span class="keyword">null</span> ? entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_name.html">ComponentName</a>&gt;(<span class="keyword">null</span>, <span class="keyword">true</span>).Name : <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> result = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityName;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            result.m_entityReference = entityReference;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            result.m_componentReference = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        }</div>
+</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="struct_game_1_1_entity_reference.html#a3a70bef31e19af7a2b6d9c96924dc373">  133</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> <a class="code hl_function" href="struct_game_1_1_entity_reference.html#a3a70bef31e19af7a2b6d9c96924dc373">FromReferenceString</a>(<span class="keywordtype">string</span> referenceString) {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <a class="code hl_struct" href="struct_game_1_1_entity_reference.html">EntityReference</a> result = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.<a class="code hl_function" href="struct_game_1_1_entity_reference.html#ac1f051f6430a435d4a419de34adb28b1">IsNullOrEmpty</a>(referenceString)) {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Null;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                result.m_entityReference = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                result.m_componentReference = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                <span class="keywordtype">string</span>[] array = referenceString.Split(<span class="charliteral">&#39;:&#39;</span>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                <span class="keywordflow">if</span> (array.Length == 1) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                    result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Local;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                    result.m_entityReference = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                    result.m_componentReference = array[0];</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                    <span class="keywordflow">if</span> (array.Length != 2</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                        &amp;&amp; array.Length != 3) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;Invalid entity reference. Too many tokens.&quot;</span>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                    <span class="keywordflow">if</span> (array[0] == <span class="stringliteral">&quot;null&quot;</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                        &amp;&amp; array.Length == 2) {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                        result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Null;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                        result.m_entityReference = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                        result.m_componentReference = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                    }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (array[0] == <span class="stringliteral">&quot;local&quot;</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                        &amp;&amp; array.Length == 2) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                        result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.Local;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                        result.m_componentReference = array[1];</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                    }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (array[0] == <span class="stringliteral">&quot;id&quot;</span>) {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                        result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityId;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                        result.m_entityReference = array[1];</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                        result.m_componentReference = array.Length == 3 ? array[2] : <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                    }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                        <span class="keywordflow">if</span> (!(array[0] == <span class="stringliteral">&quot;name&quot;</span>)) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                            <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;Unknown entity reference type.&quot;</span>);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                        }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                        result.m_referenceType = <a class="code hl_enumeration" href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">ReferenceType</a>.ByEntityId;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                        result.m_entityReference = array[1];</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                        result.m_componentReference = array.Length == 3 ? array[2] : <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        }</div>
+</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
+</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
+<div class="ttc" id="aclass_game_1_1_component_name_html"><div class="ttname"><a href="class_game_1_1_component_name.html">Game.ComponentName</a></div><div class="ttdef"><b>定义</b> <a href="_component_name_8cs_source.html#l00005">ComponentName.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_names_html"><div class="ttname"><a href="class_game_1_1_subsystem_names.html">Game.SubsystemNames</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_names_8cs_source.html#l00004">SubsystemNames.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html"><div class="ttname"><a href="class_game_entity_system_1_1_component.html">GameEntitySystem.Component</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00007">Component.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html">GameEntitySystem.Entity</a></div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00010">Entity.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_a82ec371ff35f890d482479a5c2480978"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#a82ec371ff35f890d482479a5c2480978">GameEntitySystem.Entity.Id</a></div><div class="ttdeci">int Id</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00079">Entity.cs:79</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_af35da1c74bc3ada00de0225bf29310d2"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#af35da1c74bc3ada00de0225bf29310d2">GameEntitySystem.Entity.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00067">Entity.cs:67</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_afbe091d90718bd24bc5b528daa3245cf"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">GameEntitySystem.Entity.FindComponent</a></div><div class="ttdeci">Component FindComponent(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00132">Entity.cs:132</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_to_id_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity_to_id_map.html">GameEntitySystem.EntityToIdMap</a></div><div class="ttdef"><b>定义</b> <a href="_entity_to_id_map_8cs_source.html#l00005">EntityToIdMap.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html">GameEntitySystem.IdToEntityMap</a></div><div class="ttdef"><b>定义</b> <a href="_id_to_entity_map_8cs_source.html#l00005">IdToEntityMap.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_project_html_a3c6704d421bf670fa46ea07aac9c094b"><div class="ttname"><a href="class_game_entity_system_1_1_project.html#a3c6704d421bf670fa46ea07aac9c094b">GameEntitySystem.Project.FindEntity</a></div><div class="ttdeci">virtual Entity FindEntity(int EntityID)</div><div class="ttdef"><b>定义</b> <a href="_project_8cs_source.html#l00165">Project.cs:165</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_project_html_a53148ce255301ec218c2257fba4bf646"><div class="ttname"><a href="class_game_entity_system_1_1_project.html#a53148ce255301ec218c2257fba4bf646">GameEntitySystem.Project.FindSubsystem</a></div><div class="ttdeci">virtual Subsystem FindSubsystem(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_project_8cs_source.html#l00110">Project.cs:110</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html"><div class="ttname"><a href="struct_game_1_1_entity_reference.html">Game.EntityReference</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">EntityReference.cs:5</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_a02c25ecf2f9cf05d3462afc479cfd88f"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#a02c25ecf2f9cf05d3462afc479cfd88f">Game.EntityReference.ReferenceString</a></div><div class="ttdeci">string ReferenceString</div><div class="ttdef"><b>定义</b> <a href="#l00019">EntityReference.cs:19</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_a0e9882db8cf640c477622fd4da497b1b"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#a0e9882db8cf640c477622fd4da497b1b">Game.EntityReference.FromName</a></div><div class="ttdeci">static EntityReference FromName(Entity entity)</div><div class="ttdef"><b>定义</b> <a href="#l00124">EntityReference.cs:124</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_a1e1a8d40c60fc03674d932c411535402"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#a1e1a8d40c60fc03674d932c411535402">Game.EntityReference.Null</a></div><div class="ttdeci">static EntityReference Null</div><div class="ttdef"><b>定义</b> <a href="#l00037">EntityReference.cs:37</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_a369e9d47ba0e30e6793a4a51d1b23c61"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#a369e9d47ba0e30e6793a4a51d1b23c61">Game.EntityReference.FromId</a></div><div class="ttdeci">static EntityReference FromId(Component component)</div><div class="ttdef"><b>定义</b> <a href="#l00093">EntityReference.cs:93</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_a3a70bef31e19af7a2b6d9c96924dc373"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#a3a70bef31e19af7a2b6d9c96924dc373">Game.EntityReference.FromReferenceString</a></div><div class="ttdeci">static EntityReference FromReferenceString(string referenceString)</div><div class="ttdef"><b>定义</b> <a href="#l00133">EntityReference.cs:133</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_a44750d61986f60b8e85f87929293b67f"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#a44750d61986f60b8e85f87929293b67f">Game.EntityReference.FromId</a></div><div class="ttdeci">static EntityReference FromId(Entity entity)</div><div class="ttdef"><b>定义</b> <a href="#l00102">EntityReference.cs:102</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_a5700322df93743f2f0ae04743e74068b"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#a5700322df93743f2f0ae04743e74068b">Game.EntityReference.m_entityReference</a></div><div class="ttdeci">string m_entityReference</div><div class="ttdef"><b>定义</b> <a href="#l00015">EntityReference.cs:15</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_a6298df1cc15fb7545877f1c3cb39237d"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#a6298df1cc15fb7545877f1c3cb39237d">Game.EntityReference.FromId</a></div><div class="ttdeci">static EntityReference FromId(Entity entity, EntityToIdMap entityToIdMap)</div><div class="ttdef"><b>定义</b> <a href="#l00111">EntityReference.cs:111</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_a93d992867958446dad552b0f95bffda7"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#a93d992867958446dad552b0f95bffda7">Game.EntityReference.GetEntity</a></div><div class="ttdeci">Entity GetEntity(Entity localEntity, IdToEntityMap idToEntityMap, bool throwIfNotFound)</div><div class="ttdef"><b>定义</b> <a href="#l00039">EntityReference.cs:39</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_aac9c84f6316261ef9d1d3230c0325f53"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#aac9c84f6316261ef9d1d3230c0325f53">Game.EntityReference.m_referenceType</a></div><div class="ttdeci">ReferenceType m_referenceType</div><div class="ttdef"><b>定义</b> <a href="#l00013">EntityReference.cs:13</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_aafc0e02381f12f98ed2c4cd6bd5c5627"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#aafc0e02381f12f98ed2c4cd6bd5c5627">Game.EntityReference.FromName</a></div><div class="ttdeci">static EntityReference FromName(Component component)</div><div class="ttdef"><b>定义</b> <a href="#l00115">EntityReference.cs:115</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_ac1f051f6430a435d4a419de34adb28b1"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#ac1f051f6430a435d4a419de34adb28b1">Game.EntityReference.IsNullOrEmpty</a></div><div class="ttdeci">bool IsNullOrEmpty()</div><div class="ttdef"><b>定义</b> <a href="#l00074">EntityReference.cs:74</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_acda8ef515bfae23b384e43447dc9a9eb"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#acda8ef515bfae23b384e43447dc9a9eb">Game.EntityReference.FromId</a></div><div class="ttdeci">static EntityReference FromId(Component component, EntityToIdMap entityToIdMap)</div><div class="ttdef"><b>定义</b> <a href="#l00113">EntityReference.cs:113</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_adac63a8e5a110132d370ca808ef5d17c"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#adac63a8e5a110132d370ca808ef5d17c">Game.EntityReference.GetComponent&lt; T &gt;</a></div><div class="ttdeci">T GetComponent&lt; T &gt;(Entity localEntity, IdToEntityMap idToEntityMap, bool throwIfNotFound)</div><div class="ttdef"><b>定义</b> <a href="#l00066">EntityReference.cs:66</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_adfcc4850e211809ca4e69372ed18b3c2"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#adfcc4850e211809ca4e69372ed18b3c2">Game.EntityReference.m_componentReference</a></div><div class="ttdeci">string m_componentReference</div><div class="ttdef"><b>定义</b> <a href="#l00017">EntityReference.cs:17</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_aef9d353576d07e2aa550df24c038ca44"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44">Game.EntityReference.ReferenceType</a></div><div class="ttdeci">ReferenceType</div><div class="ttdef"><b>定义</b> <a href="#l00006">EntityReference.cs:6</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_aef9d353576d07e2aa550df24c038ca44ac8d6ce2485fc8e4dd6fb5b762f15227e"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44ac8d6ce2485fc8e4dd6fb5b762f15227e">Game.EntityReference.ReferenceType.ByEntityId</a></div><div class="ttdeci">@ ByEntityId</div><div class="ttdef"><b>定义</b> <a href="#l00009">EntityReference.cs:9</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_aef9d353576d07e2aa550df24c038ca44ad572e395b366eb1af9e0210077b1c0b8"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#aef9d353576d07e2aa550df24c038ca44ad572e395b366eb1af9e0210077b1c0b8">Game.EntityReference.ReferenceType.ByEntityName</a></div><div class="ttdeci">@ ByEntityName</div><div class="ttdef"><b>定义</b> <a href="#l00010">EntityReference.cs:10</a></div></div>
+<div class="ttc" id="astruct_game_1_1_entity_reference_html_af09864fb9eb94c376d15f880cde2863d"><div class="ttname"><a href="struct_game_1_1_entity_reference.html#af09864fb9eb94c376d15f880cde2863d">Game.EntityReference.Local</a></div><div class="ttdeci">static EntityReference Local(Component component)</div><div class="ttdef"><b>定义</b> <a href="#l00086">EntityReference.cs:86</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_afb822b09482a1c506ad46299f82cac5.html">Game</a></li><li class="navelem"><a href="_entity_reference_8cs.html">EntityReference.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

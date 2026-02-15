@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/ModsManager/ModInfo.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_mod_info_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ModInfo.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_mod_info_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>NuGet.Versioning;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7a">    4</a></span>    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7a">LoadOrder</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aac5eddd40a9877e8aec3e12d800ef873e">    5</a></span>        <a class="code hl_enumvalue" href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aac5eddd40a9877e8aec3e12d800ef873e">Survivalcraft</a> = -2147483648,</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aabdce9563fcb639a17abeed3c4993c8e7">    6</a></span>        <a class="code hl_enumvalue" href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aabdce9563fcb639a17abeed3c4993c8e7">ThemeMod</a> = -16384,</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aa7a1920d61156abc05a60135aefe8bc67">    7</a></span>        <a class="code hl_enumvalue" href="namespace_game.html#aaef073460e9a51b63e31d709a2899947a7a1920d61156abc05a60135aefe8bc67">Default</a> = 0,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aa3495cd0db7c8e01fe7f1f7cfd0547223">    8</a></span>        <a class="code hl_enumvalue" href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aa3495cd0db7c8e01fe7f1f7cfd0547223">HelpfulMod</a> = 16384</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    }</div>
+</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html">   11</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_mod_info.html">ModInfo</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html#aef8383f9ab5d94ef94f94c9d81369a5b">   12</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_mod_info.html#a6fcd0b083e1ee213d93dc57d7f79c700">Name</a>, <a class="code hl_variable" href="class_game_1_1_mod_info.html#a10723acc7a9bd3e1ade017c3f0128b5c">Version</a>, <a class="code hl_variable" href="class_game_1_1_mod_info.html#aef8383f9ab5d94ef94f94c9d81369a5b">ApiVersion</a>, <a class="code hl_variable" href="class_game_1_1_mod_info.html#ac654cd08ded62f23f101fffa3615badd">Description</a>, <a class="code hl_variable" href="class_game_1_1_mod_info.html#a19656847ca97cbfa3e6107a4e5f3a6f8">ScVersion</a>, <a class="code hl_variable" href="class_game_1_1_mod_info.html#a91f7a511a5d9ad5cc96c289c5eec31be">Link</a>, <a class="code hl_variable" href="class_game_1_1_mod_info.html#a90a2744cb9bda3d19853360520f7e928">Author</a>, <a class="code hl_variable" href="class_game_1_1_mod_info.html#abf2f73b6cc2bdeb2a081d91830fc7198">PackageName</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html#aa1affad0d9addb7deb1fcb389d852b41">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_mod_info.html#aa1affad0d9addb7deb1fcb389d852b41">LoadOrder</a> = 0;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html#a4513e030c02431caac38ab80bf705a71">   14</a></span>        <span class="keyword">public</span> List&lt;string&gt; <a class="code hl_variable" href="class_game_1_1_mod_info.html#a4513e030c02431caac38ab80bf705a71">Dependencies</a> = [];</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html#a7a2fc52ce4b7efd39f57f71626b6df5b">   15</a></span>        <span class="keyword">public</span> <a class="code hl_variable" href="class_game_1_1_mod_info.html#a7a2fc52ce4b7efd39f57f71626b6df5b">NuGetVersion</a> <a class="code hl_variable" href="class_game_1_1_mod_info.html#a7a2fc52ce4b7efd39f57f71626b6df5b">NuGetVersion</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html#ac61b42574a4eebe2a267a261886d03e3">   16</a></span>        <span class="keyword">public</span> VersionRange <a class="code hl_variable" href="class_game_1_1_mod_info.html#ac61b42574a4eebe2a267a261886d03e3">ApiVersionRange</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html#ab44808dacc888c3eb40bbd50df4cffe3">   17</a></span>        <span class="keyword">public</span> Dictionary&lt;string, VersionRange&gt; <a class="code hl_variable" href="class_game_1_1_mod_info.html#ab44808dacc888c3eb40bbd50df4cffe3">DependencyRanges</a> = [];</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html#ab38f9eb4e40d64fa7a0ff20fab7e3381">   23</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_game_1_1_mod_info.html#ab38f9eb4e40d64fa7a0ff20fab7e3381">NonPersistentMod</a> = <span class="keyword">false</span>; <span class="comment">//“注意这玩意写开发文档里”，git push的时候把这句话提交上去</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html#a21b55da3c0d7c59f5edbf56df9623c57">   25</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_mod_info.html#a21b55da3c0d7c59f5edbf56df9623c57">GetHashCode</a>() =&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="comment">// ReSharper disable NonReadonlyMemberInGetHashCode</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            HashCode.Combine(<a class="code hl_variable" href="class_game_1_1_mod_info.html#a6fcd0b083e1ee213d93dc57d7f79c700">Name</a>, <a class="code hl_variable" href="class_game_1_1_mod_info.html#abf2f73b6cc2bdeb2a081d91830fc7198">PackageName</a>, <a class="code hl_variable" href="class_game_1_1_mod_info.html#a10723acc7a9bd3e1ade017c3f0128b5c">Version</a>);</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="comment">// ReSharper restore NonReadonlyMemberInGetHashCode</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_info.html#ac124eef78258d08cd9aaa88327e6e85a">   30</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_mod_info.html#ac124eef78258d08cd9aaa88327e6e85a">Equals</a>(<span class="keywordtype">object</span> obj) =&gt; obj is <a class="code hl_class" href="class_game_1_1_mod_info.html">ModInfo</a> &amp;&amp; obj.<a class="code hl_function" href="class_game_1_1_mod_info.html#a21b55da3c0d7c59f5edbf56df9623c57">GetHashCode</a>() == <a class="code hl_function" href="class_game_1_1_mod_info.html#a21b55da3c0d7c59f5edbf56df9623c57">GetHashCode</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html"><div class="ttname"><a href="class_game_1_1_mod_info.html">Game.ModInfo</a></div><div class="ttdef"><b>定义</b> <a href="#l00011">ModInfo.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_a10723acc7a9bd3e1ade017c3f0128b5c"><div class="ttname"><a href="class_game_1_1_mod_info.html#a10723acc7a9bd3e1ade017c3f0128b5c">Game.ModInfo.Version</a></div><div class="ttdeci">string Version</div><div class="ttdef"><b>定义</b> <a href="#l00012">ModInfo.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_a19656847ca97cbfa3e6107a4e5f3a6f8"><div class="ttname"><a href="class_game_1_1_mod_info.html#a19656847ca97cbfa3e6107a4e5f3a6f8">Game.ModInfo.ScVersion</a></div><div class="ttdeci">string ScVersion</div><div class="ttdef"><b>定义</b> <a href="#l00012">ModInfo.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_a21b55da3c0d7c59f5edbf56df9623c57"><div class="ttname"><a href="class_game_1_1_mod_info.html#a21b55da3c0d7c59f5edbf56df9623c57">Game.ModInfo.GetHashCode</a></div><div class="ttdeci">override int GetHashCode()</div><div class="ttdef"><b>定义</b> <a href="#l00025">ModInfo.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_a4513e030c02431caac38ab80bf705a71"><div class="ttname"><a href="class_game_1_1_mod_info.html#a4513e030c02431caac38ab80bf705a71">Game.ModInfo.Dependencies</a></div><div class="ttdeci">List&lt; string &gt; Dependencies</div><div class="ttdef"><b>定义</b> <a href="#l00014">ModInfo.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_a6fcd0b083e1ee213d93dc57d7f79c700"><div class="ttname"><a href="class_game_1_1_mod_info.html#a6fcd0b083e1ee213d93dc57d7f79c700">Game.ModInfo.Name</a></div><div class="ttdeci">string Name</div><div class="ttdef"><b>定义</b> <a href="#l00012">ModInfo.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_a7a2fc52ce4b7efd39f57f71626b6df5b"><div class="ttname"><a href="class_game_1_1_mod_info.html#a7a2fc52ce4b7efd39f57f71626b6df5b">Game.ModInfo.NuGetVersion</a></div><div class="ttdeci">NuGetVersion NuGetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00015">ModInfo.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_a90a2744cb9bda3d19853360520f7e928"><div class="ttname"><a href="class_game_1_1_mod_info.html#a90a2744cb9bda3d19853360520f7e928">Game.ModInfo.Author</a></div><div class="ttdeci">string Author</div><div class="ttdef"><b>定义</b> <a href="#l00012">ModInfo.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_a91f7a511a5d9ad5cc96c289c5eec31be"><div class="ttname"><a href="class_game_1_1_mod_info.html#a91f7a511a5d9ad5cc96c289c5eec31be">Game.ModInfo.Link</a></div><div class="ttdeci">string Link</div><div class="ttdef"><b>定义</b> <a href="#l00012">ModInfo.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_aa1affad0d9addb7deb1fcb389d852b41"><div class="ttname"><a href="class_game_1_1_mod_info.html#aa1affad0d9addb7deb1fcb389d852b41">Game.ModInfo.LoadOrder</a></div><div class="ttdeci">int LoadOrder</div><div class="ttdef"><b>定义</b> <a href="#l00013">ModInfo.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_ab38f9eb4e40d64fa7a0ff20fab7e3381"><div class="ttname"><a href="class_game_1_1_mod_info.html#ab38f9eb4e40d64fa7a0ff20fab7e3381">Game.ModInfo.NonPersistentMod</a></div><div class="ttdeci">bool NonPersistentMod</div><div class="ttdoc">该项为true表示：在存档中不记录该模组的modInfo，当玩家在未装载该模组，并运行之前带有该模组的存档时，不报错 适用于不在存档中存储特殊信息的辅助模组</div><div class="ttdef"><b>定义</b> <a href="#l00023">ModInfo.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_ab44808dacc888c3eb40bbd50df4cffe3"><div class="ttname"><a href="class_game_1_1_mod_info.html#ab44808dacc888c3eb40bbd50df4cffe3">Game.ModInfo.DependencyRanges</a></div><div class="ttdeci">Dictionary&lt; string, VersionRange &gt; DependencyRanges</div><div class="ttdef"><b>定义</b> <a href="#l00017">ModInfo.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_abf2f73b6cc2bdeb2a081d91830fc7198"><div class="ttname"><a href="class_game_1_1_mod_info.html#abf2f73b6cc2bdeb2a081d91830fc7198">Game.ModInfo.PackageName</a></div><div class="ttdeci">string PackageName</div><div class="ttdef"><b>定义</b> <a href="#l00012">ModInfo.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_ac124eef78258d08cd9aaa88327e6e85a"><div class="ttname"><a href="class_game_1_1_mod_info.html#ac124eef78258d08cd9aaa88327e6e85a">Game.ModInfo.Equals</a></div><div class="ttdeci">override bool Equals(object obj)</div><div class="ttdef"><b>定义</b> <a href="#l00030">ModInfo.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_ac61b42574a4eebe2a267a261886d03e3"><div class="ttname"><a href="class_game_1_1_mod_info.html#ac61b42574a4eebe2a267a261886d03e3">Game.ModInfo.ApiVersionRange</a></div><div class="ttdeci">VersionRange ApiVersionRange</div><div class="ttdef"><b>定义</b> <a href="#l00016">ModInfo.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_ac654cd08ded62f23f101fffa3615badd"><div class="ttname"><a href="class_game_1_1_mod_info.html#ac654cd08ded62f23f101fffa3615badd">Game.ModInfo.Description</a></div><div class="ttdeci">string Description</div><div class="ttdef"><b>定义</b> <a href="#l00012">ModInfo.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_aef8383f9ab5d94ef94f94c9d81369a5b"><div class="ttname"><a href="class_game_1_1_mod_info.html#aef8383f9ab5d94ef94f94c9d81369a5b">Game.ModInfo.ApiVersion</a></div><div class="ttdeci">string ApiVersion</div><div class="ttdef"><b>定义</b> <a href="#l00012">ModInfo.cs:12</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a9bf67fc2421150c4803fdbb7ba4a0b7a"><div class="ttname"><a href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7a">Game.LoadOrder</a></div><div class="ttdeci">LoadOrder</div><div class="ttdef"><b>定义</b> <a href="#l00004">ModInfo.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a9bf67fc2421150c4803fdbb7ba4a0b7aa3495cd0db7c8e01fe7f1f7cfd0547223"><div class="ttname"><a href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aa3495cd0db7c8e01fe7f1f7cfd0547223">Game.LoadOrder.HelpfulMod</a></div><div class="ttdeci">@ HelpfulMod</div><div class="ttdef"><b>定义</b> <a href="#l00008">ModInfo.cs:8</a></div></div>
+<div class="ttc" id="anamespace_game_html_a9bf67fc2421150c4803fdbb7ba4a0b7aabdce9563fcb639a17abeed3c4993c8e7"><div class="ttname"><a href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aabdce9563fcb639a17abeed3c4993c8e7">Game.LoadOrder.ThemeMod</a></div><div class="ttdeci">@ ThemeMod</div><div class="ttdef"><b>定义</b> <a href="#l00006">ModInfo.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html_a9bf67fc2421150c4803fdbb7ba4a0b7aac5eddd40a9877e8aec3e12d800ef873e"><div class="ttname"><a href="namespace_game.html#a9bf67fc2421150c4803fdbb7ba4a0b7aac5eddd40a9877e8aec3e12d800ef873e">Game.LoadOrder.Survivalcraft</a></div><div class="ttdeci">@ Survivalcraft</div><div class="ttdef"><b>定义</b> <a href="#l00005">ModInfo.cs:5</a></div></div>
+<div class="ttc" id="anamespace_game_html_aaef073460e9a51b63e31d709a2899947a7a1920d61156abc05a60135aefe8bc67"><div class="ttname"><a href="namespace_game.html#aaef073460e9a51b63e31d709a2899947a7a1920d61156abc05a60135aefe8bc67">Game.UpdateOrder.Default</a></div><div class="ttdeci">@ Default</div><div class="ttdef"><b>定义</b> <a href="_update_order_8cs_source.html#l00006">UpdateOrder.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_76e7375bc96a75ae21201cc55869c5d4.html">ModsManager</a></li><li class="navelem"><a href="_mod_info_8cs.html">ModInfo.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Game.AudioManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_game_1_1_audio_manager.html','','class_game_1_1_audio_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game.AudioManager</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aed470aaf8941e38156b9b125c8bc9de0" id="r_aed470aaf8941e38156b9b125c8bc9de0"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aed470aaf8941e38156b9b125c8bc9de0">PlaySound</a> (string name, float volume, float pitch, float pan)</td></tr>
+<tr class="memitem:a1f471af14a9fabd70aabfd97ae5e80d2" id="r_a1f471af14a9fabd70aabfd97ae5e80d2"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a1f471af14a9fabd70aabfd97ae5e80d2">PlaySound</a> (string name, float volume, float pitch, float pan, <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> vector)</td></tr>
+<tr class="memitem:a662e4c36f9e2e6260167ba8d11f4268b" id="r_a662e4c36f9e2e6260167ba8d11f4268b"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a662e4c36f9e2e6260167ba8d11f4268b">ToEnginePitch</a> (float pitch)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a90aa62e7157867d764cd5a4266014237" id="r_a90aa62e7157867d764cd5a4266014237"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a90aa62e7157867d764cd5a4266014237">MinAudibleVolume</a><code> [get]</code></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a> 第 <a class="el" href="_audio_manager_8cs_source.html#l00005">5</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="aed470aaf8941e38156b9b125c8bc9de0" name="aed470aaf8941e38156b9b125c8bc9de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed470aaf8941e38156b9b125c8bc9de0">&#9670;&#160;</a></span>PlaySound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.AudioManager.PlaySound </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pitch</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pan</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a> 第 <a class="el" href="_audio_manager_8cs_source.html#l00008">8</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_audio_manager_aed470aaf8941e38156b9b125c8bc9de0_cgraph.png" border="0" usemap="#aclass_game_1_1_audio_manager_aed470aaf8941e38156b9b125c8bc9de0_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_audio_manager_aed470aaf8941e38156b9b125c8bc9de0_cgraph" id="aclass_game_1_1_audio_manager_aed470aaf8941e38156b9b125c8bc9de0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,216,56"/>
+<area shape="poly" title=" " alt="" coords="74,28,68,21,73,11,87,5,111,3,136,5,150,14,145,14,134,10,110,8,88,10,77,15,74,20,80,29"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_audio_manager_aed470aaf8941e38156b9b125c8bc9de0_icgraph.png" border="0" usemap="#aclass_game_1_1_audio_manager_aed470aaf8941e38156b9b125c8bc9de0_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_audio_manager_aed470aaf8941e38156b9b125c8bc9de0_icgraph" id="aclass_game_1_1_audio_manager_aed470aaf8941e38156b9b125c8bc9de0_icgraph">
+<area shape="rect" title=" " alt="" coords="548,547,758,573"/>
+<area shape="poly" title=" " alt="" coords="699,532,685,528,653,525,624,527,608,532,605,537,612,546,607,546,599,538,605,528,623,522,653,520,686,523,705,531"/>
+<area shape="rect" href="class_game_1_1_edit_memory_bank_dialog_a_p_i.html#a67c2ff62761ce48223ac7b54b90fd7ce" title=" " alt="" coords="281,5,478,48"/>
+<area shape="poly" title=" " alt="" coords="650,530,644,440,637,380,624,314,605,246,579,179,543,117,498,62,480,48,479,42,502,58,548,114,584,177,610,244,629,313,642,379,650,440,655,532"/>
+<area shape="rect" href="class_game_1_1_inventory_slot_widget.html#adb3647b6a57734002e821e6e748094b6" title=" " alt="" coords="289,72,471,115"/>
+<area shape="poly" title=" " alt="" coords="648,530,639,452,616,343,597,285,571,228,539,175,498,129,472,111,471,106,502,125,543,172,576,225,602,283,621,342,644,451,653,532"/>
+<area shape="rect" href="class_game_1_1_edit_memory_bank_dialog_a_p_i.html#a7b2af5fd3e6a1cd94a14cd6822b6b596" title=" " alt="" coords="281,139,478,181"/>
+<area shape="poly" title=" " alt="" coords="646,530,633,463,607,372,588,324,564,277,534,233,498,195,480,182,479,177,502,191,538,230,568,274,593,322,612,370,638,462,651,532"/>
+<area shape="rect" href="class_game_1_1_edit_memory_bank_dialog_a_p_i.html#a22ade49475695cecae50175f73b12982" title=" " alt="" coords="281,205,478,248"/>
+<area shape="poly" title=" " alt="" coords="643,531,627,475,598,402,579,364,556,326,529,292,498,262,479,249,478,244,502,258,533,288,560,323,584,361,603,400,632,473,648,532"/>
+<area shape="rect" href="class_game_1_1_subsystem_chest_block_behavior.html#acb437d6b82dd2ec83890f984590e67ad" title=" " alt="" coords="283,272,477,315"/>
+<area shape="poly" title=" " alt="" coords="639,532,619,489,589,433,549,377,525,351,498,329,478,316,477,311,502,324,528,347,553,373,594,430,624,486,644,533"/>
+<area shape="rect" href="class_game_1_1_subsystem_crafting_table_block_behavior.html#a8de9f86471815cc4191e2ce61d518c95" title=" " alt="" coords="270,339,490,381"/>
+<area shape="poly" title=" " alt="" coords="632,534,579,465,541,428,499,396,478,384,477,379,501,391,545,424,583,462,638,534"/>
+<area shape="rect" href="class_game_1_1_subsystem_dispenser_block_behavior.html#a81a0e6f891ac3130fbdb23786afba743" title=" " alt="" coords="271,405,489,448"/>
+<area shape="poly" title=" " alt="" coords="620,537,566,500,499,462,471,451,470,446,501,458,569,496,625,537"/>
+<area shape="rect" href="class_game_1_1_subsystem_furnace_block_behavior.html#a2d100df65834e4c9107de5912dd6d128" title=" " alt="" coords="277,472,483,515"/>
+<area shape="poly" title=" " alt="" coords="578,543,471,518,470,513,583,541"/>
+<area shape="rect" href="class_game_1_1_subsystem_sign_block_behavior.html#abcbe634c5db86838cbf1fac8a8d14677" title=" " alt="" coords="260,539,500,581"/>
+<area shape="poly" title=" " alt="" coords="530,561,501,563,499,557,535,559"/>
+<area shape="rect" href="class_game_1_1_clickable_widget.html#af685e44c09c07d701415758b9e7d0c01" title=" " alt="" coords="279,605,480,632"/>
+<area shape="poly" title=" " alt="" coords="572,578,501,596,448,607,446,602,499,591,576,576"/>
+<area shape="rect" href="class_game_1_1_crossbow_widget.html#a1326993e460a6e10f4a15a3e4b15e4f8" title=" " alt="" coords="277,656,483,683"/>
+<area shape="poly" title=" " alt="" coords="617,583,566,616,501,646,463,658,461,653,499,642,563,612,621,580"/>
+<area shape="rect" href="class_game_1_1_edit_community_server_info_dialog.html#a93af4ea365129f0fe4bdc2d6b8800900" title=" " alt="" coords="286,707,474,749"/>
+<area shape="poly" title=" " alt="" coords="632,583,577,642,540,672,501,697,476,709,473,704,499,692,537,667,573,638,628,587"/>
+<area shape="rect" href="class_game_1_1_inventory_slot_widget.html#a77f8b7d441cdafb611e51e476a196e7c" title=" " alt="" coords="289,773,471,816"/>
+<area shape="poly" title=" " alt="" coords="641,585,619,628,588,675,549,723,501,764,473,778,470,774,499,759,545,719,584,672,615,625,637,589"/>
+<area shape="rect" href="class_game_1_1_list_panel_widget.html#a055cd9fa3d32606b371b6324158ad813" title=" " alt="" coords="279,840,480,867"/>
+<area shape="poly" title=" " alt="" coords="646,586,629,642,600,707,558,774,531,804,502,830,481,842,478,837,498,826,528,800,553,771,595,705,624,640,643,590"/>
+<area shape="rect" href="class_game_1_1_manage_class_substitutes_screen_1_1_substitute_widget.html#a511c0588c8dc59a635f02ed257398e96" title=" " alt="" coords="274,891,486,933"/>
+<area shape="poly" title=" " alt="" coords="648,587,634,650,606,729,586,770,563,811,535,848,502,881,484,893,482,888,498,877,530,845,558,808,581,768,601,727,629,649,645,591"/>
+<area shape="rect" href="class_game_1_1_slider_widget.html#ab70069edb20d7ca08a96a275c6f467ba" title=" " alt="" coords="290,957,470,984"/>
+<area shape="poly" title=" " alt="" coords="651,587,641,662,617,759,597,811,572,861,540,907,502,947,471,964,469,959,498,943,536,904,567,858,592,809,612,758,636,661,648,591"/>
+<area shape="rect" href="class_game_1_1_subsystem_audio.html#a5fc2bb25623ed9b621818d28426d21f7" title=" " alt="" coords="277,1008,482,1035"/>
+<area shape="poly" title=" " alt="" coords="653,587,646,670,637,724,623,781,604,840,578,898,544,952,502,998,484,1010,482,1005,498,994,540,948,573,896,599,838,618,780,632,723,641,670,649,591"/>
+<area shape="rect" href="class_game_1_1_inventory_slot_widget.html#a6ee9b21cda0e531f15ef48a8d645f9bd" title=" " alt="" coords="17,72,200,115"/>
+<area shape="poly" title=" " alt="" coords="271,95,202,96,199,91,275,92"/>
+<area shape="rect" href="class_game_1_1_edit_memory_bank_dialog_a_p_i.html#a523c22aadfbb9be0051c0478e411025c" title=" " alt="" coords="5,172,212,215"/>
+<area shape="poly" title=" " alt="" coords="264,176,214,183,210,179,268,172"/>
+<area shape="poly" title=" " alt="" coords="264,214,213,208,211,204,268,211"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1f471af14a9fabd70aabfd97ae5e80d2" name="a1f471af14a9fabd70aabfd97ae5e80d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f471af14a9fabd70aabfd97ae5e80d2">&#9670;&#160;</a></span>PlaySound() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.AudioManager.PlaySound </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pitch</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pan</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a></td>          <td class="paramname"><span class="paramname"><em>vector</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a> 第 <a class="el" href="_audio_manager_8cs_source.html#l00012">12</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_audio_manager_a1f471af14a9fabd70aabfd97ae5e80d2_cgraph.png" border="0" usemap="#aclass_game_1_1_audio_manager_a1f471af14a9fabd70aabfd97ae5e80d2_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_audio_manager_a1f471af14a9fabd70aabfd97ae5e80d2_cgraph" id="aclass_game_1_1_audio_manager_a1f471af14a9fabd70aabfd97ae5e80d2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,216,107"/>
+<area shape="rect" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff" title=" " alt="" coords="274,29,455,56"/>
+<area shape="poly" title=" " alt="" coords="180,77,282,58,277,61,182,82"/>
+<area shape="rect" href="class_engine_1_1_audio_1_1_base_sound.html#a76a0bde770fd6b50b7a6d718c3c07c6e" title=" " alt="" coords="265,80,464,107"/>
+<area shape="poly" title=" " alt="" coords="216,91,252,93,246,94,217,96"/>
+<area shape="rect" href="class_game_1_1_audio_manager.html#a662e4c36f9e2e6260167ba8d11f4268b" title=" " alt="" coords="264,131,465,173"/>
+<area shape="poly" title=" " alt="" coords="172,105,257,126,252,127,171,110"/>
+<area shape="poly" title=" " alt="" coords="321,28,314,21,319,11,336,5,364,3,395,5,412,14,407,15,394,10,364,8,338,10,323,15,319,20,327,29"/>
+<area shape="rect" href="class_engine_1_1_audio_1_1_base_sound.html#aab63b78307584b3af46fddfd4d3edb46" title=" " alt="" coords="513,80,755,107"/>
+<area shape="poly" title=" " alt="" coords="464,91,500,93,495,94,465,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a662e4c36f9e2e6260167ba8d11f4268b" name="a662e4c36f9e2e6260167ba8d11f4268b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a662e4c36f9e2e6260167ba8d11f4268b">&#9670;&#160;</a></span>ToEnginePitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.AudioManager.ToEnginePitch </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pitch</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a> 第 <a class="el" href="_audio_manager_8cs_source.html#l00028">28</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_audio_manager_a662e4c36f9e2e6260167ba8d11f4268b_icgraph.png" border="0" usemap="#aclass_game_1_1_audio_manager_a662e4c36f9e2e6260167ba8d11f4268b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_audio_manager_a662e4c36f9e2e6260167ba8d11f4268b_icgraph" id="aclass_game_1_1_audio_manager_a662e4c36f9e2e6260167ba8d11f4268b_icgraph">
+<area shape="rect" title=" " alt="" coords="500,27,701,69"/>
+<area shape="rect" href="class_game_1_1_audio_manager.html#a1f471af14a9fabd70aabfd97ae5e80d2" title=" " alt="" coords="242,5,452,32"/>
+<area shape="poly" title=" " alt="" coords="482,35,452,33,452,28,487,34"/>
+<area shape="rect" href="class_game_1_1_component_vital_stats.html#a1db50dd0cbc7cbb69c1869a30f3c7ef4" title=" " alt="" coords="253,56,441,99"/>
+<area shape="poly" title=" " alt="" coords="487,61,442,69,441,64,482,62"/>
+<area shape="rect" href="class_game_1_1_component_vital_stats.html#aaa4b65921d259b4ff1349a554a464b60" title=" " alt="" coords="5,56,194,99"/>
+<area shape="poly" title=" " alt="" coords="234,78,194,80,194,75,240,77"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="a90aa62e7157867d764cd5a4266014237" name="a90aa62e7157867d764cd5a4266014237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90aa62e7157867d764cd5a4266014237">&#9670;&#160;</a></span>MinAudibleVolume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.AudioManager.MinAudibleVolume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a> 第 <a class="el" href="_audio_manager_8cs_source.html#l00006">6</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Managers/<a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game.html">Game</a></li><li class="navelem"><a href="class_game_1_1_audio_manager.html">AudioManager</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,875 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Game.SubsystemTimeOfDay</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_game_1_1_subsystem_time_of_day.html','','class_game_1_1_subsystem_time_of_day-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game.SubsystemTimeOfDay</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Game.SubsystemTimeOfDay 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_time_of_day__inherit__graph.png" border="0" usemap="#a_game_8_subsystem_time_of_day_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_game_8_subsystem_time_of_day_inherit__map" id="a_game_8_subsystem_time_of_day_inherit__map">
+<area shape="rect" title=" " alt="" coords="11,155,205,181"/>
+<area shape="rect" href="class_game_entity_system_1_1_subsystem.html" title=" " alt="" coords="5,80,211,107"/>
+<area shape="poly" title=" " alt="" coords="110,121,110,155,106,153,106,124"/>
+<area shape="rect" title=" " alt="" coords="63,5,153,32"/>
+<area shape="poly" title=" " alt="" coords="109,45,111,80,105,79,107,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Game.SubsystemTimeOfDay 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_time_of_day__coll__graph.png" border="0" usemap="#a_game_8_subsystem_time_of_day_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_8_subsystem_time_of_day_coll__map" id="a_game_8_subsystem_time_of_day_coll__map">
+<area shape="rect" title=" " alt="" coords="3295,427,3488,453"/>
+<area shape="rect" href="class_game_entity_system_1_1_subsystem.html" title=" " alt="" coords="1876,632,2081,659"/>
+<area shape="poly" title=" " alt="" coords="1987,615,2017,539,2040,491,2070,443,2105,399,2146,362,2194,337,2220,330,2248,328,3018,328,3069,331,3121,339,3219,365,3303,396,3365,426,3360,426,3301,401,3217,370,3120,344,3069,336,3018,333,2248,333,2221,336,2196,342,2149,367,2109,403,2074,446,2045,494,2022,541,1991,619"/>
+<area shape="rect" href="class_game_1_1_subsystem_game_info.html" title=" " alt="" coords="2550,560,2733,587"/>
+<area shape="poly" title=" " alt="" coords="2085,627,2105,624,2346,597,2552,581,2547,581,2346,603,2106,629,2086,632"/>
+<area shape="rect" href="class_game_1_1_subsystem_time.html" title=" " alt="" coords="2172,757,2327,784"/>
+<area shape="poly" title=" " alt="" coords="2024,663,2221,757,2216,756,2023,668"/>
+<area shape="rect" href="class_game_1_1_subsystem_players.html" title=" " alt="" coords="2556,739,2727,765"/>
+<area shape="poly" title=" " alt="" coords="2002,668,2059,729,2094,763,2132,794,2200,843,2255,878,2313,904,2393,927,2462,944,2491,942,2525,927,2534,918,2538,908,2548,881,2591,815,2628,767,2632,764,2596,818,2552,884,2543,910,2539,921,2527,932,2492,947,2461,949,2391,932,2312,909,2252,882,2197,847,2129,798,2091,767,2055,733,2000,673"/>
+<area shape="rect" href="class_game_1_1_subsystem_update.html" title=" " alt="" coords="2558,895,2726,921"/>
+<area shape="poly" title=" " alt="" coords="1987,672,2004,729,2032,799,2051,835,2074,869,2101,900,2132,926,2184,956,2231,975,2275,984,2318,986,2363,982,2411,973,2525,949,2572,936,2610,922,2616,921,2573,941,2527,955,2412,978,2364,987,2318,991,2274,990,2229,980,2181,961,2129,930,2097,904,2069,873,2046,838,2027,801,1999,731,1984,676"/>
+<area shape="rect" href="class_game_1_1_subsystem_time_of_day.html" title=" " alt="" coords="3295,604,3488,631"/>
+<area shape="poly" title=" " alt="" coords="2097,649,2316,657,2607,661,2937,656,3106,648,3270,636,3321,632,3326,631,3271,641,3106,654,2937,661,2607,666,2316,662,2097,654"/>
+<area shape="rect" href="class_game_1_1_subsystem_seasons.html" title=" " alt="" coords="2928,427,3106,453"/>
+<area shape="poly" title=" " alt="" coords="1997,617,2050,557,2088,525,2130,500,2235,461,2345,434,2457,417,2568,408,2674,407,2772,410,2931,427,2925,427,2771,415,2674,412,2569,414,2458,422,2346,439,2236,466,2132,505,2091,529,2054,560,2000,622"/>
+<area shape="rect" title=" " alt="" coords="1251,619,1342,645"/>
+<area shape="poly" title=" " alt="" coords="1357,630,1878,643,1873,644,1357,636"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html" title=" " alt="" coords="1583,555,1763,581"/>
+<area shape="poly" title=" " alt="" coords="1356,619,1592,581,1587,583,1357,624"/>
+<area shape="poly" title=" " alt="" coords="1744,583,1925,631,1920,631,1743,588"/>
+<area shape="rect" href="class_game_entity_system_1_1_game_database.html" title=" " alt="" coords="1181,503,1412,529"/>
+<area shape="poly" title=" " alt="" coords="1427,523,1559,540,1618,554,1613,554,1558,545,1427,529"/>
+<area shape="rect" href="class_templates_database_1_1_database_object.html" title=" " alt="" coords="396,635,593,677"/>
+<area shape="poly" title=" " alt="" coords="542,624,653,565,721,536,792,515,885,496,964,484,1034,478,1100,476,1237,481,1412,488,1486,485,1519,486,1559,495,1588,506,1615,522,1658,555,1653,554,1612,526,1586,511,1558,500,1518,491,1486,490,1412,493,1237,486,1100,481,1034,483,964,489,886,501,794,520,723,541,655,570,544,629"/>
+<area shape="poly" title=" " alt="" coords="460,617,473,610,494,608,514,610,527,616,533,625,531,635,527,633,528,626,524,620,513,615,494,613,475,616,463,621"/>
+<area shape="rect" href="class_templates_database_1_1_database.html" title=" " alt="" coords="806,697,1003,724"/>
+<area shape="poly" title=" " alt="" coords="608,663,769,683,838,696,832,697,769,688,609,669"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html" title=" " alt="" coords="814,580,994,623"/>
+<area shape="poly" title=" " alt="" coords="608,636,617,635,816,611,811,613,617,640,610,641"/>
+<area shape="poly" title=" " alt="" coords="789,726,705,728,660,723,616,712,603,704,592,694,562,681,562,675,594,690,606,699,618,707,661,717,705,723,794,725"/>
+<area shape="rect" href="struct_engine_1_1_read_only_list-1-g.html" title=" " alt="" coords="407,752,582,779"/>
+<area shape="poly" title=" " alt="" coords="597,766,681,764,769,753,822,739,868,725,873,724,824,744,769,759,682,769,598,772"/>
+<area shape="poly" title=" " alt="" coords="459,734,471,728,494,725,516,727,529,734,534,743,527,754,524,750,528,743,526,737,515,733,494,731,473,733,461,739"/>
+<area shape="rect" title=" " alt="" coords="81,752,127,779"/>
+<area shape="poly" title=" " alt="" coords="142,763,407,763,405,768,143,768"/>
+<area shape="rect" href="class_templates_database_1_1_database_object_type.html" title=" " alt="" coords="5,635,203,677"/>
+<area shape="poly" title=" " alt="" coords="218,653,397,654,393,658,219,659"/>
+<area shape="poly" title=" " alt="" coords="69,617,83,610,104,608,124,610,137,616,143,625,141,635,136,633,138,626,133,620,122,615,104,613,84,616,74,621"/>
+<area shape="rect" href="class_game_entity_system_1_1_project_data.html" title=" " alt="" coords="1192,555,1401,581"/>
+<area shape="poly" title=" " alt="" coords="1416,565,1585,568,1579,568,1417,571"/>
+<area shape="poly" title=" " alt="" coords="1009,624,1094,641,1182,655,1276,664,1373,669,1565,670,1738,663,1878,655,1873,656,1738,668,1565,675,1373,674,1276,669,1181,660,1093,646,1009,629"/>
+<area shape="poly" title=" " alt="" coords="1009,595,1157,585,1210,581,1205,583,1158,591,1010,601"/>
+<area shape="rect" title=" " alt="" coords="447,515,542,541"/>
+<area shape="poly" title=" " alt="" coords="556,536,816,584,811,586,557,542"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity_data_list.html" title=" " alt="" coords="793,529,1015,556"/>
+<area shape="poly" title=" " alt="" coords="1030,548,1195,561,1189,562,1031,553"/>
+<area shape="poly" title=" " alt="" coords="2736,554,3309,454,3315,454,2736,559"/>
+<area shape="poly" title=" " alt="" coords="2749,577,3297,612,3292,612,2749,582"/>
+<area shape="poly" title=" " alt="" coords="2685,551,2757,523,2798,514,2832,511,2865,507,2903,492,2915,482,2927,470,2964,455,2969,453,2930,474,2918,486,2906,497,2866,512,2833,517,2799,519,2758,528,2686,556"/>
+<area shape="rect" href="interface_game_1_1_i_updateable.html" title=" " alt="" coords="2184,515,2314,541"/>
+<area shape="poly" title=" " alt="" coords="2330,535,2526,557,2553,563,2547,563,2526,563,2330,540"/>
+<area shape="poly" title=" " alt="" coords="2326,543,2425,576,2478,600,2527,628,2561,655,2591,685,2633,739,2628,737,2587,688,2557,659,2525,633,2475,605,2423,581,2325,548"/>
+<area shape="poly" title=" " alt="" coords="2329,516,2930,450,2925,451,2330,522"/>
+<area shape="poly" title=" " alt="" coords="2290,748,2610,588,2616,587,2292,753"/>
+<area shape="poly" title=" " alt="" coords="2343,764,2559,756,2553,756,2343,769"/>
+<area shape="poly" title=" " alt="" coords="2270,795,2321,852,2355,880,2393,902,2433,914,2476,920,2560,921,2555,921,2475,925,2432,919,2391,906,2352,885,2317,856,2268,799"/>
+<area shape="poly" title=" " alt="" coords="2603,772,2565,789,2526,800,2467,806,2407,804,2350,797,2303,787,2304,782,2351,791,2407,799,2467,801,2526,795,2564,784,2598,773"/>
+<area shape="poly" title=" " alt="" coords="2570,890,2485,867,2391,836,2278,787,2279,782,2393,831,2487,862,2575,890"/>
+<area shape="poly" title=" " alt="" coords="3276,627,3113,636,3020,635,2928,629,2806,612,2700,590,2701,585,2806,607,2929,624,3020,630,3113,630,3282,626"/>
+<area shape="poly" title=" " alt="" coords="3121,437,3297,440,3292,440,3121,443"/>
+<area shape="poly" title=" " alt="" coords="3074,457,3107,470,3255,541,3368,604,3363,603,3253,546,3105,474,3074,462"/>
+<area shape="rect" href="class_engine_1_1_media_1_1_image.html" title=" " alt="" coords="2572,267,2712,293"/>
+<area shape="poly" title=" " alt="" coords="2690,297,2986,426,2981,426,2689,303"/>
+<area shape="rect" href="struct_engine_1_1_color.html" title=" " alt="" coords="2201,267,2298,293"/>
+<area shape="poly" title=" " alt="" coords="2313,277,2574,280,2568,280,2314,283"/>
+<area shape="poly" title=" " alt="" coords="2223,249,2232,243,2249,240,2266,242,2276,248,2279,258,2274,268,2270,264,2273,258,2272,252,2264,247,2249,245,2234,248,2225,254"/>
+<area shape="rect" title=" " alt="" coords="1937,267,2020,293"/>
+<area shape="poly" title=" " alt="" coords="2035,277,2203,280,2198,280,2036,283"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0352a9ddcc2ff64ec2a538786c22336d" id="r_a0352a9ddcc2ff64ec2a538786c22336d"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a0352a9ddcc2ff64ec2a538786c22336d">CalculateDay</a> (double totalElapsedGameTime)</td></tr>
+<tr class="memitem:a99bfa0a88346743ebe2c0acf3925930d" id="r_a99bfa0a88346743ebe2c0acf3925930d"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a99bfa0a88346743ebe2c0acf3925930d">CalculateTimeOfDay</a> (double totalElapsedGameTime)</td></tr>
+<tr class="memitem:a2f37184aa4d72618546609de5dbe71c4" id="r_a2f37184aa4d72618546609de5dbe71c4"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a2f37184aa4d72618546609de5dbe71c4">Load</a> (<a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary)</td></tr>
+<tr class="memitem:a1f93f36e5b5c1aaf670da9af5b0fd0b8" id="r_a1f93f36e5b5c1aaf670da9af5b0fd0b8"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a1f93f36e5b5c1aaf670da9af5b0fd0b8">Save</a> (<a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary)</td></tr>
+<tr class="memitem:a8a35b8fcb14459015f34c1b4c02c88f6" id="r_a8a35b8fcb14459015f34c1b4c02c88f6"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a8a35b8fcb14459015f34c1b4c02c88f6">UpdateStarts</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_game_entity_system_1_1_subsystem"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_entity_system_1_1_subsystem')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></td></tr>
+<tr class="memitem:a05dcf7baf01016754b6d8c1c80b91531 inherit pub_methods_class_game_entity_system_1_1_subsystem" id="r_a05dcf7baf01016754b6d8c1c80b91531"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a05dcf7baf01016754b6d8c1c80b91531">OnEntityAdded</a> (<a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:a5f78ff2f7c62a689f476de11eae556a5 inherit pub_methods_class_game_entity_system_1_1_subsystem" id="r_a5f78ff2f7c62a689f476de11eae556a5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a5f78ff2f7c62a689f476de11eae556a5">OnEntityRemoved</a> (<a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:aead0e114b03d34cccede675cc97a969c inherit pub_methods_class_game_entity_system_1_1_subsystem" id="r_aead0e114b03d34cccede675cc97a969c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#aead0e114b03d34cccede675cc97a969c">Dispose</a> ()</td></tr>
+<tr class="memitem:a3f2f78761e90dc6dc5d2579bea59cf44 inherit pub_methods_class_game_entity_system_1_1_subsystem" id="r_a3f2f78761e90dc6dc5d2579bea59cf44"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a3f2f78761e90dc6dc5d2579bea59cf44">Initialize</a> (<a class="el" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a> project, <a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a6e2c23f6ba0ad0b274c9729acef68b2d" id="r_a6e2c23f6ba0ad0b274c9729acef68b2d"><td class="memItemLeft"><a class="el" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6e2c23f6ba0ad0b274c9729acef68b2d">m_subsystemGameInfo</a></td></tr>
+<tr class="memitem:a0be207384ab5abdf3a1b431feded68b3" id="r_a0be207384ab5abdf3a1b431feded68b3"><td class="memItemLeft"><a class="el" href="class_game_1_1_subsystem_seasons.html">SubsystemSeasons</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0be207384ab5abdf3a1b431feded68b3">m_subsystemSeasons</a></td></tr>
+<tr class="memitem:aec193f0e2163dc15ffee78b6ec989158" id="r_aec193f0e2163dc15ffee78b6ec989158"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aec193f0e2163dc15ffee78b6ec989158">TimeOfDayEnabled</a> = true</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a494081a1b198bfec5b7fc64dbca35fe9" id="r_a494081a1b198bfec5b7fc64dbca35fe9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a494081a1b198bfec5b7fc64dbca35fe9">DayDuration</a> = 1200f<code> [get, set]</code></td></tr>
+<tr class="memitem:a5a6718031fe507c8195734f290cae9ff" id="r_a5a6718031fe507c8195734f290cae9ff"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a5a6718031fe507c8195734f290cae9ff">DawnStart</a><code> [get, set]</code></td></tr>
+<tr class="memitem:aec644af4f5fd9cf1654007170abdefea" id="r_aec644af4f5fd9cf1654007170abdefea"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aec644af4f5fd9cf1654007170abdefea">DayStart</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a15b880346ee96ee631fd75f12313e5fe" id="r_a15b880346ee96ee631fd75f12313e5fe"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a15b880346ee96ee631fd75f12313e5fe">DuskStart</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ac776a33b827ecc3db636d0ad8e5bf538" id="r_ac776a33b827ecc3db636d0ad8e5bf538"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac776a33b827ecc3db636d0ad8e5bf538">NightStart</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a267c7504e2c93dce3045455a7b2b35a5" id="r_a267c7504e2c93dce3045455a7b2b35a5"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a267c7504e2c93dce3045455a7b2b35a5">DayInterval</a><code> [get]</code></td></tr>
+<tr class="memitem:a6d9e4d76166c650ff3d64dc4e7577b63" id="r_a6d9e4d76166c650ff3d64dc4e7577b63"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6d9e4d76166c650ff3d64dc4e7577b63">DuskInterval</a><code> [get]</code></td></tr>
+<tr class="memitem:a17aaaa019e3311686719b8faafc8a0c5" id="r_a17aaaa019e3311686719b8faafc8a0c5"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a17aaaa019e3311686719b8faafc8a0c5">NightInterval</a><code> [get]</code></td></tr>
+<tr class="memitem:afc02b7fabcca95ac0e9616461cc84c22" id="r_afc02b7fabcca95ac0e9616461cc84c22"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afc02b7fabcca95ac0e9616461cc84c22">DawnInterval</a><code> [get]</code></td></tr>
+<tr class="memitem:aa509b3d35efed47f14cb976c7235daa7" id="r_aa509b3d35efed47f14cb976c7235daa7"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aa509b3d35efed47f14cb976c7235daa7">Midday</a><code> [get]</code></td></tr>
+<tr class="memitem:a2b71fbd1236b3be22531e0631498e57f" id="r_a2b71fbd1236b3be22531e0631498e57f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a2b71fbd1236b3be22531e0631498e57f">Middusk</a><code> [get]</code></td></tr>
+<tr class="memitem:a37cfe8c7e5a971ff7435bfa74e871e4f" id="r_a37cfe8c7e5a971ff7435bfa74e871e4f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a37cfe8c7e5a971ff7435bfa74e871e4f">Midnight</a><code> [get]</code></td></tr>
+<tr class="memitem:abe48fd3c5839d406938a44c306e7c6e9" id="r_abe48fd3c5839d406938a44c306e7c6e9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#abe48fd3c5839d406938a44c306e7c6e9">Middawn</a><code> [get]</code></td></tr>
+<tr class="memitem:aad39ddaf3449c4b60e4bac3c38daf478" id="r_aad39ddaf3449c4b60e4bac3c38daf478"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aad39ddaf3449c4b60e4bac3c38daf478">TimeOfDay</a><code> [get]</code></td></tr>
+<tr class="memitem:adc503a2343f3ba2a9bff91ae3d64f320" id="r_adc503a2343f3ba2a9bff91ae3d64f320"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#adc503a2343f3ba2a9bff91ae3d64f320">Day</a><code> [get]</code></td></tr>
+<tr class="memitem:ac92e41e6ce8690c374548367d8d942ec" id="r_ac92e41e6ce8690c374548367d8d942ec"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ac92e41e6ce8690c374548367d8d942ec">TimeOfDayOffset</a><code> [get, set]</code></td></tr>
+<tr class="inherit_header properties_class_game_entity_system_1_1_subsystem"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_game_entity_system_1_1_subsystem')"><span class="dynarrow"><span class="arrowhead closed"></span></span>属性 继承自 <a class="el" href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></td></tr>
+<tr class="memitem:a646bbedf1e95de23007334891e1f77c0 inherit properties_class_game_entity_system_1_1_subsystem" id="r_a646bbedf1e95de23007334891e1f77c0"><td class="memItemLeft">Project&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a><code> [get]</code></td></tr>
+<tr class="memitem:a24b8e8b6ac383c2d7666a4c4bfa995a2 inherit properties_class_game_entity_system_1_1_subsystem" id="r_a24b8e8b6ac383c2d7666a4c4bfa995a2"><td class="memItemLeft">ValuesDictionary&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a><code> [get]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pac_methods_class_game_entity_system_1_1_subsystem"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pac_methods_class_game_entity_system_1_1_subsystem')"><span class="dynarrow"><span class="arrowhead closed"></span></span>包函数 继承自 <a class="el" href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></td></tr>
+<tr class="memitem:a7ebc38b9ab90697459f6ce6c98f82fbc inherit pac_methods_class_game_entity_system_1_1_subsystem" id="r_a7ebc38b9ab90697459f6ce6c98f82fbc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a7ebc38b9ab90697459f6ce6c98f82fbc">DisposeInternal</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00006">6</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a0352a9ddcc2ff64ec2a538786c22336d" name="a0352a9ddcc2ff64ec2a538786c22336d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0352a9ddcc2ff64ec2a538786c22336d">&#9670;&#160;</a></span>CalculateDay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Game.SubsystemTimeOfDay.CalculateDay </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>totalElapsedGameTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00066">66</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_time_of_day_a0352a9ddcc2ff64ec2a538786c22336d_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_time_of_day_a0352a9ddcc2ff64ec2a538786c22336d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_time_of_day_a0352a9ddcc2ff64ec2a538786c22336d_icgraph" id="aclass_game_1_1_subsystem_time_of_day_a0352a9ddcc2ff64ec2a538786c22336d_icgraph">
+<area shape="rect" title=" " alt="" coords="250,5,446,48"/>
+<area shape="rect" href="class_game_1_1_subsystem_time_of_day.html#a99bfa0a88346743ebe2c0acf3925930d" title=" " alt="" coords="5,5,202,48"/>
+<area shape="poly" title=" " alt="" coords="232,27,202,29,202,24,237,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a99bfa0a88346743ebe2c0acf3925930d" name="a99bfa0a88346743ebe2c0acf3925930d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99bfa0a88346743ebe2c0acf3925930d">&#9670;&#160;</a></span>CalculateTimeOfDay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.CalculateTimeOfDay </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>totalElapsedGameTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00068">68</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_time_of_day_a99bfa0a88346743ebe2c0acf3925930d_cgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_time_of_day_a99bfa0a88346743ebe2c0acf3925930d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_time_of_day_a99bfa0a88346743ebe2c0acf3925930d_cgraph" id="aclass_game_1_1_subsystem_time_of_day_a99bfa0a88346743ebe2c0acf3925930d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,202,48"/>
+<area shape="rect" href="class_game_1_1_subsystem_time_of_day.html#a0352a9ddcc2ff64ec2a538786c22336d" title=" " alt="" coords="250,5,446,48"/>
+<area shape="poly" title=" " alt="" coords="202,24,237,26,231,27,202,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f37184aa4d72618546609de5dbe71c4" name="a2f37184aa4d72618546609de5dbe71c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f37184aa4d72618546609de5dbe71c4">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Game.SubsystemTimeOfDay.Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a></td>          <td class="paramname"><span class="paramname"><em>valuesDictionary</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_game_entity_system_1_1_subsystem.html#a5d685b5beedc822eeea38c4e1a302e1e">GameEntitySystem.Subsystem</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00073">73</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_time_of_day_a2f37184aa4d72618546609de5dbe71c4_cgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_time_of_day_a2f37184aa4d72618546609de5dbe71c4_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_time_of_day_a2f37184aa4d72618546609de5dbe71c4_cgraph" id="aclass_game_1_1_subsystem_time_of_day_a2f37184aa4d72618546609de5dbe71c4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,230,108"/>
+<area shape="rect" href="class_game_1_1_subsystem_time_of_day.html#a8a35b8fcb14459015f34c1b4c02c88f6" title=" " alt="" coords="278,73,474,116"/>
+<area shape="poly" title=" " alt="" coords="230,92,264,94,259,95,231,97"/>
+<area shape="rect" href="class_game_1_1_interval_utils.html#aab49b747fbd06aa4b191068d90d89b81" title=" " alt="" coords="538,5,695,32"/>
+<area shape="poly" title=" " alt="" coords="436,70,521,41,544,37,549,36,523,47,438,75"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#af9d5d8cad8ec923e209d90d34e150808" title=" " alt="" coords="541,56,691,83"/>
+<area shape="poly" title=" " alt="" coords="474,82,528,78,523,79,475,87"/>
+<area shape="rect" href="class_game_1_1_interval_utils.html#a72cd57091a977aa44f6b9fe7a4e9ccb2" title=" " alt="" coords="524,107,708,133"/>
+<area shape="poly" title=" " alt="" coords="474,102,512,109,506,109,475,108"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#a18c84306fb3c493a3cd4230f216c71be" title=" " alt="" coords="522,157,710,184"/>
+<area shape="poly" title=" " alt="" coords="437,114,523,143,549,153,544,152,521,148,436,119"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1f93f36e5b5c1aaf670da9af5b0fd0b8" name="a1f93f36e5b5c1aaf670da9af5b0fd0b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f93f36e5b5c1aaf670da9af5b0fd0b8">&#9670;&#160;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Game.SubsystemTimeOfDay.Save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a></td>          <td class="paramname"><span class="paramname"><em>valuesDictionary</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_game_entity_system_1_1_subsystem.html#a665a2f92d209828dfda4cd6f5a6c93b9">GameEntitySystem.Subsystem</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8a35b8fcb14459015f34c1b4c02c88f6" name="a8a35b8fcb14459015f34c1b4c02c88f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a35b8fcb14459015f34c1b4c02c88f6">&#9670;&#160;</a></span>UpdateStarts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemTimeOfDay.UpdateStarts </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00084">84</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_time_of_day_a8a35b8fcb14459015f34c1b4c02c88f6_cgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_time_of_day_a8a35b8fcb14459015f34c1b4c02c88f6_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_time_of_day_a8a35b8fcb14459015f34c1b4c02c88f6_cgraph" id="aclass_game_1_1_subsystem_time_of_day_a8a35b8fcb14459015f34c1b4c02c88f6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,73,202,116"/>
+<area shape="rect" href="class_game_1_1_interval_utils.html#aab49b747fbd06aa4b191068d90d89b81" title=" " alt="" coords="265,5,422,32"/>
+<area shape="poly" title=" " alt="" coords="163,70,249,41,277,36,272,38,250,47,165,75"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#af9d5d8cad8ec923e209d90d34e150808" title=" " alt="" coords="269,56,419,83"/>
+<area shape="poly" title=" " alt="" coords="202,82,256,78,251,80,203,87"/>
+<area shape="rect" href="class_game_1_1_interval_utils.html#a72cd57091a977aa44f6b9fe7a4e9ccb2" title=" " alt="" coords="252,107,436,133"/>
+<area shape="poly" title=" " alt="" coords="202,102,239,108,234,109,202,108"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#a18c84306fb3c493a3cd4230f216c71be" title=" " alt="" coords="250,157,438,184"/>
+<area shape="poly" title=" " alt="" coords="165,114,250,143,277,153,271,152,249,148,164,119"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_time_of_day_a8a35b8fcb14459015f34c1b4c02c88f6_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_time_of_day_a8a35b8fcb14459015f34c1b4c02c88f6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_time_of_day_a8a35b8fcb14459015f34c1b4c02c88f6_icgraph" id="aclass_game_1_1_subsystem_time_of_day_a8a35b8fcb14459015f34c1b4c02c88f6_icgraph">
+<area shape="rect" title=" " alt="" coords="278,5,474,48"/>
+<area shape="rect" href="class_game_1_1_subsystem_time_of_day.html#a2f37184aa4d72618546609de5dbe71c4" title=" " alt="" coords="5,13,230,40"/>
+<area shape="poly" title=" " alt="" coords="259,27,230,29,230,24,264,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a6e2c23f6ba0ad0b274c9729acef68b2d" name="a6e2c23f6ba0ad0b274c9729acef68b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2c23f6ba0ad0b274c9729acef68b2d">&#9670;&#160;</a></span>m_subsystemGameInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a> Game.SubsystemTimeOfDay.m_subsystemGameInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0be207384ab5abdf3a1b431feded68b3" name="a0be207384ab5abdf3a1b431feded68b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be207384ab5abdf3a1b431feded68b3">&#9670;&#160;</a></span>m_subsystemSeasons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_1_1_subsystem_seasons.html">SubsystemSeasons</a> Game.SubsystemTimeOfDay.m_subsystemSeasons</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aec193f0e2163dc15ffee78b6ec989158" name="aec193f0e2163dc15ffee78b6ec989158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec193f0e2163dc15ffee78b6ec989158">&#9670;&#160;</a></span>TimeOfDayEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.SubsystemTimeOfDay.TimeOfDayEnabled = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="afc02b7fabcca95ac0e9616461cc84c22" name="afc02b7fabcca95ac0e9616461cc84c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc02b7fabcca95ac0e9616461cc84c22">&#9670;&#160;</a></span>DawnInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.DawnInterval</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5a6718031fe507c8195734f290cae9ff" name="a5a6718031fe507c8195734f290cae9ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6718031fe507c8195734f290cae9ff">&#9670;&#160;</a></span>DawnStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.DawnStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adc503a2343f3ba2a9bff91ae3d64f320" name="adc503a2343f3ba2a9bff91ae3d64f320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc503a2343f3ba2a9bff91ae3d64f320">&#9670;&#160;</a></span>Day</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Game.SubsystemTimeOfDay.Day</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00062">62</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a494081a1b198bfec5b7fc64dbca35fe9" name="a494081a1b198bfec5b7fc64dbca35fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494081a1b198bfec5b7fc64dbca35fe9">&#9670;&#160;</a></span>DayDuration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.DayDuration = 1200f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a267c7504e2c93dce3045455a7b2b35a5" name="a267c7504e2c93dce3045455a7b2b35a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267c7504e2c93dce3045455a7b2b35a5">&#9670;&#160;</a></span>DayInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.DayInterval</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aec644af4f5fd9cf1654007170abdefea" name="aec644af4f5fd9cf1654007170abdefea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec644af4f5fd9cf1654007170abdefea">&#9670;&#160;</a></span>DayStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.DayStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6d9e4d76166c650ff3d64dc4e7577b63" name="a6d9e4d76166c650ff3d64dc4e7577b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9e4d76166c650ff3d64dc4e7577b63">&#9670;&#160;</a></span>DuskInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.DuskInterval</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00025">25</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a15b880346ee96ee631fd75f12313e5fe" name="a15b880346ee96ee631fd75f12313e5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b880346ee96ee631fd75f12313e5fe">&#9670;&#160;</a></span>DuskStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.DuskStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abe48fd3c5839d406938a44c306e7c6e9" name="abe48fd3c5839d406938a44c306e7c6e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe48fd3c5839d406938a44c306e7c6e9">&#9670;&#160;</a></span>Middawn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.Middawn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa509b3d35efed47f14cb976c7235daa7" name="aa509b3d35efed47f14cb976c7235daa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa509b3d35efed47f14cb976c7235daa7">&#9670;&#160;</a></span>Midday</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.Midday</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2b71fbd1236b3be22531e0631498e57f" name="a2b71fbd1236b3be22531e0631498e57f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b71fbd1236b3be22531e0631498e57f">&#9670;&#160;</a></span>Middusk</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.Middusk</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a37cfe8c7e5a971ff7435bfa74e871e4f" name="a37cfe8c7e5a971ff7435bfa74e871e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37cfe8c7e5a971ff7435bfa74e871e4f">&#9670;&#160;</a></span>Midnight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.Midnight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a17aaaa019e3311686719b8faafc8a0c5" name="a17aaaa019e3311686719b8faafc8a0c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17aaaa019e3311686719b8faafc8a0c5">&#9670;&#160;</a></span>NightInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.NightInterval</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00027">27</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac776a33b827ecc3db636d0ad8e5bf538" name="ac776a33b827ecc3db636d0ad8e5bf538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac776a33b827ecc3db636d0ad8e5bf538">&#9670;&#160;</a></span>NightStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.NightStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aad39ddaf3449c4b60e4bac3c38daf478" name="aad39ddaf3449c4b60e4bac3c38daf478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad39ddaf3449c4b60e4bac3c38daf478">&#9670;&#160;</a></span>TimeOfDay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.SubsystemTimeOfDay.TimeOfDay</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac92e41e6ce8690c374548367d8d942ec" name="ac92e41e6ce8690c374548367d8d942ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92e41e6ce8690c374548367d8d942ec">&#9670;&#160;</a></span>TimeOfDayOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Game.SubsystemTimeOfDay.TimeOfDayOffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a> 第 <a class="el" href="_subsystem_time_of_day_8cs_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/<a class="el" href="_subsystem_time_of_day_8cs_source.html">SubsystemTimeOfDay.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game.html">Game</a></li><li class="navelem"><a href="class_game_1_1_subsystem_time_of_day.html">SubsystemTimeOfDay</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

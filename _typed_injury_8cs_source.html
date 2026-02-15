@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Game/TypedInjury.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_typed_injury_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TypedInjury.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_typed_injury_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="class_game_1_1_attack_injury.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_attack_injury.html">AttackInjury</a> : <a class="code hl_function" href="class_game_1_1_injury.html#adced2448cfbe213ae2084418a36c3e98">Injury</a> {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_attack_injury.html">AttackInjury</a>(<span class="keywordtype">float</span> amount, <a class="code hl_variable" href="class_game_1_1_injury.html#a2395d14e529ea7a50174c2ae8508a6aa">Attackment</a> attackment) : base(</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>            amount,</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>            attackment?.<a class="code hl_property" href="class_game_1_1_injury.html#afb0a2f62a00b591831c5b193c57a550b">Attacker</a>?.FindComponent&lt;ComponentCreature&gt;(),</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>            <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>            attackment.<a class="code hl_variable" href="class_game_1_1_attackment.html#a2edf2aa00863e1e7226c919c279526f5">CauseOfDeath</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        ) =&gt; <a class="code hl_variable" href="class_game_1_1_injury.html#a2395d14e529ea7a50174c2ae8508a6aa">Attackment</a> = attackment;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    }</div>
+</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_fire_injury.html">   11</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_fire_injury.html#a1b8dade199546d937a5f15dcb86d7028">FireInjury</a> : <a class="code hl_function" href="class_game_1_1_injury.html#adced2448cfbe213ae2084418a36c3e98">Injury</a> {</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_fire_injury.html#a1b8dade199546d937a5f15dcb86d7028">   12</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_fire_injury.html#a1b8dade199546d937a5f15dcb86d7028">FireInjury</a>(<span class="keywordtype">float</span> amount, <a class="code hl_class" href="class_game_1_1_component_creature.html">ComponentCreature</a> attacker) : base(</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            amount,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            attacker,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            false,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.Get(typeof(<a class="code hl_variable" href="class_game_1_1_injury.html#ad1cd112452654c290ebc1671e9df57b1">ComponentHealth</a>).Name, 5)</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        ) { }</div>
+</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_explosion_injury.html">   20</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_explosion_injury.html#af98084ee8913c3a47202a9b5ad90ea0a">ExplosionInjury</a> : <a class="code hl_function" href="class_game_1_1_injury.html#adced2448cfbe213ae2084418a36c3e98">Injury</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_game_1_1_explosion_injury.html#af98084ee8913c3a47202a9b5ad90ea0a">   21</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_explosion_injury.html#af98084ee8913c3a47202a9b5ad90ea0a">ExplosionInjury</a>(<span class="keywordtype">float</span> amount) : base(amount, null, false, <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.Get(typeof(<a class="code hl_variable" href="class_game_1_1_injury.html#ad1cd112452654c290ebc1671e9df57b1">ComponentHealth</a>).Name, 8)) { }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_block_injury.html">   24</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_block_injury.html#a64017ff9ef50eadf7a63dcd401d2aa03">BlockInjury</a> : <a class="code hl_function" href="class_game_1_1_injury.html#adced2448cfbe213ae2084418a36c3e98">Injury</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">   25</a></span>        <span class="keyword">public</span> <a class="code hl_variable" href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">CellFace</a>? <a class="code hl_variable" href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">CellFace</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_block_injury.html#a8c3fd4d13c8f02806911f9040873e87b">   27</a></span>        <span class="keyword">protected</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_block_injury.html#a8c3fd4d13c8f02806911f9040873e87b">m_blockValue</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_1_1_block_injury.html#ad690266a52b26b9bd0be5659b1a1e6af">   29</a></span>        <span class="keyword">public</span> <a class="code hl_variable" href="class_game_1_1_block_injury.html#ad690266a52b26b9bd0be5659b1a1e6af">SubsystemTerrain</a> <a class="code hl_variable" href="class_game_1_1_block_injury.html#ad690266a52b26b9bd0be5659b1a1e6af">SubsystemTerrain</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_game_1_1_block_injury.html#a5c9c7fe55a7e15a706635634a6f98abc">   31</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_game_1_1_block_injury.html#a5c9c7fe55a7e15a706635634a6f98abc">BlockValue</a> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">get</span> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_block_injury.html#a8c3fd4d13c8f02806911f9040873e87b">m_blockValue</a> &gt; 0) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_block_injury.html#a8c3fd4d13c8f02806911f9040873e87b">m_blockValue</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_block_injury.html#ad690266a52b26b9bd0be5659b1a1e6af">SubsystemTerrain</a> == <span class="keyword">null</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    || <a class="code hl_variable" href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">CellFace</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_block_injury.html#ad690266a52b26b9bd0be5659b1a1e6af">SubsystemTerrain</a>.Terrain.GetCellValue(<a class="code hl_variable" href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">CellFace</a>.Value.X, <a class="code hl_variable" href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">CellFace</a>.Value.Y, <a class="code hl_variable" href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">CellFace</a>.Value.Z);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">set</span> =&gt; <a class="code hl_variable" href="class_game_1_1_block_injury.html#a8c3fd4d13c8f02806911f9040873e87b">m_blockValue</a> = value;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_game_1_1_block_injury.html#a64017ff9ef50eadf7a63dcd401d2aa03">   45</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_block_injury.html#a64017ff9ef50eadf7a63dcd401d2aa03">BlockInjury</a>(<span class="keywordtype">float</span> amount, <a class="code hl_variable" href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">CellFace</a>? cellFace, <span class="keywordtype">string</span> cause, <a class="code hl_variable" href="class_game_1_1_block_injury.html#ad690266a52b26b9bd0be5659b1a1e6af">SubsystemTerrain</a> subsystemTerrain) : base(amount, null, false, cause) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_variable" href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">CellFace</a> = cellFace;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_variable" href="class_game_1_1_block_injury.html#ad690266a52b26b9bd0be5659b1a1e6af">SubsystemTerrain</a> = subsystemTerrain;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_game_1_1_vital_stats_injury.html">   51</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_vital_stats_injury.html#af05955941b00cda200faa7497849369c">VitalStatsInjury</a> : <a class="code hl_function" href="class_game_1_1_injury.html#adced2448cfbe213ae2084418a36c3e98">Injury</a> {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_game_1_1_vital_stats_injury.html#af05955941b00cda200faa7497849369c">   52</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_vital_stats_injury.html#af05955941b00cda200faa7497849369c">VitalStatsInjury</a>(<span class="keywordtype">float</span> amount, <span class="keywordtype">string</span> cause) : base(amount, null, false, cause) { }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_game_1_1_suicide_injury.html">   55</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_suicide_injury.html#a019e927309169da38627dcad4f56aa5e">SuicideInjury</a> : <a class="code hl_function" href="class_game_1_1_injury.html#adced2448cfbe213ae2084418a36c3e98">Injury</a> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_game_1_1_suicide_injury.html#a019e927309169da38627dcad4f56aa5e">   56</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_suicide_injury.html#a019e927309169da38627dcad4f56aa5e">SuicideInjury</a>(<span class="keywordtype">float</span> amount) : base(amount, null, true, <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.GetContentWidgets(typeof(<a class="code hl_class" href="class_game_1_1_vital_stats_widget.html">VitalStatsWidget</a>).Name, <span class="stringliteral">&quot;Choked&quot;</span>)) { }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="ttc" id="aclass_game_1_1_attack_injury_html"><div class="ttname"><a href="class_game_1_1_attack_injury.html">Game.AttackInjury</a></div><div class="ttdef"><b>定义</b> <a href="#l00002">TypedInjury.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_attackment_html_a2edf2aa00863e1e7226c919c279526f5"><div class="ttname"><a href="class_game_1_1_attackment.html#a2edf2aa00863e1e7226c919c279526f5">Game.Attackment.CauseOfDeath</a></div><div class="ttdeci">string CauseOfDeath</div><div class="ttdef"><b>定义</b> <a href="_attackment_8cs_source.html#l00058">Attackment.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_injury_html_a02a2babafd1cd33fa2440dd1733c5b8b"><div class="ttname"><a href="class_game_1_1_block_injury.html#a02a2babafd1cd33fa2440dd1733c5b8b">Game.BlockInjury.CellFace</a></div><div class="ttdeci">CellFace? CellFace</div><div class="ttdef"><b>定义</b> <a href="#l00025">TypedInjury.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_injury_html_a5c9c7fe55a7e15a706635634a6f98abc"><div class="ttname"><a href="class_game_1_1_block_injury.html#a5c9c7fe55a7e15a706635634a6f98abc">Game.BlockInjury.BlockValue</a></div><div class="ttdeci">int BlockValue</div><div class="ttdef"><b>定义</b> <a href="#l00031">TypedInjury.cs:31</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_injury_html_a64017ff9ef50eadf7a63dcd401d2aa03"><div class="ttname"><a href="class_game_1_1_block_injury.html#a64017ff9ef50eadf7a63dcd401d2aa03">Game.BlockInjury.BlockInjury</a></div><div class="ttdeci">BlockInjury(float amount, CellFace? cellFace, string cause, SubsystemTerrain subsystemTerrain)</div><div class="ttdef"><b>定义</b> <a href="#l00045">TypedInjury.cs:45</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_injury_html_a8c3fd4d13c8f02806911f9040873e87b"><div class="ttname"><a href="class_game_1_1_block_injury.html#a8c3fd4d13c8f02806911f9040873e87b">Game.BlockInjury.m_blockValue</a></div><div class="ttdeci">int m_blockValue</div><div class="ttdef"><b>定义</b> <a href="#l00027">TypedInjury.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_injury_html_ad690266a52b26b9bd0be5659b1a1e6af"><div class="ttname"><a href="class_game_1_1_block_injury.html#ad690266a52b26b9bd0be5659b1a1e6af">Game.BlockInjury.SubsystemTerrain</a></div><div class="ttdeci">SubsystemTerrain SubsystemTerrain</div><div class="ttdef"><b>定义</b> <a href="#l00029">TypedInjury.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_creature_html"><div class="ttname"><a href="class_game_1_1_component_creature.html">Game.ComponentCreature</a></div><div class="ttdef"><b>定义</b> <a href="_component_creature_8cs_source.html#l00007">ComponentCreature.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_explosion_injury_html_af98084ee8913c3a47202a9b5ad90ea0a"><div class="ttname"><a href="class_game_1_1_explosion_injury.html#af98084ee8913c3a47202a9b5ad90ea0a">Game.ExplosionInjury.ExplosionInjury</a></div><div class="ttdeci">ExplosionInjury(float amount)</div><div class="ttdef"><b>定义</b> <a href="#l00021">TypedInjury.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fire_injury_html_a1b8dade199546d937a5f15dcb86d7028"><div class="ttname"><a href="class_game_1_1_fire_injury.html#a1b8dade199546d937a5f15dcb86d7028">Game.FireInjury.FireInjury</a></div><div class="ttdeci">FireInjury(float amount, ComponentCreature attacker)</div><div class="ttdef"><b>定义</b> <a href="#l00012">TypedInjury.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_injury_html_a2395d14e529ea7a50174c2ae8508a6aa"><div class="ttname"><a href="class_game_1_1_injury.html#a2395d14e529ea7a50174c2ae8508a6aa">Game.Injury.Attackment</a></div><div class="ttdeci">Attackment Attackment</div><div class="ttdef"><b>定义</b> <a href="_injury_8cs_source.html#l00007">Injury.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_injury_html_ad1cd112452654c290ebc1671e9df57b1"><div class="ttname"><a href="class_game_1_1_injury.html#ad1cd112452654c290ebc1671e9df57b1">Game.Injury.ComponentHealth</a></div><div class="ttdeci">ComponentHealth ComponentHealth</div><div class="ttdef"><b>定义</b> <a href="_injury_8cs_source.html#l00005">Injury.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_injury_html_adced2448cfbe213ae2084418a36c3e98"><div class="ttname"><a href="class_game_1_1_injury.html#adced2448cfbe213ae2084418a36c3e98">Game.Injury.Injury</a></div><div class="ttdeci">Injury(float amount, ComponentCreature attacker, bool ignoreInvulnerability, string cause)</div><div class="ttdef"><b>定义</b> <a href="_injury_8cs_source.html#l00012">Injury.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_injury_html_afb0a2f62a00b591831c5b193c57a550b"><div class="ttname"><a href="class_game_1_1_injury.html#afb0a2f62a00b591831c5b193c57a550b">Game.Injury.Attacker</a></div><div class="ttdeci">virtual ComponentCreature Attacker</div><div class="ttdef"><b>定义</b> <a href="_injury_8cs_source.html#l00024">Injury.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_suicide_injury_html_a019e927309169da38627dcad4f56aa5e"><div class="ttname"><a href="class_game_1_1_suicide_injury.html#a019e927309169da38627dcad4f56aa5e">Game.SuicideInjury.SuicideInjury</a></div><div class="ttdeci">SuicideInjury(float amount)</div><div class="ttdef"><b>定义</b> <a href="#l00056">TypedInjury.cs:56</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vital_stats_injury_html_af05955941b00cda200faa7497849369c"><div class="ttname"><a href="class_game_1_1_vital_stats_injury.html#af05955941b00cda200faa7497849369c">Game.VitalStatsInjury.VitalStatsInjury</a></div><div class="ttdeci">VitalStatsInjury(float amount, string cause)</div><div class="ttdef"><b>定义</b> <a href="#l00052">TypedInjury.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vital_stats_widget_html"><div class="ttname"><a href="class_game_1_1_vital_stats_widget.html">Game.VitalStatsWidget</a></div><div class="ttdef"><b>定义</b> <a href="_vital_stats_widget_8cs_source.html#l00006">VitalStatsWidget.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_afb822b09482a1c506ad46299f82cac5.html">Game</a></li><li class="navelem"><a href="_typed_injury_8cs.html">TypedInjury.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine/Ray3.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_ray3_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Ray3.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_ray3_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> : IEquatable&lt;Ray3&gt; {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">    3</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">    5</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">    7</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a>(<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> position, <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> direction) {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a> = position;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a> = direction;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        }</div>
+</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a5105a1ed56b5608f3a8f6048c7889c15">   12</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a5105a1ed56b5608f3a8f6048c7889c15">Equals</a>(<span class="keywordtype">object</span> obj) =&gt; obj is <a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> &amp;&amp; <a class="code hl_function" href="struct_engine_1_1_ray3.html#a5105a1ed56b5608f3a8f6048c7889c15">Equals</a>((<a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a>)obj);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a49d78cd56499a2f1a9c16ad0c6d5de94">   14</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a49d78cd56499a2f1a9c16ad0c6d5de94">GetHashCode</a>() =&gt; <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.GetHashCode() + <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.GetHashCode();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a9a759039d0db6f2df29f46fc981b7f33">   16</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a9a759039d0db6f2df29f46fc981b7f33">ToString</a>() =&gt; $<span class="stringliteral">&quot;{Position.ToString()},{Direction.ToString()}&quot;</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#afdbaec1910341d448ee0bfbafd940f0b">   18</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_ray3.html#afdbaec1910341d448ee0bfbafd940f0b">Equals</a>(<a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> other) =&gt; <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a> == other.Position &amp;&amp; <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a> == other.<a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#afdf67531c6e362a1108aa76f415ff842">   20</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span>? <a class="code hl_function" href="struct_engine_1_1_ray3.html#afdf67531c6e362a1108aa76f415ff842">Intersection</a>(<a class="code hl_struct" href="struct_engine_1_1_bounding_box.html">BoundingBox</a> box) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.X &gt;= box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Min</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                &amp;&amp; <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.X &lt;= box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Max</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                &amp;&amp; <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Y &gt;= box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Min</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                &amp;&amp; <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Y &lt;= box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Max</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                &amp;&amp; <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Z &gt;= box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Min</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                &amp;&amp; <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Z &lt;= box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Max</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <span class="keywordflow">return</span> 0f;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> vector = <span class="keyword">new</span>(-1f);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.X != 0f) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.X &lt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Min</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a>) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    vector.X = (box.Min.X - <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.X) / <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.X;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.X &gt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Max</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a>) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    vector.X = (box.Max.X - <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.X) / <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.X;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Y != 0f) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Y &lt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Min</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a>) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    vector.Y = (box.Min.Y - <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Y) / <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Y;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Y &gt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Max</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a>) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    vector.Y = (box.Max.Y - <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Y) / <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Y;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Z != 0f) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Z &lt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Min</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    vector.Z = (box.Min.Z - <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Z) / <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Z;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Z &gt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Max</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    vector.Z = (box.Max.Z - <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>.Z) / <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Z;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">if</span> (vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a> &gt; vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                &amp;&amp; vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a> &gt; vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <span class="keywordflow">if</span> (vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a> &lt; 0f) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keywordtype">float</span> num = Position.Z + vector.X * <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Z;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">if</span> (num &lt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Min</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    || num &gt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Max</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                num = Position.Y + vector.X * <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Y;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordflow">return</span> num &lt; box.Min.Y || num &gt; box.Max.Y ? null : vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">if</span> (vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a> &gt; vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                &amp;&amp; vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a> &gt; vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">if</span> (vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a> &lt; 0f) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordtype">float</span> num2 = Position.Z + vector.Y * <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Z;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">if</span> (num2 &lt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Min</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    || num2 &gt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Max</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                num2 = Position.X + vector.Y * <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.X;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <span class="keywordflow">return</span> num2 &lt; box.Min.X || num2 &gt; box.Max.X ? null : vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">if</span> (vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a> &lt; 0f) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordtype">float</span> num3 = Position.X + vector.Z * <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.X;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">if</span> (num3 &lt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Min</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                || num3 &gt; box.<a class="code hl_variable" href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Max</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a>) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            num3 = Position.Y + vector.Z * <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>.Y;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">return</span> num3 &lt; box.Min.Y || num3 &gt; box.Max.Y ? null : vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a44a81d02a97d0a77c7b22c4dcbaa87f1">   92</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span>? <a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a81d02a97d0a77c7b22c4dcbaa87f1">Intersection</a>(<a class="code hl_struct" href="struct_engine_1_1_bounding_sphere.html">BoundingSphere</a> sphere) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> v = sphere.Center - <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordtype">float</span> num = v.<a class="code hl_function" href="struct_engine_1_1_vector3.html#aae0e9c706c5e25a47c34ff7b76609916">LengthSquared</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordtype">float</span> num2 = sphere.Radius * sphere.<a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a2d8e25565a4b7a076274bb93a231bbb8">Radius</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">if</span> (num &lt; num2) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="keywordflow">return</span> 0f;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordtype">float</span> num3 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(<a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>, v);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">if</span> (num3 &lt; 0f) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordtype">float</span> num4 = num2 + num3 * num3 - num;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">return</span> !(num4 &lt; 0f) ? num3 - MathF.Sqrt(num4) : <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#ab5cb663f5a42acd2a396bbc998a7a7e4">  107</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span>? <a class="code hl_function" href="struct_engine_1_1_ray3.html#ab5cb663f5a42acd2a396bbc998a7a7e4">Intersection</a>(<a class="code hl_struct" href="struct_engine_1_1_plane.html">Plane</a> plane) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordtype">float</span> num = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(<a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a>, plane.<a class="code hl_variable" href="struct_engine_1_1_plane.html#ac1a6d914691a0e4578d28b2a4ed9c968">Normal</a>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">return</span> num == 0f ? null : (0f - (<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>, plane.<a class="code hl_variable" href="struct_engine_1_1_plane.html#ac1a6d914691a0e4578d28b2a4ed9c968">Normal</a>) + plane.<a class="code hl_variable" href="struct_engine_1_1_plane.html#a578be32f1f9fa7b56c9214cc91e57dc9">D</a>)) / num;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a9192f8e310ea4eded8f72ac4e3978240">  112</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a9192f8e310ea4eded8f72ac4e3978240">Sample</a>(<span class="keywordtype">float</span> distance) =&gt; <a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a> + <a class="code hl_variable" href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Direction</a> * distance;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a36ed1741659b2b72db1f907cd7015141">  114</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a36ed1741659b2b72db1f907cd7015141">Transform</a>(<a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> r, <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> m) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <a class="code hl_function" href="struct_engine_1_1_ray3.html#a36ed1741659b2b72db1f907cd7015141">Transform</a>(ref r, ref m, out <a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> result);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a9f248a303efef81c25e181a9c2fe6517">  119</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a9f248a303efef81c25e181a9c2fe6517">Transform</a>(ref <a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> r, ref <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> m, out <a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> result) {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#a64bd2f6b440876d8c485102114be5ae4">Transform</a>(ref r.Position, ref m, out result.Position);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#a60643635fc7ebef63798bca8f7886c6b">TransformNormal</a>(ref r.Direction, ref m, out result.Direction);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a2050a5fdf03437cec6bdccf6b602d633">  124</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a2050a5fdf03437cec6bdccf6b602d633">operator ==</a>(<a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> a, <a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> b) =&gt; a.<a class="code hl_function" href="struct_engine_1_1_ray3.html#a5105a1ed56b5608f3a8f6048c7889c15">Equals</a>(b);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="struct_engine_1_1_ray3.html#a3197ab418bb6488f460adeca8a26233d">  126</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_ray3.html#a3197ab418bb6488f460adeca8a26233d">operator !=</a>(<a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> a, <a class="code hl_function" href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Ray3</a> b) =&gt; !a.<a class="code hl_function" href="struct_engine_1_1_ray3.html#a5105a1ed56b5608f3a8f6048c7889c15">Equals</a>(b);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_box_html"><div class="ttname"><a href="struct_engine_1_1_bounding_box.html">Engine.BoundingBox</a></div><div class="ttdef"><b>定义</b> <a href="_bounding_box_8cs_source.html#l00002">BoundingBox.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_box_html_ad30f5b3065107024c601d3a7bd746a15"><div class="ttname"><a href="struct_engine_1_1_bounding_box.html#ad30f5b3065107024c601d3a7bd746a15">Engine.BoundingBox.Max</a></div><div class="ttdeci">Vector3 Max</div><div class="ttdef"><b>定义</b> <a href="_bounding_box_8cs_source.html#l00005">BoundingBox.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_box_html_ae2007f17248f86003fc9ee60f704a1c9"><div class="ttname"><a href="struct_engine_1_1_bounding_box.html#ae2007f17248f86003fc9ee60f704a1c9">Engine.BoundingBox.Min</a></div><div class="ttdeci">Vector3 Min</div><div class="ttdef"><b>定义</b> <a href="_bounding_box_8cs_source.html#l00003">BoundingBox.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html">Engine.BoundingSphere</a></div><div class="ttdef"><b>定义</b> <a href="_bounding_sphere_8cs_source.html#l00002">BoundingSphere.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_a2d8e25565a4b7a076274bb93a231bbb8"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#a2d8e25565a4b7a076274bb93a231bbb8">Engine.BoundingSphere.Radius</a></div><div class="ttdeci">float Radius</div><div class="ttdef"><b>定义</b> <a href="_bounding_sphere_8cs_source.html#l00005">BoundingSphere.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_plane_html"><div class="ttname"><a href="struct_engine_1_1_plane.html">Engine.Plane</a></div><div class="ttdef"><b>定义</b> <a href="_plane_8cs_source.html#l00002">Plane.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_plane_html_a578be32f1f9fa7b56c9214cc91e57dc9"><div class="ttname"><a href="struct_engine_1_1_plane.html#a578be32f1f9fa7b56c9214cc91e57dc9">Engine.Plane.D</a></div><div class="ttdeci">float D</div><div class="ttdef"><b>定义</b> <a href="_plane_8cs_source.html#l00005">Plane.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_plane_html_ac1a6d914691a0e4578d28b2a4ed9c968"><div class="ttname"><a href="struct_engine_1_1_plane.html#ac1a6d914691a0e4578d28b2a4ed9c968">Engine.Plane.Normal</a></div><div class="ttdeci">Vector3 Normal</div><div class="ttdef"><b>定义</b> <a href="_plane_8cs_source.html#l00003">Plane.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a2050a5fdf03437cec6bdccf6b602d633"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a2050a5fdf03437cec6bdccf6b602d633">Engine.Ray3.operator==</a></div><div class="ttdeci">static bool operator==(Ray3 a, Ray3 b)</div><div class="ttdef"><b>定义</b> <a href="#l00124">Ray3.cs:124</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a3197ab418bb6488f460adeca8a26233d"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a3197ab418bb6488f460adeca8a26233d">Engine.Ray3.operator!=</a></div><div class="ttdeci">static bool operator!=(Ray3 a, Ray3 b)</div><div class="ttdef"><b>定义</b> <a href="#l00126">Ray3.cs:126</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a36ed1741659b2b72db1f907cd7015141"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a36ed1741659b2b72db1f907cd7015141">Engine.Ray3.Transform</a></div><div class="ttdeci">static Ray3 Transform(Ray3 r, Matrix m)</div><div class="ttdef"><b>定义</b> <a href="#l00114">Ray3.cs:114</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a44a76f458cee920f2aea12c2b7129e1c"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a44a76f458cee920f2aea12c2b7129e1c">Engine.Ray3.Ray3</a></div><div class="ttdeci">Ray3(Vector3 position, Vector3 direction)</div><div class="ttdef"><b>定义</b> <a href="#l00007">Ray3.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a44a81d02a97d0a77c7b22c4dcbaa87f1"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a44a81d02a97d0a77c7b22c4dcbaa87f1">Engine.Ray3.Intersection</a></div><div class="ttdeci">float? Intersection(BoundingSphere sphere)</div><div class="ttdef"><b>定义</b> <a href="#l00092">Ray3.cs:92</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a49d78cd56499a2f1a9c16ad0c6d5de94"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a49d78cd56499a2f1a9c16ad0c6d5de94">Engine.Ray3.GetHashCode</a></div><div class="ttdeci">override int GetHashCode()</div><div class="ttdef"><b>定义</b> <a href="#l00014">Ray3.cs:14</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a5105a1ed56b5608f3a8f6048c7889c15"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a5105a1ed56b5608f3a8f6048c7889c15">Engine.Ray3.Equals</a></div><div class="ttdeci">override bool Equals(object obj)</div><div class="ttdef"><b>定义</b> <a href="#l00012">Ray3.cs:12</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a9192f8e310ea4eded8f72ac4e3978240"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a9192f8e310ea4eded8f72ac4e3978240">Engine.Ray3.Sample</a></div><div class="ttdeci">Vector3 Sample(float distance)</div><div class="ttdef"><b>定义</b> <a href="#l00112">Ray3.cs:112</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a9a759039d0db6f2df29f46fc981b7f33"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a9a759039d0db6f2df29f46fc981b7f33">Engine.Ray3.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>定义</b> <a href="#l00016">Ray3.cs:16</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_a9f248a303efef81c25e181a9c2fe6517"><div class="ttname"><a href="struct_engine_1_1_ray3.html#a9f248a303efef81c25e181a9c2fe6517">Engine.Ray3.Transform</a></div><div class="ttdeci">static void Transform(ref Ray3 r, ref Matrix m, out Ray3 result)</div><div class="ttdef"><b>定义</b> <a href="#l00119">Ray3.cs:119</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_ab5cb663f5a42acd2a396bbc998a7a7e4"><div class="ttname"><a href="struct_engine_1_1_ray3.html#ab5cb663f5a42acd2a396bbc998a7a7e4">Engine.Ray3.Intersection</a></div><div class="ttdeci">float? Intersection(Plane plane)</div><div class="ttdef"><b>定义</b> <a href="#l00107">Ray3.cs:107</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_ac46a0dc2481a6e1f4c513fcddbb579ff"><div class="ttname"><a href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Engine.Ray3.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="#l00003">Ray3.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_adf61b57a85be2f90a7b61f47b3b4f624"><div class="ttname"><a href="struct_engine_1_1_ray3.html#adf61b57a85be2f90a7b61f47b3b4f624">Engine.Ray3.Direction</a></div><div class="ttdeci">Vector3 Direction</div><div class="ttdef"><b>定义</b> <a href="#l00005">Ray3.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_afdbaec1910341d448ee0bfbafd940f0b"><div class="ttname"><a href="struct_engine_1_1_ray3.html#afdbaec1910341d448ee0bfbafd940f0b">Engine.Ray3.Equals</a></div><div class="ttdeci">bool Equals(Ray3 other)</div><div class="ttdef"><b>定义</b> <a href="#l00018">Ray3.cs:18</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_afdf67531c6e362a1108aa76f415ff842"><div class="ttname"><a href="struct_engine_1_1_ray3.html#afdf67531c6e362a1108aa76f415ff842">Engine.Ray3.Intersection</a></div><div class="ttdeci">float? Intersection(BoundingBox box)</div><div class="ttdef"><b>定义</b> <a href="#l00020">Ray3.cs:20</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a314e02a8d3f359d653a67338b4e8f68f"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Engine.Vector3.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00005">Vector3.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a60643635fc7ebef63798bca8f7886c6b"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a60643635fc7ebef63798bca8f7886c6b">Engine.Vector3.TransformNormal</a></div><div class="ttdeci">static Vector3 TransformNormal(Vector3 v, Matrix m)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00234">Vector3.cs:234</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a64bd2f6b440876d8c485102114be5ae4"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a64bd2f6b440876d8c485102114be5ae4">Engine.Vector3.Transform</a></div><div class="ttdeci">static Vector3 Transform(Vector3 v, Matrix m)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00164">Vector3.cs:164</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_aae0e9c706c5e25a47c34ff7b76609916"><div class="ttname"><a href="struct_engine_1_1_vector3.html#aae0e9c706c5e25a47c34ff7b76609916">Engine.Vector3.LengthSquared</a></div><div class="ttdeci">float LengthSquared()</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00118">Vector3.cs:118</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ac42c72f356e9dd9d691b1aa8a07a64a9"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Engine.Vector3.Z</a></div><div class="ttdeci">float Z</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00007">Vector3.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ae5605507fc62897e712e939bacbf1738"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">Engine.Vector3.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00003">Vector3.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_afb241ba10f85725de8e143a303ae4275"><div class="ttname"><a href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Engine.Vector3.Dot</a></div><div class="ttdeci">static float Dot(Vector3 v1, Vector3 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00112">Vector3.cs:112</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_449d29b21d204a5ee92421b755e01672.html">Engine</a></li><li class="navelem"><a href="_ray3_8cs.html">Ray3.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

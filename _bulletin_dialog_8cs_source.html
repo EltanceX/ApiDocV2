@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Dialog/BulletinDialog.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_bulletin_dialog_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BulletinDialog.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_bulletin_dialog_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_bulletin_dialog.html#aaa4907273066ba5eefa1e32dde0f8099">BulletinDialog</a> : <a class="code hl_function" href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Dialog</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#a3ab8f51d945d318eb378ff212127bb75">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a3ab8f51d945d318eb378ff212127bb75">m_titleLabel</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#aa64f0754569fbafdc48701c21982aaa3">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#aa64f0754569fbafdc48701c21982aaa3">m_contentLabel</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#ac0e7d79c5cfc8fbad402d532c7cdc088">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#ac0e7d79c5cfc8fbad402d532c7cdc088">m_timeLabel</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#a028e786702b0942cbb7d125c99a8b7e5">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a028e786702b0942cbb7d125c99a8b7e5">m_buttonLabel</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#a2372868ad2d0aee150d1328b38fc3db8">   14</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a2372868ad2d0aee150d1328b38fc3db8">m_okButton</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#a60c8bdd5b138151de0fb222698889bea">   16</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a60c8bdd5b138151de0fb222698889bea">m_editButton</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#a921075282a2c35b6c59297da37d33660">   18</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a921075282a2c35b6c59297da37d33660">m_updateButton</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#ac9eab0b85add9587e8a35150d8400e70">   20</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_scroll_panel_widget.html">ScrollPanelWidget</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#ac9eab0b85add9587e8a35150d8400e70">m_scrollPanel</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#adec8474c6f82336213d5af2879d4eff8">   22</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#adec8474c6f82336213d5af2879d4eff8">m_areaLength</a> = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">   24</a></span>        <span class="keyword">public</span> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Action</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Action</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#a405db10b6f50535a38efd3e29dced71e">   26</a></span>        <span class="keyword">public</span> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Action&lt;LabelWidget, LabelWidget&gt;</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a405db10b6f50535a38efd3e29dced71e">Action2</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#a351326d9c3cf768e1675fc45da7ca142">   28</a></span>        <span class="keyword">public</span> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Action&lt;LabelWidget, LabelWidget&gt;</a> <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a351326d9c3cf768e1675fc45da7ca142">Action3</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#aaa4907273066ba5eefa1e32dde0f8099">   30</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_bulletin_dialog.html#aaa4907273066ba5eefa1e32dde0f8099">BulletinDialog</a>(<span class="keywordtype">string</span> title,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordtype">string</span> content,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordtype">string</span> time,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Action</a> action,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Action&lt;LabelWidget, LabelWidget&gt;</a> action2,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Action&lt;LabelWidget, LabelWidget&gt;</a> action3) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Dialogs/BulletinDialog&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a2372868ad2d0aee150d1328b38fc3db8">m_okButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;OkButton&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a60c8bdd5b138151de0fb222698889bea">m_editButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;EditButton&quot;</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a921075282a2c35b6c59297da37d33660">m_updateButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;UpdateButton&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a3ab8f51d945d318eb378ff212127bb75">m_titleLabel</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;Title&quot;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#aa64f0754569fbafdc48701c21982aaa3">m_contentLabel</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;Content&quot;</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#ac0e7d79c5cfc8fbad402d532c7cdc088">m_timeLabel</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;Time&quot;</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a028e786702b0942cbb7d125c99a8b7e5">m_buttonLabel</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;ButtonLabel&quot;</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#ac9eab0b85add9587e8a35150d8400e70">m_scrollPanel</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_scroll_panel_widget.html">ScrollPanelWidget</a>&gt;(<span class="stringliteral">&quot;ScrollPanel&quot;</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            m_buttonLabel.Text = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_variable" href="class_game_1_1_language_control.html#a0c201430f81dfbb70b53f8446feb6d6b">Ok</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            m_okButton.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            m_titleLabel.Text = title;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            m_contentLabel.Text = content;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            m_timeLabel.Text = time;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Action</a> = action;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a405db10b6f50535a38efd3e29dced71e">Action2</a> = action2;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a351326d9c3cf768e1675fc45da7ca142">Action3</a> = action3;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            m_editButton.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            m_updateButton.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_game_1_1_bulletin_dialog.html#a6f86c77f628b76a77b1b1b4bd6d3fc20">   58</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_bulletin_dialog.html#a6f86c77f628b76a77b1b1b4bd6d3fc20">Update</a>() {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordtype">float</span> length = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(<a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#ac9eab0b85add9587e8a35150d8400e70">m_scrollPanel</a>.m_scrollAreaLength - <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#ac9eab0b85add9587e8a35150d8400e70">m_scrollPanel</a>.ActualSize.Y, 0f);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#ac9eab0b85add9587e8a35150d8400e70">m_scrollPanel</a>.ScrollPosition &gt;= length * 0.8f</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                &amp;&amp; <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#ac9eab0b85add9587e8a35150d8400e70">m_scrollPanel</a>.m_scrollAreaLength != 0) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                m_okButton.IsVisible = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a2372868ad2d0aee150d1328b38fc3db8">m_okButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Action</a>?.Invoke();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a60c8bdd5b138151de0fb222698889bea">m_editButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a405db10b6f50535a38efd3e29dced71e">Action2</a>?.Invoke(<a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a3ab8f51d945d318eb378ff212127bb75">m_titleLabel</a>, <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#aa64f0754569fbafdc48701c21982aaa3">m_contentLabel</a>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a921075282a2c35b6c59297da37d33660">m_updateButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a351326d9c3cf768e1675fc45da7ca142">Action3</a>?.Invoke(<a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#a3ab8f51d945d318eb378ff212127bb75">m_titleLabel</a>, <a class="code hl_variable" href="class_game_1_1_bulletin_dialog.html#aa64f0754569fbafdc48701c21982aaa3">m_contentLabel</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_a028e786702b0942cbb7d125c99a8b7e5"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#a028e786702b0942cbb7d125c99a8b7e5">Game.BulletinDialog.m_buttonLabel</a></div><div class="ttdeci">LabelWidget m_buttonLabel</div><div class="ttdef"><b>定义</b> <a href="#l00012">BulletinDialog.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_a2372868ad2d0aee150d1328b38fc3db8"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#a2372868ad2d0aee150d1328b38fc3db8">Game.BulletinDialog.m_okButton</a></div><div class="ttdeci">ButtonWidget m_okButton</div><div class="ttdef"><b>定义</b> <a href="#l00014">BulletinDialog.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_a351326d9c3cf768e1675fc45da7ca142"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#a351326d9c3cf768e1675fc45da7ca142">Game.BulletinDialog.Action3</a></div><div class="ttdeci">Action&lt; LabelWidget, LabelWidget &gt; Action3</div><div class="ttdef"><b>定义</b> <a href="#l00028">BulletinDialog.cs:28</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_a3ab8f51d945d318eb378ff212127bb75"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#a3ab8f51d945d318eb378ff212127bb75">Game.BulletinDialog.m_titleLabel</a></div><div class="ttdeci">LabelWidget m_titleLabel</div><div class="ttdef"><b>定义</b> <a href="#l00006">BulletinDialog.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_a405db10b6f50535a38efd3e29dced71e"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#a405db10b6f50535a38efd3e29dced71e">Game.BulletinDialog.Action2</a></div><div class="ttdeci">Action&lt; LabelWidget, LabelWidget &gt; Action2</div><div class="ttdef"><b>定义</b> <a href="#l00026">BulletinDialog.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_a60c8bdd5b138151de0fb222698889bea"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#a60c8bdd5b138151de0fb222698889bea">Game.BulletinDialog.m_editButton</a></div><div class="ttdeci">ButtonWidget m_editButton</div><div class="ttdef"><b>定义</b> <a href="#l00016">BulletinDialog.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_a6f86c77f628b76a77b1b1b4bd6d3fc20"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#a6f86c77f628b76a77b1b1b4bd6d3fc20">Game.BulletinDialog.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00058">BulletinDialog.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_a921075282a2c35b6c59297da37d33660"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#a921075282a2c35b6c59297da37d33660">Game.BulletinDialog.m_updateButton</a></div><div class="ttdeci">ButtonWidget m_updateButton</div><div class="ttdef"><b>定义</b> <a href="#l00018">BulletinDialog.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_a9922145340a63e30643b158856f38c66"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#a9922145340a63e30643b158856f38c66">Game.BulletinDialog.Action</a></div><div class="ttdeci">Action Action</div><div class="ttdef"><b>定义</b> <a href="#l00024">BulletinDialog.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_aa64f0754569fbafdc48701c21982aaa3"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#aa64f0754569fbafdc48701c21982aaa3">Game.BulletinDialog.m_contentLabel</a></div><div class="ttdeci">LabelWidget m_contentLabel</div><div class="ttdef"><b>定义</b> <a href="#l00008">BulletinDialog.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_aaa4907273066ba5eefa1e32dde0f8099"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#aaa4907273066ba5eefa1e32dde0f8099">Game.BulletinDialog.BulletinDialog</a></div><div class="ttdeci">BulletinDialog(string title, string content, string time, Action action, Action&lt; LabelWidget, LabelWidget &gt; action2, Action&lt; LabelWidget, LabelWidget &gt; action3)</div><div class="ttdef"><b>定义</b> <a href="#l00030">BulletinDialog.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_ac0e7d79c5cfc8fbad402d532c7cdc088"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#ac0e7d79c5cfc8fbad402d532c7cdc088">Game.BulletinDialog.m_timeLabel</a></div><div class="ttdeci">LabelWidget m_timeLabel</div><div class="ttdef"><b>定义</b> <a href="#l00010">BulletinDialog.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_ac9eab0b85add9587e8a35150d8400e70"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#ac9eab0b85add9587e8a35150d8400e70">Game.BulletinDialog.m_scrollPanel</a></div><div class="ttdeci">ScrollPanelWidget m_scrollPanel</div><div class="ttdef"><b>定义</b> <a href="#l00020">BulletinDialog.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bulletin_dialog_html_adec8474c6f82336213d5af2879d4eff8"><div class="ttname"><a href="class_game_1_1_bulletin_dialog.html#adec8474c6f82336213d5af2879d4eff8">Game.BulletinDialog.m_areaLength</a></div><div class="ttdeci">float m_areaLength</div><div class="ttdef"><b>定义</b> <a href="#l00022">BulletinDialog.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialog_html_a6b78fd0c524e930298bbfe02c896866f"><div class="ttname"><a href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Game.Dialog.Dialog</a></div><div class="ttdeci">Dialog()</div><div class="ttdef"><b>定义</b> <a href="_dialog_8cs_source.html#l00005">Dialog.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html">Game.DialogsManager</a></div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00004">DialogsManager.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_a1924cf0e777145d7e36ec311d686c7e4"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">Game.DialogsManager.HideDialog</a></div><div class="ttdeci">static void HideDialog(Dialog dialog)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00058">DialogsManager.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_a0c201430f81dfbb70b53f8446feb6d6b"><div class="ttname"><a href="class_game_1_1_language_control.html#a0c201430f81dfbb70b53f8446feb6d6b">Game.LanguageControl.Ok</a></div><div class="ttdeci">static string Ok</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00011">LanguageControl.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_scroll_panel_widget_html"><div class="ttname"><a href="class_game_1_1_scroll_panel_widget.html">Game.ScrollPanelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_scroll_panel_widget_8cs_source.html#l00005">ScrollPanelWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_b6205966024a0faf73eb78e73558e78e.html">Dialog</a></li><li class="navelem"><a href="_bulletin_dialog_8cs.html">BulletinDialog.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

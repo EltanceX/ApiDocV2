@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/ClickTextWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_click_text_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ClickTextWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_click_text_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_click_text_widget.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_click_text_widget.html#a6966d2d6f08da3ae75ea2ffa14fe8804">ClickTextWidget</a> : <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_click_text_widget.html#ae1d7f437d0f08bfa40bafab92354f453">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ae1d7f437d0f08bfa40bafab92354f453">labelWidget</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_click_text_widget.html#ac3456aaea7b26574804986962068d48b">    7</a></span>        <span class="keyword">public</span> Action <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ac3456aaea7b26574804986962068d48b">click</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_click_text_widget.html#ad505b872a100512300b46c55813b06cb">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_rectangle_widget.html">RectangleWidget</a> <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ad505b872a100512300b46c55813b06cb">rectangleWidget</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_click_text_widget.html#a32887749b41b11f6d406d02d92b26390">    9</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#a32887749b41b11f6d406d02d92b26390">pressColor</a> = <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#a43523db12ce9bc1ce234cc3dfa457fb2">Red</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_click_text_widget.html#ab983e05a8eb5ba4c34d0efe1e4f39b7d">   10</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ab983e05a8eb5ba4c34d0efe1e4f39b7d">BorderColor</a> = <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#a2e2d61cece5c7e0224b2067a8d9f1983">Transparent</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="comment">// ReSharper disable UnusedParameter.Local</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_click_text_widget.html#a6966d2d6f08da3ae75ea2ffa14fe8804">   13</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_click_text_widget.html#a6966d2d6f08da3ae75ea2ffa14fe8804">ClickTextWidget</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> vector2, <span class="keywordtype">string</span> text, Action <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ac3456aaea7b26574804986962068d48b">click</a>, <span class="keywordtype">bool</span> box = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <span class="comment">// ReSharper restore UnusedParameter.Local</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_property" href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Size</a> = vector2;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_property" href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">HorizontalAlignment</a> = <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Center;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> = <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Center;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ae1d7f437d0f08bfa40bafab92354f453">labelWidget</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                Text = text, FontScale = 0.8f, <a class="code hl_property" href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">HorizontalAlignment</a> = <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Center, <a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> = <a class="code hl_enumvalue" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd">WidgetAlignment.Center</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            };</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Add(<a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ae1d7f437d0f08bfa40bafab92354f453">labelWidget</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_property" href="class_game_1_1_widget.html#a451de454a7ceefb927e9ae68180cb0f7">IsDrawEnabled</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_property" href="class_game_1_1_widget.html#ab7453bbe06dbc7188b1d2a6d95e7663e">IsDrawRequired</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_property" href="class_game_1_1_widget.html#a0fff521e96f2b5dc1926c39b7b9ef052">IsUpdateEnabled</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            this.click = <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ac3456aaea7b26574804986962068d48b">click</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_1_1_click_text_widget.html#a5b812a32de00a057b04b6a07c554d8c3">   29</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_click_text_widget.html#a5b812a32de00a057b04b6a07c554d8c3">Draw</a>(<a class="code hl_class" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a> dc) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> m = <a class="code hl_property" href="class_game_1_1_widget.html#adbf55b13c5ef4ecd8cc21c4fc38e8e49">GlobalTransform</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> v = <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> v2 = <span class="keyword">new</span>(<a class="code hl_property" href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">ActualSize</a>.X, 0f);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> v3 = <a class="code hl_property" href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">ActualSize</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> v4 = <span class="keyword">new</span>(0f, <a class="code hl_property" href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">ActualSize</a>.Y);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#aa577a09d1d7601d1642d743596752710">Transform</a>(ref v, ref m, out <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> result);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#aa577a09d1d7601d1642d743596752710">Transform</a>(ref v2, ref m, out <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> result2);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#aa577a09d1d7601d1642d743596752710">Transform</a>(ref v3, ref m, out <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> result3);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#aa577a09d1d7601d1642d743596752710">Transform</a>(ref v4, ref m, out <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> result4);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_class" href="class_engine_1_1_graphics_1_1_flat_batch2_d.html">FlatBatch2D</a> flatBatch2D = dc.<a class="code hl_variable" href="class_game_1_1_widget_1_1_draw_context.html#aaf406a8eb9c9394f43e0261ad1bf5b3c">PrimitivesRenderer2D</a>.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a72d77263ced51f82786e005127e2f1ba">FlatBatch</a>(1, <a class="code hl_class" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html">DepthStencilState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html#af6c56a30c20bdac76f5576cf93980a12">DepthWrite</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> vector = <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#ac0af53a62b806ca6dfa22f76fdad6060">Normalize</a>(<a class="code hl_property" href="class_game_1_1_widget.html#adbf55b13c5ef4ecd8cc21c4fc38e8e49">GlobalTransform</a>.Right.XY);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> v5 = -<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#ac0af53a62b806ca6dfa22f76fdad6060">Normalize</a>(<a class="code hl_property" href="class_game_1_1_widget.html#adbf55b13c5ef4ecd8cc21c4fc38e8e49">GlobalTransform</a>.Up.XY);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 1; i++) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                flatBatch2D.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_flat_batch2_d.html#a85d5b6e18e6fb440106dd277f355dd0e">QueueLine</a>(result, result2, 1f, <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ab983e05a8eb5ba4c34d0efe1e4f39b7d">BorderColor</a>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                flatBatch2D.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_flat_batch2_d.html#a85d5b6e18e6fb440106dd277f355dd0e">QueueLine</a>(result2, result3, 1f, <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ab983e05a8eb5ba4c34d0efe1e4f39b7d">BorderColor</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                flatBatch2D.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_flat_batch2_d.html#a85d5b6e18e6fb440106dd277f355dd0e">QueueLine</a>(result3, result4, 1f, <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ab983e05a8eb5ba4c34d0efe1e4f39b7d">BorderColor</a>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                flatBatch2D.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_flat_batch2_d.html#a85d5b6e18e6fb440106dd277f355dd0e">QueueLine</a>(result4, result, 1f, <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ab983e05a8eb5ba4c34d0efe1e4f39b7d">BorderColor</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                result += vector - v5;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                result2 += -vector - v5;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                result3 += -vector + v5;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                result4 += vector + v5;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_game_1_1_click_text_widget.html#a88a09bea42e4f1bcc0dab459dd1ed16d">   54</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_click_text_widget.html#a88a09bea42e4f1bcc0dab459dd1ed16d">Update</a>() {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Input</a>.Click.HasValue</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                &amp;&amp; <a class="code hl_function" href="class_game_1_1_widget.html#a512a6f73479d2b32af4ba92f012b918b">HitTest</a>(<a class="code hl_property" href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Input</a>.Click.Value.Start)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                &amp;&amp; <a class="code hl_function" href="class_game_1_1_widget.html#a512a6f73479d2b32af4ba92f012b918b">HitTest</a>(<a class="code hl_property" href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Input</a>.Click.Value.End)) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <a class="code hl_variable" href="class_game_1_1_click_text_widget.html#ac3456aaea7b26574804986962068d48b">click</a>?.Invoke();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_depth_stencil_state_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_depth_stencil_state.html">Engine.Graphics.DepthStencilState</a></div><div class="ttdef"><b>定义</b> <a href="_depth_stencil_state_8cs_source.html#l00002">DepthStencilState.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_depth_stencil_state_html_af6c56a30c20bdac76f5576cf93980a12"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_depth_stencil_state.html#af6c56a30c20bdac76f5576cf93980a12">Engine.Graphics.DepthStencilState.DepthWrite</a></div><div class="ttdeci">static readonly DepthStencilState DepthWrite</div><div class="ttdef"><b>定义</b> <a href="_depth_stencil_state_8cs_source.html#l00013">DepthStencilState.cs:13</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_flat_batch2_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_flat_batch2_d.html">Engine.Graphics.FlatBatch2D</a></div><div class="ttdef"><b>定义</b> <a href="_flat_batch2_d_8cs_source.html#l00002">FlatBatch2D.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_flat_batch2_d_html_a85d5b6e18e6fb440106dd277f355dd0e"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_flat_batch2_d.html#a85d5b6e18e6fb440106dd277f355dd0e">Engine.Graphics.FlatBatch2D.QueueLine</a></div><div class="ttdeci">void QueueLine(Vector2 p1, Vector2 p2, float depth, Color color)</div><div class="ttdef"><b>定义</b> <a href="_flat_batch2_d_8cs_source.html#l00107">FlatBatch2D.cs:107</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_primitives_renderer2_d_html_a72d77263ced51f82786e005127e2f1ba"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a72d77263ced51f82786e005127e2f1ba">Engine.Graphics.PrimitivesRenderer2D.FlatBatch</a></div><div class="ttdeci">FlatBatch2D FlatBatch(int layer=0, DepthStencilState depthStencilState=null, RasterizerState rasterizerState=null, BlendState blendState=null)</div><div class="ttdef"><b>定义</b> <a href="_primitives_renderer2_d_8cs_source.html#l00029">PrimitivesRenderer2D.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_canvas_widget_html"><div class="ttname"><a href="class_game_1_1_canvas_widget.html">Game.CanvasWidget</a></div><div class="ttdef"><b>定义</b> <a href="_canvas_widget_8cs_source.html#l00004">CanvasWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_canvas_widget_html_ac6c2f0576c6356a01378b1e1445bdadb"><div class="ttname"><a href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Game.CanvasWidget.Size</a></div><div class="ttdeci">Vector2 Size</div><div class="ttdef"><b>定义</b> <a href="_canvas_widget_8cs_source.html#l00007">CanvasWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_click_text_widget_html_a32887749b41b11f6d406d02d92b26390"><div class="ttname"><a href="class_game_1_1_click_text_widget.html#a32887749b41b11f6d406d02d92b26390">Game.ClickTextWidget.pressColor</a></div><div class="ttdeci">Color pressColor</div><div class="ttdef"><b>定义</b> <a href="#l00009">ClickTextWidget.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_click_text_widget_html_a5b812a32de00a057b04b6a07c554d8c3"><div class="ttname"><a href="class_game_1_1_click_text_widget.html#a5b812a32de00a057b04b6a07c554d8c3">Game.ClickTextWidget.Draw</a></div><div class="ttdeci">override void Draw(DrawContext dc)</div><div class="ttdef"><b>定义</b> <a href="#l00029">ClickTextWidget.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_click_text_widget_html_a6966d2d6f08da3ae75ea2ffa14fe8804"><div class="ttname"><a href="class_game_1_1_click_text_widget.html#a6966d2d6f08da3ae75ea2ffa14fe8804">Game.ClickTextWidget.ClickTextWidget</a></div><div class="ttdeci">ClickTextWidget(Vector2 vector2, string text, Action click, bool box=false)</div><div class="ttdef"><b>定义</b> <a href="#l00013">ClickTextWidget.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_click_text_widget_html_a88a09bea42e4f1bcc0dab459dd1ed16d"><div class="ttname"><a href="class_game_1_1_click_text_widget.html#a88a09bea42e4f1bcc0dab459dd1ed16d">Game.ClickTextWidget.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00054">ClickTextWidget.cs:54</a></div></div>
+<div class="ttc" id="aclass_game_1_1_click_text_widget_html_ab983e05a8eb5ba4c34d0efe1e4f39b7d"><div class="ttname"><a href="class_game_1_1_click_text_widget.html#ab983e05a8eb5ba4c34d0efe1e4f39b7d">Game.ClickTextWidget.BorderColor</a></div><div class="ttdeci">Color BorderColor</div><div class="ttdef"><b>定义</b> <a href="#l00010">ClickTextWidget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_click_text_widget_html_ac3456aaea7b26574804986962068d48b"><div class="ttname"><a href="class_game_1_1_click_text_widget.html#ac3456aaea7b26574804986962068d48b">Game.ClickTextWidget.click</a></div><div class="ttdeci">Action click</div><div class="ttdef"><b>定义</b> <a href="#l00007">ClickTextWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_click_text_widget_html_ad505b872a100512300b46c55813b06cb"><div class="ttname"><a href="class_game_1_1_click_text_widget.html#ad505b872a100512300b46c55813b06cb">Game.ClickTextWidget.rectangleWidget</a></div><div class="ttdeci">RectangleWidget rectangleWidget</div><div class="ttdef"><b>定义</b> <a href="#l00008">ClickTextWidget.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_click_text_widget_html_ae1d7f437d0f08bfa40bafab92354f453"><div class="ttname"><a href="class_game_1_1_click_text_widget.html#ae1d7f437d0f08bfa40bafab92354f453">Game.ClickTextWidget.labelWidget</a></div><div class="ttdeci">LabelWidget labelWidget</div><div class="ttdef"><b>定义</b> <a href="#l00006">ClickTextWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_rectangle_widget_html"><div class="ttname"><a href="class_game_1_1_rectangle_widget.html">Game.RectangleWidget</a></div><div class="ttdef"><b>定义</b> <a href="_rectangle_widget_8cs_source.html#l00005">RectangleWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_1_1_draw_context_html"><div class="ttname"><a href="class_game_1_1_widget_1_1_draw_context.html">Game.Widget.DrawContext</a></div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00011">Widget.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_1_1_draw_context_html_aaf406a8eb9c9394f43e0261ad1bf5b3c"><div class="ttname"><a href="class_game_1_1_widget_1_1_draw_context.html#aaf406a8eb9c9394f43e0261ad1bf5b3c">Game.Widget.DrawContext.PrimitivesRenderer2D</a></div><div class="ttdeci">readonly PrimitivesRenderer2D PrimitivesRenderer2D</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00016">Widget.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a0fff521e96f2b5dc1926c39b7b9ef052"><div class="ttname"><a href="class_game_1_1_widget.html#a0fff521e96f2b5dc1926c39b7b9ef052">Game.Widget.IsUpdateEnabled</a></div><div class="ttdeci">bool IsUpdateEnabled</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00456">Widget.cs:456</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a3738facfe6a7f955f8539fcf8de3b387"><div class="ttname"><a href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Game.Widget.Input</a></div><div class="ttdeci">WidgetInput Input</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00296">Widget.cs:296</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a451de454a7ceefb927e9ae68180cb0f7"><div class="ttname"><a href="class_game_1_1_widget.html#a451de454a7ceefb927e9ae68180cb0f7">Game.Widget.IsDrawEnabled</a></div><div class="ttdeci">bool IsDrawEnabled</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00458">Widget.cs:458</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a512a6f73479d2b32af4ba92f012b918b"><div class="ttname"><a href="class_game_1_1_widget.html#a512a6f73479d2b32af4ba92f012b918b">Game.Widget.HitTest</a></div><div class="ttdeci">virtual bool HitTest(Vector2 point)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00686">Widget.cs:686</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a605213e7e1ce146f1b191a24ccd09fbb"><div class="ttname"><a href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">Game.Widget.VerticalAlignment</a></div><div class="ttdeci">virtual WidgetAlignment VerticalAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00445">Widget.cs:445</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a7f6aa568376ef5e1c5acdd1d879e860a"><div class="ttname"><a href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">Game.Widget.HorizontalAlignment</a></div><div class="ttdeci">virtual WidgetAlignment HorizontalAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00443">Widget.cs:443</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ab7453bbe06dbc7188b1d2a6d95e7663e"><div class="ttname"><a href="class_game_1_1_widget.html#ab7453bbe06dbc7188b1d2a6d95e7663e">Game.Widget.IsDrawRequired</a></div><div class="ttdeci">bool IsDrawRequired</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00460">Widget.cs:460</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ac9ff25efbe724241ec9d3678a1559527"><div class="ttname"><a href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">Game.Widget.ActualSize</a></div><div class="ttdeci">Vector2 ActualSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00447">Widget.cs:447</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_adbf55b13c5ef4ecd8cc21c4fc38e8e49"><div class="ttname"><a href="class_game_1_1_widget.html#adbf55b13c5ef4ecd8cc21c4fc38e8e49">Game.Widget.GlobalTransform</a></div><div class="ttdeci">Matrix GlobalTransform</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00326">Widget.cs:326</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_ab4e40cd76f07a77bf33d7a814c4126eb"><div class="ttname"><a href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">Game.WidgetAlignment</a></div><div class="ttdeci">WidgetAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_alignment_8cs_source.html#l00002">WidgetAlignment.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html_ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd"><div class="ttname"><a href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd">Game.WidgetAlignment.Center</a></div><div class="ttdeci">@ Center</div><div class="ttdef"><b>定义</b> <a href="_widget_alignment_8cs_source.html#l00004">WidgetAlignment.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_a2e2d61cece5c7e0224b2067a8d9f1983"><div class="ttname"><a href="struct_engine_1_1_color.html#a2e2d61cece5c7e0224b2067a8d9f1983">Engine.Color.Transparent</a></div><div class="ttdeci">static Color Transparent</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00005">Color.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_a43523db12ce9bc1ce234cc3dfa457fb2"><div class="ttname"><a href="struct_engine_1_1_color.html#a43523db12ce9bc1ce234cc3dfa457fb2">Engine.Color.Red</a></div><div class="ttdeci">static Color Red</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00017">Color.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a43b88325ddcd07f42e931b1a0d3281c7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Engine.Vector2.Zero</a></div><div class="ttdeci">static readonly Vector2 Zero</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00007">Vector2.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_aa577a09d1d7601d1642d743596752710"><div class="ttname"><a href="struct_engine_1_1_vector2.html#aa577a09d1d7601d1642d743596752710">Engine.Vector2.Transform</a></div><div class="ttdeci">static Vector2 Transform(Vector2 v, Matrix m)</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00120">Vector2.cs:120</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_ac0af53a62b806ca6dfa22f76fdad6060"><div class="ttname"><a href="struct_engine_1_1_vector2.html#ac0af53a62b806ca6dfa22f76fdad6060">Engine.Vector2.Normalize</a></div><div class="ttdeci">static Vector2 Normalize(Vector2 v)</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00098">Vector2.cs:98</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_click_text_widget_8cs.html">ClickTextWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

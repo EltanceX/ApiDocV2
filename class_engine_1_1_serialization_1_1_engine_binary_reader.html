@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Engine.Serialization.EngineBinaryReader</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_engine_1_1_serialization_1_1_engine_binary_reader.html','','class_engine_1_1_serialization_1_1_engine_binary_reader-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Engine.Serialization.EngineBinaryReader</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Engine.Serialization.EngineBinaryReader 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_reader__inherit__graph.png" border="0" usemap="#a_engine_8_serialization_8_engine_binary_reader_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_engine_8_serialization_8_engine_binary_reader_inherit__map" id="a_engine_8_serialization_8_engine_binary_reader_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,186,123"/>
+<area shape="rect" title=" " alt="" coords="45,5,146,32"/>
+<area shape="poly" title=" " alt="" coords="97,46,98,81,93,79,94,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Engine.Serialization.EngineBinaryReader 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_reader__coll__graph.png" border="0" usemap="#a_engine_8_serialization_8_engine_binary_reader_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_engine_8_serialization_8_engine_binary_reader_coll__map" id="a_engine_8_serialization_8_engine_binary_reader_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,186,123"/>
+<area shape="rect" title=" " alt="" coords="45,5,146,32"/>
+<area shape="poly" title=" " alt="" coords="97,46,98,81,93,79,94,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa2ed3cec2b77b2b15120d36323e13b9e" id="r_aa2ed3cec2b77b2b15120d36323e13b9e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa2ed3cec2b77b2b15120d36323e13b9e">EngineBinaryReader</a> (Stream stream, bool leaveOpen=false)</td></tr>
+<tr class="memitem:a483731895beb056aa9bad4c6a78d654d" id="r_a483731895beb056aa9bad4c6a78d654d"><td class="memItemLeft">new int&#160;</td><td class="memItemRight"><a class="el" href="#a483731895beb056aa9bad4c6a78d654d">Read7BitEncodedInt</a> ()</td></tr>
+<tr class="memitem:ab114a668f0a933729c24d5cf82e2e6de" id="r_ab114a668f0a933729c24d5cf82e2e6de"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_color.html">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab114a668f0a933729c24d5cf82e2e6de">ReadColor</a> ()</td></tr>
+<tr class="memitem:ae8493fc174f2aa929ec9582c015d5806" id="r_ae8493fc174f2aa929ec9582c015d5806"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_point2.html">Point2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae8493fc174f2aa929ec9582c015d5806">ReadPoint2</a> ()</td></tr>
+<tr class="memitem:aadbf65b2d51098bceb63c9992ced9bae" id="r_aadbf65b2d51098bceb63c9992ced9bae"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_point3.html">Point3</a>&#160;</td><td class="memItemRight"><a class="el" href="#aadbf65b2d51098bceb63c9992ced9bae">ReadPoint3</a> ()</td></tr>
+<tr class="memitem:a010604f86ec848ae91be6e0cd755c566" id="r_a010604f86ec848ae91be6e0cd755c566"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight"><a class="el" href="#a010604f86ec848ae91be6e0cd755c566">ReadRectangle</a> ()</td></tr>
+<tr class="memitem:a4094da98b04340e0a31c2f93f9dd80a5" id="r_a4094da98b04340e0a31c2f93f9dd80a5"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_box.html">Box</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4094da98b04340e0a31c2f93f9dd80a5">ReadBox</a> ()</td></tr>
+<tr class="memitem:ab18215b24274910da8733d8ef5f84414" id="r_ab18215b24274910da8733d8ef5f84414"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab18215b24274910da8733d8ef5f84414">ReadVector2</a> ()</td></tr>
+<tr class="memitem:a31a7d0eab401e50c161aba05f42e2e00" id="r_a31a7d0eab401e50c161aba05f42e2e00"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a31a7d0eab401e50c161aba05f42e2e00">ReadVector3</a> ()</td></tr>
+<tr class="memitem:a94a9e84d9174a1121c57ae08ce9cea11" id="r_a94a9e84d9174a1121c57ae08ce9cea11"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_vector4.html">Vector4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a94a9e84d9174a1121c57ae08ce9cea11">ReadVector4</a> ()</td></tr>
+<tr class="memitem:a9cc2e7251a569682bc05f2be11d98335" id="r_a9cc2e7251a569682bc05f2be11d98335"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_bounding_rectangle.html">BoundingRectangle</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9cc2e7251a569682bc05f2be11d98335">ReadBoundingRectagle</a> ()</td></tr>
+<tr class="memitem:a3442e5a23198abb2249409f257bd9cce" id="r_a3442e5a23198abb2249409f257bd9cce"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3442e5a23198abb2249409f257bd9cce">ReadBoundingBox</a> ()</td></tr>
+<tr class="memitem:a27edb6f36775c94affa0f5be8beaec45" id="r_a27edb6f36775c94affa0f5be8beaec45"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_plane.html">Plane</a>&#160;</td><td class="memItemRight"><a class="el" href="#a27edb6f36775c94affa0f5be8beaec45">ReadPlane</a> ()</td></tr>
+<tr class="memitem:ad6636da48fffc7e74f61c0d9b3aa1a94" id="r_ad6636da48fffc7e74f61c0d9b3aa1a94"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad6636da48fffc7e74f61c0d9b3aa1a94">ReadQuaternion</a> ()</td></tr>
+<tr class="memitem:ad012199c16f3cb960dcf7627f970e6f2" id="r_ad012199c16f3cb960dcf7627f970e6f2"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad012199c16f3cb960dcf7627f970e6f2">ReadMatrix</a> ()</td></tr>
+<tr class="memitem:a65b74826bc0c2be6363e1f6f0080d3f8" id="r_a65b74826bc0c2be6363e1f6f0080d3f8"><td class="memItemLeft">virtual T&#160;</td><td class="memItemRight"><a class="el" href="#a65b74826bc0c2be6363e1f6f0080d3f8">ReadStruct&lt; T &gt;</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00004">4</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="aa2ed3cec2b77b2b15120d36323e13b9e" name="aa2ed3cec2b77b2b15120d36323e13b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ed3cec2b77b2b15120d36323e13b9e">&#9670;&#160;</a></span>EngineBinaryReader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Engine.Serialization.EngineBinaryReader.EngineBinaryReader </td>
+          <td>(</td>
+          <td class="paramtype">Stream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>leaveOpen</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a483731895beb056aa9bad4c6a78d654d" name="a483731895beb056aa9bad4c6a78d654d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483731895beb056aa9bad4c6a78d654d">&#9670;&#160;</a></span>Read7BitEncodedInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">new int Engine.Serialization.EngineBinaryReader.Read7BitEncodedInt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3442e5a23198abb2249409f257bd9cce" name="a3442e5a23198abb2249409f257bd9cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3442e5a23198abb2249409f257bd9cce">&#9670;&#160;</a></span>ReadBoundingBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_bounding_box.html">BoundingBox</a> Engine.Serialization.EngineBinaryReader.ReadBoundingBox </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00027">27</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9cc2e7251a569682bc05f2be11d98335" name="a9cc2e7251a569682bc05f2be11d98335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc2e7251a569682bc05f2be11d98335">&#9670;&#160;</a></span>ReadBoundingRectagle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_bounding_rectangle.html">BoundingRectangle</a> Engine.Serialization.EngineBinaryReader.ReadBoundingRectagle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00025">25</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4094da98b04340e0a31c2f93f9dd80a5" name="a4094da98b04340e0a31c2f93f9dd80a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4094da98b04340e0a31c2f93f9dd80a5">&#9670;&#160;</a></span>ReadBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_box.html">Box</a> Engine.Serialization.EngineBinaryReader.ReadBox </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab114a668f0a933729c24d5cf82e2e6de" name="ab114a668f0a933729c24d5cf82e2e6de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab114a668f0a933729c24d5cf82e2e6de">&#9670;&#160;</a></span>ReadColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_color.html">Color</a> Engine.Serialization.EngineBinaryReader.ReadColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad012199c16f3cb960dcf7627f970e6f2" name="ad012199c16f3cb960dcf7627f970e6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad012199c16f3cb960dcf7627f970e6f2">&#9670;&#160;</a></span>ReadMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_matrix.html">Matrix</a> Engine.Serialization.EngineBinaryReader.ReadMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a27edb6f36775c94affa0f5be8beaec45" name="a27edb6f36775c94affa0f5be8beaec45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27edb6f36775c94affa0f5be8beaec45">&#9670;&#160;</a></span>ReadPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_plane.html">Plane</a> Engine.Serialization.EngineBinaryReader.ReadPlane </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae8493fc174f2aa929ec9582c015d5806" name="ae8493fc174f2aa929ec9582c015d5806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8493fc174f2aa929ec9582c015d5806">&#9670;&#160;</a></span>ReadPoint2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_point2.html">Point2</a> Engine.Serialization.EngineBinaryReader.ReadPoint2 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aadbf65b2d51098bceb63c9992ced9bae" name="aadbf65b2d51098bceb63c9992ced9bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadbf65b2d51098bceb63c9992ced9bae">&#9670;&#160;</a></span>ReadPoint3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_point3.html">Point3</a> Engine.Serialization.EngineBinaryReader.ReadPoint3 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad6636da48fffc7e74f61c0d9b3aa1a94" name="ad6636da48fffc7e74f61c0d9b3aa1a94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6636da48fffc7e74f61c0d9b3aa1a94">&#9670;&#160;</a></span>ReadQuaternion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_quaternion.html">Quaternion</a> Engine.Serialization.EngineBinaryReader.ReadQuaternion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a010604f86ec848ae91be6e0cd755c566" name="a010604f86ec848ae91be6e0cd755c566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a010604f86ec848ae91be6e0cd755c566">&#9670;&#160;</a></span>ReadRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_rectangle.html">Rectangle</a> Engine.Serialization.EngineBinaryReader.ReadRectangle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a65b74826bc0c2be6363e1f6f0080d3f8" name="a65b74826bc0c2be6363e1f6f0080d3f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b74826bc0c2be6363e1f6f0080d3f8">&#9670;&#160;</a></span>ReadStruct&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual T Engine.Serialization.EngineBinaryReader.ReadStruct&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="typeconstraint">
+<dl><dt><b>类型限制</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>unmanaged</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab18215b24274910da8733d8ef5f84414" name="ab18215b24274910da8733d8ef5f84414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18215b24274910da8733d8ef5f84414">&#9670;&#160;</a></span>ReadVector2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> Engine.Serialization.EngineBinaryReader.ReadVector2 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a31a7d0eab401e50c161aba05f42e2e00" name="a31a7d0eab401e50c161aba05f42e2e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31a7d0eab401e50c161aba05f42e2e00">&#9670;&#160;</a></span>ReadVector3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Engine.Serialization.EngineBinaryReader.ReadVector3 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a94a9e84d9174a1121c57ae08ce9cea11" name="a94a9e84d9174a1121c57ae08ce9cea11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a9e84d9174a1121c57ae08ce9cea11">&#9670;&#160;</a></span>ReadVector4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_engine_1_1_vector4.html">Vector4</a> Engine.Serialization.EngineBinaryReader.ReadVector4 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a> 第 <a class="el" href="_engine_binary_reader_8cs_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Serialization/<a class="el" href="_engine_binary_reader_8cs_source.html">EngineBinaryReader.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_engine.html">Engine</a></li><li class="navelem"><a href="namespace_engine_1_1_serialization.html">Serialization</a></li><li class="navelem"><a href="class_engine_1_1_serialization_1_1_engine_binary_reader.html">EngineBinaryReader</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

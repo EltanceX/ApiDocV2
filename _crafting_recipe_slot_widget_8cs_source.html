@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/CraftingRecipeSlotWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_crafting_recipe_slot_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CraftingRecipeSlotWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_crafting_recipe_slot_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_crafting_recipe_slot_widget.html#ae834e254f313d2063fbe16e49d7814f0">CraftingRecipeSlotWidget</a> : <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html#ae529f6150c1e38e5bca198fc459bab17">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_block_icon_widget.html">BlockIconWidget</a> <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#ae529f6150c1e38e5bca198fc459bab17">m_blockIconWidget</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html#a45322e686328f20ed0e25c7788cd1623">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a45322e686328f20ed0e25c7788cd1623">m_labelWidget</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html#a46434cf493502b05618876cbf44e97e6">   10</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a46434cf493502b05618876cbf44e97e6">m_ingredient</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html#a9766cdad92c5cf9b6691e072cc49dd83">   12</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a9766cdad92c5cf9b6691e072cc49dd83">m_resultValue</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html#a01f9cda7b7c667af7be8ce196060becf">   14</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a01f9cda7b7c667af7be8ce196060becf">m_resultCount</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html#ae834e254f313d2063fbe16e49d7814f0">   16</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_crafting_recipe_slot_widget.html#ae834e254f313d2063fbe16e49d7814f0">CraftingRecipeSlotWidget</a>() {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Widgets/CraftingRecipeSlot&quot;</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#ae529f6150c1e38e5bca198fc459bab17">m_blockIconWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_block_icon_widget.html">BlockIconWidget</a>&gt;(<span class="stringliteral">&quot;CraftingRecipeSlotWidget.Icon&quot;</span>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a45322e686328f20ed0e25c7788cd1623">m_labelWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;CraftingRecipeSlotWidget.Count&quot;</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html#ae03311bc6a0362584386b10576d612e6">   23</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_crafting_recipe_slot_widget.html#ae03311bc6a0362584386b10576d612e6">SetIngredient</a>(<span class="keywordtype">string</span> ingredient) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a46434cf493502b05618876cbf44e97e6">m_ingredient</a> = ingredient;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a9766cdad92c5cf9b6691e072cc49dd83">m_resultValue</a> = 0;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a01f9cda7b7c667af7be8ce196060becf">m_resultCount</a> = 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html#a57896db867a1e644367980e2abc4ef48">   29</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_crafting_recipe_slot_widget.html#a57896db867a1e644367980e2abc4ef48">SetResult</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> count) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a9766cdad92c5cf9b6691e072cc49dd83">m_resultValue</a> = value;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a01f9cda7b7c667af7be8ce196060becf">m_resultCount</a> = count;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a46434cf493502b05618876cbf44e97e6">m_ingredient</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_game_1_1_crafting_recipe_slot_widget.html#af06897d78a3051dda68d31fed54a9433">   35</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_crafting_recipe_slot_widget.html#af06897d78a3051dda68d31fed54a9433">MeasureOverride</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> parentAvailableSize) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            m_blockIconWidget.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            m_labelWidget.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a46434cf493502b05618876cbf44e97e6">m_ingredient</a>)) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <a class="code hl_class" href="class_game_1_1_crafting_recipes_manager.html">CraftingRecipesManager</a>.<a class="code hl_function" href="class_game_1_1_crafting_recipes_manager.html#a0386c5cec01c0b65891ed5c894a5d8d2">DecodeIngredient</a>(<a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a46434cf493502b05618876cbf44e97e6">m_ingredient</a>, out <span class="keywordtype">string</span> craftingId, out <span class="keywordtype">int</span>? data);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <a class="code hl_class" href="class_game_1_1_block.html">Block</a>[] array = <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#aa1e0c1cfd198b88c79e9ac985fc3b398">FindBlocksByCraftingId</a>(craftingId);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">if</span> (array.Length != 0) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <a class="code hl_class" href="class_game_1_1_block.html">Block</a> block = array[(int)(1.0 * <a class="code hl_class" href="class_engine_1_1_time.html">Time</a>.<a class="code hl_property" href="class_engine_1_1_time.html#a63eb19822fad10dd51bcb578f7f2f66c">RealTime</a>) % array.Length];</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keywordflow">if</span> (block != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                        m_blockIconWidget.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(block.<a class="code hl_variable" href="class_game_1_1_block.html#a0b1a87d92dc3fdfccdcff1609740702d">BlockIndex</a>, 0, data ?? 0);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                        m_blockIconWidget.Light = 15;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        m_blockIconWidget.IsVisible = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a9766cdad92c5cf9b6691e072cc49dd83">m_resultValue</a> != 0) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                m_blockIconWidget.Value = <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a9766cdad92c5cf9b6691e072cc49dd83">m_resultValue</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                m_blockIconWidget.Light = 15;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                m_labelWidget.Text = <a class="code hl_variable" href="class_game_1_1_crafting_recipe_slot_widget.html#a01f9cda7b7c667af7be8ce196060becf">m_resultCount</a>.ToString();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                m_blockIconWidget.IsVisible = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                m_labelWidget.IsVisible = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            base.MeasureOverride(parentAvailableSize);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_time_html"><div class="ttname"><a href="class_engine_1_1_time.html">Engine.Time</a></div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00004">Time.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_time_html_a63eb19822fad10dd51bcb578f7f2f66c"><div class="ttname"><a href="class_engine_1_1_time.html#a63eb19822fad10dd51bcb578f7f2f66c">Engine.Time.RealTime</a></div><div class="ttdeci">static double RealTime</div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00038">Time.cs:38</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html"><div class="ttname"><a href="class_game_1_1_block.html">Game.Block</a></div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00005">Block.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a0b1a87d92dc3fdfccdcff1609740702d"><div class="ttname"><a href="class_game_1_1_block.html#a0b1a87d92dc3fdfccdcff1609740702d">Game.Block.BlockIndex</a></div><div class="ttdeci">int BlockIndex</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00006">Block.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_icon_widget_html"><div class="ttname"><a href="class_game_1_1_block_icon_widget.html">Game.BlockIconWidget</a></div><div class="ttdef"><b>定义</b> <a href="_block_icon_widget_8cs_source.html#l00005">BlockIconWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_aa1e0c1cfd198b88c79e9ac985fc3b398"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#aa1e0c1cfd198b88c79e9ac985fc3b398">Game.BlocksManager.FindBlocksByCraftingId</a></div><div class="ttdeci">static Block[] FindBlocksByCraftingId(string craftingId)</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00443">BlocksManager.cs:443</a></div></div>
+<div class="ttc" id="aclass_game_1_1_canvas_widget_html"><div class="ttname"><a href="class_game_1_1_canvas_widget.html">Game.CanvasWidget</a></div><div class="ttdef"><b>定义</b> <a href="_canvas_widget_8cs_source.html#l00004">CanvasWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_slot_widget_html_a01f9cda7b7c667af7be8ce196060becf"><div class="ttname"><a href="class_game_1_1_crafting_recipe_slot_widget.html#a01f9cda7b7c667af7be8ce196060becf">Game.CraftingRecipeSlotWidget.m_resultCount</a></div><div class="ttdeci">int m_resultCount</div><div class="ttdef"><b>定义</b> <a href="#l00014">CraftingRecipeSlotWidget.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_slot_widget_html_a45322e686328f20ed0e25c7788cd1623"><div class="ttname"><a href="class_game_1_1_crafting_recipe_slot_widget.html#a45322e686328f20ed0e25c7788cd1623">Game.CraftingRecipeSlotWidget.m_labelWidget</a></div><div class="ttdeci">LabelWidget m_labelWidget</div><div class="ttdef"><b>定义</b> <a href="#l00008">CraftingRecipeSlotWidget.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_slot_widget_html_a46434cf493502b05618876cbf44e97e6"><div class="ttname"><a href="class_game_1_1_crafting_recipe_slot_widget.html#a46434cf493502b05618876cbf44e97e6">Game.CraftingRecipeSlotWidget.m_ingredient</a></div><div class="ttdeci">string m_ingredient</div><div class="ttdef"><b>定义</b> <a href="#l00010">CraftingRecipeSlotWidget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_slot_widget_html_a57896db867a1e644367980e2abc4ef48"><div class="ttname"><a href="class_game_1_1_crafting_recipe_slot_widget.html#a57896db867a1e644367980e2abc4ef48">Game.CraftingRecipeSlotWidget.SetResult</a></div><div class="ttdeci">void SetResult(int value, int count)</div><div class="ttdef"><b>定义</b> <a href="#l00029">CraftingRecipeSlotWidget.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_slot_widget_html_a9766cdad92c5cf9b6691e072cc49dd83"><div class="ttname"><a href="class_game_1_1_crafting_recipe_slot_widget.html#a9766cdad92c5cf9b6691e072cc49dd83">Game.CraftingRecipeSlotWidget.m_resultValue</a></div><div class="ttdeci">int m_resultValue</div><div class="ttdef"><b>定义</b> <a href="#l00012">CraftingRecipeSlotWidget.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_slot_widget_html_ae03311bc6a0362584386b10576d612e6"><div class="ttname"><a href="class_game_1_1_crafting_recipe_slot_widget.html#ae03311bc6a0362584386b10576d612e6">Game.CraftingRecipeSlotWidget.SetIngredient</a></div><div class="ttdeci">void SetIngredient(string ingredient)</div><div class="ttdef"><b>定义</b> <a href="#l00023">CraftingRecipeSlotWidget.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_slot_widget_html_ae529f6150c1e38e5bca198fc459bab17"><div class="ttname"><a href="class_game_1_1_crafting_recipe_slot_widget.html#ae529f6150c1e38e5bca198fc459bab17">Game.CraftingRecipeSlotWidget.m_blockIconWidget</a></div><div class="ttdeci">BlockIconWidget m_blockIconWidget</div><div class="ttdef"><b>定义</b> <a href="#l00006">CraftingRecipeSlotWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_slot_widget_html_ae834e254f313d2063fbe16e49d7814f0"><div class="ttname"><a href="class_game_1_1_crafting_recipe_slot_widget.html#ae834e254f313d2063fbe16e49d7814f0">Game.CraftingRecipeSlotWidget.CraftingRecipeSlotWidget</a></div><div class="ttdeci">CraftingRecipeSlotWidget()</div><div class="ttdef"><b>定义</b> <a href="#l00016">CraftingRecipeSlotWidget.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_slot_widget_html_af06897d78a3051dda68d31fed54a9433"><div class="ttname"><a href="class_game_1_1_crafting_recipe_slot_widget.html#af06897d78a3051dda68d31fed54a9433">Game.CraftingRecipeSlotWidget.MeasureOverride</a></div><div class="ttdeci">override void MeasureOverride(Vector2 parentAvailableSize)</div><div class="ttdef"><b>定义</b> <a href="#l00035">CraftingRecipeSlotWidget.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipes_manager_html"><div class="ttname"><a href="class_game_1_1_crafting_recipes_manager.html">Game.CraftingRecipesManager</a></div><div class="ttdef"><b>定义</b> <a href="_crafting_recipes_manager_8cs_source.html#l00007">CraftingRecipesManager.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipes_manager_html_a0386c5cec01c0b65891ed5c894a5d8d2"><div class="ttname"><a href="class_game_1_1_crafting_recipes_manager.html#a0386c5cec01c0b65891ed5c894a5d8d2">Game.CraftingRecipesManager.DecodeIngredient</a></div><div class="ttdeci">static void DecodeIngredient(string ingredient, out string craftingId, out int? data)</div><div class="ttdef"><b>定义</b> <a href="_crafting_recipes_manager_8cs_source.html#l00199">CraftingRecipesManager.cs:199</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aea9a8c0114bc872225f02ebc8b7b8b9f"><div class="ttname"><a href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">Game.Terrain.MakeBlockValue</a></div><div class="ttdeci">static int MakeBlockValue(int contents)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00298">Terrain.cs:298</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_crafting_recipe_slot_widget_8cs.html">CraftingRecipeSlotWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

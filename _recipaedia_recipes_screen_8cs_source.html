@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Screen/RecipaediaRecipesScreen.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_recipaedia_recipes_screen_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RecipaediaRecipesScreen.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_recipaedia_recipes_screen_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_recipaedia_recipes_screen.html#ace05280256f23039f4daa12a83b98eba">RecipaediaRecipesScreen</a> : <a class="code hl_class" href="class_game_1_1_screen.html">Screen</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#a8b20020a756aae8f08a7b7b32fdea2cb">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_crafting_recipe_widget.html">CraftingRecipeWidget</a> <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a8b20020a756aae8f08a7b7b32fdea2cb">m_craftingRecipeWidget</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#a0c50fd948920fe14ad13889ecb348931">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_smelting_recipe_widget.html">SmeltingRecipeWidget</a> <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a0c50fd948920fe14ad13889ecb348931">m_smeltingRecipeWidget</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#a1b5810bdd84944a488cadfdd5707a860">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a1b5810bdd84944a488cadfdd5707a860">m_prevRecipeButton</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#abda1c5ed130c11df894d3d309a7cc929">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#abda1c5ed130c11df894d3d309a7cc929">m_nextRecipeButton</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">   11</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#acdfe70e1221572d4056845cf25418618">   12</a></span>        <span class="keyword">public</span> List&lt;CraftingRecipe&gt; <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#acdfe70e1221572d4056845cf25418618">m_craftingRecipes</a> = [];</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#a4c2d3ed211f18f1275c7df6003b23a88">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a4c2d3ed211f18f1275c7df6003b23a88">RecipesCount</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#aeecdcbcd07bd8e9ad6366d87e9693c36">   14</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#aeecdcbcd07bd8e9ad6366d87e9693c36">fName</a> = <span class="stringliteral">&quot;RecipaediaRecipesScreen&quot;</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#a4bf3e524dd49adea1ed6be4b26b70855">   16</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_function" href="class_game_1_1_recipaedia_recipes_screen.html#ace05280256f23039f4daa12a83b98eba">RecipaediaRecipesScreen</a> <a class="code hl_property" href="class_game_1_1_recipaedia_recipes_screen.html#a4bf3e524dd49adea1ed6be4b26b70855">Default</a> =&gt; <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#ace05280256f23039f4daa12a83b98eba">   18</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_recipaedia_recipes_screen.html#ace05280256f23039f4daa12a83b98eba">RecipaediaRecipesScreen</a>() {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Screens/RecipaediaRecipesScreen&quot;</span>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a8b20020a756aae8f08a7b7b32fdea2cb">m_craftingRecipeWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_crafting_recipe_widget.html">CraftingRecipeWidget</a>&gt;(<span class="stringliteral">&quot;CraftingRecipe&quot;</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a0c50fd948920fe14ad13889ecb348931">m_smeltingRecipeWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_smelting_recipe_widget.html">SmeltingRecipeWidget</a>&gt;(<span class="stringliteral">&quot;SmeltingRecipe&quot;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a1b5810bdd84944a488cadfdd5707a860">m_prevRecipeButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;PreviousRecipe&quot;</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#abda1c5ed130c11df894d3d309a7cc929">m_nextRecipeButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;NextRecipe&quot;</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#a10cd732274f24ee87f92a3c057eedc51">   27</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_recipaedia_recipes_screen.html#a10cd732274f24ee87f92a3c057eedc51">Enter</a>(<span class="keywordtype">object</span>[] parameters) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordtype">int</span> value = (int)parameters[0];</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#acdfe70e1221572d4056845cf25418618">m_craftingRecipes</a>.Clear();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#acdfe70e1221572d4056845cf25418618">m_craftingRecipes</a>.AddRange(<a class="code hl_class" href="class_game_1_1_crafting_recipes_manager.html">CraftingRecipesManager</a>.<a class="code hl_property" href="class_game_1_1_crafting_recipes_manager.html#a8d547bafd55647e35a4c99e356e283af">Recipes</a>.Where(r =&gt; r.ResultValue == value &amp;&amp; r.ResultValue != 0));</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a4c2d3ed211f18f1275c7df6003b23a88">RecipesCount</a> = <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#acdfe70e1221572d4056845cf25418618">m_craftingRecipes</a>.Count;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> = 0;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_game_1_1_recipaedia_recipes_screen.html#a563b28a16bd4fa8cb6094b9c2cccd41a">   35</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_recipaedia_recipes_screen.html#a563b28a16bd4fa8cb6094b9c2cccd41a">Update</a>() {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> &lt; <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a4c2d3ed211f18f1275c7df6003b23a88">RecipesCount</a>) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> &lt; <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#acdfe70e1221572d4056845cf25418618">m_craftingRecipes</a>.Count) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <a class="code hl_class" href="class_game_1_1_crafting_recipe.html">CraftingRecipe</a> craftingRecipe = <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#acdfe70e1221572d4056845cf25418618">m_craftingRecipes</a>[<a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a>];</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <span class="keywordflow">if</span> (craftingRecipe.<a class="code hl_variable" href="class_game_1_1_crafting_recipe.html#a03764df6c09ac1812f4225d273393cb2">RequiredHeatLevel</a> == 0f) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                        m_craftingRecipeWidget.Recipe = craftingRecipe;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                        m_craftingRecipeWidget.NameSuffix = <span class="keywordtype">string</span>.Format(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#a47c62be1e3034f15b2a507b9f9369013">GetContentWidgets</a>(<a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#aeecdcbcd07bd8e9ad6366d87e9693c36">fName</a>, 1), <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> + 1);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                        m_craftingRecipeWidget.IsVisible = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        m_smeltingRecipeWidget.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        m_smeltingRecipeWidget.Recipe = craftingRecipe;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        m_smeltingRecipeWidget.NameSuffix = <span class="keywordtype">string</span>.Format(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#a47c62be1e3034f15b2a507b9f9369013">GetContentWidgets</a>(<a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#aeecdcbcd07bd8e9ad6366d87e9693c36">fName</a>, 1), <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> + 1);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                        m_smeltingRecipeWidget.IsVisible = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        m_craftingRecipeWidget.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    m_craftingRecipeWidget.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    m_smeltingRecipeWidget.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_function" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f">HookAction</a>(</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    <span class="stringliteral">&quot;EditRecipeScreenWidget&quot;</span>,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    loader =&gt; {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        loader.EditRecipeScreenWidget(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                );</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            m_prevRecipeButton.IsEnabled = <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> &gt; 0;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            m_nextRecipeButton.IsEnabled = <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> &lt; <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a4c2d3ed211f18f1275c7df6003b23a88">RecipesCount</a> - 1;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a1b5810bdd84944a488cadfdd5707a860">m_prevRecipeButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(<a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> - 1, 0);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#abda1c5ed130c11df894d3d309a7cc929">m_nextRecipeButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(<a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">m_recipeIndex</a> + 1, <a class="code hl_variable" href="class_game_1_1_recipaedia_recipes_screen.html#a4c2d3ed211f18f1275c7df6003b23a88">RecipesCount</a> - 1);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.Back</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                || <a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.Cancel</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                || <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;TopBar.Back&quot;</span>).<a class="code hl_property" href="class_game_1_1_button_widget.html#a4d1f2cd5217dfbf29d7dc6cf30acf789">IsClicked</a>) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_property" href="class_game_1_1_screens_manager.html#a23c145b294d9ea3f3ac0fdcd246e02b5">PreviousScreen</a>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a5f2b24627ca7cc5256edc10831fe295b"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Engine.MathUtils.Min</a></div><div class="ttdeci">static int Min(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00007">MathUtils.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html_a4d1f2cd5217dfbf29d7dc6cf30acf789"><div class="ttname"><a href="class_game_1_1_button_widget.html#a4d1f2cd5217dfbf29d7dc6cf30acf789">Game.ButtonWidget.IsClicked</a></div><div class="ttdeci">bool IsClicked</div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00006">ButtonWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_html"><div class="ttname"><a href="class_game_1_1_crafting_recipe.html">Game.CraftingRecipe</a></div><div class="ttdef"><b>定义</b> <a href="_crafting_recipe_8cs_source.html#l00002">CraftingRecipe.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_html_a03764df6c09ac1812f4225d273393cb2"><div class="ttname"><a href="class_game_1_1_crafting_recipe.html#a03764df6c09ac1812f4225d273393cb2">Game.CraftingRecipe.RequiredHeatLevel</a></div><div class="ttdeci">float RequiredHeatLevel</div><div class="ttdef"><b>定义</b> <a href="_crafting_recipe_8cs_source.html#l00013">CraftingRecipe.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipe_widget_html"><div class="ttname"><a href="class_game_1_1_crafting_recipe_widget.html">Game.CraftingRecipeWidget</a></div><div class="ttdef"><b>定义</b> <a href="_crafting_recipe_widget_8cs_source.html#l00005">CraftingRecipeWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipes_manager_html"><div class="ttname"><a href="class_game_1_1_crafting_recipes_manager.html">Game.CraftingRecipesManager</a></div><div class="ttdef"><b>定义</b> <a href="_crafting_recipes_manager_8cs_source.html#l00007">CraftingRecipesManager.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_crafting_recipes_manager_html_a8d547bafd55647e35a4c99e356e283af"><div class="ttname"><a href="class_game_1_1_crafting_recipes_manager.html#a8d547bafd55647e35a4c99e356e283af">Game.CraftingRecipesManager.Recipes</a></div><div class="ttdeci">static List&lt; CraftingRecipe &gt; Recipes</div><div class="ttdef"><b>定义</b> <a href="_crafting_recipes_manager_8cs_source.html#l00009">CraftingRecipesManager.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_a47c62be1e3034f15b2a507b9f9369013"><div class="ttname"><a href="class_game_1_1_language_control.html#a47c62be1e3034f15b2a507b9f9369013">Game.LanguageControl.GetContentWidgets</a></div><div class="ttdeci">static string GetContentWidgets(string name, string prop)</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00348">LanguageControl.cs:348</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_a0c50fd948920fe14ad13889ecb348931"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#a0c50fd948920fe14ad13889ecb348931">Game.RecipaediaRecipesScreen.m_smeltingRecipeWidget</a></div><div class="ttdeci">SmeltingRecipeWidget m_smeltingRecipeWidget</div><div class="ttdef"><b>定义</b> <a href="#l00007">RecipaediaRecipesScreen.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_a10cd732274f24ee87f92a3c057eedc51"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#a10cd732274f24ee87f92a3c057eedc51">Game.RecipaediaRecipesScreen.Enter</a></div><div class="ttdeci">override void Enter(object[] parameters)</div><div class="ttdef"><b>定义</b> <a href="#l00027">RecipaediaRecipesScreen.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_a1b5810bdd84944a488cadfdd5707a860"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#a1b5810bdd84944a488cadfdd5707a860">Game.RecipaediaRecipesScreen.m_prevRecipeButton</a></div><div class="ttdeci">ButtonWidget m_prevRecipeButton</div><div class="ttdef"><b>定义</b> <a href="#l00008">RecipaediaRecipesScreen.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_a4bf3e524dd49adea1ed6be4b26b70855"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#a4bf3e524dd49adea1ed6be4b26b70855">Game.RecipaediaRecipesScreen.Default</a></div><div class="ttdeci">static RecipaediaRecipesScreen Default</div><div class="ttdef"><b>定义</b> <a href="#l00016">RecipaediaRecipesScreen.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_a4c2d3ed211f18f1275c7df6003b23a88"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#a4c2d3ed211f18f1275c7df6003b23a88">Game.RecipaediaRecipesScreen.RecipesCount</a></div><div class="ttdeci">int RecipesCount</div><div class="ttdef"><b>定义</b> <a href="#l00013">RecipaediaRecipesScreen.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_a563b28a16bd4fa8cb6094b9c2cccd41a"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#a563b28a16bd4fa8cb6094b9c2cccd41a">Game.RecipaediaRecipesScreen.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00035">RecipaediaRecipesScreen.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_a8b20020a756aae8f08a7b7b32fdea2cb"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#a8b20020a756aae8f08a7b7b32fdea2cb">Game.RecipaediaRecipesScreen.m_craftingRecipeWidget</a></div><div class="ttdeci">CraftingRecipeWidget m_craftingRecipeWidget</div><div class="ttdef"><b>定义</b> <a href="#l00006">RecipaediaRecipesScreen.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_ab22d9d1e4698548b0ed8d0600e494418"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#ab22d9d1e4698548b0ed8d0600e494418">Game.RecipaediaRecipesScreen.m_recipeIndex</a></div><div class="ttdeci">int m_recipeIndex</div><div class="ttdef"><b>定义</b> <a href="#l00011">RecipaediaRecipesScreen.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_abda1c5ed130c11df894d3d309a7cc929"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#abda1c5ed130c11df894d3d309a7cc929">Game.RecipaediaRecipesScreen.m_nextRecipeButton</a></div><div class="ttdeci">ButtonWidget m_nextRecipeButton</div><div class="ttdef"><b>定义</b> <a href="#l00009">RecipaediaRecipesScreen.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_acdfe70e1221572d4056845cf25418618"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#acdfe70e1221572d4056845cf25418618">Game.RecipaediaRecipesScreen.m_craftingRecipes</a></div><div class="ttdeci">List&lt; CraftingRecipe &gt; m_craftingRecipes</div><div class="ttdef"><b>定义</b> <a href="#l00012">RecipaediaRecipesScreen.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_ace05280256f23039f4daa12a83b98eba"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#ace05280256f23039f4daa12a83b98eba">Game.RecipaediaRecipesScreen.RecipaediaRecipesScreen</a></div><div class="ttdeci">RecipaediaRecipesScreen()</div><div class="ttdef"><b>定义</b> <a href="#l00018">RecipaediaRecipesScreen.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_recipaedia_recipes_screen_html_aeecdcbcd07bd8e9ad6366d87e9693c36"><div class="ttname"><a href="class_game_1_1_recipaedia_recipes_screen.html#aeecdcbcd07bd8e9ad6366d87e9693c36">Game.RecipaediaRecipesScreen.fName</a></div><div class="ttdeci">const string fName</div><div class="ttdef"><b>定义</b> <a href="#l00014">RecipaediaRecipesScreen.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screen_html"><div class="ttname"><a href="class_game_1_1_screen.html">Game.Screen</a></div><div class="ttdef"><b>定义</b> <a href="_screen_8cs_source.html#l00002">Screen.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html"><div class="ttname"><a href="class_game_1_1_screens_manager.html">Game.ScreensManager</a></div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00005">ScreensManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a23c145b294d9ea3f3ac0fdcd246e02b5"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a23c145b294d9ea3f3ac0fdcd246e02b5">Game.ScreensManager.PreviousScreen</a></div><div class="ttdeci">static Screen PreviousScreen</div><div class="ttdoc">上一个Screen</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00045">ScreensManager.cs:45</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a90614198a66aec078d9d00cfcbcd49a1"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">Game.ScreensManager.SwitchScreen</a></div><div class="ttdeci">static void SwitchScreen(string name, params object[] parameters)</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00065">ScreensManager.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_smelting_recipe_widget_html"><div class="ttname"><a href="class_game_1_1_smelting_recipe_widget.html">Game.SmeltingRecipeWidget</a></div><div class="ttdef"><b>定义</b> <a href="_smelting_recipe_widget_8cs_source.html#l00005">SmeltingRecipeWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html"><div class="ttname"><a href="class_mods_manager.html">ModsManager</a></div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00019">ModsManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a03dcd23af0dfd253948e6d2e5469a31f"><div class="ttname"><a href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f">ModsManager.HookAction</a></div><div class="ttdeci">static void HookAction(string HookName, Func&lt; ModLoader, bool &gt; action)</div><div class="ttdoc">执行Hook</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00146">ModsManager.cs:146</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_input_html"><div class="ttname"><a href="namespace_engine_1_1_input.html">Engine.Input</a></div><div class="ttdef"><b>定义</b> <a href="_cursor_type_8cs_source.html#l00001">CursorType.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_819697851f82aaa78e1e98801cc3f64c.html">Screen</a></li><li class="navelem"><a href="_recipaedia_recipes_screen_8cs.html">RecipaediaRecipesScreen.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

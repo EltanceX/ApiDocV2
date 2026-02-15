@@ -1,0 +1,27 @@
+var class_game_1_1_settings_ui_screen =
+[
+    [ "SettingsUiScreen", "class_game_1_1_settings_ui_screen.html#aba68703478cdb17ae696f565f4ed2d05", null ],
+    [ "Enter", "class_game_1_1_settings_ui_screen.html#a00aabea83581f30078919ffd6742603d", null ],
+    [ "Update", "class_game_1_1_settings_ui_screen.html#ac7798f3ab14532583a13ec4dba6b8397", null ],
+    [ "fName", "class_game_1_1_settings_ui_screen.html#afc391ad32eb37e15ce212428f694d8a7", null ],
+    [ "m_adaptEdgeToEdgeDisplay", "class_game_1_1_settings_ui_screen.html#a5cc3337a6a17ba96c43438cb910a4f21", null ],
+    [ "m_adaptEdgeToEdgeDisplayContainer", "class_game_1_1_settings_ui_screen.html#afc22cbfe7713be448007404a86ea1634", null ],
+    [ "m_communityContentModeButton", "class_game_1_1_settings_ui_screen.html#ab131a999108359b8476862ffca48f70b", null ],
+    [ "m_deleteWorldNeedToTextButton", "class_game_1_1_settings_ui_screen.html#a313d7d8b00901a831c8f245c119067d3", null ],
+    [ "m_displayLogButton", "class_game_1_1_settings_ui_screen.html#a53d7524760552168f6d5abdd770ebe53", null ],
+    [ "m_hideCrosshairButton", "class_game_1_1_settings_ui_screen.html#a4b04a9a86dc48e91b632f329776af261", null ],
+    [ "m_hideMoveLookPadsButton", "class_game_1_1_settings_ui_screen.html#a22220dd836c19d7be694396d453e76dc", null ],
+    [ "m_languageButton", "class_game_1_1_settings_ui_screen.html#adc2b643830d62078a279b20acc9f03d2", null ],
+    [ "m_originalCommunityContentModeButton", "class_game_1_1_settings_ui_screen.html#a2ca352c7aea653d083f845833c058dcf", null ],
+    [ "m_screenshotSizeButton", "class_game_1_1_settings_ui_screen.html#a5df9fdc1951c0c3ded5e1485226bba0d", null ],
+    [ "m_screenshotSizeCustomAspectRatioSlider", "class_game_1_1_settings_ui_screen.html#ab9b7fc034c4dbad8b8ba6c0ddb2fa01e", null ],
+    [ "m_screenshotSizeCustomAspectRatioSliderContainer", "class_game_1_1_settings_ui_screen.html#afe23b3c7d1c9bd9daf1feb8a73a8b5bd", null ],
+    [ "m_screenshotSizeCustomWidthSlider", "class_game_1_1_settings_ui_screen.html#ac238a1c004735bb47e905436fb8e4bfa", null ],
+    [ "m_screenshotSizeCustomWidthSliderContainer", "class_game_1_1_settings_ui_screen.html#a5b2976cccc9d372b258f70f0789dcf65", null ],
+    [ "m_showGuiInScreenshotsButton", "class_game_1_1_settings_ui_screen.html#a8e699fc279334ca74e32d2f689dbd52d", null ],
+    [ "m_showLogoInScreenshotsButton", "class_game_1_1_settings_ui_screen.html#a4cd78e1ba8fea9076c21ed36ef2a5525", null ],
+    [ "m_uiScaleSlider", "class_game_1_1_settings_ui_screen.html#a9931fd4098183a7b48b889a463c53784", null ],
+    [ "m_upsideDownButton", "class_game_1_1_settings_ui_screen.html#a720345603401e130d09b2bf3e15d6867", null ],
+    [ "m_windowModeButton", "class_game_1_1_settings_ui_screen.html#a83090620d94fe3f0b803b4320ce77442", null ],
+    [ "m_windowModeContainer", "class_game_1_1_settings_ui_screen.html#a9f42f998138b126ea7c761240c25a40b", null ]
+];

@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Block/PaintedCubeBlock.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_painted_cube_block_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PaintedCubeBlock.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_painted_cube_block_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_painted_cube_block.html#aa73962159c2dd42fe71fd28f9f53ab20">PaintedCubeBlock</a> : <a class="code hl_class" href="class_game_1_1_cube_block.html">CubeBlock</a>, <a class="code hl_interface" href="interface_game_1_1_i_paintable_block.html">IPaintableBlock</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#adf60fb92842cc0d9d43febd38df8ef0c">    6</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_painted_cube_block.html#adf60fb92842cc0d9d43febd38df8ef0c">m_coloredTextureSlot</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#aa73962159c2dd42fe71fd28f9f53ab20">    8</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#aa73962159c2dd42fe71fd28f9f53ab20">PaintedCubeBlock</a>(<span class="keywordtype">int</span> coloredTextureSlot) =&gt; <a class="code hl_variable" href="class_game_1_1_painted_cube_block.html#adf60fb92842cc0d9d43febd38df8ef0c">m_coloredTextureSlot</a> = coloredTextureSlot;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#a4236144344e980485e8a7119ac6370c0">   10</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a4236144344e980485e8a7119ac6370c0">GetFaceTextureSlot</a>(<span class="keywordtype">int</span> face, <span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a232431c7119fd926b03db1f635394cbc">IsColored</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value))) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_block.html#a942108f857e36c85d360ce83763ada88">DefaultTextureSlot</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_painted_cube_block.html#adf60fb92842cc0d9d43febd38df8ef0c">m_coloredTextureSlot</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        }</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#ac5915c4b914b6a1b163fa2af6c786c45">   17</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#ac5915c4b914b6a1b163fa2af6c786c45">GenerateTerrainVertices</a>(<a class="code hl_class" href="class_game_1_1_block_geometry_generator.html">BlockGeometryGenerator</a> generator, <a class="code hl_class" href="class_game_1_1_terrain_geometry.html">TerrainGeometry</a> geometry, <span class="keywordtype">int</span> value, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordtype">int</span> data = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> color = <a class="code hl_class" href="class_game_1_1_subsystem_palette.html">SubsystemPalette</a>.<a class="code hl_function" href="class_game_1_1_subsystem_palette.html#a2d4cd2a6c3a89bb33eb78f77b005c180">GetColor</a>(generator, <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">GetColor</a>(data));</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            generator.<a class="code hl_function" href="class_game_1_1_block_geometry_generator.html#aa145c8b37f414f139da68ddb02c7da36">GenerateCubeVertices</a>(</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keyword">this</span>,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                value,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                x,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                y,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                z,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                color,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                geometry.<a class="code hl_variable" href="class_game_1_1_terrain_geometry.html#afc584588afe1e37c7cd07ab26994dd62">OpaqueSubsetsByFace</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            );</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#a12b649a98fadc5a110b583736d9a0335">   31</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a12b649a98fadc5a110b583736d9a0335">DrawBlock</a>(<a class="code hl_class" href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">PrimitivesRenderer3D</a> primitivesRenderer,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordtype">int</span> value,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> color,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordtype">float</span> size,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            ref <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> matrix,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_class" href="class_game_1_1_draw_block_environment_data.html">DrawBlockEnvironmentData</a> environmentData) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordtype">int</span> data = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            color *= <a class="code hl_class" href="class_game_1_1_subsystem_palette.html">SubsystemPalette</a>.<a class="code hl_function" href="class_game_1_1_subsystem_palette.html#a2d4cd2a6c3a89bb33eb78f77b005c180">GetColor</a>(environmentData, <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">GetColor</a>(data));</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#a81893d07db55150d0ad9e355471d0e39">DrawCubeBlock</a>(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                primitivesRenderer,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                value,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(size),</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                ref matrix,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                color,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                color,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                environmentData</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            );</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#ae77ce757665fee37e10e97dddb44f39c">   50</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> IEnumerable&lt;int&gt; <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#ae77ce757665fee37e10e97dddb44f39c">GetCreativeValues</a>() {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            yield <span class="keywordflow">return</span> <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(<a class="code hl_variable" href="class_game_1_1_block.html#a0b1a87d92dc3fdfccdcff1609740702d">BlockIndex</a>, 0, <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#aa765c73f07f76a00203d9d3a01eab4d9">SetColor</a>(0, <span class="keyword">null</span>));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">while</span> (i &lt; 16) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                yield <span class="keywordflow">return</span> <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(<a class="code hl_variable" href="class_game_1_1_block.html#a0b1a87d92dc3fdfccdcff1609740702d">BlockIndex</a>, 0, <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#aa765c73f07f76a00203d9d3a01eab4d9">SetColor</a>(0, i));</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <span class="keywordtype">int</span> num = i + 1;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                i = num;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#a73c0b4b1f4417bccd8f65792e23e9e13">   60</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a73c0b4b1f4417bccd8f65792e23e9e13">GetDropValues</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> subsystemTerrain,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordtype">int</span> oldValue,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordtype">int</span> newValue,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordtype">int</span> toolLevel,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            List&lt;BlockDropValue&gt; dropValues,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            out <span class="keywordtype">bool</span> showDebris) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordtype">int</span> data = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(oldValue);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">GetColor</a>(data).HasValue) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                showDebris = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">if</span> (toolLevel &gt;= <a class="code hl_variable" href="class_game_1_1_block.html#ad75b16e703e4fa87039eb14b737cfa5e">RequiredToolLevel</a>) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    dropValues.Add(<span class="keyword">new</span> <a class="code hl_struct" href="struct_game_1_1_block_drop_value.html">BlockDropValue</a> { Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(<a class="code hl_variable" href="class_game_1_1_block.html#a51d476d117641658d262beaa0c5ca316">DefaultDropContent</a>, 0, data), Count = (int)<a class="code hl_variable" href="class_game_1_1_block.html#a0ba9206b3656d45249f6acadeca11c6c">DefaultDropCount</a> });</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                base.GetDropValues(subsystemTerrain, oldValue, newValue, toolLevel, dropValues, out showDebris);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#a2bebd90acb4e93ce096e03b8f40dd9f2">   78</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_class" href="class_game_1_1_block_debris_particle_system.html">BlockDebrisParticleSystem</a> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a2bebd90acb4e93ce096e03b8f40dd9f2">CreateDebrisParticleSystem</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> subsystemTerrain,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> position,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordtype">int</span> value,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordtype">float</span> strength) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordtype">int</span> data = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> color = <a class="code hl_class" href="class_game_1_1_subsystem_palette.html">SubsystemPalette</a>.<a class="code hl_function" href="class_game_1_1_subsystem_palette.html#a2d4cd2a6c3a89bb33eb78f77b005c180">GetColor</a>(subsystemTerrain, <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">GetColor</a>(data));</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_block_debris_particle_system.html">BlockDebrisParticleSystem</a>(subsystemTerrain, position, strength, <a class="code hl_variable" href="class_game_1_1_block.html#a5a1b1cc704321e845816e592e99611ab">DestructionDebrisScale</a>, color, <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a4236144344e980485e8a7119ac6370c0">GetFaceTextureSlot</a>(0, value));</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#a606903c4a98662c464791aba26da6f84">   87</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a606903c4a98662c464791aba26da6f84">GetDisplayName</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> subsystemTerrain, <span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordtype">int</span> data = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="class_game_1_1_subsystem_palette.html">SubsystemPalette</a>.<a class="code hl_function" href="class_game_1_1_subsystem_palette.html#a139201bb1d0347b4d59b34b553858e02">GetName</a>(</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                subsystemTerrain,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">GetColor</a>(data),</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#a227bf021d30dc63323da258527112b0e">GetBlock</a>($<span class="stringliteral">&quot;{GetType().Name}:{data.ToString()}&quot;</span>, <span class="stringliteral">&quot;DisplayName&quot;</span>)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            );</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#aaa07556f0a45fd2bd94d087634839983">   96</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#aaa07556f0a45fd2bd94d087634839983">GetCategory</a>(<span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">GetColor</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value)).HasValue) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <span class="keywordflow">return</span> base.GetCategory(value);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;Painted&quot;</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#a01c64626ac5a083ad9c023dcc67a7c49">  103</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span>? <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a01c64626ac5a083ad9c023dcc67a7c49">GetPaintColor</a>(<span class="keywordtype">int</span> value) =&gt; <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">GetColor</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value));</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#acec20b089b6caef836e36e4f261c5f8d">  105</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#acec20b089b6caef836e36e4f261c5f8d">Paint</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> terrain, <span class="keywordtype">int</span> value, <span class="keywordtype">int</span>? color) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordtype">int</span> data = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a3e7fb31b9f0414ed4190c85b508cd21c">ReplaceData</a>(value, <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#aa765c73f07f76a00203d9d3a01eab4d9">SetColor</a>(data, color));</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#a232431c7119fd926b03db1f635394cbc">  110</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a232431c7119fd926b03db1f635394cbc">IsColored</a>(<span class="keywordtype">int</span> data) =&gt; (data &amp; 1) != 0;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">  112</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span>? <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">GetColor</a>(<span class="keywordtype">int</span> data) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">if</span> ((data &amp; 1) != 0) {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <span class="keywordflow">return</span> (data &gt;&gt; 1) &amp; 0xF;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="class_game_1_1_painted_cube_block.html#aa765c73f07f76a00203d9d3a01eab4d9">  119</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_painted_cube_block.html#aa765c73f07f76a00203d9d3a01eab4d9">SetColor</a>(<span class="keywordtype">int</span> data, <span class="keywordtype">int</span>? color) {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keywordflow">if</span> (color.HasValue) {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <span class="keywordflow">return</span> (data &amp; -32) | 1 | (color.Value &lt;&lt; 1);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">return</span> data &amp; -32;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
+</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
+<div class="ttc" id="a_subsystem_audio_8cs_html_aa72bd5818d1fb1c95123ce286b96e775"><div class="ttname"><a href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a></div><div class="ttdeci">Engine.Vector3 Vector3</div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00005">SubsystemAudio.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_primitives_renderer3_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">Engine.Graphics.PrimitivesRenderer3D</a></div><div class="ttdef"><b>定义</b> <a href="_primitives_renderer3_d_8cs_source.html#l00004">PrimitivesRenderer3D.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_debris_particle_system_html"><div class="ttname"><a href="class_game_1_1_block_debris_particle_system.html">Game.BlockDebrisParticleSystem</a></div><div class="ttdef"><b>定义</b> <a href="_block_debris_particle_system_8cs_source.html#l00005">BlockDebrisParticleSystem.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_geometry_generator_html"><div class="ttname"><a href="class_game_1_1_block_geometry_generator.html">Game.BlockGeometryGenerator</a></div><div class="ttdef"><b>定义</b> <a href="_block_geometry_generator_8cs_source.html#l00004">BlockGeometryGenerator.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_geometry_generator_html_aa145c8b37f414f139da68ddb02c7da36"><div class="ttname"><a href="class_game_1_1_block_geometry_generator.html#aa145c8b37f414f139da68ddb02c7da36">Game.BlockGeometryGenerator.GenerateCubeVertices</a></div><div class="ttdeci">virtual void GenerateCubeVertices(Block block, int value, int x, int y, int z, Color color, TerrainGeometrySubset[] subsetsByFace)</div><div class="ttdef"><b>定义</b> <a href="_block_geometry_generator_8cs_source.html#l00367">BlockGeometryGenerator.cs:367</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a0b1a87d92dc3fdfccdcff1609740702d"><div class="ttname"><a href="class_game_1_1_block.html#a0b1a87d92dc3fdfccdcff1609740702d">Game.Block.BlockIndex</a></div><div class="ttdeci">int BlockIndex</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00006">Block.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a0ba9206b3656d45249f6acadeca11c6c"><div class="ttname"><a href="class_game_1_1_block.html#a0ba9206b3656d45249f6acadeca11c6c">Game.Block.DefaultDropCount</a></div><div class="ttdeci">float DefaultDropCount</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00087">Block.cs:87</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a51d476d117641658d262beaa0c5ca316"><div class="ttname"><a href="class_game_1_1_block.html#a51d476d117641658d262beaa0c5ca316">Game.Block.DefaultDropContent</a></div><div class="ttdeci">int DefaultDropContent</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00085">Block.cs:85</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a5a1b1cc704321e845816e592e99611ab"><div class="ttname"><a href="class_game_1_1_block.html#a5a1b1cc704321e845816e592e99611ab">Game.Block.DestructionDebrisScale</a></div><div class="ttdeci">float DestructionDebrisScale</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00107">Block.cs:107</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a942108f857e36c85d360ce83763ada88"><div class="ttname"><a href="class_game_1_1_block.html#a942108f857e36c85d360ce83763ada88">Game.Block.DefaultTextureSlot</a></div><div class="ttdeci">int DefaultTextureSlot</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00105">Block.cs:105</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_ad75b16e703e4fa87039eb14b737cfa5e"><div class="ttname"><a href="class_game_1_1_block.html#ad75b16e703e4fa87039eb14b737cfa5e">Game.Block.RequiredToolLevel</a></div><div class="ttdeci">int RequiredToolLevel</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00091">Block.cs:91</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_a81893d07db55150d0ad9e355471d0e39"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#a81893d07db55150d0ad9e355471d0e39">Game.BlocksManager.DrawCubeBlock</a></div><div class="ttdeci">static void DrawCubeBlock(PrimitivesRenderer3D primitivesRenderer, int value, Vector3 size, ref Matrix matrix, Color color, Color topColor, DrawBlockEnvironmentData environmentData)</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00453">BlocksManager.cs:453</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cube_block_html"><div class="ttname"><a href="class_game_1_1_cube_block.html">Game.CubeBlock</a></div><div class="ttdef"><b>定义</b> <a href="_cube_block_8cs_source.html#l00005">CubeBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_draw_block_environment_data_html"><div class="ttname"><a href="class_game_1_1_draw_block_environment_data.html">Game.DrawBlockEnvironmentData</a></div><div class="ttdef"><b>定义</b> <a href="_draw_block_environment_data_8cs_source.html#l00005">DrawBlockEnvironmentData.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_a227bf021d30dc63323da258527112b0e"><div class="ttname"><a href="class_game_1_1_language_control.html#a227bf021d30dc63323da258527112b0e">Game.LanguageControl.GetBlock</a></div><div class="ttdeci">static string GetBlock(string blockName, string prop)</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00330">LanguageControl.cs:330</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_a01c64626ac5a083ad9c023dcc67a7c49"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#a01c64626ac5a083ad9c023dcc67a7c49">Game.PaintedCubeBlock.GetPaintColor</a></div><div class="ttdeci">int? GetPaintColor(int value)</div><div class="ttdef"><b>定义</b> <a href="#l00103">PaintedCubeBlock.cs:103</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_a12b649a98fadc5a110b583736d9a0335"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#a12b649a98fadc5a110b583736d9a0335">Game.PaintedCubeBlock.DrawBlock</a></div><div class="ttdeci">override void DrawBlock(PrimitivesRenderer3D primitivesRenderer, int value, Color color, float size, ref Matrix matrix, DrawBlockEnvironmentData environmentData)</div><div class="ttdef"><b>定义</b> <a href="#l00031">PaintedCubeBlock.cs:31</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_a232431c7119fd926b03db1f635394cbc"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#a232431c7119fd926b03db1f635394cbc">Game.PaintedCubeBlock.IsColored</a></div><div class="ttdeci">static bool IsColored(int data)</div><div class="ttdef"><b>定义</b> <a href="#l00110">PaintedCubeBlock.cs:110</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_a2bebd90acb4e93ce096e03b8f40dd9f2"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#a2bebd90acb4e93ce096e03b8f40dd9f2">Game.PaintedCubeBlock.CreateDebrisParticleSystem</a></div><div class="ttdeci">override BlockDebrisParticleSystem CreateDebrisParticleSystem(SubsystemTerrain subsystemTerrain, Vector3 position, int value, float strength)</div><div class="ttdef"><b>定义</b> <a href="#l00078">PaintedCubeBlock.cs:78</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_a4236144344e980485e8a7119ac6370c0"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#a4236144344e980485e8a7119ac6370c0">Game.PaintedCubeBlock.GetFaceTextureSlot</a></div><div class="ttdeci">override int GetFaceTextureSlot(int face, int value)</div><div class="ttdef"><b>定义</b> <a href="#l00010">PaintedCubeBlock.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_a606903c4a98662c464791aba26da6f84"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#a606903c4a98662c464791aba26da6f84">Game.PaintedCubeBlock.GetDisplayName</a></div><div class="ttdeci">override string GetDisplayName(SubsystemTerrain subsystemTerrain, int value)</div><div class="ttdef"><b>定义</b> <a href="#l00087">PaintedCubeBlock.cs:87</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_a73c0b4b1f4417bccd8f65792e23e9e13"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#a73c0b4b1f4417bccd8f65792e23e9e13">Game.PaintedCubeBlock.GetDropValues</a></div><div class="ttdeci">override void GetDropValues(SubsystemTerrain subsystemTerrain, int oldValue, int newValue, int toolLevel, List&lt; BlockDropValue &gt; dropValues, out bool showDebris)</div><div class="ttdef"><b>定义</b> <a href="#l00060">PaintedCubeBlock.cs:60</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_a7c3ffd7b7be4d08c44412298410eedda"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#a7c3ffd7b7be4d08c44412298410eedda">Game.PaintedCubeBlock.GetColor</a></div><div class="ttdeci">static ? int GetColor(int data)</div><div class="ttdef"><b>定义</b> <a href="#l00112">PaintedCubeBlock.cs:112</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_aa73962159c2dd42fe71fd28f9f53ab20"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#aa73962159c2dd42fe71fd28f9f53ab20">Game.PaintedCubeBlock.PaintedCubeBlock</a></div><div class="ttdeci">PaintedCubeBlock(int coloredTextureSlot)</div><div class="ttdef"><b>定义</b> <a href="#l00008">PaintedCubeBlock.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_aa765c73f07f76a00203d9d3a01eab4d9"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#aa765c73f07f76a00203d9d3a01eab4d9">Game.PaintedCubeBlock.SetColor</a></div><div class="ttdeci">static int SetColor(int data, int? color)</div><div class="ttdef"><b>定义</b> <a href="#l00119">PaintedCubeBlock.cs:119</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_aaa07556f0a45fd2bd94d087634839983"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#aaa07556f0a45fd2bd94d087634839983">Game.PaintedCubeBlock.GetCategory</a></div><div class="ttdeci">override string GetCategory(int value)</div><div class="ttdef"><b>定义</b> <a href="#l00096">PaintedCubeBlock.cs:96</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_ac5915c4b914b6a1b163fa2af6c786c45"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#ac5915c4b914b6a1b163fa2af6c786c45">Game.PaintedCubeBlock.GenerateTerrainVertices</a></div><div class="ttdeci">override void GenerateTerrainVertices(BlockGeometryGenerator generator, TerrainGeometry geometry, int value, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00017">PaintedCubeBlock.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_acec20b089b6caef836e36e4f261c5f8d"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#acec20b089b6caef836e36e4f261c5f8d">Game.PaintedCubeBlock.Paint</a></div><div class="ttdeci">int Paint(SubsystemTerrain terrain, int value, int? color)</div><div class="ttdef"><b>定义</b> <a href="#l00105">PaintedCubeBlock.cs:105</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_adf60fb92842cc0d9d43febd38df8ef0c"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#adf60fb92842cc0d9d43febd38df8ef0c">Game.PaintedCubeBlock.m_coloredTextureSlot</a></div><div class="ttdeci">int m_coloredTextureSlot</div><div class="ttdef"><b>定义</b> <a href="#l00006">PaintedCubeBlock.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_painted_cube_block_html_ae77ce757665fee37e10e97dddb44f39c"><div class="ttname"><a href="class_game_1_1_painted_cube_block.html#ae77ce757665fee37e10e97dddb44f39c">Game.PaintedCubeBlock.GetCreativeValues</a></div><div class="ttdeci">override IEnumerable&lt; int &gt; GetCreativeValues()</div><div class="ttdef"><b>定义</b> <a href="#l00050">PaintedCubeBlock.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_palette_html"><div class="ttname"><a href="class_game_1_1_subsystem_palette.html">Game.SubsystemPalette</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_palette_8cs_source.html#l00006">SubsystemPalette.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_palette_html_a139201bb1d0347b4d59b34b553858e02"><div class="ttname"><a href="class_game_1_1_subsystem_palette.html#a139201bb1d0347b4d59b34b553858e02">Game.SubsystemPalette.GetName</a></div><div class="ttdeci">string GetName(int index)</div><div class="ttdef"><b>定义</b> <a href="_subsystem_palette_8cs_source.html#l00022">SubsystemPalette.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_palette_html_a2d4cd2a6c3a89bb33eb78f77b005c180"><div class="ttname"><a href="class_game_1_1_subsystem_palette.html#a2d4cd2a6c3a89bb33eb78f77b005c180">Game.SubsystemPalette.GetColor</a></div><div class="ttdeci">Color GetColor(int index)</div><div class="ttdef"><b>定义</b> <a href="_subsystem_palette_8cs_source.html#l00020">SubsystemPalette.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html">Game.SubsystemTerrain</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00006">SubsystemTerrain.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_geometry_html"><div class="ttname"><a href="class_game_1_1_terrain_geometry.html">Game.TerrainGeometry</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_geometry_8cs_source.html#l00005">TerrainGeometry.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_geometry_html_afc584588afe1e37c7cd07ab26994dd62"><div class="ttname"><a href="class_game_1_1_terrain_geometry.html#afc584588afe1e37c7cd07ab26994dd62">Game.TerrainGeometry.OpaqueSubsetsByFace</a></div><div class="ttdeci">TerrainGeometrySubset[] OpaqueSubsetsByFace</div><div class="ttdef"><b>定义</b> <a href="_terrain_geometry_8cs_source.html#l00012">TerrainGeometry.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a3e7fb31b9f0414ed4190c85b508cd21c"><div class="ttname"><a href="class_game_1_1_terrain.html#a3e7fb31b9f0414ed4190c85b508cd21c">Game.Terrain.ReplaceData</a></div><div class="ttdeci">static int ReplaceData(int value, int data)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00331">Terrain.cs:331</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aea9a8c0114bc872225f02ebc8b7b8b9f"><div class="ttname"><a href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">Game.Terrain.MakeBlockValue</a></div><div class="ttdeci">static int MakeBlockValue(int contents)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00298">Terrain.cs:298</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aec56ea916e034b2e4db00d1814fdadba"><div class="ttname"><a href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">Game.Terrain.ExtractData</a></div><div class="ttdeci">static int ExtractData(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00307">Terrain.cs:307</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_paintable_block_html"><div class="ttname"><a href="interface_game_1_1_i_paintable_block.html">Game.IPaintableBlock</a></div><div class="ttdef"><b>定义</b> <a href="_i_paintable_block_8cs_source.html#l00002">IPaintableBlock.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_game_1_1_block_drop_value_html"><div class="ttname"><a href="struct_game_1_1_block_drop_value.html">Game.BlockDropValue</a></div><div class="ttdef"><b>定义</b> <a href="_block_drop_value_8cs_source.html#l00004">BlockDropValue.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_407fceb6d650316801e32c7b7f8f0e13.html">Block</a></li><li class="navelem"><a href="_painted_cube_block_8cs.html">PaintedCubeBlock.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

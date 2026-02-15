@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Game/DataSizeFormatter.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_data_size_formatter_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DataSizeFormatter.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_data_size_formatter_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_data_size_formatter.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_data_size_formatter.html">DataSizeFormatter</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_data_size_formatter.html#abaf8836f263a1928e67864189689e2a5">    5</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_data_size_formatter.html#abaf8836f263a1928e67864189689e2a5">Format</a>(<span class="keywordtype">long</span> bytes, <span class="keywordtype">int</span> significantDigits = 3) {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>            <span class="keywordflow">if</span> (bytes &lt; 1024) {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>                <span class="keywordflow">return</span> <span class="stringliteral">&quot;1KB&quot;</span>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            }</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            <span class="keywordflow">if</span> (bytes &lt; 1048576) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                <span class="keywordtype">float</span> num = bytes / 1024f;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Format(<a class="code hl_function" href="class_game_1_1_data_size_formatter.html#a87b6666e66a128bf571f33069360e1e5">PrepareFormatString</a>(num, <span class="stringliteral">&quot;KB&quot;</span>, 0), num);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="keywordflow">if</span> (bytes &lt; 1073741824) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                <span class="keywordtype">float</span> num2 = bytes / 1024f / 1024f;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Format(<a class="code hl_function" href="class_game_1_1_data_size_formatter.html#a87b6666e66a128bf571f33069360e1e5">PrepareFormatString</a>(num2, <span class="stringliteral">&quot;MB&quot;</span>, significantDigits), num2);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordtype">float</span> num3 = bytes / 1024f / 1024f / 1024f;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Format(<a class="code hl_function" href="class_game_1_1_data_size_formatter.html#a87b6666e66a128bf571f33069360e1e5">PrepareFormatString</a>(num3, <span class="stringliteral">&quot;GB&quot;</span>, significantDigits), num3);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        }</div>
+</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_game_1_1_data_size_formatter.html#a87b6666e66a128bf571f33069360e1e5">   21</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_data_size_formatter.html#a87b6666e66a128bf571f33069360e1e5">PrepareFormatString</a>(<span class="keywordtype">float</span> value, <span class="keywordtype">string</span> unit, <span class="keywordtype">int</span> significantDigits) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordtype">int</span> num = (int)(MathF.Log10(value) + 1f);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordtype">int</span> num2 = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(significantDigits - num, 0);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">if</span> (num2 &gt; 0) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                <span class="keywordflow">return</span> $<span class="stringliteral">&quot;{{0:0.{new string(&#39;#&#39;, num2)}}}{unit}&quot;</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">return</span> $<span class="stringliteral">&quot;{{0:0}}{unit}&quot;</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_data_size_formatter_html"><div class="ttname"><a href="class_game_1_1_data_size_formatter.html">Game.DataSizeFormatter</a></div><div class="ttdef"><b>定义</b> <a href="#l00004">DataSizeFormatter.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_data_size_formatter_html_a87b6666e66a128bf571f33069360e1e5"><div class="ttname"><a href="class_game_1_1_data_size_formatter.html#a87b6666e66a128bf571f33069360e1e5">Game.DataSizeFormatter.PrepareFormatString</a></div><div class="ttdeci">static string PrepareFormatString(float value, string unit, int significantDigits)</div><div class="ttdef"><b>定义</b> <a href="#l00021">DataSizeFormatter.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_1_1_data_size_formatter_html_abaf8836f263a1928e67864189689e2a5"><div class="ttname"><a href="class_game_1_1_data_size_formatter.html#abaf8836f263a1928e67864189689e2a5">Game.DataSizeFormatter.Format</a></div><div class="ttdeci">static string Format(long bytes, int significantDigits=3)</div><div class="ttdef"><b>定义</b> <a href="#l00005">DataSizeFormatter.cs:5</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_afb822b09482a1c506ad46299f82cac5.html">Game</a></li><li class="navelem"><a href="_data_size_formatter_8cs.html">DataSizeFormatter.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

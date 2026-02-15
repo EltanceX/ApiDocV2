@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Screen/TrialEndedScreen.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_trial_ended_screen_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TrialEndedScreen.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_trial_ended_screen_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_trial_ended_screen.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_trial_ended_screen.html#a4005cd6c29b2d2a4a4835a61d20a4551">TrialEndedScreen</a> : <a class="code hl_class" href="class_game_1_1_screen.html">Screen</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_trial_ended_screen.html#ab5f6dfc7b66056162bc39a9f28fe8b81">    5</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#ab5f6dfc7b66056162bc39a9f28fe8b81">m_buyButton</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_trial_ended_screen.html#aaa7e79eb8b34d47448827aafb5e7f710">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#aaa7e79eb8b34d47448827aafb5e7f710">m_quitButton</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_trial_ended_screen.html#a2df002d5a0142289c2fcab4afdd36fb0">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#a2df002d5a0142289c2fcab4afdd36fb0">m_newWorldButton</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_trial_ended_screen.html#a4005cd6c29b2d2a4a4835a61d20a4551">   11</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_trial_ended_screen.html#a4005cd6c29b2d2a4a4835a61d20a4551">TrialEndedScreen</a>() {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Screens/TrialEndedScreen&quot;</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#ab5f6dfc7b66056162bc39a9f28fe8b81">m_buyButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;Buy&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#aaa7e79eb8b34d47448827aafb5e7f710">m_quitButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;Quit&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#a2df002d5a0142289c2fcab4afdd36fb0">m_newWorldButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;NewWorld&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        }</div>
+</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_1_1_trial_ended_screen.html#a45b98d33ff2c40b21ce9e43df2a65ddd">   19</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_trial_ended_screen.html#a45b98d33ff2c40b21ce9e43df2a65ddd">Update</a>() {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#ab5f6dfc7b66056162bc39a9f28fe8b81">m_buyButton</a> != <span class="keyword">null</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                &amp;&amp; <a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#ab5f6dfc7b66056162bc39a9f28fe8b81">m_buyButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <a class="code hl_class" href="class_game_1_1_marketplace_manager.html">MarketplaceManager</a>.<a class="code hl_function" href="class_game_1_1_marketplace_manager.html#a0d8d6ab88269ba1d40ebad9905c7b924">ShowMarketplace</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<span class="stringliteral">&quot;MainMenu&quot;</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">if</span> ((<a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#aaa7e79eb8b34d47448827aafb5e7f710">m_quitButton</a> != <span class="keyword">null</span> &amp;&amp; <a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#aaa7e79eb8b34d47448827aafb5e7f710">m_quitButton</a>.IsClicked)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                || Input.Back) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<span class="stringliteral">&quot;MainMenu&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#a2df002d5a0142289c2fcab4afdd36fb0">m_newWorldButton</a> != <span class="keyword">null</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                &amp;&amp; <a class="code hl_variable" href="class_game_1_1_trial_ended_screen.html#a2df002d5a0142289c2fcab4afdd36fb0">m_newWorldButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<span class="stringliteral">&quot;NewWorld&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_marketplace_manager_html"><div class="ttname"><a href="class_game_1_1_marketplace_manager.html">Game.MarketplaceManager</a></div><div class="ttdef"><b>定义</b> <a href="_marketplace_manager_8cs_source.html#l00002">MarketplaceManager.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_marketplace_manager_html_a0d8d6ab88269ba1d40ebad9905c7b924"><div class="ttname"><a href="class_game_1_1_marketplace_manager.html#a0d8d6ab88269ba1d40ebad9905c7b924">Game.MarketplaceManager.ShowMarketplace</a></div><div class="ttdeci">static void ShowMarketplace()</div><div class="ttdef"><b>定义</b> <a href="_marketplace_manager_8cs_source.html#l00016">MarketplaceManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screen_html"><div class="ttname"><a href="class_game_1_1_screen.html">Game.Screen</a></div><div class="ttdef"><b>定义</b> <a href="_screen_8cs_source.html#l00002">Screen.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html"><div class="ttname"><a href="class_game_1_1_screens_manager.html">Game.ScreensManager</a></div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00005">ScreensManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a90614198a66aec078d9d00cfcbcd49a1"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">Game.ScreensManager.SwitchScreen</a></div><div class="ttdeci">static void SwitchScreen(string name, params object[] parameters)</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00065">ScreensManager.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_trial_ended_screen_html_a2df002d5a0142289c2fcab4afdd36fb0"><div class="ttname"><a href="class_game_1_1_trial_ended_screen.html#a2df002d5a0142289c2fcab4afdd36fb0">Game.TrialEndedScreen.m_newWorldButton</a></div><div class="ttdeci">ButtonWidget m_newWorldButton</div><div class="ttdef"><b>定义</b> <a href="#l00009">TrialEndedScreen.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_trial_ended_screen_html_a4005cd6c29b2d2a4a4835a61d20a4551"><div class="ttname"><a href="class_game_1_1_trial_ended_screen.html#a4005cd6c29b2d2a4a4835a61d20a4551">Game.TrialEndedScreen.TrialEndedScreen</a></div><div class="ttdeci">TrialEndedScreen()</div><div class="ttdef"><b>定义</b> <a href="#l00011">TrialEndedScreen.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_trial_ended_screen_html_a45b98d33ff2c40b21ce9e43df2a65ddd"><div class="ttname"><a href="class_game_1_1_trial_ended_screen.html#a45b98d33ff2c40b21ce9e43df2a65ddd">Game.TrialEndedScreen.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00019">TrialEndedScreen.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_trial_ended_screen_html_aaa7e79eb8b34d47448827aafb5e7f710"><div class="ttname"><a href="class_game_1_1_trial_ended_screen.html#aaa7e79eb8b34d47448827aafb5e7f710">Game.TrialEndedScreen.m_quitButton</a></div><div class="ttdeci">ButtonWidget m_quitButton</div><div class="ttdef"><b>定义</b> <a href="#l00007">TrialEndedScreen.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_trial_ended_screen_html_ab5f6dfc7b66056162bc39a9f28fe8b81"><div class="ttname"><a href="class_game_1_1_trial_ended_screen.html#ab5f6dfc7b66056162bc39a9f28fe8b81">Game.TrialEndedScreen.m_buyButton</a></div><div class="ttdeci">ButtonWidget m_buyButton</div><div class="ttdef"><b>定义</b> <a href="#l00005">TrialEndedScreen.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_819697851f82aaa78e1e98801cc3f64c.html">Screen</a></li><li class="navelem"><a href="_trial_ended_screen_8cs.html">TrialEndedScreen.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

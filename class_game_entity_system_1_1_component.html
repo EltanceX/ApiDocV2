@@ -1,0 +1,833 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: GameEntitySystem.Component</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_game_entity_system_1_1_component.html','','class_game_entity_system_1_1_component-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GameEntitySystem.Component<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 GameEntitySystem.Component 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component__inherit__graph.png" border="0" usemap="#a_game_entity_system_8_component_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_game_entity_system_8_component_inherit__map" id="a_game_entity_system_8_component_inherit__map">
+<area shape="rect" title=" " alt="" coords="144,1111,350,1137"/>
+<area shape="rect" href="class_game_1_1_component_aiming_sights.html" title=" " alt="" coords="412,5,616,32"/>
+<area shape="poly" title=" " alt="" coords="245,1095,248,888,254,736,265,571,283,405,310,253,327,186,347,127,370,79,396,42,413,30,411,35,400,46,374,82,352,129,332,187,315,254,288,406,270,571,259,736,253,888,251,1095"/>
+<area shape="rect" href="class_game_1_1_component_auto_jump.html" title=" " alt="" coords="421,56,607,83"/>
+<area shape="poly" title=" " alt="" coords="245,1095,249,896,256,752,268,594,286,437,313,293,330,229,349,174,371,128,396,93,422,76,419,81,400,97,376,130,354,176,335,231,318,294,292,438,273,595,261,752,255,896,251,1095"/>
+<area shape="rect" href="class_game_1_1_component_behavior.html" title=" " alt="" coords="425,107,603,133"/>
+<area shape="poly" title=" " alt="" coords="246,1095,251,905,259,768,271,618,290,469,316,333,332,273,351,220,372,177,396,143,426,125,423,130,400,147,377,179,356,222,337,274,321,334,295,470,276,619,264,768,256,905,251,1095"/>
+<area shape="rect" href="class_game_1_1_component_behavior_selector.html" title=" " alt="" coords="401,157,627,184"/>
+<area shape="poly" title=" " alt="" coords="246,1095,253,913,261,783,274,642,293,501,319,372,335,316,353,266,373,225,396,194,414,182,411,187,400,198,378,228,358,268,340,317,324,374,298,502,279,643,266,783,258,913,251,1095"/>
+<area shape="rect" href="class_game_1_1_component_block_entity.html" title=" " alt="" coords="417,208,611,235"/>
+<area shape="poly" title=" " alt="" coords="246,1095,254,923,263,800,277,667,296,534,322,413,337,359,355,313,374,274,396,245,418,231,415,235,400,249,379,277,360,315,342,361,327,414,302,535,282,668,269,801,260,923,252,1096"/>
+<area shape="rect" href="class_game_1_1_component_block_highlight.html" title=" " alt="" coords="408,259,620,285"/>
+<area shape="poly" title=" " alt="" coords="247,1095,256,931,280,691,300,566,325,452,357,359,375,323,396,295,414,283,411,288,400,299,380,326,362,361,330,454,305,567,286,691,262,931,252,1095"/>
+<area shape="rect" href="class_game_1_1_component_boat.html" title=" " alt="" coords="437,309,591,336"/>
+<area shape="poly" title=" " alt="" coords="247,1095,258,940,284,715,303,599,328,493,359,405,377,372,396,346,415,332,438,325,435,329,417,337,400,350,381,375,364,408,333,494,308,600,289,716,263,941,252,1096"/>
+<area shape="rect" href="class_game_1_1_component_clothing.html" title=" " alt="" coords="426,360,602,387"/>
+<area shape="poly" title=" " alt="" coords="247,1095,260,948,287,739,307,631,331,532,361,452,378,420,396,397,428,379,425,383,400,401,382,423,366,454,336,534,312,632,292,739,265,949,253,1095"/>
+<area shape="rect" href="class_game_1_1_component_creative_inventory.html" title=" " alt="" coords="399,411,629,437"/>
+<area shape="poly" title=" " alt="" coords="248,1095,262,958,290,764,310,664,334,573,363,498,379,469,396,447,414,436,412,440,400,451,383,472,368,500,339,574,315,665,295,764,267,959,253,1096"/>
+<area shape="rect" href="class_game_1_1_component_creature.html" title=" " alt="" coords="426,461,603,488"/>
+<area shape="poly" title=" " alt="" coords="248,1095,264,967,294,788,314,696,337,613,365,545,380,518,396,498,427,481,424,485,400,502,384,521,369,547,342,615,319,698,299,789,269,968,254,1096"/>
+<area shape="rect" href="class_game_1_1_component_creature_sounds.html" title=" " alt="" coords="404,512,625,539"/>
+<area shape="poly" title=" " alt="" coords="249,1095,266,977,297,812,317,729,340,653,367,591,381,567,396,549,415,537,412,541,400,553,385,570,371,593,345,655,322,730,302,814,271,978,254,1096"/>
+<area shape="rect" href="class_game_1_1_component_damage.html" title=" " alt="" coords="426,563,602,589"/>
+<area shape="poly" title=" " alt="" coords="250,1095,269,986,300,837,321,762,344,693,369,637,396,599,427,582,424,587,400,603,373,640,349,695,326,763,306,838,274,987,255,1096"/>
+<area shape="rect" href="class_game_1_1_component_digging_cracks.html" title=" " alt="" coords="408,613,621,640"/>
+<area shape="poly" title=" " alt="" coords="245,1095,251,1008,258,950,271,887,290,823,316,760,351,701,396,650,416,638,413,643,400,654,356,704,321,762,295,825,276,889,264,951,256,1008,251,1095"/>
+<area shape="rect" href="class_game_1_1_component_factors.html" title=" " alt="" coords="428,664,600,691"/>
+<area shape="poly" title=" " alt="" coords="247,1095,255,1016,264,965,278,909,297,852,322,797,355,745,396,701,430,683,427,688,400,705,359,749,327,799,302,854,283,911,269,966,260,1017,252,1096"/>
+<area shape="rect" href="class_game_1_1_component_first_person_model.html" title=" " alt="" coords="417,715,611,757"/>
+<area shape="poly" title=" " alt="" coords="249,1095,262,1028,288,940,308,893,332,847,361,805,396,767,418,754,415,759,400,771,365,808,336,850,313,895,294,942,267,1029,255,1096"/>
+<area shape="rect" href="class_game_1_1_component_flu.html" title=" " alt="" coords="442,781,587,808"/>
+<area shape="poly" title=" " alt="" coords="251,1095,266,1036,294,961,313,922,336,883,364,848,396,818,417,806,443,798,439,802,420,810,400,822,368,852,341,886,318,924,299,963,271,1038,256,1096"/>
+<area shape="rect" href="class_game_1_1_component_frame.html" title=" " alt="" coords="432,832,596,859"/>
+<area shape="poly" title=" " alt="" coords="254,1095,272,1045,301,984,343,921,368,893,397,868,433,852,430,857,399,873,372,897,347,924,306,986,277,1047,259,1096"/>
+<area shape="rect" href="class_game_1_1_component_furniture_inventory.html" title=" " alt="" coords="398,883,630,909"/>
+<area shape="poly" title=" " alt="" coords="258,1096,279,1056,309,1008,349,959,397,919,422,908,419,912,399,924,353,963,314,1011,283,1058,263,1098"/>
+<area shape="rect" href="class_game_1_1_component_glowing_eyes.html" title=" " alt="" coords="412,933,616,960"/>
+<area shape="poly" title=" " alt="" coords="264,1097,318,1032,355,998,397,970,427,958,423,962,399,974,359,1002,322,1036,269,1099"/>
+<area shape="rect" href="class_game_1_1_component_gui.html" title=" " alt="" coords="440,984,588,1011"/>
+<area shape="poly" title=" " alt="" coords="274,1099,329,1058,397,1020,442,1007,438,1011,399,1025,332,1063,278,1102"/>
+<area shape="rect" href="class_game_1_1_component_health.html" title=" " alt="" coords="432,1035,597,1061"/>
+<area shape="poly" title=" " alt="" coords="298,1103,397,1071,446,1060,442,1064,399,1076,301,1107"/>
+<area shape="rect" href="class_game_1_1_component_input.html" title=" " alt="" coords="436,1085,592,1112"/>
+<area shape="poly" title=" " alt="" coords="364,1111,437,1104,433,1108,367,1115"/>
+<area shape="rect" href="class_game_1_1_component_intro.html" title=" " alt="" coords="438,1136,591,1163"/>
+<area shape="poly" title=" " alt="" coords="364,1133,439,1141,435,1144,367,1138"/>
+<area shape="rect" href="class_game_1_1_component_intro_ship.html" title=" " alt="" coords="424,1187,604,1213"/>
+<area shape="poly" title=" " alt="" coords="299,1140,399,1172,446,1185,442,1187,397,1177,301,1145"/>
+<area shape="rect" href="class_game_1_1_component_inventory_base.html" title=" " alt="" coords="408,1237,620,1264"/>
+<area shape="poly" title=" " alt="" coords="275,1145,332,1185,399,1223,434,1236,429,1238,397,1228,329,1190,277,1150"/>
+<area shape="rect" href="class_game_1_1_component_locomotion.html" title=" " alt="" coords="417,1288,611,1315"/>
+<area shape="poly" title=" " alt="" coords="266,1148,322,1212,359,1246,399,1274,427,1286,423,1289,397,1278,355,1250,318,1216,267,1153"/>
+<area shape="rect" href="class_game_1_1_component_loot.html" title=" " alt="" coords="438,1339,590,1365"/>
+<area shape="poly" title=" " alt="" coords="260,1149,283,1190,314,1237,353,1285,399,1324,440,1342,435,1345,397,1329,349,1289,309,1240,279,1192,261,1154"/>
+<area shape="rect" href="class_game_1_1_component_miner.html" title=" " alt="" coords="434,1389,594,1416"/>
+<area shape="poly" title=" " alt="" coords="256,1150,277,1201,306,1262,347,1324,372,1351,399,1375,437,1393,432,1395,397,1380,368,1355,343,1327,301,1264,272,1203,257,1155"/>
+<area shape="rect" href="class_game_1_1_component_model.html" title=" " alt="" coords="433,1440,595,1467"/>
+<area shape="poly" title=" " alt="" coords="254,1150,271,1210,299,1285,318,1324,341,1362,368,1396,400,1426,435,1444,430,1446,396,1430,364,1400,336,1365,313,1326,294,1287,266,1212,254,1155"/>
+<area shape="rect" href="class_game_1_1_component_mount.html" title=" " alt="" coords="432,1491,596,1517"/>
+<area shape="poly" title=" " alt="" coords="252,1150,266,1220,292,1308,311,1354,335,1399,364,1441,400,1477,415,1487,435,1496,430,1497,413,1492,396,1481,360,1444,330,1402,306,1357,287,1310,261,1221,251,1155"/>
+<area shape="rect" href="class_game_1_1_component_name.html" title=" " alt="" coords="433,1541,595,1568"/>
+<area shape="poly" title=" " alt="" coords="250,1150,262,1228,285,1330,304,1384,329,1437,361,1485,400,1527,416,1538,435,1547,430,1549,413,1543,396,1531,356,1489,324,1439,299,1386,280,1332,256,1229,250,1155"/>
+<area shape="rect" href="class_game_1_1_component_on_fire.html" title=" " alt="" coords="431,1592,597,1619"/>
+<area shape="poly" title=" " alt="" coords="249,1150,257,1237,265,1292,278,1352,297,1414,323,1474,357,1530,400,1578,415,1588,433,1597,428,1599,412,1593,396,1582,352,1533,318,1477,292,1416,273,1354,260,1293,252,1238,248,1156"/>
+<area shape="rect" href="class_game_1_1_component_pathfinding.html" title=" " alt="" coords="418,1643,610,1669"/>
+<area shape="poly" title=" " alt="" coords="248,1150,253,1245,260,1307,272,1374,290,1443,317,1511,353,1574,375,1603,400,1629,420,1643,415,1645,396,1633,371,1606,349,1577,312,1514,285,1445,267,1375,255,1307,248,1245,247,1155"/>
+<area shape="rect" href="class_game_1_1_component_pickable_gatherer.html" title=" " alt="" coords="400,1693,628,1720"/>
+<area shape="poly" title=" " alt="" coords="252,1150,272,1267,303,1427,323,1507,346,1580,372,1640,400,1679,416,1692,411,1693,396,1683,367,1642,341,1582,318,1509,298,1428,267,1268,252,1155"/>
+<area shape="rect" href="class_game_1_1_component_pilot.html" title=" " alt="" coords="438,1744,591,1771"/>
+<area shape="poly" title=" " alt="" coords="252,1150,270,1277,300,1452,320,1540,343,1621,370,1687,385,1711,400,1730,417,1743,440,1752,434,1754,415,1747,396,1734,380,1714,365,1689,338,1623,315,1542,295,1453,265,1278,251,1155"/>
+<area shape="rect" href="class_game_1_1_component_rider.html" title=" " alt="" coords="435,1795,593,1821"/>
+<area shape="poly" title=" " alt="" coords="251,1150,268,1287,297,1476,316,1573,340,1661,368,1733,384,1760,400,1781,416,1793,437,1802,432,1804,414,1797,396,1785,379,1763,363,1735,335,1663,311,1574,291,1477,263,1287,250,1156"/>
+<area shape="rect" href="class_game_1_1_component_screen_overlays.html" title=" " alt="" coords="404,1845,624,1872"/>
+<area shape="poly" title=" " alt="" coords="250,1150,266,1296,293,1501,313,1606,337,1701,366,1779,382,1809,400,1831,416,1845,410,1845,396,1835,378,1812,361,1782,332,1703,308,1607,288,1501,261,1296,250,1155"/>
+<area shape="rect" href="class_game_1_1_component_shapeshifter.html" title=" " alt="" coords="414,1896,614,1923"/>
+<area shape="poly" title=" " alt="" coords="250,1151,264,1305,290,1525,310,1638,334,1742,364,1826,381,1858,400,1882,416,1896,411,1896,396,1886,377,1861,359,1828,329,1743,304,1640,285,1526,259,1306,249,1156"/>
+<area shape="rect" href="class_game_1_1_component_sickness.html" title=" " alt="" coords="424,1947,605,1973"/>
+<area shape="poly" title=" " alt="" coords="250,1150,262,1313,287,1549,306,1670,331,1781,362,1872,380,1907,400,1933,426,1951,421,1952,396,1937,376,1910,357,1874,326,1783,301,1671,281,1550,257,1314,249,1155"/>
+<area shape="rect" href="class_game_1_1_component_sleep.html" title=" " alt="" coords="434,1997,594,2024"/>
+<area shape="poly" title=" " alt="" coords="249,1151,260,1323,270,1444,284,1574,303,1703,328,1822,343,1874,360,1919,379,1956,400,1983,416,1996,436,2006,431,2006,413,2000,396,1987,375,1959,355,1921,338,1875,323,1823,298,1704,278,1574,264,1444,255,1323,249,1156"/>
+<area shape="rect" href="class_game_1_1_component_spawn.html" title=" " alt="" coords="430,2048,598,2075"/>
+<area shape="poly" title=" " alt="" coords="249,1150,259,1332,267,1459,280,1598,299,1735,325,1862,341,1917,358,1965,378,2005,400,2034,414,2045,433,2056,427,2056,411,2050,396,2038,374,2007,353,1967,336,1919,320,1863,294,1736,275,1598,262,1460,253,1332,248,1156"/>
+<area shape="rect" href="class_game_1_1_component_udder.html" title=" " alt="" coords="433,2099,595,2125"/>
+<area shape="poly" title=" " alt="" coords="249,1150,257,1339,265,1474,277,1621,296,1767,322,1901,338,1960,356,2011,377,2053,400,2085,415,2097,435,2107,430,2107,413,2101,396,2089,372,2056,351,2013,333,1962,317,1902,291,1768,272,1621,259,1475,251,1340,248,1155"/>
+<area shape="rect" href="class_game_1_1_component_vital_stats.html" title=" " alt="" coords="422,2149,606,2176"/>
+<area shape="poly" title=" " alt="" coords="249,1150,255,1349,262,1491,274,1645,293,1800,319,1942,336,2004,354,2058,376,2102,400,2135,424,2154,419,2153,396,2139,371,2105,349,2060,330,2005,314,1943,287,1801,269,1646,257,1491,250,1349,248,1156"/>
+<area shape="rect" href="class_game_1_1_component_vr_hands_model.html" title=" " alt="" coords="408,2200,620,2227"/>
+<area shape="poly" title=" " alt="" coords="248,1150,254,1358,260,1507,271,1669,289,1832,316,1981,333,2047,352,2104,375,2151,400,2186,415,2200,410,2199,396,2190,370,2154,348,2106,328,2048,311,1983,284,1833,266,1670,254,1507,248,1358,248,1156"/>
+<area shape="rect" title=" " alt="" coords="5,1111,96,1137"/>
+<area shape="poly" title=" " alt="" coords="110,1122,145,1122,141,1126,113,1126"/>
+<area shape="rect" href="class_game_1_1_component_avoid_fire_behavior.html" title=" " alt="" coords="678,48,912,75"/>
+<area shape="poly" title=" " alt="" coords="595,101,729,73,726,77,598,105"/>
+<area shape="rect" href="class_game_1_1_component_avoid_player_behavior.html" title=" " alt="" coords="696,99,894,141"/>
+<area shape="poly" title=" " alt="" coords="617,118,698,118,694,122,620,122"/>
+<area shape="rect" href="class_game_1_1_component_cattle_drive_behavior.html" title=" " alt="" coords="698,165,892,208"/>
+<area shape="poly" title=" " alt="" coords="594,135,631,143,711,163,707,166,630,148,597,140"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+GameEntitySystem.Component 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component__coll__graph.png" border="0" usemap="#a_game_entity_system_8_component_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_entity_system_8_component_coll__map" id="a_game_entity_system_8_component_coll__map">
+<area shape="rect" title=" " alt="" coords="2155,93,2362,120"/>
+<area shape="rect" title=" " alt="" coords="1251,5,1342,32"/>
+<area shape="poly" title=" " alt="" coords="1357,12,1452,8,1559,9,1721,19,1847,30,1972,47,2132,75,2206,93,2200,93,2131,80,1971,53,1846,35,1720,24,1559,15,1452,14,1358,17"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html" title=" " alt="" coords="1876,93,2049,120"/>
+<area shape="poly" title=" " alt="" coords="1357,19,1576,35,1714,52,1853,75,1917,93,1912,93,1851,80,1713,57,1576,41,1357,24"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html" title=" " alt="" coords="1583,93,1763,120"/>
+<area shape="poly" title=" " alt="" coords="1357,26,1453,44,1559,68,1634,93,1629,93,1558,73,1451,49,1357,31"/>
+<area shape="poly" title=" " alt="" coords="2065,104,2158,107,2152,107,2065,109"/>
+<area shape="poly" title=" " alt="" coords="1778,104,1878,106,1873,107,1779,109"/>
+<area shape="rect" href="class_game_entity_system_1_1_game_database.html" title=" " alt="" coords="1181,123,1412,149"/>
+<area shape="poly" title=" " alt="" coords="1427,133,1558,125,1605,121,1610,120,1559,131,1427,139"/>
+<area shape="rect" href="class_templates_database_1_1_database_object.html" title=" " alt="" coords="396,183,593,225"/>
+<area shape="poly" title=" " alt="" coords="565,174,671,140,732,124,793,112,902,98,1014,89,1235,83,1432,88,1585,99,1580,99,1432,93,1235,88,1015,94,903,103,793,117,733,129,673,145,567,180"/>
+<area shape="poly" title=" " alt="" coords="461,165,473,158,494,156,514,158,527,164,533,173,531,184,527,180,528,174,524,168,513,163,494,161,475,164,463,169"/>
+<area shape="rect" href="class_templates_database_1_1_database.html" title=" " alt="" coords="806,269,1003,296"/>
+<area shape="poly" title=" " alt="" coords="549,231,595,262,606,275,618,284,675,299,735,304,792,301,839,297,844,296,792,306,734,309,674,305,616,289,602,279,591,266,547,236"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html" title=" " alt="" coords="814,177,994,220"/>
+<area shape="poly" title=" " alt="" coords="608,200,816,199,811,200,609,205"/>
+<area shape="poly" title=" " alt="" coords="813,266,769,260,617,235,588,229,588,223,617,229,769,255,819,266"/>
+<area shape="rect" href="struct_engine_1_1_read_only_list-1-g.html" title=" " alt="" coords="407,324,582,351"/>
+<area shape="poly" title=" " alt="" coords="598,343,682,343,768,333,827,316,874,297,879,296,828,321,770,339,682,348,598,348"/>
+<area shape="poly" title=" " alt="" coords="459,306,471,300,494,297,516,299,529,306,534,315,527,326,524,321,528,315,526,309,515,305,494,303,473,305,461,311"/>
+<area shape="rect" title=" " alt="" coords="81,324,127,351"/>
+<area shape="poly" title=" " alt="" coords="143,335,406,335,406,340,143,340"/>
+<area shape="rect" href="class_templates_database_1_1_database_object_type.html" title=" " alt="" coords="5,183,203,225"/>
+<area shape="poly" title=" " alt="" coords="218,201,397,202,393,206,219,207"/>
+<area shape="poly" title=" " alt="" coords="70,165,83,158,104,156,124,158,137,164,143,173,141,183,136,181,138,174,133,168,122,163,104,161,84,164,73,169"/>
+<area shape="rect" href="class_game_entity_system_1_1_project_data.html" title=" " alt="" coords="1192,173,1401,200"/>
+<area shape="poly" title=" " alt="" coords="1416,184,1487,177,1558,163,1608,142,1648,121,1653,120,1611,147,1559,168,1488,183,1416,190"/>
+<area shape="poly" title=" " alt="" coords="971,224,1037,248,1118,272,1206,290,1295,297,1964,297,2012,292,2057,276,2100,253,2139,225,2204,165,2244,122,2249,119,2208,169,2143,229,2103,257,2059,281,2013,297,1964,303,1295,303,1205,295,1117,277,1036,253,970,229"/>
+<area shape="poly" title=" " alt="" coords="1010,202,1181,209,1371,221,1453,222,1558,212,1663,193,1765,168,1921,121,1926,120,1767,173,1664,198,1559,217,1453,227,1370,226,1181,215,1010,207"/>
+<area shape="poly" title=" " alt="" coords="1010,194,1157,191,1194,192,1189,192,1157,196,1010,200"/>
+<area shape="rect" title=" " alt="" coords="447,39,542,65"/>
+<area shape="poly" title=" " alt="" coords="544,69,658,113,794,163,831,177,826,177,792,168,656,118,543,74"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity_data_list.html" title=" " alt="" coords="793,127,1015,153"/>
+<area shape="poly" title=" " alt="" coords="1031,152,1158,167,1194,173,1189,174,1157,172,1031,157"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab134aba4e3dda9bf43f0f6845a874b03" id="r_ab134aba4e3dda9bf43f0f6845a874b03"><td class="memItemLeft">virtual IEnumerable&lt; <a class="el" href="#aec24711f3e89ec7c119f038deebdcf95">Entity</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ab134aba4e3dda9bf43f0f6845a874b03">GetOwnedEntities</a> ()</td></tr>
+<tr class="memitem:aed8a31c22bd1345d83a2acb280c32c91" id="r_aed8a31c22bd1345d83a2acb280c32c91"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aed8a31c22bd1345d83a2acb280c32c91">OnEntityAdded</a> ()</td></tr>
+<tr class="memitem:a2c071eb403fd36954c7f490fc2522887" id="r_a2c071eb403fd36954c7f490fc2522887"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2c071eb403fd36954c7f490fc2522887">OnEntityRemoved</a> ()</td></tr>
+<tr class="memitem:a9a88afacfaf9419361e96c8cc77607ec" id="r_a9a88afacfaf9419361e96c8cc77607ec"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9a88afacfaf9419361e96c8cc77607ec">Load</a> (<a class="el" href="#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="el" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap)</td></tr>
+<tr class="memitem:a653d630617ff29425af0d73152589aae" id="r_a653d630617ff29425af0d73152589aae"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a653d630617ff29425af0d73152589aae">Save</a> (<a class="el" href="#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="el" href="class_game_entity_system_1_1_entity_to_id_map.html">EntityToIdMap</a> entityToIdMap)</td></tr>
+<tr class="memitem:a35704c03f08af94523eca32daa741f38" id="r_a35704c03f08af94523eca32daa741f38"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a35704c03f08af94523eca32daa741f38">Dispose</a> ()</td></tr>
+<tr class="memitem:a2a64505bc0eeca752cd7cea92eff6a46" id="r_a2a64505bc0eeca752cd7cea92eff6a46"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2a64505bc0eeca752cd7cea92eff6a46">InheritFromComponent</a> (<a class="el" href="class_game_entity_system_1_1_component.html">Component</a> baseComponent)</td></tr>
+<tr class="memitem:a71ac5b110f00d3485739c41dbf889bf0" id="r_a71ac5b110f00d3485739c41dbf889bf0"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a71ac5b110f00d3485739c41dbf889bf0">Initialize</a> (<a class="el" href="#aec24711f3e89ec7c119f038deebdcf95">Entity</a> entity, <a class="el" href="#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9dafb863fd53090cb6c92c04500c14ea" id="r_a9dafb863fd53090cb6c92c04500c14ea"><td class="memItemLeft"><a class="el" href="#aec24711f3e89ec7c119f038deebdcf95">Entity</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9dafb863fd53090cb6c92c04500c14ea">m_entity</a></td></tr>
+<tr class="memitem:adc01e760801770132e6a80618cc91373" id="r_adc01e760801770132e6a80618cc91373"><td class="memItemLeft"><a class="el" href="#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a>&#160;</td><td class="memItemRight"><a class="el" href="#adc01e760801770132e6a80618cc91373">m_valuesDictionary</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pac-methods" class="groupheader"><a id="pac-methods" name="pac-methods"></a>
+包函数</h2></td></tr>
+<tr class="memitem:a0a5e7dbd386957fb1d9592a5b61799c7" id="r_a0a5e7dbd386957fb1d9592a5b61799c7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0a5e7dbd386957fb1d9592a5b61799c7">DisposeInternal</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a4b812f6825600e5419612a580d3094ff" id="r_a4b812f6825600e5419612a580d3094ff"><td class="memItemLeft">ValuesDictionary&#160;</td><td class="memItemRight"><a class="el" href="#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a><code> [get]</code></td></tr>
+<tr class="memitem:aec24711f3e89ec7c119f038deebdcf95" id="r_aec24711f3e89ec7c119f038deebdcf95"><td class="memItemLeft">Entity&#160;</td><td class="memItemRight"><a class="el" href="#aec24711f3e89ec7c119f038deebdcf95">Entity</a><code> [get]</code></td></tr>
+<tr class="memitem:a771baadae7a12358301d000d2e127421" id="r_a771baadae7a12358301d000d2e127421"><td class="memItemLeft">Project&#160;</td><td class="memItemRight"><a class="el" href="#a771baadae7a12358301d000d2e127421">Project</a><code> [get]</code></td></tr>
+<tr class="memitem:a411ab1fc6c34c9d1f1bbdbd95e567bca" id="r_a411ab1fc6c34c9d1f1bbdbd95e567bca"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a411ab1fc6c34c9d1f1bbdbd95e567bca">IsAddedToProject</a><code> [get]</code></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00007">7</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a35704c03f08af94523eca32daa741f38" name="a35704c03f08af94523eca32daa741f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35704c03f08af94523eca32daa741f38">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameEntitySystem.Component.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_component_clothing.html#a46d157fc36615918f6ebb5add891a44b">Game.ComponentClothing</a> , 以及 <a class="el" href="class_game_1_1_component_gui.html#a12e16750d0b2b8d4bdc1964022ebc8b2">Game.ComponentGui</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00030">30</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component_a35704c03f08af94523eca32daa741f38_icgraph.png" border="0" usemap="#aclass_game_entity_system_1_1_component_a35704c03f08af94523eca32daa741f38_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_entity_system_1_1_component_a35704c03f08af94523eca32daa741f38_icgraph" id="aclass_game_entity_system_1_1_component_a35704c03f08af94523eca32daa741f38_icgraph">
+<area shape="rect" title=" " alt="" coords="1185,39,1395,81"/>
+<area shape="rect" href="class_game_entity_system_1_1_component.html#a0a5e7dbd386957fb1d9592a5b61799c7" title=" " alt="" coords="927,39,1137,81"/>
+<area shape="poly" title=" " alt="" coords="1166,60,1138,63,1138,57,1172,60"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#a091480b3e9d63a09ca4e7d4ede8e81e8" title=" " alt="" coords="702,39,879,81"/>
+<area shape="poly" title=" " alt="" coords="908,60,879,63,879,57,914,60"/>
+<area shape="poly" title=" " alt="" coords="826,23,814,20,790,17,769,19,756,24,751,30,752,40,748,37,745,29,753,20,768,14,791,12,815,14,831,23"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#a96e23e97301c78ad27aef4dfdc2f7dce" title=" " alt="" coords="474,5,650,48"/>
+<area shape="poly" title=" " alt="" coords="684,45,651,42,651,37,690,45"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a0f8c5b03d65ee33da4fbac641cb7bb03" title=" " alt="" coords="470,72,654,115"/>
+<area shape="poly" title=" " alt="" coords="690,75,655,82,655,77,684,75"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a558af2ec4719c0007fa456a793f26f17" title=" " alt="" coords="238,5,422,48"/>
+<area shape="poly" title=" " alt="" coords="456,27,423,29,422,24,461,26"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#aacbfab89e5913601f50dd3128f975b6b" title=" " alt="" coords="5,5,190,48"/>
+<area shape="poly" title=" " alt="" coords="219,27,191,29,190,24,224,26"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#ab8b4fc5613ff408385fd7e37ed511174" title=" " alt="" coords="238,72,422,115"/>
+<area shape="poly" title=" " alt="" coords="451,93,423,96,423,91,457,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a5e7dbd386957fb1d9592a5b61799c7" name="a0a5e7dbd386957fb1d9592a5b61799c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5e7dbd386957fb1d9592a5b61799c7">&#9670;&#160;</a></span>DisposeInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameEntitySystem.Component.DisposeInternal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00034">34</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component_a0a5e7dbd386957fb1d9592a5b61799c7_cgraph.png" border="0" usemap="#aclass_game_entity_system_1_1_component_a0a5e7dbd386957fb1d9592a5b61799c7_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_entity_system_1_1_component_a0a5e7dbd386957fb1d9592a5b61799c7_cgraph" id="aclass_game_entity_system_1_1_component_a0a5e7dbd386957fb1d9592a5b61799c7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,216,48"/>
+<area shape="rect" href="class_game_entity_system_1_1_component.html#a35704c03f08af94523eca32daa741f38" title=" " alt="" coords="264,5,474,48"/>
+<area shape="poly" title=" " alt="" coords="216,24,250,27,245,27,216,29"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component_a0a5e7dbd386957fb1d9592a5b61799c7_icgraph.png" border="0" usemap="#aclass_game_entity_system_1_1_component_a0a5e7dbd386957fb1d9592a5b61799c7_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_entity_system_1_1_component_a0a5e7dbd386957fb1d9592a5b61799c7_icgraph" id="aclass_game_entity_system_1_1_component_a0a5e7dbd386957fb1d9592a5b61799c7_icgraph">
+<area shape="rect" title=" " alt="" coords="927,39,1137,81"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#a091480b3e9d63a09ca4e7d4ede8e81e8" title=" " alt="" coords="702,39,879,81"/>
+<area shape="poly" title=" " alt="" coords="908,60,879,63,879,57,914,60"/>
+<area shape="poly" title=" " alt="" coords="826,23,814,20,790,17,769,19,756,24,751,30,752,40,748,37,745,29,753,20,768,14,791,12,815,14,831,23"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#a96e23e97301c78ad27aef4dfdc2f7dce" title=" " alt="" coords="474,5,650,48"/>
+<area shape="poly" title=" " alt="" coords="684,45,651,42,651,37,690,45"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a0f8c5b03d65ee33da4fbac641cb7bb03" title=" " alt="" coords="470,72,654,115"/>
+<area shape="poly" title=" " alt="" coords="690,75,655,82,655,77,684,75"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a558af2ec4719c0007fa456a793f26f17" title=" " alt="" coords="238,5,422,48"/>
+<area shape="poly" title=" " alt="" coords="456,27,423,29,422,24,461,26"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#aacbfab89e5913601f50dd3128f975b6b" title=" " alt="" coords="5,5,190,48"/>
+<area shape="poly" title=" " alt="" coords="219,27,191,29,190,24,224,26"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#ab8b4fc5613ff408385fd7e37ed511174" title=" " alt="" coords="238,72,422,115"/>
+<area shape="poly" title=" " alt="" coords="451,93,423,96,423,91,457,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab134aba4e3dda9bf43f0f6845a874b03" name="ab134aba4e3dda9bf43f0f6845a874b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab134aba4e3dda9bf43f0f6845a874b03">&#9670;&#160;</a></span>GetOwnedEntities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IEnumerable&lt; <a class="el" href="#aec24711f3e89ec7c119f038deebdcf95">Entity</a> &gt; GameEntitySystem.Component.GetOwnedEntities </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00020">20</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component_ab134aba4e3dda9bf43f0f6845a874b03_icgraph.png" border="0" usemap="#aclass_game_entity_system_1_1_component_ab134aba4e3dda9bf43f0f6845a874b03_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_entity_system_1_1_component_ab134aba4e3dda9bf43f0f6845a874b03_icgraph" id="aclass_game_entity_system_1_1_component_ab134aba4e3dda9bf43f0f6845a874b03_icgraph">
+<area shape="rect" title=" " alt="" coords="960,5,1170,48"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#a255e7568d02a1091d8a38feab946f4d1" title=" " alt="" coords="735,5,912,48"/>
+<area shape="poly" title=" " alt="" coords="941,27,912,29,912,24,947,27"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a33a86a0097911f6d04ddb131e885d20c" title=" " alt="" coords="500,5,687,48"/>
+<area shape="poly" title=" " alt="" coords="717,27,688,29,688,24,722,27"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a99d76e50da0e37bd828744d2399e8427" title=" " alt="" coords="268,5,452,48"/>
+<area shape="poly" title=" " alt="" coords="482,27,452,29,452,24,487,27"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a24ffb6ae36dca502abd25c1c737a3a6f" title=" " alt="" coords="5,13,220,40"/>
+<area shape="poly" title=" " alt="" coords="249,27,220,29,220,24,254,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2a64505bc0eeca752cd7cea92eff6a46" name="a2a64505bc0eeca752cd7cea92eff6a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a64505bc0eeca752cd7cea92eff6a46">&#9670;&#160;</a></span>InheritFromComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameEntitySystem.Component.InheritFromComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_entity_system_1_1_component.html">Component</a></td>          <td class="paramname"><span class="paramname"><em>baseComponent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00032">32</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component_a2a64505bc0eeca752cd7cea92eff6a46_icgraph.png" border="0" usemap="#aclass_game_entity_system_1_1_component_a2a64505bc0eeca752cd7cea92eff6a46_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_entity_system_1_1_component_a2a64505bc0eeca752cd7cea92eff6a46_icgraph" id="aclass_game_entity_system_1_1_component_a2a64505bc0eeca752cd7cea92eff6a46_icgraph">
+<area shape="rect" title=" " alt="" coords="230,5,440,48"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#a1640b6fd0b3ad98a510de5e96ca2d389" title=" " alt="" coords="5,5,182,48"/>
+<area shape="poly" title=" " alt="" coords="211,27,182,29,182,24,217,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a71ac5b110f00d3485739c41dbf889bf0" name="a71ac5b110f00d3485739c41dbf889bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ac5b110f00d3485739c41dbf889bf0">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameEntitySystem.Component.Initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aec24711f3e89ec7c119f038deebdcf95">Entity</a></td>          <td class="paramname"><span class="paramname"><em>entity</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a></td>          <td class="paramname"><span class="paramname"><em>valuesDictionary</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9a88afacfaf9419361e96c8cc77607ec" name="a9a88afacfaf9419361e96c8cc77607ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a88afacfaf9419361e96c8cc77607ec">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameEntitySystem.Component.Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a></td>          <td class="paramname"><span class="paramname"><em>valuesDictionary</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a></td>          <td class="paramname"><span class="paramname"><em>idToEntityMap</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_component_aiming_sights.html#a657b0ea70a4676818b9b18b89d4664b8">Game.ComponentAimingSights</a>, <a class="el" href="class_game_1_1_component_auto_jump.html#afe6da4adf59dca6eba2f3e169adcd93e">Game.ComponentAutoJump</a>, <a class="el" href="class_game_1_1_component_avoid_fire_behavior.html#ae4b45e43478e834a33d1ac91c4bdc2e2">Game.ComponentAvoidFireBehavior</a>, <a class="el" href="class_game_1_1_component_avoid_player_behavior.html#a56af45287ad5056a8b4021e9c2bb56a9">Game.ComponentAvoidPlayerBehavior</a>, <a class="el" href="class_game_1_1_component_behavior_selector.html#aa807fc659044cdffe1a56b362f3774ef">Game.ComponentBehaviorSelector</a>, <a class="el" href="class_game_1_1_component_bird_model.html#a4654d69d125093f2c046055f27ee8fea">Game.ComponentBirdModel</a>, <a class="el" href="class_game_1_1_component_block_entity.html#a03cb99c2ac957d72dfd5680a6fca6f5b">Game.ComponentBlockEntity</a>, <a class="el" href="class_game_1_1_component_block_highlight.html#a3d369a48fea8067e4155e997c46bf119">Game.ComponentBlockHighlight</a>, <a class="el" href="class_game_1_1_component_boat.html#a2386a5ca8b6a72015a2dfecdd7525a7a">Game.ComponentBoat</a>, <a class="el" href="class_game_1_1_component_body.html#ad038ef5d0deb20621f66790c3c8a4de6">Game.ComponentBody</a>, <a class="el" href="class_game_1_1_component_cattle_drive_behavior.html#a4429625929449ac2506c4604d7ed0f0c">Game.ComponentCattleDriveBehavior</a>, <a class="el" href="class_game_1_1_component_cetacean_breathe_behavior.html#ad0a87897049408ebe7b5c6d528fd774d">Game.ComponentCetaceanBreatheBehavior</a>, <a class="el" href="class_game_1_1_component_chase_behavior.html#aafa4a01c1db13a7136835f369a324416">Game.ComponentChaseBehavior</a>, <a class="el" href="class_game_1_1_component_chest.html#a35c635afaebd8a4b57065d3b9f9e2e5c">Game.ComponentChest</a>, <a class="el" href="class_game_1_1_component_clothing.html#a9d2871d72d4cef11918ce7523f8e357e">Game.ComponentClothing</a>, <a class="el" href="class_game_1_1_component_crafting_table.html#a9f44d84685c4e3a5cffd8bcdcf787589">Game.ComponentCraftingTable</a>, <a class="el" href="class_game_1_1_component_creative_inventory.html#af6d69f5b9a6222a8216936e036f41b5f">Game.ComponentCreativeInventory</a>, <a class="el" href="class_game_1_1_component_creature.html#af76c9f8df3ebac1f0b1a6d0b8b32a19b">Game.ComponentCreature</a>, <a class="el" href="class_game_1_1_component_creature_model.html#a32d6fbba0562d5e487177e83e6896c1b">Game.ComponentCreatureModel</a>, <a class="el" href="class_game_1_1_component_creature_sounds.html#ae2968247d1e0c71ab7c1800003f3fadf">Game.ComponentCreatureSounds</a>, <a class="el" href="class_game_1_1_component_damage.html#a7f53bf141a480d3dac239ae62177daf9">Game.ComponentDamage</a>, <a class="el" href="class_game_1_1_component_digging_cracks.html#ab607ba91796011623eb064cf4a9a2b4f">Game.ComponentDiggingCracks</a>, <a class="el" href="class_game_1_1_component_dig_in_mud_behavior.html#acd137983ab173b33f4a590c81add94df">Game.ComponentDigInMudBehavior</a>, <a class="el" href="class_game_1_1_component_dispenser.html#aa582ed81cdce27bc507c488237a465a5">Game.ComponentDispenser</a>, <a class="el" href="class_game_1_1_component_dump_rider_behavior.html#a57dc042e3555b0539806ad6d5166dfc6">Game.ComponentDumpRiderBehavior</a>, <a class="el" href="class_game_1_1_component_eat_pickable_behavior.html#a3e3da5f0aa8883b9702fdeffcf432dd0">Game.ComponentEatPickableBehavior</a>, <a class="el" href="class_game_1_1_component_factors.html#a150cc80e8a02e7bc9f7544a904ae15c1">Game.ComponentFactors</a>, <a class="el" href="class_game_1_1_component_find_player_behavior.html#ad37a5ba668cc5b2b27361fb04a5da893">Game.ComponentFindPlayerBehavior</a>, <a class="el" href="class_game_1_1_component_first_person_model.html#a27f98a967f841e85d40cd4b516d5ebc8">Game.ComponentFirstPersonModel</a>, <a class="el" href="class_game_1_1_component_fish_model.html#a2ce19918c50528df915b9dce1231bb30">Game.ComponentFishModel</a>, <a class="el" href="class_game_1_1_component_fish_out_of_water_behavior.html#a5f5d019b4656424a9d5109b03f7b3146">Game.ComponentFishOutOfWaterBehavior</a>, <a class="el" href="class_game_1_1_component_flightless_bird_model.html#aa6b0d854f0ff843b605929c80f62b056">Game.ComponentFlightlessBirdModel</a>, <a class="el" href="class_game_1_1_component_flu.html#afda1f37bbf2e24f60cf94b9df188ba02">Game.ComponentFlu</a>, <a class="el" href="class_game_1_1_component_fly_around_behavior.html#af2ddba6070138f85db86f7ca360e05fe">Game.ComponentFlyAroundBehavior</a>, <a class="el" href="class_game_1_1_component_fly_away_behavior.html#acccb83ed18114988d691c86b8813a891">Game.ComponentFlyAwayBehavior</a>, <a class="el" href="class_game_1_1_component_four_legged_model.html#a92d9475b294e0af0d4b937b39ad96116">Game.ComponentFourLeggedModel</a>, <a class="el" href="class_game_1_1_component_frame.html#af7a382cde33700abf1495c9ceb6bb212">Game.ComponentFrame</a>, <a class="el" href="class_game_1_1_component_furnace.html#ace645a4f380ec0f066efed1505aca559">Game.ComponentFurnace</a>, <a class="el" href="class_game_1_1_component_furniture_inventory.html#ac41e4290cfecc64de5c9f48b67431079">Game.ComponentFurnitureInventory</a>, <a class="el" href="class_game_1_1_component_glowing_eyes.html#aca44e8acdef9c30f68f56537963c59f5">Game.ComponentGlowingEyes</a>, <a class="el" href="class_game_1_1_component_gui.html#a85abd8017edecd3948bba9297439b30e">Game.ComponentGui</a>, <a class="el" href="class_game_1_1_component_health.html#a98ffd95c4520cd2ca53f906af838ff75">Game.ComponentHealth</a>, <a class="el" href="class_game_1_1_component_herd_behavior.html#a46ac2761227d884e184b2fbe032cbee2">Game.ComponentHerdBehavior</a>, <a class="el" href="class_game_1_1_component_howl_behavior.html#aa57a3f7761b86570b1170e886bc39892">Game.ComponentHowlBehavior</a>, <a class="el" href="class_game_1_1_component_human_model.html#a98c997cb63a59cc7b1f080038495d601">Game.ComponentHumanModel</a>, <a class="el" href="class_game_1_1_component_input.html#a7e2d9e724492a80d388adc3b4a50b00e">Game.ComponentInput</a>, <a class="el" href="class_game_1_1_component_intro.html#a6e480c32082335107d605600200d839b">Game.ComponentIntro</a>, <a class="el" href="class_game_1_1_component_intro_ship.html#a3bb878eebda8d2c1aaa99afcc8946c60">Game.ComponentIntroShip</a>, <a class="el" href="class_game_1_1_component_inventory.html#adb3b95feeed50494fcc8621eb2e2de98">Game.ComponentInventory</a>, <a class="el" href="class_game_1_1_component_inventory_base.html#aeee6eef174fee32937c727eeb141cf76">Game.ComponentInventoryBase</a>, <a class="el" href="class_game_1_1_component_lay_egg_behavior.html#aa554533b2b2b338da77b50fcf35bb1a1">Game.ComponentLayEggBehavior</a>, <a class="el" href="class_game_1_1_component_level.html#aec3ff83504f707022b12b7aa6e23983d">Game.ComponentLevel</a>, <a class="el" href="class_game_1_1_component_locomotion.html#ac74efed577ffe4cd51109097127d3a02">Game.ComponentLocomotion</a>, <a class="el" href="class_game_1_1_component_look_around_behavior.html#a3042f82864eb2d9e17b2cf6da2bb4a33">Game.ComponentLookAroundBehavior</a>, <a class="el" href="class_game_1_1_component_loot.html#a6590f032591cac13d07b117105bb15a5">Game.ComponentLoot</a>, <a class="el" href="class_game_1_1_component_miner.html#adc6e3eb6ad5e52d2eadf70099860ffad">Game.ComponentMiner</a>, <a class="el" href="class_game_1_1_component_model.html#acdc1bdafa5f2a70854abbdeaa95bcd97">Game.ComponentModel</a>, <a class="el" href="class_game_1_1_component_mount.html#ad527d97005eb741867f49da7b0da0f75">Game.ComponentMount</a>, <a class="el" href="class_game_1_1_component_move_away_behavior.html#a7f347f57b9c643d079a640c6c71d1994">Game.ComponentMoveAwayBehavior</a>, <a class="el" href="class_game_1_1_component_name.html#afb26865da65e2c14b5811e9426c6f924">Game.ComponentName</a>, <a class="el" href="class_game_1_1_component_on_fire.html#aabeb95a52b2406e5adb7326d86a3c132">Game.ComponentOnFire</a>, <a class="el" href="class_game_1_1_component_outer_clothing_model.html#adab37753c4b32acd2231fa5477fd2425">Game.ComponentOuterClothingModel</a>, <a class="el" href="class_game_1_1_component_pathfinding.html#a6ca41fe00f797fa87f38e40201eac7b7">Game.ComponentPathfinding</a>, <a class="el" href="class_game_1_1_component_pickable_gatherer.html#a0a8dc87f852ec55ee9ebe23d6572ee97">Game.ComponentPickableGatherer</a>, <a class="el" href="class_game_1_1_component_pickable_gatherer_player.html#a2045303963f68d3611d3be952de30fb3">Game.ComponentPickableGathererPlayer</a>, <a class="el" href="class_game_1_1_component_pilot.html#ab5f83e1d67c90d429759e4522161e47b">Game.ComponentPilot</a>, <a class="el" href="class_game_1_1_component_player.html#aa2fa86ba548fd0ebff61a6e16db3b42e">Game.ComponentPlayer</a>, <a class="el" href="class_game_1_1_component_random_feed_behavior.html#af84cd6cb7073d1858c78bd01c66f557a">Game.ComponentRandomFeedBehavior</a>, <a class="el" href="class_game_1_1_component_random_peck_behavior.html#ab87d2f6c860b6f188cd598243db8601f">Game.ComponentRandomPeckBehavior</a>, <a class="el" href="class_game_1_1_component_rider.html#aa5a7a94afc7981ff098d36edf21017f2">Game.ComponentRider</a>, <a class="el" href="class_game_1_1_component_run_away_behavior.html#ae4e9299c3f1c7d44f71bd8b71a506982">Game.ComponentRunAwayBehavior</a>, <a class="el" href="class_game_1_1_component_screen_overlays.html#ae426bfc055efa3db4b653f62189bdae6">Game.ComponentScreenOverlays</a>, <a class="el" href="class_game_1_1_component_shapeshifter.html#a05a94650d6d24f3c4f9eda286d4b499b">Game.ComponentShapeshifter</a>, <a class="el" href="class_game_1_1_component_sickness.html#a8fbb7864f1e9fe46fa6c88352729ca63">Game.ComponentSickness</a>, <a class="el" href="class_game_1_1_component_simple_model.html#aa8ce570593a1e052842ef413249176cb">Game.ComponentSimpleModel</a>, <a class="el" href="class_game_1_1_component_sleep.html#a7dd98a7d861299af895024a42933e582">Game.ComponentSleep</a>, <a class="el" href="class_game_1_1_component_spawn.html#a94f6799188781d1b81d2d7a516e37dfa">Game.ComponentSpawn</a>, <a class="el" href="class_game_1_1_component_stare_behavior.html#a6b042d934219c2e9f2f6b1759d31757c">Game.ComponentStareBehavior</a>, <a class="el" href="class_game_1_1_component_steed_behavior.html#ac1d1c3679a246afb87e20824490e0d34">Game.ComponentSteedBehavior</a>, <a class="el" href="class_game_1_1_component_stubborn_steed_behavior.html#ae9aac236c072af0d4f4dbb675f657d30">Game.ComponentStubbornSteedBehavior</a>, <a class="el" href="class_game_1_1_component_summon_behavior.html#a5ce4c5350c450713b68c46dc6fe1dc17">Game.ComponentSummonBehavior</a>, <a class="el" href="class_game_1_1_component_swim_around_behavior.html#a5a641800cda785b7846b66eb6d85af5d">Game.ComponentSwimAroundBehavior</a>, <a class="el" href="class_game_1_1_component_swim_away_behavior.html#a0266cd9e2d31eaf8851f4ce98cbfcdc4">Game.ComponentSwimAwayBehavior</a>, <a class="el" href="class_game_1_1_component_udder.html#a42e9c2e1f6cc9796db588e05152fb2f9">Game.ComponentUdder</a>, <a class="el" href="class_game_1_1_component_vital_stats.html#a8b3e4e7d6619c00179ce3cb393213ae1">Game.ComponentVitalStats</a>, <a class="el" href="class_game_1_1_component_vr_hands_model.html#a3466724959f384d08b9e8e74e8f9010f">Game.ComponentVrHandsModel</a> , 以及 <a class="el" href="class_game_1_1_component_walk_around_behavior.html#a9f491af3d5feeb752335855df2d6c6c0">Game.ComponentWalkAroundBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00026">26</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component_a9a88afacfaf9419361e96c8cc77607ec_icgraph.png" border="0" usemap="#aclass_game_entity_system_1_1_component_a9a88afacfaf9419361e96c8cc77607ec_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_entity_system_1_1_component_a9a88afacfaf9419361e96c8cc77607ec_icgraph" id="aclass_game_entity_system_1_1_component_a9a88afacfaf9419361e96c8cc77607ec_icgraph">
+<area shape="rect" title=" " alt="" coords="719,47,958,73"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#ac8e9b99aa520900256324b6bfee43cbb" title=" " alt="" coords="495,39,671,81"/>
+<area shape="poly" title=" " alt="" coords="701,60,672,63,672,57,706,60"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a822841946bd9c4a8bd60ce90dca6a27a" title=" " alt="" coords="263,39,447,81"/>
+<area shape="poly" title=" " alt="" coords="477,60,448,63,448,57,482,60"/>
+<area shape="rect" href="class_game_1_1_database_manager.html#ab6bf74c77ba7bdcd047691a960dc4077" title=" " alt="" coords="5,5,215,48"/>
+<area shape="poly" title=" " alt="" coords="245,46,215,44,215,38,250,45"/>
+<area shape="rect" href="class_game_1_1_database_manager.html#aceb1030c8ba2df508a38bcc4b56644c9" title=" " alt="" coords="5,72,215,115"/>
+<area shape="poly" title=" " alt="" coords="245,75,215,82,215,76,250,74"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed8a31c22bd1345d83a2acb280c32c91" name="aed8a31c22bd1345d83a2acb280c32c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed8a31c22bd1345d83a2acb280c32c91">&#9670;&#160;</a></span>OnEntityAdded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameEntitySystem.Component.OnEntityAdded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_component_creature_model.html#a0e48509996c42faed5cdcdedd9926448">Game.ComponentCreatureModel</a>, <a class="el" href="class_game_1_1_component_glowing_eyes.html#a220a1ff27c41104b34035a069f681099">Game.ComponentGlowingEyes</a> , 以及 <a class="el" href="class_game_1_1_component_gui.html#ac3adb6170f4b79cd775a55fb98d9b835">Game.ComponentGui</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00022">22</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component_aed8a31c22bd1345d83a2acb280c32c91_icgraph.png" border="0" usemap="#aclass_game_entity_system_1_1_component_aed8a31c22bd1345d83a2acb280c32c91_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_entity_system_1_1_component_aed8a31c22bd1345d83a2acb280c32c91_icgraph" id="aclass_game_entity_system_1_1_component_aed8a31c22bd1345d83a2acb280c32c91_icgraph">
+<area shape="rect" title=" " alt="" coords="935,39,1145,81"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a699e1806c6f2b31a94b68719fbe0f89a" title=" " alt="" coords="702,39,887,81"/>
+<area shape="poly" title=" " alt="" coords="916,60,887,63,887,57,922,60"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#ab138072ca3621bdec57161584aeefba9" title=" " alt="" coords="470,8,654,51"/>
+<area shape="poly" title=" " alt="" coords="684,46,655,44,655,39,689,46"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#aa01d78029ca2d20448b448d917b7bc47" title=" " alt="" coords="238,72,422,115"/>
+<area shape="poly" title=" " alt="" coords="689,68,423,89,422,84,684,68"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a2e0af1cf6c426f639376d113af8199db" title=" " alt="" coords="238,5,422,48"/>
+<area shape="poly" title=" " alt="" coords="451,28,423,30,422,25,457,28"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#aacbfab89e5913601f50dd3128f975b6b" title=" " alt="" coords="5,39,190,81"/>
+<area shape="poly" title=" " alt="" coords="220,43,191,49,190,44,225,41"/>
+<area shape="poly" title=" " alt="" coords="219,78,190,76,190,71,225,78"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c071eb403fd36954c7f490fc2522887" name="a2c071eb403fd36954c7f490fc2522887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c071eb403fd36954c7f490fc2522887">&#9670;&#160;</a></span>OnEntityRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameEntitySystem.Component.OnEntityRemoved </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_component_body.html#a6626c66483e34c5dfc91ee083cda5be6">Game.ComponentBody</a>, <a class="el" href="class_game_1_1_component_furnace.html#a651075d71c092bd7c1a1b4980575ae2e">Game.ComponentFurnace</a>, <a class="el" href="class_game_1_1_component_glowing_eyes.html#a35af2ed34e11e97f7227dfe8a1326a12">Game.ComponentGlowingEyes</a>, <a class="el" href="class_game_1_1_component_gui.html#a7ba33e1fd69cc906e4e7239a5fe6082e">Game.ComponentGui</a>, <a class="el" href="class_game_1_1_component_on_fire.html#a201e011aacda9eef2010f42eeed803f3">Game.ComponentOnFire</a> , 以及 <a class="el" href="class_game_1_1_component_vital_stats.html#a1033d7398e0630f35fa7496da8d70524">Game.ComponentVitalStats</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00024">24</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component_a2c071eb403fd36954c7f490fc2522887_icgraph.png" border="0" usemap="#aclass_game_entity_system_1_1_component_a2c071eb403fd36954c7f490fc2522887_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_entity_system_1_1_component_a2c071eb403fd36954c7f490fc2522887_icgraph" id="aclass_game_entity_system_1_1_component_a2c071eb403fd36954c7f490fc2522887_icgraph">
+<area shape="rect" title=" " alt="" coords="702,5,913,48"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#ada3b22bd947166ecf2fda0c8b77f06d5" title=" " alt="" coords="470,5,654,48"/>
+<area shape="poly" title=" " alt="" coords="684,27,655,29,655,24,689,27"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a0f8c5b03d65ee33da4fbac641cb7bb03" title=" " alt="" coords="238,5,422,48"/>
+<area shape="poly" title=" " alt="" coords="451,27,423,29,423,24,457,27"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#ab8b4fc5613ff408385fd7e37ed511174" title=" " alt="" coords="5,5,190,48"/>
+<area shape="poly" title=" " alt="" coords="219,27,190,29,190,24,224,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a653d630617ff29425af0d73152589aae" name="a653d630617ff29425af0d73152589aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a653d630617ff29425af0d73152589aae">&#9670;&#160;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameEntitySystem.Component.Save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a></td>          <td class="paramname"><span class="paramname"><em>valuesDictionary</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_entity_system_1_1_entity_to_id_map.html">EntityToIdMap</a></td>          <td class="paramname"><span class="paramname"><em>entityToIdMap</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_component_block_entity.html#a7ae764e6c05464711128bb0df6d048dc">Game.ComponentBlockEntity</a>, <a class="el" href="class_game_1_1_component_body.html#a6c5c40e4d865abc91e79755c63982c8a">Game.ComponentBody</a>, <a class="el" href="class_game_1_1_component_clothing.html#aab02df3728eceebe79b32042aae39580">Game.ComponentClothing</a>, <a class="el" href="class_game_1_1_component_creative_inventory.html#a8ec7762f9017bda587dc63d16fe22b89">Game.ComponentCreativeInventory</a>, <a class="el" href="class_game_1_1_component_creature.html#a29dd49193b52c289800d6a531f6ce690">Game.ComponentCreature</a>, <a class="el" href="class_game_1_1_component_damage.html#a7b807c76edd1a359b437e81b5d5080d0">Game.ComponentDamage</a>, <a class="el" href="class_game_1_1_component_flu.html#ae63f492118d896e7510fc139ad8f21bf">Game.ComponentFlu</a>, <a class="el" href="class_game_1_1_component_frame.html#a5cff1123dfb75d4d4a329c70882f6e49">Game.ComponentFrame</a>, <a class="el" href="class_game_1_1_component_furnace.html#ad590ce59c1168aed514ba4f488856af4">Game.ComponentFurnace</a>, <a class="el" href="class_game_1_1_component_furniture_inventory.html#a11ded27e6a475eb75eca568e74ba9719">Game.ComponentFurnitureInventory</a>, <a class="el" href="class_game_1_1_component_gui.html#add3f12fcc2d4304654f38a3825f80f65">Game.ComponentGui</a>, <a class="el" href="class_game_1_1_component_health.html#af50487ffdaca6517982aa81bf23e0f42">Game.ComponentHealth</a>, <a class="el" href="class_game_1_1_component_intro.html#a9157b14b69006fe1dbaa419b298a8798">Game.ComponentIntro</a>, <a class="el" href="class_game_1_1_component_intro_ship.html#a95167291c7fd2396a5dfff1509a071a5">Game.ComponentIntroShip</a>, <a class="el" href="class_game_1_1_component_inventory.html#af59823aed21c20368682ce1d664f5c28">Game.ComponentInventory</a>, <a class="el" href="class_game_1_1_component_inventory_base.html#a962b2b8973debaebb02db127bf81320b">Game.ComponentInventoryBase</a>, <a class="el" href="class_game_1_1_component_locomotion.html#a77dcc957ffc5a79d4174d0914e9cc1f5">Game.ComponentLocomotion</a>, <a class="el" href="class_game_1_1_component_loot.html#a49cc5de6bac42988b53973b0dc946ad4">Game.ComponentLoot</a>, <a class="el" href="class_game_1_1_component_miner.html#aab23476152c75f2114a9f0ac8b40b924">Game.ComponentMiner</a>, <a class="el" href="class_game_1_1_component_on_fire.html#affdbbd1471d1d092851548dd4f39fef5">Game.ComponentOnFire</a>, <a class="el" href="class_game_1_1_component_player.html#a5da869e816213044e6c93dc5138ab47f">Game.ComponentPlayer</a>, <a class="el" href="class_game_1_1_component_sickness.html#aab135e2add57f30a4def195e86e23695">Game.ComponentSickness</a>, <a class="el" href="class_game_1_1_component_sleep.html#a64fc50fcdb8b0b94a5e5487895c051ff">Game.ComponentSleep</a>, <a class="el" href="class_game_1_1_component_spawn.html#a670963384d8b400857d4eea515c0eec8">Game.ComponentSpawn</a>, <a class="el" href="class_game_1_1_component_stubborn_steed_behavior.html#a10dac0cf10c80974803567e7566b56e7">Game.ComponentStubbornSteedBehavior</a>, <a class="el" href="class_game_1_1_component_udder.html#a5bf3dfa08b015555d5b0a9d5495c2c3a">Game.ComponentUdder</a> , 以及 <a class="el" href="class_game_1_1_component_vital_stats.html#a30cbfc17b9287cab2d2fa2c318a835e9">Game.ComponentVitalStats</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00028">28</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_entity_system_1_1_component_a653d630617ff29425af0d73152589aae_icgraph.png" border="0" usemap="#aclass_game_entity_system_1_1_component_a653d630617ff29425af0d73152589aae_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_entity_system_1_1_component_a653d630617ff29425af0d73152589aae_icgraph" id="aclass_game_entity_system_1_1_component_a653d630617ff29425af0d73152589aae_icgraph">
+<area shape="rect" title=" " alt="" coords="724,13,965,40"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#adc3aee8efccc5c6dd7e6d6fa69164b43" title=" " alt="" coords="500,5,676,48"/>
+<area shape="poly" title=" " alt="" coords="706,27,677,29,677,24,711,27"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a99d76e50da0e37bd828744d2399e8427" title=" " alt="" coords="268,5,452,48"/>
+<area shape="poly" title=" " alt="" coords="482,27,453,29,453,24,487,27"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a24ffb6ae36dca502abd25c1c737a3a6f" title=" " alt="" coords="5,13,220,40"/>
+<area shape="poly" title=" " alt="" coords="249,27,220,29,220,24,254,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a9dafb863fd53090cb6c92c04500c14ea" name="a9dafb863fd53090cb6c92c04500c14ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dafb863fd53090cb6c92c04500c14ea">&#9670;&#160;</a></span>m_entity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aec24711f3e89ec7c119f038deebdcf95">Entity</a> GameEntitySystem.Component.m_entity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00008">8</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adc01e760801770132e6a80618cc91373" name="adc01e760801770132e6a80618cc91373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc01e760801770132e6a80618cc91373">&#9670;&#160;</a></span>m_valuesDictionary</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> GameEntitySystem.Component.m_valuesDictionary</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="aec24711f3e89ec7c119f038deebdcf95" name="aec24711f3e89ec7c119f038deebdcf95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec24711f3e89ec7c119f038deebdcf95">&#9670;&#160;</a></span>Entity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity GameEntitySystem.Component.Entity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a411ab1fc6c34c9d1f1bbdbd95e567bca" name="a411ab1fc6c34c9d1f1bbdbd95e567bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411ab1fc6c34c9d1f1bbdbd95e567bca">&#9670;&#160;</a></span>IsAddedToProject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameEntitySystem.Component.IsAddedToProject</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a771baadae7a12358301d000d2e127421" name="a771baadae7a12358301d000d2e127421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a771baadae7a12358301d000d2e127421">&#9670;&#160;</a></span>Project</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Project GameEntitySystem.Component.Project</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00016">16</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4b812f6825600e5419612a580d3094ff" name="a4b812f6825600e5419612a580d3094ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b812f6825600e5419612a580d3094ff">&#9670;&#160;</a></span>ValuesDictionary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ValuesDictionary GameEntitySystem.Component.ValuesDictionary</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_component_8cs_source.html">Component.cs</a> 第 <a class="el" href="_component_8cs_source.html#l00012">12</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/EntitySystem/GameEntitySystem/<a class="el" href="_component_8cs_source.html">Component.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game_entity_system.html">GameEntitySystem</a></li><li class="navelem"><a href="class_game_entity_system_1_1_component.html">Component</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Screen/GameLoadingScreen.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_game_loading_screen_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GameLoadingScreen.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_loading_screen_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_game_loading_screen.html#abbf1fbe83cdc9eb74324a6e765f0bd1a">GameLoadingScreen</a> : <a class="code hl_class" href="class_game_1_1_screen.html">Screen</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#a5aba3774d6f8f965615a9686288d252f">    5</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_world_info.html">WorldInfo</a> <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a5aba3774d6f8f965615a9686288d252f">m_worldInfo</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#aa620033bbb9370ecc1f80a0344e6650d">    7</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#aa620033bbb9370ecc1f80a0344e6650d">m_worldSnapshotName</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#a5482eda9b4bba8c795edf634fb31af90">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a5482eda9b4bba8c795edf634fb31af90">m_loadingLabel</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_state_machine.html">StateMachine</a> <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#a1fa78fd540a616aecd8e70102aa3a192">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a1fa78fd540a616aecd8e70102aa3a192">m_upgradeCompleted</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#afc13cef2a09428672942e82631d488e1">   15</a></span>        <span class="keyword">public</span> Exception <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#afc13cef2a09428672942e82631d488e1">m_upgradeError</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#a1d6260e47badfb151e2370337c2127ae">   16</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a1d6260e47badfb151e2370337c2127ae">fName</a> = <span class="stringliteral">&quot;GameLoadingScreen&quot;</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#abbf1fbe83cdc9eb74324a6e765f0bd1a">   18</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_game_loading_screen.html#abbf1fbe83cdc9eb74324a6e765f0bd1a">GameLoadingScreen</a>() {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Screens/GameLoadingScreen&quot;</span>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.AddState(</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <span class="stringliteral">&quot;WaitingForFadeIn&quot;</span>,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                delegate {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_property" href="class_game_1_1_screens_manager.html#a9098eec179c4f71074ea33409ba51575">IsAnimating</a>) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                        <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#aa620033bbb9370ecc1f80a0344e6650d">m_worldSnapshotName</a>)) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                            <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;Loading&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                            <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;RestoringSnapshot&quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                        }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                },</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                null</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            );</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.AddState(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="stringliteral">&quot;Upgrading&quot;</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                delegate {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#ae9feebf60b1f66fb5475942b1e869d36">DisposeProject</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a1fa78fd540a616aecd8e70102aa3a192">m_upgradeCompleted</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#afc13cef2a09428672942e82631d488e1">m_upgradeError</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    Task.Run(</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        delegate {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                                <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#a28b081af5f090ea4e24c6ef984cfa66b">RepairAndUpgradeWorld</a>(<a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a5aba3774d6f8f965615a9686288d252f">m_worldInfo</a>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a1fa78fd540a616aecd8e70102aa3a192">m_upgradeCompleted</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                            <span class="keywordflow">catch</span> (Exception upgradeError) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                                <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#afc13cef2a09428672942e82631d488e1">m_upgradeError</a> = upgradeError;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                            }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    );</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                },</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                delegate {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a1fa78fd540a616aecd8e70102aa3a192">m_upgradeCompleted</a>) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                        <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;Loading&quot;</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#afc13cef2a09428672942e82631d488e1">m_upgradeError</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        <span class="keywordflow">throw</span> <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#afc13cef2a09428672942e82631d488e1">m_upgradeError</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                },</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                null</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            );</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.AddState(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="stringliteral">&quot;Loading&quot;</span>,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                delegate {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                    <a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a> gamesWidget = <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.FindScreen&lt;<a class="code hl_class" href="class_game_1_1_game_screen.html">GameScreen</a>&gt;(<span class="stringliteral">&quot;Game&quot;</span>).<a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a>&gt;(<span class="stringliteral">&quot;GamesWidget&quot;</span>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#a471937d4c895d066b74067cf13421984">LoadProject</a>(<a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a5aba3774d6f8f965615a9686288d252f">m_worldInfo</a>, gamesWidget);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<span class="stringliteral">&quot;Game&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                },</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                null</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            );</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.AddState(</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="stringliteral">&quot;RestoringSnapshot&quot;</span>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                delegate {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#ae9feebf60b1f66fb5475942b1e869d36">DisposeProject</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    <a class="code hl_class" href="class_game_1_1_worlds_manager.html">WorldsManager</a>.<a class="code hl_function" href="class_game_1_1_worlds_manager.html#a1cbaaa8cf9eef2831438f44a9585ba90">RestoreWorldFromSnapshot</a>(<a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a5aba3774d6f8f965615a9686288d252f">m_worldInfo</a>.DirectoryName, <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#aa620033bbb9370ecc1f80a0344e6650d">m_worldSnapshotName</a>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;Upgrading&quot;</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                },</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                null</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            );</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#a720dfcaf16a27e2dba72b984f4823f09">   86</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_game_loading_screen.html#a720dfcaf16a27e2dba72b984f4823f09">Update</a>() {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.Update();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">catch</span> (Exception) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_property" href="class_game_1_1_screens_manager.html#a23c145b294d9ea3f3ac0fdcd246e02b5">PreviousScreen</a>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <a class="code hl_class" href="class_game_1_1_view_game_log_dialog.html">ViewGameLogDialog</a> dialog = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                dialog.<a class="code hl_function" href="class_game_1_1_view_game_log_dialog.html#a769b926fffd231be54b6b8a879f971e6">SetErrorHead</a>(11, 10);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(<span class="keyword">null</span>, dialog);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_game_1_1_game_loading_screen.html#acc7aff6e1cf48197413a2a6d36118f36">   98</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_game_loading_screen.html#acc7aff6e1cf48197413a2a6d36118f36">Enter</a>(<span class="keywordtype">object</span>[] parameters) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a5aba3774d6f8f965615a9686288d252f">m_worldInfo</a> = (<a class="code hl_class" href="class_game_1_1_world_info.html">WorldInfo</a>)parameters[0];</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#aa620033bbb9370ecc1f80a0344e6650d">m_worldSnapshotName</a> = (string)parameters[1];</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <a class="code hl_variable" href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;WaitingForFadeIn&quot;</span>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <a class="code hl_class" href="class_game_1_1_progress_manager.html">ProgressManager</a>.<a class="code hl_function" href="class_game_1_1_progress_manager.html#a852246f29c0fa61db29d776e1fdaa73e">UpdateProgress</a>(<span class="stringliteral">&quot;Loading World&quot;</span>, 0f);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <a class="code hl_class" href="class_game_1_1_community_content_screen.html">CommunityContentScreen</a> screen = <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.FindScreen&lt;<a class="code hl_class" href="class_game_1_1_community_content_screen.html">CommunityContentScreen</a>&gt;(<span class="stringliteral">&quot;CommunityContent&quot;</span>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">if</span> (screen != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                screen.<a class="code hl_variable" href="class_game_1_1_community_content_screen.html#aad26857bddb3c6af23998ddace1d6f7b">m_treePanel</a>.<a class="code hl_function" href="class_game_1_1_tree_view_widget.html#aa8a68c6b6c16c1253bf79a6c08199d1f">Clear</a>();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                screen.m_treePanel.ScrollPosition = 0f;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                screen.m_contentExpiryTime = 0;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <a class="code hl_class" href="class_game_1_1_original_community_content_screen.html">OriginalCommunityContentScreen</a> originalCommunityContentScreen = <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.FindScreen&lt;<a class="code hl_class" href="class_game_1_1_original_community_content_screen.html">OriginalCommunityContentScreen</a>&gt;(<span class="stringliteral">&quot;OriginalCommunityContent&quot;</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">if</span> (originalCommunityContentScreen != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                originalCommunityContentScreen.<a class="code hl_variable" href="class_game_1_1_original_community_content_screen.html#a42da04b170efb8392438e67ca6002725">m_listPanel</a>.<a class="code hl_function" href="class_game_1_1_list_panel_widget.html#abb7acedeb136aa1e5497cf253fdda922">ClearItems</a>();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                originalCommunityContentScreen.m_listPanel.ScrollPosition = 0f;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                originalCommunityContentScreen.m_itemsCacheExpiryTime = 0;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+<div class="ttc" id="aclass_game_1_1_community_content_screen_html"><div class="ttname"><a href="class_game_1_1_community_content_screen.html">Game.CommunityContentScreen</a></div><div class="ttdef"><b>定义</b> <a href="_community_content_screen_8cs_source.html#l00012">CommunityContentScreen.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_content_screen_html_aad26857bddb3c6af23998ddace1d6f7b"><div class="ttname"><a href="class_game_1_1_community_content_screen.html#aad26857bddb3c6af23998ddace1d6f7b">Game.CommunityContentScreen.m_treePanel</a></div><div class="ttdeci">TreeViewWidget m_treePanel</div><div class="ttdef"><b>定义</b> <a href="_community_content_screen_8cs_source.html#l00026">CommunityContentScreen.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html"><div class="ttname"><a href="class_game_1_1_container_widget.html">Game.ContainerWidget</a></div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00004">ContainerWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html">Game.DialogsManager</a></div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00004">DialogsManager.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_affe2cf99704932f650a2bffa6eefa833"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">Game.DialogsManager.ShowDialog</a></div><div class="ttdeci">static void ShowDialog(ContainerWidget parentWidget, Dialog dialog)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00035">DialogsManager.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_a1d6260e47badfb151e2370337c2127ae"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#a1d6260e47badfb151e2370337c2127ae">Game.GameLoadingScreen.fName</a></div><div class="ttdeci">static string fName</div><div class="ttdef"><b>定义</b> <a href="#l00016">GameLoadingScreen.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_a1fa78fd540a616aecd8e70102aa3a192"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#a1fa78fd540a616aecd8e70102aa3a192">Game.GameLoadingScreen.m_upgradeCompleted</a></div><div class="ttdeci">bool m_upgradeCompleted</div><div class="ttdef"><b>定义</b> <a href="#l00013">GameLoadingScreen.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_a20c3f6747fb4b59fb7cf729a8d686b03"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#a20c3f6747fb4b59fb7cf729a8d686b03">Game.GameLoadingScreen.m_stateMachine</a></div><div class="ttdeci">StateMachine m_stateMachine</div><div class="ttdef"><b>定义</b> <a href="#l00011">GameLoadingScreen.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_a5482eda9b4bba8c795edf634fb31af90"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#a5482eda9b4bba8c795edf634fb31af90">Game.GameLoadingScreen.m_loadingLabel</a></div><div class="ttdeci">LabelWidget m_loadingLabel</div><div class="ttdef"><b>定义</b> <a href="#l00009">GameLoadingScreen.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_a5aba3774d6f8f965615a9686288d252f"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#a5aba3774d6f8f965615a9686288d252f">Game.GameLoadingScreen.m_worldInfo</a></div><div class="ttdeci">WorldInfo m_worldInfo</div><div class="ttdef"><b>定义</b> <a href="#l00005">GameLoadingScreen.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_a720dfcaf16a27e2dba72b984f4823f09"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#a720dfcaf16a27e2dba72b984f4823f09">Game.GameLoadingScreen.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00086">GameLoadingScreen.cs:86</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_aa620033bbb9370ecc1f80a0344e6650d"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#aa620033bbb9370ecc1f80a0344e6650d">Game.GameLoadingScreen.m_worldSnapshotName</a></div><div class="ttdeci">string m_worldSnapshotName</div><div class="ttdef"><b>定义</b> <a href="#l00007">GameLoadingScreen.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_abbf1fbe83cdc9eb74324a6e765f0bd1a"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#abbf1fbe83cdc9eb74324a6e765f0bd1a">Game.GameLoadingScreen.GameLoadingScreen</a></div><div class="ttdeci">GameLoadingScreen()</div><div class="ttdef"><b>定义</b> <a href="#l00018">GameLoadingScreen.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_acc7aff6e1cf48197413a2a6d36118f36"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#acc7aff6e1cf48197413a2a6d36118f36">Game.GameLoadingScreen.Enter</a></div><div class="ttdeci">override void Enter(object[] parameters)</div><div class="ttdef"><b>定义</b> <a href="#l00098">GameLoadingScreen.cs:98</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_loading_screen_html_afc13cef2a09428672942e82631d488e1"><div class="ttname"><a href="class_game_1_1_game_loading_screen.html#afc13cef2a09428672942e82631d488e1">Game.GameLoadingScreen.m_upgradeError</a></div><div class="ttdeci">Exception m_upgradeError</div><div class="ttdef"><b>定义</b> <a href="#l00015">GameLoadingScreen.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_manager_html"><div class="ttname"><a href="class_game_1_1_game_manager.html">Game.GameManager</a></div><div class="ttdef"><b>定义</b> <a href="_game_manager_8cs_source.html#l00008">GameManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_manager_html_a28b081af5f090ea4e24c6ef984cfa66b"><div class="ttname"><a href="class_game_1_1_game_manager.html#a28b081af5f090ea4e24c6ef984cfa66b">Game.GameManager.RepairAndUpgradeWorld</a></div><div class="ttdeci">static void RepairAndUpgradeWorld(WorldInfo worldInfo)</div><div class="ttdef"><b>定义</b> <a href="_game_manager_8cs_source.html#l00027">GameManager.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_manager_html_a471937d4c895d066b74067cf13421984"><div class="ttname"><a href="class_game_1_1_game_manager.html#a471937d4c895d066b74067cf13421984">Game.GameManager.LoadProject</a></div><div class="ttdeci">static void LoadProject(WorldInfo worldInfo, ContainerWidget gamesWidget)</div><div class="ttdef"><b>定义</b> <a href="_game_manager_8cs_source.html#l00032">GameManager.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_manager_html_ae9feebf60b1f66fb5475942b1e869d36"><div class="ttname"><a href="class_game_1_1_game_manager.html#ae9feebf60b1f66fb5475942b1e869d36">Game.GameManager.DisposeProject</a></div><div class="ttdeci">static void DisposeProject()</div><div class="ttdef"><b>定义</b> <a href="_game_manager_8cs_source.html#l00193">GameManager.cs:193</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_screen_html"><div class="ttname"><a href="class_game_1_1_game_screen.html">Game.GameScreen</a></div><div class="ttdef"><b>定义</b> <a href="_game_screen_8cs_source.html#l00006">GameScreen.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_list_panel_widget_html_abb7acedeb136aa1e5497cf253fdda922"><div class="ttname"><a href="class_game_1_1_list_panel_widget.html#abb7acedeb136aa1e5497cf253fdda922">Game.ListPanelWidget.ClearItems</a></div><div class="ttdeci">void ClearItems()</div><div class="ttdef"><b>定义</b> <a href="_list_panel_widget_8cs_source.html#l00130">ListPanelWidget.cs:130</a></div></div>
+<div class="ttc" id="aclass_game_1_1_original_community_content_screen_html"><div class="ttname"><a href="class_game_1_1_original_community_content_screen.html">Game.OriginalCommunityContentScreen</a></div><div class="ttdef"><b>定义</b> <a href="_original_community_content_screen_8cs_source.html#l00005">OriginalCommunityContentScreen.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_original_community_content_screen_html_a42da04b170efb8392438e67ca6002725"><div class="ttname"><a href="class_game_1_1_original_community_content_screen.html#a42da04b170efb8392438e67ca6002725">Game.OriginalCommunityContentScreen.m_listPanel</a></div><div class="ttdeci">ListPanelWidget m_listPanel</div><div class="ttdef"><b>定义</b> <a href="_original_community_content_screen_8cs_source.html#l00015">OriginalCommunityContentScreen.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_progress_manager_html"><div class="ttname"><a href="class_game_1_1_progress_manager.html">Game.ProgressManager</a></div><div class="ttdef"><b>定义</b> <a href="_progress_manager_8cs_source.html#l00004">ProgressManager.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_progress_manager_html_a852246f29c0fa61db29d776e1fdaa73e"><div class="ttname"><a href="class_game_1_1_progress_manager.html#a852246f29c0fa61db29d776e1fdaa73e">Game.ProgressManager.UpdateProgress</a></div><div class="ttdeci">static void UpdateProgress(string operationName, float progress)</div><div class="ttdef"><b>定义</b> <a href="_progress_manager_8cs_source.html#l00009">ProgressManager.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screen_html"><div class="ttname"><a href="class_game_1_1_screen.html">Game.Screen</a></div><div class="ttdef"><b>定义</b> <a href="_screen_8cs_source.html#l00002">Screen.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html"><div class="ttname"><a href="class_game_1_1_screens_manager.html">Game.ScreensManager</a></div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00005">ScreensManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a23c145b294d9ea3f3ac0fdcd246e02b5"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a23c145b294d9ea3f3ac0fdcd246e02b5">Game.ScreensManager.PreviousScreen</a></div><div class="ttdeci">static Screen PreviousScreen</div><div class="ttdoc">上一个Screen</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00045">ScreensManager.cs:45</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a90614198a66aec078d9d00cfcbcd49a1"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">Game.ScreensManager.SwitchScreen</a></div><div class="ttdeci">static void SwitchScreen(string name, params object[] parameters)</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00065">ScreensManager.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a9098eec179c4f71074ea33409ba51575"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a9098eec179c4f71074ea33409ba51575">Game.ScreensManager.IsAnimating</a></div><div class="ttdeci">static bool IsAnimating</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00038">ScreensManager.cs:38</a></div></div>
+<div class="ttc" id="aclass_game_1_1_state_machine_html"><div class="ttname"><a href="class_game_1_1_state_machine.html">Game.StateMachine</a></div><div class="ttdef"><b>定义</b> <a href="_state_machine_8cs_source.html#l00002">StateMachine.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_tree_view_widget_html_aa8a68c6b6c16c1253bf79a6c08199d1f"><div class="ttname"><a href="class_game_1_1_tree_view_widget.html#aa8a68c6b6c16c1253bf79a6c08199d1f">Game.TreeViewWidget.Clear</a></div><div class="ttdeci">void Clear(bool dispose=true)</div><div class="ttdef"><b>定义</b> <a href="_tree_view_widget_8cs_source.html#l00124">TreeViewWidget.cs:124</a></div></div>
+<div class="ttc" id="aclass_game_1_1_view_game_log_dialog_html"><div class="ttname"><a href="class_game_1_1_view_game_log_dialog.html">Game.ViewGameLogDialog</a></div><div class="ttdef"><b>定义</b> <a href="_view_game_log_dialog_8cs_source.html#l00006">ViewGameLogDialog.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_view_game_log_dialog_html_a769b926fffd231be54b6b8a879f971e6"><div class="ttname"><a href="class_game_1_1_view_game_log_dialog.html#a769b926fffd231be54b6b8a879f971e6">Game.ViewGameLogDialog.SetErrorHead</a></div><div class="ttdeci">void SetErrorHead(int headLangIndex, int adviceLangIndex)</div><div class="ttdef"><b>定义</b> <a href="_view_game_log_dialog_8cs_source.html#l00017">ViewGameLogDialog.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_info_html"><div class="ttname"><a href="class_game_1_1_world_info.html">Game.WorldInfo</a></div><div class="ttdef"><b>定义</b> <a href="_world_info_8cs_source.html#l00002">WorldInfo.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_worlds_manager_html"><div class="ttname"><a href="class_game_1_1_worlds_manager.html">Game.WorldsManager</a></div><div class="ttdef"><b>定义</b> <a href="_worlds_manager_8cs_source.html#l00008">WorldsManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_worlds_manager_html_a1cbaaa8cf9eef2831438f44a9585ba90"><div class="ttname"><a href="class_game_1_1_worlds_manager.html#a1cbaaa8cf9eef2831438f44a9585ba90">Game.WorldsManager.RestoreWorldFromSnapshot</a></div><div class="ttdeci">static void RestoreWorldFromSnapshot(string directoryName, string snapshotName)</div><div class="ttdef"><b>定义</b> <a href="_worlds_manager_8cs_source.html#l00120">WorldsManager.cs:120</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_819697851f82aaa78e1e98801cc3f64c.html">Screen</a></li><li class="navelem"><a href="_game_loading_screen_8cs.html">GameLoadingScreen.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

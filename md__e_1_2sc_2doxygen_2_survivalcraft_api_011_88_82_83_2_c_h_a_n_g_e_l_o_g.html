@@ -1,0 +1,846 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: 更新日志</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('md__e_1_2sc_2doxygen_2_survivalcraft_api_011_88_82_83_2_c_h_a_n_g_e_l_o_g.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">更新日志 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
+<blockquote class="doxtable">
+<p>说明：此更新日志和发布页的更新日志略有不同 </p>
+</blockquote>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+API 1.8.2.3 (2026-01-01)</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+新增</h2>
+<ul>
+<li>方块详情界面显示动态 ID 和特殊值（需进入存档）</li>
+<li>创造模式的游戏菜单额外显示玩家重生位置坐标，以及所在位置的温度、湿度</li>
+<li>支持 ASTC 格式的方块材质</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+修复</h2>
+<ul>
+<li>安卓端鼠标、手柄输入问题全面修复</li>
+<li>低版本安卓可能闪退的问题</li>
+<li>生物出生立即死亡后，尸体不消失的问题</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+对于开发者</h2>
+<ul>
+<li>新纹理类：CompressedTexture2D，可加载 ASTC 格式的压缩纹理。 <br  />
+ 优点：无需解码，直接传递给 GPU，压缩率和质量损失尚可。 <br  />
+ 官方工具：<a href="https://github.com/ARM-software/astc-encoder">https://github.com/ARM-software/astc-encoder</a> <br  />
+ 推荐命令：<span class="tt">.\astcenc-avx2.exe -cl 输入路径 输出路径 8x8 -exhaustive</span></li>
+<li>新增重启游戏的方法：Window.Restart</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+API 1.8.2.2 (2025-12-24)</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+新增</h2>
+<ul>
+<li>全新中文翻译</li>
+<li>适配安卓全面屏（设置-用户界面-适配全面屏，刘海屏默认开启）</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+修复</h2>
+<ul>
+<li>已禁用模组的资源仍然会加载的问题</li>
+<li>蹲下仍然会知道跳跃的问题</li>
+<li>Android 端鼠标操作异常的问题</li>
+<li>Android 端编辑文字弹窗的标题和描述没翻译的问题</li>
+<li>在高版本 Android 运行时，返回键会直接返回到桌面的问题</li>
+<li>Windows 端启用“增强指针精度”时，视角异常跳动的问题</li>
+<li>一些翻译问题</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+对于开发者</h2>
+<ul>
+<li>ModLoader 新增 OnVitalStatsEat，OnVitalStatsUpdateFood，OnVitalStatsUpdateStamina，OnVitalStatsUpdateSleep，OnVitalStatsUpdateTemperature，OnVitalStatsUpdateWetness，OnInventorySlotWidgetCalculateSplitCount 接口</li>
+<li>FastDebugMod 能加载非 Mods 根目录的各类资源文件了</li>
+<li>Widget 新增四个方向的 Margin</li>
+<li>ScreensManager 新增 HistoryStack、GoBack 等</li>
+<li>ComponentFirstPersonModel 新增 ForceDrawHandOnly</li>
+<li>CellFace 新增 FaceToTangents、GetFourVertices、GetSixVertices</li>
+<li>Terrain 等相关类新增大量参数类型为 Point3 的方法（以前只有int x, int y, int z 形式的）</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+API 1.8.2.1 (2025-11-24)</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+新增</h2>
+<ul>
+<li>兼容设置中新增安全模式，启用后将停止加载所有模组</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+优化</h2>
+<ul>
+<li>全面优化 Mod 管理界面</li>
+<li>将原版社区、中文社区按钮合并，并增加新中文社区网页版入口</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+修复</h2>
+<ul>
+<li>Android 系统上鼠标能正常在游戏中使用了</li>
+<li>攻击硬直累加计算导致霰弹超长硬直的问题</li>
+<li>一个不应该的破坏性变更导致的旧模组不兼容（在插件版1.8.2，<span class="tt">ClothData.Texture</span> 从字段变成了属性，现已恢复为字段）</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+对于开发者</h2>
+<ul>
+<li>给<span class="tt">HumanReadableConverter</span>加上了 Nullable 支持</li>
+<li><span class="tt">Mouse</span>新增<span class="tt">SetCursorType</span>方法（其中 Android 系统不生效，原因不明）</li>
+<li>如前所述，<span class="tt">ClothData.Texture</span>已恢复为字段</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+API 1.8.2 (2025-11-16)</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+新增</h2>
+<ul>
+<li>Android 系统打开或分享&lt;tt&gt;.scworld</li>
+</ul>
+<p>、&lt;tt&gt;.scmod等格式文件时，如选择插件版，文件将自动导入到合适的位置，不再需要手动在文件管理器手动复制粘贴了；Windows 系统同理，第一次运行插件版后，将可以直接双击这些格式的文件来导入</p><ul>
+<li>Android 系统上导出存档、家具包等文件后，能立即进行分享</li>
+<li>再次支持 iOS 系统，安装注意事项详见<a href="https://gitee.com/SC-SPM/SurvivalcraftApi#iosipados-%E7%B3%BB%E7%BB%9F%E7%9C%8B%E8%BF%99%E9%87%8C">此处</a></li>
+<li>创建世界时可编辑真种子（并在多个位置显示真种子），可选择地形生成器版本</li>
+<li>扩大创建世界时多个选项的范围，包括：岛屿大小、生物群落大小、年天数、平坦地面方块、海平面高度</li>
+<li>界面设置新增自定义截图分辨率</li>
+<li>控制设置新增手柄相关设置，且可使用组合键；新增物品快捷栏循环滚动设置</li>
+<li>视角设置会显示具体角度</li>
+<li>Mod 管理界面新增“查看主页”按钮</li>
+<li>启动游戏失败会有更具体的提示</li>
+<li>日志文件能直接从游戏内打开</li>
+<li>插件版在 Android 系统退出后，会自动从多任务界面移除</li>
+<li>给 Android 系统的自适应图标添加单色图标</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+修复</h2>
+<ul>
+<li>玩家皮肤显示错误的问题</li>
+<li>背包空间不足，捡起过多的掉落物时，多余的掉落物会消失的问题</li>
+<li>南瓜能种在不合适方块上的问题</li>
+<li>蹲着不能跳的问题</li>
+<li>创造模式使用桶时的行为与原版不一致的问题</li>
+<li>Windows 系统上文本框中光标与输入法位置不匹配、鼠标点击后光标位置错误、左右滚动过头的问题</li>
+<li>使用手柄时，打开对话框会把实际鼠标也居中的问题</li>
+<li>Android 系统上第一次启动游戏，跳转到管理所有应用的所有文件访问权限的界面的问题（应该跳转到管理自身的所有文件访问权限的界面）</li>
+<li>其他小问题</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+对于 mod 开发者</h2>
+<ul>
+<li>.Net SDK 升级到 10.0（如果您开发的 mod 没有使用新版增加的东西，可以不用升级引用包和目标框架版本）</li>
+<li><span class="tt"><a class="el" href="class_engine_1_1_storage.html">Engine.Storage</a></span>新增多个实用方法：<span class="tt">OpenFileWithExternalApplication</span>（使用其他应用打开文件）、<span class="tt">ShareFile</span>（分享文件到其他应用）、<span class="tt">ChooseFile</span>（使用系统文件选择器选择文件）</li>
+<li><span class="tt">Engine.Display</span> 新增 <span class="tt">MaxTextureSize</span></li>
+<li><span class="tt">ClothingData</span> 新增 <span class="tt">UseLazyLoading</span>，用于设置纹理是否直接加载或者按需加载，当mod的高清纹理衣服过多时，可以采用按需加载，加快游戏启动速度</li>
+<li>读取 json 时允许注释和尾随逗号</li>
+<li>将优先读取 scmod 压缩包根目录的<span class="tt">icon.webp</span>作为 mod 图标（仍然支持<span class="tt">icon.png</span>）</li>
+<li>建议积极设置<span class="tt">modinfo.json</span>中的 Link，因为玩家将能从 Mod 管理界面打开该链接</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+<span class="tt">modinfo.json</span>重大更新：</h3>
+<details >
+<summary >
+点击展开</summary>
+<p>在之前的插件版中，Dependencies只支持固定的一个版本号，从该发布版开始，Dependencies 将支持范围版本，写法上支持 Nuget 风格和少量 SemVer 风格，规则如下表：</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Nuget 示例  </th><th class="markdownTableHeadNone">范围  </th><th class="markdownTableHeadNone">说明  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1.0  </td><td class="markdownTableBodyNone">x &gt;= 1.0  </td><td class="markdownTableBodyNone">直接一个版本号  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">[1.0,)  </td><td class="markdownTableBodyNone">x &gt;= 1.0  </td><td class="markdownTableBodyNone"><span class="tt">[</span> 表示大于等于  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">(1.0,)  </td><td class="markdownTableBodyNone">x &gt; 1.0  </td><td class="markdownTableBodyNone"><span class="tt">(</span> 表示大于  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">(,1.0]  </td><td class="markdownTableBodyNone">x &lt;= 1.0  </td><td class="markdownTableBodyNone"><span class="tt">]</span> 表示小于等于  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">(,1.0)  </td><td class="markdownTableBodyNone">x &lt; 1.0  </td><td class="markdownTableBodyNone"><span class="tt">)</span> 表示小于  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">[1.0,2.0]  </td><td class="markdownTableBodyNone">1.0 &lt;= x &lt;= 2.0  </td><td class="markdownTableBodyNone">/  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">[1.0,2.0)  </td><td class="markdownTableBodyNone">1.0 &lt;= x &lt; 2.0  </td><td class="markdownTableBodyNone">/  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">(1.0,2.0]  </td><td class="markdownTableBodyNone">1.0 &lt; x &lt;= 2.0  </td><td class="markdownTableBodyNone">/  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">(1.0)  </td><td class="markdownTableBodyNone">无效  </td><td class="markdownTableBodyNone">无效  </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">SemVer 示例  </th><th class="markdownTableHeadNone">范围  </th><th class="markdownTableHeadNone">说明  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">=1.0.0  </td><td class="markdownTableBodyNone">x = 1.0.0  </td><td class="markdownTableBodyNone">/  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">&gt;1.0.0  </td><td class="markdownTableBodyNone">x &gt; 1.0.0  </td><td class="markdownTableBodyNone">/  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">&gt;=1.0.0  </td><td class="markdownTableBodyNone">x &gt;= 1.0.0  </td><td class="markdownTableBodyNone">/  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">&lt;2.0.0  </td><td class="markdownTableBodyNone">x &lt; 2.0.0  </td><td class="markdownTableBodyNone">/  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">&lt;=2.0.0  </td><td class="markdownTableBodyNone">x &lt;= 2.0.0  </td><td class="markdownTableBodyNone">/  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">^1.0.0  </td><td class="markdownTableBodyNone">1.0.0 &lt;= x &lt; 2.0.0  </td><td class="markdownTableBodyNone">主要版本号相同  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">~1.0.0  </td><td class="markdownTableBodyNone">1.0 &lt;= x &lt; 1.1.0  </td><td class="markdownTableBodyNone">次要版本号相同  </td></tr>
+</table>
+<blockquote class="doxtable">
+<p>两种写法不支持混合使用！ </p>
+</blockquote>
+<p>版本号的写法是 <span class="tt">Major.Minor.Patch.Revision[-Suffix]</span>，即：主要版本号、次要版本号、补丁版本号、修订版本号、可选后缀，四个版本号均为数字，使用小数点分隔，最后的后缀前面要有<span class="tt">-</span>，例如：<span class="tt">1.2.3.4-beta</span>。 <br  />
+ 如果转换失败，加载依赖时将只对比字符串是否相同，而不判断范围（像以前的插件版那样）</p>
+<p>同时 Dependencies 新增了一种写法，先看旧写法： </p><div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;Dependencies&quot;: [</div>
+<div class="line">        &quot;PackageNameOfModA:1.2&quot;,</div>
+<div class="line">        &quot;PackageNameOfModB:3.4&quot;,</div>
+<div class="line">        &quot;PackageNameOfModC:5.6&quot;</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> 现在支持新写法： </p><div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;Dependencies&quot;: {</div>
+<div class="line">        &quot;PackageNameOfModA&quot;: &quot;1.2&quot;,</div>
+<div class="line">        &quot;PackageNameOfModB&quot;: &quot;3.4&quot;,</div>
+<div class="line">        &quot;PackageNameOfModC&quot;: &quot;5.6&quot;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> 两种写法效果相同，但新写法更直观清晰，希望大家喜欢</p>
+<blockquote class="doxtable">
+<p>ApiVersion 也支持上面写法，但和以前一样，没有实际作用 </p>
+</blockquote>
+<p></p>
+</details>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+API 1.8.1.3 (2025-8-31)</h1>
+<p>这是一个修复了很多问题的小型更新</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+新增</h2>
+<ul>
+<li>Windows端新增使用Direct3D11图形API的兼容补丁</li>
+<li>从这个版本开始正式支持Linux系统</li>
+<li>家具上限翻倍（4096→8192）</li>
+<li>罗马尼亚语，感谢Discord用户NBG</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+优化</h2>
+<ul>
+<li>扩宽视角设置的范围</li>
+<li>新增隐藏十字准星的设置</li>
+<li>JS运行对话框添加复制输出的按钮</li>
+<li>同时只能一个线程保存设置，避免冲突</li>
+<li>调整一些提示的文字，意思更清晰</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+修复</h2>
+<ul>
+<li>中文以外语言基本不可用的问题</li>
+<li>Android端应用在后台会自杀的问题</li>
+<li>Android端日志超2MB不创建新日志文件的问题</li>
+<li>主界面更新按钮图标颜色错误的问题</li>
+<li>Windows端切换全屏/窗口会导致视角突变的问题</li>
+<li>ogg音频文件只会播放一半的问题</li>
+<li>存档选择界面不显示世界数量和总大小的问题</li>
+<li>南瓜灯不能放在一般方块上的问题</li>
+<li>射弹反弹速度过大的问题</li>
+<li>一个mod有多个mod图标导致modinfo加载失败的问题</li>
+<li>ContentManager无法直接读取JsonArray、JsonObject的问题</li>
+<li>Widget.IsUpdateEnabled没用的问题</li>
+<li>部分界面内容溢出屏幕、内容框的问题</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+对于开发者</h2>
+<ul>
+<li>ModLoader新增接口：ClothingProcessSlotItems、IsLevelSufficientForTool、OnAppendModelMeshPart、OnAppendModelMesh</li>
+<li>新增TransformedShader类</li>
+<li>ModelWidget支持自定义着色器</li>
+<li>更多图形相关的类中的private改为public，给很多方法加上virtual，部分类新增Tag</li>
+<li>可以通过EnableDressLimit去除衣服穿戴等级限制</li>
+<li>TextBoxWidget新增属性EnterAsNewLine、MaxLinesCount</li>
+<li>攻击新增参数ArmorProtectionDivision，射弹新增参数MinVelocityToAttack</li>
+<li>Mount增加allowToStartRange，ScoreMount返回负数时禁止骑乘，ComponentRider增加DetectSurroundingMountRange</li>
+<li>增加使用旧版参数的DrawCubeBlock的重载方法</li>
+<li>项目源码已大幅调整结构，解决警告，并统一代码格式</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+API 1.8.1.2 (2025-7-01)</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+优化</h2>
+<ul>
+<li>Configs文件加载、时间子系统加入错误处理机制</li>
+<li>重构了熔炉组件</li>
+<li>更完善的界面国际化；未找到相应语言的字符串时，将使用英语语言中的字符串</li>
+<li>以同时显示标识牌数量为代价提升标识牌渲染效果</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
+修复</h2>
+<ul>
+<li>解决电脑版导出存档不正确的问题</li>
+<li>修复SubsystemTime.GameTimeFactor变化异常问题</li>
+<li>修复重置按键可能报错的问题</li>
+<li>修复mod缺字段时可能无法进入存档问题</li>
+<li>修复绘制渐变矩形异常问题</li>
+<li>修复有时加载旧存档时，方块ID不按已有旧档分配方式分配的问题</li>
+<li>修复找不到图像会导致界面组件停止加载的问题</li>
+<li>修复烟花、南瓜汤、颜料桶合成信息错误</li>
+<li>修复方块高亮边框绘制在第一人称手臂之上的问题</li>
+<li>修复射弹不能打水漂的问题</li>
+<li>修复部分情况下玩家模型组件显示错误的问题</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+新增</h2>
+<ul>
+<li>添加界面：API更新界面</li>
+<li>添加性能设置：材质刷新频率</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
+面向Mod开发者</h2>
+<ul>
+<li>添加重新计算摄像机投影矩阵的接口</li>
+<li>添加新的EditBlockDescriptionScreen接口，传入BlockValue</li>
+<li>SubsystemDrawing，SubsystemElectricity，SubsystemUpdate加入性能分析</li>
+<li>增加接口ClothingSlotProcessCapacity</li>
+<li>RectangleWidget添加BlendState属性</li>
+<li>数据库的Model组件模板新增Transparent，ModelScale属性</li>
+<li>增加接口OnProjectileRaycastBody，射弹更新寻找下一个可以命中的Body时执行</li>
+<li>增加接口IComponentEscapeBehavior，表示水路空三种生物的逃跑行为</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
+API 1.8.1.1 (2025-5-25)</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
+优化和修复</h2>
+<ul>
+<li>日志文件被占用时会显示原因</li>
+<li>修复Windows端按键盘F11切换全屏为窗口时，窗口大小变为0的bug</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
+面向Mod开发者的更新</h2>
+<ul>
+<li>PlayerData等待地形的最大时间可修改</li>
+<li>统一Windows端和Android端ModsManager内ExternalPath等多个成员为属性</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
+API 1.8.1 (2025-5-20)</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md33"></a>
+优化</h2>
+<ul>
+<li>部分安卓设备游戏帧率提高4倍，大幅提升流畅度</li>
+<li>D板编辑后数量不变，即不会变为1</li>
+<li>主界面布局调整</li>
+<li>英文和中文排在语言列表前面</li>
+<li>安卓版启动即横屏</li>
+<li>伸长活塞能正常绘制</li>
+<li>部分翻译补充和调整</li>
+<li>解除掉落物最大可视距离仅为30的限制</li>
+<li>日志显示界面加上省略号避免过长时卡死，调小网络连接类报错占的篇幅</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md34"></a>
+修复</h2>
+<ul>
+<li>对地面使用家具锤可能导致死循环的问题</li>
+<li>进入损坏存档再进入正常存档会多一个假玩家的问题</li>
+<li>家具方块电路无法连接的问题</li>
+<li>部分模型界面显示问题</li>
+<li>部分区块植物不生长的问题</li>
+<li>温度条显示错误问题</li>
+<li>合成台在放入物品后会吞掉副产品的问题</li>
+<li>文本框跨行显示与光标定位问题</li>
+<li>电脑按F11全屏经常被恢复的问题</li>
+<li>星星绘制错误的问题</li>
+<li>运行时相关文件被其他程序锁死导致游戏无法正常运行</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md35"></a>
+新增</h2>
+<ul>
+<li>新增语系（越南语、西班牙语）</li>
+<li>更新对话框添加“前往发布页”按钮</li>
+<li>进入缺失模组的世界时弹出警示的功能</li>
+<li>电脑版键位设置</li>
+<li>游戏摄像机列表设置</li>
+<li>删除世界需要输入确认（设置里，默认关闭）</li>
+<li>手动更新功能</li>
+</ul>
+<blockquote class="doxtable">
+<p>以下更新日志来自<a href="https://gitee.com/THPRC/survivalcraft-api/">把红色赋予黑海的仓库</a> </p>
+</blockquote>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md36"></a>
+API 1.80 (2025-1-16)</h1>
+<p>跟进原版2.4并修复大量bug</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md37"></a>
+API 1.72 (2024-11-06)</h1>
+<p>MOD接口方面（具体用法详见md文件） </p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md38"></a>
+ModInfo结构</h2>
+<p>模组增加LoadOrder字段</p>
+<p>建议： 主题模组的LoadOrder在-100000~-10000的范围，辅助模组的LoadOrder在10000~100000的范围</p>
+<p>示例： </p><div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;Name&quot;: &quot;Gigavolt 十亿伏特&quot;,</div>
+<div class="line">  &quot;Version&quot;: &quot;1.0&quot;,</div>
+<div class="line">  &quot;ApiVersion&quot;: &quot;1.72&quot;,</div>
+<div class="line">  &quot;Description&quot;: &quot;这是一个为生存战争游戏带来十亿伏特电力系统的mod，将原版的16个电压级别（0~1.5V）扩展到2^32个（0~2^32-1V）&quot;,</div>
+<div class="line">  &quot;ScVersion&quot;: &quot;2.3.0.0&quot;,</div>
+<div class="line">  &quot;Link&quot;: &quot;https://github.com/XiaofengdiZhu/Gigavolt&quot;,</div>
+<div class="line">  &quot;Author&quot;: &quot;销锋镝铸&quot;,</div>
+<div class="line">  &quot;PackageName&quot;: &quot;xfdz.Gigavolt&quot;,</div>
+<div class="line">  &quot;Dependencies&quot;: [],</div>
+<div class="line">  &quot;LoadOrder&quot;: 10000</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md39"></a>
+动态方块ID</h2>
+<p>为提高模组之间的兼容性，减少方块ID冲突，API1.72采用 **动态方块ID**，方块Index在300及以上的方块会被采用动态方块ID分配，方块定义的Index不再是正确的方块ID。</p>
+<p>使用方块的正确Index需要采用</p><ul>
+<li><span class="tt">BlocksManager.GetBlockIndex(string BlockName)</span></li>
+<li><span class="tt">BlocksManager.GetBlock(string BlockName)</span></li>
+<li><span class="tt">block.BlockIndex</span></li>
+</ul>
+<p>Block.Index由常量改为静态变量，会随着动态方块ID的分配而改变。建议模组将<span class="tt">Block.Index</span>修饰类型由const改为static，这样可以通过<span class="tt">Block.Index</span>来引用方块</p>
+<p>SubsystemBlockBehavior不建议使用HandledBlocks，而是在方块的csv里面定义该行为掌控的方块</p>
+<div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>xxxBlock : Block</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">/*public const int Index = 400;*/</span><span class="comment">//以前的版本，固定ID</span></div>
+<div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> Index = 400;<span class="comment">//改为static变量，使用可变方块ID</span></div>
+<div class="line">}</div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>SubsystemXXXBlockBehavior : SubsystemBlockBehavior</div>
+<div class="line">{</div>
+<div class="line">      <span class="comment">//仍然建议使用csv来编写HandledBlocks</span></div>
+<div class="line">      <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span>[] HandledBlocks =&gt; <span class="keyword">new</span> <span class="keywordtype">int</span>[4]</div>
+<div class="line">      {</div>
+<div class="line">          BlocksManager.GetBlockIndex&lt;EmptyBucketBlock&gt;(),</div>
+<div class="line">          BlocksManager.GetBlockIndex&lt;WaterBucketBlock&gt;(),</div>
+<div class="line">          BlocksManager.GetBlockIndex&lt;MagmaBucketBlock&gt;(),</div>
+<div class="line">          BlocksManager.GetBlockIndex&lt;MilkBucketBlock&gt;()</div>
+<div class="line">      };</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>对于升级到1.72的mod，重点排查<span class="tt">Terrain.MakeBlockValue()</span>的调用，将这些调用均改为动态ID调用</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md40"></a>
+常用组件调整</h2>
+<p>为了保证模组之间的兼容性，不同模组共同发展。API1.72对组件覆盖的行为进行了限制。 <br  />
+ 当有模组覆盖了常用组件，或者不同的模组对同一个Guid进行了new-覆盖操作时，会在加载屏幕进行报错。玩家将会选择是否禁用覆盖操作。因此不再建议模组作者对数据库**尤其是常用组件**进行覆盖</p>
+<p>覆盖警告的常用组件包含以下组件和guid： </p><div class="fragment"><div class="line">ModifiedElement[<span class="stringliteral">&quot;7347a83f-2d46-4fdf-bce2-52677de0b568&quot;</span>] = <span class="stringliteral">&quot;Game.ComponentBody&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;4e14ce27-fdef-46ca-8ea0-26af43c215e5&quot;</span>] = <span class="stringliteral">&quot;Game.ComponentHealth&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;7ecfafc4-4603-424c-87dd-1df59e7ef413&quot;</span>] = <span class="stringliteral">&quot;Game.ComponentPlayer&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;9dc356e5-7dc8-45f6-8779-827ddee9966c&quot;</span>] = <span class="stringliteral">&quot;Game.ComponentMiner&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;6f538db3-f1fe-4e91-8ef5-627c0b1a74ba&quot;</span>] = <span class="stringliteral">&quot;Game.ComponentRunAwayBehavior&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;8b3d07dc-6498-4691-9686-cf4edabb8f3f&quot;</span>] = <span class="stringliteral">&quot;Game.ComponentGui&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;e2636c38-f179-4aa1-b087-ed6920d66e8e&quot;</span>] = <span class="stringliteral">&quot;Game.SubsystemTerrain&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;1c95cd40-26be-44cf-938a-157b318ff086&quot;</span>] = <span class="stringliteral">&quot;Game.SubsystemPlantBlockBehavior&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;937999c9-9570-4cbd-8390-23f1e4609cdd&quot;</span>] = <span class="stringliteral">&quot;Game.SubsystemPistonBlockBehavior&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;96e79f99-a082-4190-9ab6-835dc49ebbdd&quot;</span>] = <span class="stringliteral">&quot;Game.SubsystemExplosions&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;dafb8e14-11b9-44b7-a208-424b770aeaa9&quot;</span>] = <span class="stringliteral">&quot;Game.SubsystemProjectiles&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;32d392de-69c1-4d04-9e0b-5c7463201892&quot;</span>] = <span class="stringliteral">&quot;Game.SubsystemPickables&quot;</span>;</div>
+<div class="line">ModifiedElement[<span class="stringliteral">&quot;54a4f6d5-98dd-4dc3-bf6d-04dfd972c6b7&quot;</span>] = <span class="stringliteral">&quot;Game.SubsystemTime&quot;</span>;</div>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md41"></a>
+ComponentPlayer</h3>
+<p>当Interact生效（玩家点击屏幕，或鼠标右键）时，逻辑会进行改变。首先通过方块的新增属性<span class="tt">GetPriorityUse, GetPriorityInteract, GetPriorityPlace</span>和<span class="tt">ModLoader.OnPlayerInputInteract</span>来确定&lt;使用手中方块&gt;&lt;交互面前方块&gt;&lt;放置手中方块&gt;这三个行为的优先级。之后根据三者优先级，选择优先级最高且大于0的行为执行。 <br  />
+ 例如：口哨方块放置优先级为0，箱子方块交互优先级为2000，口哨方块使用优先级为3000。那么手持口哨点击箱子时，由于口哨方块使用优先级最高，则会执行“使用口哨”，即吹响口哨。</p>
+<p>对玩家的输入行为增加了大量的ModLoader接口，详见下方的ModLoader接口介绍。</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md42"></a>
+ComponentLevel</h3>
+<p>增加了一个ComponentFactors，用于控制生物的力量乘数、防御乘数、移速乘数。而ComponentLevel被改为只和经验值相关的组件。 <br  />
+ 所有非玩家生物都拥有了ComponentFactors，玩家的ComponentLevel继承ComponentFactors。</p>
+<p>ComponentLocomotion, ComponentMiner, ComponentHealth中引用到的力量、防御、移速乘数被改为引用ComponentFactors。</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md43"></a>
+ComponentFactors</h3>
+<p>新增OnFactorsUpdate接口: 用于更新非玩家生物的力量、防御、移速倍率。</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
+SubsystemProjectiles</h3>
+<p>Update进行了重大调整。射弹的更新逻辑被放到Projectile.Update()中执行。 <br  />
+ 这意味着你可以在<span class="tt">SubsystemProjectiles.m_projectiles</span>容纳各种各样的Projectile。它们有不同的更新行为。 <br  />
+ 新增了OnProjectileAdded、SaveProjectile、OnProjectileUpdate接口，用于控制弹射物的行动规律</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
+Projectile</h3>
+<p>增加了以下字段和方法： </p><div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keywordtype">bool</span> IsFireProof = <span class="keyword">false</span>;<span class="comment">//该弹射物和掉落物防火，不会被火焰或熔岩烧毁</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span>? MaxTimeExist;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span> ExplosionMass = 20f;<span class="comment">//处于爆炸中时，进行爆炸计算的质量</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <a class="code hl_class" href="class_game_entity_system_1_1_entity.html">GameEntitySystem.Entity</a> OwnerEntity; <span class="comment">//以Entity的形式指明弹射物来源（比如发射器）</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span> Damping = -1f;<span class="comment">//射弹的速度衰减</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span> DampingInFluid = 0.001f;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span> Gravity = 10f;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span> TerrainKnockBack = 0.3f;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">bool</span> StopTrailParticleInFluid = <span class="keyword">true</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">int</span> DamageToPickable = 1;<span class="comment">//弹射物结算时掉的耐久</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">bool</span> TerrainCollidable = <span class="keyword">true</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">bool</span> BodyCollidable = <span class="keyword">true</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> List&lt;ComponentBody&gt; BodiesToIgnore = <span class="keyword">new</span> List&lt;ComponentBody&gt;();<span class="comment">//弹射物飞行的时候会忽略List中的ComponentBody</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> Update(<span class="keywordtype">float</span> dt) <span class="comment">//执行弹射物的更新操作</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnProjectileFlyOutOfLoadedChunks() <span class="comment">//弹射物飞离加载区块时执行的操作</span></div>
+<div class="line"> </div>
+<div class="line">public override <span class="keywordtype">void</span> UnderExplosion(<a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a> impulse, <span class="keywordtype">float</span> damage)<span class="comment">//弹射物受到爆炸时执行的操作</span></div>
+<div class="ttc" id="a_subsystem_audio_8cs_html_aa72bd5818d1fb1c95123ce286b96e775"><div class="ttname"><a href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a></div><div class="ttdeci">Engine.Vector3 Vector3</div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00005">SubsystemAudio.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html">GameEntitySystem.Entity</a></div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00010">Entity.cs:10</a></div></div>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
+SubsystemProjectiles</h3>
+<p>增加了以下ModLoader接口</p><ul>
+<li>OnProjectileHitBody: 弹射物在命中生物时执行。可以控制攻击力、命中后改变弹射物的移速。还可以设置ignoreBody = true来跳过弹射物判定当前Body。模组可以在此接口中增加其他行为。</li>
+<li>OnProjectileHitTerrain: 弹射物在命中方块时执行。可以控制是否摧毁方块，弹射物命中后移速等行为。模组可以在此接口中增加其他行为。</li>
+<li>SavePickable: 存储掉落物</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
+SubsystemPickables</h3>
+<ul>
+<li>掉落物系统进行了重大调整。掉落物的更新逻辑被放到Pickable.Update()中执行。 <br  />
+ 这意味着你可以在<span class="tt">SubsystemPickables.m_pickables</span>容纳各种各样的Pickable。它们有不同的更新行为。</li>
+<li>掉落物被玩家吸取的逻辑被转移到ComponentPickableGatherer中，拥有此组件并进行合理配置的实体（如玩家）可以收集掉落物。 <br  />
+ 如方块在吸取时并不是直接进入物品栏，而是进行其他操作（如经验球），特殊操作在SubsystemBlockBehavior.OnPickableGathered()中执行。</li>
+<li>模组作者建议参考ComponentPickableGatherer, ComponentPickableGathererPlayer, SubsystemExperienceBlockBehavior仿照经验球来定义掉落物在拾起的特殊行为。</li>
+<li>增加了以下ModLoader接口<ul>
+<li>OnPickableAdded：掉落物在创建世界时，或者生成时执行。可以在此时更改掉落物的属性，甚至类别。</li>
+<li>OnPickableDraw: 控制掉落物的绘制</li>
+<li>SavePickable</li>
+<li>OnPickableUpdate</li>
+</ul>
+</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md48"></a>
+Pickable</h3>
+<p>增加了以下字段和方法： </p><div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keywordtype">bool</span> IsFireProof = <span class="keyword">false</span>;<span class="comment">//该弹射物和掉落物防火，不会被火焰或熔岩烧毁</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span>? MaxTimeExist;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keywordtype">float</span> ExplosionMass = 20f;<span class="comment">//处于爆炸中时，进行爆炸计算的质量</span></div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">double</span> TimeWaitToAutoPick =&gt; m_timeWaitToAutoPick;<span class="comment">//掉落物只有在存在时长超过这个时间（初始值为0.5秒）后才能被捡起。</span></div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">float</span> DistanceToPick =&gt; m_distanceToPick;<span class="comment">//掉落物在距离目标这个范围（初始值为1格）内时，会立即进入玩家背包。</span></div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">float</span> DistanceToFlyToTarget =&gt; m_distanceToFlyToTarget;<span class="comment">//掉落物在距离目标这个单位（初始值为1.75格）内时，会飞向玩家。</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> UnderExplosion(<a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a> impulse, <span class="keywordtype">float</span> damage)<span class="comment">//处于爆炸状态下执行的操作</span></div>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md49"></a>
+SubsystemBodies</h3>
+<p>增加BodyCountInRaycast接口：可以决断是否将一个ComponentBody纳入Raycast结果当中</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md50"></a>
+SubsystemTime</h3>
+<p>新增ChangeGameTimeDelta接口，用于控制每帧的时间</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md51"></a>
+SubsystemUpdate</h3>
+<p>增加OnIUpdateableAddOrRemove接口，用于控制更新队列</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md52"></a>
+SubsystemDrawing</h3>
+<p>增加OnIDrawableAdded接口，用于控制绘制更新队列</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md53"></a>
+Entity</h3>
+<p>增加RemoveComponent、ReplaceComponent接口，用于控制实体的组件</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md54"></a>
+SubsystemFurnitureBlockBehavior</h3>
+<p>增加OnFurnitureDesigned接口：能够控制创建家具时，产生的家具个数、是否摧毁原有模型，以及家具锤掉落的耐久。如果家具锤耐久不足，则创建家具失败。Mod可以通过该接口修复“家具锤敲已有家具后，能够复制家具”的bug</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md55"></a>
+DamageItem</h3>
+<p>提供接口用于控制物品掉耐久时执行的操作</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md56"></a>
+ComponentFactors</h3>
+<p>增加OnFactorsUpdate接口，用于更新非玩家生物的力量、防御、移速倍率。</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md57"></a>
+SubsystemExplosions</h3>
+<p>增加CalculateExplosionPower接口用于控制爆炸的爆炸强度</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md58"></a>
+SubsystemSky</h3>
+<p>增加OnLightningStrike接口，用于控制雷电劈下时的爆炸强度，距离上一次闪电的时间间隔等属性，模组也可以在这个接口里面添加其他行为。</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md59"></a>
+TerrainContentsGenerator23</h3>
+<p>增加OnTerrainBrushesGenerated接口，用于调整原版已有矿物、水域、植物等地形地貌的生成，例如减少原版矿物生成量。 <br  />
+ 模组自身的建筑等生成建议调用OnTerrainContentsGenerated接口</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md60"></a>
+ComponentBody</h3>
+<p>增加以下ModLoader接口：</p><ul>
+<li>OnComponentBodyExploded：用于控制动物在受到爆炸时的伤害、击退等属性</li>
+<li>UpdateComponentBody: 进行实体的更新。建议只对自己mod的实体进行更新，不要插手其他mod的实体。</li>
+</ul>
+<p>增加了以下变量：</p><ul>
+<li>TerrainCollidable: 该ComponentBody是否能与地形碰撞。关闭状态意味着该生物能穿墙。</li>
+<li>BodyCollidable: 该ComponentBody是否能与其他动物碰撞</li>
+<li>FluidCollidable: 该ComponentBody是否能受到流体影响</li>
+<li>IsRaycastTransparent: 该生物不能被Raycast选中</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md61"></a>
+ComponentHealth</h3>
+<p>有以下接口变化：</p><ul>
+<li>弃用ComponentHealth中OnCreatureInjure接口，改为使用以下接口：<ul>
+<li>CalculateCreatureInjuryAmount：用于控制受到伤害的数量</li>
+<li>OnCreatureDying：在生物生命值低于0濒死时触发，如果将生命值改为大于0的数则取消死亡判定。用于mod生物的免死机制</li>
+<li>OnCreatureDied：在生物死亡判定时触发，可以控制是否计入击杀、以及经验球的掉落数量</li>
+</ul>
+</li>
+<li>增加接口：<ul>
+<li>ChangeVisualEffectOnInjury: 用于控制玩家在受伤后的红屏效果、是否会叫</li>
+<li>OnCreatureSpiked: 动物被仙人掌、海胆、钉板扎的时候执行，可以控制相关伤害。控制该伤害是否被护甲结算等操作。</li>
+</ul>
+</li>
+</ul>
+<p>增加了以下变量：</p><ul>
+<li>m_regenerateLifeEnabled: 是否允许回血</li>
+<li>HealFactor: 在Heal中，回血的倍数</li>
+<li>VoidDamageFactor: y轴过高或者过低造成的伤害系数。该值为0时，不会显示"Come Back!"</li>
+<li>AirLackResilience: 溺水/搁浅伤害抗性，初始值为8.33</li>
+<li>MagmaResilience: 熔岩伤害抗性，初始值为0.5。当该值为Infinity时，生物寻路不再视熔岩为危险方块。</li>
+<li>CrushResilience: 挤压伤害抗性，初始值为6.67</li>
+<li>SpikeResilience: 尖刺伤害抗性，初始值为10</li>
+<li>ExplosionResilience: 爆炸伤害抗性，初始值为1</li>
+<li>StackExperienceOnKill: 生物在死亡时掉落的经验球的掉落物个数不超过100，超出部分进行堆叠。能够降低卡顿。</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md62"></a>
+ComponentMiner</h3>
+<p>有以下接口变化：</p><ul>
+<li>ComponentMiner.AddHitValueParticleSystem允许非玩家攻击：当攻击来源并非玩家时，仍然会创建一个透明的伤害显示粒子。Mod可以调整这个粒子的颜色来令其显现。</li>
+<li>ComponentMiner.AttackBody：变量attacker的类型由ComponentCreature改为Entity</li>
+<li>Raycast方法调整：可以忽略动物、方块或移动方块，达到更灵活的投影</li>
+<li>增加OnBlockDug接口：用于控制在方块被挖掘完毕后触发的行为，也可以控制挖掘方块后损失的耐久数量</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md63"></a>
+ComponentPlayer</h3>
+<p>增加以下接口：</p><ul>
+<li>OnPlayerControlSteed, OnPlayerControlBoat, OnPlayerControlWalk：用于控制玩家的移动</li>
+<li>OnPlayerInputInteract：能够控制玩家通过点击屏幕、鼠标右键执行Interact操作的时间间隔，以及改变放置方块、使用手中方块、交互面前方块三个操作的优先级，以及模组在其中执行其他操作。</li>
+<li>UpdatePlayerInputAim：每帧都进行更新，可以控制玩家执行瞄准操作的时间间隔。（可以简单理解为投掷攻速），以及模组在其中执行其他操作。</li>
+<li>OnPlayerInputHit：控制玩家在执行攻击输入后，执行的操作。可以控制距离上一次的输入间隔（注意不是玩家攻击间隔）、近战攻击距离。当近战攻击距离≤0时，玩家无法再该情况下执行近战攻击。通常用于枪械等远程武器使用左键攻击。</li>
+<li>UpdatePlayerInputDig：每帧都进行更新，可以控制玩家挖掘方块之间的时间间隔，以及模组在其中执行其他操作。</li>
+<li>OnPlayerInputDrop：控制玩家在按下Q进行丢弃后，执行的操作</li>
+</ul>
+<p>增加m_aimStartTime变量：瞄准操作开始的时间</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md64"></a>
+InventorySlotWidget</h3>
+<p>增加以下接口：</p><ul>
+<li>OnInventorySlotWidgetDefined：在InventorySlotWidget中添加模组自定义的元素</li>
+<li>InventorySlotWidgetMeasureOverride：控制物品格子的绘制，绘制耐久度、腐烂图标、物品数量等信息。模组可以在其中绘制模组自带的内容</li>
+<li>HandleMoveInventoryItem：控制物品栏移动物品执行的操作</li>
+<li>HandleInventoryDragProcess：控制物品栏拖动物品执行的操作（比如火药上枪）</li>
+<li>HandleInventoryDragMove：控制物品栏拖动物品，且Process不执行时进行的操作</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md65"></a>
+新增变量</h2>
+<ul>
+<li>ComponentOnFire增加了以下变量：<span class="tt">m_hideFireParticle</span>: 为true时，该生物会隐藏火焰音效和粒子</li>
+<li>ComponentRunAwayBehavior：增加变量<span class="tt">LowHealthToEscape</span>，用于调整动物在生命值低于多少时才触发逃跑行为</li>
+<li>ComponentMiner: 增加变量<span class="tt">HitInterval</span>，用于控制玩家和一般生物的攻击间隔</li>
+<li>SubsystemTime：将<span class="tt">MaxGameTimeDelta、MaxFixedGameTimeDelta、DefaultFixedTimeStep、DefaultFixedUpdateStep、GameMenuDialogTimeFactor</span>由常量改为可修改的变量</li>
+<li>SubsystemUpdate：增加<span class="tt">UpdateTimeDebug</span>字段，用于控制是否在日志中输出各组件更新性能，便于mod对卡顿进行调试</li>
+<li>ComponentHealth：部分字段改为virtual</li>
+<li>在存档中增加了APIVersion字段</li>
+<li>SubsystemBlockBehavior：不需要再声明HandledBlocks，默认值为空表</li>
+<li>Entity.Components、Project.Subsystems权限改为可写。</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md66"></a>
+方块调整</h2>
+<p>新增方法</p><ul>
+<li>IsCollapseSupportBlock、IsCollapseDestructibleBlock：用于控制方块是否能够承受沙子等重力方块</li>
+<li>IsMovableByPiston、IsBlockingPiston：用于控制方块能否被活塞推动</li>
+<li>IsSuitableForPlants：用于控制方块能否种植植物（如扩展mod的黑土）</li>
+<li>IsFaceSuitableForElectricElements：用于控制方块是否能够放置电路元件（比如允许玻璃上面放置电路元件）</li>
+<li>ShouldBeAddedToProject：是否进入游戏文件动态ID列表</li>
+<li>CanBlockBeBuiltIntoFurniture：方块是否能被计入家具</li>
+<li>ShouldAvoid(int value, ComponentPilot componentPilot)：可以根据ComponentPilot不同来决定是否调整</li>
+<li>IsNonAttachable(int value)：方块能否附着其他方块。该方法是旧版本IsTransparent_的变体。设置为true时，该方块即使是透明方块，也能够放置门、火堆等以前不能放置在透明方块上的物体。</li>
+<li>GetPriorityUse(int value, ComponentMiner componentMiner)</li>
+<li>GetPriorityInteract(int value, ComponentMiner componentMiner)</li>
+<li>GetPriorityPlace(int value, ComponentMiner componentMiner)：用于控制在ComponentPlayer中，使用手中方块、交互面前的方块、放置手中方块这三个行为的优先级。</li>
+</ul>
+<p>数据调整</p><ul>
+<li>空气方块在Content不为0时，显示为白色铁栅栏，名为“错误方块+方块完整值”，便于Mod作者进行调试</li>
+<li>玩家穿着的衣物方块不必是ClothingBlock或者203号方块，模组可以控制玩家穿戴其他方块</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md67"></a>
+其他调整</h2>
+<ul>
+<li>生物图鉴中，战利品数量为0的占位掉落物不显示</li>
+<li>ComponentHealth.Attacked，从受到伤害触发改为受到AttackBody时触发。部分ComponentBehavior也据此改为由ComponentHealth.Injured触发</li>
+<li>PlayerData中SpawnPlayer()执行出现异常时，会返回世界选择界面并记录游戏日志</li>
+<li>桶堆叠使用bug修复：使用堆叠状态下的桶时，桶的数量正常变化，而不是强制让手上桶的个数减少为1。</li>
+<li>游戏运行出现错误时，会直接弹出日志窗口，更方便协助定位错误。</li>
+<li>ComponentCraftingTable只在物品栏改变并进行更新后，才执行配方更新操作，降低卡顿。</li>
+<li>在超平坦世界中，如果地表高度&lt;0，那么会移除最底部的基岩层，达到类似空岛的效果</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md68"></a>
+设置调整</h2>
+<p>设置选项增加：</p><ul>
+<li>水平创造飞行：开启时飞行方式和MC相同，关闭时飞行方式和移动版相同</li>
+<li>创造模式拖动整组方块：在创造模式下拖动方块时，会一次拖动一组方块</li>
+<li>Split状态下拖动一半方块：在物品栏中长按一个格子进入Split状态时，拖动该格子的方块会转移该格子的一半数量的方块。</li>
+<li>删除世界输入"yes"确认：在删除世界时，需要输入yes来确认删除。关闭后和旧版删除方式相同。</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md69"></a>
+API 1.71A (2024-08-10)</h1>
+<p>api1.7准正式版</p>
+<blockquote class="doxtable">
+<p>中间更新记录丢失 </p>
+</blockquote>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md70"></a>
+API 1.63 (2024-04-25)</h1>
+<ul>
+<li>得益于使用第三方图片库ImageSharp，现在额外支持Webp、Gif、Pbm、Qoi、Tiff、Tga图片格式，且Jpg格式不再偏色 使用无损Webp格式，能比之前使用Png格式减少50体积，加载快20，现在Content.zip中的所有Png已替换为Webp；另外，加载Png格式要比之前快50% <br  />
+ 开发者可以在项目中引用Nuget包SixLabors.ImageSharp来使用该库的完整功能，例如裁剪、缩放、滤镜等，注意最后不要将SixLabors.ImageSharp.dll打包进mod</li>
+<li>Image.Pixels从字段改成只读属性，新增字段m_trueImage，类型是SixLabors.ImageSharp.Image&lt;Rgba32&gt;，新增两个方法：<ul>
+<li>ProcessPixels(Func&lt;Rgba32, Rgba32&gt; pixelFunc, bool shouldUpdatePixelsCache = true) 用法举例（将图片的所有像素的透明度改成128）： image.ProcessPixels(pixel =&gt; new Rgba32(pixel.R, pixel.G, pixel.B, 128), true);</li>
+<li>ProcessPixelRows(PixelAccessorAction&lt;Rgba32&gt; accessorAction, bool shouldUpdatePixelsCache = true) 用法举例（将图片的所有像素复制到Color数组中）： <div class="fragment"><div class="line"><a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a> pixels = <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>[image.Width * image.Height];</div>
+<div class="line">image.ProcessPixelRows(</div>
+<div class="line">    accessor =&gt; {</div>
+<div class="line">        Span&lt;Color&gt; pixelsSpan = m_pixels.AsSpan();</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; accessor.Height; y++)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">//GetRowSpan是获取该行所有像素的Span&lt;Rgba32&gt;，效率极高</span></div>
+<div class="line">            MemoryMarshal.Cast&lt;Rgba32, <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>&gt;(accessor.GetRowSpan(y)).CopyTo(pixelsSpan.Slice(y * Width, Width));</div>
+<div class="line">        }</div>
+<div class="line">    }, false</div>
+<div class="line">);</div>
+<div class="ttc" id="a_community_content_screen_8cs_html_ab9f09ac3214ff6f75ad9e8c823688d4a"><div class="ttname"><a href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a></div><div class="ttdeci">Engine.Color Color</div><div class="ttdef"><b>定义</b> <a href="_community_content_screen_8cs_source.html#l00009">CommunityContentScreen.cs:9</a></div></div>
+</div><!-- fragment --></li>
+</ul>
+</li>
+<li>额外支持音频格式Flac、Mp3，其中Flac必须为16位深 <br  />
+ 现在Content.zip中的所有Wav已替换为体积小解码快的无损Flac <br  />
+ （使用第三方音频库NAudio.Core、NAudio.Flac、NLayer.NAudioSupport，开发者可调用NAudio.Core来加载它支持的更多小众格式音频）</li>
+<li>Json加载库替换为.Net自带的System.Text.Json，它比之前的SimpleJson判定更严格，例如不允许多余的逗号之类的，如开发者发现相关报错，请规范自己的Json文件</li>
+</ul>
+<blockquote class="doxtable">
+<p>中间更新记录丢失 </p>
+</blockquote>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md71"></a>
+API 1.53 (2023-10-29)</h1>
+<ul>
+<li>支持Javascript脚本，可以在游戏菜单直接运行或放进mod中加载并运行。</li>
+<li>世界名长度上限改为128。</li>
+<li>解决mod管理器无法扫描0kb文件导致一直加载的问题。</li>
+<li>修复鼠标指针问题，适配全面屏</li>
+<li>在游戏社区【只看我的】可以看到自己上传的作品，可删除和发布。</li>
+<li>修复告示牌报错。</li>
+<li>部分翻译调整。</li>
+<li>更改DrawFlatBlock接口的纹理位置获取，贴图异常请重写GetTextureSlotCount并return 1。</li>
+<li>将BaseFlatBatch的顶点缓存数组从ushort改为int，理论上解决了所有拉丝。</li>
+<li>解决mod不能使用其他mod中的dll的问题，优化了依赖项加载。</li>
+<li>让存档导入导出时可保持原本的文件夹结构。</li>
+<li>更改mod加固规则。</li>
+<li>解决地形接口只有一个mod生效的问题。</li>
+<li>解决合成配方界面说明的显示问题。</li>
+<li>优化游戏内登录逻辑，游戏社区新增登录按钮。</li>
+<li>新增方块亮度调整接口。</li>
+<li>新增视图雾颜色调整接口。</li>
+<li>新增社区管理员模式。</li>
+</ul>
+<blockquote class="doxtable">
+<p>中间更新记录丢失 </p>
+</blockquote>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md72"></a>
+API 1.44 (2023-09-27)</h1>
+<ol type="1">
+<li>解决音频卡顿问题，现在不用开音轨缓存了，不会没有声音了。</li>
+<li>完善mod管理器，现在进入管理器不会闪退了，除此之外，更新了很多功能。</li>
+<li>新增更多接口，mod能实现更多样的效果。</li>
+<li>电脑可连续打字，不用一个字一个字码了，同时修复误锁键盘的bug。</li>
+<li>优化外置材质的绘制，游玩更流畅。</li>
+<li>修复多人同屏地形不显示的bug，现在可以正常地添加或删除玩家。</li>
+</ol>
+<blockquote class="doxtable">
+<p>更久以前的更新记录丢失 </p>
+</blockquote>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

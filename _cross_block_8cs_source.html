@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Block/CrossBlock.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_cross_block_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CrossBlock.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_cross_block_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_cross_block.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_cross_block.html">CrossBlock</a> : <a class="code hl_class" href="class_game_1_1_block.html">Block</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_cross_block.html#ad2e8082f7195dfa22238294a679e9d7a">    6</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_cross_block.html#ad2e8082f7195dfa22238294a679e9d7a">GenerateTerrainVertices</a>(<a class="code hl_class" href="class_game_1_1_block_geometry_generator.html">BlockGeometryGenerator</a> generator, <a class="code hl_class" href="class_game_1_1_terrain_geometry.html">TerrainGeometry</a> geometry, <span class="keywordtype">int</span> value, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>            generator.<a class="code hl_function" href="class_game_1_1_block_geometry_generator.html#a540e1a34f3f964a70726a3ace1f28ecc">GenerateCrossfaceVertices</a>(</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>                <span class="keyword">this</span>,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                value,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                x,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                y,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                z,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">White</a>,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                <a class="code hl_function" href="class_game_1_1_block.html#ab6c81c8271d16fb8f15e04da218d2f7e">GetFaceTextureSlot</a>(0, value),</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                geometry.<a class="code hl_variable" href="class_game_1_1_terrain_geometry.html#a775cbaaf427402e950bd63b94cce6928">SubsetAlphaTest</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            );</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        }</div>
+</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_1_1_cross_block.html#aa8c9e9943e2a87f9f465fb334f2107a4">   19</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_cross_block.html#aa8c9e9943e2a87f9f465fb334f2107a4">DrawBlock</a>(<a class="code hl_class" href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">PrimitivesRenderer3D</a> primitivesRenderer,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordtype">int</span> value,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> color,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordtype">float</span> size,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            ref <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> matrix,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_class" href="class_game_1_1_draw_block_environment_data.html">DrawBlockEnvironmentData</a> environmentData) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#ac09498f0a2957cae8a7054342c2512e5">DrawFlatOrImageExtrusionBlock</a>(</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                primitivesRenderer,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                value,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                size,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                ref matrix,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                color,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                environmentData</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            );</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_primitives_renderer3_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">Engine.Graphics.PrimitivesRenderer3D</a></div><div class="ttdef"><b>定义</b> <a href="_primitives_renderer3_d_8cs_source.html#l00004">PrimitivesRenderer3D.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_geometry_generator_html"><div class="ttname"><a href="class_game_1_1_block_geometry_generator.html">Game.BlockGeometryGenerator</a></div><div class="ttdef"><b>定义</b> <a href="_block_geometry_generator_8cs_source.html#l00004">BlockGeometryGenerator.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_geometry_generator_html_a540e1a34f3f964a70726a3ace1f28ecc"><div class="ttname"><a href="class_game_1_1_block_geometry_generator.html#a540e1a34f3f964a70726a3ace1f28ecc">Game.BlockGeometryGenerator.GenerateCrossfaceVertices</a></div><div class="ttdeci">virtual void GenerateCrossfaceVertices(Block block, int value, int x, int y, int z, Color color, int textureSlot, TerrainGeometrySubset subset)</div><div class="ttdef"><b>定义</b> <a href="_block_geometry_generator_8cs_source.html#l00155">BlockGeometryGenerator.cs:155</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html"><div class="ttname"><a href="class_game_1_1_block.html">Game.Block</a></div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00005">Block.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_ab6c81c8271d16fb8f15e04da218d2f7e"><div class="ttname"><a href="class_game_1_1_block.html#ab6c81c8271d16fb8f15e04da218d2f7e">Game.Block.GetFaceTextureSlot</a></div><div class="ttdeci">virtual int GetFaceTextureSlot(int face, int value)</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00339">Block.cs:339</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_ac09498f0a2957cae8a7054342c2512e5"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#ac09498f0a2957cae8a7054342c2512e5">Game.BlocksManager.DrawFlatOrImageExtrusionBlock</a></div><div class="ttdeci">static void DrawFlatOrImageExtrusionBlock(PrimitivesRenderer3D primitivesRenderer, int value, float size, ref Matrix matrix, Texture2D texture, Color color, bool isEmissive, DrawBlockEnvironmentData environmentData)</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00670">BlocksManager.cs:670</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cross_block_html"><div class="ttname"><a href="class_game_1_1_cross_block.html">Game.CrossBlock</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">CrossBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cross_block_html_aa8c9e9943e2a87f9f465fb334f2107a4"><div class="ttname"><a href="class_game_1_1_cross_block.html#aa8c9e9943e2a87f9f465fb334f2107a4">Game.CrossBlock.DrawBlock</a></div><div class="ttdeci">override void DrawBlock(PrimitivesRenderer3D primitivesRenderer, int value, Color color, float size, ref Matrix matrix, DrawBlockEnvironmentData environmentData)</div><div class="ttdef"><b>定义</b> <a href="#l00019">CrossBlock.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cross_block_html_ad2e8082f7195dfa22238294a679e9d7a"><div class="ttname"><a href="class_game_1_1_cross_block.html#ad2e8082f7195dfa22238294a679e9d7a">Game.CrossBlock.GenerateTerrainVertices</a></div><div class="ttdeci">override void GenerateTerrainVertices(BlockGeometryGenerator generator, TerrainGeometry geometry, int value, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00006">CrossBlock.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_draw_block_environment_data_html"><div class="ttname"><a href="class_game_1_1_draw_block_environment_data.html">Game.DrawBlockEnvironmentData</a></div><div class="ttdef"><b>定义</b> <a href="_draw_block_environment_data_8cs_source.html#l00005">DrawBlockEnvironmentData.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_geometry_html"><div class="ttname"><a href="class_game_1_1_terrain_geometry.html">Game.TerrainGeometry</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_geometry_8cs_source.html#l00005">TerrainGeometry.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_geometry_html_a775cbaaf427402e950bd63b94cce6928"><div class="ttname"><a href="class_game_1_1_terrain_geometry.html#a775cbaaf427402e950bd63b94cce6928">Game.TerrainGeometry.SubsetAlphaTest</a></div><div class="ttdeci">TerrainGeometrySubset SubsetAlphaTest</div><div class="ttdef"><b>定义</b> <a href="_terrain_geometry_8cs_source.html#l00008">TerrainGeometry.cs:8</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_a4e57f347f3c15133444b3f62f18a8221"><div class="ttname"><a href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">Engine.Color.White</a></div><div class="ttdeci">static Color White</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00015">Color.cs:15</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_407fceb6d650316801e32c7b7f8f0e13.html">Block</a></li><li class="navelem"><a href="_cross_block_8cs.html">CrossBlock.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

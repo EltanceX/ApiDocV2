@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Component/ComponentStubbornSteedBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_component_stubborn_steed_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ComponentStubbornSteedBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_stubborn_steed_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_component_stubborn_steed_behavior.html">ComponentStubbornSteedBehavior</a> : <a class="code hl_class" href="class_game_1_1_component_behavior.html">ComponentBehavior</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a3febde7f4ed06c3e137c2e27ff260ba1">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a3febde7f4ed06c3e137c2e27ff260ba1">m_subsystemTime</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a5e611f0cb4d1c97716f775c0f1e9c6c8">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a5e611f0cb4d1c97716f775c0f1e9c6c8">m_subsystemGameInfo</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a3afa28d2597be87c547ec4138cab81bd">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_creature.html">ComponentCreature</a> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a3afa28d2597be87c547ec4138cab81bd">m_componentCreature</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a80a85c5f13d4b4cce5744b9d0fe88b83">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_mount.html">ComponentMount</a> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a80a85c5f13d4b4cce5744b9d0fe88b83">m_componentMount</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#ae3d264b807cea832847769d1964893cb">   14</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_steed_behavior.html">ComponentSteedBehavior</a> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ae3d264b807cea832847769d1964893cb">m_componentSteedBehavior</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a2dd8ea7241d721883e5485de8ec83578">   16</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_eat_pickable_behavior.html">ComponentEatPickableBehavior</a> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a2dd8ea7241d721883e5485de8ec83578">m_componentEatPickableBehavior</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a709c5721414fb3037f4c2d0c7e2bb298">   18</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_state_machine.html">StateMachine</a> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a709c5721414fb3037f4c2d0c7e2bb298">m_stateMachine</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#ae982132fba9cb2030ca4682e91893bd4">   20</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ae982132fba9cb2030ca4682e91893bd4">m_importanceLevel</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#af6fe79eb0e1747e50a7954696819690e">   22</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#af6fe79eb0e1747e50a7954696819690e">m_isSaddled</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a20a525b4a6e8140ba3e2321d3621c1ca">   24</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a20a525b4a6e8140ba3e2321d3621c1ca">m_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#ab454fbe57826220f5bd270126b0e77a7">   26</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ab454fbe57826220f5bd270126b0e77a7">m_periodicEventOffset</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a89208b4105b5bd0d507ec3440a3c3dc1">   28</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a89208b4105b5bd0d507ec3440a3c3dc1">m_stubbornProbability</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#aea4cf06ec055f0529ae424b576ad2c63">   30</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#aea4cf06ec055f0529ae424b576ad2c63">m_stubbornEndTime</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#aa7bcbb9fc7b3287655ea3619792e8c18">   32</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_component_stubborn_steed_behavior.html#aa7bcbb9fc7b3287655ea3619792e8c18">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_component_stubborn_steed_behavior.html#aa7bcbb9fc7b3287655ea3619792e8c18">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_component_stubborn_steed_behavior.html#aa7bcbb9fc7b3287655ea3619792e8c18">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#af0dc8be59d3cbae6a4e3afae6b310cc9">   34</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_stubborn_steed_behavior.html#af0dc8be59d3cbae6a4e3afae6b310cc9">ImportanceLevel</a> =&gt; <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ae982132fba9cb2030ca4682e91893bd4">m_importanceLevel</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a5cb68a81ad58bd0d340405b235b6dc28">   36</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_stubborn_steed_behavior.html#a5cb68a81ad58bd0d340405b235b6dc28">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a709c5721414fb3037f4c2d0c7e2bb298">m_stateMachine</a>.Update();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="class_game_1_1_component_behavior.html#a6784c817073f05668689491bdf003a1a">IsActive</a>) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a709c5721414fb3037f4c2d0c7e2bb298">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;Inactive&quot;</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a3febde7f4ed06c3e137c2e27ff260ba1">m_subsystemTime</a>.PeriodicGameTimeEvent(1.0, <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ab454fbe57826220f5bd270126b0e77a7">m_periodicEventOffset</a>)) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ae982132fba9cb2030ca4682e91893bd4">m_importanceLevel</a> = m_subsystemGameInfo.TotalElapsedGameTime &lt; <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#aea4cf06ec055f0529ae424b576ad2c63">m_stubbornEndTime</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    &amp;&amp; m_componentEatPickableBehavior.Satiation &lt;= 0f</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    &amp;&amp; m_componentMount.Rider != <span class="keyword">null</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                        ? 210f</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        : 0f;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#ae9aac236c072af0d4f4dbb675f657d30">   50</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_stubborn_steed_behavior.html#ae9aac236c072af0d4f4dbb675f657d30">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a3febde7f4ed06c3e137c2e27ff260ba1">m_subsystemTime</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a5e611f0cb4d1c97716f775c0f1e9c6c8">m_subsystemGameInfo</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a3afa28d2597be87c547ec4138cab81bd">m_componentCreature</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_creature.html">ComponentCreature</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a80a85c5f13d4b4cce5744b9d0fe88b83">m_componentMount</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_mount.html">ComponentMount</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ae3d264b807cea832847769d1964893cb">m_componentSteedBehavior</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_steed_behavior.html">ComponentSteedBehavior</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a2dd8ea7241d721883e5485de8ec83578">m_componentEatPickableBehavior</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_eat_pickable_behavior.html">ComponentEatPickableBehavior</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a89208b4105b5bd0d507ec3440a3c3dc1">m_stubbornProbability</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;StubbornProbability&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#aea4cf06ec055f0529ae424b576ad2c63">m_stubbornEndTime</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;StubbornEndTime&quot;</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ab454fbe57826220f5bd270126b0e77a7">m_periodicEventOffset</a> = <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a20a525b4a6e8140ba3e2321d3621c1ca">m_random</a>.Float(0f, 100f);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#af6fe79eb0e1747e50a7954696819690e">m_isSaddled</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.ValuesDictionary.DatabaseObject.Name.EndsWith(<span class="stringliteral">&quot;_Saddled&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a709c5721414fb3037f4c2d0c7e2bb298">m_stateMachine</a>.AddState(</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="stringliteral">&quot;Inactive&quot;</span>,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                delegate {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a3febde7f4ed06c3e137c2e27ff260ba1">m_subsystemTime</a>.PeriodicGameTimeEvent(1.0, <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ab454fbe57826220f5bd270126b0e77a7">m_periodicEventOffset</a>)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                        &amp;&amp; <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a80a85c5f13d4b4cce5744b9d0fe88b83">m_componentMount</a>.Rider != <span class="keyword">null</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                        &amp;&amp; <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a20a525b4a6e8140ba3e2321d3621c1ca">m_random</a>.Float(0f, 1f) &lt; <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a89208b4105b5bd0d507ec3440a3c3dc1">m_stubbornProbability</a></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        &amp;&amp; (!<a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#af6fe79eb0e1747e50a7954696819690e">m_isSaddled</a> || <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a2dd8ea7241d721883e5485de8ec83578">m_componentEatPickableBehavior</a>.Satiation &lt;= 0f)) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                        <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#aea4cf06ec055f0529ae424b576ad2c63">m_stubbornEndTime</a> = m_subsystemGameInfo.TotalElapsedGameTime + <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a20a525b4a6e8140ba3e2321d3621c1ca">m_random</a>.Float(60f, 120f);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_component_behavior.html#a6784c817073f05668689491bdf003a1a">IsActive</a>) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                        <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a709c5721414fb3037f4c2d0c7e2bb298">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;Stubborn&quot;</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                },</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                null</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            );</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a709c5721414fb3037f4c2d0c7e2bb298">m_stateMachine</a>.AddState(</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <span class="stringliteral">&quot;Stubborn&quot;</span>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                delegate {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#ae3d264b807cea832847769d1964893cb">m_componentSteedBehavior</a>.WasOrderIssued) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                        m_componentCreature.ComponentCreatureModel.HeadShakeOrder = <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a20a525b4a6e8140ba3e2321d3621c1ca">m_random</a>.Float(0.6f, 1f);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a3afa28d2597be87c547ec4138cab81bd">m_componentCreature</a>.ComponentCreatureSounds.PlayPainSound();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                },</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                null</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            );</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#a709c5721414fb3037f4c2d0c7e2bb298">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;Inactive&quot;</span>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_game_1_1_component_stubborn_steed_behavior.html#a10dac0cf10c80974803567e7566b56e7">   91</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_stubborn_steed_behavior.html#a10dac0cf10c80974803567e7566b56e7">Save</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_entity_to_id_map.html">EntityToIdMap</a> entityToIdMap) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            valuesDictionary.SetValue(<span class="stringliteral">&quot;StubbornEndTime&quot;</span>, <a class="code hl_variable" href="class_game_1_1_component_stubborn_steed_behavior.html#aea4cf06ec055f0529ae424b576ad2c63">m_stubbornEndTime</a>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
+<div class="ttc" id="aclass_game_1_1_component_behavior_html"><div class="ttname"><a href="class_game_1_1_component_behavior.html">Game.ComponentBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_component_behavior_8cs_source.html#l00004">ComponentBehavior.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_behavior_html_a6784c817073f05668689491bdf003a1a"><div class="ttname"><a href="class_game_1_1_component_behavior.html#a6784c817073f05668689491bdf003a1a">Game.ComponentBehavior.IsActive</a></div><div class="ttdeci">virtual bool IsActive</div><div class="ttdef"><b>定义</b> <a href="_component_behavior_8cs_source.html#l00007">ComponentBehavior.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_creature_html"><div class="ttname"><a href="class_game_1_1_component_creature.html">Game.ComponentCreature</a></div><div class="ttdef"><b>定义</b> <a href="_component_creature_8cs_source.html#l00007">ComponentCreature.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_eat_pickable_behavior_html"><div class="ttname"><a href="class_game_1_1_component_eat_pickable_behavior.html">Game.ComponentEatPickableBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_component_eat_pickable_behavior_8cs_source.html#l00006">ComponentEatPickableBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_mount_html"><div class="ttname"><a href="class_game_1_1_component_mount.html">Game.ComponentMount</a></div><div class="ttdef"><b>定义</b> <a href="_component_mount_8cs_source.html#l00006">ComponentMount.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_steed_behavior_html"><div class="ttname"><a href="class_game_1_1_component_steed_behavior.html">Game.ComponentSteedBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_component_steed_behavior_8cs_source.html#l00006">ComponentSteedBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html">Game.ComponentStubbornSteedBehavior</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">ComponentStubbornSteedBehavior.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a10dac0cf10c80974803567e7566b56e7"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a10dac0cf10c80974803567e7566b56e7">Game.ComponentStubbornSteedBehavior.Save</a></div><div class="ttdeci">override void Save(ValuesDictionary valuesDictionary, EntityToIdMap entityToIdMap)</div><div class="ttdef"><b>定义</b> <a href="#l00091">ComponentStubbornSteedBehavior.cs:91</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a20a525b4a6e8140ba3e2321d3621c1ca"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a20a525b4a6e8140ba3e2321d3621c1ca">Game.ComponentStubbornSteedBehavior.m_random</a></div><div class="ttdeci">Random m_random</div><div class="ttdef"><b>定义</b> <a href="#l00024">ComponentStubbornSteedBehavior.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a2dd8ea7241d721883e5485de8ec83578"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a2dd8ea7241d721883e5485de8ec83578">Game.ComponentStubbornSteedBehavior.m_componentEatPickableBehavior</a></div><div class="ttdeci">ComponentEatPickableBehavior m_componentEatPickableBehavior</div><div class="ttdef"><b>定义</b> <a href="#l00016">ComponentStubbornSteedBehavior.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a3afa28d2597be87c547ec4138cab81bd"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a3afa28d2597be87c547ec4138cab81bd">Game.ComponentStubbornSteedBehavior.m_componentCreature</a></div><div class="ttdeci">ComponentCreature m_componentCreature</div><div class="ttdef"><b>定义</b> <a href="#l00010">ComponentStubbornSteedBehavior.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a3febde7f4ed06c3e137c2e27ff260ba1"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a3febde7f4ed06c3e137c2e27ff260ba1">Game.ComponentStubbornSteedBehavior.m_subsystemTime</a></div><div class="ttdeci">SubsystemTime m_subsystemTime</div><div class="ttdef"><b>定义</b> <a href="#l00006">ComponentStubbornSteedBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a5cb68a81ad58bd0d340405b235b6dc28"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a5cb68a81ad58bd0d340405b235b6dc28">Game.ComponentStubbornSteedBehavior.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00036">ComponentStubbornSteedBehavior.cs:36</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a5e611f0cb4d1c97716f775c0f1e9c6c8"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a5e611f0cb4d1c97716f775c0f1e9c6c8">Game.ComponentStubbornSteedBehavior.m_subsystemGameInfo</a></div><div class="ttdeci">SubsystemGameInfo m_subsystemGameInfo</div><div class="ttdef"><b>定义</b> <a href="#l00008">ComponentStubbornSteedBehavior.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a709c5721414fb3037f4c2d0c7e2bb298"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a709c5721414fb3037f4c2d0c7e2bb298">Game.ComponentStubbornSteedBehavior.m_stateMachine</a></div><div class="ttdeci">StateMachine m_stateMachine</div><div class="ttdef"><b>定义</b> <a href="#l00018">ComponentStubbornSteedBehavior.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a80a85c5f13d4b4cce5744b9d0fe88b83"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a80a85c5f13d4b4cce5744b9d0fe88b83">Game.ComponentStubbornSteedBehavior.m_componentMount</a></div><div class="ttdeci">ComponentMount m_componentMount</div><div class="ttdef"><b>定义</b> <a href="#l00012">ComponentStubbornSteedBehavior.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_a89208b4105b5bd0d507ec3440a3c3dc1"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#a89208b4105b5bd0d507ec3440a3c3dc1">Game.ComponentStubbornSteedBehavior.m_stubbornProbability</a></div><div class="ttdeci">float m_stubbornProbability</div><div class="ttdef"><b>定义</b> <a href="#l00028">ComponentStubbornSteedBehavior.cs:28</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_aa7bcbb9fc7b3287655ea3619792e8c18"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#aa7bcbb9fc7b3287655ea3619792e8c18">Game.ComponentStubbornSteedBehavior.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00032">ComponentStubbornSteedBehavior.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_ab454fbe57826220f5bd270126b0e77a7"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#ab454fbe57826220f5bd270126b0e77a7">Game.ComponentStubbornSteedBehavior.m_periodicEventOffset</a></div><div class="ttdeci">float m_periodicEventOffset</div><div class="ttdef"><b>定义</b> <a href="#l00026">ComponentStubbornSteedBehavior.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_ae3d264b807cea832847769d1964893cb"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#ae3d264b807cea832847769d1964893cb">Game.ComponentStubbornSteedBehavior.m_componentSteedBehavior</a></div><div class="ttdeci">ComponentSteedBehavior m_componentSteedBehavior</div><div class="ttdef"><b>定义</b> <a href="#l00014">ComponentStubbornSteedBehavior.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_ae982132fba9cb2030ca4682e91893bd4"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#ae982132fba9cb2030ca4682e91893bd4">Game.ComponentStubbornSteedBehavior.m_importanceLevel</a></div><div class="ttdeci">float m_importanceLevel</div><div class="ttdef"><b>定义</b> <a href="#l00020">ComponentStubbornSteedBehavior.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_ae9aac236c072af0d4f4dbb675f657d30"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#ae9aac236c072af0d4f4dbb675f657d30">Game.ComponentStubbornSteedBehavior.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary, IdToEntityMap idToEntityMap)</div><div class="ttdef"><b>定义</b> <a href="#l00050">ComponentStubbornSteedBehavior.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_aea4cf06ec055f0529ae424b576ad2c63"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#aea4cf06ec055f0529ae424b576ad2c63">Game.ComponentStubbornSteedBehavior.m_stubbornEndTime</a></div><div class="ttdeci">double m_stubbornEndTime</div><div class="ttdef"><b>定义</b> <a href="#l00030">ComponentStubbornSteedBehavior.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_af0dc8be59d3cbae6a4e3afae6b310cc9"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#af0dc8be59d3cbae6a4e3afae6b310cc9">Game.ComponentStubbornSteedBehavior.ImportanceLevel</a></div><div class="ttdeci">override float ImportanceLevel</div><div class="ttdef"><b>定义</b> <a href="#l00034">ComponentStubbornSteedBehavior.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_stubborn_steed_behavior_html_af6fe79eb0e1747e50a7954696819690e"><div class="ttname"><a href="class_game_1_1_component_stubborn_steed_behavior.html#af6fe79eb0e1747e50a7954696819690e">Game.ComponentStubbornSteedBehavior.m_isSaddled</a></div><div class="ttdeci">bool m_isSaddled</div><div class="ttdef"><b>定义</b> <a href="#l00022">ComponentStubbornSteedBehavior.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_state_machine_html"><div class="ttname"><a href="class_game_1_1_state_machine.html">Game.StateMachine</a></div><div class="ttdef"><b>定义</b> <a href="_state_machine_8cs_source.html#l00002">StateMachine.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html">Game.SubsystemGameInfo</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00005">SubsystemGameInfo.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_time_html"><div class="ttname"><a href="class_game_1_1_subsystem_time.html">Game.SubsystemTime</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_time_8cs_source.html#l00006">SubsystemTime.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a4b812f6825600e5419612a580d3094ff"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">GameEntitySystem.Component.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00012">Component.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a771baadae7a12358301d000d2e127421"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">GameEntitySystem.Component.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00016">Component.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_to_id_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity_to_id_map.html">GameEntitySystem.EntityToIdMap</a></div><div class="ttdef"><b>定义</b> <a href="_entity_to_id_map_8cs_source.html#l00005">EntityToIdMap.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html">GameEntitySystem.IdToEntityMap</a></div><div class="ttdef"><b>定义</b> <a href="_id_to_entity_map_8cs_source.html#l00005">IdToEntityMap.cs:5</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_0ae50620953341a2d59f4b8faa145d4c.html">Component</a></li><li class="navelem"><a href="_component_stubborn_steed_behavior_8cs.html">ComponentStubbornSteedBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

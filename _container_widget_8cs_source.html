@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/ContainerWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_container_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ContainerWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_container_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_container_widget.html#a354e896d39c1960ba7d82a6644b7347a">ContainerWidget</a> : <a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">    5</a></span>        <span class="keyword">public</span> readonly <a class="code hl_class" href="class_game_1_1_widgets_list.html">WidgetsList</a> <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a1e1b59047c5c707bf43956738e9c1198">    7</a></span>        <span class="keyword">public</span> IEnumerable&lt;Widget&gt; <a class="code hl_property" href="class_game_1_1_container_widget.html#a1e1b59047c5c707bf43956738e9c1198">AllChildren</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            <span class="keyword">get</span> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                <span class="keywordflow">foreach</span> (<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> childWidget <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                    yield <span class="keywordflow">return</span> childWidget;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                    <span class="keywordflow">if</span> (childWidget is <a class="code hl_function" href="class_game_1_1_container_widget.html#a354e896d39c1960ba7d82a6644b7347a">ContainerWidget</a> containerWidget) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                        <span class="keywordflow">foreach</span> (<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> allChild <span class="keywordflow">in</span> containerWidget.AllChildren) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                            yield <span class="keywordflow">return</span> allChild;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                        }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                    }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a354e896d39c1960ba7d82a6644b7347a">   20</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#a354e896d39c1960ba7d82a6644b7347a">ContainerWidget</a>() =&gt; <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_widgets_list.html">WidgetsList</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a18d0a0acbc7e4b90ba4fdbc7276e7050">   22</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#a18d0a0acbc7e4b90ba4fdbc7276e7050">UpdateCeases</a>() {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">foreach</span> (<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> child <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                child.<a class="code hl_function" href="class_game_1_1_widget.html#adb4e22f6e476cf274a00b8d898887f13">UpdateCeases</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#aa05c4bcef419e5c1999f6fd8bc23c6f0">   28</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#aa05c4bcef419e5c1999f6fd8bc23c6f0">AddChildren</a>(<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> widget) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.IndexOf(widget) &lt; 0) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Add(widget);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a63447d70f4d5a275b4caa5eba5698996">   34</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#a63447d70f4d5a275b4caa5eba5698996">RemoveChildren</a>(<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> widget) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Remove(widget);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a9df7d160aa40edee735ca09af05e9033">   38</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#a9df7d160aa40edee735ca09af05e9033">ClearChildren</a>() {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Clear();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a467ad99905750245e2a50418fd38413f">   42</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#a467ad99905750245e2a50418fd38413f">WidgetAdded</a>(<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> widget) { }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a76fdcd3617a9629ae2a0a9c30e17381c">   44</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#a76fdcd3617a9629ae2a0a9c30e17381c">WidgetRemoved</a>(<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> widget) { }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#ad65865d19724694684596875ccac3291">   46</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#ad65865d19724694684596875ccac3291">MeasureOverride</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> parentAvailableSize) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">foreach</span> (<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> child <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    child.<a class="code hl_function" href="class_game_1_1_widget.html#af2805d135ccb917d1b3f86bec67e8a88">Measure</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#a4ba3b4544cf4730e0b5175f335947b70">Max</a>(parentAvailableSize - child.<a class="code hl_property" href="class_game_1_1_widget.html#a62fcbc6e032f148994e01b988ffd9d8a">MarginHorizontalSumAndVerticalSum</a>, <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>));</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Exception measuring widget of type {child.GetType().FullName}.&quot;</span>, e);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a29d4c263b9dfba8423776dfee79ba7f3">   57</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#a29d4c263b9dfba8423776dfee79ba7f3">ArrangeOverride</a>() {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">foreach</span> (<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> child <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    <a class="code hl_function" href="class_game_1_1_container_widget.html#a567dc23d02f39c09daca2dd832b12138">ArrangeChildWidgetInCell</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>, <a class="code hl_property" href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">ActualSize</a>, child);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">catch</span>(Exception e) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Exception arranging widget of type {child.GetType().FullName}.&quot;</span>, e);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a567dc23d02f39c09daca2dd832b12138">   68</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#a567dc23d02f39c09daca2dd832b12138">ArrangeChildWidgetInCell</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> c1, <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> c2, <a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> widget) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> zero = <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> zero2 = <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> vector = c2 - c1;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> parentDesiredSize = widget.<a class="code hl_property" href="class_game_1_1_widget.html#a0702f54b746d8a8430922053fbf18771">ParentDesiredSize</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">if</span> (<span class="keywordtype">float</span>.IsPositiveInfinity(parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a>)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                || parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a> &gt; vector.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a> - widget.<a class="code hl_property" href="class_game_1_1_widget.html#a28109d97883ab6deea45af873a2f7ced">MarginHorizontalSum</a>) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                parentDesiredSize.X = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(vector.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a> - widget.<a class="code hl_property" href="class_game_1_1_widget.html#a28109d97883ab6deea45af873a2f7ced">MarginHorizontalSum</a>, 0f);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">if</span> (<span class="keywordtype">float</span>.IsPositiveInfinity(parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a>)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                || parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a> &gt; vector.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a> - widget.<a class="code hl_property" href="class_game_1_1_widget.html#a00659890b15de37473ad9cf780951413">MarginVerticalSum</a>) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                parentDesiredSize.Y = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(vector.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a> - widget.<a class="code hl_property" href="class_game_1_1_widget.html#a00659890b15de37473ad9cf780951413">MarginVerticalSum</a>, 0f);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span> (widget.<a class="code hl_property" href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">HorizontalAlignment</a> == <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Near) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                zero.X = c1.X + widget.<a class="code hl_property" href="class_game_1_1_widget.html#afdf395767f401bad23ab5f57db0c46eb">MarginLeft</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                zero2.X = parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (widget.<a class="code hl_property" href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">HorizontalAlignment</a> == <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Center) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                zero.X = c1.X + (vector.X - parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a>) / 2f;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                zero2.X = parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (widget.<a class="code hl_property" href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">HorizontalAlignment</a> == <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Far) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                zero.X = c2.X - parentDesiredSize.X - widget.<a class="code hl_property" href="class_game_1_1_widget.html#ad5d79213269e9c536aa940523f1901c1">MarginRight</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                zero2.X = parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (widget.<a class="code hl_property" href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">HorizontalAlignment</a> == <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Stretch) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                zero.X = c1.X + widget.<a class="code hl_property" href="class_game_1_1_widget.html#afdf395767f401bad23ab5f57db0c46eb">MarginLeft</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                zero2.X = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(vector.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a> - widget.<a class="code hl_property" href="class_game_1_1_widget.html#a28109d97883ab6deea45af873a2f7ced">MarginHorizontalSum</a>, 0f);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">if</span> (widget.<a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> == <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Near) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                zero.Y = c1.Y + widget.<a class="code hl_property" href="class_game_1_1_widget.html#ade52f83bbb89aac7dabfbdcb9b367426">MarginTop</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                zero2.Y = parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (widget.<a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> == <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Center) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                zero.Y = c1.Y + (vector.Y - parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a>) / 2f;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                zero2.Y = parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (widget.<a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> == <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Far) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                zero.Y = c2.Y - parentDesiredSize.Y - widget.<a class="code hl_property" href="class_game_1_1_widget.html#ad53d2ff478bdd45c1d5dd92eb63d5032">MarginBottom</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                zero2.Y = parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (widget.<a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> == <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Stretch) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                zero.Y = c1.Y + widget.<a class="code hl_property" href="class_game_1_1_widget.html#ade52f83bbb89aac7dabfbdcb9b367426">MarginTop</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                zero2.Y = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(vector.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a> - widget.<a class="code hl_property" href="class_game_1_1_widget.html#a00659890b15de37473ad9cf780951413">MarginVerticalSum</a>, 0f);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            widget.<a class="code hl_function" href="class_game_1_1_widget.html#a0c583ccbb5d098e873ac445da291bbc5">Arrange</a>(zero, zero2);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_game_1_1_container_widget.html#a4b9c0401a08d9ed6221f3e58b1ff1531">  116</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_container_widget.html#a4b9c0401a08d9ed6221f3e58b1ff1531">Dispose</a>() {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">foreach</span> (<a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> child <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                child.<a class="code hl_function" href="class_game_1_1_widget.html#aff78ac886eb849aaabb4fc4cb92b95ca">Dispose</a>();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a18d0a0acbc7e4b90ba4fdbc7276e7050"><div class="ttname"><a href="class_game_1_1_container_widget.html#a18d0a0acbc7e4b90ba4fdbc7276e7050">Game.ContainerWidget.UpdateCeases</a></div><div class="ttdeci">override void UpdateCeases()</div><div class="ttdef"><b>定义</b> <a href="#l00022">ContainerWidget.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a1e1b59047c5c707bf43956738e9c1198"><div class="ttname"><a href="class_game_1_1_container_widget.html#a1e1b59047c5c707bf43956738e9c1198">Game.ContainerWidget.AllChildren</a></div><div class="ttdeci">IEnumerable&lt; Widget &gt; AllChildren</div><div class="ttdef"><b>定义</b> <a href="#l00007">ContainerWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a29d4c263b9dfba8423776dfee79ba7f3"><div class="ttname"><a href="class_game_1_1_container_widget.html#a29d4c263b9dfba8423776dfee79ba7f3">Game.ContainerWidget.ArrangeOverride</a></div><div class="ttdeci">override void ArrangeOverride()</div><div class="ttdef"><b>定义</b> <a href="#l00057">ContainerWidget.cs:57</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a354e896d39c1960ba7d82a6644b7347a"><div class="ttname"><a href="class_game_1_1_container_widget.html#a354e896d39c1960ba7d82a6644b7347a">Game.ContainerWidget.ContainerWidget</a></div><div class="ttdeci">ContainerWidget()</div><div class="ttdef"><b>定义</b> <a href="#l00020">ContainerWidget.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a467ad99905750245e2a50418fd38413f"><div class="ttname"><a href="class_game_1_1_container_widget.html#a467ad99905750245e2a50418fd38413f">Game.ContainerWidget.WidgetAdded</a></div><div class="ttdeci">virtual void WidgetAdded(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00042">ContainerWidget.cs:42</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a4b9c0401a08d9ed6221f3e58b1ff1531"><div class="ttname"><a href="class_game_1_1_container_widget.html#a4b9c0401a08d9ed6221f3e58b1ff1531">Game.ContainerWidget.Dispose</a></div><div class="ttdeci">override void Dispose()</div><div class="ttdef"><b>定义</b> <a href="#l00116">ContainerWidget.cs:116</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a567dc23d02f39c09daca2dd832b12138"><div class="ttname"><a href="class_game_1_1_container_widget.html#a567dc23d02f39c09daca2dd832b12138">Game.ContainerWidget.ArrangeChildWidgetInCell</a></div><div class="ttdeci">static void ArrangeChildWidgetInCell(Vector2 c1, Vector2 c2, Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00068">ContainerWidget.cs:68</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a63447d70f4d5a275b4caa5eba5698996"><div class="ttname"><a href="class_game_1_1_container_widget.html#a63447d70f4d5a275b4caa5eba5698996">Game.ContainerWidget.RemoveChildren</a></div><div class="ttdeci">void RemoveChildren(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00034">ContainerWidget.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a76fdcd3617a9629ae2a0a9c30e17381c"><div class="ttname"><a href="class_game_1_1_container_widget.html#a76fdcd3617a9629ae2a0a9c30e17381c">Game.ContainerWidget.WidgetRemoved</a></div><div class="ttdeci">virtual void WidgetRemoved(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00044">ContainerWidget.cs:44</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a9df7d160aa40edee735ca09af05e9033"><div class="ttname"><a href="class_game_1_1_container_widget.html#a9df7d160aa40edee735ca09af05e9033">Game.ContainerWidget.ClearChildren</a></div><div class="ttdeci">void ClearChildren()</div><div class="ttdef"><b>定义</b> <a href="#l00038">ContainerWidget.cs:38</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_aa05c4bcef419e5c1999f6fd8bc23c6f0"><div class="ttname"><a href="class_game_1_1_container_widget.html#aa05c4bcef419e5c1999f6fd8bc23c6f0">Game.ContainerWidget.AddChildren</a></div><div class="ttdeci">void AddChildren(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00028">ContainerWidget.cs:28</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_ad65865d19724694684596875ccac3291"><div class="ttname"><a href="class_game_1_1_container_widget.html#ad65865d19724694684596875ccac3291">Game.ContainerWidget.MeasureOverride</a></div><div class="ttdeci">override void MeasureOverride(Vector2 parentAvailableSize)</div><div class="ttdef"><b>定义</b> <a href="#l00046">ContainerWidget.cs:46</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a00659890b15de37473ad9cf780951413"><div class="ttname"><a href="class_game_1_1_widget.html#a00659890b15de37473ad9cf780951413">Game.Widget.MarginVerticalSum</a></div><div class="ttdeci">virtual float MarginVerticalSum</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00439">Widget.cs:439</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a0702f54b746d8a8430922053fbf18771"><div class="ttname"><a href="class_game_1_1_widget.html#a0702f54b746d8a8430922053fbf18771">Game.Widget.ParentDesiredSize</a></div><div class="ttdeci">Vector2 ParentDesiredSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00454">Widget.cs:454</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a0c583ccbb5d098e873ac445da291bbc5"><div class="ttname"><a href="class_game_1_1_widget.html#a0c583ccbb5d098e873ac445da291bbc5">Game.Widget.Arrange</a></div><div class="ttdeci">virtual void Arrange(Vector2 position, Vector2 parentActualSize)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00650">Widget.cs:650</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a28109d97883ab6deea45af873a2f7ced"><div class="ttname"><a href="class_game_1_1_widget.html#a28109d97883ab6deea45af873a2f7ced">Game.Widget.MarginHorizontalSum</a></div><div class="ttdeci">virtual float MarginHorizontalSum</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00437">Widget.cs:437</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a2e6ce445c2f889d95ef1328d72e25dcb"><div class="ttname"><a href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Game.Widget.Widget</a></div><div class="ttdeci">Widget()</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00479">Widget.cs:479</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a605213e7e1ce146f1b191a24ccd09fbb"><div class="ttname"><a href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">Game.Widget.VerticalAlignment</a></div><div class="ttdeci">virtual WidgetAlignment VerticalAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00445">Widget.cs:445</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a62fcbc6e032f148994e01b988ffd9d8a"><div class="ttname"><a href="class_game_1_1_widget.html#a62fcbc6e032f148994e01b988ffd9d8a">Game.Widget.MarginHorizontalSumAndVerticalSum</a></div><div class="ttdeci">virtual Vector2 MarginHorizontalSumAndVerticalSum</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00441">Widget.cs:441</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a7f6aa568376ef5e1c5acdd1d879e860a"><div class="ttname"><a href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">Game.Widget.HorizontalAlignment</a></div><div class="ttdeci">virtual WidgetAlignment HorizontalAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00443">Widget.cs:443</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ac9ff25efbe724241ec9d3678a1559527"><div class="ttname"><a href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">Game.Widget.ActualSize</a></div><div class="ttdeci">Vector2 ActualSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00447">Widget.cs:447</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ad53d2ff478bdd45c1d5dd92eb63d5032"><div class="ttname"><a href="class_game_1_1_widget.html#ad53d2ff478bdd45c1d5dd92eb63d5032">Game.Widget.MarginBottom</a></div><div class="ttdeci">virtual float MarginBottom</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00425">Widget.cs:425</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ad5d79213269e9c536aa940523f1901c1"><div class="ttname"><a href="class_game_1_1_widget.html#ad5d79213269e9c536aa940523f1901c1">Game.Widget.MarginRight</a></div><div class="ttdeci">virtual float MarginRight</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00421">Widget.cs:421</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_adb4e22f6e476cf274a00b8d898887f13"><div class="ttname"><a href="class_game_1_1_widget.html#adb4e22f6e476cf274a00b8d898887f13">Game.Widget.UpdateCeases</a></div><div class="ttdeci">virtual void UpdateCeases()</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00678">Widget.cs:678</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ade52f83bbb89aac7dabfbdcb9b367426"><div class="ttname"><a href="class_game_1_1_widget.html#ade52f83bbb89aac7dabfbdcb9b367426">Game.Widget.MarginTop</a></div><div class="ttdeci">virtual float MarginTop</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00423">Widget.cs:423</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_af2805d135ccb917d1b3f86bec67e8a88"><div class="ttname"><a href="class_game_1_1_widget.html#af2805d135ccb917d1b3f86bec67e8a88">Game.Widget.Measure</a></div><div class="ttdeci">virtual void Measure(Vector2 parentAvailableSize)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00628">Widget.cs:628</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_afdf395767f401bad23ab5f57db0c46eb"><div class="ttname"><a href="class_game_1_1_widget.html#afdf395767f401bad23ab5f57db0c46eb">Game.Widget.MarginLeft</a></div><div class="ttdeci">virtual float MarginLeft</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00419">Widget.cs:419</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aff78ac886eb849aaabb4fc4cb92b95ca"><div class="ttname"><a href="class_game_1_1_widget.html#aff78ac886eb849aaabb4fc4cb92b95ca">Game.Widget.Dispose</a></div><div class="ttdeci">virtual void Dispose()</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00702">Widget.cs:702</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html"><div class="ttname"><a href="class_game_1_1_widgets_list.html">Game.WidgetsList</a></div><div class="ttdef"><b>定义</b> <a href="_widgets_list_8cs_source.html#l00004">WidgetsList.cs:4</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_ab4e40cd76f07a77bf33d7a814c4126eb"><div class="ttname"><a href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">Game.WidgetAlignment</a></div><div class="ttdeci">WidgetAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_alignment_8cs_source.html#l00002">WidgetAlignment.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a43b88325ddcd07f42e931b1a0d3281c7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Engine.Vector2.Zero</a></div><div class="ttdeci">static readonly Vector2 Zero</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00007">Vector2.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a4ba3b4544cf4730e0b5175f335947b70"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a4ba3b4544cf4730e0b5175f335947b70">Engine.Vector2.Max</a></div><div class="ttdeci">static Vector2 Max(Vector2 v, float f)</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00083">Vector2.cs:83</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a67f66d5979ef9f5af376995b5cd52af7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Engine.Vector2.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00005">Vector2.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_aa5d1d8f581bf3e0ef8fc57692f600fee"><div class="ttname"><a href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">Engine.Vector2.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00003">Vector2.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_container_widget_8cs.html">ContainerWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

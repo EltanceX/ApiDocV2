@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Audio/Sound.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_sound_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Sound.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_sound_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_media.html">Engine.Media</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#if BROWSER</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>SourceInteger = <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_namespace" href="namespace_engine_1_1_browser.html">Browser</a>.<a class="code hl_class" href="class_engine_1_1_browser_1_1_a_l.html">AL</a>.<a class="code hl_enumeration" href="class_engine_1_1_browser_1_1_a_l.html#a2e46ba994dd8623e8d6624e0d22e6f6c">SourceInteger</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>SourceBoolean = <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_namespace" href="namespace_engine_1_1_browser.html">Browser</a>.<a class="code hl_class" href="class_engine_1_1_browser_1_1_a_l.html">AL</a>.<a class="code hl_enumeration" href="class_engine_1_1_browser_1_1_a_l.html#a0f95a9d0a6a70d4415380e6f3ccfb65b">SourceBoolean</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>SourceVector3 = <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_namespace" href="namespace_engine_1_1_browser.html">Browser</a>.<a class="code hl_class" href="class_engine_1_1_browser_1_1_a_l.html">AL</a>.<a class="code hl_enumeration" href="class_engine_1_1_browser_1_1_a_l.html#ae869896f40af35c18705050b14f25c18">SourceVector3</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using </span>Silk.NET.OpenAL;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_audio.html">Engine.Audio</a> {</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html">   11</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#a4fad4c62a40b57a7ccd90ac5ba1f3ce0">Sound</a> : <a class="code hl_function" href="class_engine_1_1_audio_1_1_base_sound.html#a73d0b395448bbcf8a997d88e9e83b19f">BaseSound</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#a9c566dd0d781cca2729e5f219d6cd90f">   12</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_engine_1_1_audio_1_1_sound.html#a954ecdfb8f0499c5df4cdb22f204ca6b">SoundBuffer</a> <a class="code hl_variable" href="class_engine_1_1_audio_1_1_sound.html#a9c566dd0d781cca2729e5f219d6cd90f">m_soundBuffer</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#a954ecdfb8f0499c5df4cdb22f204ca6b">   14</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_engine_1_1_audio_1_1_sound.html#a954ecdfb8f0499c5df4cdb22f204ca6b">SoundBuffer</a> <a class="code hl_property" href="class_engine_1_1_audio_1_1_sound.html#a954ecdfb8f0499c5df4cdb22f204ca6b">SoundBuffer</a> =&gt; <a class="code hl_variable" href="class_engine_1_1_audio_1_1_sound.html#a9c566dd0d781cca2729e5f219d6cd90f">m_soundBuffer</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#a3e9d811631866abceba58f9a13ce8ded">   16</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#a3e9d811631866abceba58f9a13ce8ded">Dispose</a>() {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            base.Dispose();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_audio_1_1_sound.html#a9c566dd0d781cca2729e5f219d6cd90f">m_soundBuffer</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                m_soundBuffer.UseCount -= 1;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <a class="code hl_variable" href="class_engine_1_1_audio_1_1_sound.html#a9c566dd0d781cca2729e5f219d6cd90f">m_soundBuffer</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#a30d1832c0b8c7cbe6814ed571d0d69ac">   24</a></span>        <span class="keyword">internal</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#a30d1832c0b8c7cbe6814ed571d0d69ac">Initialize</a>(<a class="code hl_property" href="class_engine_1_1_audio_1_1_sound.html#a954ecdfb8f0499c5df4cdb22f204ca6b">SoundBuffer</a> soundBuffer) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            ArgumentNullException.ThrowIfNull(soundBuffer);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_variable" href="class_engine_1_1_audio_1_1_sound.html#a9c566dd0d781cca2729e5f219d6cd90f">m_soundBuffer</a> = soundBuffer;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            m_soundBuffer.UseCount += 1;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#a4fad4c62a40b57a7ccd90ac5ba1f3ce0">   30</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#a4fad4c62a40b57a7ccd90ac5ba1f3ce0">Sound</a>(<a class="code hl_property" href="class_engine_1_1_audio_1_1_sound.html#a954ecdfb8f0499c5df4cdb22f204ca6b">SoundBuffer</a> soundBuffer,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordtype">float</span> volume = 1f,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordtype">float</span> pitch = 1f,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordtype">float</span> pan = 0f,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordtype">bool</span> isLooped = <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordtype">bool</span> disposeOnStop = <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            ArgumentNullException.ThrowIfNull(soundBuffer);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#a366493f367e78ad9b75b52f80824c0da">m_isInitialized</a>) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#ae46d4f837e96c652d78ed2c984637a09">AL</a>.SetSourceProperty((uint)<a class="code hl_variable" href="class_engine_1_1_audio_1_1_base_sound.html#a749aa2b30eb2cdf59cf004b7c0e2dc4f">m_source</a>, SourceInteger.Buffer, soundBuffer.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_sound_buffer.html#a781ad6cd0c52df180affd17a1d82f209">m_buffer</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_function" href="class_engine_1_1_audio_1_1_mixer.html#a4eae80c1d77fbd8b42c92600aacf51e6">CheckALError</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#a30d1832c0b8c7cbe6814ed571d0d69ac">Initialize</a>(soundBuffer);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a52234c2125b82b0fdac185d63c9f85bb">ChannelsCount</a> = soundBuffer.<a class="code hl_property" href="class_engine_1_1_audio_1_1_sound_buffer.html#a87e97ec6056558c0dd735848c4d02a9f">ChannelsCount</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a38d79dab0b578b359ee62cd5f4f00253">SamplingFrequency</a> = soundBuffer.<a class="code hl_property" href="class_engine_1_1_audio_1_1_sound_buffer.html#a4c06bec98eecef370aeab0284f98f1c4">SamplingFrequency</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#abb5f5c61d0c78c1a5434812bf2f0a2e7">Volume</a> = volume;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a66e1f58db2398db81c247c06ef1302bc">Pitch</a> = pitch;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#adb96dde45f749324577026fbaece7b84">Pan</a> = pan;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a8a16c3d07230b57d9a637d240c8040c2">IsLooped</a> = isLooped;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a261e245d9f4508df641b671d925ed2be">DisposeOnStop</a> = disposeOnStop;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#a1aae29c54b2fad5aadd4306516804d57">m_soundsToStopPoll</a>.Add(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">// ReSharper disable once UnusedParameter.Local</span></div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#a41aee338232fedddaeb52f44b30b4932">   53</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#a41aee338232fedddaeb52f44b30b4932">Sound</a>(<a class="code hl_class" href="class_engine_1_1_media_1_1_streaming_source.html">StreamingSource</a> streamingSource,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_sound.html#a954ecdfb8f0499c5df4cdb22f204ca6b">SoundBuffer</a> soundBuffer,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordtype">float</span> volume = 1f,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordtype">float</span> pitch = 1f,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordtype">float</span> pan = 0f,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordtype">bool</span> isLooped = <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordtype">bool</span> disposeOnStop = <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            ArgumentNullException.ThrowIfNull(soundBuffer);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#ae46d4f837e96c652d78ed2c984637a09">AL</a>.SetSourceProperty((uint)<a class="code hl_variable" href="class_engine_1_1_audio_1_1_base_sound.html#a749aa2b30eb2cdf59cf004b7c0e2dc4f">m_source</a>, SourceInteger.Buffer, soundBuffer.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_sound_buffer.html#a781ad6cd0c52df180affd17a1d82f209">m_buffer</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_function" href="class_engine_1_1_audio_1_1_mixer.html#a4eae80c1d77fbd8b42c92600aacf51e6">CheckALError</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#a30d1832c0b8c7cbe6814ed571d0d69ac">Initialize</a>(soundBuffer);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a52234c2125b82b0fdac185d63c9f85bb">ChannelsCount</a> = soundBuffer.<a class="code hl_property" href="class_engine_1_1_audio_1_1_sound_buffer.html#a87e97ec6056558c0dd735848c4d02a9f">ChannelsCount</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a38d79dab0b578b359ee62cd5f4f00253">SamplingFrequency</a> = soundBuffer.<a class="code hl_property" href="class_engine_1_1_audio_1_1_sound_buffer.html#a4c06bec98eecef370aeab0284f98f1c4">SamplingFrequency</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#abb5f5c61d0c78c1a5434812bf2f0a2e7">Volume</a> = volume;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a66e1f58db2398db81c247c06ef1302bc">Pitch</a> = pitch;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#adb96dde45f749324577026fbaece7b84">Pan</a> = pan;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a8a16c3d07230b57d9a637d240c8040c2">IsLooped</a> = isLooped;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <a class="code hl_property" href="class_engine_1_1_audio_1_1_base_sound.html#a261e245d9f4508df641b671d925ed2be">DisposeOnStop</a> = disposeOnStop;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#a1aae29c54b2fad5aadd4306516804d57">m_soundsToStopPoll</a>.Add(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#ad00d3cd966635f5122834450fe5f2283">   78</a></span>        <span class="keyword">internal</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#ad00d3cd966635f5122834450fe5f2283">InternalPlay</a>(<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> direction) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_audio_1_1_base_sound.html#a749aa2b30eb2cdf59cf004b7c0e2dc4f">m_source</a> != 0) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                uint source = (uint)<a class="code hl_variable" href="class_engine_1_1_audio_1_1_base_sound.html#a749aa2b30eb2cdf59cf004b7c0e2dc4f">m_source</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#ae46d4f837e96c652d78ed2c984637a09">AL</a>.SetSourceProperty(source, SourceVector3.Position, direction.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a>, direction.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a>, direction.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#ae46d4f837e96c652d78ed2c984637a09">AL</a>.SetSourceProperty(source, SourceBoolean.Looping, <a class="code hl_variable" href="class_engine_1_1_audio_1_1_base_sound.html#a99cddb6883c8757bed32f20b895d0a82">m_isLooped</a>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#ae46d4f837e96c652d78ed2c984637a09">AL</a>.SourcePlay(source);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_function" href="class_engine_1_1_audio_1_1_mixer.html#a4eae80c1d77fbd8b42c92600aacf51e6">CheckALError</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#ac66b06297014a060696ac8f32cf8957f">   88</a></span>        <span class="keyword">internal</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#ac66b06297014a060696ac8f32cf8957f">InternalPause</a>() {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_audio_1_1_base_sound.html#a749aa2b30eb2cdf59cf004b7c0e2dc4f">m_source</a> != 0) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#ae46d4f837e96c652d78ed2c984637a09">AL</a>.SourcePause((uint)<a class="code hl_variable" href="class_engine_1_1_audio_1_1_base_sound.html#a749aa2b30eb2cdf59cf004b7c0e2dc4f">m_source</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_function" href="class_engine_1_1_audio_1_1_mixer.html#a4eae80c1d77fbd8b42c92600aacf51e6">CheckALError</a>();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#a68c8a89654f9b9fce4cfa4a182a9dcbd">   95</a></span>        <span class="keyword">internal</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#a68c8a89654f9b9fce4cfa4a182a9dcbd">InternalStop</a>() {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_audio_1_1_base_sound.html#a749aa2b30eb2cdf59cf004b7c0e2dc4f">m_source</a> != 0) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#ae46d4f837e96c652d78ed2c984637a09">AL</a>.SourceRewind((uint)<a class="code hl_variable" href="class_engine_1_1_audio_1_1_base_sound.html#a749aa2b30eb2cdf59cf004b7c0e2dc4f">m_source</a>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_function" href="class_engine_1_1_audio_1_1_mixer.html#a4eae80c1d77fbd8b42c92600aacf51e6">CheckALError</a>();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_engine_1_1_audio_1_1_sound.html#adfe2c357614a81a739539da421dbf521">  102</a></span>        <span class="keyword">internal</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_audio_1_1_sound.html#adfe2c357614a81a739539da421dbf521">InternalDispose</a>() {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            base.InternalDispose();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_class" href="class_engine_1_1_audio_1_1_mixer.html">Mixer</a>.<a class="code hl_variable" href="class_engine_1_1_audio_1_1_mixer.html#a1aae29c54b2fad5aadd4306516804d57">m_soundsToStopPoll</a>.Remove(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_a261e245d9f4508df641b671d925ed2be"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#a261e245d9f4508df641b671d925ed2be">Engine.Audio.BaseSound.DisposeOnStop</a></div><div class="ttdeci">bool DisposeOnStop</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00078">BaseSound.cs:78</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_a38d79dab0b578b359ee62cd5f4f00253"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#a38d79dab0b578b359ee62cd5f4f00253">Engine.Audio.BaseSound.SamplingFrequency</a></div><div class="ttdeci">int SamplingFrequency</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00030">BaseSound.cs:30</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_a52234c2125b82b0fdac185d63c9f85bb"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#a52234c2125b82b0fdac185d63c9f85bb">Engine.Audio.BaseSound.ChannelsCount</a></div><div class="ttdeci">int ChannelsCount</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00028">BaseSound.cs:28</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_a66e1f58db2398db81c247c06ef1302bc"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#a66e1f58db2398db81c247c06ef1302bc">Engine.Audio.BaseSound.Pitch</a></div><div class="ttdeci">float Pitch</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00043">BaseSound.cs:43</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_a73d0b395448bbcf8a997d88e9e83b19f"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#a73d0b395448bbcf8a997d88e9e83b19f">Engine.Audio.BaseSound.BaseSound</a></div><div class="ttdeci">BaseSound()</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00138">BaseSound.cs:138</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_a749aa2b30eb2cdf59cf004b7c0e2dc4f"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#a749aa2b30eb2cdf59cf004b7c0e2dc4f">Engine.Audio.BaseSound.m_source</a></div><div class="ttdeci">int m_source</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00024">BaseSound.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_a8a16c3d07230b57d9a637d240c8040c2"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#a8a16c3d07230b57d9a637d240c8040c2">Engine.Audio.BaseSound.IsLooped</a></div><div class="ttdeci">bool IsLooped</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00067">BaseSound.cs:67</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_a99cddb6883c8757bed32f20b895d0a82"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#a99cddb6883c8757bed32f20b895d0a82">Engine.Audio.BaseSound.m_isLooped</a></div><div class="ttdeci">bool m_isLooped</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00020">BaseSound.cs:20</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_abb5f5c61d0c78c1a5434812bf2f0a2e7"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#abb5f5c61d0c78c1a5434812bf2f0a2e7">Engine.Audio.BaseSound.Volume</a></div><div class="ttdeci">float Volume</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00032">BaseSound.cs:32</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_base_sound_html_adb96dde45f749324577026fbaece7b84"><div class="ttname"><a href="class_engine_1_1_audio_1_1_base_sound.html#adb96dde45f749324577026fbaece7b84">Engine.Audio.BaseSound.Pan</a></div><div class="ttdeci">float Pan</div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00054">BaseSound.cs:54</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_mixer_html"><div class="ttname"><a href="class_engine_1_1_audio_1_1_mixer.html">Engine.Audio.Mixer</a></div><div class="ttdef"><b>定义</b> <a href="_mixer_8cs_source.html#l00013">Mixer.cs:13</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_mixer_html_a1aae29c54b2fad5aadd4306516804d57"><div class="ttname"><a href="class_engine_1_1_audio_1_1_mixer.html#a1aae29c54b2fad5aadd4306516804d57">Engine.Audio.Mixer.m_soundsToStopPoll</a></div><div class="ttdeci">static HashSet&lt; Sound &gt; m_soundsToStopPoll</div><div class="ttdef"><b>定义</b> <a href="_mixer_8cs_source.html#l00018">Mixer.cs:18</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_mixer_html_a366493f367e78ad9b75b52f80824c0da"><div class="ttname"><a href="class_engine_1_1_audio_1_1_mixer.html#a366493f367e78ad9b75b52f80824c0da">Engine.Audio.Mixer.m_isInitialized</a></div><div class="ttdeci">static bool m_isInitialized</div><div class="ttdef"><b>定义</b> <a href="_mixer_8cs_source.html#l00019">Mixer.cs:19</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_mixer_html_a4eae80c1d77fbd8b42c92600aacf51e6"><div class="ttname"><a href="class_engine_1_1_audio_1_1_mixer.html#a4eae80c1d77fbd8b42c92600aacf51e6">Engine.Audio.Mixer.CheckALError</a></div><div class="ttdeci">static AudioError CheckALError()</div><div class="ttdef"><b>定义</b> <a href="_mixer_8cs_source.html#l00102">Mixer.cs:102</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_mixer_html_ae46d4f837e96c652d78ed2c984637a09"><div class="ttname"><a href="class_engine_1_1_audio_1_1_mixer.html#ae46d4f837e96c652d78ed2c984637a09">Engine.Audio.Mixer.AL</a></div><div class="ttdeci">static AL AL</div><div class="ttdef"><b>定义</b> <a href="_mixer_8cs_source.html#l00014">Mixer.cs:14</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_buffer_html_a4c06bec98eecef370aeab0284f98f1c4"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound_buffer.html#a4c06bec98eecef370aeab0284f98f1c4">Engine.Audio.SoundBuffer.SamplingFrequency</a></div><div class="ttdeci">int SamplingFrequency</div><div class="ttdef"><b>定义</b> <a href="_sound_buffer_8cs_source.html#l00015">SoundBuffer.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_buffer_html_a781ad6cd0c52df180affd17a1d82f209"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound_buffer.html#a781ad6cd0c52df180affd17a1d82f209">Engine.Audio.SoundBuffer.m_buffer</a></div><div class="ttdeci">int m_buffer</div><div class="ttdef"><b>定义</b> <a href="_sound_buffer_8cs_source.html#l00011">SoundBuffer.cs:11</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_buffer_html_a87e97ec6056558c0dd735848c4d02a9f"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound_buffer.html#a87e97ec6056558c0dd735848c4d02a9f">Engine.Audio.SoundBuffer.ChannelsCount</a></div><div class="ttdeci">int ChannelsCount</div><div class="ttdef"><b>定义</b> <a href="_sound_buffer_8cs_source.html#l00013">SoundBuffer.cs:13</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_a30d1832c0b8c7cbe6814ed571d0d69ac"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#a30d1832c0b8c7cbe6814ed571d0d69ac">Engine.Audio.Sound.Initialize</a></div><div class="ttdeci">void Initialize(SoundBuffer soundBuffer)</div><div class="ttdef"><b>定义</b> <a href="#l00024">Sound.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_a3e9d811631866abceba58f9a13ce8ded"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#a3e9d811631866abceba58f9a13ce8ded">Engine.Audio.Sound.Dispose</a></div><div class="ttdeci">override void Dispose()</div><div class="ttdef"><b>定义</b> <a href="#l00016">Sound.cs:16</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_a41aee338232fedddaeb52f44b30b4932"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#a41aee338232fedddaeb52f44b30b4932">Engine.Audio.Sound.Sound</a></div><div class="ttdeci">Sound(StreamingSource streamingSource, SoundBuffer soundBuffer, float volume=1f, float pitch=1f, float pan=0f, bool isLooped=false, bool disposeOnStop=false)</div><div class="ttdef"><b>定义</b> <a href="#l00053">Sound.cs:53</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_a4fad4c62a40b57a7ccd90ac5ba1f3ce0"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#a4fad4c62a40b57a7ccd90ac5ba1f3ce0">Engine.Audio.Sound.Sound</a></div><div class="ttdeci">Sound(SoundBuffer soundBuffer, float volume=1f, float pitch=1f, float pan=0f, bool isLooped=false, bool disposeOnStop=false)</div><div class="ttdef"><b>定义</b> <a href="#l00030">Sound.cs:30</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_a68c8a89654f9b9fce4cfa4a182a9dcbd"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#a68c8a89654f9b9fce4cfa4a182a9dcbd">Engine.Audio.Sound.InternalStop</a></div><div class="ttdeci">override void InternalStop()</div><div class="ttdef"><b>定义</b> <a href="#l00095">Sound.cs:95</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_a954ecdfb8f0499c5df4cdb22f204ca6b"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#a954ecdfb8f0499c5df4cdb22f204ca6b">Engine.Audio.Sound.SoundBuffer</a></div><div class="ttdeci">SoundBuffer SoundBuffer</div><div class="ttdef"><b>定义</b> <a href="#l00014">Sound.cs:14</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_a9c566dd0d781cca2729e5f219d6cd90f"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#a9c566dd0d781cca2729e5f219d6cd90f">Engine.Audio.Sound.m_soundBuffer</a></div><div class="ttdeci">SoundBuffer m_soundBuffer</div><div class="ttdef"><b>定义</b> <a href="#l00012">Sound.cs:12</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_ac66b06297014a060696ac8f32cf8957f"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#ac66b06297014a060696ac8f32cf8957f">Engine.Audio.Sound.InternalPause</a></div><div class="ttdeci">override void InternalPause()</div><div class="ttdef"><b>定义</b> <a href="#l00088">Sound.cs:88</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_ad00d3cd966635f5122834450fe5f2283"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#ad00d3cd966635f5122834450fe5f2283">Engine.Audio.Sound.InternalPlay</a></div><div class="ttdeci">override void InternalPlay(Vector3 direction)</div><div class="ttdoc">在指定位置播放音频</div><div class="ttdef"><b>定义</b> <a href="#l00078">Sound.cs:78</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_audio_1_1_sound_html_adfe2c357614a81a739539da421dbf521"><div class="ttname"><a href="class_engine_1_1_audio_1_1_sound.html#adfe2c357614a81a739539da421dbf521">Engine.Audio.Sound.InternalDispose</a></div><div class="ttdeci">override void InternalDispose()</div><div class="ttdef"><b>定义</b> <a href="#l00102">Sound.cs:102</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_a_l_html"><div class="ttname"><a href="class_engine_1_1_browser_1_1_a_l.html">Engine.Browser.AL</a></div><div class="ttdef"><b>定义</b> <a href="_a_l_8cs_source.html#l00002">AL.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_a_l_html_a0f95a9d0a6a70d4415380e6f3ccfb65b"><div class="ttname"><a href="class_engine_1_1_browser_1_1_a_l.html#a0f95a9d0a6a70d4415380e6f3ccfb65b">Engine.Browser.AL.SourceBoolean</a></div><div class="ttdeci">SourceBoolean</div><div class="ttdef"><b>定义</b> <a href="_a_l_8cs_source.html#l00040">AL.cs:40</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_a_l_html_a2e46ba994dd8623e8d6624e0d22e6f6c"><div class="ttname"><a href="class_engine_1_1_browser_1_1_a_l.html#a2e46ba994dd8623e8d6624e0d22e6f6c">Engine.Browser.AL.SourceInteger</a></div><div class="ttdeci">SourceInteger</div><div class="ttdef"><b>定义</b> <a href="_a_l_8cs_source.html#l00033">AL.cs:33</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_a_l_html_ae869896f40af35c18705050b14f25c18"><div class="ttname"><a href="class_engine_1_1_browser_1_1_a_l.html#ae869896f40af35c18705050b14f25c18">Engine.Browser.AL.SourceVector3</a></div><div class="ttdeci">SourceVector3</div><div class="ttdef"><b>定义</b> <a href="_a_l_8cs_source.html#l00027">AL.cs:27</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_streaming_source_html"><div class="ttname"><a href="class_engine_1_1_media_1_1_streaming_source.html">Engine.Media.StreamingSource</a></div><div class="ttdef"><b>定义</b> <a href="_streaming_source_8cs_source.html#l00002">StreamingSource.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_audio_html"><div class="ttname"><a href="namespace_engine_1_1_audio.html">Engine.Audio</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_browser_html"><div class="ttname"><a href="namespace_engine_1_1_browser.html">Engine.Browser</a></div><div class="ttdef"><b>定义</b> <a href="_a_l_8cs_source.html#l00001">AL.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_media_html"><div class="ttname"><a href="namespace_engine_1_1_media.html">Engine.Media</a></div><div class="ttdef"><b>定义</b> <a href="_bitmap_font_8cs_source.html#l00005">BitmapFont.cs:5</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a314e02a8d3f359d653a67338b4e8f68f"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Engine.Vector3.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00005">Vector3.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ac42c72f356e9dd9d691b1aa8a07a64a9"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Engine.Vector3.Z</a></div><div class="ttdeci">float Z</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00007">Vector3.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ae5605507fc62897e712e939bacbf1738"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">Engine.Vector3.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00003">Vector3.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_c3d4b78268733072cf7205b5e623be37.html">Engine.Audio</a></li><li class="navelem"><a href="_sound_8cs.html">Sound.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

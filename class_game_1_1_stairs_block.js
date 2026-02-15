@@ -1,0 +1,38 @@
+var class_game_1_1_stairs_block =
+[
+    [ "CornerType", "class_game_1_1_stairs_block.html#ab2eb4cd639cad0eabe949cdb9587ec1e", [
+      [ "None", "class_game_1_1_stairs_block.html#ab2eb4cd639cad0eabe949cdb9587ec1ea6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "OneQuarter", "class_game_1_1_stairs_block.html#ab2eb4cd639cad0eabe949cdb9587ec1eafec6ed85164c3e7070fb9da4129190f0", null ],
+      [ "ThreeQuarters", "class_game_1_1_stairs_block.html#ab2eb4cd639cad0eabe949cdb9587ec1ea850728c829c818ee8538216e8ad2770d", null ]
+    ] ],
+    [ "StairsBlock", "class_game_1_1_stairs_block.html#a11ff73347cb2061349397c3ff1a82bce", null ],
+    [ "CreateDebrisParticleSystem", "class_game_1_1_stairs_block.html#af7cead457a1606f904583294a52f3e9f", null ],
+    [ "DrawBlock", "class_game_1_1_stairs_block.html#a9a5a61c867130a1ea02cf3d9c2cb9a4b", null ],
+    [ "GenerateTerrainVertices", "class_game_1_1_stairs_block.html#ab8164cf22310cb5f0eaa92fbd5a48794", null ],
+    [ "GetCategory", "class_game_1_1_stairs_block.html#a8860104b03e741edb2e78e6f7b7eb0e6", null ],
+    [ "GetColor", "class_game_1_1_stairs_block.html#a7b0b6259e0a13d6aa74ef9c3d0bc4cae", null ],
+    [ "GetCornerType", "class_game_1_1_stairs_block.html#a07cc475a163da3bedbdf021eabd3a5ea", null ],
+    [ "GetCreativeValues", "class_game_1_1_stairs_block.html#ad7c49db5a9a1b9ddc0a80306c16f1875", null ],
+    [ "GetCustomCollisionBoxes", "class_game_1_1_stairs_block.html#a4c92e3248d7074cfa4a222f149d149ec", null ],
+    [ "GetDisplayName", "class_game_1_1_stairs_block.html#a5fb0128c8cae2876d1d53bbd0ed158dc", null ],
+    [ "GetDropValues", "class_game_1_1_stairs_block.html#ae39543557818d9b82070817ad4cac884", null ],
+    [ "GetIsUpsideDown", "class_game_1_1_stairs_block.html#a4def1f0dd9bb3b7a8442d51d6067171d", null ],
+    [ "GetPaintColor", "class_game_1_1_stairs_block.html#acbd4bc4f8c9415011a54f451661bff50", null ],
+    [ "GetPlacementValue", "class_game_1_1_stairs_block.html#a0524ceee90cd78425c470171191ffc93", null ],
+    [ "GetRotation", "class_game_1_1_stairs_block.html#a97ba0bfa517aaa5fd2fde9c223f73f7d", null ],
+    [ "GetVariant", "class_game_1_1_stairs_block.html#aa990e89c5429fbafabacbbd7a14bea93", null ],
+    [ "Initialize", "class_game_1_1_stairs_block.html#ac269435db72a7131ff58b773214779d4", null ],
+    [ "IsFaceTransparent", "class_game_1_1_stairs_block.html#a0516b9bf065885d76adf2a23c6f811ad", null ],
+    [ "Paint", "class_game_1_1_stairs_block.html#ae4920e4f635d48deb164af75923e38ae", null ],
+    [ "RotationToDirection", "class_game_1_1_stairs_block.html#ae7b61649f0e330bf953a7b7e3f16281d", null ],
+    [ "SetColor", "class_game_1_1_stairs_block.html#ab32fb9a660c9904354cffcd97e6bb5a3", null ],
+    [ "SetCornerType", "class_game_1_1_stairs_block.html#aa31f03186f233c502777bc2f5263fffc", null ],
+    [ "SetIsUpsideDown", "class_game_1_1_stairs_block.html#a1d3d45a659ab14df5b561e88fd4fd653", null ],
+    [ "SetRotation", "class_game_1_1_stairs_block.html#a1a109eb1b2ef2cad3db0e7c9023126fc", null ],
+    [ "m_collisionBoxes", "class_game_1_1_stairs_block.html#a417ff95190af4983ff4d1eb33c53c0a5", null ],
+    [ "m_coloredBlockMeshes", "class_game_1_1_stairs_block.html#a5a392ab5e5a7107c4a6e3f92d5d162b0", null ],
+    [ "m_coloredTextureSlot", "class_game_1_1_stairs_block.html#af5827c269ab5c0df50589004c2546d08", null ],
+    [ "m_standaloneColoredBlockMesh", "class_game_1_1_stairs_block.html#a546b0fecfabbb5d18eff53e85fc859ad", null ],
+    [ "m_standaloneUncoloredBlockMesh", "class_game_1_1_stairs_block.html#af9a96a356268f3812bdc56ef8a1ea2ed", null ],
+    [ "m_uncoloredBlockMeshes", "class_game_1_1_stairs_block.html#a29d7a6d6e9c49162a286c1d67d40ff97", null ]
+];

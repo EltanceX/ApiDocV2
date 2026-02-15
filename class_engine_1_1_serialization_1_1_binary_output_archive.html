@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Engine.Serialization.BinaryOutputArchive</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_engine_1_1_serialization_1_1_binary_output_archive.html','','class_engine_1_1_serialization_1_1_binary_output_archive-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Engine.Serialization.BinaryOutputArchive</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Engine.Serialization.BinaryOutputArchive 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_binary_output_archive__inherit__graph.png" border="0" usemap="#a_engine_8_serialization_8_binary_output_archive_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_engine_8_serialization_8_binary_output_archive_inherit__map" id="a_engine_8_serialization_8_binary_output_archive_inherit__map">
+<area shape="rect" title=" " alt="" coords="88,171,265,213"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_output_archive.html" title=" " alt="" coords="8,80,187,123"/>
+<area shape="poly" title=" " alt="" coords="127,132,161,170,155,170,125,137"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html" title=" " alt="" coords="5,5,190,32"/>
+<area shape="poly" title=" " alt="" coords="98,45,100,80,95,79,97,50"/>
+<area shape="rect" title=" " alt="" coords="211,88,301,115"/>
+<area shape="poly" title=" " alt="" coords="237,125,196,172,193,168,232,127"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Engine.Serialization.BinaryOutputArchive 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_binary_output_archive__coll__graph.png" border="0" usemap="#a_engine_8_serialization_8_binary_output_archive_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_engine_8_serialization_8_binary_output_archive_coll__map" id="a_engine_8_serialization_8_binary_output_archive_coll__map">
+<area shape="rect" title=" " alt="" coords="525,64,703,107"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_output_archive.html" title=" " alt="" coords="240,5,419,48"/>
+<area shape="poly" title=" " alt="" coords="434,46,527,67,522,67,434,51"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html" title=" " alt="" coords="5,13,190,40"/>
+<area shape="poly" title=" " alt="" coords="205,24,241,26,236,28,206,29"/>
+<area shape="rect" title=" " alt="" coords="284,72,374,99"/>
+<area shape="poly" title=" " alt="" coords="389,83,528,85,522,86,390,88"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html" title=" " alt="" coords="239,123,419,165"/>
+<area shape="poly" title=" " alt="" coords="435,125,501,112,530,108,535,107,502,117,435,130"/>
+<area shape="rect" title=" " alt="" coords="51,131,144,157"/>
+<area shape="poly" title=" " alt="" coords="159,141,241,144,236,144,159,147"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a34d985080615e3e17dda396122c7630e" id="r_a34d985080615e3e17dda396122c7630e"><td class="memItemLeft"><a class="el" href="class_engine_1_1_serialization_1_1_binary_output_archive.html">BinaryOutputArchive</a>(<a class="el" href="#a62ed72641622b808b1570df21feba485">Stream</a> stream, int version=0, object context=null) void&#160;</td><td class="memItemRight"><a class="el" href="#a34d985080615e3e17dda396122c7630e">Reset</a> (<a class="el" href="#a62ed72641622b808b1570df21feba485">Stream</a> stream, int version=0, object context=null)</td></tr>
+<tr class="memitem:a92073ea7c566042f04d2c54d3cf688b6" id="r_a92073ea7c566042f04d2c54d3cf688b6"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a92073ea7c566042f04d2c54d3cf688b6">Dispose</a> ()</td></tr>
+<tr class="memitem:a67b5a550bdd539e52f82911202800f77" id="r_a67b5a550bdd539e52f82911202800f77"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a67b5a550bdd539e52f82911202800f77">Serialize</a> (string name, sbyte value)</td></tr>
+<tr class="memitem:ad02554c633403dd4798dcf7b6341b611" id="r_ad02554c633403dd4798dcf7b6341b611"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#ad02554c633403dd4798dcf7b6341b611">Serialize</a> (string name, byte value)</td></tr>
+<tr class="memitem:a31db75a249fbf4c98b18662d7501e873" id="r_a31db75a249fbf4c98b18662d7501e873"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a31db75a249fbf4c98b18662d7501e873">Serialize</a> (string name, short value)</td></tr>
+<tr class="memitem:afae4681074d3f588219aa82e741999cb" id="r_afae4681074d3f588219aa82e741999cb"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#afae4681074d3f588219aa82e741999cb">Serialize</a> (string name, ushort value)</td></tr>
+<tr class="memitem:aa0dd3d50e8e77599fd959b2b1ea26fe3" id="r_aa0dd3d50e8e77599fd959b2b1ea26fe3"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#aa0dd3d50e8e77599fd959b2b1ea26fe3">Serialize</a> (string name, int value)</td></tr>
+<tr class="memitem:a0ee1b4805de14477ef22825ff7d50bdf" id="r_a0ee1b4805de14477ef22825ff7d50bdf"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a0ee1b4805de14477ef22825ff7d50bdf">Serialize</a> (string name, uint value)</td></tr>
+<tr class="memitem:ab98f493edaab1390a29605dae5ad92ed" id="r_ab98f493edaab1390a29605dae5ad92ed"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#ab98f493edaab1390a29605dae5ad92ed">Serialize</a> (string name, long value)</td></tr>
+<tr class="memitem:a51d76e5cc3d9b28bf576cf011f015151" id="r_a51d76e5cc3d9b28bf576cf011f015151"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a51d76e5cc3d9b28bf576cf011f015151">Serialize</a> (string name, ulong value)</td></tr>
+<tr class="memitem:ad7886955710f8d341b8370a5d817c663" id="r_ad7886955710f8d341b8370a5d817c663"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#ad7886955710f8d341b8370a5d817c663">Serialize</a> (string name, float value)</td></tr>
+<tr class="memitem:a389d910b6e1541d876afe5127c8661ed" id="r_a389d910b6e1541d876afe5127c8661ed"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a389d910b6e1541d876afe5127c8661ed">Serialize</a> (string name, double value)</td></tr>
+<tr class="memitem:a58d76e5b37efc796ba1a455b19f2fe7d" id="r_a58d76e5b37efc796ba1a455b19f2fe7d"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a58d76e5b37efc796ba1a455b19f2fe7d">Serialize</a> (string name, bool value)</td></tr>
+<tr class="memitem:a56acea117fef1d151536aa04e3e3fcdf" id="r_a56acea117fef1d151536aa04e3e3fcdf"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a56acea117fef1d151536aa04e3e3fcdf">Serialize</a> (string name, char value)</td></tr>
+<tr class="memitem:af57b1ab3a67ca04b73b1f5bea94bdaf3" id="r_af57b1ab3a67ca04b73b1f5bea94bdaf3"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#af57b1ab3a67ca04b73b1f5bea94bdaf3">Serialize</a> (string name, string value)</td></tr>
+<tr class="memitem:a96af4c7aa91bce0cb325699cffbc60df" id="r_a96af4c7aa91bce0cb325699cffbc60df"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a96af4c7aa91bce0cb325699cffbc60df">Serialize</a> (string name, byte[] value)</td></tr>
+<tr class="memitem:a9b74a341c85a0683f5cfec6dbf352b41" id="r_a9b74a341c85a0683f5cfec6dbf352b41"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a9b74a341c85a0683f5cfec6dbf352b41">Serialize</a> (string name, int length, byte[] value)</td></tr>
+<tr class="memitem:a1d65b1cc366232ea02b4323cbcbc7c0c" id="r_a1d65b1cc366232ea02b4323cbcbc7c0c"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a1d65b1cc366232ea02b4323cbcbc7c0c">SerializeCollection&lt; T &gt;</a> (string name, Func&lt; T, string &gt; itemNameFunc, IEnumerable&lt; T &gt; collection)</td></tr>
+<tr class="memitem:a3ad80714016906aef134344ce6290802" id="r_a3ad80714016906aef134344ce6290802"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a3ad80714016906aef134344ce6290802">SerializeDictionary&lt; K, V &gt;</a> (string name, IDictionary&lt; K, V &gt; dictionary)</td></tr>
+<tr class="memitem:ac1b983aad992ed64133470ad48f40b2d" id="r_ac1b983aad992ed64133470ad48f40b2d"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#ac1b983aad992ed64133470ad48f40b2d">WriteObjectInfo</a> (int? objectId, bool isReference, Type runtimeType)</td></tr>
+<tr class="inherit_header pub_methods_class_engine_1_1_serialization_1_1_output_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_engine_1_1_serialization_1_1_output_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html">Engine.Serialization.OutputArchive</a></td></tr>
+<tr class="memitem:a102d5e8cc85c39927b3f57cfdfc35bad inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a102d5e8cc85c39927b3f57cfdfc35bad"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a102d5e8cc85c39927b3f57cfdfc35bad">Serialize</a> (string name, sbyte value)</td></tr>
+<tr class="memitem:ab18db86e62b9b8c4d1f3b81389374b0d inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_ab18db86e62b9b8c4d1f3b81389374b0d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#ab18db86e62b9b8c4d1f3b81389374b0d">Serialize</a> (string name, byte value)</td></tr>
+<tr class="memitem:ace75e916764a218935a5cd780854ba61 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_ace75e916764a218935a5cd780854ba61"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#ace75e916764a218935a5cd780854ba61">Serialize</a> (string name, short value)</td></tr>
+<tr class="memitem:a32e88e6cb81875ce8a9fd403dfbefcc3 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a32e88e6cb81875ce8a9fd403dfbefcc3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a32e88e6cb81875ce8a9fd403dfbefcc3">Serialize</a> (string name, ushort value)</td></tr>
+<tr class="memitem:a3514829a23eddbfe91590d2e6ca41f64 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a3514829a23eddbfe91590d2e6ca41f64"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a3514829a23eddbfe91590d2e6ca41f64">Serialize</a> (string name, int value)</td></tr>
+<tr class="memitem:a25affe732beba8c7fc229a29b4bc130a inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a25affe732beba8c7fc229a29b4bc130a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a25affe732beba8c7fc229a29b4bc130a">Serialize</a> (string name, uint value)</td></tr>
+<tr class="memitem:a0a3e4d02b17dbd4abdb0db40d0e5fe86 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a0a3e4d02b17dbd4abdb0db40d0e5fe86"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a0a3e4d02b17dbd4abdb0db40d0e5fe86">Serialize</a> (string name, long value)</td></tr>
+<tr class="memitem:a7a78a4fbdde57a47da38b5391839d654 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a7a78a4fbdde57a47da38b5391839d654"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a7a78a4fbdde57a47da38b5391839d654">Serialize</a> (string name, ulong value)</td></tr>
+<tr class="memitem:acc58e944c603dd940126944bae8191e3 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_acc58e944c603dd940126944bae8191e3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#acc58e944c603dd940126944bae8191e3">Serialize</a> (string name, float value)</td></tr>
+<tr class="memitem:a74b69fd31e2b0ee9805019e3875ced9a inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a74b69fd31e2b0ee9805019e3875ced9a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a74b69fd31e2b0ee9805019e3875ced9a">Serialize</a> (string name, double value)</td></tr>
+<tr class="memitem:aea13bfc55b98fcbc3185958bfd8197c8 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_aea13bfc55b98fcbc3185958bfd8197c8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#aea13bfc55b98fcbc3185958bfd8197c8">Serialize</a> (string name, bool value)</td></tr>
+<tr class="memitem:a5f5a44b2f6b25e64518d2bb6fdefb270 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a5f5a44b2f6b25e64518d2bb6fdefb270"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a5f5a44b2f6b25e64518d2bb6fdefb270">Serialize</a> (string name, char value)</td></tr>
+<tr class="memitem:a6ef93d1a87967217c9cb39dc36e27fb6 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a6ef93d1a87967217c9cb39dc36e27fb6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a6ef93d1a87967217c9cb39dc36e27fb6">Serialize</a> (string name, string value)</td></tr>
+<tr class="memitem:a7dfa7afaa0db03b180c4386936a74878 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a7dfa7afaa0db03b180c4386936a74878"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a7dfa7afaa0db03b180c4386936a74878">Serialize</a> (string name, byte[] value)</td></tr>
+<tr class="memitem:ad8a0fae3f2f4d817d9bb2baceecb233c inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_ad8a0fae3f2f4d817d9bb2baceecb233c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#ad8a0fae3f2f4d817d9bb2baceecb233c">Serialize</a> (string name, int length, byte[] value)</td></tr>
+<tr class="memitem:a2352f639bd9f676020b162dbfe9c3968 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a2352f639bd9f676020b162dbfe9c3968"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a2352f639bd9f676020b162dbfe9c3968">Serialize</a> (string name, Type type, object value)</td></tr>
+<tr class="memitem:a294744467dbe575bb73b5298f76953e5 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a294744467dbe575bb73b5298f76953e5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a294744467dbe575bb73b5298f76953e5">SerializeCollection&lt; T &gt;</a> (string name, Func&lt; T, string &gt; itemNameFunc, IEnumerable&lt; T &gt; collection)</td></tr>
+<tr class="memitem:a6dccd7b9115ebba92fc89de80b7cce0a inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a6dccd7b9115ebba92fc89de80b7cce0a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a6dccd7b9115ebba92fc89de80b7cce0a">SerializeCollection&lt; T &gt;</a> (string name, IEnumerable&lt; T &gt; collection)</td></tr>
+<tr class="memitem:a65b69a90382301b9e12fa3579ace9866 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a65b69a90382301b9e12fa3579ace9866"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a65b69a90382301b9e12fa3579ace9866">SerializeDictionary&lt; K, V &gt;</a> (string name, IDictionary&lt; K, V &gt; dictionary)</td></tr>
+<tr class="memitem:a609604fe551675ddb1a8a0178623a5a6 inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a609604fe551675ddb1a8a0178623a5a6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a609604fe551675ddb1a8a0178623a5a6">Serialize&lt; T &gt;</a> (string name, T value)</td></tr>
+<tr class="memitem:a1bc0791d0117e79f8cbb46d9f676805f inherit pub_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a1bc0791d0117e79f8cbb46d9f676805f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a1bc0791d0117e79f8cbb46d9f676805f">WriteObjectInfo</a> (int? objectId, bool isReference, Type runtimeType)</td></tr>
+<tr class="inherit_header pub_methods_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:a5633761432649ddcdf24380270e768e8 inherit pub_methods_class_engine_1_1_serialization_1_1_archive" id="r_a5633761432649ddcdf24380270e768e8"><td class="memItemLeft">delegate void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a5633761432649ddcdf24380270e768e8">ReadDelegate</a> (<a class="el" href="class_engine_1_1_serialization_1_1_input_archive.html">InputArchive</a> archive, ref object value)</td></tr>
+<tr class="memitem:a538b7ee13ebfbd9855202744a5c06a6a inherit pub_methods_class_engine_1_1_serialization_1_1_archive" id="r_a538b7ee13ebfbd9855202744a5c06a6a"><td class="memItemLeft">delegate void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a538b7ee13ebfbd9855202744a5c06a6a">WriteDelegate</a> (<a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html">OutputArchive</a> archive, object value)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a71f95f73fd69f10db21a652a6f217d3e" id="r_a71f95f73fd69f10db21a652a6f217d3e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a71f95f73fd69f10db21a652a6f217d3e">Use7BitInts</a> = true</td></tr>
+<tr class="inherit_header pub_attribs_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:ab685265bd04c48c7bc0b734b3929840a inherit pub_attribs_class_engine_1_1_serialization_1_1_archive" id="r_ab685265bd04c48c7bc0b734b3929840a"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#ab685265bd04c48c7bc0b734b3929840a">Context</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a62ed72641622b808b1570df21feba485" id="r_a62ed72641622b808b1570df21feba485"><td class="memItemLeft">Stream&#160;</td><td class="memItemRight"><a class="el" href="#a62ed72641622b808b1570df21feba485">Stream</a><code> [get]</code></td></tr>
+<tr class="inherit_header properties_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>属性 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:a0e17d0925640b2b3fe6b8398ab6de32f inherit properties_class_engine_1_1_serialization_1_1_archive" id="r_a0e17d0925640b2b3fe6b8398ab6de32f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a0e17d0925640b2b3fe6b8398ab6de32f">Version</a><code> [get, set]</code></td></tr>
+<tr class="memitem:abeb079766c6120fbfe78aed8b85169a8 inherit properties_class_engine_1_1_serialization_1_1_archive" id="r_abeb079766c6120fbfe78aed8b85169a8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#abeb079766c6120fbfe78aed8b85169a8">UseObjectInfos</a> = true<code> [get, set]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a660437e6e97b4d96f0bec81a02f7b385" id="r_a660437e6e97b4d96f0bec81a02f7b385"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a660437e6e97b4d96f0bec81a02f7b385">m_nextTypeId</a></td></tr>
+<tr class="memitem:a48ce78321568fc08e6333db8c2f7af08" id="r_a48ce78321568fc08e6333db8c2f7af08"><td class="memItemLeft">Dictionary&lt; string, int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a48ce78321568fc08e6333db8c2f7af08">m_stringIds</a> = new()</td></tr>
+<tr class="memitem:a6349ab722f9bd7e832bfb75210711634" id="r_a6349ab722f9bd7e832bfb75210711634"><td class="memItemLeft"><a class="el" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html">EngineBinaryWriter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6349ab722f9bd7e832bfb75210711634">m_writer</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>静态 Public 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:af5dd4a387a2ba58c829602124a706594 inherit pub_static_methods_class_engine_1_1_serialization_1_1_archive" id="r_af5dd4a387a2ba58c829602124a706594"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594">IsTypeSerializable</a> (Type type)</td></tr>
+<tr class="memitem:a868289f792d14eb01f9b21f4082c0f6a inherit pub_static_methods_class_engine_1_1_serialization_1_1_archive" id="r_a868289f792d14eb01f9b21f4082c0f6a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a868289f792d14eb01f9b21f4082c0f6a">SetTypeSerializationOptions</a> (Type type, bool useObjectInfo, <a class="el" href="namespace_engine_1_1_serialization.html#ab2363e81138e903f831062d921c9307d">AutoConstructMode</a> autoConstruct)</td></tr>
+<tr class="memitem:a1c95902e232c6ff2631ca8646ac1a29a inherit pub_static_methods_class_engine_1_1_serialization_1_1_archive" id="r_a1c95902e232c6ff2631ca8646ac1a29a"><td class="memItemLeft">static object&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a1c95902e232c6ff2631ca8646ac1a29a">CreateInstance</a> (Type type)</td></tr>
+<tr class="inherit_header pro_methods_class_engine_1_1_serialization_1_1_output_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_engine_1_1_serialization_1_1_output_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html">Engine.Serialization.OutputArchive</a></td></tr>
+<tr class="memitem:aee12984840f1bcc986c498fa85a2a6f8 inherit pro_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_aee12984840f1bcc986c498fa85a2a6f8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#aee12984840f1bcc986c498fa85a2a6f8">OutputArchive</a> (int version, object context)</td></tr>
+<tr class="memitem:a5b6fbf89b057f378d0dede97909b8f1e inherit pro_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a5b6fbf89b057f378d0dede97909b8f1e"><td class="memItemLeft">new void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a5b6fbf89b057f378d0dede97909b8f1e">Reset</a> (int version, object context)</td></tr>
+<tr class="memitem:a2e5d1e09750b7a516e2c86dbd71c6205 inherit pro_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a2e5d1e09750b7a516e2c86dbd71c6205"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a2e5d1e09750b7a516e2c86dbd71c6205">WriteObject</a> (string name, <a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a> staticSerializeData, object value)</td></tr>
+<tr class="memitem:a21d0da8561fe0f5a656da89904cefe81 inherit pro_methods_class_engine_1_1_serialization_1_1_output_archive" id="r_a21d0da8561fe0f5a656da89904cefe81"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html#a21d0da8561fe0f5a656da89904cefe81">WriteObject&lt; T &gt;</a> (string name, <a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a> staticSerializeData, T value)</td></tr>
+<tr class="inherit_header pro_methods_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:a9bed5aa5ba4a746de0e042976cb394f0 inherit pro_methods_class_engine_1_1_serialization_1_1_archive" id="r_a9bed5aa5ba4a746de0e042976cb394f0"><td class="memItemLeft">delegate void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a9bed5aa5ba4a746de0e042976cb394f0">ReadDelegateGeneric&lt; T &gt;</a> (<a class="el" href="class_engine_1_1_serialization_1_1_input_archive.html">InputArchive</a> archive, ref T value)</td></tr>
+<tr class="memitem:a1cfcb7f679d2cf85d02963764cc83cbc inherit pro_methods_class_engine_1_1_serialization_1_1_archive" id="r_a1cfcb7f679d2cf85d02963764cc83cbc"><td class="memItemLeft">delegate void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a1cfcb7f679d2cf85d02963764cc83cbc">WriteDelegateGeneric&lt; T &gt;</a> (<a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html">OutputArchive</a> archive, T value)</td></tr>
+<tr class="memitem:afa0699af2b8480812c356e30a0d06667 inherit pro_methods_class_engine_1_1_serialization_1_1_archive" id="r_afa0699af2b8480812c356e30a0d06667"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667">Archive</a> (int version, object context)</td></tr>
+<tr class="memitem:a1e0b3aa0931b9966b626ba39a59e26c6 inherit pro_methods_class_engine_1_1_serialization_1_1_archive" id="r_a1e0b3aa0931b9966b626ba39a59e26c6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a1e0b3aa0931b9966b626ba39a59e26c6">Reset</a> (int version, object context)</td></tr>
+<tr class="inherit_header pro_static_methods_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>静态 Protected 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:a07f3724f6dbb2d5ba48af669d2664d2d inherit pro_static_methods_class_engine_1_1_serialization_1_1_archive" id="r_a07f3724f6dbb2d5ba48af669d2664d2d"><td class="memItemLeft">static <a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a>&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d">GetSerializeData</a> (Type type, bool allowEmptySerializer)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00002">2</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a92073ea7c566042f04d2c54d3cf688b6" name="a92073ea7c566042f04d2c54d3cf688b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92073ea7c566042f04d2c54d3cf688b6">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a2975d0d96d4f6ce01b62a6417ba02766">Engine.Serialization.Archive</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a34d985080615e3e17dda396122c7630e" name="a34d985080615e3e17dda396122c7630e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d985080615e3e17dda396122c7630e">&#9670;&#160;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_serialization_1_1_binary_output_archive.html">BinaryOutputArchive</a>(<a class="el" href="#a62ed72641622b808b1570df21feba485">Stream</a> stream, int version=0, object context=null) void Engine.Serialization.BinaryOutputArchive.Reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a62ed72641622b808b1570df21feba485">Stream</a></td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>version</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object</td>          <td class="paramname"><span class="paramname"><em>context</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00018">18</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_binary_output_archive_a34d985080615e3e17dda396122c7630e_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_binary_output_archive_a34d985080615e3e17dda396122c7630e_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_binary_output_archive_a34d985080615e3e17dda396122c7630e_cgraph" id="aclass_engine_1_1_serialization_1_1_binary_output_archive_a34d985080615e3e17dda396122c7630e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,183,72"/>
+<area shape="poly" title=" " alt="" coords="60,28,58,19,64,10,76,5,94,3,113,5,126,14,121,14,112,10,94,8,78,10,68,14,64,21,65,30"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_binary_output_archive_a34d985080615e3e17dda396122c7630e_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_binary_output_archive_a34d985080615e3e17dda396122c7630e_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_binary_output_archive_a34d985080615e3e17dda396122c7630e_icgraph" id="aclass_engine_1_1_serialization_1_1_binary_output_archive_a34d985080615e3e17dda396122c7630e_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,183,72"/>
+<area shape="poly" title=" " alt="" coords="121,14,112,10,94,8,78,10,68,14,64,21,65,30,60,28,58,19,64,10,76,5,94,3,113,5,126,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a58d76e5b37efc796ba1a455b19f2fe7d" name="a58d76e5b37efc796ba1a455b19f2fe7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d76e5b37efc796ba1a455b19f2fe7d">&#9670;&#160;</a></span>Serialize() <span class="overload">[1/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00073">73</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad02554c633403dd4798dcf7b6341b611" name="ad02554c633403dd4798dcf7b6341b611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad02554c633403dd4798dcf7b6341b611">&#9670;&#160;</a></span>Serialize() <span class="overload">[2/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a96af4c7aa91bce0cb325699cffbc60df" name="a96af4c7aa91bce0cb325699cffbc60df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96af4c7aa91bce0cb325699cffbc60df">&#9670;&#160;</a></span>Serialize() <span class="overload">[3/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a56acea117fef1d151536aa04e3e3fcdf" name="a56acea117fef1d151536aa04e3e3fcdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56acea117fef1d151536aa04e3e3fcdf">&#9670;&#160;</a></span>Serialize() <span class="overload">[4/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a389d910b6e1541d876afe5127c8661ed" name="a389d910b6e1541d876afe5127c8661ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389d910b6e1541d876afe5127c8661ed">&#9670;&#160;</a></span>Serialize() <span class="overload">[5/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00069">69</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad7886955710f8d341b8370a5d817c663" name="ad7886955710f8d341b8370a5d817c663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7886955710f8d341b8370a5d817c663">&#9670;&#160;</a></span>Serialize() <span class="overload">[6/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9b74a341c85a0683f5cfec6dbf352b41" name="a9b74a341c85a0683f5cfec6dbf352b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b74a341c85a0683f5cfec6dbf352b41">&#9670;&#160;</a></span>Serialize() <span class="overload">[7/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>length</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa0dd3d50e8e77599fd959b2b1ea26fe3" name="aa0dd3d50e8e77599fd959b2b1ea26fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0dd3d50e8e77599fd959b2b1ea26fe3">&#9670;&#160;</a></span>Serialize() <span class="overload">[8/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab98f493edaab1390a29605dae5ad92ed" name="ab98f493edaab1390a29605dae5ad92ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98f493edaab1390a29605dae5ad92ed">&#9670;&#160;</a></span>Serialize() <span class="overload">[9/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a67b5a550bdd539e52f82911202800f77" name="a67b5a550bdd539e52f82911202800f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b5a550bdd539e52f82911202800f77">&#9670;&#160;</a></span>Serialize() <span class="overload">[10/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sbyte</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00028">28</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_binary_output_archive_a67b5a550bdd539e52f82911202800f77_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_binary_output_archive_a67b5a550bdd539e52f82911202800f77_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_binary_output_archive_a67b5a550bdd539e52f82911202800f77_icgraph" id="aclass_engine_1_1_serialization_1_1_binary_output_archive_a67b5a550bdd539e52f82911202800f77_icgraph">
+<area shape="rect" title=" " alt="" coords="301,80,478,123"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_output_archive.html#a1d65b1cc366232ea02b4323cbcbc7c0c" title=" " alt="" coords="5,5,253,48"/>
+<area shape="poly" title=" " alt="" coords="300,75,252,63,212,51,212,46,253,57,306,74"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_output_archive.html#a3ad80714016906aef134344ce6290802" title=" " alt="" coords="20,72,238,131"/>
+<area shape="poly" title=" " alt="" coords="282,102,238,104,238,99,287,101"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_output_archive.html#ac1b983aad992ed64133470ad48f40b2d" title=" " alt="" coords="30,155,228,197"/>
+<area shape="poly" title=" " alt="" coords="306,127,253,145,213,157,211,152,252,140,301,128"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a31db75a249fbf4c98b18662d7501e873" name="a31db75a249fbf4c98b18662d7501e873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31db75a249fbf4c98b18662d7501e873">&#9670;&#160;</a></span>Serialize() <span class="overload">[11/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af57b1ab3a67ca04b73b1f5bea94bdaf3" name="af57b1ab3a67ca04b73b1f5bea94bdaf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57b1ab3a67ca04b73b1f5bea94bdaf3">&#9670;&#160;</a></span>Serialize() <span class="overload">[12/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0ee1b4805de14477ef22825ff7d50bdf" name="a0ee1b4805de14477ef22825ff7d50bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee1b4805de14477ef22825ff7d50bdf">&#9670;&#160;</a></span>Serialize() <span class="overload">[13/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a51d76e5cc3d9b28bf576cf011f015151" name="a51d76e5cc3d9b28bf576cf011f015151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d76e5cc3d9b28bf576cf011f015151">&#9670;&#160;</a></span>Serialize() <span class="overload">[14/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00061">61</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afae4681074d3f588219aa82e741999cb" name="afae4681074d3f588219aa82e741999cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae4681074d3f588219aa82e741999cb">&#9670;&#160;</a></span>Serialize() <span class="overload">[15/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ushort</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1d65b1cc366232ea02b4323cbcbc7c0c" name="a1d65b1cc366232ea02b4323cbcbc7c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d65b1cc366232ea02b4323cbcbc7c0c">&#9670;&#160;</a></span>SerializeCollection&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.SerializeCollection&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; T, string &gt;</td>          <td class="paramname"><span class="paramname"><em>itemNameFunc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>collection</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00108">108</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_binary_output_archive_a1d65b1cc366232ea02b4323cbcbc7c0c_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_binary_output_archive_a1d65b1cc366232ea02b4323cbcbc7c0c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_binary_output_archive_a1d65b1cc366232ea02b4323cbcbc7c0c_cgraph" id="aclass_engine_1_1_serialization_1_1_binary_output_archive_a1d65b1cc366232ea02b4323cbcbc7c0c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,201,253,244"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="536,139,724,181"/>
+<area shape="poly" title=" " alt="" coords="233,198,300,187,413,173,523,166,518,168,414,179,301,192,234,203"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_output_archive.html#a67b5a550bdd539e52f82911202800f77" title=" " alt="" coords="302,268,479,311"/>
+<area shape="poly" title=" " alt="" coords="215,242,292,263,287,264,215,247"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_output_archive.html#a2e5d1e09750b7a516e2c86dbd71c6205" title=" " alt="" coords="301,201,480,244"/>
+<area shape="poly" title=" " alt="" coords="253,220,288,222,283,223,254,225"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1045,5,1233,48"/>
+<area shape="poly" title=" " alt="" coords="671,136,722,112,779,91,907,58,1032,39,1026,41,909,64,780,96,724,117,673,141"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="785,205,973,248"/>
+<area shape="poly" title=" " alt="" coords="684,179,773,206,767,207,684,185"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="779,105,979,148"/>
+<area shape="poly" title=" " alt="" coords="724,145,767,141,761,143,725,150"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1302,39,1516,81"/>
+<area shape="poly" title=" " alt="" coords="1233,36,1289,45,1284,45,1234,41"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1566,201,1755,244"/>
+<area shape="poly" title=" " alt="" coords="1447,79,1520,124,1618,193,1613,192,1517,129,1446,84"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="1803,201,2038,244"/>
+<area shape="poly" title=" " alt="" coords="1755,220,1790,223,1784,223,1755,225"/>
+<area shape="poly" title=" " alt="" coords="822,205,739,183,739,178,827,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1314,301,1503,344"/>
+<area shape="poly" title=" " alt="" coords="904,246,958,289,991,309,1027,324,1096,339,1167,345,1236,344,1296,341,1301,341,1236,349,1167,350,1095,344,1026,329,989,314,955,293,902,251"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="1027,205,1251,248"/>
+<area shape="poly" title=" " alt="" coords="973,224,1014,226,1008,227,974,229"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1033,139,1244,181"/>
+<area shape="poly" title=" " alt="" coords="964,202,1035,186,1041,185,965,207"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1045,272,1233,315"/>
+<area shape="poly" title=" " alt="" coords="965,246,1041,268,1035,267,965,251"/>
+<area shape="poly" title=" " alt="" coords="1464,298,1588,251,1593,250,1465,303"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1299,205,1518,248"/>
+<area shape="poly" title=" " alt="" coords="1251,224,1286,227,1281,227,1252,229"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1314,139,1503,181"/>
+<area shape="poly" title=" " alt="" coords="1228,202,1302,186,1307,185,1229,207"/>
+<area shape="poly" title=" " alt="" coords="1245,157,1302,160,1297,160,1245,163"/>
+<area shape="poly" title=" " alt="" coords="923,102,1026,58,1043,54,1048,52,1028,62,925,107"/>
+<area shape="poly" title=" " alt="" coords="979,137,1020,144,1015,145,979,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1030,72,1248,115"/>
+<area shape="poly" title=" " alt="" coords="979,111,1017,109,1012,110,979,116"/>
+<area shape="poly" title=" " alt="" coords="474,198,533,185,528,187,475,203"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="528,272,731,315"/>
+<area shape="poly" title=" " alt="" coords="466,242,543,267,537,267,465,247"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_output_archive.html#a1bc0791d0117e79f8cbb46d9f676805f" title=" " alt="" coords="540,205,719,248"/>
+<area shape="poly" title=" " alt="" coords="480,222,527,225,522,225,481,227"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3ad80714016906aef134344ce6290802" name="a3ad80714016906aef134344ce6290802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad80714016906aef134344ce6290802">&#9670;&#160;</a></span>SerializeDictionary&lt; K, V &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.SerializeDictionary&lt; K, V &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IDictionary&lt; K, V &gt;</td>          <td class="paramname"><span class="paramname"><em>dictionary</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00126">126</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_binary_output_archive_a3ad80714016906aef134344ce6290802_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_binary_output_archive_a3ad80714016906aef134344ce6290802_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_binary_output_archive_a3ad80714016906aef134344ce6290802_cgraph" id="aclass_engine_1_1_serialization_1_1_binary_output_archive_a3ad80714016906aef134344ce6290802_cgraph">
+<area shape="rect" title=" " alt="" coords="5,193,223,252"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="506,139,694,181"/>
+<area shape="poly" title=" " alt="" coords="222,195,270,187,383,173,493,166,488,167,384,178,271,192,224,200"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_output_archive.html#a67b5a550bdd539e52f82911202800f77" title=" " alt="" coords="272,268,449,311"/>
+<area shape="poly" title=" " alt="" coords="223,250,267,263,262,264,223,255"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_output_archive.html#a2e5d1e09750b7a516e2c86dbd71c6205" title=" " alt="" coords="271,201,450,244"/>
+<area shape="poly" title=" " alt="" coords="223,220,257,222,252,223,224,225"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1015,5,1203,48"/>
+<area shape="poly" title=" " alt="" coords="641,136,692,112,749,91,877,58,1002,39,996,41,879,64,750,96,694,117,643,141"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="755,205,943,248"/>
+<area shape="poly" title=" " alt="" coords="654,179,743,206,737,207,654,185"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="749,105,949,148"/>
+<area shape="poly" title=" " alt="" coords="694,145,737,141,731,143,695,150"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1272,39,1486,81"/>
+<area shape="poly" title=" " alt="" coords="1203,36,1259,45,1254,45,1204,41"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1536,201,1725,244"/>
+<area shape="poly" title=" " alt="" coords="1417,79,1490,124,1588,193,1583,192,1487,129,1416,84"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="1773,201,2008,244"/>
+<area shape="poly" title=" " alt="" coords="1725,220,1760,223,1754,223,1725,225"/>
+<area shape="poly" title=" " alt="" coords="792,205,709,183,709,178,797,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1284,301,1473,344"/>
+<area shape="poly" title=" " alt="" coords="874,246,928,289,961,309,997,324,1066,339,1137,345,1206,344,1266,341,1271,341,1206,349,1137,350,1065,344,996,329,959,314,925,293,872,251"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="997,205,1221,248"/>
+<area shape="poly" title=" " alt="" coords="943,224,984,226,978,227,944,229"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1003,139,1214,181"/>
+<area shape="poly" title=" " alt="" coords="934,202,1005,186,1011,185,935,207"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1015,272,1203,315"/>
+<area shape="poly" title=" " alt="" coords="935,246,1011,268,1005,267,935,251"/>
+<area shape="poly" title=" " alt="" coords="1434,298,1558,251,1563,250,1435,303"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1269,205,1488,248"/>
+<area shape="poly" title=" " alt="" coords="1221,224,1256,227,1251,227,1222,229"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1284,139,1473,181"/>
+<area shape="poly" title=" " alt="" coords="1198,202,1272,186,1277,185,1199,207"/>
+<area shape="poly" title=" " alt="" coords="1215,157,1272,160,1267,160,1215,163"/>
+<area shape="poly" title=" " alt="" coords="893,102,996,58,1013,54,1018,52,998,62,895,107"/>
+<area shape="poly" title=" " alt="" coords="949,137,990,144,985,145,949,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1000,72,1218,115"/>
+<area shape="poly" title=" " alt="" coords="949,111,987,109,982,110,950,116"/>
+<area shape="poly" title=" " alt="" coords="444,198,503,185,498,187,445,203"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="498,272,701,315"/>
+<area shape="poly" title=" " alt="" coords="436,242,513,267,507,267,435,247"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_output_archive.html#a1bc0791d0117e79f8cbb46d9f676805f" title=" " alt="" coords="510,205,689,248"/>
+<area shape="poly" title=" " alt="" coords="450,222,497,225,492,225,451,227"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac1b983aad992ed64133470ad48f40b2d" name="ac1b983aad992ed64133470ad48f40b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b983aad992ed64133470ad48f40b2d">&#9670;&#160;</a></span>WriteObjectInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Serialization.BinaryOutputArchive.WriteObjectInfo </td>
+          <td>(</td>
+          <td class="paramtype">int?</td>          <td class="paramname"><span class="paramname"><em>objectId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isReference</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type</td>          <td class="paramname"><span class="paramname"><em>runtimeType</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00136">136</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_binary_output_archive_ac1b983aad992ed64133470ad48f40b2d_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_binary_output_archive_ac1b983aad992ed64133470ad48f40b2d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_binary_output_archive_ac1b983aad992ed64133470ad48f40b2d_cgraph" id="aclass_engine_1_1_serialization_1_1_binary_output_archive_ac1b983aad992ed64133470ad48f40b2d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,204,48"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_output_archive.html#a67b5a550bdd539e52f82911202800f77" title=" " alt="" coords="252,5,429,48"/>
+<area shape="poly" title=" " alt="" coords="204,24,239,26,234,27,204,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a660437e6e97b4d96f0bec81a02f7b385" name="a660437e6e97b4d96f0bec81a02f7b385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660437e6e97b4d96f0bec81a02f7b385">&#9670;&#160;</a></span>m_nextTypeId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Engine.Serialization.BinaryOutputArchive.m_nextTypeId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00004">4</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a48ce78321568fc08e6333db8c2f7af08" name="a48ce78321568fc08e6333db8c2f7af08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ce78321568fc08e6333db8c2f7af08">&#9670;&#160;</a></span>m_stringIds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, int&gt; Engine.Serialization.BinaryOutputArchive.m_stringIds = new()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6349ab722f9bd7e832bfb75210711634" name="a6349ab722f9bd7e832bfb75210711634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6349ab722f9bd7e832bfb75210711634">&#9670;&#160;</a></span>m_writer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html">EngineBinaryWriter</a> Engine.Serialization.BinaryOutputArchive.m_writer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a71f95f73fd69f10db21a652a6f217d3e" name="a71f95f73fd69f10db21a652a6f217d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f95f73fd69f10db21a652a6f217d3e">&#9670;&#160;</a></span>Use7BitInts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Engine.Serialization.BinaryOutputArchive.Use7BitInts = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="a62ed72641622b808b1570df21feba485" name="a62ed72641622b808b1570df21feba485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ed72641622b808b1570df21feba485">&#9670;&#160;</a></span>Stream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stream Engine.Serialization.BinaryOutputArchive.Stream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a> 第 <a class="el" href="_binary_output_archive_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Serialization/<a class="el" href="_binary_output_archive_8cs_source.html">BinaryOutputArchive.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_engine.html">Engine</a></li><li class="navelem"><a href="namespace_engine_1_1_serialization.html">Serialization</a></li><li class="navelem"><a href="class_engine_1_1_serialization_1_1_binary_output_archive.html">BinaryOutputArchive</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

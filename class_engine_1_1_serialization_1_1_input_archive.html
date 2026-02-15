@@ -1,0 +1,2055 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Engine.Serialization.InputArchive</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_engine_1_1_serialization_1_1_input_archive.html','','class_engine_1_1_serialization_1_1_input_archive-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Engine.Serialization.InputArchive<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Engine.Serialization.InputArchive 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive__inherit__graph.png" border="0" usemap="#a_engine_8_serialization_8_input_archive_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_engine_8_serialization_8_input_archive_inherit__map" id="a_engine_8_serialization_8_input_archive_inherit__map">
+<area shape="rect" title=" " alt="" coords="107,80,276,123"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html" title=" " alt="" coords="5,171,183,213"/>
+<area shape="poly" title=" " alt="" coords="160,132,118,172,115,168,155,134"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_xml_input_archive.html" title=" " alt="" coords="207,171,370,213"/>
+<area shape="poly" title=" " alt="" coords="226,131,269,170,263,170,224,136"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html" title=" " alt="" coords="99,5,284,32"/>
+<area shape="poly" title=" " alt="" coords="193,45,194,81,189,79,190,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Engine.Serialization.InputArchive 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive__coll__graph.png" border="0" usemap="#a_engine_8_serialization_8_input_archive_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_engine_8_serialization_8_input_archive_coll__map" id="a_engine_8_serialization_8_input_archive_coll__map">
+<area shape="rect" title=" " alt="" coords="74,180,244,223"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html" title=" " alt="" coords="5,81,190,108"/>
+<area shape="poly" title=" " alt="" coords="114,119,149,179,144,180,111,123"/>
+<area shape="rect" href="class_engine_1_1_dynamic_array-1-g.html" title=" " alt="" coords="213,81,392,108"/>
+<area shape="poly" title=" " alt="" coords="276,117,189,182,186,177,271,118"/>
+<area shape="poly" title=" " alt="" coords="408,87,419,95,411,101,393,104,392,99,409,96,414,95,408,93"/>
+<area shape="rect" title=" " alt="" coords="264,5,342,32"/>
+<area shape="poly" title=" " alt="" coords="304,45,305,82,300,80,301,49"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a867b6aee690c14fc4279b3336a369b66" id="r_a867b6aee690c14fc4279b3336a369b66"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a867b6aee690c14fc4279b3336a369b66">Serialize</a> (string name, ref sbyte value)</td></tr>
+<tr class="memitem:ad6b670369c37ce4bc9b0ffb138c14c62" id="r_ad6b670369c37ce4bc9b0ffb138c14c62"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad6b670369c37ce4bc9b0ffb138c14c62">Serialize</a> (string name, ref byte value)</td></tr>
+<tr class="memitem:afec217a2b7ad34d24f2bc5dce4601bfd" id="r_afec217a2b7ad34d24f2bc5dce4601bfd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afec217a2b7ad34d24f2bc5dce4601bfd">Serialize</a> (string name, ref short value)</td></tr>
+<tr class="memitem:a566c06574a455ef1dd0ed5d9137e2c66" id="r_a566c06574a455ef1dd0ed5d9137e2c66"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a566c06574a455ef1dd0ed5d9137e2c66">Serialize</a> (string name, ref ushort value)</td></tr>
+<tr class="memitem:a681d20a4f26fdb34c5f87e7dd660ad7f" id="r_a681d20a4f26fdb34c5f87e7dd660ad7f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a681d20a4f26fdb34c5f87e7dd660ad7f">Serialize</a> (string name, ref int value)</td></tr>
+<tr class="memitem:a27fdd370b0bd6314e850e3675950282d" id="r_a27fdd370b0bd6314e850e3675950282d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a27fdd370b0bd6314e850e3675950282d">Serialize</a> (string name, ref uint value)</td></tr>
+<tr class="memitem:a0a5488882f027776be55103f267d5cce" id="r_a0a5488882f027776be55103f267d5cce"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0a5488882f027776be55103f267d5cce">Serialize</a> (string name, ref long value)</td></tr>
+<tr class="memitem:a2f6c8c18d8605c40a50ba0fb6b236c59" id="r_a2f6c8c18d8605c40a50ba0fb6b236c59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2f6c8c18d8605c40a50ba0fb6b236c59">Serialize</a> (string name, ref ulong value)</td></tr>
+<tr class="memitem:a73a2d9284b237b5e4958673b2c0e3042" id="r_a73a2d9284b237b5e4958673b2c0e3042"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a73a2d9284b237b5e4958673b2c0e3042">Serialize</a> (string name, ref float value)</td></tr>
+<tr class="memitem:a6b1382586752b88439b9e9690fe94b10" id="r_a6b1382586752b88439b9e9690fe94b10"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6b1382586752b88439b9e9690fe94b10">Serialize</a> (string name, ref double value)</td></tr>
+<tr class="memitem:a561fcebed002f73294ad24a4633f221f" id="r_a561fcebed002f73294ad24a4633f221f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a561fcebed002f73294ad24a4633f221f">Serialize</a> (string name, ref bool value)</td></tr>
+<tr class="memitem:acdd67534d79bf9ec0dc3bf0a7dc4656c" id="r_acdd67534d79bf9ec0dc3bf0a7dc4656c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdd67534d79bf9ec0dc3bf0a7dc4656c">Serialize</a> (string name, ref char value)</td></tr>
+<tr class="memitem:a3b5724c09ed4387d5e266e07c824dcae" id="r_a3b5724c09ed4387d5e266e07c824dcae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3b5724c09ed4387d5e266e07c824dcae">Serialize</a> (string name, ref string value)</td></tr>
+<tr class="memitem:a727bf873e17f17c17630147afa7f1f27" id="r_a727bf873e17f17c17630147afa7f1f27"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a727bf873e17f17c17630147afa7f1f27">Serialize</a> (string name, ref byte[] value)</td></tr>
+<tr class="memitem:a126db5b5f1a62ecb082af455e676be4e" id="r_a126db5b5f1a62ecb082af455e676be4e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a126db5b5f1a62ecb082af455e676be4e">Serialize</a> (string name, int length, ref byte[] value)</td></tr>
+<tr class="memitem:a24310d055057e697c51addebb07ad0bd" id="r_a24310d055057e697c51addebb07ad0bd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a24310d055057e697c51addebb07ad0bd">SerializeCollection&lt; T &gt;</a> (string name, ICollection&lt; T &gt; collection)</td></tr>
+<tr class="memitem:a10963beb311b4ce81d2c9c727265ecd8" id="r_a10963beb311b4ce81d2c9c727265ecd8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a10963beb311b4ce81d2c9c727265ecd8">SerializeDictionary&lt; K, V &gt;</a> (string name, IDictionary&lt; K, V &gt; dictionary)</td></tr>
+<tr class="memitem:a3defab86a69a75ff5e7d6cfa5595f26c" id="r_a3defab86a69a75ff5e7d6cfa5595f26c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3defab86a69a75ff5e7d6cfa5595f26c">Serialize</a> (string name, Type type, ref object value)</td></tr>
+<tr class="memitem:ae8bd0cfa54fc4709250cff5d10a31c12" id="r_ae8bd0cfa54fc4709250cff5d10a31c12"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae8bd0cfa54fc4709250cff5d10a31c12">Serialize</a> (string name, Type type, object value)</td></tr>
+<tr class="memitem:a71cf4fb1f7e35f414df160bd210e2bad" id="r_a71cf4fb1f7e35f414df160bd210e2bad"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a71cf4fb1f7e35f414df160bd210e2bad">Serialize&lt; T &gt;</a> (string name, T value)</td></tr>
+<tr class="memitem:a68bc3cf4940228bc3e30da02651a37c8" id="r_a68bc3cf4940228bc3e30da02651a37c8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a68bc3cf4940228bc3e30da02651a37c8">Serialize&lt; T &gt;</a> (string name, ref T value)</td></tr>
+<tr class="memitem:a3f6d3a3ecbb0bbd5d50b52a3a93d013a" id="r_a3f6d3a3ecbb0bbd5d50b52a3a93d013a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3f6d3a3ecbb0bbd5d50b52a3a93d013a">Serialize&lt; T &gt;</a> (string name, Action&lt; T &gt; setter)</td></tr>
+<tr class="memitem:a51e144347298b9490b266cb4e5497421" id="r_a51e144347298b9490b266cb4e5497421"><td class="memItemLeft">T&#160;</td><td class="memItemRight"><a class="el" href="#a51e144347298b9490b266cb4e5497421">Serialize&lt; T &gt;</a> (string name)</td></tr>
+<tr class="memitem:adae62ecbbc8472695ee8104f8f966eb3" id="r_adae62ecbbc8472695ee8104f8f966eb3"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="#adae62ecbbc8472695ee8104f8f966eb3">Serialize</a> (string name, Type type)</td></tr>
+<tr class="memitem:a3d2f8a018996b13e2869a44c61b4865b" id="r_a3d2f8a018996b13e2869a44c61b4865b"><td class="memItemLeft">List&lt; T &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3d2f8a018996b13e2869a44c61b4865b">SerializeCollection&lt; T &gt;</a> (string name)</td></tr>
+<tr class="memitem:a48e22096a37b3f9a0186fcd7268c956d" id="r_a48e22096a37b3f9a0186fcd7268c956d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a48e22096a37b3f9a0186fcd7268c956d">SerializeCollection&lt; T &gt;</a> (string name, Action&lt; T &gt; adder)</td></tr>
+<tr class="memitem:a63f20f9919373e9052176b886ee1ffd5" id="r_a63f20f9919373e9052176b886ee1ffd5"><td class="memItemLeft">Dictionary&lt; K, V &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a63f20f9919373e9052176b886ee1ffd5">SerializeDictionary&lt; K, V &gt;</a> (string name)</td></tr>
+<tr class="memitem:a2d07b0d922b525fc5587fbe0fb998fac" id="r_a2d07b0d922b525fc5587fbe0fb998fac"><td class="memItemLeft">T&#160;</td><td class="memItemRight"><a class="el" href="#a2d07b0d922b525fc5587fbe0fb998fac">FindParentObject&lt; T &gt;</a> (bool throwIfNotFound=true)</td></tr>
+<tr class="memitem:a1318530d0bc8743ff0b337f1e3007a8b" id="r_a1318530d0bc8743ff0b337f1e3007a8b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1318530d0bc8743ff0b337f1e3007a8b">ReadObjectInfo</a> (out int? objectId, out bool isReference, out Type runtimeType)</td></tr>
+<tr class="inherit_header pub_methods_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:a5633761432649ddcdf24380270e768e8 inherit pub_methods_class_engine_1_1_serialization_1_1_archive" id="r_a5633761432649ddcdf24380270e768e8"><td class="memItemLeft">delegate void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a5633761432649ddcdf24380270e768e8">ReadDelegate</a> (<a class="el" href="class_engine_1_1_serialization_1_1_input_archive.html">InputArchive</a> archive, ref object value)</td></tr>
+<tr class="memitem:a538b7ee13ebfbd9855202744a5c06a6a inherit pub_methods_class_engine_1_1_serialization_1_1_archive" id="r_a538b7ee13ebfbd9855202744a5c06a6a"><td class="memItemLeft">delegate void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a538b7ee13ebfbd9855202744a5c06a6a">WriteDelegate</a> (<a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html">OutputArchive</a> archive, object value)</td></tr>
+<tr class="memitem:a2975d0d96d4f6ce01b62a6417ba02766 inherit pub_methods_class_engine_1_1_serialization_1_1_archive" id="r_a2975d0d96d4f6ce01b62a6417ba02766"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a2975d0d96d4f6ce01b62a6417ba02766">Dispose</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a2a44efe87eb4cf25b0f2b0a36c4b0fe5" id="r_a2a44efe87eb4cf25b0f2b0a36c4b0fe5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2a44efe87eb4cf25b0f2b0a36c4b0fe5">InputArchive</a> (int version, object context)</td></tr>
+<tr class="memitem:a36d573adada1d508605a1684419a355b" id="r_a36d573adada1d508605a1684419a355b"><td class="memItemLeft">new void&#160;</td><td class="memItemRight"><a class="el" href="#a36d573adada1d508605a1684419a355b">Reset</a> (int version, object context)</td></tr>
+<tr class="memitem:a20c7ddd2b4a32d00198ab3798fa912f2" id="r_a20c7ddd2b4a32d00198ab3798fa912f2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a20c7ddd2b4a32d00198ab3798fa912f2">ReadObject</a> (string name, <a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a> staticSerializeData, ref object value, bool allowOverwriteOfExistingObject)</td></tr>
+<tr class="memitem:a1f8a36cfb6b87c167265fa47edfa4efc" id="r_a1f8a36cfb6b87c167265fa47edfa4efc"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a1f8a36cfb6b87c167265fa47edfa4efc">ReadObject&lt; T &gt;</a> (string name, <a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a> staticSerializeData, ref T value, bool allowOverwriteOfExistingObject)</td></tr>
+<tr class="inherit_header pro_methods_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:a9bed5aa5ba4a746de0e042976cb394f0 inherit pro_methods_class_engine_1_1_serialization_1_1_archive" id="r_a9bed5aa5ba4a746de0e042976cb394f0"><td class="memItemLeft">delegate void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a9bed5aa5ba4a746de0e042976cb394f0">ReadDelegateGeneric&lt; T &gt;</a> (<a class="el" href="class_engine_1_1_serialization_1_1_input_archive.html">InputArchive</a> archive, ref T value)</td></tr>
+<tr class="memitem:a1cfcb7f679d2cf85d02963764cc83cbc inherit pro_methods_class_engine_1_1_serialization_1_1_archive" id="r_a1cfcb7f679d2cf85d02963764cc83cbc"><td class="memItemLeft">delegate void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a1cfcb7f679d2cf85d02963764cc83cbc">WriteDelegateGeneric&lt; T &gt;</a> (<a class="el" href="class_engine_1_1_serialization_1_1_output_archive.html">OutputArchive</a> archive, T value)</td></tr>
+<tr class="memitem:afa0699af2b8480812c356e30a0d06667 inherit pro_methods_class_engine_1_1_serialization_1_1_archive" id="r_afa0699af2b8480812c356e30a0d06667"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667">Archive</a> (int version, object context)</td></tr>
+<tr class="memitem:a1e0b3aa0931b9966b626ba39a59e26c6 inherit pro_methods_class_engine_1_1_serialization_1_1_archive" id="r_a1e0b3aa0931b9966b626ba39a59e26c6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a1e0b3aa0931b9966b626ba39a59e26c6">Reset</a> (int version, object context)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a0323378adc860c339900eb5e8e8b088b" id="r_a0323378adc860c339900eb5e8e8b088b"><td class="memItemLeft">ReadOnlyList&lt; object &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0323378adc860c339900eb5e8e8b088b">Stack</a><code> [get]</code></td></tr>
+<tr class="inherit_header properties_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>属性 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:a0e17d0925640b2b3fe6b8398ab6de32f inherit properties_class_engine_1_1_serialization_1_1_archive" id="r_a0e17d0925640b2b3fe6b8398ab6de32f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a0e17d0925640b2b3fe6b8398ab6de32f">Version</a><code> [get, set]</code></td></tr>
+<tr class="memitem:abeb079766c6120fbfe78aed8b85169a8 inherit properties_class_engine_1_1_serialization_1_1_archive" id="r_abeb079766c6120fbfe78aed8b85169a8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#abeb079766c6120fbfe78aed8b85169a8">UseObjectInfos</a> = true<code> [get, set]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:af1391b502199d287017db7b761a822c5" id="r_af1391b502199d287017db7b761a822c5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af1391b502199d287017db7b761a822c5">ReadObjectWithoutObjectInfo</a> (<a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a> staticSerializeData, ref object value)</td></tr>
+<tr class="memitem:a3c97e87df5b9a4bac9dcc09b014e4c24" id="r_a3c97e87df5b9a4bac9dcc09b014e4c24"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3c97e87df5b9a4bac9dcc09b014e4c24">ReadObjectWithObjectInfo</a> (<a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a> staticSerializeData, ref object value, bool allowOverwriteOfExistingObject)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ac1e17ce729f4f2a8ad3ca0c673088fa9" id="r_ac1e17ce729f4f2a8ad3ca0c673088fa9"><td class="memItemLeft">Dictionary&lt; int, object &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac1e17ce729f4f2a8ad3ca0c673088fa9">m_objectById</a> = []</td></tr>
+<tr class="memitem:aa15e9b19e3a05b34a61616691672a6a7" id="r_aa15e9b19e3a05b34a61616691672a6a7"><td class="memItemLeft">DynamicArray&lt; object &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa15e9b19e3a05b34a61616691672a6a7">m_stack</a> = new()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>静态 Public 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:af5dd4a387a2ba58c829602124a706594 inherit pub_static_methods_class_engine_1_1_serialization_1_1_archive" id="r_af5dd4a387a2ba58c829602124a706594"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594">IsTypeSerializable</a> (Type type)</td></tr>
+<tr class="memitem:a868289f792d14eb01f9b21f4082c0f6a inherit pub_static_methods_class_engine_1_1_serialization_1_1_archive" id="r_a868289f792d14eb01f9b21f4082c0f6a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a868289f792d14eb01f9b21f4082c0f6a">SetTypeSerializationOptions</a> (Type type, bool useObjectInfo, <a class="el" href="namespace_engine_1_1_serialization.html#ab2363e81138e903f831062d921c9307d">AutoConstructMode</a> autoConstruct)</td></tr>
+<tr class="memitem:a1c95902e232c6ff2631ca8646ac1a29a inherit pub_static_methods_class_engine_1_1_serialization_1_1_archive" id="r_a1c95902e232c6ff2631ca8646ac1a29a"><td class="memItemLeft">static object&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a1c95902e232c6ff2631ca8646ac1a29a">CreateInstance</a> (Type type)</td></tr>
+<tr class="inherit_header pub_attribs_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:ab685265bd04c48c7bc0b734b3929840a inherit pub_attribs_class_engine_1_1_serialization_1_1_archive" id="r_ab685265bd04c48c7bc0b734b3929840a"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#ab685265bd04c48c7bc0b734b3929840a">Context</a></td></tr>
+<tr class="inherit_header pro_static_methods_class_engine_1_1_serialization_1_1_archive"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_class_engine_1_1_serialization_1_1_archive')"><span class="dynarrow"><span class="arrowhead closed"></span></span>静态 Protected 成员函数 继承自 <a class="el" href="class_engine_1_1_serialization_1_1_archive.html">Engine.Serialization.Archive</a></td></tr>
+<tr class="memitem:a07f3724f6dbb2d5ba48af669d2664d2d inherit pro_static_methods_class_engine_1_1_serialization_1_1_archive" id="r_a07f3724f6dbb2d5ba48af669d2664d2d"><td class="memItemLeft">static <a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a>&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d">GetSerializeData</a> (Type type, bool allowEmptySerializer)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00002">2</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="a2a44efe87eb4cf25b0f2b0a36c4b0fe5" name="a2a44efe87eb4cf25b0f2b0a36c4b0fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a44efe87eb4cf25b0f2b0a36c4b0fe5">&#9670;&#160;</a></span>InputArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Engine.Serialization.InputArchive.InputArchive </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>version</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object</td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a2d07b0d922b525fc5587fbe0fb998fac" name="a2d07b0d922b525fc5587fbe0fb998fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d07b0d922b525fc5587fbe0fb998fac">&#9670;&#160;</a></span>FindParentObject&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T Engine.Serialization.InputArchive.FindParentObject&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>throwIfNotFound</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="typeconstraint">
+<dl><dt><b>类型限制</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>class</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a20c7ddd2b4a32d00198ab3798fa912f2" name="a20c7ddd2b4a32d00198ab3798fa912f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c7ddd2b4a32d00198ab3798fa912f2">&#9670;&#160;</a></span>ReadObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.InputArchive.ReadObject </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a></td>          <td class="paramname"><span class="paramname"><em>staticSerializeData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref object</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>allowOverwriteOfExistingObject</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_engine_1_1_serialization_1_1_xml_input_archive.html#a89106a6ffdb884606570b605be101fee">Engine.Serialization.XmlInputArchive</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00122">122</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a20c7ddd2b4a32d00198ab3798fa912f2_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a20c7ddd2b4a32d00198ab3798fa912f2_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a20c7ddd2b4a32d00198ab3798fa912f2_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a20c7ddd2b4a32d00198ab3798fa912f2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,205,175,248"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="232,239,457,281"/>
+<area shape="poly" title=" " alt="" coords="175,235,219,242,214,244,176,240"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#af1391b502199d287017db7b761a822c5" title=" " alt="" coords="223,172,466,215"/>
+<area shape="poly" title=" " alt="" coords="174,213,210,210,205,213,176,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#aba9586dafaf74879592069dc03679f69" title=" " alt="" coords="520,239,712,281"/>
+<area shape="poly" title=" " alt="" coords="457,257,507,260,501,260,458,263"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="522,172,710,215"/>
+<area shape="poly" title=" " alt="" coords="433,236,514,218,509,220,435,241"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1318530d0bc8743ff0b337f1e3007a8b" title=" " alt="" coords="531,372,700,415"/>
+<area shape="poly" title=" " alt="" coords="378,279,441,318,515,358,531,367,526,366,513,362,438,323,377,284"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="514,305,717,348"/>
+<area shape="poly" title=" " alt="" coords="434,279,514,301,509,301,434,285"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a565cc76798613d133244c1492b54b813" title=" " alt="" coords="767,263,963,305"/>
+<area shape="poly" title=" " alt="" coords="712,267,754,273,749,273,712,272"/>
+<area shape="poly" title=" " alt="" coords="818,261,816,253,824,244,840,238,865,236,892,238,909,247,904,247,890,244,865,241,841,243,827,248,821,254,823,264"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1031,5,1219,48"/>
+<area shape="poly" title=" " alt="" coords="641,169,695,129,729,108,764,91,827,69,892,53,1017,34,1012,36,893,58,829,74,766,96,731,113,698,133,644,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="771,172,959,215"/>
+<area shape="poly" title=" " alt="" coords="710,199,758,202,753,203,711,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="765,105,965,148"/>
+<area shape="poly" title=" " alt="" coords="697,169,771,152,766,153,699,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1288,53,1502,96"/>
+<area shape="poly" title=" " alt="" coords="1219,41,1275,53,1270,53,1220,46"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1552,216,1741,259"/>
+<area shape="poly" title=" " alt="" coords="1430,94,1602,208,1597,207,1429,99"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="1789,216,2024,259"/>
+<area shape="poly" title=" " alt="" coords="1741,235,1776,237,1770,237,1741,240"/>
+<area shape="poly" title=" " alt="" coords="768,185,726,187,725,182,773,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1300,331,1489,373"/>
+<area shape="poly" title=" " alt="" coords="949,212,966,225,978,238,985,251,990,278,996,303,1002,314,1014,324,1045,342,1078,355,1148,370,1219,374,1282,372,1288,372,1219,379,1148,376,1076,360,1043,347,1011,329,998,317,991,305,985,279,979,253,973,241,963,229,948,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="1013,272,1237,315"/>
+<area shape="poly" title=" " alt="" coords="939,213,966,224,990,241,1014,258,1029,266,1023,266,1011,262,987,246,963,229,938,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1019,139,1230,181"/>
+<area shape="poly" title=" " alt="" coords="959,179,1007,175,1001,176,960,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1031,205,1219,248"/>
+<area shape="poly" title=" " alt="" coords="959,203,1018,213,1013,213,960,208"/>
+<area shape="poly" title=" " alt="" coords="1474,327,1503,316,1553,292,1597,268,1602,267,1555,296,1505,321,1475,333"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1285,264,1504,307"/>
+<area shape="poly" title=" " alt="" coords="1237,287,1272,289,1267,289,1238,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1300,168,1489,211"/>
+<area shape="poly" title=" " alt="" coords="1203,269,1236,258,1333,218,1338,217,1238,262,1204,274"/>
+<area shape="poly" title=" " alt="" coords="1231,169,1288,177,1283,178,1231,174"/>
+<area shape="poly" title=" " alt="" coords="909,102,1012,58,1029,54,1034,52,1014,62,911,107"/>
+<area shape="poly" title=" " alt="" coords="965,137,1006,144,1001,145,965,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1016,72,1234,115"/>
+<area shape="poly" title=" " alt="" coords="964,111,1003,109,998,110,966,116"/>
+<area shape="poly" title=" " alt="" coords="466,191,509,193,503,194,467,196"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a20c7ddd2b4a32d00198ab3798fa912f2_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a20c7ddd2b4a32d00198ab3798fa912f2_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a20c7ddd2b4a32d00198ab3798fa912f2_icgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a20c7ddd2b4a32d00198ab3798fa912f2_icgraph">
+<area shape="rect" title=" " alt="" coords="291,272,460,315"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1f8a36cfb6b87c167265fa47edfa4efc" title=" " alt="" coords="39,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="361,257,344,213,319,160,285,107,264,83,241,62,210,44,208,39,244,58,268,79,289,104,324,157,349,211,366,257"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#ae8bd0cfa54fc4709250cff5d10a31c12" title=" " alt="" coords="39,72,209,115"/>
+<area shape="poly" title=" " alt="" coords="353,259,308,193,277,158,241,129,210,113,208,107,244,124,280,154,312,189,358,258"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3defab86a69a75ff5e7d6cfa5595f26c" title=" " alt="" coords="39,139,209,181"/>
+<area shape="poly" title=" " alt="" coords="337,262,294,228,241,196,210,182,208,177,244,191,297,224,342,261"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a51e144347298b9490b266cb4e5497421" title=" " alt="" coords="39,205,209,248"/>
+<area shape="poly" title=" " alt="" coords="276,269,208,251,207,246,280,266"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3f6d3a3ecbb0bbd5d50b52a3a93d013a" title=" " alt="" coords="39,272,209,315"/>
+<area shape="poly" title=" " alt="" coords="273,295,210,296,208,291,277,292"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a68bc3cf4940228bc3e30da02651a37c8" title=" " alt="" coords="39,339,209,381"/>
+<area shape="poly" title=" " alt="" coords="276,321,208,340,206,336,280,317"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a71cf4fb1f7e35f414df160bd210e2bad" title=" " alt="" coords="39,405,209,448"/>
+<area shape="poly" title=" " alt="" coords="338,327,297,363,244,396,210,409,208,405,241,391,294,359,342,324"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5877da533e859fc747c26e5bb8449110" title=" " alt="" coords="5,472,243,515"/>
+<area shape="poly" title=" " alt="" coords="357,326,312,397,280,432,244,462,223,474,220,469,241,458,277,428,308,394,353,330"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1eacd8d91dc40f42c63fef5de2e85c19" title=" " alt="" coords="20,539,228,597"/>
+<area shape="poly" title=" " alt="" coords="365,327,348,375,322,428,288,482,244,529,227,541,225,536,241,525,284,479,318,426,343,373,361,331"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1f8a36cfb6b87c167265fa47edfa4efc" name="a1f8a36cfb6b87c167265fa47edfa4efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f8a36cfb6b87c167265fa47edfa4efc">&#9670;&#160;</a></span>ReadObject&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="#a20c7ddd2b4a32d00198ab3798fa912f2">Engine.Serialization.InputArchive.ReadObject</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a></td>          <td class="paramname"><span class="paramname"><em>staticSerializeData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref T</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>allowOverwriteOfExistingObject</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_engine_1_1_serialization_1_1_xml_input_archive.html#a2cfeb1b83dd3ff59f7b8ac3e22878e40">Engine.Serialization.XmlInputArchive</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00132">132</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a1f8a36cfb6b87c167265fa47edfa4efc_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a1f8a36cfb6b87c167265fa47edfa4efc_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a1f8a36cfb6b87c167265fa47edfa4efc_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a1f8a36cfb6b87c167265fa47edfa4efc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,204,175,246"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="223,170,392,213"/>
+<area shape="poly" title=" " alt="" coords="174,209,209,206,205,208,176,214"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="731,234,935,277"/>
+<area shape="poly" title=" " alt="" coords="175,226,716,248,715,253,175,231"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="449,104,674,146"/>
+<area shape="poly" title=" " alt="" coords="391,167,465,150,461,152,392,172"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#af1391b502199d287017db7b761a822c5" title=" " alt="" coords="440,170,683,213"/>
+<area shape="poly" title=" " alt="" coords="392,189,427,191,422,192,393,194"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#aba9586dafaf74879592069dc03679f69" title=" " alt="" coords="737,101,929,144"/>
+<area shape="poly" title=" " alt="" coords="675,121,724,123,719,124,675,126"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="739,168,927,210"/>
+<area shape="poly" title=" " alt="" coords="655,144,728,163,723,164,655,150"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1318530d0bc8743ff0b337f1e3007a8b" title=" " alt="" coords="748,34,918,77"/>
+<area shape="poly" title=" " alt="" coords="647,100,735,80,730,82,649,106"/>
+<area shape="poly" title=" " alt="" coords="663,144,685,156,701,172,710,189,718,205,733,220,740,227,735,226,730,224,714,208,705,191,697,175,682,160,662,149"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a565cc76798613d133244c1492b54b813" title=" " alt="" coords="984,101,1180,144"/>
+<area shape="poly" title=" " alt="" coords="929,120,971,122,966,123,930,125"/>
+<area shape="poly" title=" " alt="" coords="1036,99,1033,91,1041,82,1058,76,1082,74,1109,77,1127,85,1121,85,1108,82,1082,80,1059,81,1044,86,1039,92,1040,102"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1248,334,1436,377"/>
+<area shape="poly" title=" " alt="" coords="916,208,936,220,952,238,961,255,968,272,984,287,1044,316,1108,336,1172,348,1235,356,1230,356,1172,353,1107,341,1042,321,981,291,964,275,956,257,948,241,933,224,915,213"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="988,168,1176,210"/>
+<area shape="poly" title=" " alt="" coords="927,195,975,198,970,198,928,200"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="983,234,1182,277"/>
+<area shape="poly" title=" " alt="" coords="916,208,988,230,983,230,915,214"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1505,301,1719,344"/>
+<area shape="poly" title=" " alt="" coords="1437,341,1487,338,1492,337,1437,347"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1770,201,1958,244"/>
+<area shape="poly" title=" " alt="" coords="1667,298,1791,250,1796,249,1669,303"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="2006,201,2241,244"/>
+<area shape="poly" title=" " alt="" coords="1958,220,1993,222,1988,222,1958,225"/>
+<area shape="poly" title=" " alt="" coords="985,180,943,183,942,177,990,180"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1518,9,1706,52"/>
+<area shape="poly" title=" " alt="" coords="1164,165,1180,154,1191,142,1197,129,1202,103,1208,77,1216,65,1228,53,1260,35,1294,22,1365,7,1437,3,1505,10,1500,10,1437,8,1366,12,1295,27,1262,40,1232,58,1220,68,1213,79,1207,104,1202,131,1195,145,1184,158,1167,170"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="1230,68,1454,110"/>
+<area shape="poly" title=" " alt="" coords="1155,164,1181,153,1204,137,1229,120,1241,117,1246,115,1231,125,1207,141,1183,158,1157,170"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1236,201,1448,244"/>
+<area shape="poly" title=" " alt="" coords="1177,198,1224,207,1219,207,1177,204"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1248,134,1436,177"/>
+<area shape="poly" title=" " alt="" coords="1176,174,1235,169,1230,170,1177,179"/>
+<area shape="poly" title=" " alt="" coords="1700,49,1723,61,1760,90,1793,123,1843,189,1838,187,1789,126,1756,94,1720,66,1699,55"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1502,76,1722,118"/>
+<area shape="poly" title=" " alt="" coords="1455,90,1490,93,1484,93,1455,95"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1518,172,1706,214"/>
+<area shape="poly" title=" " alt="" coords="1421,108,1455,120,1555,165,1550,164,1453,125,1421,113"/>
+<area shape="poly" title=" " alt="" coords="1448,208,1505,204,1500,205,1449,213"/>
+<area shape="poly" title=" " alt="" coords="1128,275,1231,320,1251,329,1246,329,1229,325,1127,280"/>
+<area shape="poly" title=" " alt="" coords="1182,240,1218,238,1224,237,1183,245"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1234,268,1451,310"/>
+<area shape="poly" title=" " alt="" coords="1182,266,1221,273,1215,273,1182,271"/>
+<area shape="poly" title=" " alt="" coords="684,188,726,190,721,190,684,193"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1318530d0bc8743ff0b337f1e3007a8b" name="a1318530d0bc8743ff0b337f1e3007a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1318530d0bc8743ff0b337f1e3007a8b">&#9670;&#160;</a></span>ReadObjectInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.ReadObjectInfo </td>
+          <td>(</td>
+          <td class="paramtype">out int?</td>          <td class="paramname"><span class="paramname"><em>objectId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool</td>          <td class="paramname"><span class="paramname"><em>isReference</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out Type</td>          <td class="paramname"><span class="paramname"><em>runtimeType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a1318530d0bc8743ff0b337f1e3007a8b_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a1318530d0bc8743ff0b337f1e3007a8b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a1318530d0bc8743ff0b337f1e3007a8b_icgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a1318530d0bc8743ff0b337f1e3007a8b_icgraph">
+<area shape="rect" title=" " alt="" coords="781,272,951,315"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="508,272,733,315"/>
+<area shape="poly" title=" " alt="" coords="763,294,734,296,733,291,768,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="291,272,460,315"/>
+<area shape="poly" title=" " alt="" coords="490,294,461,296,460,291,495,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1f8a36cfb6b87c167265fa47edfa4efc" title=" " alt="" coords="39,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="361,257,344,213,319,160,285,107,264,83,241,62,210,44,208,39,244,58,268,79,289,104,324,157,349,211,366,257"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#ae8bd0cfa54fc4709250cff5d10a31c12" title=" " alt="" coords="39,72,209,115"/>
+<area shape="poly" title=" " alt="" coords="353,259,308,193,277,158,241,129,210,113,208,107,244,124,280,154,312,189,358,258"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3defab86a69a75ff5e7d6cfa5595f26c" title=" " alt="" coords="39,139,209,181"/>
+<area shape="poly" title=" " alt="" coords="337,262,294,228,241,196,210,182,208,177,244,191,297,224,342,261"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a51e144347298b9490b266cb4e5497421" title=" " alt="" coords="39,205,209,248"/>
+<area shape="poly" title=" " alt="" coords="276,269,208,251,207,246,280,266"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3f6d3a3ecbb0bbd5d50b52a3a93d013a" title=" " alt="" coords="39,272,209,315"/>
+<area shape="poly" title=" " alt="" coords="273,295,210,296,208,291,277,292"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a68bc3cf4940228bc3e30da02651a37c8" title=" " alt="" coords="39,339,209,381"/>
+<area shape="poly" title=" " alt="" coords="276,321,208,340,206,336,280,317"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a71cf4fb1f7e35f414df160bd210e2bad" title=" " alt="" coords="39,405,209,448"/>
+<area shape="poly" title=" " alt="" coords="338,327,297,363,244,396,210,409,208,405,241,391,294,359,342,324"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5877da533e859fc747c26e5bb8449110" title=" " alt="" coords="5,472,243,515"/>
+<area shape="poly" title=" " alt="" coords="357,326,312,397,280,432,244,462,223,474,220,469,241,458,277,428,308,394,353,330"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1eacd8d91dc40f42c63fef5de2e85c19" title=" " alt="" coords="20,539,228,597"/>
+<area shape="poly" title=" " alt="" coords="365,327,348,375,322,428,288,482,244,529,227,541,225,536,241,525,284,479,318,426,343,373,361,331"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3c97e87df5b9a4bac9dcc09b014e4c24" name="a3c97e87df5b9a4bac9dcc09b014e4c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c97e87df5b9a4bac9dcc09b014e4c24">&#9670;&#160;</a></span>ReadObjectWithObjectInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.ReadObjectWithObjectInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a></td>          <td class="paramname"><span class="paramname"><em>staticSerializeData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref object</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>allowOverwriteOfExistingObject</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00156">156</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a3c97e87df5b9a4bac9dcc09b014e4c24_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a3c97e87df5b9a4bac9dcc09b014e4c24_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a3c97e87df5b9a4bac9dcc09b014e4c24_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a3c97e87df5b9a4bac9dcc09b014e4c24_cgraph">
+<area shape="rect" title=" " alt="" coords="5,180,231,223"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#aba9586dafaf74879592069dc03679f69" title=" " alt="" coords="284,55,476,97"/>
+<area shape="poly" title=" " alt="" coords="163,177,322,102,319,107,166,182"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="286,147,474,189"/>
+<area shape="poly" title=" " alt="" coords="230,185,273,181,268,183,232,189"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1318530d0bc8743ff0b337f1e3007a8b" title=" " alt="" coords="296,213,465,256"/>
+<area shape="poly" title=" " alt="" coords="230,213,283,221,278,223,231,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="279,280,482,323"/>
+<area shape="poly" title=" " alt="" coords="169,221,280,266,299,274,294,275,278,270,169,226"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a565cc76798613d133244c1492b54b813" title=" " alt="" coords="532,29,728,72"/>
+<area shape="poly" title=" " alt="" coords="476,64,518,61,514,63,478,69"/>
+<area shape="poly" title=" " alt="" coords="583,28,581,19,589,10,605,5,630,3,656,5,674,13,669,14,655,10,630,8,606,10,592,15,586,21,588,30"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="795,47,984,89"/>
+<area shape="poly" title=" " alt="" coords="474,144,529,132,782,86,778,88,531,137,476,149"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="536,247,724,289"/>
+<area shape="poly" title=" " alt="" coords="419,187,483,211,548,240,543,240,481,216,419,193"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="530,147,729,189"/>
+<area shape="poly" title=" " alt="" coords="474,165,517,167,512,169,475,171"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1052,95,1266,137"/>
+<area shape="poly" title=" " alt="" coords="984,82,1040,94,1034,94,984,87"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1317,272,1505,315"/>
+<area shape="poly" title=" " alt="" coords="1192,135,1370,263,1364,263,1190,140"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="1553,272,1789,315"/>
+<area shape="poly" title=" " alt="" coords="1506,291,1540,293,1535,293,1506,296"/>
+<area shape="poly" title=" " alt="" coords="600,246,551,223,489,195,489,189,554,218,605,246"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1065,372,1254,415"/>
+<area shape="poly" title=" " alt="" coords="655,287,709,329,743,350,778,365,847,384,917,394,986,398,1052,401,1047,401,986,404,917,399,845,389,776,371,740,354,706,334,653,292"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="777,313,1002,356"/>
+<area shape="poly" title=" " alt="" coords="716,287,791,309,786,309,715,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="784,180,995,223"/>
+<area shape="poly" title=" " alt="" coords="715,243,786,228,791,226,716,249"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="795,247,984,289"/>
+<area shape="poly" title=" " alt="" coords="724,265,782,268,777,268,724,271"/>
+<area shape="poly" title=" " alt="" coords="1236,369,1268,358,1352,322,1357,321,1270,362,1237,374"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1050,305,1269,348"/>
+<area shape="poly" title=" " alt="" coords="1002,329,1037,330,1032,331,1002,334"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1065,209,1254,252"/>
+<area shape="poly" title=" " alt="" coords="968,310,1001,299,1098,260,1103,258,1003,304,969,315"/>
+<area shape="poly" title=" " alt="" coords="996,210,1053,219,1047,219,996,216"/>
+<area shape="poly" title=" " alt="" coords="687,144,728,126,776,99,796,94,791,96,778,104,731,130,689,149"/>
+<area shape="poly" title=" " alt="" coords="730,178,771,186,766,186,730,183"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="781,113,998,156"/>
+<area shape="poly" title=" " alt="" coords="729,153,768,150,763,151,730,158"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a3c97e87df5b9a4bac9dcc09b014e4c24_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a3c97e87df5b9a4bac9dcc09b014e4c24_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a3c97e87df5b9a4bac9dcc09b014e4c24_icgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a3c97e87df5b9a4bac9dcc09b014e4c24_icgraph">
+<area shape="rect" title=" " alt="" coords="508,272,733,315"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="291,272,460,315"/>
+<area shape="poly" title=" " alt="" coords="490,294,461,296,460,291,495,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1f8a36cfb6b87c167265fa47edfa4efc" title=" " alt="" coords="39,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="361,257,344,213,319,160,285,107,264,83,241,62,210,44,208,39,244,58,268,79,289,104,324,157,349,211,366,257"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#ae8bd0cfa54fc4709250cff5d10a31c12" title=" " alt="" coords="39,72,209,115"/>
+<area shape="poly" title=" " alt="" coords="353,259,308,193,277,158,241,129,210,113,208,107,244,124,280,154,312,189,358,258"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3defab86a69a75ff5e7d6cfa5595f26c" title=" " alt="" coords="39,139,209,181"/>
+<area shape="poly" title=" " alt="" coords="337,262,294,228,241,196,210,182,208,177,244,191,297,224,342,261"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a51e144347298b9490b266cb4e5497421" title=" " alt="" coords="39,205,209,248"/>
+<area shape="poly" title=" " alt="" coords="276,269,208,251,207,246,280,266"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3f6d3a3ecbb0bbd5d50b52a3a93d013a" title=" " alt="" coords="39,272,209,315"/>
+<area shape="poly" title=" " alt="" coords="273,295,210,296,208,291,277,292"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a68bc3cf4940228bc3e30da02651a37c8" title=" " alt="" coords="39,339,209,381"/>
+<area shape="poly" title=" " alt="" coords="276,321,208,340,206,336,280,317"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a71cf4fb1f7e35f414df160bd210e2bad" title=" " alt="" coords="39,405,209,448"/>
+<area shape="poly" title=" " alt="" coords="338,327,297,363,244,396,210,409,208,405,241,391,294,359,342,324"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5877da533e859fc747c26e5bb8449110" title=" " alt="" coords="5,472,243,515"/>
+<area shape="poly" title=" " alt="" coords="357,326,312,397,280,432,244,462,223,474,220,469,241,458,277,428,308,394,353,330"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1eacd8d91dc40f42c63fef5de2e85c19" title=" " alt="" coords="20,539,228,597"/>
+<area shape="poly" title=" " alt="" coords="365,327,348,375,322,428,288,482,244,529,227,541,225,536,241,525,284,479,318,426,343,373,361,331"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af1391b502199d287017db7b761a822c5" name="af1391b502199d287017db7b761a822c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1391b502199d287017db7b761a822c5">&#9670;&#160;</a></span>ReadObjectWithoutObjectInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.ReadObjectWithoutObjectInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html">SerializeData</a></td>          <td class="paramname"><span class="paramname"><em>staticSerializeData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref object</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00144">144</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_af1391b502199d287017db7b761a822c5_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_af1391b502199d287017db7b761a822c5_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_af1391b502199d287017db7b761a822c5_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_af1391b502199d287017db7b761a822c5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,172,249,215"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="297,172,485,215"/>
+<area shape="poly" title=" " alt="" coords="248,191,284,193,278,194,250,196"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="798,5,987,48"/>
+<area shape="poly" title=" " alt="" coords="414,169,466,129,498,108,532,91,595,69,660,52,785,34,780,35,661,57,596,74,534,96,500,113,469,133,417,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="538,205,727,248"/>
+<area shape="poly" title=" " alt="" coords="486,213,526,220,520,221,486,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="533,105,732,148"/>
+<area shape="poly" title=" " alt="" coords="470,169,541,152,535,154,471,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1055,39,1270,81"/>
+<area shape="poly" title=" " alt="" coords="987,36,1043,45,1037,45,987,41"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1320,201,1508,244"/>
+<area shape="poly" title=" " alt="" coords="1201,79,1273,124,1372,193,1367,192,1271,129,1199,84"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="1556,201,1792,244"/>
+<area shape="poly" title=" " alt="" coords="1509,220,1543,223,1538,223,1509,225"/>
+<area shape="poly" title=" " alt="" coords="535,205,501,202,501,197,541,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1068,301,1256,344"/>
+<area shape="poly" title=" " alt="" coords="657,246,711,289,745,309,781,324,850,339,921,345,990,344,1050,341,1055,341,990,349,920,350,849,344,780,329,743,314,708,293,656,251"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="780,205,1005,248"/>
+<area shape="poly" title=" " alt="" coords="727,224,767,226,762,227,727,229"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="787,139,998,181"/>
+<area shape="poly" title=" " alt="" coords="718,202,789,186,794,185,719,207"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="798,272,987,315"/>
+<area shape="poly" title=" " alt="" coords="719,246,794,268,789,267,718,251"/>
+<area shape="poly" title=" " alt="" coords="1218,298,1342,251,1347,250,1219,303"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1053,205,1272,248"/>
+<area shape="poly" title=" " alt="" coords="1005,224,1040,227,1035,227,1005,229"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1068,139,1256,181"/>
+<area shape="poly" title=" " alt="" coords="981,202,1056,186,1061,185,982,207"/>
+<area shape="poly" title=" " alt="" coords="998,157,1056,160,1050,160,999,163"/>
+<area shape="poly" title=" " alt="" coords="677,102,779,58,802,52,797,54,781,62,679,107"/>
+<area shape="poly" title=" " alt="" coords="733,137,774,144,769,145,733,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="784,72,1001,115"/>
+<area shape="poly" title=" " alt="" coords="732,111,771,109,766,110,733,116"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_af1391b502199d287017db7b761a822c5_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_af1391b502199d287017db7b761a822c5_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_af1391b502199d287017db7b761a822c5_icgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_af1391b502199d287017db7b761a822c5_icgraph">
+<area shape="rect" title=" " alt="" coords="508,272,751,315"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="291,272,460,315"/>
+<area shape="poly" title=" " alt="" coords="490,294,461,296,460,291,495,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1f8a36cfb6b87c167265fa47edfa4efc" title=" " alt="" coords="39,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="361,257,344,213,319,160,285,107,264,83,241,62,210,44,208,39,244,58,268,79,289,104,324,157,349,211,366,257"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#ae8bd0cfa54fc4709250cff5d10a31c12" title=" " alt="" coords="39,72,209,115"/>
+<area shape="poly" title=" " alt="" coords="353,259,308,193,277,158,241,129,210,113,208,107,244,124,280,154,312,189,358,258"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3defab86a69a75ff5e7d6cfa5595f26c" title=" " alt="" coords="39,139,209,181"/>
+<area shape="poly" title=" " alt="" coords="337,262,294,228,241,196,210,182,208,177,244,191,297,224,342,261"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a51e144347298b9490b266cb4e5497421" title=" " alt="" coords="39,205,209,248"/>
+<area shape="poly" title=" " alt="" coords="276,269,208,251,207,246,280,266"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3f6d3a3ecbb0bbd5d50b52a3a93d013a" title=" " alt="" coords="39,272,209,315"/>
+<area shape="poly" title=" " alt="" coords="273,295,210,296,208,291,277,292"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a68bc3cf4940228bc3e30da02651a37c8" title=" " alt="" coords="39,339,209,381"/>
+<area shape="poly" title=" " alt="" coords="276,321,208,340,206,336,280,317"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a71cf4fb1f7e35f414df160bd210e2bad" title=" " alt="" coords="39,405,209,448"/>
+<area shape="poly" title=" " alt="" coords="338,327,297,363,244,396,210,409,208,405,241,391,294,359,342,324"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5877da533e859fc747c26e5bb8449110" title=" " alt="" coords="5,472,243,515"/>
+<area shape="poly" title=" " alt="" coords="357,326,312,397,280,432,244,462,223,474,220,469,241,458,277,428,308,394,353,330"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1eacd8d91dc40f42c63fef5de2e85c19" title=" " alt="" coords="20,539,228,597"/>
+<area shape="poly" title=" " alt="" coords="365,327,348,375,322,428,288,482,244,529,227,541,225,536,241,525,284,479,318,426,343,373,361,331"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a36d573adada1d508605a1684419a355b" name="a36d573adada1d508605a1684419a355b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d573adada1d508605a1684419a355b">&#9670;&#160;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">new void Engine.Serialization.InputArchive.Reset </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>version</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object</td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a126db5b5f1a62ecb082af455e676be4e" name="a126db5b5f1a62ecb082af455e676be4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126db5b5f1a62ecb082af455e676be4e">&#9670;&#160;</a></span>Serialize() <span class="overload">[1/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>length</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref byte[]</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a561fcebed002f73294ad24a4633f221f" name="a561fcebed002f73294ad24a4633f221f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a561fcebed002f73294ad24a4633f221f">&#9670;&#160;</a></span>Serialize() <span class="overload">[2/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref bool</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6b670369c37ce4bc9b0ffb138c14c62" name="ad6b670369c37ce4bc9b0ffb138c14c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b670369c37ce4bc9b0ffb138c14c62">&#9670;&#160;</a></span>Serialize() <span class="overload">[3/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref byte</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a727bf873e17f17c17630147afa7f1f27" name="a727bf873e17f17c17630147afa7f1f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727bf873e17f17c17630147afa7f1f27">&#9670;&#160;</a></span>Serialize() <span class="overload">[4/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref byte[]</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdd67534d79bf9ec0dc3bf0a7dc4656c" name="acdd67534d79bf9ec0dc3bf0a7dc4656c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd67534d79bf9ec0dc3bf0a7dc4656c">&#9670;&#160;</a></span>Serialize() <span class="overload">[5/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref char</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b1382586752b88439b9e9690fe94b10" name="a6b1382586752b88439b9e9690fe94b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1382586752b88439b9e9690fe94b10">&#9670;&#160;</a></span>Serialize() <span class="overload">[6/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref double</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73a2d9284b237b5e4958673b2c0e3042" name="a73a2d9284b237b5e4958673b2c0e3042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a2d9284b237b5e4958673b2c0e3042">&#9670;&#160;</a></span>Serialize() <span class="overload">[7/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a681d20a4f26fdb34c5f87e7dd660ad7f" name="a681d20a4f26fdb34c5f87e7dd660ad7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a681d20a4f26fdb34c5f87e7dd660ad7f">&#9670;&#160;</a></span>Serialize() <span class="overload">[8/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a5488882f027776be55103f267d5cce" name="a0a5488882f027776be55103f267d5cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5488882f027776be55103f267d5cce">&#9670;&#160;</a></span>Serialize() <span class="overload">[9/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref long</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a867b6aee690c14fc4279b3336a369b66" name="a867b6aee690c14fc4279b3336a369b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a867b6aee690c14fc4279b3336a369b66">&#9670;&#160;</a></span>Serialize() <span class="overload">[10/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref sbyte</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a867b6aee690c14fc4279b3336a369b66_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a867b6aee690c14fc4279b3336a369b66_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a867b6aee690c14fc4279b3336a369b66_icgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a867b6aee690c14fc4279b3336a369b66_icgraph">
+<area shape="rect" title=" " alt="" coords="257,1021,426,1064"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_boolean_serializer.html#ad14dd683eb29eb7d6277cf809b7720d1" title=" " alt="" coords="13,5,201,48"/>
+<area shape="poly" title=" " alt="" coords="337,1005,334,811,328,675,318,528,301,382,278,248,264,189,247,137,228,94,207,62,197,51,195,46,211,58,233,92,252,136,269,188,283,247,307,381,323,528,333,674,339,810,343,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_box_serializer.html#a838f0734c60f146d194da08dd1d6aec6" title=" " alt="" coords="25,72,189,115"/>
+<area shape="poly" title=" " alt="" coords="337,1006,332,823,325,697,314,560,297,425,275,301,245,198,227,159,207,128,190,113,188,108,211,125,231,156,250,197,280,300,303,424,319,560,330,696,337,823,342,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_byte_serializer.html#acb971c2aefadb3b6b67241d8d3bd4f29" title=" " alt="" coords="23,139,191,181"/>
+<area shape="poly" title=" " alt="" coords="337,1005,330,834,310,592,293,467,271,353,242,259,225,223,207,195,192,181,190,176,211,192,230,220,247,257,276,352,298,466,315,591,335,834,342,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_char_serializer.html#a83c02eb11a900da73c3dfa92e831aef5" title=" " alt="" coords="23,205,191,248"/>
+<area shape="poly" title=" " alt="" coords="336,1005,327,847,306,624,289,510,267,406,240,320,224,287,207,262,192,248,190,243,211,258,229,284,245,318,272,405,294,509,311,623,333,846,341,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_color_serializer.html#aece13ea62f49eb0f457237cbacbb71fd" title=" " alt="" coords="21,272,193,315"/>
+<area shape="poly" title=" " alt="" coords="335,1006,325,859,302,656,285,553,263,459,237,381,223,351,207,328,194,316,192,311,211,325,227,349,242,379,268,457,290,552,307,656,330,859,341,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_double_serializer.html#a67c1d94f4fad3cdfb6f01b3c11af11fa" title=" " alt="" coords="16,339,198,381"/>
+<area shape="poly" title=" " alt="" coords="335,1006,322,871,298,688,280,596,259,512,235,442,221,416,207,395,196,384,194,379,211,392,226,413,240,440,265,510,286,595,303,688,327,871,340,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_enum32_serializer-1-g.html#a6de95f5c382a6e28be2a81d74856f85a" title=" " alt="" coords="13,405,201,448"/>
+<area shape="poly" title=" " alt="" coords="334,1006,319,884,293,721,276,639,256,564,233,503,207,462,196,451,194,446,211,458,237,501,261,563,281,638,298,720,324,883,339,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_enum64_serializer-1-g.html#acd9a0a422a74cb918f150fd1cc064edc" title=" " alt="" coords="13,472,201,515"/>
+<area shape="poly" title=" " alt="" coords="333,1006,316,898,289,754,272,683,252,618,230,565,207,528,196,518,194,513,211,525,235,562,257,616,277,681,294,753,322,897,338,1007"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_guid_serializer.html#a5e7e79f2cf0cceb6ee0cd67e8ee613bd" title=" " alt="" coords="23,539,191,581"/>
+<area shape="poly" title=" " alt="" coords="337,1006,332,922,314,812,297,754,274,697,245,643,207,595,192,582,190,577,211,591,249,640,279,694,302,752,319,811,337,922,343,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#adae62ecbbc8472695ee8104f8f966eb3" title=" " alt="" coords="22,605,192,648"/>
+<area shape="poly" title=" " alt="" coords="335,1006,326,934,305,842,289,793,267,746,240,701,207,662,193,650,191,645,211,658,244,698,272,743,294,791,310,840,332,933,341,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_int16_serializer.html#abffb20bc67024f666d61c49a7b8eecc6" title=" " alt="" coords="22,672,192,715"/>
+<area shape="poly" title=" " alt="" coords="332,1006,319,946,296,871,280,833,259,795,235,760,207,729,193,717,191,712,210,725,239,756,264,792,284,830,301,870,325,945,337,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_int32_serializer.html#a98bee43ca763b28d4275dd4b0842d51f" title=" " alt="" coords="22,739,192,781"/>
+<area shape="poly" title=" " alt="" coords="328,1006,312,959,286,902,252,845,231,819,207,795,193,784,191,779,210,791,235,815,256,842,291,900,317,957,333,1006"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_int64_serializer.html#a75486f04eb4041c207a1dd9c342989e7" title=" " alt="" coords="22,805,192,848"/>
+<area shape="poly" title=" " alt="" coords="321,1008,276,934,244,896,207,862,191,851,188,846,210,858,248,892,280,931,326,1007"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_key_value_pair_serializer-2-g.html#a07238a431acf38a267679358a406afa1" title=" " alt="" coords="25,872,189,931"/>
+<area shape="poly" title=" " alt="" coords="302,1012,258,979,207,945,188,934,185,929,210,940,261,974,307,1010"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_matrix_serializer.html#a6c21014d49e255a967862a6bd9896c85" title=" " alt="" coords="19,955,195,997"/>
+<area shape="poly" title=" " alt="" coords="247,1018,186,1000,183,996,252,1015"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_nullable_serializer-1-g.html#a5a09fc5c4a5c7dceedada0cfe89fa4ab" title=" " alt="" coords="13,1021,201,1064"/>
+<area shape="poly" title=" " alt="" coords="239,1044,203,1045,200,1041,243,1041"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_plane_serializer.html#af3d53a01b34bb541f4bdd0c2ad39ac64" title=" " alt="" coords="20,1088,194,1131"/>
+<area shape="poly" title=" " alt="" coords="248,1071,187,1089,183,1085,251,1067"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_point2_serializer.html#a8f2c3e9a195ebe8a6e7b016c0c3ba6ca" title=" " alt="" coords="18,1155,196,1197"/>
+<area shape="poly" title=" " alt="" coords="304,1077,262,1112,210,1145,185,1156,181,1152,207,1140,259,1108,306,1072"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_point3_serializer.html#a0c99ba342797f107ade227acd83dce66" title=" " alt="" coords="18,1221,196,1264"/>
+<area shape="poly" title=" " alt="" coords="320,1080,277,1146,246,1181,210,1212,191,1222,187,1219,207,1207,242,1177,273,1143,322,1075"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_quaternion_serializer.html#a6fe0b7df8415ac00145ff40de29a0b5f" title=" " alt="" coords="5,1288,209,1331"/>
+<area shape="poly" title=" " alt="" coords="328,1081,314,1125,289,1178,254,1232,210,1278,194,1289,189,1286,207,1274,250,1228,284,1176,309,1123,330,1076"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_rectangle_serializer.html#a3dbc8c49282d6f53bae669441cc82bc7" title=" " alt="" coords="7,1355,207,1397"/>
+<area shape="poly" title=" " alt="" coords="335,1077,323,1137,299,1208,262,1281,238,1315,210,1345,195,1356,191,1353,207,1341,234,1311,258,1278,294,1206,318,1136,333,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_s_byte_serializer.html#afd43a448c8452bb71d2466eff9c4f74a" title=" " alt="" coords="19,1421,195,1464"/>
+<area shape="poly" title=" " alt="" coords="338,1077,330,1149,308,1238,291,1285,270,1330,243,1373,211,1411,196,1422,192,1419,207,1407,239,1370,265,1328,286,1283,303,1236,325,1148,337,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_single_serializer.html#a11289508b47efbf5285264480992bfe7" title=" " alt="" coords="19,1488,195,1531"/>
+<area shape="poly" title=" " alt="" coords="340,1077,336,1161,317,1267,300,1324,277,1379,248,1431,211,1478,197,1489,192,1486,207,1474,243,1428,273,1377,295,1322,312,1266,331,1160,339,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_string_serializer.html#aeb42b475ae2390c5d2f7d20b80231d9e" title=" " alt="" coords="20,1555,194,1597"/>
+<area shape="poly" title=" " alt="" coords="336,1076,321,1186,293,1324,276,1394,256,1457,234,1509,211,1544,197,1556,193,1553,207,1541,230,1506,251,1455,270,1392,288,1323,315,1185,334,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_u_int16_serializer.html#aa3c27ce25878be2007cf16bcc331270c" title=" " alt="" coords="17,1621,197,1664"/>
+<area shape="poly" title=" " alt="" coords="337,1077,324,1199,297,1358,280,1437,260,1510,237,1570,211,1611,197,1622,193,1619,207,1608,232,1567,255,1508,275,1436,292,1357,318,1198,335,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_u_int32_serializer.html#a376b5b243754212bc9c7ffe3148a9a34" title=" " alt="" coords="17,1688,197,1731"/>
+<area shape="poly" title=" " alt="" coords="338,1077,327,1212,302,1390,284,1480,264,1563,239,1631,225,1657,211,1678,197,1689,193,1686,207,1674,221,1654,234,1628,259,1561,279,1479,297,1389,321,1211,336,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_u_int64_serializer.html#a563430106f3d37f58a963832a1b67e10" title=" " alt="" coords="17,1755,197,1797"/>
+<area shape="poly" title=" " alt="" coords="339,1077,329,1224,306,1423,289,1523,267,1616,242,1692,227,1721,211,1744,197,1756,193,1753,207,1741,222,1719,237,1690,262,1614,284,1522,301,1422,324,1224,337,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_vector2_serializer.html#aadb9d06c0511cb8f24bc0564c08079bf" title=" " alt="" coords="15,1821,199,1864"/>
+<area shape="poly" title=" " alt="" coords="339,1077,332,1236,310,1454,293,1566,271,1668,244,1752,228,1786,211,1811,198,1823,194,1819,207,1808,224,1783,239,1750,266,1667,288,1565,305,1453,327,1235,338,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_vector3_serializer.html#ad5cf7c829b5dca9ae871deb4f9305524" title=" " alt="" coords="15,1888,199,1931"/>
+<area shape="poly" title=" " alt="" coords="340,1077,334,1248,314,1486,297,1609,275,1721,247,1813,230,1850,211,1878,198,1889,194,1885,207,1874,225,1847,242,1811,270,1719,292,1608,309,1486,329,1248,338,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_vector4_serializer.html#afd64c17dd3f506946d022677276d9916" title=" " alt="" coords="15,1955,199,1997"/>
+<area shape="poly" title=" " alt="" coords="340,1077,337,1260,329,1384,318,1518,302,1651,279,1773,249,1874,231,1914,211,1944,198,1956,195,1952,207,1941,226,1911,244,1872,274,1772,296,1650,313,1518,324,1384,331,1260,339,1082"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_x_element_serializer.html#a880ae4069e1a38188e7e6bdcad15b0a3" title=" " alt="" coords="8,2021,206,2064"/>
+<area shape="poly" title=" " alt="" coords="341,1077,339,1272,333,1406,322,1550,306,1694,283,1826,268,1884,251,1935,232,1978,211,2011,198,2023,195,2019,207,2008,228,1975,246,1933,263,1883,277,1825,300,1693,317,1550,327,1405,334,1272,339,1082"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afec217a2b7ad34d24f2bc5dce4601bfd" name="afec217a2b7ad34d24f2bc5dce4601bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec217a2b7ad34d24f2bc5dce4601bfd">&#9670;&#160;</a></span>Serialize() <span class="overload">[11/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref short</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b5724c09ed4387d5e266e07c824dcae" name="a3b5724c09ed4387d5e266e07c824dcae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b5724c09ed4387d5e266e07c824dcae">&#9670;&#160;</a></span>Serialize() <span class="overload">[12/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref string</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27fdd370b0bd6314e850e3675950282d" name="a27fdd370b0bd6314e850e3675950282d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27fdd370b0bd6314e850e3675950282d">&#9670;&#160;</a></span>Serialize() <span class="overload">[13/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref uint</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f6c8c18d8605c40a50ba0fb6b236c59" name="a2f6c8c18d8605c40a50ba0fb6b236c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f6c8c18d8605c40a50ba0fb6b236c59">&#9670;&#160;</a></span>Serialize() <span class="overload">[14/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref ulong</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a566c06574a455ef1dd0ed5d9137e2c66" name="a566c06574a455ef1dd0ed5d9137e2c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a566c06574a455ef1dd0ed5d9137e2c66">&#9670;&#160;</a></span>Serialize() <span class="overload">[15/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref ushort</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adae62ecbbc8472695ee8104f8f966eb3" name="adae62ecbbc8472695ee8104f8f966eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae62ecbbc8472695ee8104f8f966eb3">&#9670;&#160;</a></span>Serialize() <span class="overload">[16/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">object Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00082">82</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_adae62ecbbc8472695ee8104f8f966eb3_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_adae62ecbbc8472695ee8104f8f966eb3_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_adae62ecbbc8472695ee8104f8f966eb3_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_adae62ecbbc8472695ee8104f8f966eb3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,175,48"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a867b6aee690c14fc4279b3336a369b66" title=" " alt="" coords="223,5,392,48"/>
+<area shape="poly" title=" " alt="" coords="175,24,210,26,205,27,175,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae8bd0cfa54fc4709250cff5d10a31c12" name="ae8bd0cfa54fc4709250cff5d10a31c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8bd0cfa54fc4709250cff5d10a31c12">&#9670;&#160;</a></span>Serialize() <span class="overload">[17/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00055">55</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_ae8bd0cfa54fc4709250cff5d10a31c12_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_ae8bd0cfa54fc4709250cff5d10a31c12_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_ae8bd0cfa54fc4709250cff5d10a31c12_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_ae8bd0cfa54fc4709250cff5d10a31c12_cgraph">
+<area shape="rect" title=" " alt="" coords="5,179,175,221"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="739,172,927,215"/>
+<area shape="poly" title=" " alt="" coords="174,195,223,193,724,190,722,195,223,199,176,200"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="223,208,392,251"/>
+<area shape="poly" title=" " alt="" coords="174,209,210,215,205,217,176,214"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1248,5,1436,48"/>
+<area shape="poly" title=" " alt="" coords="859,169,913,129,946,108,982,91,1044,69,1110,53,1235,35,1230,36,1111,58,1046,74,984,96,949,113,916,133,861,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="988,172,1176,215"/>
+<area shape="poly" title=" " alt="" coords="927,199,975,202,970,203,928,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="983,105,1182,148"/>
+<area shape="poly" title=" " alt="" coords="915,169,988,152,983,153,916,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1505,53,1719,96"/>
+<area shape="poly" title=" " alt="" coords="1437,41,1492,53,1487,53,1437,46"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1770,216,1958,259"/>
+<area shape="poly" title=" " alt="" coords="1648,94,1819,208,1814,207,1646,99"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="2006,216,2241,259"/>
+<area shape="poly" title=" " alt="" coords="1958,235,1993,237,1988,237,1958,240"/>
+<area shape="poly" title=" " alt="" coords="985,185,943,187,942,182,990,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1518,331,1706,373"/>
+<area shape="poly" title=" " alt="" coords="1166,212,1184,225,1195,238,1202,251,1207,278,1213,303,1220,314,1232,324,1262,342,1295,355,1366,370,1437,374,1500,372,1505,372,1437,379,1365,376,1294,360,1260,347,1228,329,1216,317,1208,305,1202,279,1197,253,1191,241,1180,229,1165,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="1230,272,1454,315"/>
+<area shape="poly" title=" " alt="" coords="1156,213,1183,224,1207,241,1231,258,1246,266,1241,266,1229,262,1204,246,1181,229,1156,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1236,139,1448,181"/>
+<area shape="poly" title=" " alt="" coords="1176,179,1224,175,1219,176,1177,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1248,205,1436,248"/>
+<area shape="poly" title=" " alt="" coords="1177,203,1235,213,1230,213,1177,208"/>
+<area shape="poly" title=" " alt="" coords="1692,327,1721,316,1770,292,1814,268,1819,267,1773,296,1723,321,1693,333"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1502,264,1722,307"/>
+<area shape="poly" title=" " alt="" coords="1455,287,1490,289,1484,289,1455,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1518,168,1706,211"/>
+<area shape="poly" title=" " alt="" coords="1420,269,1453,258,1550,218,1555,217,1455,262,1421,274"/>
+<area shape="poly" title=" " alt="" coords="1448,169,1505,177,1500,178,1448,174"/>
+<area shape="poly" title=" " alt="" coords="1126,102,1229,58,1246,54,1251,52,1231,62,1128,107"/>
+<area shape="poly" title=" " alt="" coords="1182,137,1224,144,1218,145,1182,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1234,72,1451,115"/>
+<area shape="poly" title=" " alt="" coords="1182,111,1221,109,1215,110,1183,116"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="449,275,674,317"/>
+<area shape="poly" title=" " alt="" coords="391,249,466,270,460,271,391,254"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#af1391b502199d287017db7b761a822c5" title=" " alt="" coords="440,208,683,251"/>
+<area shape="poly" title=" " alt="" coords="392,227,427,229,422,230,393,232"/>
+<area shape="poly" title=" " alt="" coords="649,272,682,260,730,236,766,222,771,221,732,241,684,265,651,277"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#aba9586dafaf74879592069dc03679f69" title=" " alt="" coords="737,251,929,293"/>
+<area shape="poly" title=" " alt="" coords="675,283,724,281,719,282,675,289"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1318530d0bc8743ff0b337f1e3007a8b" title=" " alt="" coords="748,317,918,360"/>
+<area shape="poly" title=" " alt="" coords="675,311,736,323,730,323,675,316"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="731,384,935,427"/>
+<area shape="poly" title=" " alt="" coords="609,315,732,370,751,379,746,378,730,374,608,321"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a565cc76798613d133244c1492b54b813" title=" " alt="" coords="984,263,1180,305"/>
+<area shape="poly" title=" " alt="" coords="930,274,971,278,966,279,930,279"/>
+<area shape="poly" title=" " alt="" coords="1036,261,1033,253,1041,244,1058,238,1082,236,1109,238,1127,247,1121,247,1108,244,1082,241,1059,243,1044,248,1039,254,1040,264"/>
+<area shape="poly" title=" " alt="" coords="683,211,726,207,721,208,685,216"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3defab86a69a75ff5e7d6cfa5595f26c" name="a3defab86a69a75ff5e7d6cfa5595f26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3defab86a69a75ff5e7d6cfa5595f26c">&#9670;&#160;</a></span>Serialize() <span class="overload">[18/18]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.Serialize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref object</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00051">51</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a3defab86a69a75ff5e7d6cfa5595f26c_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a3defab86a69a75ff5e7d6cfa5595f26c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a3defab86a69a75ff5e7d6cfa5595f26c_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a3defab86a69a75ff5e7d6cfa5595f26c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,179,175,221"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="739,172,927,215"/>
+<area shape="poly" title=" " alt="" coords="174,195,223,193,724,190,722,195,223,199,176,200"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="223,208,392,251"/>
+<area shape="poly" title=" " alt="" coords="174,209,210,215,205,217,176,214"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1248,5,1436,48"/>
+<area shape="poly" title=" " alt="" coords="859,169,913,129,946,108,982,91,1044,69,1110,53,1235,35,1230,36,1111,58,1046,74,984,96,949,113,916,133,861,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="988,172,1176,215"/>
+<area shape="poly" title=" " alt="" coords="927,199,975,202,970,203,928,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="983,105,1182,148"/>
+<area shape="poly" title=" " alt="" coords="915,169,988,152,983,153,916,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1505,53,1719,96"/>
+<area shape="poly" title=" " alt="" coords="1437,41,1492,53,1487,53,1437,46"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1770,216,1958,259"/>
+<area shape="poly" title=" " alt="" coords="1648,94,1819,208,1814,207,1646,99"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="2006,216,2241,259"/>
+<area shape="poly" title=" " alt="" coords="1958,235,1993,237,1988,237,1958,240"/>
+<area shape="poly" title=" " alt="" coords="985,185,943,187,942,182,990,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1518,331,1706,373"/>
+<area shape="poly" title=" " alt="" coords="1166,212,1184,225,1195,238,1202,251,1207,278,1213,303,1220,314,1232,324,1262,342,1295,355,1366,370,1437,374,1500,372,1505,372,1437,379,1365,376,1294,360,1260,347,1228,329,1216,317,1208,305,1202,279,1197,253,1191,241,1180,229,1165,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="1230,272,1454,315"/>
+<area shape="poly" title=" " alt="" coords="1156,213,1183,224,1207,241,1231,258,1246,266,1241,266,1229,262,1204,246,1181,229,1156,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1236,139,1448,181"/>
+<area shape="poly" title=" " alt="" coords="1176,179,1224,175,1219,176,1177,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1248,205,1436,248"/>
+<area shape="poly" title=" " alt="" coords="1177,203,1235,213,1230,213,1177,208"/>
+<area shape="poly" title=" " alt="" coords="1692,327,1721,316,1770,292,1814,268,1819,267,1773,296,1723,321,1693,333"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1502,264,1722,307"/>
+<area shape="poly" title=" " alt="" coords="1455,287,1490,289,1484,289,1455,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1518,168,1706,211"/>
+<area shape="poly" title=" " alt="" coords="1420,269,1453,258,1550,218,1555,217,1455,262,1421,274"/>
+<area shape="poly" title=" " alt="" coords="1448,169,1505,177,1500,178,1448,174"/>
+<area shape="poly" title=" " alt="" coords="1126,102,1229,58,1246,54,1251,52,1231,62,1128,107"/>
+<area shape="poly" title=" " alt="" coords="1182,137,1224,144,1218,145,1182,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1234,72,1451,115"/>
+<area shape="poly" title=" " alt="" coords="1182,111,1221,109,1215,110,1183,116"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="449,275,674,317"/>
+<area shape="poly" title=" " alt="" coords="391,249,466,270,460,271,391,254"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#af1391b502199d287017db7b761a822c5" title=" " alt="" coords="440,208,683,251"/>
+<area shape="poly" title=" " alt="" coords="392,227,427,229,422,230,393,232"/>
+<area shape="poly" title=" " alt="" coords="649,272,682,260,730,236,766,222,771,221,732,241,684,265,651,277"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#aba9586dafaf74879592069dc03679f69" title=" " alt="" coords="737,251,929,293"/>
+<area shape="poly" title=" " alt="" coords="675,283,724,281,719,282,675,289"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1318530d0bc8743ff0b337f1e3007a8b" title=" " alt="" coords="748,317,918,360"/>
+<area shape="poly" title=" " alt="" coords="675,311,736,323,730,323,675,316"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="731,384,935,427"/>
+<area shape="poly" title=" " alt="" coords="609,315,732,370,751,379,746,378,730,374,608,321"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a565cc76798613d133244c1492b54b813" title=" " alt="" coords="984,263,1180,305"/>
+<area shape="poly" title=" " alt="" coords="930,274,971,278,966,279,930,279"/>
+<area shape="poly" title=" " alt="" coords="1036,261,1033,253,1041,244,1058,238,1082,236,1109,238,1127,247,1121,247,1108,244,1082,241,1059,243,1044,248,1039,254,1040,264"/>
+<area shape="poly" title=" " alt="" coords="683,211,726,207,721,208,685,216"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a51e144347298b9490b266cb4e5497421" name="a51e144347298b9490b266cb4e5497421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e144347298b9490b266cb4e5497421">&#9670;&#160;</a></span>Serialize&lt; T &gt;() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="#a867b6aee690c14fc4279b3336a369b66">Engine.Serialization.InputArchive.Serialize</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00076">76</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a51e144347298b9490b266cb4e5497421_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a51e144347298b9490b266cb4e5497421_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a51e144347298b9490b266cb4e5497421_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a51e144347298b9490b266cb4e5497421_cgraph">
+<area shape="rect" title=" " alt="" coords="5,179,175,221"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="739,172,927,215"/>
+<area shape="poly" title=" " alt="" coords="174,195,223,193,724,190,722,195,223,199,176,200"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="223,208,392,251"/>
+<area shape="poly" title=" " alt="" coords="174,209,210,215,205,217,176,214"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1248,5,1436,48"/>
+<area shape="poly" title=" " alt="" coords="859,169,913,129,946,108,982,91,1044,69,1110,53,1235,35,1230,36,1111,58,1046,74,984,96,949,113,916,133,861,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="988,172,1176,215"/>
+<area shape="poly" title=" " alt="" coords="927,199,975,202,970,203,928,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="983,105,1182,148"/>
+<area shape="poly" title=" " alt="" coords="915,169,988,152,983,153,916,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1505,53,1719,96"/>
+<area shape="poly" title=" " alt="" coords="1437,41,1492,53,1487,53,1437,46"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1770,216,1958,259"/>
+<area shape="poly" title=" " alt="" coords="1648,94,1819,208,1814,207,1646,99"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="2006,216,2241,259"/>
+<area shape="poly" title=" " alt="" coords="1958,235,1993,237,1988,237,1958,240"/>
+<area shape="poly" title=" " alt="" coords="985,185,943,187,942,182,990,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1518,331,1706,373"/>
+<area shape="poly" title=" " alt="" coords="1166,212,1184,225,1195,238,1202,251,1207,278,1213,303,1220,314,1232,324,1262,342,1295,355,1366,370,1437,374,1500,372,1505,372,1437,379,1365,376,1294,360,1260,347,1228,329,1216,317,1208,305,1202,279,1197,253,1191,241,1180,229,1165,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="1230,272,1454,315"/>
+<area shape="poly" title=" " alt="" coords="1156,213,1183,224,1207,241,1231,258,1246,266,1241,266,1229,262,1204,246,1181,229,1156,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1236,139,1448,181"/>
+<area shape="poly" title=" " alt="" coords="1176,179,1224,175,1219,176,1177,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1248,205,1436,248"/>
+<area shape="poly" title=" " alt="" coords="1177,203,1235,213,1230,213,1177,208"/>
+<area shape="poly" title=" " alt="" coords="1692,327,1721,316,1770,292,1814,268,1819,267,1773,296,1723,321,1693,333"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1502,264,1722,307"/>
+<area shape="poly" title=" " alt="" coords="1455,287,1490,289,1484,289,1455,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1518,168,1706,211"/>
+<area shape="poly" title=" " alt="" coords="1420,269,1453,258,1550,218,1555,217,1455,262,1421,274"/>
+<area shape="poly" title=" " alt="" coords="1448,169,1505,177,1500,178,1448,174"/>
+<area shape="poly" title=" " alt="" coords="1126,102,1229,58,1246,54,1251,52,1231,62,1128,107"/>
+<area shape="poly" title=" " alt="" coords="1182,137,1224,144,1218,145,1182,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1234,72,1451,115"/>
+<area shape="poly" title=" " alt="" coords="1182,111,1221,109,1215,110,1183,116"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="449,275,674,317"/>
+<area shape="poly" title=" " alt="" coords="391,249,466,270,460,271,391,254"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#af1391b502199d287017db7b761a822c5" title=" " alt="" coords="440,208,683,251"/>
+<area shape="poly" title=" " alt="" coords="392,227,427,229,422,230,393,232"/>
+<area shape="poly" title=" " alt="" coords="649,272,682,260,730,236,766,222,771,221,732,241,684,265,651,277"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#aba9586dafaf74879592069dc03679f69" title=" " alt="" coords="737,251,929,293"/>
+<area shape="poly" title=" " alt="" coords="675,283,724,281,719,282,675,289"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1318530d0bc8743ff0b337f1e3007a8b" title=" " alt="" coords="748,317,918,360"/>
+<area shape="poly" title=" " alt="" coords="675,311,736,323,730,323,675,316"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="731,384,935,427"/>
+<area shape="poly" title=" " alt="" coords="609,315,732,370,751,379,746,378,730,374,608,321"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a565cc76798613d133244c1492b54b813" title=" " alt="" coords="984,263,1180,305"/>
+<area shape="poly" title=" " alt="" coords="930,274,971,278,966,279,930,279"/>
+<area shape="poly" title=" " alt="" coords="1036,261,1033,253,1041,244,1058,238,1082,236,1109,238,1127,247,1121,247,1108,244,1082,241,1059,243,1044,248,1039,254,1040,264"/>
+<area shape="poly" title=" " alt="" coords="683,211,726,207,721,208,685,216"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f6d3a3ecbb0bbd5d50b52a3a93d013a" name="a3f6d3a3ecbb0bbd5d50b52a3a93d013a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6d3a3ecbb0bbd5d50b52a3a93d013a">&#9670;&#160;</a></span>Serialize&lt; T &gt;() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="#a867b6aee690c14fc4279b3336a369b66">Engine.Serialization.InputArchive.Serialize</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>setter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00070">70</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a3f6d3a3ecbb0bbd5d50b52a3a93d013a_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a3f6d3a3ecbb0bbd5d50b52a3a93d013a_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a3f6d3a3ecbb0bbd5d50b52a3a93d013a_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a3f6d3a3ecbb0bbd5d50b52a3a93d013a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,179,175,221"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="739,172,927,215"/>
+<area shape="poly" title=" " alt="" coords="174,195,223,193,724,190,722,195,223,199,176,200"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="223,208,392,251"/>
+<area shape="poly" title=" " alt="" coords="174,209,210,215,205,217,176,214"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1248,5,1436,48"/>
+<area shape="poly" title=" " alt="" coords="859,169,913,129,946,108,982,91,1044,69,1110,53,1235,35,1230,36,1111,58,1046,74,984,96,949,113,916,133,861,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="988,172,1176,215"/>
+<area shape="poly" title=" " alt="" coords="927,199,975,202,970,203,928,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="983,105,1182,148"/>
+<area shape="poly" title=" " alt="" coords="915,169,988,152,983,153,916,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1505,53,1719,96"/>
+<area shape="poly" title=" " alt="" coords="1437,41,1492,53,1487,53,1437,46"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1770,216,1958,259"/>
+<area shape="poly" title=" " alt="" coords="1648,94,1819,208,1814,207,1646,99"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="2006,216,2241,259"/>
+<area shape="poly" title=" " alt="" coords="1958,235,1993,237,1988,237,1958,240"/>
+<area shape="poly" title=" " alt="" coords="985,185,943,187,942,182,990,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1518,331,1706,373"/>
+<area shape="poly" title=" " alt="" coords="1166,212,1184,225,1195,238,1202,251,1207,278,1213,303,1220,314,1232,324,1262,342,1295,355,1366,370,1437,374,1500,372,1505,372,1437,379,1365,376,1294,360,1260,347,1228,329,1216,317,1208,305,1202,279,1197,253,1191,241,1180,229,1165,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="1230,272,1454,315"/>
+<area shape="poly" title=" " alt="" coords="1156,213,1183,224,1207,241,1231,258,1246,266,1241,266,1229,262,1204,246,1181,229,1156,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1236,139,1448,181"/>
+<area shape="poly" title=" " alt="" coords="1176,179,1224,175,1219,176,1177,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1248,205,1436,248"/>
+<area shape="poly" title=" " alt="" coords="1177,203,1235,213,1230,213,1177,208"/>
+<area shape="poly" title=" " alt="" coords="1692,327,1721,316,1770,292,1814,268,1819,267,1773,296,1723,321,1693,333"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1502,264,1722,307"/>
+<area shape="poly" title=" " alt="" coords="1455,287,1490,289,1484,289,1455,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1518,168,1706,211"/>
+<area shape="poly" title=" " alt="" coords="1420,269,1453,258,1550,218,1555,217,1455,262,1421,274"/>
+<area shape="poly" title=" " alt="" coords="1448,169,1505,177,1500,178,1448,174"/>
+<area shape="poly" title=" " alt="" coords="1126,102,1229,58,1246,54,1251,52,1231,62,1128,107"/>
+<area shape="poly" title=" " alt="" coords="1182,137,1224,144,1218,145,1182,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1234,72,1451,115"/>
+<area shape="poly" title=" " alt="" coords="1182,111,1221,109,1215,110,1183,116"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="449,275,674,317"/>
+<area shape="poly" title=" " alt="" coords="391,249,466,270,460,271,391,254"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#af1391b502199d287017db7b761a822c5" title=" " alt="" coords="440,208,683,251"/>
+<area shape="poly" title=" " alt="" coords="392,227,427,229,422,230,393,232"/>
+<area shape="poly" title=" " alt="" coords="649,272,682,260,730,236,766,222,771,221,732,241,684,265,651,277"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#aba9586dafaf74879592069dc03679f69" title=" " alt="" coords="737,251,929,293"/>
+<area shape="poly" title=" " alt="" coords="675,283,724,281,719,282,675,289"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1318530d0bc8743ff0b337f1e3007a8b" title=" " alt="" coords="748,317,918,360"/>
+<area shape="poly" title=" " alt="" coords="675,311,736,323,730,323,675,316"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="731,384,935,427"/>
+<area shape="poly" title=" " alt="" coords="609,315,732,370,751,379,746,378,730,374,608,321"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a565cc76798613d133244c1492b54b813" title=" " alt="" coords="984,263,1180,305"/>
+<area shape="poly" title=" " alt="" coords="930,274,971,278,966,279,930,279"/>
+<area shape="poly" title=" " alt="" coords="1036,261,1033,253,1041,244,1058,238,1082,236,1109,238,1127,247,1121,247,1108,244,1082,241,1059,243,1044,248,1039,254,1040,264"/>
+<area shape="poly" title=" " alt="" coords="683,211,726,207,721,208,685,216"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a68bc3cf4940228bc3e30da02651a37c8" name="a68bc3cf4940228bc3e30da02651a37c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68bc3cf4940228bc3e30da02651a37c8">&#9670;&#160;</a></span>Serialize&lt; T &gt;() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="#a867b6aee690c14fc4279b3336a369b66">Engine.Serialization.InputArchive.Serialize</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref T</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00066">66</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a68bc3cf4940228bc3e30da02651a37c8_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a68bc3cf4940228bc3e30da02651a37c8_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a68bc3cf4940228bc3e30da02651a37c8_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a68bc3cf4940228bc3e30da02651a37c8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,179,175,221"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="739,172,927,215"/>
+<area shape="poly" title=" " alt="" coords="174,195,223,193,724,190,722,195,223,199,176,200"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="223,208,392,251"/>
+<area shape="poly" title=" " alt="" coords="174,209,210,215,205,217,176,214"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1248,5,1436,48"/>
+<area shape="poly" title=" " alt="" coords="859,169,913,129,946,108,982,91,1044,69,1110,53,1235,35,1230,36,1111,58,1046,74,984,96,949,113,916,133,861,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="988,172,1176,215"/>
+<area shape="poly" title=" " alt="" coords="927,199,975,202,970,203,928,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="983,105,1182,148"/>
+<area shape="poly" title=" " alt="" coords="915,169,988,152,983,153,916,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1505,53,1719,96"/>
+<area shape="poly" title=" " alt="" coords="1437,41,1492,53,1487,53,1437,46"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1770,216,1958,259"/>
+<area shape="poly" title=" " alt="" coords="1648,94,1819,208,1814,207,1646,99"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="2006,216,2241,259"/>
+<area shape="poly" title=" " alt="" coords="1958,235,1993,237,1988,237,1958,240"/>
+<area shape="poly" title=" " alt="" coords="985,185,943,187,942,182,990,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1518,331,1706,373"/>
+<area shape="poly" title=" " alt="" coords="1166,212,1184,225,1195,238,1202,251,1207,278,1213,303,1220,314,1232,324,1262,342,1295,355,1366,370,1437,374,1500,372,1505,372,1437,379,1365,376,1294,360,1260,347,1228,329,1216,317,1208,305,1202,279,1197,253,1191,241,1180,229,1165,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="1230,272,1454,315"/>
+<area shape="poly" title=" " alt="" coords="1156,213,1183,224,1207,241,1231,258,1246,266,1241,266,1229,262,1204,246,1181,229,1156,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1236,139,1448,181"/>
+<area shape="poly" title=" " alt="" coords="1176,179,1224,175,1219,176,1177,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1248,205,1436,248"/>
+<area shape="poly" title=" " alt="" coords="1177,203,1235,213,1230,213,1177,208"/>
+<area shape="poly" title=" " alt="" coords="1692,327,1721,316,1770,292,1814,268,1819,267,1773,296,1723,321,1693,333"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1502,264,1722,307"/>
+<area shape="poly" title=" " alt="" coords="1455,287,1490,289,1484,289,1455,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1518,168,1706,211"/>
+<area shape="poly" title=" " alt="" coords="1420,269,1453,258,1550,218,1555,217,1455,262,1421,274"/>
+<area shape="poly" title=" " alt="" coords="1448,169,1505,177,1500,178,1448,174"/>
+<area shape="poly" title=" " alt="" coords="1126,102,1229,58,1246,54,1251,52,1231,62,1128,107"/>
+<area shape="poly" title=" " alt="" coords="1182,137,1224,144,1218,145,1182,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1234,72,1451,115"/>
+<area shape="poly" title=" " alt="" coords="1182,111,1221,109,1215,110,1183,116"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="449,275,674,317"/>
+<area shape="poly" title=" " alt="" coords="391,249,466,270,460,271,391,254"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#af1391b502199d287017db7b761a822c5" title=" " alt="" coords="440,208,683,251"/>
+<area shape="poly" title=" " alt="" coords="392,227,427,229,422,230,393,232"/>
+<area shape="poly" title=" " alt="" coords="649,272,682,260,730,236,766,222,771,221,732,241,684,265,651,277"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#aba9586dafaf74879592069dc03679f69" title=" " alt="" coords="737,251,929,293"/>
+<area shape="poly" title=" " alt="" coords="675,283,724,281,719,282,675,289"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1318530d0bc8743ff0b337f1e3007a8b" title=" " alt="" coords="748,317,918,360"/>
+<area shape="poly" title=" " alt="" coords="675,311,736,323,730,323,675,316"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="731,384,935,427"/>
+<area shape="poly" title=" " alt="" coords="609,315,732,370,751,379,746,378,730,374,608,321"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a565cc76798613d133244c1492b54b813" title=" " alt="" coords="984,263,1180,305"/>
+<area shape="poly" title=" " alt="" coords="930,274,971,278,966,279,930,279"/>
+<area shape="poly" title=" " alt="" coords="1036,261,1033,253,1041,244,1058,238,1082,236,1109,238,1127,247,1121,247,1108,244,1082,241,1059,243,1044,248,1039,254,1040,264"/>
+<area shape="poly" title=" " alt="" coords="683,211,726,207,721,208,685,216"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a71cf4fb1f7e35f414df160bd210e2bad" name="a71cf4fb1f7e35f414df160bd210e2bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71cf4fb1f7e35f414df160bd210e2bad">&#9670;&#160;</a></span>Serialize&lt; T &gt;() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="#a867b6aee690c14fc4279b3336a369b66">Engine.Serialization.InputArchive.Serialize</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="typeconstraint">
+<dl><dt><b>类型限制</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>class</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00062">62</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_input_archive_a71cf4fb1f7e35f414df160bd210e2bad_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_input_archive_a71cf4fb1f7e35f414df160bd210e2bad_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_input_archive_a71cf4fb1f7e35f414df160bd210e2bad_cgraph" id="aclass_engine_1_1_serialization_1_1_input_archive_a71cf4fb1f7e35f414df160bd210e2bad_cgraph">
+<area shape="rect" title=" " alt="" coords="5,179,175,221"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="739,172,927,215"/>
+<area shape="poly" title=" " alt="" coords="174,195,223,193,724,190,722,195,223,199,176,200"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a20c7ddd2b4a32d00198ab3798fa912f2" title=" " alt="" coords="223,208,392,251"/>
+<area shape="poly" title=" " alt="" coords="174,209,210,215,205,217,176,214"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8ec452e524962e4e44bcb4a75c23f08d" title=" " alt="" coords="1248,5,1436,48"/>
+<area shape="poly" title=" " alt="" coords="859,169,913,129,946,108,982,91,1044,69,1110,53,1235,35,1230,36,1111,58,1046,74,984,96,949,113,916,133,861,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="988,172,1176,215"/>
+<area shape="poly" title=" " alt="" coords="927,199,975,202,970,203,928,205"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="983,105,1182,148"/>
+<area shape="poly" title=" " alt="" coords="915,169,988,152,983,153,916,174"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a5a966ec72e8c9c4e99014af6d1840079" title=" " alt="" coords="1505,53,1719,96"/>
+<area shape="poly" title=" " alt="" coords="1437,41,1492,53,1487,53,1437,46"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#acfb46bcf3ddb67a9ab8ab415942e93fb" title=" " alt="" coords="1770,216,1958,259"/>
+<area shape="poly" title=" " alt="" coords="1648,94,1819,208,1814,207,1646,99"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8e2ac2b1bcca0c9dbf39ab0b8b48c03a" title=" " alt="" coords="2006,216,2241,259"/>
+<area shape="poly" title=" " alt="" coords="1958,235,1993,237,1988,237,1958,240"/>
+<area shape="poly" title=" " alt="" coords="985,185,943,187,942,182,990,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#adb08b75326b672b869d173075a3c64c5" title=" " alt="" coords="1518,331,1706,373"/>
+<area shape="poly" title=" " alt="" coords="1166,212,1184,225,1195,238,1202,251,1207,278,1213,303,1220,314,1232,324,1262,342,1295,355,1366,370,1437,374,1500,372,1505,372,1437,379,1365,376,1294,360,1260,347,1228,329,1216,317,1208,305,1202,279,1197,253,1191,241,1180,229,1165,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a44e22f53731fbe726f914a73de189083" title=" " alt="" coords="1230,272,1454,315"/>
+<area shape="poly" title=" " alt="" coords="1156,213,1183,224,1207,241,1231,258,1246,266,1241,266,1229,262,1204,246,1181,229,1156,218"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a19b8089bc4e2502d1a9fdbb1ad1d66e3" title=" " alt="" coords="1236,139,1448,181"/>
+<area shape="poly" title=" " alt="" coords="1176,179,1224,175,1219,176,1177,184"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#af5dd4a387a2ba58c829602124a706594" title=" " alt="" coords="1248,205,1436,248"/>
+<area shape="poly" title=" " alt="" coords="1177,203,1235,213,1230,213,1177,208"/>
+<area shape="poly" title=" " alt="" coords="1692,327,1721,316,1770,292,1814,268,1819,267,1773,296,1723,321,1693,333"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a7ab5a5b4cbf93cfc4121ddcc3d7cb04a" title=" " alt="" coords="1502,264,1722,307"/>
+<area shape="poly" title=" " alt="" coords="1455,287,1490,289,1484,289,1455,293"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#afa0699af2b8480812c356e30a0d06667" title=" " alt="" coords="1518,168,1706,211"/>
+<area shape="poly" title=" " alt="" coords="1420,269,1453,258,1550,218,1555,217,1455,262,1421,274"/>
+<area shape="poly" title=" " alt="" coords="1448,169,1505,177,1500,178,1448,174"/>
+<area shape="poly" title=" " alt="" coords="1126,102,1229,58,1246,54,1251,52,1231,62,1128,107"/>
+<area shape="poly" title=" " alt="" coords="1182,137,1224,144,1218,145,1182,142"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="1234,72,1451,115"/>
+<area shape="poly" title=" " alt="" coords="1182,111,1221,109,1215,110,1183,116"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="449,275,674,317"/>
+<area shape="poly" title=" " alt="" coords="391,249,466,270,460,271,391,254"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#af1391b502199d287017db7b761a822c5" title=" " alt="" coords="440,208,683,251"/>
+<area shape="poly" title=" " alt="" coords="392,227,427,229,422,230,393,232"/>
+<area shape="poly" title=" " alt="" coords="649,272,682,260,730,236,766,222,771,221,732,241,684,265,651,277"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#aba9586dafaf74879592069dc03679f69" title=" " alt="" coords="737,251,929,293"/>
+<area shape="poly" title=" " alt="" coords="675,283,724,281,719,282,675,289"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a1318530d0bc8743ff0b337f1e3007a8b" title=" " alt="" coords="748,317,918,360"/>
+<area shape="poly" title=" " alt="" coords="675,311,736,323,730,323,675,316"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a185a96ef3da5e2c04b0d798ff8064199" title=" " alt="" coords="731,384,935,427"/>
+<area shape="poly" title=" " alt="" coords="609,315,732,370,751,379,746,378,730,374,608,321"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a565cc76798613d133244c1492b54b813" title=" " alt="" coords="984,263,1180,305"/>
+<area shape="poly" title=" " alt="" coords="930,274,971,278,966,279,930,279"/>
+<area shape="poly" title=" " alt="" coords="1036,261,1033,253,1041,244,1058,238,1082,236,1109,238,1127,247,1121,247,1108,244,1082,241,1059,243,1044,248,1039,254,1040,264"/>
+<area shape="poly" title=" " alt="" coords="683,211,726,207,721,208,685,216"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3d2f8a018996b13e2869a44c61b4865b" name="a3d2f8a018996b13e2869a44c61b4865b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2f8a018996b13e2869a44c61b4865b">&#9670;&#160;</a></span>SerializeCollection&lt; T &gt;() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; T &gt; Engine.Serialization.InputArchive.SerializeCollection&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a48e22096a37b3f9a0186fcd7268c956d" name="a48e22096a37b3f9a0186fcd7268c956d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e22096a37b3f9a0186fcd7268c956d">&#9670;&#160;</a></span>SerializeCollection&lt; T &gt;() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.SerializeCollection&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>adder</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a24310d055057e697c51addebb07ad0bd" name="a24310d055057e697c51addebb07ad0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24310d055057e697c51addebb07ad0bd">&#9670;&#160;</a></span>SerializeCollection&lt; T &gt;() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.SerializeCollection&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ICollection&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>collection</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63f20f9919373e9052176b886ee1ffd5" name="a63f20f9919373e9052176b886ee1ffd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f20f9919373e9052176b886ee1ffd5">&#9670;&#160;</a></span>SerializeDictionary&lt; K, V &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt; K, V &gt; Engine.Serialization.InputArchive.SerializeDictionary&lt; K, V &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00102">102</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a10963beb311b4ce81d2c9c727265ecd8" name="a10963beb311b4ce81d2c9c727265ecd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10963beb311b4ce81d2c9c727265ecd8">&#9670;&#160;</a></span>SerializeDictionary&lt; K, V &gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.InputArchive.SerializeDictionary&lt; K, V &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IDictionary&lt; K, V &gt;</td>          <td class="paramname"><span class="paramname"><em>dictionary</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="ac1e17ce729f4f2a8ad3ca0c673088fa9" name="ac1e17ce729f4f2a8ad3ca0c673088fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1e17ce729f4f2a8ad3ca0c673088fa9">&#9670;&#160;</a></span>m_objectById</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;int, object&gt; Engine.Serialization.InputArchive.m_objectById = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00003">3</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa15e9b19e3a05b34a61616691672a6a7" name="aa15e9b19e3a05b34a61616691672a6a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15e9b19e3a05b34a61616691672a6a7">&#9670;&#160;</a></span>m_stack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DynamicArray&lt;object&gt; Engine.Serialization.InputArchive.m_stack = new()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="a0323378adc860c339900eb5e8e8b088b" name="a0323378adc860c339900eb5e8e8b088b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0323378adc860c339900eb5e8e8b088b">&#9670;&#160;</a></span>Stack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadOnlyList&lt;object&gt; Engine.Serialization.InputArchive.Stack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a> 第 <a class="el" href="_input_archive_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Serialization/<a class="el" href="_input_archive_8cs_source.html">InputArchive.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_engine.html">Engine</a></li><li class="navelem"><a href="namespace_engine_1_1_serialization.html">Serialization</a></li><li class="navelem"><a href="class_engine_1_1_serialization_1_1_input_archive.html">InputArchive</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

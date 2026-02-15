@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Dialog/LevelFactorDialog.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_level_factor_dialog_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">LevelFactorDialog.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_level_factor_dialog_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_level_factor_dialog.html#a7b2df0cafe6c4e29b146d7bae67abbd1">LevelFactorDialog</a> : <a class="code hl_function" href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Dialog</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#a544426fb8ade87b5c2003d245b7aff8b">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a544426fb8ade87b5c2003d245b7aff8b">m_titleWidget</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#af81d4c4325e7e3ce344ed8c47e2fffe6">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#af81d4c4325e7e3ce344ed8c47e2fffe6">m_descriptionWidget</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#a7d37ecdd544e70ac8d2bfa605879e124">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a7d37ecdd544e70ac8d2bfa605879e124">m_namesWidget</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#a2128aa0ea185bc73d065f04f619f7161">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a2128aa0ea185bc73d065f04f619f7161">m_valuesWidget</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#a4def3c633545de54c5b550b3b7720963">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a4def3c633545de54c5b550b3b7720963">m_totalNameWidget</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#a2f3654cada5453b26f3125e38a8299b9">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a2f3654cada5453b26f3125e38a8299b9">m_totalValueWidget</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#a7fbe3ca79b73d42b6ac94e859d11311b">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a7fbe3ca79b73d42b6ac94e859d11311b">m_okWidget</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#aea3ddbc25811cd3ba34144cd85e4f026">   13</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#aea3ddbc25811cd3ba34144cd85e4f026">fName</a> = <span class="stringliteral">&quot;LevelFactorDialog&quot;</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#a7b2df0cafe6c4e29b146d7bae67abbd1">   15</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_level_factor_dialog.html#a7b2df0cafe6c4e29b146d7bae67abbd1">LevelFactorDialog</a>(<span class="keywordtype">string</span> title, <span class="keywordtype">string</span> description, IEnumerable&lt;ComponentLevel.Factor&gt; factors, <span class="keywordtype">float</span> total) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Dialogs/LevelFactorDialog&quot;</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a544426fb8ade87b5c2003d245b7aff8b">m_titleWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;LevelFactorDialog.Title&quot;</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#af81d4c4325e7e3ce344ed8c47e2fffe6">m_descriptionWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;LevelFactorDialog.Description&quot;</span>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a7d37ecdd544e70ac8d2bfa605879e124">m_namesWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;LevelFactorDialog.Names&quot;</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a2128aa0ea185bc73d065f04f619f7161">m_valuesWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;LevelFactorDialog.Values&quot;</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a4def3c633545de54c5b550b3b7720963">m_totalNameWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;LevelFactorDialog.TotalName&quot;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a2f3654cada5453b26f3125e38a8299b9">m_totalValueWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;LevelFactorDialog.TotalValue&quot;</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a7fbe3ca79b73d42b6ac94e859d11311b">m_okWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;LevelFactorDialog.OK&quot;</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            m_titleWidget.Text = title;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            m_descriptionWidget.Text = description;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            m_namesWidget.Text = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            m_valuesWidget.Text = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_component_level.html">ComponentLevel</a>.<a class="code hl_class" href="class_game_1_1_component_level_1_1_factor.html">Factor</a> factor in factors) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                m_namesWidget.Text += $<span class="stringliteral">&quot;{factor.Description,24}\n&quot;</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordtype">string</span> factorValueString = factor.Value <span class="keywordflow">switch</span> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    float.NegativeInfinity =&gt; <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#aea3ddbc25811cd3ba34144cd85e4f026">fName</a>, <span class="stringliteral">&quot;1&quot;</span>),</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    float.PositiveInfinity =&gt; <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#aea3ddbc25811cd3ba34144cd85e4f026">fName</a>, <span class="stringliteral">&quot;2&quot;</span>),</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    _ =&gt; <span class="keywordtype">string</span>.Format(CultureInfo.InvariantCulture, <span class="stringliteral">&quot;{0:0.00}&quot;</span>, factor.Value)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                };</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                m_valuesWidget.Text += factor.FactorAdditionType <span class="keywordflow">switch</span> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    <a class="code hl_enumvalue" href="namespace_game.html#a09615bf340807cc6a7cc9602617df32dae257376d913f3b53cbb4a9b19d770648">FactorAdditionType.Multiply</a> =&gt; $<span class="stringliteral">&quot;x {factorValueString}\n&quot;</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    _ =&gt; $<span class="stringliteral">&quot;+ {factorValueString}\n&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            m_namesWidget.Text = <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a7d37ecdd544e70ac8d2bfa605879e124">m_namesWidget</a>.Text.TrimEnd();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            m_valuesWidget.Text = <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a2128aa0ea185bc73d065f04f619f7161">m_valuesWidget</a>.Text.TrimEnd();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            m_totalNameWidget.Text = $<span class="stringliteral">&quot;{LanguageControl.Get(fName, &quot;</span>3<span class="stringliteral">&quot;),24}&quot;</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            m_totalValueWidget.Text = <span class="keywordtype">string</span>.Format(CultureInfo.InvariantCulture, <span class="stringliteral">&quot;x {0:0.00}&quot;</span>, total);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_game_1_1_level_factor_dialog.html#a542c54a643c49606daef106daad652b3">   47</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_level_factor_dialog.html#a542c54a643c49606daef106daad652b3">Update</a>() {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">if</span> (Input.Cancel</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                || <a class="code hl_variable" href="class_game_1_1_level_factor_dialog.html#a7fbe3ca79b73d42b6ac94e859d11311b">m_okWidget</a>.IsClicked) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_level_1_1_factor_html"><div class="ttname"><a href="class_game_1_1_component_level_1_1_factor.html">Game.ComponentLevel.Factor</a></div><div class="ttdoc">这里的Factor类型从struct改为class，是由于模组在修改Factor的时候，通常是需要修改引用的值。 如果是struct则只能复制并修改值，不能修改引用。</div><div class="ttdef"><b>定义</b> <a href="_component_level_8cs_source.html#l00017">ComponentLevel.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_level_html"><div class="ttname"><a href="class_game_1_1_component_level.html">Game.ComponentLevel</a></div><div class="ttdef"><b>定义</b> <a href="_component_level_8cs_source.html#l00012">ComponentLevel.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialog_html_a6b78fd0c524e930298bbfe02c896866f"><div class="ttname"><a href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Game.Dialog.Dialog</a></div><div class="ttdeci">Dialog()</div><div class="ttdef"><b>定义</b> <a href="_dialog_8cs_source.html#l00005">Dialog.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html">Game.DialogsManager</a></div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00004">DialogsManager.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_a1924cf0e777145d7e36ec311d686c7e4"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">Game.DialogsManager.HideDialog</a></div><div class="ttdeci">static void HideDialog(Dialog dialog)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00058">DialogsManager.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_a2128aa0ea185bc73d065f04f619f7161"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#a2128aa0ea185bc73d065f04f619f7161">Game.LevelFactorDialog.m_valuesWidget</a></div><div class="ttdeci">LabelWidget m_valuesWidget</div><div class="ttdef"><b>定义</b> <a href="#l00009">LevelFactorDialog.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_a2f3654cada5453b26f3125e38a8299b9"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#a2f3654cada5453b26f3125e38a8299b9">Game.LevelFactorDialog.m_totalValueWidget</a></div><div class="ttdeci">LabelWidget m_totalValueWidget</div><div class="ttdef"><b>定义</b> <a href="#l00011">LevelFactorDialog.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_a4def3c633545de54c5b550b3b7720963"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#a4def3c633545de54c5b550b3b7720963">Game.LevelFactorDialog.m_totalNameWidget</a></div><div class="ttdeci">LabelWidget m_totalNameWidget</div><div class="ttdef"><b>定义</b> <a href="#l00010">LevelFactorDialog.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_a542c54a643c49606daef106daad652b3"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#a542c54a643c49606daef106daad652b3">Game.LevelFactorDialog.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00047">LevelFactorDialog.cs:47</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_a544426fb8ade87b5c2003d245b7aff8b"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#a544426fb8ade87b5c2003d245b7aff8b">Game.LevelFactorDialog.m_titleWidget</a></div><div class="ttdeci">LabelWidget m_titleWidget</div><div class="ttdef"><b>定义</b> <a href="#l00006">LevelFactorDialog.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_a7b2df0cafe6c4e29b146d7bae67abbd1"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#a7b2df0cafe6c4e29b146d7bae67abbd1">Game.LevelFactorDialog.LevelFactorDialog</a></div><div class="ttdeci">LevelFactorDialog(string title, string description, IEnumerable&lt; ComponentLevel.Factor &gt; factors, float total)</div><div class="ttdef"><b>定义</b> <a href="#l00015">LevelFactorDialog.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_a7d37ecdd544e70ac8d2bfa605879e124"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#a7d37ecdd544e70ac8d2bfa605879e124">Game.LevelFactorDialog.m_namesWidget</a></div><div class="ttdeci">LabelWidget m_namesWidget</div><div class="ttdef"><b>定义</b> <a href="#l00008">LevelFactorDialog.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_a7fbe3ca79b73d42b6ac94e859d11311b"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#a7fbe3ca79b73d42b6ac94e859d11311b">Game.LevelFactorDialog.m_okWidget</a></div><div class="ttdeci">ButtonWidget m_okWidget</div><div class="ttdef"><b>定义</b> <a href="#l00012">LevelFactorDialog.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_aea3ddbc25811cd3ba34144cd85e4f026"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#aea3ddbc25811cd3ba34144cd85e4f026">Game.LevelFactorDialog.fName</a></div><div class="ttdeci">const string fName</div><div class="ttdef"><b>定义</b> <a href="#l00013">LevelFactorDialog.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_level_factor_dialog_html_af81d4c4325e7e3ce344ed8c47e2fffe6"><div class="ttname"><a href="class_game_1_1_level_factor_dialog.html#af81d4c4325e7e3ce344ed8c47e2fffe6">Game.LevelFactorDialog.m_descriptionWidget</a></div><div class="ttdeci">LabelWidget m_descriptionWidget</div><div class="ttdef"><b>定义</b> <a href="#l00007">LevelFactorDialog.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a09615bf340807cc6a7cc9602617df32dae257376d913f3b53cbb4a9b19d770648"><div class="ttname"><a href="namespace_game.html#a09615bf340807cc6a7cc9602617df32dae257376d913f3b53cbb4a9b19d770648">Game.FactorAdditionType.Multiply</a></div><div class="ttdeci">@ Multiply</div><div class="ttdef"><b>定义</b> <a href="_component_level_8cs_source.html#l00008">ComponentLevel.cs:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_b6205966024a0faf73eb78e73558e78e.html">Dialog</a></li><li class="navelem"><a href="_level_factor_dialog_8cs.html">LevelFactorDialog.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

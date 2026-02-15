@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemRakeBlockBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_rake_block_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemRakeBlockBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_rake_block_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_rake_block_behavior.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_rake_block_behavior.html">SubsystemRakeBlockBehavior</a> : <a class="code hl_class" href="class_game_1_1_subsystem_block_behavior.html">SubsystemBlockBehavior</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_rake_block_behavior.html#a47efb952d8a70d06387aa05b0315deb8">    6</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_subsystem_block_behavior.html#aa5d990a2c3e869337c27e92fff363bf8">SubsystemTerrain</a> <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a47efb952d8a70d06387aa05b0315deb8">m_subsystemTerrain</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_rake_block_behavior.html#adc48b813c194fe0db890abd671fd546f">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_particles.html">SubsystemParticles</a> <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#adc48b813c194fe0db890abd671fd546f">m_subsystemParticles</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_rake_block_behavior.html#a8d1f34b83cec30005574b8042ec24b01">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a> <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a8d1f34b83cec30005574b8042ec24b01">m_subsystemAudio</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_rake_block_behavior.html#af09cf43c1422200fbed86ca175839203">   12</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span>[] <a class="code hl_property" href="class_game_1_1_subsystem_rake_block_behavior.html#af09cf43c1422200fbed86ca175839203">HandledBlocks</a> =&gt; [169, 219, 171, 172];</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_rake_block_behavior.html#ae41fd0368ac985a3d9e2f7d201ab8c36">   14</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_subsystem_rake_block_behavior.html#ae41fd0368ac985a3d9e2f7d201ab8c36">OnUse</a>(<a class="code hl_struct" href="struct_engine_1_1_ray3.html">Ray3</a> ray, <a class="code hl_class" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_struct" href="struct_game_1_1_terrain_raycast_result.html">TerrainRaycastResult</a>? terrainRaycastResult = componentMiner.<a class="code hl_function" href="class_game_1_1_component_miner.html#abbaa24d07ac02bbe4d7ceefea16c642a">Raycast</a>&lt;<a class="code hl_struct" href="struct_game_1_1_terrain_raycast_result.html">TerrainRaycastResult</a>&gt;(ray, <a class="code hl_enumeration" href="namespace_game.html#a664a10d17b5481c0b3fd9fe744bc96ff">RaycastMode</a>.Interaction);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordflow">if</span> (terrainRaycastResult.HasValue) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <span class="keywordtype">bool</span> raked = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                <span class="keywordflow">if</span> (terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Face == 4) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                    <span class="keywordtype">int</span> cellValue = <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a47efb952d8a70d06387aa05b0315deb8">m_subsystemTerrain</a>.Terrain.GetCellValue(</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                        terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.X,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                        terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Y,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                        terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Z</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    );</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    <span class="keywordtype">int</span> num = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">ExtractContents</a>(cellValue);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    <a class="code hl_class" href="class_game_1_1_block.html">Block</a> block = <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_property" href="class_game_1_1_blocks_manager.html#afa0414b230000fb6f807cf24d2de4334">Blocks</a>[num];</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    <span class="keywordflow">switch</span> (num) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                        <span class="keywordflow">case</span> 2: {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                            <span class="keywordtype">int</span> value2 = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#adf73152d4dcc1f88e53300748d4e10fe">ReplaceContents</a>(cellValue, 168);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                            <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a47efb952d8a70d06387aa05b0315deb8">m_subsystemTerrain</a>.ChangeCell(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.X,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                                terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Y,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                                terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Z,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                                value2</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                            );</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                            <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a8d1f34b83cec30005574b8042ec24b01">m_subsystemAudio</a>.PlayRandomSound(</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                <span class="stringliteral">&quot;Audio/Impacts/Dirt&quot;</span>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                0.5f,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                                0f,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                                <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                    terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.X,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                    terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Y,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                    terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Z</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                ),</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                3f,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                                <span class="keyword">true</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                            );</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> position2 = <span class="keyword">new</span>(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                terrainRaycastResult.Value.CellFace.X + 0.5f,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                                terrainRaycastResult.Value.CellFace.Y + 1.25f,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                terrainRaycastResult.Value.CellFace.Z + 0.5f</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                            );</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                            <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#adc48b813c194fe0db890abd671fd546f">m_subsystemParticles</a>.AddParticleSystem(block.<a class="code hl_function" href="class_game_1_1_block.html#a0d06f96a9b8a9256360c68e0af2b075e">CreateDebrisParticleSystem</a>(<a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a47efb952d8a70d06387aa05b0315deb8">m_subsystemTerrain</a>, position2, cellValue, 0.5f));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                            raked = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                        <span class="keywordflow">case</span> 8: {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                            <span class="keywordtype">int</span> value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#adf73152d4dcc1f88e53300748d4e10fe">ReplaceContents</a>(cellValue, 2);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                            <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a47efb952d8a70d06387aa05b0315deb8">m_subsystemTerrain</a>.ChangeCell(</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.X,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Y,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Z,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                                value</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                            );</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                            <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a8d1f34b83cec30005574b8042ec24b01">m_subsystemAudio</a>.PlayRandomSound(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                                <span class="stringliteral">&quot;Audio/Impacts/Plant&quot;</span>,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                0.5f,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                0f,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                    terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.X,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                                    terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Y,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                    terrainRaycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Value</a>.CellFace.Z</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                                ),</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                3f,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                                <span class="keyword">true</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                            );</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> position = <span class="keyword">new</span>(</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                terrainRaycastResult.Value.CellFace.X + 0.5f,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                                terrainRaycastResult.Value.CellFace.Y + 1.2f,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                                terrainRaycastResult.Value.CellFace.Z + 0.5f</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                            );</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                            <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#adc48b813c194fe0db890abd671fd546f">m_subsystemParticles</a>.AddParticleSystem(block.<a class="code hl_function" href="class_game_1_1_block.html#a0d06f96a9b8a9256360c68e0af2b075e">CreateDebrisParticleSystem</a>(<a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a47efb952d8a70d06387aa05b0315deb8">m_subsystemTerrain</a>, position, cellValue, 0.75f));</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                            raked = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                        }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                <span class="keywordflow">if</span> (raked) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    componentMiner.<a class="code hl_function" href="class_game_1_1_component_miner.html#ae97e093de13986ed58b7e5c08d2fb957">DamageActiveTool</a>(1);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">return</span> raked;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_rake_block_behavior.html#a9c4cb62487f55f001d21e4e2400d896c">   95</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_rake_block_behavior.html#a9c4cb62487f55f001d21e4e2400d896c">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            base.Load(valuesDictionary);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a47efb952d8a70d06387aa05b0315deb8">m_subsystemTerrain</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_property" href="class_game_1_1_subsystem_block_behavior.html#aa5d990a2c3e869337c27e92fff363bf8">SubsystemTerrain</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#adc48b813c194fe0db890abd671fd546f">m_subsystemParticles</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_particles.html">SubsystemParticles</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_rake_block_behavior.html#a8d1f34b83cec30005574b8042ec24b01">m_subsystemAudio</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="ttc" id="a_subsystem_audio_8cs_html_aa72bd5818d1fb1c95123ce286b96e775"><div class="ttname"><a href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a></div><div class="ttdeci">Engine.Vector3 Vector3</div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00005">SubsystemAudio.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html"><div class="ttname"><a href="class_game_1_1_block.html">Game.Block</a></div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00005">Block.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a0d06f96a9b8a9256360c68e0af2b075e"><div class="ttname"><a href="class_game_1_1_block.html#a0d06f96a9b8a9256360c68e0af2b075e">Game.Block.CreateDebrisParticleSystem</a></div><div class="ttdeci">virtual BlockDebrisParticleSystem CreateDebrisParticleSystem(SubsystemTerrain subsystemTerrain, Vector3 position, int value, float strength)</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00480">Block.cs:480</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_afa0414b230000fb6f807cf24d2de4334"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#afa0414b230000fb6f807cf24d2de4334">Game.BlocksManager.Blocks</a></div><div class="ttdeci">static Block[] Blocks</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00041">BlocksManager.cs:41</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html"><div class="ttname"><a href="class_game_1_1_component_miner.html">Game.ComponentMiner</a></div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00007">ComponentMiner.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html_abbaa24d07ac02bbe4d7ceefea16c642a"><div class="ttname"><a href="class_game_1_1_component_miner.html#abbaa24d07ac02bbe4d7ceefea16c642a">Game.ComponentMiner.Raycast</a></div><div class="ttdeci">virtual object Raycast(Ray3 ray, RaycastMode mode, bool raycastTerrain=true, bool raycastBodies=true, bool raycastMovingBlocks=true, float? Reach=null)</div><div class="ttdoc">发出射线检测，检测玩家点击到的目标</div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00596">ComponentMiner.cs:596</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html_ae97e093de13986ed58b7e5c08d2fb957"><div class="ttname"><a href="class_game_1_1_component_miner.html#ae97e093de13986ed58b7e5c08d2fb957">Game.ComponentMiner.DamageActiveTool</a></div><div class="ttdeci">virtual void DamageActiveTool(int damageCount)</div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00698">ComponentMiner.cs:698</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_audio_html"><div class="ttname"><a href="class_game_1_1_subsystem_audio.html">Game.SubsystemAudio</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00008">SubsystemAudio.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html">Game.SubsystemBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00006">SubsystemBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html_aa5d990a2c3e869337c27e92fff363bf8"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html#aa5d990a2c3e869337c27e92fff363bf8">Game.SubsystemBlockBehavior.SubsystemTerrain</a></div><div class="ttdeci">SubsystemTerrain SubsystemTerrain</div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00009">SubsystemBlockBehavior.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_particles_html"><div class="ttname"><a href="class_game_1_1_subsystem_particles.html">Game.SubsystemParticles</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_particles_8cs_source.html#l00007">SubsystemParticles.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_rake_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_rake_block_behavior.html">Game.SubsystemRakeBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">SubsystemRakeBlockBehavior.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_rake_block_behavior_html_a47efb952d8a70d06387aa05b0315deb8"><div class="ttname"><a href="class_game_1_1_subsystem_rake_block_behavior.html#a47efb952d8a70d06387aa05b0315deb8">Game.SubsystemRakeBlockBehavior.m_subsystemTerrain</a></div><div class="ttdeci">SubsystemTerrain m_subsystemTerrain</div><div class="ttdef"><b>定义</b> <a href="#l00006">SubsystemRakeBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_rake_block_behavior_html_a8d1f34b83cec30005574b8042ec24b01"><div class="ttname"><a href="class_game_1_1_subsystem_rake_block_behavior.html#a8d1f34b83cec30005574b8042ec24b01">Game.SubsystemRakeBlockBehavior.m_subsystemAudio</a></div><div class="ttdeci">SubsystemAudio m_subsystemAudio</div><div class="ttdef"><b>定义</b> <a href="#l00010">SubsystemRakeBlockBehavior.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_rake_block_behavior_html_a9c4cb62487f55f001d21e4e2400d896c"><div class="ttname"><a href="class_game_1_1_subsystem_rake_block_behavior.html#a9c4cb62487f55f001d21e4e2400d896c">Game.SubsystemRakeBlockBehavior.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00095">SubsystemRakeBlockBehavior.cs:95</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_rake_block_behavior_html_adc48b813c194fe0db890abd671fd546f"><div class="ttname"><a href="class_game_1_1_subsystem_rake_block_behavior.html#adc48b813c194fe0db890abd671fd546f">Game.SubsystemRakeBlockBehavior.m_subsystemParticles</a></div><div class="ttdeci">SubsystemParticles m_subsystemParticles</div><div class="ttdef"><b>定义</b> <a href="#l00008">SubsystemRakeBlockBehavior.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_rake_block_behavior_html_ae41fd0368ac985a3d9e2f7d201ab8c36"><div class="ttname"><a href="class_game_1_1_subsystem_rake_block_behavior.html#ae41fd0368ac985a3d9e2f7d201ab8c36">Game.SubsystemRakeBlockBehavior.OnUse</a></div><div class="ttdeci">override bool OnUse(Ray3 ray, ComponentMiner componentMiner)</div><div class="ttdef"><b>定义</b> <a href="#l00014">SubsystemRakeBlockBehavior.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_rake_block_behavior_html_af09cf43c1422200fbed86ca175839203"><div class="ttname"><a href="class_game_1_1_subsystem_rake_block_behavior.html#af09cf43c1422200fbed86ca175839203">Game.SubsystemRakeBlockBehavior.HandledBlocks</a></div><div class="ttdeci">override int[] HandledBlocks</div><div class="ttdef"><b>定义</b> <a href="#l00012">SubsystemRakeBlockBehavior.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a221de37baa4a0f91e934920030005677"><div class="ttname"><a href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">Game.Terrain.ExtractContents</a></div><div class="ttdeci">static int ExtractContents(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00303">Terrain.cs:303</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_adf73152d4dcc1f88e53300748d4e10fe"><div class="ttname"><a href="class_game_1_1_terrain.html#adf73152d4dcc1f88e53300748d4e10fe">Game.Terrain.ReplaceContents</a></div><div class="ttdeci">static int ReplaceContents(int value, int contents)</div><div class="ttdoc">方块值的最低10位，替换为目标Content</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00322">Terrain.cs:322</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a664a10d17b5481c0b3fd9fe744bc96ff"><div class="ttname"><a href="namespace_game.html#a664a10d17b5481c0b3fd9fe744bc96ff">Game.RaycastMode</a></div><div class="ttdeci">RaycastMode</div><div class="ttdef"><b>定义</b> <a href="_raycast_mode_8cs_source.html#l00002">RaycastMode.cs:2</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html"><div class="ttname"><a href="struct_engine_1_1_ray3.html">Engine.Ray3</a></div><div class="ttdef"><b>定义</b> <a href="_ray3_8cs_source.html#l00002">Ray3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_game_1_1_terrain_raycast_result_html"><div class="ttname"><a href="struct_game_1_1_terrain_raycast_result.html">Game.TerrainRaycastResult</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_raycast_result_8cs_source.html#l00005">TerrainRaycastResult.cs:5</a></div></div>
+<div class="ttc" id="astruct_game_1_1_terrain_raycast_result_html_abf95b5bf0a665dd3eb97fc53dc0db2d3"><div class="ttname"><a href="struct_game_1_1_terrain_raycast_result.html#abf95b5bf0a665dd3eb97fc53dc0db2d3">Game.TerrainRaycastResult.Value</a></div><div class="ttdeci">int Value</div><div class="ttdef"><b>定义</b> <a href="_terrain_raycast_result_8cs_source.html#l00010">TerrainRaycastResult.cs:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_rake_block_behavior_8cs.html">SubsystemRakeBlockBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

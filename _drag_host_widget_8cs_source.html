@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/DragHostWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_drag_host_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DragHostWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_drag_host_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_drag_host_widget.html#af23079c102a708ec3740987db63e9456">DragHostWidget</a> : <a class="code hl_function" href="class_game_1_1_container_widget.html#a354e896d39c1960ba7d82a6644b7347a">ContainerWidget</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">    5</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#ad728811bb04e9fcf84e1ee46094c734a">    7</a></span>        <span class="keyword">public</span> <span class="keywordtype">object</span> <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#ad728811bb04e9fcf84e1ee46094c734a">m_dragData</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#a21df04aae75e4e5b4adedd32a8bbd091">    9</a></span>        <span class="keyword">public</span> Action <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a21df04aae75e4e5b4adedd32a8bbd091">m_dragEndedHandler</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#aecc208cf41ff0c787f541c5788ce347c">   11</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#aecc208cf41ff0c787f541c5788ce347c">m_dragPosition</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#a93336034d39da0bd81b9e58938a99aef">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_drag_host_widget.html#a93336034d39da0bd81b9e58938a99aef">IsDragInProgress</a> =&gt; <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a> != <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#af23079c102a708ec3740987db63e9456">   15</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_drag_host_widget.html#af23079c102a708ec3740987db63e9456">DragHostWidget</a>() =&gt; <a class="code hl_property" href="class_game_1_1_widget.html#abb2bfb50316059fbb331871524c739bd">IsHitTestVisible</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#a9ff9a8deb14223b45ff50119f5ce245d">   17</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_drag_host_widget.html#a9ff9a8deb14223b45ff50119f5ce245d">BeginDrag</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> dragWidget, <span class="keywordtype">object</span> dragData, Action dragEndedHandler) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a> = dragWidget;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#ad728811bb04e9fcf84e1ee46094c734a">m_dragData</a> = dragData;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a21df04aae75e4e5b4adedd32a8bbd091">m_dragEndedHandler</a> = dragEndedHandler;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Add(<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <a class="code hl_function" href="class_game_1_1_drag_host_widget.html#af753c6a074299fd19c396311bc75e5dd">UpdateDragPosition</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#ac26f76af645c1e4b536f39dda9fbb2d3">   27</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_drag_host_widget.html#ac26f76af645c1e4b536f39dda9fbb2d3">EndDrag</a>() {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Remove(<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#ad728811bb04e9fcf84e1ee46094c734a">m_dragData</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a21df04aae75e4e5b4adedd32a8bbd091">m_dragEndedHandler</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a21df04aae75e4e5b4adedd32a8bbd091">m_dragEndedHandler</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a21df04aae75e4e5b4adedd32a8bbd091">m_dragEndedHandler</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#ae8c9593a4101b41bf1bf3cae22e75add">   39</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_drag_host_widget.html#ae8c9593a4101b41bf1bf3cae22e75add">Update</a>() {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <a class="code hl_function" href="class_game_1_1_drag_host_widget.html#af753c6a074299fd19c396311bc75e5dd">UpdateDragPosition</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <a class="code hl_interface" href="interface_game_1_1_i_drag_target_widget.html">IDragTargetWidget</a> dragTargetWidget = <a class="code hl_function" href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">HitTestGlobal</a>(<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#aecc208cf41ff0c787f541c5788ce347c">m_dragPosition</a>, w =&gt; w is <a class="code hl_interface" href="interface_game_1_1_i_drag_target_widget.html">IDragTargetWidget</a>) as <a class="code hl_interface" href="interface_game_1_1_i_drag_target_widget.html">IDragTargetWidget</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Input</a>.Drag.HasValue) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    dragTargetWidget?.<a class="code hl_function" href="interface_game_1_1_i_drag_target_widget.html#a8f285d80af757be1d910b6e60626aa82">DragOver</a>(<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a>, <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#ad728811bb04e9fcf84e1ee46094c734a">m_dragData</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                        dragTargetWidget?.<a class="code hl_function" href="interface_game_1_1_i_drag_target_widget.html#aaff8b872751ea51eded47ad1df207cf8">DragDrop</a>(<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">m_dragWidget</a>, <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#ad728811bb04e9fcf84e1ee46094c734a">m_dragData</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    <span class="keywordflow">finally</span> {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        <a class="code hl_function" href="class_game_1_1_drag_host_widget.html#ac26f76af645c1e4b536f39dda9fbb2d3">EndDrag</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#a96bf0777c15f60d0ce09ee1885df39c7">   57</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_drag_host_widget.html#a96bf0777c15f60d0ce09ee1885df39c7">ArrangeOverride</a>() {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> child <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> parentDesiredSize = child.<a class="code hl_property" href="class_game_1_1_widget.html#a0702f54b746d8a8430922053fbf18771">ParentDesiredSize</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                parentDesiredSize.X = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a>, <a class="code hl_property" href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">ActualSize</a>.X);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                parentDesiredSize.Y = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(parentDesiredSize.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a>, <a class="code hl_property" href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">ActualSize</a>.Y);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                child.<a class="code hl_function" href="class_game_1_1_widget.html#a0c583ccbb5d098e873ac445da291bbc5">Arrange</a>(<a class="code hl_function" href="class_game_1_1_widget.html#aca5005c0b7fdb2ca0668e7fc0e314c32">ScreenToWidget</a>(<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#aecc208cf41ff0c787f541c5788ce347c">m_dragPosition</a>) - 0.5f * parentDesiredSize, parentDesiredSize);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_game_1_1_drag_host_widget.html#af753c6a074299fd19c396311bc75e5dd">   66</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_drag_host_widget.html#af753c6a074299fd19c396311bc75e5dd">UpdateDragPosition</a>() {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Input</a>.Drag.HasValue) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#aecc208cf41ff0c787f541c5788ce347c">m_dragPosition</a> = <a class="code hl_property" href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Input</a>.Drag.Value;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                m_dragPosition.X = Math.Clamp(<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#aecc208cf41ff0c787f541c5788ce347c">m_dragPosition</a>.X, <a class="code hl_property" href="class_game_1_1_widget.html#a4eeeb376e07d505b8665b73712f8c491">GlobalBounds</a>.Min.X, <a class="code hl_property" href="class_game_1_1_widget.html#a4eeeb376e07d505b8665b73712f8c491">GlobalBounds</a>.Max.X - 1f);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                m_dragPosition.Y = Math.Clamp(<a class="code hl_variable" href="class_game_1_1_drag_host_widget.html#aecc208cf41ff0c787f541c5788ce347c">m_dragPosition</a>.Y, <a class="code hl_property" href="class_game_1_1_widget.html#a4eeeb376e07d505b8665b73712f8c491">GlobalBounds</a>.Min.Y, <a class="code hl_property" href="class_game_1_1_widget.html#a4eeeb376e07d505b8665b73712f8c491">GlobalBounds</a>.Max.Y - 1f);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a5f2b24627ca7cc5256edc10831fe295b"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Engine.MathUtils.Min</a></div><div class="ttdeci">static int Min(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00007">MathUtils.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a354e896d39c1960ba7d82a6644b7347a"><div class="ttname"><a href="class_game_1_1_container_widget.html#a354e896d39c1960ba7d82a6644b7347a">Game.ContainerWidget.ContainerWidget</a></div><div class="ttdeci">ContainerWidget()</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00020">ContainerWidget.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_a21df04aae75e4e5b4adedd32a8bbd091"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#a21df04aae75e4e5b4adedd32a8bbd091">Game.DragHostWidget.m_dragEndedHandler</a></div><div class="ttdeci">Action m_dragEndedHandler</div><div class="ttdef"><b>定义</b> <a href="#l00009">DragHostWidget.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_a56be2bb593e44a11f3ffc85267f69843"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#a56be2bb593e44a11f3ffc85267f69843">Game.DragHostWidget.m_dragWidget</a></div><div class="ttdeci">Widget m_dragWidget</div><div class="ttdef"><b>定义</b> <a href="#l00005">DragHostWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_a93336034d39da0bd81b9e58938a99aef"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#a93336034d39da0bd81b9e58938a99aef">Game.DragHostWidget.IsDragInProgress</a></div><div class="ttdeci">bool IsDragInProgress</div><div class="ttdef"><b>定义</b> <a href="#l00013">DragHostWidget.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_a96bf0777c15f60d0ce09ee1885df39c7"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#a96bf0777c15f60d0ce09ee1885df39c7">Game.DragHostWidget.ArrangeOverride</a></div><div class="ttdeci">override void ArrangeOverride()</div><div class="ttdef"><b>定义</b> <a href="#l00057">DragHostWidget.cs:57</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_a9ff9a8deb14223b45ff50119f5ce245d"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#a9ff9a8deb14223b45ff50119f5ce245d">Game.DragHostWidget.BeginDrag</a></div><div class="ttdeci">void BeginDrag(Widget dragWidget, object dragData, Action dragEndedHandler)</div><div class="ttdef"><b>定义</b> <a href="#l00017">DragHostWidget.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_ac26f76af645c1e4b536f39dda9fbb2d3"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#ac26f76af645c1e4b536f39dda9fbb2d3">Game.DragHostWidget.EndDrag</a></div><div class="ttdeci">void EndDrag()</div><div class="ttdef"><b>定义</b> <a href="#l00027">DragHostWidget.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_ad728811bb04e9fcf84e1ee46094c734a"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#ad728811bb04e9fcf84e1ee46094c734a">Game.DragHostWidget.m_dragData</a></div><div class="ttdeci">object m_dragData</div><div class="ttdef"><b>定义</b> <a href="#l00007">DragHostWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_ae8c9593a4101b41bf1bf3cae22e75add"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#ae8c9593a4101b41bf1bf3cae22e75add">Game.DragHostWidget.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00039">DragHostWidget.cs:39</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_aecc208cf41ff0c787f541c5788ce347c"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#aecc208cf41ff0c787f541c5788ce347c">Game.DragHostWidget.m_dragPosition</a></div><div class="ttdeci">Vector2 m_dragPosition</div><div class="ttdef"><b>定义</b> <a href="#l00011">DragHostWidget.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_af23079c102a708ec3740987db63e9456"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#af23079c102a708ec3740987db63e9456">Game.DragHostWidget.DragHostWidget</a></div><div class="ttdeci">DragHostWidget()</div><div class="ttdef"><b>定义</b> <a href="#l00015">DragHostWidget.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_drag_host_widget_html_af753c6a074299fd19c396311bc75e5dd"><div class="ttname"><a href="class_game_1_1_drag_host_widget.html#af753c6a074299fd19c396311bc75e5dd">Game.DragHostWidget.UpdateDragPosition</a></div><div class="ttdeci">virtual void UpdateDragPosition()</div><div class="ttdef"><b>定义</b> <a href="#l00066">DragHostWidget.cs:66</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html"><div class="ttname"><a href="class_game_1_1_widget.html">Game.Widget</a></div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00010">Widget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a0702f54b746d8a8430922053fbf18771"><div class="ttname"><a href="class_game_1_1_widget.html#a0702f54b746d8a8430922053fbf18771">Game.Widget.ParentDesiredSize</a></div><div class="ttdeci">Vector2 ParentDesiredSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00454">Widget.cs:454</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a0c583ccbb5d098e873ac445da291bbc5"><div class="ttname"><a href="class_game_1_1_widget.html#a0c583ccbb5d098e873ac445da291bbc5">Game.Widget.Arrange</a></div><div class="ttdeci">virtual void Arrange(Vector2 position, Vector2 parentActualSize)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00650">Widget.cs:650</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a1ee7e699b3058c09d3b226f985b7db48"><div class="ttname"><a href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">Game.Widget.HitTestGlobal</a></div><div class="ttdeci">virtual Widget HitTestGlobal(Vector2 point, Func&lt; Widget, bool &gt; predicate=null)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00696">Widget.cs:696</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a3738facfe6a7f955f8539fcf8de3b387"><div class="ttname"><a href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Game.Widget.Input</a></div><div class="ttdeci">WidgetInput Input</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00296">Widget.cs:296</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a4eeeb376e07d505b8665b73712f8c491"><div class="ttname"><a href="class_game_1_1_widget.html#a4eeeb376e07d505b8665b73712f8c491">Game.Widget.GlobalBounds</a></div><div class="ttdeci">BoundingRectangle GlobalBounds</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00342">Widget.cs:342</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_abb2bfb50316059fbb331871524c739bd"><div class="ttname"><a href="class_game_1_1_widget.html#abb2bfb50316059fbb331871524c739bd">Game.Widget.IsHitTestVisible</a></div><div class="ttdeci">virtual bool IsHitTestVisible</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00380">Widget.cs:380</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ac9ff25efbe724241ec9d3678a1559527"><div class="ttname"><a href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">Game.Widget.ActualSize</a></div><div class="ttdeci">Vector2 ActualSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00447">Widget.cs:447</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca5005c0b7fdb2ca0668e7fc0e314c32"><div class="ttname"><a href="class_game_1_1_widget.html#aca5005c0b7fdb2ca0668e7fc0e314c32">Game.Widget.ScreenToWidget</a></div><div class="ttdeci">virtual Vector2 ScreenToWidget(Vector2 p)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00698">Widget.cs:698</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_drag_target_widget_html"><div class="ttname"><a href="interface_game_1_1_i_drag_target_widget.html">Game.IDragTargetWidget</a></div><div class="ttdef"><b>定义</b> <a href="_i_drag_target_widget_8cs_source.html#l00002">IDragTargetWidget.cs:2</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_drag_target_widget_html_a8f285d80af757be1d910b6e60626aa82"><div class="ttname"><a href="interface_game_1_1_i_drag_target_widget.html#a8f285d80af757be1d910b6e60626aa82">Game.IDragTargetWidget.DragOver</a></div><div class="ttdeci">void DragOver(Widget dragWidget, object data)</div></div>
+<div class="ttc" id="ainterface_game_1_1_i_drag_target_widget_html_aaff8b872751ea51eded47ad1df207cf8"><div class="ttname"><a href="interface_game_1_1_i_drag_target_widget.html#aaff8b872751ea51eded47ad1df207cf8">Game.IDragTargetWidget.DragDrop</a></div><div class="ttdeci">void DragDrop(Widget dragWidget, object data)</div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a67f66d5979ef9f5af376995b5cd52af7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Engine.Vector2.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00005">Vector2.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_aa5d1d8f581bf3e0ef8fc57692f600fee"><div class="ttname"><a href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">Engine.Vector2.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00003">Vector2.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_drag_host_widget_8cs.html">DragHostWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

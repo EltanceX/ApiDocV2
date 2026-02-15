@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/TouchInputWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_touch_input_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TouchInputWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_touch_input_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_input.html">Engine.Input</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_touch_input_widget.html">TouchInputWidget</a> : <a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">    6</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span>? <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">m_touchId</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#a8130005d1caa07f2ae5376ae9e306f91">    8</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a8130005d1caa07f2ae5376ae9e306f91">m_touchLastPosition</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#a7ca56f6d848dd8dfd1f3494d0a6c0085">   10</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a7ca56f6d848dd8dfd1f3494d0a6c0085">m_touchOrigin</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#ac82f6a5596cde235b2896e5c8086f32e">   12</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#ac82f6a5596cde235b2896e5c8086f32e">m_touchOriginLimited</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#a7841c6464ce3d2dc0ebcc56946dc34e4">   14</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a7841c6464ce3d2dc0ebcc56946dc34e4">m_touchMoved</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#a523a647b868bd29aadec84e95b8d6e41">   16</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a523a647b868bd29aadec84e95b8d6e41">m_touchTime</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#af3658cea54151fb55406abc980e96a80">   18</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#af3658cea54151fb55406abc980e96a80">m_touchFrameIndex</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#affb7507a8ede7af3a2d283394f4a22e7">   20</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_touch_input_widget.html#a7e21cd7997cfb4acfaad4a69d52c9233">TouchInput</a>? <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#affb7507a8ede7af3a2d283394f4a22e7">m_touchInput</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">   22</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">m_radius</a> = 30f;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#a9add0e5655132bbcb15c232600ef05dd">   24</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_touch_input_widget.html#a9add0e5655132bbcb15c232600ef05dd">Radius</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">m_radius</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keyword">set</span> =&gt; <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">m_radius</a> = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(value, 1f);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#a7e21cd7997cfb4acfaad4a69d52c9233">   29</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_touch_input_widget.html#a7e21cd7997cfb4acfaad4a69d52c9233">TouchInput</a>? <a class="code hl_property" href="class_game_1_1_touch_input_widget.html#a7e21cd7997cfb4acfaad4a69d52c9233">TouchInput</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keyword">get</span> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_widget.html#ac2df75a467220b8c5b1a2c999e452ece">IsEnabledGlobal</a> &amp;&amp; <a class="code hl_property" href="class_game_1_1_widget.html#a165616cc4ffff5df1b3130417ee1089b">IsVisibleGlobal</a>) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#affb7507a8ede7af3a2d283394f4a22e7">m_touchInput</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_game_1_1_touch_input_widget.html#a5520fdd05736d5f4b7a01c2ceb315933">   38</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_touch_input_widget.html#a5520fdd05736d5f4b7a01c2ceb315933">Update</a>() {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#affb7507a8ede7af3a2d283394f4a22e7">m_touchInput</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordtype">double</span> frameStartTime = <a class="code hl_class" href="class_engine_1_1_time.html">Time</a>.<a class="code hl_property" href="class_engine_1_1_time.html#aed08efe8243e7f2c006cc947e1d0554e">FrameStartTime</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordtype">int</span> frameIndex = <a class="code hl_class" href="class_engine_1_1_time.html">Time</a>.<a class="code hl_property" href="class_engine_1_1_time.html#a10a1459868f022fd4ffa8d51a40e483c">FrameIndex</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">foreach</span> (<a class="code hl_struct" href="struct_engine_1_1_input_1_1_touch_location.html">TouchLocation</a> touchLocation <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Input</a>.TouchLocations) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keywordflow">if</span> (touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#af25214e21154bbbd4eade2e093acb731">State</a> == <a class="code hl_enumeration" href="namespace_engine_1_1_input.html#ab3cbd6d42798721a6cae9d2ada4d9449">TouchLocationState</a>.Pressed) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    <span class="keywordflow">if</span> (<a class="code hl_function" href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">HitTestGlobal</a>(touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Position</a>) == <span class="keyword">this</span>) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">m_touchId</a> = touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#aeaf760bafbfa32dfd2834c378607d188">Id</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a8130005d1caa07f2ae5376ae9e306f91">m_touchLastPosition</a> = touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Position</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a7ca56f6d848dd8dfd1f3494d0a6c0085">m_touchOrigin</a> = touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Position</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#ac82f6a5596cde235b2896e5c8086f32e">m_touchOriginLimited</a> = touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Position</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a523a647b868bd29aadec84e95b8d6e41">m_touchTime</a> = frameStartTime;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#af3658cea54151fb55406abc980e96a80">m_touchFrameIndex</a> = frameIndex;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a7841c6464ce3d2dc0ebcc56946dc34e4">m_touchMoved</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#af25214e21154bbbd4eade2e093acb731">State</a> == <a class="code hl_enumeration" href="namespace_engine_1_1_input.html#ab3cbd6d42798721a6cae9d2ada4d9449">TouchLocationState</a>.Moved) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">m_touchId</a>.HasValue</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                        &amp;&amp; touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#aeaf760bafbfa32dfd2834c378607d188">Id</a> == <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">m_touchId</a>.Value) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a7841c6464ce3d2dc0ebcc56946dc34e4">m_touchMoved</a> |= <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#adc04695212ee693144ad6b075ebb5cd4">Distance</a>(touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Position</a>, <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a7ca56f6d848dd8dfd1f3494d0a6c0085">m_touchOrigin</a>) &gt; <a class="code hl_property" href="class_game_1_1_settings_manager.html#a29e2fb2b04a1fca1d0b9dd27f3cac7d2">SettingsManager.MinimumDragDistance</a> * <a class="code hl_property" href="class_game_1_1_widget.html#a07263e32c11786fef4bf3039da41d71c">GlobalScale</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        <a class="code hl_property" href="class_game_1_1_touch_input_widget.html#a7e21cd7997cfb4acfaad4a69d52c9233">TouchInput</a> value = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        value.InputType = !<a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a7841c6464ce3d2dc0ebcc56946dc34e4">m_touchMoved</a> ? <a class="code hl_enumvalue" href="namespace_game.html#af3688e5894dd5c5131fa009113f2190babcd8db575b47c838e5d551e3973db4ac">TouchInputType.Hold</a> : <a class="code hl_enumeration" href="namespace_game.html#af3688e5894dd5c5131fa009113f2190b">TouchInputType</a>.Move;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                        value.Duration = (float)(frameStartTime - <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a523a647b868bd29aadec84e95b8d6e41">m_touchTime</a>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                        value.DurationFrames = frameIndex - <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#af3658cea54151fb55406abc980e96a80">m_touchFrameIndex</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                        value.Position = touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Position</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                        value.Move = touchLocation.Position - <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a8130005d1caa07f2ae5376ae9e306f91">m_touchLastPosition</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                        value.TotalMove = touchLocation.Position - <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a7ca56f6d848dd8dfd1f3494d0a6c0085">m_touchOrigin</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                        value.TotalMoveLimited = touchLocation.Position - <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#ac82f6a5596cde235b2896e5c8086f32e">m_touchOriginLimited</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                        <span class="keywordflow">if</span> (MathF.Abs(value.<a class="code hl_variable" href="struct_game_1_1_touch_input.html#ad5e21034645e98b4ed76c56aa1c6cb95">TotalMoveLimited</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a>) &gt; <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">m_radius</a>) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                            m_touchOriginLimited.X = touchLocation.Position.X - MathF.Sign(value.<a class="code hl_variable" href="struct_game_1_1_touch_input.html#ad5e21034645e98b4ed76c56aa1c6cb95">TotalMoveLimited</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a>) * <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">m_radius</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                        <span class="keywordflow">if</span> (MathF.Abs(value.<a class="code hl_variable" href="struct_game_1_1_touch_input.html#ad5e21034645e98b4ed76c56aa1c6cb95">TotalMoveLimited</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a>) &gt; <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">m_radius</a>) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                            m_touchOriginLimited.Y = touchLocation.Position.Y - MathF.Sign(value.<a class="code hl_variable" href="struct_game_1_1_touch_input.html#ad5e21034645e98b4ed76c56aa1c6cb95">TotalMoveLimited</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a>) * <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">m_radius</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#affb7507a8ede7af3a2d283394f4a22e7">m_touchInput</a> = value;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a8130005d1caa07f2ae5376ae9e306f91">m_touchLastPosition</a> = touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Position</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#af25214e21154bbbd4eade2e093acb731">State</a> == <a class="code hl_enumeration" href="namespace_engine_1_1_input.html#ab3cbd6d42798721a6cae9d2ada4d9449">TouchLocationState</a>.Released</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    &amp;&amp; <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">m_touchId</a>.HasValue</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    &amp;&amp; touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#aeaf760bafbfa32dfd2834c378607d188">Id</a> == <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">m_touchId</a>.Value) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    <span class="keywordflow">if</span> (frameStartTime - <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a523a647b868bd29aadec84e95b8d6e41">m_touchTime</a> &lt;= <a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_property" href="class_game_1_1_settings_manager.html#a2bae543ff1625ae3855ba45043b2861f">MinimumHoldDuration</a></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                        &amp;&amp; <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#adc04695212ee693144ad6b075ebb5cd4">Distance</a>(touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Position</a>, <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a7ca56f6d848dd8dfd1f3494d0a6c0085">m_touchOrigin</a>) &lt; <a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_property" href="class_game_1_1_settings_manager.html#a29e2fb2b04a1fca1d0b9dd27f3cac7d2">MinimumDragDistance</a> * <a class="code hl_property" href="class_game_1_1_widget.html#a07263e32c11786fef4bf3039da41d71c">GlobalScale</a>) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        <a class="code hl_property" href="class_game_1_1_touch_input_widget.html#a7e21cd7997cfb4acfaad4a69d52c9233">TouchInput</a> value2 = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                        value2.InputType = <a class="code hl_enumeration" href="namespace_game.html#af3688e5894dd5c5131fa009113f2190b">TouchInputType</a>.Tap;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        value2.Duration = (float)(frameStartTime - <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a523a647b868bd29aadec84e95b8d6e41">m_touchTime</a>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                        value2.DurationFrames = frameIndex - <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#af3658cea54151fb55406abc980e96a80">m_touchFrameIndex</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                        value2.Position = touchLocation.<a class="code hl_variable" href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Position</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                        <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#affb7507a8ede7af3a2d283394f4a22e7">m_touchInput</a> = value2;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    <a class="code hl_variable" href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">m_touchId</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_time_html"><div class="ttname"><a href="class_engine_1_1_time.html">Engine.Time</a></div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00004">Time.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_time_html_a10a1459868f022fd4ffa8d51a40e483c"><div class="ttname"><a href="class_engine_1_1_time.html#a10a1459868f022fd4ffa8d51a40e483c">Engine.Time.FrameIndex</a></div><div class="ttdeci">static int FrameIndex</div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00026">Time.cs:26</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_time_html_aed08efe8243e7f2c006cc947e1d0554e"><div class="ttname"><a href="class_engine_1_1_time.html#aed08efe8243e7f2c006cc947e1d0554e">Engine.Time.FrameStartTime</a></div><div class="ttdeci">static double FrameStartTime</div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00042">Time.cs:42</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html"><div class="ttname"><a href="class_game_1_1_settings_manager.html">Game.SettingsManager</a></div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00011">SettingsManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_a29e2fb2b04a1fca1d0b9dd27f3cac7d2"><div class="ttname"><a href="class_game_1_1_settings_manager.html#a29e2fb2b04a1fca1d0b9dd27f3cac7d2">Game.SettingsManager.MinimumDragDistance</a></div><div class="ttdeci">static float MinimumDragDistance</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00254">SettingsManager.cs:254</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_a2bae543ff1625ae3855ba45043b2861f"><div class="ttname"><a href="class_game_1_1_settings_manager.html#a2bae543ff1625ae3855ba45043b2861f">Game.SettingsManager.MinimumHoldDuration</a></div><div class="ttdeci">static float MinimumHoldDuration</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00252">SettingsManager.cs:252</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html">Game.TouchInputWidget</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">TouchInputWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_a4eef901d32d37981b6af60bb04607042"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">Game.TouchInputWidget.m_touchId</a></div><div class="ttdeci">int? m_touchId</div><div class="ttdef"><b>定义</b> <a href="#l00006">TouchInputWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_a523a647b868bd29aadec84e95b8d6e41"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#a523a647b868bd29aadec84e95b8d6e41">Game.TouchInputWidget.m_touchTime</a></div><div class="ttdeci">double m_touchTime</div><div class="ttdef"><b>定义</b> <a href="#l00016">TouchInputWidget.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_a5520fdd05736d5f4b7a01c2ceb315933"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#a5520fdd05736d5f4b7a01c2ceb315933">Game.TouchInputWidget.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00038">TouchInputWidget.cs:38</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_a7841c6464ce3d2dc0ebcc56946dc34e4"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#a7841c6464ce3d2dc0ebcc56946dc34e4">Game.TouchInputWidget.m_touchMoved</a></div><div class="ttdeci">bool m_touchMoved</div><div class="ttdef"><b>定义</b> <a href="#l00014">TouchInputWidget.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_a7ca56f6d848dd8dfd1f3494d0a6c0085"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#a7ca56f6d848dd8dfd1f3494d0a6c0085">Game.TouchInputWidget.m_touchOrigin</a></div><div class="ttdeci">Vector2 m_touchOrigin</div><div class="ttdef"><b>定义</b> <a href="#l00010">TouchInputWidget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_a7e21cd7997cfb4acfaad4a69d52c9233"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#a7e21cd7997cfb4acfaad4a69d52c9233">Game.TouchInputWidget.TouchInput</a></div><div class="ttdeci">TouchInput? TouchInput</div><div class="ttdef"><b>定义</b> <a href="#l00029">TouchInputWidget.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_a8130005d1caa07f2ae5376ae9e306f91"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#a8130005d1caa07f2ae5376ae9e306f91">Game.TouchInputWidget.m_touchLastPosition</a></div><div class="ttdeci">Vector2 m_touchLastPosition</div><div class="ttdef"><b>定义</b> <a href="#l00008">TouchInputWidget.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_a96c61ed40aa5df21d822be14478cb992"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">Game.TouchInputWidget.m_radius</a></div><div class="ttdeci">float m_radius</div><div class="ttdef"><b>定义</b> <a href="#l00022">TouchInputWidget.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_a9add0e5655132bbcb15c232600ef05dd"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#a9add0e5655132bbcb15c232600ef05dd">Game.TouchInputWidget.Radius</a></div><div class="ttdeci">float Radius</div><div class="ttdef"><b>定义</b> <a href="#l00024">TouchInputWidget.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_ac82f6a5596cde235b2896e5c8086f32e"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#ac82f6a5596cde235b2896e5c8086f32e">Game.TouchInputWidget.m_touchOriginLimited</a></div><div class="ttdeci">Vector2 m_touchOriginLimited</div><div class="ttdef"><b>定义</b> <a href="#l00012">TouchInputWidget.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_af3658cea54151fb55406abc980e96a80"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#af3658cea54151fb55406abc980e96a80">Game.TouchInputWidget.m_touchFrameIndex</a></div><div class="ttdeci">int m_touchFrameIndex</div><div class="ttdef"><b>定义</b> <a href="#l00018">TouchInputWidget.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_touch_input_widget_html_affb7507a8ede7af3a2d283394f4a22e7"><div class="ttname"><a href="class_game_1_1_touch_input_widget.html#affb7507a8ede7af3a2d283394f4a22e7">Game.TouchInputWidget.m_touchInput</a></div><div class="ttdeci">TouchInput? m_touchInput</div><div class="ttdef"><b>定义</b> <a href="#l00020">TouchInputWidget.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a07263e32c11786fef4bf3039da41d71c"><div class="ttname"><a href="class_game_1_1_widget.html#a07263e32c11786fef4bf3039da41d71c">Game.Widget.GlobalScale</a></div><div class="ttdeci">float GlobalScale</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00328">Widget.cs:328</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a165616cc4ffff5df1b3130417ee1089b"><div class="ttname"><a href="class_game_1_1_widget.html#a165616cc4ffff5df1b3130417ee1089b">Game.Widget.IsVisibleGlobal</a></div><div class="ttdeci">bool IsVisibleGlobal</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00382">Widget.cs:382</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a1ee7e699b3058c09d3b226f985b7db48"><div class="ttname"><a href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">Game.Widget.HitTestGlobal</a></div><div class="ttdeci">virtual Widget HitTestGlobal(Vector2 point, Func&lt; Widget, bool &gt; predicate=null)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00696">Widget.cs:696</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a2e6ce445c2f889d95ef1328d72e25dcb"><div class="ttname"><a href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Game.Widget.Widget</a></div><div class="ttdeci">Widget()</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00479">Widget.cs:479</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a3738facfe6a7f955f8539fcf8de3b387"><div class="ttname"><a href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Game.Widget.Input</a></div><div class="ttdeci">WidgetInput Input</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00296">Widget.cs:296</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ac2df75a467220b8c5b1a2c999e452ece"><div class="ttname"><a href="class_game_1_1_widget.html#ac2df75a467220b8c5b1a2c999e452ece">Game.Widget.IsEnabledGlobal</a></div><div class="ttdeci">bool IsEnabledGlobal</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00394">Widget.cs:394</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_input_html"><div class="ttname"><a href="namespace_engine_1_1_input.html">Engine.Input</a></div><div class="ttdef"><b>定义</b> <a href="_cursor_type_8cs_source.html#l00001">CursorType.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_input_html_ab3cbd6d42798721a6cae9d2ada4d9449"><div class="ttname"><a href="namespace_engine_1_1_input.html#ab3cbd6d42798721a6cae9d2ada4d9449">Engine.Input.TouchLocationState</a></div><div class="ttdeci">TouchLocationState</div><div class="ttdef"><b>定义</b> <a href="_touch_location_state_8cs_source.html#l00002">TouchLocationState.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_af3688e5894dd5c5131fa009113f2190b"><div class="ttname"><a href="namespace_game.html#af3688e5894dd5c5131fa009113f2190b">Game.TouchInputType</a></div><div class="ttdeci">TouchInputType</div><div class="ttdef"><b>定义</b> <a href="_touch_input_type_8cs_source.html#l00002">TouchInputType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html_af3688e5894dd5c5131fa009113f2190babcd8db575b47c838e5d551e3973db4ac"><div class="ttname"><a href="namespace_game.html#af3688e5894dd5c5131fa009113f2190babcd8db575b47c838e5d551e3973db4ac">Game.TouchInputType.Hold</a></div><div class="ttdeci">@ Hold</div><div class="ttdef"><b>定义</b> <a href="_touch_input_type_8cs_source.html#l00004">TouchInputType.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_input_1_1_touch_location_html"><div class="ttname"><a href="struct_engine_1_1_input_1_1_touch_location.html">Engine.Input.TouchLocation</a></div><div class="ttdef"><b>定义</b> <a href="_touch_location_8cs_source.html#l00002">TouchLocation.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_input_1_1_touch_location_html_a9152eadbb6403d923cc7fa2839f76fda"><div class="ttname"><a href="struct_engine_1_1_input_1_1_touch_location.html#a9152eadbb6403d923cc7fa2839f76fda">Engine.Input.TouchLocation.Position</a></div><div class="ttdeci">Vector2 Position</div><div class="ttdef"><b>定义</b> <a href="_touch_location_8cs_source.html#l00005">TouchLocation.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_input_1_1_touch_location_html_aeaf760bafbfa32dfd2834c378607d188"><div class="ttname"><a href="struct_engine_1_1_input_1_1_touch_location.html#aeaf760bafbfa32dfd2834c378607d188">Engine.Input.TouchLocation.Id</a></div><div class="ttdeci">int Id</div><div class="ttdef"><b>定义</b> <a href="_touch_location_8cs_source.html#l00003">TouchLocation.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_input_1_1_touch_location_html_af25214e21154bbbd4eade2e093acb731"><div class="ttname"><a href="struct_engine_1_1_input_1_1_touch_location.html#af25214e21154bbbd4eade2e093acb731">Engine.Input.TouchLocation.State</a></div><div class="ttdeci">TouchLocationState State</div><div class="ttdef"><b>定义</b> <a href="_touch_location_8cs_source.html#l00007">TouchLocation.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a67f66d5979ef9f5af376995b5cd52af7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Engine.Vector2.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00005">Vector2.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_aa5d1d8f581bf3e0ef8fc57692f600fee"><div class="ttname"><a href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">Engine.Vector2.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00003">Vector2.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_adc04695212ee693144ad6b075ebb5cd4"><div class="ttname"><a href="struct_engine_1_1_vector2.html#adc04695212ee693144ad6b075ebb5cd4">Engine.Vector2.Distance</a></div><div class="ttdeci">static float Distance(Vector2 v1, Vector2 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00053">Vector2.cs:53</a></div></div>
+<div class="ttc" id="astruct_game_1_1_touch_input_html_ad5e21034645e98b4ed76c56aa1c6cb95"><div class="ttname"><a href="struct_game_1_1_touch_input.html#ad5e21034645e98b4ed76c56aa1c6cb95">Game.TouchInput.TotalMoveLimited</a></div><div class="ttdeci">Vector2 TotalMoveLimited</div><div class="ttdef"><b>定义</b> <a href="_touch_input_8cs_source.html#l00015">TouchInput.cs:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_touch_input_widget_8cs.html">TouchInputWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

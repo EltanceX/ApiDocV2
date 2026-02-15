@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Browser/OAL.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_o_a_l_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">OAL.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_o_a_l_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Runtime.InteropServices;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_browser.html">Engine.Browser</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="class_engine_1_1_browser_1_1_o_a_l.html">OAL</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        <span class="comment">// On WASM/Emscripten, this is often &quot;openal&quot; or &quot;__Internal&quot; depending on linking</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">    7</a></span>        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a> = <span class="stringliteral">&quot;openal32&quot;</span>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#ada0b601a960176377c5c7ee1813afab6">   11</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <a class="code hl_variable" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> IntPtr <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#ada0b601a960176377c5c7ee1813afab6">alcOpenDevice</a>(<span class="keywordtype">byte</span>* devicename);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#aad66a5a298af3dd072f26ef11e14ba13">   15</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <a class="code hl_variable" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> IntPtr <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#aad66a5a298af3dd072f26ef11e14ba13">alcCreateContext</a>(IntPtr device, <span class="keywordtype">int</span>* attrlist);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a52a25d346bd934900a2ab0fe43d70188">   19</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a52a25d346bd934900a2ab0fe43d70188">alcMakeContextCurrent</a>(IntPtr context);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#ad8cc476317bd54f7f7c3f96d8976b002">   23</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#ad8cc476317bd54f7f7c3f96d8976b002">alcDestroyContext</a>(IntPtr context);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a7ef724a14f23a743e35f2e3f8da01b91">   27</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a7ef724a14f23a743e35f2e3f8da01b91">alcCloseDevice</a>(IntPtr device);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a243ff0d0d4e510a5e2e3f42a8872fe95">   31</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a243ff0d0d4e510a5e2e3f42a8872fe95">alcGetError</a>(IntPtr device);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="comment">// --- AL Functions (Core) ---</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#aedb6c8e5bee99d6cc8a700401fa568f3">   37</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#aedb6c8e5bee99d6cc8a700401fa568f3">alGetError</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a37264e1c8b652e446e521c2545e27ac3">   41</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a37264e1c8b652e446e521c2545e27ac3">alGenSources</a>(<span class="keywordtype">int</span> n, out uint sources);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#ad62ffe82eced794ca76327446d3567b2">   45</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#ad62ffe82eced794ca76327446d3567b2">alDeleteSources</a>(<span class="keywordtype">int</span> n, ref uint sources);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a1f9d7d50095ecf3ecd80f057f065eca5">   49</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a1f9d7d50095ecf3ecd80f057f065eca5">alSourcei</a>(uint source, <span class="keywordtype">int</span> param, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#afc69ba7d5eda9a34886fa02e42ee0558">   53</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#afc69ba7d5eda9a34886fa02e42ee0558">alSourcef</a>(uint source, <span class="keywordtype">int</span> param, <span class="keywordtype">float</span> value);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#adc5952f7e079688f9225836a5402af23">   57</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#adc5952f7e079688f9225836a5402af23">alSource3f</a>(uint source, <span class="keywordtype">int</span> param, <span class="keywordtype">float</span> v1, <span class="keywordtype">float</span> v2, <span class="keywordtype">float</span> v3);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a765adfb9bf60b00731fcfdcc8b917ce5">   61</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a765adfb9bf60b00731fcfdcc8b917ce5">alSourcePlay</a>(uint source);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a67cabbad39e46fb3203912fa73bb1a80">   65</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a67cabbad39e46fb3203912fa73bb1a80">alSourcePause</a>(uint source);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a3120b44b96f318615c51719fd4bcfbc7">   69</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a3120b44b96f318615c51719fd4bcfbc7">alSourceStop</a>(uint source);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#ad5ff7fde0ec856ac62d085e508316ca5">   73</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#ad5ff7fde0ec856ac62d085e508316ca5">alSourceRewind</a>(uint source);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#aafba40f2615029ab7dd67b4432b14250">   77</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#aafba40f2615029ab7dd67b4432b14250">alGetSourcei</a>(uint source, <span class="keywordtype">int</span> param, out <span class="keywordtype">int</span> value);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a83b9d750d80b27add07fc43c5e9cef44">   81</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a83b9d750d80b27add07fc43c5e9cef44">alGenBuffers</a>(<span class="keywordtype">int</span> n, out uint buffers);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a49f6954346ff71b503b507ab2ba0d36e">   85</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a49f6954346ff71b503b507ab2ba0d36e">alDeleteBuffers</a>(<span class="keywordtype">int</span> n, ref uint buffers);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#ac3d99b4fe5aeef9b03cc76ff7569f2be">   89</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <a class="code hl_variable" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#ac3d99b4fe5aeef9b03cc76ff7569f2be">alBufferData</a>(uint buffer, <span class="keywordtype">int</span> format, <span class="keywordtype">void</span>* data, <span class="keywordtype">int</span> size, <span class="keywordtype">int</span> freq);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a669b9070ef1cf2f815c92bc579074cc0">   93</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a669b9070ef1cf2f815c92bc579074cc0">alListenerf</a>(<span class="keywordtype">int</span> param, <span class="keywordtype">float</span> value);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a5c552bd6e4be7070295a0ce9afeda8f6">   97</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a5c552bd6e4be7070295a0ce9afeda8f6">alDistanceModel</a>(<span class="keywordtype">int</span> model);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment">// Queueing functions for Streaming</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a9ed20753ba33dbe5c54adea2d2c780c4">  102</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <a class="code hl_variable" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a9ed20753ba33dbe5c54adea2d2c780c4">alSourceQueueBuffers</a>(uint source, <span class="keywordtype">int</span> nb, uint* buffers);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">LibOal</a>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_o_a_l.html#a30a383d1a7d0a2246e60c0d09cad8ac1">  106</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <a class="code hl_variable" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a30a383d1a7d0a2246e60c0d09cad8ac1">alSourceUnqueueBuffers</a>(uint source, <span class="keywordtype">int</span> nb, uint* buffers);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="ttc" id="a_main_8cs_html_aadc1913660b4a97759fcca7299050250"><div class="ttname"><a href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a></div><div class="ttdeci">unsafe</div><div class="ttdef"><b>定义</b> <a href="_main_8cs_source.html#l00015">Main.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html">Engine.Browser.OAL</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">OAL.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a1f9d7d50095ecf3ecd80f057f065eca5"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a1f9d7d50095ecf3ecd80f057f065eca5">Engine.Browser.OAL.alSourcei</a></div><div class="ttdeci">static void alSourcei(uint source, int param, int value)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a243ff0d0d4e510a5e2e3f42a8872fe95"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a243ff0d0d4e510a5e2e3f42a8872fe95">Engine.Browser.OAL.alcGetError</a></div><div class="ttdeci">static int alcGetError(IntPtr device)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a30a383d1a7d0a2246e60c0d09cad8ac1"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a30a383d1a7d0a2246e60c0d09cad8ac1">Engine.Browser.OAL.alSourceUnqueueBuffers</a></div><div class="ttdeci">static unsafe void alSourceUnqueueBuffers(uint source, int nb, uint *buffers)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a3120b44b96f318615c51719fd4bcfbc7"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a3120b44b96f318615c51719fd4bcfbc7">Engine.Browser.OAL.alSourceStop</a></div><div class="ttdeci">static void alSourceStop(uint source)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a37264e1c8b652e446e521c2545e27ac3"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a37264e1c8b652e446e521c2545e27ac3">Engine.Browser.OAL.alGenSources</a></div><div class="ttdeci">static void alGenSources(int n, out uint sources)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a49f6954346ff71b503b507ab2ba0d36e"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a49f6954346ff71b503b507ab2ba0d36e">Engine.Browser.OAL.alDeleteBuffers</a></div><div class="ttdeci">static void alDeleteBuffers(int n, ref uint buffers)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a52a25d346bd934900a2ab0fe43d70188"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a52a25d346bd934900a2ab0fe43d70188">Engine.Browser.OAL.alcMakeContextCurrent</a></div><div class="ttdeci">static bool alcMakeContextCurrent(IntPtr context)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a5c552bd6e4be7070295a0ce9afeda8f6"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a5c552bd6e4be7070295a0ce9afeda8f6">Engine.Browser.OAL.alDistanceModel</a></div><div class="ttdeci">static void alDistanceModel(int model)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a669b9070ef1cf2f815c92bc579074cc0"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a669b9070ef1cf2f815c92bc579074cc0">Engine.Browser.OAL.alListenerf</a></div><div class="ttdeci">static void alListenerf(int param, float value)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a67cabbad39e46fb3203912fa73bb1a80"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a67cabbad39e46fb3203912fa73bb1a80">Engine.Browser.OAL.alSourcePause</a></div><div class="ttdeci">static void alSourcePause(uint source)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a765adfb9bf60b00731fcfdcc8b917ce5"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a765adfb9bf60b00731fcfdcc8b917ce5">Engine.Browser.OAL.alSourcePlay</a></div><div class="ttdeci">static void alSourcePlay(uint source)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a7ef724a14f23a743e35f2e3f8da01b91"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a7ef724a14f23a743e35f2e3f8da01b91">Engine.Browser.OAL.alcCloseDevice</a></div><div class="ttdeci">static bool alcCloseDevice(IntPtr device)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a83b9d750d80b27add07fc43c5e9cef44"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a83b9d750d80b27add07fc43c5e9cef44">Engine.Browser.OAL.alGenBuffers</a></div><div class="ttdeci">static void alGenBuffers(int n, out uint buffers)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a9b23e731d17e4a5d925b0e00b0d417b3"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a9b23e731d17e4a5d925b0e00b0d417b3">Engine.Browser.OAL.LibOal</a></div><div class="ttdeci">const string LibOal</div><div class="ttdef"><b>定义</b> <a href="#l00007">OAL.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a9ed20753ba33dbe5c54adea2d2c780c4"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a9ed20753ba33dbe5c54adea2d2c780c4">Engine.Browser.OAL.alSourceQueueBuffers</a></div><div class="ttdeci">static unsafe void alSourceQueueBuffers(uint source, int nb, uint *buffers)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_aad66a5a298af3dd072f26ef11e14ba13"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#aad66a5a298af3dd072f26ef11e14ba13">Engine.Browser.OAL.alcCreateContext</a></div><div class="ttdeci">static unsafe IntPtr alcCreateContext(IntPtr device, int *attrlist)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_aafba40f2615029ab7dd67b4432b14250"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#aafba40f2615029ab7dd67b4432b14250">Engine.Browser.OAL.alGetSourcei</a></div><div class="ttdeci">static void alGetSourcei(uint source, int param, out int value)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_ac3d99b4fe5aeef9b03cc76ff7569f2be"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#ac3d99b4fe5aeef9b03cc76ff7569f2be">Engine.Browser.OAL.alBufferData</a></div><div class="ttdeci">static unsafe void alBufferData(uint buffer, int format, void *data, int size, int freq)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_ad5ff7fde0ec856ac62d085e508316ca5"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#ad5ff7fde0ec856ac62d085e508316ca5">Engine.Browser.OAL.alSourceRewind</a></div><div class="ttdeci">static void alSourceRewind(uint source)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_ad62ffe82eced794ca76327446d3567b2"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#ad62ffe82eced794ca76327446d3567b2">Engine.Browser.OAL.alDeleteSources</a></div><div class="ttdeci">static void alDeleteSources(int n, ref uint sources)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_ad8cc476317bd54f7f7c3f96d8976b002"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#ad8cc476317bd54f7f7c3f96d8976b002">Engine.Browser.OAL.alcDestroyContext</a></div><div class="ttdeci">static void alcDestroyContext(IntPtr context)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_ada0b601a960176377c5c7ee1813afab6"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#ada0b601a960176377c5c7ee1813afab6">Engine.Browser.OAL.alcOpenDevice</a></div><div class="ttdeci">static unsafe IntPtr alcOpenDevice(byte *devicename)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_adc5952f7e079688f9225836a5402af23"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#adc5952f7e079688f9225836a5402af23">Engine.Browser.OAL.alSource3f</a></div><div class="ttdeci">static void alSource3f(uint source, int param, float v1, float v2, float v3)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_aedb6c8e5bee99d6cc8a700401fa568f3"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#aedb6c8e5bee99d6cc8a700401fa568f3">Engine.Browser.OAL.alGetError</a></div><div class="ttdeci">static int alGetError()</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_afc69ba7d5eda9a34886fa02e42ee0558"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#afc69ba7d5eda9a34886fa02e42ee0558">Engine.Browser.OAL.alSourcef</a></div><div class="ttdeci">static void alSourcef(uint source, int param, float value)</div></div>
+<div class="ttc" id="anamespace_engine_1_1_browser_html"><div class="ttname"><a href="namespace_engine_1_1_browser.html">Engine.Browser</a></div><div class="ttdef"><b>定义</b> <a href="_a_l_8cs_source.html#l00001">AL.cs:1</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_c6c50322a9ab7d2601d9ec77b46bec8c.html">Engine.Browser</a></li><li class="navelem"><a href="_o_a_l_8cs.html">OAL.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

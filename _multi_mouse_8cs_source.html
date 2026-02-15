@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Input/MultiMouse.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_multi_mouse_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MultiMouse.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_multi_mouse_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Engine, Version=1.0.8083.41417, Culture=neutral, PublicKeyToken=null</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Engine.Input.MultiMouse</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_input.html">Engine.Input</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_multi_mouse.html">    7</a></span><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="class_multi_mouse.html">MultiMouse</a> {</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_multi_mouse_1_1_mouse_data.html">    8</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_multi_mouse_1_1_mouse_data.html">MouseData</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="comment">// ReSharper disable MemberHidesStaticFromOuterClass</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_multi_mouse_1_1_mouse_data.html#aa632bc5477a8cb1945275da63769932c">   10</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#aa632bc5477a8cb1945275da63769932c">IsConnected</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_multi_mouse_1_1_mouse_data.html#a864564776bfc3b83f9de650290f31535">   12</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> <a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#a864564776bfc3b83f9de650290f31535">MousePosition</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_multi_mouse_1_1_mouse_data.html#a2d9afc570b5116bbb7c3de1eea142930">   14</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> <a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#a2d9afc570b5116bbb7c3de1eea142930">MouseMovement</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_multi_mouse_1_1_mouse_data.html#a09aa2423a1f829b8b42cba98da9fd83a">   16</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#a09aa2423a1f829b8b42cba98da9fd83a">MouseWheelMovement</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="comment">// ReSharper restore MemberHidesStaticFromOuterClass</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_multi_mouse_1_1_mouse_data.html#aef7990be85133cd053faa1135ff0d795">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span>[] <a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#aef7990be85133cd053faa1135ff0d795">MouseButtonsDownArray</a> = <span class="keyword">new</span> <span class="keywordtype">bool</span>[Enum.GetValues&lt;<a class="code hl_enumeration" href="namespace_engine_1_1_input.html#a9c02e05c9e47a0fefe706afee78b6f9d">MouseButton</a>&gt;().Length];</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_multi_mouse_1_1_mouse_data.html#a01e4bf99c4871a9d8a7c86d11fddbfe3">   21</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span>[] <a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#a01e4bf99c4871a9d8a7c86d11fddbfe3">MouseButtonsDownOnceArray</a> = <span class="keyword">new</span> <span class="keywordtype">bool</span>[Enum.GetValues&lt;<a class="code hl_enumeration" href="namespace_engine_1_1_input.html#a9c02e05c9e47a0fefe706afee78b6f9d">MouseButton</a>&gt;().Length];</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_multi_mouse_1_1_mouse_data.html#a12fc6d9bb805a2612454305b81fc9f7c">   23</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span>[] <a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#a12fc6d9bb805a2612454305b81fc9f7c">MouseButtonsUpOnceArray</a> = <span class="keyword">new</span> <span class="keywordtype">bool</span>[Enum.GetValues&lt;<a class="code hl_enumeration" href="namespace_engine_1_1_input.html#a9c02e05c9e47a0fefe706afee78b6f9d">MouseButton</a>&gt;().Length];</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">   26</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="class_multi_mouse_1_1_mouse_data.html">MouseData</a>[] <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a> = [<span class="keyword">new</span>(), <span class="keyword">new</span>(), <span class="keyword">new</span>(), <span class="keyword">new</span>()];</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a4d33e0b809a8dfbe117bbeb5987dbeba">   28</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">event</span> Action&lt;MultiMouseEvent&gt; <a class="code hl_event" href="class_multi_mouse.html#a4d33e0b809a8dfbe117bbeb5987dbeba">MouseMove</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a2a9855ae7c8b8f3007802e88be59daf8">   30</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">event</span> Action&lt;MultiMouseButtonEvent&gt; <a class="code hl_event" href="class_multi_mouse.html#a2a9855ae7c8b8f3007802e88be59daf8">MouseDown</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a190a3c9c916c018d4a9cbb8749686a6d">   32</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">event</span> Action&lt;MultiMouseButtonEvent&gt; <a class="code hl_event" href="class_multi_mouse.html#a190a3c9c916c018d4a9cbb8749686a6d">MouseUp</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a04ffde5d07f2ac0467499de7bc0b6080">   34</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_multi_mouse.html#a04ffde5d07f2ac0467499de7bc0b6080">IsConnected</a>(<span class="keywordtype">int</span> mouseIndex) =&gt; <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].IsConnected;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#ae6619e4f991af48732d8ea314657253f">   36</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> <a class="code hl_function" href="class_multi_mouse.html#ae6619e4f991af48732d8ea314657253f">MouseMovement</a>(<span class="keywordtype">int</span> mouseIndex) =&gt; <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].MouseMovement;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a097c43ae77c35b28b3dfe7fd960bb045">   38</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_multi_mouse.html#a097c43ae77c35b28b3dfe7fd960bb045">MouseWheelMovement</a>(<span class="keywordtype">int</span> mouseIndex) =&gt; <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].MouseWheelMovement;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#aa228e906fa099c782a150b100ba12d88">   40</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> <a class="code hl_function" href="class_multi_mouse.html#aa228e906fa099c782a150b100ba12d88">MousePosition</a>(<span class="keywordtype">int</span> mouseIndex) =&gt; <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].MousePosition;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a77c548a080711e65afb53bcf48c170ca">   42</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_multi_mouse.html#a77c548a080711e65afb53bcf48c170ca">IsMouseButtonDown</a>(<span class="keywordtype">int</span> mouseIndex, <a class="code hl_enumeration" href="namespace_engine_1_1_input.html#a9c02e05c9e47a0fefe706afee78b6f9d">MouseButton</a> mouseButton) =&gt; <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].MouseButtonsDownArray[(int)mouseButton];</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#aed9b0d2c80eb655f5a7ef4d2347a5c1f">   44</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_multi_mouse.html#aed9b0d2c80eb655f5a7ef4d2347a5c1f">IsMouseButtonDownOnce</a>(<span class="keywordtype">int</span> mouseIndex, <a class="code hl_enumeration" href="namespace_engine_1_1_input.html#a9c02e05c9e47a0fefe706afee78b6f9d">MouseButton</a> mouseButton) =&gt;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].MouseButtonsDownOnceArray[(int)mouseButton];</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a034559591bbdc5c4de057e702a266add">   47</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_multi_mouse.html#a034559591bbdc5c4de057e702a266add">IsMouseButtonUpOnce</a>(<span class="keywordtype">int</span> mouseIndex, <a class="code hl_enumeration" href="namespace_engine_1_1_input.html#a9c02e05c9e47a0fefe706afee78b6f9d">MouseButton</a> mouseButton) =&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].MouseButtonsUpOnceArray[(int)mouseButton];</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#ab9bc15d7547d3b24dcd6a35e290041e1">   50</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#ab9bc15d7547d3b24dcd6a35e290041e1">Clear</a>() {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>.Length; i++) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[i].MouseButtonsDownArray.Length; j++) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[i].MouseButtonsDownArray[j] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[i].MouseButtonsDownOnceArray[j] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[i].MouseButtonsUpOnceArray[j] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a5e431cf0e93578e2f9f066757df23fc4">   60</a></span>    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#a5e431cf0e93578e2f9f066757df23fc4">AfterFrame</a>() {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>.Length; i++) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[i].MouseButtonsDownOnceArray.Length; j++) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[i].MouseButtonsDownOnceArray[j] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[i].MouseButtonsUpOnceArray[j] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// ReSharper disable UnusedMember.Local</span></div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#aff63573e299d99627681af2667ce360f">   70</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#aff63573e299d99627681af2667ce360f">ProcessMouseDown</a>(<span class="keywordtype">int</span> mouseIndex, <a class="code hl_enumeration" href="namespace_engine_1_1_input.html#a9c02e05c9e47a0fefe706afee78b6f9d">MouseButton</a> mouseButton, <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> position) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_engine_1_1_window.html">Window</a>.<a class="code hl_property" href="class_engine_1_1_window.html#a40b3215978f71704afa8f2003b023f83">IsActive</a></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            &amp;&amp; !<a class="code hl_class" href="class_engine_1_1_input_1_1_keyboard.html">Keyboard</a>.<a class="code hl_property" href="class_engine_1_1_input_1_1_keyboard.html#aef26a628aea9bc4358eddeb4d6df6c21">IsKeyboardVisible</a>) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_class" href="class_multi_mouse_1_1_mouse_data.html">MouseData</a> obj = <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex];</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            obj.<a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#aef7990be85133cd053faa1135ff0d795">MouseButtonsDownArray</a>[(int)mouseButton] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            obj.<a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#a01e4bf99c4871a9d8a7c86d11fddbfe3">MouseButtonsDownOnceArray</a>[(int)mouseButton] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">if</span> (<a class="code hl_event" href="class_multi_mouse.html#a2a9855ae7c8b8f3007802e88be59daf8">MouseDown</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <a class="code hl_event" href="class_multi_mouse.html#a2a9855ae7c8b8f3007802e88be59daf8">MouseDown</a>(<span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_input_1_1_multi_mouse_button_event.html">MultiMouseButtonEvent</a> { MouseIndex = mouseIndex, Button = mouseButton, Position = position });</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#ac939db29a2faec7468ddbc391a41ca6a">   82</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#ac939db29a2faec7468ddbc391a41ca6a">ProcessMouseUp</a>(<span class="keywordtype">int</span> mouseIndex, <a class="code hl_enumeration" href="namespace_engine_1_1_input.html#a9c02e05c9e47a0fefe706afee78b6f9d">MouseButton</a> mouseButton, <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> position) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_engine_1_1_window.html">Window</a>.<a class="code hl_property" href="class_engine_1_1_window.html#a40b3215978f71704afa8f2003b023f83">IsActive</a></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            &amp;&amp; !<a class="code hl_class" href="class_engine_1_1_input_1_1_keyboard.html">Keyboard</a>.<a class="code hl_property" href="class_engine_1_1_input_1_1_keyboard.html#aef26a628aea9bc4358eddeb4d6df6c21">IsKeyboardVisible</a>) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_class" href="class_multi_mouse_1_1_mouse_data.html">MouseData</a> obj = <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex];</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            obj.<a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#aef7990be85133cd053faa1135ff0d795">MouseButtonsDownArray</a>[(int)mouseButton] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            obj.<a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#a12fc6d9bb805a2612454305b81fc9f7c">MouseButtonsUpOnceArray</a>[(int)mouseButton] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span> (<a class="code hl_event" href="class_multi_mouse.html#a190a3c9c916c018d4a9cbb8749686a6d">MouseUp</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <a class="code hl_event" href="class_multi_mouse.html#a190a3c9c916c018d4a9cbb8749686a6d">MouseUp</a>(<span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_input_1_1_multi_mouse_button_event.html">MultiMouseButtonEvent</a> { MouseIndex = mouseIndex, Button = mouseButton, Position = position });</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a1a0bbe409728d9a308beb59b92be99e5">   94</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#a1a0bbe409728d9a308beb59b92be99e5">ProcessMouseMove</a>(<span class="keywordtype">int</span> mouseIndex, <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> move) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_engine_1_1_window.html">Window</a>.<a class="code hl_property" href="class_engine_1_1_window.html#a40b3215978f71704afa8f2003b023f83">IsActive</a></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            &amp;&amp; !<a class="code hl_class" href="class_engine_1_1_input_1_1_keyboard.html">Keyboard</a>.<a class="code hl_property" href="class_engine_1_1_input_1_1_keyboard.html#aef26a628aea9bc4358eddeb4d6df6c21">IsKeyboardVisible</a>) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_class" href="class_multi_mouse_1_1_mouse_data.html">MouseData</a> mouseData = <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex];</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordtype">int</span> x = (int)Math.Round(1f * <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#abbd4fd251f75ab5cd36a34bee5c93d34">PowSign</a>(move.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a>, 1.25f));</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordtype">int</span> y = (int)Math.Round(1f * <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#abbd4fd251f75ab5cd36a34bee5c93d34">PowSign</a>(move.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a>, 1.25f));</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            mouseData.MousePosition += <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a>(x, y);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            mouseData.MousePosition.X = Math.Clamp(mouseData.<a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#a864564776bfc3b83f9de650290f31535">MousePosition</a>.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a>, 0, <a class="code hl_class" href="class_engine_1_1_window.html">Window</a>.<a class="code hl_property" href="class_engine_1_1_window.html#a5ab9eb6cfa9bf6307f07fd072c117404">Size</a>.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a> - 1);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            mouseData.MousePosition.Y = Math.Clamp(mouseData.<a class="code hl_variable" href="class_multi_mouse_1_1_mouse_data.html#a864564776bfc3b83f9de650290f31535">MousePosition</a>.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a>, 0, <a class="code hl_class" href="class_engine_1_1_window.html">Window</a>.<a class="code hl_property" href="class_engine_1_1_window.html#a5ab9eb6cfa9bf6307f07fd072c117404">Size</a>.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a> - 1);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">if</span> (<a class="code hl_event" href="class_multi_mouse.html#a4d33e0b809a8dfbe117bbeb5987dbeba">MouseMove</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <a class="code hl_event" href="class_multi_mouse.html#a4d33e0b809a8dfbe117bbeb5987dbeba">MouseMove</a>(<span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_input_1_1_multi_mouse_event.html">MultiMouseEvent</a> { MouseIndex = mouseIndex, Position = mouseData.MousePosition });</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// ReSharper restore UnusedMember.Local</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a8f8311814c06016a14cf257ffb469b3c">  110</a></span>    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#a8f8311814c06016a14cf257ffb469b3c">IsConnected</a>(<span class="keywordtype">int</span> mouseIndex, <span class="keywordtype">bool</span> value) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].IsConnected = value;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
+</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a0f4d80f7f4d43698378f75e81cd25d17">  114</a></span>    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#a0f4d80f7f4d43698378f75e81cd25d17">MouseMovement</a>(<span class="keywordtype">int</span> mouseIndex, <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> value) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].MouseMovement = value;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a397c7beee64ed84de7a4e8da12652bc6">  118</a></span>    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#a397c7beee64ed84de7a4e8da12652bc6">MouseWheelMovement</a>(<span class="keywordtype">int</span> mouseIndex, <span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <a class="code hl_variable" href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">_MouseData</a>[mouseIndex].MouseWheelMovement = value;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a9278d51abda69b30b9956239fac4c81b">  122</a></span>    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#a9278d51abda69b30b9956239fac4c81b">Initialize</a>() { }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a304dfca4095965cf27103cd2f05ed41d">  124</a></span>    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#a304dfca4095965cf27103cd2f05ed41d">Dispose</a>() { }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_multi_mouse.html#a48d75b72f58a758e552b108435c07e06">  126</a></span>    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_multi_mouse.html#a48d75b72f58a758e552b108435c07e06">BeforeFrame</a>() { }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
+</div>
+<div class="ttc" id="aclass_engine_1_1_input_1_1_keyboard_html"><div class="ttname"><a href="class_engine_1_1_input_1_1_keyboard.html">Engine.Input.Keyboard</a></div><div class="ttdef"><b>定义</b> <a href="_keyboard_8cs_source.html#l00014">Keyboard.cs:14</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_input_1_1_keyboard_html_aef26a628aea9bc4358eddeb4d6df6c21"><div class="ttname"><a href="class_engine_1_1_input_1_1_keyboard.html#aef26a628aea9bc4358eddeb4d6df6c21">Engine.Input.Keyboard.IsKeyboardVisible</a></div><div class="ttdeci">static bool IsKeyboardVisible</div><div class="ttdef"><b>定义</b> <a href="_keyboard_8cs_source.html#l00051">Keyboard.cs:51</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_abbd4fd251f75ab5cd36a34bee5c93d34"><div class="ttname"><a href="class_engine_1_1_math_utils.html#abbd4fd251f75ab5cd36a34bee5c93d34">Engine.MathUtils.PowSign</a></div><div class="ttdeci">static float PowSign(float x, float n)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00211">MathUtils.cs:211</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_window_html"><div class="ttname"><a href="class_engine_1_1_window.html">Engine.Window</a></div><div class="ttdef"><b>定义</b> <a href="_window_8cs_source.html#l00036">Window.cs:36</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_window_html_a40b3215978f71704afa8f2003b023f83"><div class="ttname"><a href="class_engine_1_1_window.html#a40b3215978f71704afa8f2003b023f83">Engine.Window.IsActive</a></div><div class="ttdeci">static bool IsActive</div><div class="ttdef"><b>定义</b> <a href="_window_8cs_source.html#l00362">Window.cs:362</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_window_html_a5ab9eb6cfa9bf6307f07fd072c117404"><div class="ttname"><a href="class_engine_1_1_window.html#a5ab9eb6cfa9bf6307f07fd072c117404">Engine.Window.Size</a></div><div class="ttdeci">static Point2 Size</div><div class="ttdef"><b>定义</b> <a href="_window_8cs_source.html#l00203">Window.cs:203</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_1_1_mouse_data_html"><div class="ttname"><a href="class_multi_mouse_1_1_mouse_data.html">MultiMouse.MouseData</a></div><div class="ttdef"><b>定义</b> <a href="#l00008">MultiMouse.cs:8</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_1_1_mouse_data_html_a01e4bf99c4871a9d8a7c86d11fddbfe3"><div class="ttname"><a href="class_multi_mouse_1_1_mouse_data.html#a01e4bf99c4871a9d8a7c86d11fddbfe3">MultiMouse.MouseData.MouseButtonsDownOnceArray</a></div><div class="ttdeci">bool[] MouseButtonsDownOnceArray</div><div class="ttdef"><b>定义</b> <a href="#l00021">MultiMouse.cs:21</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_1_1_mouse_data_html_a09aa2423a1f829b8b42cba98da9fd83a"><div class="ttname"><a href="class_multi_mouse_1_1_mouse_data.html#a09aa2423a1f829b8b42cba98da9fd83a">MultiMouse.MouseData.MouseWheelMovement</a></div><div class="ttdeci">int MouseWheelMovement</div><div class="ttdef"><b>定义</b> <a href="#l00016">MultiMouse.cs:16</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_1_1_mouse_data_html_a12fc6d9bb805a2612454305b81fc9f7c"><div class="ttname"><a href="class_multi_mouse_1_1_mouse_data.html#a12fc6d9bb805a2612454305b81fc9f7c">MultiMouse.MouseData.MouseButtonsUpOnceArray</a></div><div class="ttdeci">bool[] MouseButtonsUpOnceArray</div><div class="ttdef"><b>定义</b> <a href="#l00023">MultiMouse.cs:23</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_1_1_mouse_data_html_a2d9afc570b5116bbb7c3de1eea142930"><div class="ttname"><a href="class_multi_mouse_1_1_mouse_data.html#a2d9afc570b5116bbb7c3de1eea142930">MultiMouse.MouseData.MouseMovement</a></div><div class="ttdeci">Point2 MouseMovement</div><div class="ttdef"><b>定义</b> <a href="#l00014">MultiMouse.cs:14</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_1_1_mouse_data_html_a864564776bfc3b83f9de650290f31535"><div class="ttname"><a href="class_multi_mouse_1_1_mouse_data.html#a864564776bfc3b83f9de650290f31535">MultiMouse.MouseData.MousePosition</a></div><div class="ttdeci">Point2 MousePosition</div><div class="ttdef"><b>定义</b> <a href="#l00012">MultiMouse.cs:12</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_1_1_mouse_data_html_aa632bc5477a8cb1945275da63769932c"><div class="ttname"><a href="class_multi_mouse_1_1_mouse_data.html#aa632bc5477a8cb1945275da63769932c">MultiMouse.MouseData.IsConnected</a></div><div class="ttdeci">bool IsConnected</div><div class="ttdef"><b>定义</b> <a href="#l00010">MultiMouse.cs:10</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_1_1_mouse_data_html_aef7990be85133cd053faa1135ff0d795"><div class="ttname"><a href="class_multi_mouse_1_1_mouse_data.html#aef7990be85133cd053faa1135ff0d795">MultiMouse.MouseData.MouseButtonsDownArray</a></div><div class="ttdeci">bool[] MouseButtonsDownArray</div><div class="ttdef"><b>定义</b> <a href="#l00019">MultiMouse.cs:19</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html"><div class="ttname"><a href="class_multi_mouse.html">MultiMouse</a></div><div class="ttdef"><b>定义</b> <a href="#l00007">MultiMouse.cs:7</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a034559591bbdc5c4de057e702a266add"><div class="ttname"><a href="class_multi_mouse.html#a034559591bbdc5c4de057e702a266add">MultiMouse.IsMouseButtonUpOnce</a></div><div class="ttdeci">static bool IsMouseButtonUpOnce(int mouseIndex, MouseButton mouseButton)</div><div class="ttdef"><b>定义</b> <a href="#l00047">MultiMouse.cs:47</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a04ffde5d07f2ac0467499de7bc0b6080"><div class="ttname"><a href="class_multi_mouse.html#a04ffde5d07f2ac0467499de7bc0b6080">MultiMouse.IsConnected</a></div><div class="ttdeci">static bool IsConnected(int mouseIndex)</div><div class="ttdef"><b>定义</b> <a href="#l00034">MultiMouse.cs:34</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a097c43ae77c35b28b3dfe7fd960bb045"><div class="ttname"><a href="class_multi_mouse.html#a097c43ae77c35b28b3dfe7fd960bb045">MultiMouse.MouseWheelMovement</a></div><div class="ttdeci">static int MouseWheelMovement(int mouseIndex)</div><div class="ttdef"><b>定义</b> <a href="#l00038">MultiMouse.cs:38</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a0f4d80f7f4d43698378f75e81cd25d17"><div class="ttname"><a href="class_multi_mouse.html#a0f4d80f7f4d43698378f75e81cd25d17">MultiMouse.MouseMovement</a></div><div class="ttdeci">static void MouseMovement(int mouseIndex, Point2 value)</div><div class="ttdef"><b>定义</b> <a href="#l00114">MultiMouse.cs:114</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a190a3c9c916c018d4a9cbb8749686a6d"><div class="ttname"><a href="class_multi_mouse.html#a190a3c9c916c018d4a9cbb8749686a6d">MultiMouse.MouseUp</a></div><div class="ttdeci">static Action&lt; MultiMouseButtonEvent &gt; MouseUp</div><div class="ttdef"><b>定义</b> <a href="#l00032">MultiMouse.cs:32</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a1a0bbe409728d9a308beb59b92be99e5"><div class="ttname"><a href="class_multi_mouse.html#a1a0bbe409728d9a308beb59b92be99e5">MultiMouse.ProcessMouseMove</a></div><div class="ttdeci">static void ProcessMouseMove(int mouseIndex, Point2 move)</div><div class="ttdef"><b>定义</b> <a href="#l00094">MultiMouse.cs:94</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a2a9855ae7c8b8f3007802e88be59daf8"><div class="ttname"><a href="class_multi_mouse.html#a2a9855ae7c8b8f3007802e88be59daf8">MultiMouse.MouseDown</a></div><div class="ttdeci">static Action&lt; MultiMouseButtonEvent &gt; MouseDown</div><div class="ttdef"><b>定义</b> <a href="#l00030">MultiMouse.cs:30</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a304dfca4095965cf27103cd2f05ed41d"><div class="ttname"><a href="class_multi_mouse.html#a304dfca4095965cf27103cd2f05ed41d">MultiMouse.Dispose</a></div><div class="ttdeci">static void Dispose()</div><div class="ttdef"><b>定义</b> <a href="#l00124">MultiMouse.cs:124</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a397c7beee64ed84de7a4e8da12652bc6"><div class="ttname"><a href="class_multi_mouse.html#a397c7beee64ed84de7a4e8da12652bc6">MultiMouse.MouseWheelMovement</a></div><div class="ttdeci">static void MouseWheelMovement(int mouseIndex, int value)</div><div class="ttdef"><b>定义</b> <a href="#l00118">MultiMouse.cs:118</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a48d75b72f58a758e552b108435c07e06"><div class="ttname"><a href="class_multi_mouse.html#a48d75b72f58a758e552b108435c07e06">MultiMouse.BeforeFrame</a></div><div class="ttdeci">static void BeforeFrame()</div><div class="ttdef"><b>定义</b> <a href="#l00126">MultiMouse.cs:126</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a4d33e0b809a8dfbe117bbeb5987dbeba"><div class="ttname"><a href="class_multi_mouse.html#a4d33e0b809a8dfbe117bbeb5987dbeba">MultiMouse.MouseMove</a></div><div class="ttdeci">static Action&lt; MultiMouseEvent &gt; MouseMove</div><div class="ttdef"><b>定义</b> <a href="#l00028">MultiMouse.cs:28</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a585b1bcd579573f48a7a62417907d8c7"><div class="ttname"><a href="class_multi_mouse.html#a585b1bcd579573f48a7a62417907d8c7">MultiMouse._MouseData</a></div><div class="ttdeci">static MouseData[] _MouseData</div><div class="ttdef"><b>定义</b> <a href="#l00026">MultiMouse.cs:26</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a5e431cf0e93578e2f9f066757df23fc4"><div class="ttname"><a href="class_multi_mouse.html#a5e431cf0e93578e2f9f066757df23fc4">MultiMouse.AfterFrame</a></div><div class="ttdeci">static void AfterFrame()</div><div class="ttdef"><b>定义</b> <a href="#l00060">MultiMouse.cs:60</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a77c548a080711e65afb53bcf48c170ca"><div class="ttname"><a href="class_multi_mouse.html#a77c548a080711e65afb53bcf48c170ca">MultiMouse.IsMouseButtonDown</a></div><div class="ttdeci">static bool IsMouseButtonDown(int mouseIndex, MouseButton mouseButton)</div><div class="ttdef"><b>定义</b> <a href="#l00042">MultiMouse.cs:42</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a8f8311814c06016a14cf257ffb469b3c"><div class="ttname"><a href="class_multi_mouse.html#a8f8311814c06016a14cf257ffb469b3c">MultiMouse.IsConnected</a></div><div class="ttdeci">static void IsConnected(int mouseIndex, bool value)</div><div class="ttdef"><b>定义</b> <a href="#l00110">MultiMouse.cs:110</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_a9278d51abda69b30b9956239fac4c81b"><div class="ttname"><a href="class_multi_mouse.html#a9278d51abda69b30b9956239fac4c81b">MultiMouse.Initialize</a></div><div class="ttdeci">static void Initialize()</div><div class="ttdef"><b>定义</b> <a href="#l00122">MultiMouse.cs:122</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_aa228e906fa099c782a150b100ba12d88"><div class="ttname"><a href="class_multi_mouse.html#aa228e906fa099c782a150b100ba12d88">MultiMouse.MousePosition</a></div><div class="ttdeci">static Point2 MousePosition(int mouseIndex)</div><div class="ttdef"><b>定义</b> <a href="#l00040">MultiMouse.cs:40</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_ab9bc15d7547d3b24dcd6a35e290041e1"><div class="ttname"><a href="class_multi_mouse.html#ab9bc15d7547d3b24dcd6a35e290041e1">MultiMouse.Clear</a></div><div class="ttdeci">static void Clear()</div><div class="ttdef"><b>定义</b> <a href="#l00050">MultiMouse.cs:50</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_ac939db29a2faec7468ddbc391a41ca6a"><div class="ttname"><a href="class_multi_mouse.html#ac939db29a2faec7468ddbc391a41ca6a">MultiMouse.ProcessMouseUp</a></div><div class="ttdeci">static void ProcessMouseUp(int mouseIndex, MouseButton mouseButton, Point2 position)</div><div class="ttdef"><b>定义</b> <a href="#l00082">MultiMouse.cs:82</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_ae6619e4f991af48732d8ea314657253f"><div class="ttname"><a href="class_multi_mouse.html#ae6619e4f991af48732d8ea314657253f">MultiMouse.MouseMovement</a></div><div class="ttdeci">static Point2 MouseMovement(int mouseIndex)</div><div class="ttdef"><b>定义</b> <a href="#l00036">MultiMouse.cs:36</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_aed9b0d2c80eb655f5a7ef4d2347a5c1f"><div class="ttname"><a href="class_multi_mouse.html#aed9b0d2c80eb655f5a7ef4d2347a5c1f">MultiMouse.IsMouseButtonDownOnce</a></div><div class="ttdeci">static bool IsMouseButtonDownOnce(int mouseIndex, MouseButton mouseButton)</div><div class="ttdef"><b>定义</b> <a href="#l00044">MultiMouse.cs:44</a></div></div>
+<div class="ttc" id="aclass_multi_mouse_html_aff63573e299d99627681af2667ce360f"><div class="ttname"><a href="class_multi_mouse.html#aff63573e299d99627681af2667ce360f">MultiMouse.ProcessMouseDown</a></div><div class="ttdeci">static void ProcessMouseDown(int mouseIndex, MouseButton mouseButton, Point2 position)</div><div class="ttdef"><b>定义</b> <a href="#l00070">MultiMouse.cs:70</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_input_html"><div class="ttname"><a href="namespace_engine_1_1_input.html">Engine.Input</a></div><div class="ttdef"><b>定义</b> <a href="_cursor_type_8cs_source.html#l00001">CursorType.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_input_html_a9c02e05c9e47a0fefe706afee78b6f9d"><div class="ttname"><a href="namespace_engine_1_1_input.html#a9c02e05c9e47a0fefe706afee78b6f9d">Engine.Input.MouseButton</a></div><div class="ttdeci">MouseButton</div><div class="ttdef"><b>定义</b> <a href="_mouse_button_8cs_source.html#l00002">MouseButton.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_input_1_1_multi_mouse_button_event_html"><div class="ttname"><a href="struct_engine_1_1_input_1_1_multi_mouse_button_event.html">Engine.Input.MultiMouseButtonEvent</a></div><div class="ttdef"><b>定义</b> <a href="_multi_mouse_button_event_8cs_source.html#l00002">MultiMouseButtonEvent.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_input_1_1_multi_mouse_event_html"><div class="ttname"><a href="struct_engine_1_1_input_1_1_multi_mouse_event.html">Engine.Input.MultiMouseEvent</a></div><div class="ttdef"><b>定义</b> <a href="_multi_mouse_event_8cs_source.html#l00002">MultiMouseEvent.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html"><div class="ttname"><a href="struct_engine_1_1_point2.html">Engine.Point2</a></div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00002">Point2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html_a5a5df9b9665d68a1edf96fb1f45e1232"><div class="ttname"><a href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Engine.Point2.Y</a></div><div class="ttdeci">int Y</div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00005">Point2.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html_a893555bab03b75cc94952451edecc8d8"><div class="ttname"><a href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">Engine.Point2.X</a></div><div class="ttdeci">int X</div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00003">Point2.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_07ec01a1864fa6144baf6e4d82ee7d46.html">Engine.Input</a></li><li class="navelem"><a href="_multi_mouse_8cs.html">MultiMouse.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

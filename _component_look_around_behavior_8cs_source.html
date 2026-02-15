@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Component/ComponentLookAroundBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_component_look_around_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ComponentLookAroundBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_look_around_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_component_look_around_behavior.html">ComponentLookAroundBehavior</a> : <a class="code hl_class" href="class_game_1_1_component_behavior.html">ComponentBehavior</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#aaf69894c863a91ec3e7c15133c634a10">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a> <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aaf69894c863a91ec3e7c15133c634a10">m_subsystemTime</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#acbb3b5849b462e8732cee96245e75636">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_creature.html">ComponentCreature</a> <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#acbb3b5849b462e8732cee96245e75636">m_componentCreature</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#ae24fa892c00b3dc4451c4b20d497d783">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_state_machine.html">StateMachine</a> <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#ae24fa892c00b3dc4451c4b20d497d783">m_stateMachine</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#aa622f82a13991e7672d213fde97d6c17">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aa622f82a13991e7672d213fde97d6c17">m_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#a7231b518cecc7ad3c42058d4fcf48803">   14</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#a7231b518cecc7ad3c42058d4fcf48803">m_lookAroundTime</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#aca5886366ad8a516dd768d76b2e4ee16">   16</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aca5886366ad8a516dd768d76b2e4ee16">m_importanceLevel</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#a003804eb363a48ac2d26ba2356da294f">   18</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_component_look_around_behavior.html#a003804eb363a48ac2d26ba2356da294f">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_component_look_around_behavior.html#a003804eb363a48ac2d26ba2356da294f">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_component_look_around_behavior.html#a003804eb363a48ac2d26ba2356da294f">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#a7e10a83af9bc9bf3e9476a1446b8bd2c">   20</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_look_around_behavior.html#a7e10a83af9bc9bf3e9476a1446b8bd2c">ImportanceLevel</a> =&gt; <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aca5886366ad8a516dd768d76b2e4ee16">m_importanceLevel</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#ae243f65854ce0457c65098588e027b45">   22</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_look_around_behavior.html#ae243f65854ce0457c65098588e027b45">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#ae24fa892c00b3dc4451c4b20d497d783">m_stateMachine</a>.Update();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game_1_1_component_look_around_behavior.html#a3042f82864eb2d9e17b2cf6da2bb4a33">   26</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_look_around_behavior.html#a3042f82864eb2d9e17b2cf6da2bb4a33">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aaf69894c863a91ec3e7c15133c634a10">m_subsystemTime</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#acbb3b5849b462e8732cee96245e75636">m_componentCreature</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_creature.html">ComponentCreature</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#ae24fa892c00b3dc4451c4b20d497d783">m_stateMachine</a>.AddState(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <span class="stringliteral">&quot;Inactive&quot;</span>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                delegate { <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aca5886366ad8a516dd768d76b2e4ee16">m_importanceLevel</a> = <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aa622f82a13991e7672d213fde97d6c17">m_random</a>.Float(0f, 1f); },</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                delegate {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#acbb3b5849b462e8732cee96245e75636">m_componentCreature</a>.ComponentBody.StandingOnValue.HasValue</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                        &amp;&amp; <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aa622f82a13991e7672d213fde97d6c17">m_random</a>.Float(0f, 1f) &lt; 0.05f * <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aaf69894c863a91ec3e7c15133c634a10">m_subsystemTime</a>.GameTimeDelta) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                        <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aca5886366ad8a516dd768d76b2e4ee16">m_importanceLevel</a> = <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aa622f82a13991e7672d213fde97d6c17">m_random</a>.Float(1f, 5f);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_component_behavior.html#a6784c817073f05668689491bdf003a1a">IsActive</a>) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#ae24fa892c00b3dc4451c4b20d497d783">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;LookAround&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                },</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                null</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            );</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#ae24fa892c00b3dc4451c4b20d497d783">m_stateMachine</a>.AddState(</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="stringliteral">&quot;LookAround&quot;</span>,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                delegate { <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#a7231b518cecc7ad3c42058d4fcf48803">m_lookAroundTime</a> = <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aa622f82a13991e7672d213fde97d6c17">m_random</a>.Float(8f, 15f); },</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                delegate {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    <span class="keywordflow">if</span> (!<a class="code hl_property" href="class_game_1_1_component_behavior.html#a6784c817073f05668689491bdf003a1a">IsActive</a>) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                        <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#ae24fa892c00b3dc4451c4b20d497d783">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;Inactive&quot;</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#a7231b518cecc7ad3c42058d4fcf48803">m_lookAroundTime</a> &lt;= 0f) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aca5886366ad8a516dd768d76b2e4ee16">m_importanceLevel</a> = 0f;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aa622f82a13991e7672d213fde97d6c17">m_random</a>.Float(0f, 1f) &lt; 0.1f * <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aaf69894c863a91ec3e7c15133c634a10">m_subsystemTime</a>.GameTimeDelta) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                        <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#acbb3b5849b462e8732cee96245e75636">m_componentCreature</a>.ComponentCreatureSounds.PlayIdleSound(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    m_componentCreature.ComponentCreatureModel.LookRandomOrder = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#a7231b518cecc7ad3c42058d4fcf48803">m_lookAroundTime</a> -= <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#aaf69894c863a91ec3e7c15133c634a10">m_subsystemTime</a>.GameTimeDelta;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                },</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                null</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            );</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_variable" href="class_game_1_1_component_look_around_behavior.html#ae24fa892c00b3dc4451c4b20d497d783">m_stateMachine</a>.TransitionTo(<span class="stringliteral">&quot;Inactive&quot;</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="ttc" id="aclass_game_1_1_component_behavior_html"><div class="ttname"><a href="class_game_1_1_component_behavior.html">Game.ComponentBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_component_behavior_8cs_source.html#l00004">ComponentBehavior.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_behavior_html_a6784c817073f05668689491bdf003a1a"><div class="ttname"><a href="class_game_1_1_component_behavior.html#a6784c817073f05668689491bdf003a1a">Game.ComponentBehavior.IsActive</a></div><div class="ttdeci">virtual bool IsActive</div><div class="ttdef"><b>定义</b> <a href="_component_behavior_8cs_source.html#l00007">ComponentBehavior.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_creature_html"><div class="ttname"><a href="class_game_1_1_component_creature.html">Game.ComponentCreature</a></div><div class="ttdef"><b>定义</b> <a href="_component_creature_8cs_source.html#l00007">ComponentCreature.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html">Game.ComponentLookAroundBehavior</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">ComponentLookAroundBehavior.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_a003804eb363a48ac2d26ba2356da294f"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#a003804eb363a48ac2d26ba2356da294f">Game.ComponentLookAroundBehavior.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00018">ComponentLookAroundBehavior.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_a3042f82864eb2d9e17b2cf6da2bb4a33"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#a3042f82864eb2d9e17b2cf6da2bb4a33">Game.ComponentLookAroundBehavior.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary, IdToEntityMap idToEntityMap)</div><div class="ttdef"><b>定义</b> <a href="#l00026">ComponentLookAroundBehavior.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_a7231b518cecc7ad3c42058d4fcf48803"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#a7231b518cecc7ad3c42058d4fcf48803">Game.ComponentLookAroundBehavior.m_lookAroundTime</a></div><div class="ttdeci">float m_lookAroundTime</div><div class="ttdef"><b>定义</b> <a href="#l00014">ComponentLookAroundBehavior.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_a7e10a83af9bc9bf3e9476a1446b8bd2c"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#a7e10a83af9bc9bf3e9476a1446b8bd2c">Game.ComponentLookAroundBehavior.ImportanceLevel</a></div><div class="ttdeci">override float ImportanceLevel</div><div class="ttdef"><b>定义</b> <a href="#l00020">ComponentLookAroundBehavior.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_aa622f82a13991e7672d213fde97d6c17"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#aa622f82a13991e7672d213fde97d6c17">Game.ComponentLookAroundBehavior.m_random</a></div><div class="ttdeci">Random m_random</div><div class="ttdef"><b>定义</b> <a href="#l00012">ComponentLookAroundBehavior.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_aaf69894c863a91ec3e7c15133c634a10"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#aaf69894c863a91ec3e7c15133c634a10">Game.ComponentLookAroundBehavior.m_subsystemTime</a></div><div class="ttdeci">SubsystemTime m_subsystemTime</div><div class="ttdef"><b>定义</b> <a href="#l00006">ComponentLookAroundBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_aca5886366ad8a516dd768d76b2e4ee16"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#aca5886366ad8a516dd768d76b2e4ee16">Game.ComponentLookAroundBehavior.m_importanceLevel</a></div><div class="ttdeci">float m_importanceLevel</div><div class="ttdef"><b>定义</b> <a href="#l00016">ComponentLookAroundBehavior.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_acbb3b5849b462e8732cee96245e75636"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#acbb3b5849b462e8732cee96245e75636">Game.ComponentLookAroundBehavior.m_componentCreature</a></div><div class="ttdeci">ComponentCreature m_componentCreature</div><div class="ttdef"><b>定义</b> <a href="#l00008">ComponentLookAroundBehavior.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_ae243f65854ce0457c65098588e027b45"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#ae243f65854ce0457c65098588e027b45">Game.ComponentLookAroundBehavior.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00022">ComponentLookAroundBehavior.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_look_around_behavior_html_ae24fa892c00b3dc4451c4b20d497d783"><div class="ttname"><a href="class_game_1_1_component_look_around_behavior.html#ae24fa892c00b3dc4451c4b20d497d783">Game.ComponentLookAroundBehavior.m_stateMachine</a></div><div class="ttdeci">StateMachine m_stateMachine</div><div class="ttdef"><b>定义</b> <a href="#l00010">ComponentLookAroundBehavior.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_state_machine_html"><div class="ttname"><a href="class_game_1_1_state_machine.html">Game.StateMachine</a></div><div class="ttdef"><b>定义</b> <a href="_state_machine_8cs_source.html#l00002">StateMachine.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_time_html"><div class="ttname"><a href="class_game_1_1_subsystem_time.html">Game.SubsystemTime</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_time_8cs_source.html#l00006">SubsystemTime.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a4b812f6825600e5419612a580d3094ff"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">GameEntitySystem.Component.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00012">Component.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a771baadae7a12358301d000d2e127421"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">GameEntitySystem.Component.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00016">Component.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html">GameEntitySystem.IdToEntityMap</a></div><div class="ttdef"><b>定义</b> <a href="_id_to_entity_map_8cs_source.html#l00005">IdToEntityMap.cs:5</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_0ae50620953341a2d59f4b8faa145d4c.html">Component</a></li><li class="navelem"><a href="_component_look_around_behavior_8cs.html">ComponentLookAroundBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Screen/OriginalCommunity/OriginalCommunityContentManager.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_original_community_content_manager_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">OriginalCommunityContentManager.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_original_community_content_manager_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Security.Cryptography;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Text;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game.html">Game</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_xml_utilities.html">XmlUtilities</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html">    9</a></span><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="class_original_community_content_manager.html">OriginalCommunityContentManager</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">   11</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, string&gt; <a class="code hl_variable" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">m_idToAddressMap</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#ae3ffaaacee00b598d287c9eb979a595f">   13</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, bool&gt; <a class="code hl_variable" href="class_original_community_content_manager.html#ae3ffaaacee00b598d287c9eb979a595f">m_feedbackCache</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">   15</a></span>    <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a> = <span class="stringliteral">&quot;CommunityContentManager&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a50bfbceb095dd22effb4cd47d2560476">   17</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#a50bfbceb095dd22effb4cd47d2560476">Initialize</a>() {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_function" href="class_original_community_content_manager.html#a82dcdf2aae36e772dc8fe3938870863e">Load</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_event" href="class_game_1_1_worlds_manager.html#a24dbea935df526e988aa9c80ab9c3d63">WorldsManager.WorldDeleted</a> += delegate(<span class="keywordtype">string</span> path) { <a class="code hl_variable" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">m_idToAddressMap</a>.Remove(<a class="code hl_function" href="class_original_community_content_manager.html#a345500f04d201c365890dcf813bd5f01">MakeContentIdString</a>(<a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a>.World, path)); };</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_event" href="class_game_1_1_blocks_textures_manager.html#a124c084d6f4d1764642fb424bb72c007">BlocksTexturesManager.BlocksTextureDeleted</a> += delegate(<span class="keywordtype">string</span> path) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_variable" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">m_idToAddressMap</a>.Remove(<a class="code hl_function" href="class_original_community_content_manager.html#a345500f04d201c365890dcf813bd5f01">MakeContentIdString</a>(<a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a>.BlocksTexture, path));</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        };</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_event" href="class_game_1_1_character_skins_manager.html#aa214d1795b9a633a79e1b1d143e0abfb">CharacterSkinsManager.CharacterSkinDeleted</a> += delegate(<span class="keywordtype">string</span> path) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_variable" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">m_idToAddressMap</a>.Remove(<a class="code hl_function" href="class_original_community_content_manager.html#a345500f04d201c365890dcf813bd5f01">MakeContentIdString</a>(<a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a>.CharacterSkin, path));</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        };</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_event" href="class_game_1_1_furniture_packs_manager.html#a34e223dd236aa276c5e6a2c526a9d833">FurniturePacksManager.FurniturePackDeleted</a> += delegate(<span class="keywordtype">string</span> path) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_variable" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">m_idToAddressMap</a>.Remove(<a class="code hl_function" href="class_original_community_content_manager.html#a345500f04d201c365890dcf813bd5f01">MakeContentIdString</a>(<a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a>.FurniturePack, path));</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        };</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_event" href="class_engine_1_1_window.html#a78b0e31756f20fe6b7752d3d3d2f4e12">Window.Deactivated</a> += delegate { <a class="code hl_function" href="class_original_community_content_manager.html#a59623c008639efe268d5a62bf7b4bb1e">Save</a>(); };</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a4c0a9cca3fc46635378b783336200e35">   32</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_original_community_content_manager.html#a4c0a9cca3fc46635378b783336200e35">GetDownloadedContentAddress</a>(<a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a> type, <span class="keywordtype">string</span> name) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_variable" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">m_idToAddressMap</a>.TryGetValue(<a class="code hl_function" href="class_original_community_content_manager.html#a345500f04d201c365890dcf813bd5f01">MakeContentIdString</a>(type, name), out <span class="keywordtype">string</span> value);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a44d0ece1568c0898b78544225fc71cc3">   37</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_original_community_content_manager.html#a44d0ece1568c0898b78544225fc71cc3">IsContentRated</a>(<span class="keywordtype">string</span> address, <span class="keywordtype">string</span> userId) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">string</span> key = <a class="code hl_function" href="class_original_community_content_manager.html#a61ef43b7c4ac151e90242fcc745d89aa">MakeFeedbackCacheKey</a>(address, <span class="stringliteral">&quot;Rating&quot;</span>, userId);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_original_community_content_manager.html#ae3ffaaacee00b598d287c9eb979a595f">m_feedbackCache</a>.ContainsKey(key);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#ab2603978cb30b250435dd5bcdbd031a4">   42</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#ab2603978cb30b250435dd5bcdbd031a4">List</a>(<span class="keywordtype">string</span> cursor,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">string</span> userId,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordtype">string</span> userUrl,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">string</span> type,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">string</span> moderation,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">string</span> search,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">string</span> sortOrder,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        Action&lt;<a class="code hl_function" href="class_original_community_content_manager.html#ab2603978cb30b250435dd5bcdbd031a4">List&lt;OriginalCommunityContentEntry&gt;</a>, <span class="keywordtype">string</span>&gt; success,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        Action&lt;Exception&gt; failure) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        progress = progress ?? <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a3576f94279c0f76ac66727ee7975c81c">IsInternetConnectionAvailable</a>()) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            failure(<span class="keyword">new</span> InvalidOperationException(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a>, <span class="stringliteral">&quot;1&quot;</span>)));</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        Dictionary&lt;string, string&gt; dictionary = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        dictionary.Add(<span class="stringliteral">&quot;Action&quot;</span>, <span class="stringliteral">&quot;list&quot;</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        dictionary.Add(<span class="stringliteral">&quot;Cursor&quot;</span>, cursor ?? <span class="keywordtype">string</span>.Empty);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        dictionary.Add(<span class="stringliteral">&quot;UserId&quot;</span>, userId ?? <span class="keywordtype">string</span>.Empty);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        dictionary.Add(<span class="stringliteral">&quot;UserUrl&quot;</span>, userUrl ?? <span class="keywordtype">string</span>.Empty);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        dictionary.Add(<span class="stringliteral">&quot;Type&quot;</span>, type ?? <span class="keywordtype">string</span>.Empty);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        dictionary.Add(<span class="stringliteral">&quot;Moderation&quot;</span>, moderation ?? <span class="keywordtype">string</span>.Empty);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        dictionary.Add(<span class="stringliteral">&quot;Search&quot;</span>, search ?? <span class="keywordtype">string</span>.Empty);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        dictionary.Add(<span class="stringliteral">&quot;SortOrder&quot;</span>, sortOrder ?? <span class="keywordtype">string</span>.Empty);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        dictionary.Add(<span class="stringliteral">&quot;Platform&quot;</span>, <a class="code hl_class" href="class_game_1_1_versions_manager.html">VersionsManager</a>.<a class="code hl_property" href="class_game_1_1_versions_manager.html#ad14419f671d9619e578ab869fc4db8c8">PlatformString</a>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        dictionary.Add(<span class="stringliteral">&quot;Version&quot;</span>, <a class="code hl_class" href="class_game_1_1_versions_manager.html">VersionsManager</a>.<a class="code hl_property" href="class_game_1_1_versions_manager.html#a1547d85bbabd6099ed6f16260a518d5e">Version</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a062220724defd9dc857a9fef7a278814">Post</a>(</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager.html#aea80189fe8e9a22d0d24284939935d2c">CurrentOriginalInfo</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager_1_1_info.html#a939e5250272acebfd930cbb196460853">ApiUrl</a>,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a6e959bc5d29e1e3f3c344492a0783395">UrlParametersToStream</a>(dictionary),</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            progress,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            delegate(<span class="keywordtype">byte</span>[] result) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    XElement xElement = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#aa742b5dd76bcb003115fe2fa5d7762db">LoadXmlFromString</a>(Encoding.UTF8.GetString(result, 0, result.Length), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    <span class="keywordtype">string</span> attributeValue = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>&lt;<span class="keywordtype">string</span>&gt;(xElement, <span class="stringliteral">&quot;NextCursor&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    <a class="code hl_function" href="class_original_community_content_manager.html#ab2603978cb30b250435dd5bcdbd031a4">List&lt;OriginalCommunityContentEntry&gt;</a> list = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    <span class="keywordtype">string</span> downloadString = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<span class="stringliteral">&quot;OriginalCommunityContentScreen&quot;</span>, <span class="stringliteral">&quot;10&quot;</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    <span class="keywordflow">foreach</span> (XElement item <span class="keywordflow">in</span> xElement.Elements()) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                            list.Add(</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                                <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_original_community_content_entry.html">OriginalCommunityContentEntry</a> {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                                    Type = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>(item, <span class="stringliteral">&quot;Type&quot;</span>, <a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a>.Unknown),</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                    Name = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>&lt;<span class="keywordtype">string</span>&gt;(item, <span class="stringliteral">&quot;Name&quot;</span>),</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                    Url = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>&lt;<span class="keywordtype">string</span>&gt;(item, <span class="stringliteral">&quot;Url&quot;</span>),</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                                    Version = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>(item, <span class="stringliteral">&quot;Version&quot;</span>, <span class="keyword">new</span> Version(0, 0)),</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                                    Size = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>&lt;<span class="keywordtype">long</span>&gt;(item, <span class="stringliteral">&quot;Size&quot;</span>),</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                                    ExtraText = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>(item, <span class="stringliteral">&quot;ExtraText&quot;</span>, <span class="keywordtype">string</span>.Empty).Replace(<span class="stringliteral">&quot;downloads&quot;</span>, downloadString),</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                    RatingsAverage = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>(item, <span class="stringliteral">&quot;RatingsAverage&quot;</span>, 0f)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                                }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                            );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                        <span class="keywordflow">catch</span> (Exception) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                            <span class="comment">// ignored</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                        }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    success(list, attributeValue);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="keywordflow">catch</span> (Exception obj) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    failure(obj);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            },</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            delegate(Exception error) { failure(error); }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        );</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a072df90ea171a3b04bff694ef24e43ea">  108</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#a072df90ea171a3b04bff694ef24e43ea">Download</a>(<span class="keywordtype">string</span> address,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordtype">string</span> name,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a> type,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordtype">string</span> userId,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        Action success,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        Action&lt;Exception&gt; failure) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        progress = progress ?? <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a3576f94279c0f76ac66727ee7975c81c">IsInternetConnectionAvailable</a>()) {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            failure(<span class="keyword">new</span> InvalidOperationException(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a>, <span class="stringliteral">&quot;1&quot;</span>)));</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a84022562942c82b6f5b5251a85497ef3">Get</a>(</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            address,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            progress,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            delegate(<span class="keywordtype">byte</span>[] data) {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                <span class="keywordtype">string</span> hash = <a class="code hl_function" href="class_original_community_content_manager.html#aef4eee425738f684f2022bc74cd2b435">CalculateContentHashString</a>(data);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                <a class="code hl_class" href="class_game_1_1_external_content_manager.html">ExternalContentManager</a>.<a class="code hl_function" href="class_game_1_1_external_content_manager.html#a025f2e872be3af540dd1ffef53e1482d">ImportExternalContent</a>(</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                    <span class="keyword">new</span> MemoryStream(data),</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                    type,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                    name,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                    delegate(<span class="keywordtype">string</span> downloadedName) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                        <a class="code hl_variable" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">m_idToAddressMap</a>[<a class="code hl_function" href="class_original_community_content_manager.html#a345500f04d201c365890dcf813bd5f01">MakeContentIdString</a>(type, downloadedName)] = address;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                        <a class="code hl_function" href="class_original_community_content_manager.html#a8a938252a343375fdbfae7ea5cb32ea7">Feedback</a>(</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                            address,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                            <span class="stringliteral">&quot;Success&quot;</span>,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                            hash,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                            data.Length,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                            userId,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                            progress,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                            delegate { },</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                            delegate { }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                        );</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                        <span class="comment">//AnalyticsManager.LogEvent(&quot;[OriginalCommunityContentManager] Download Success&quot;, new AnalyticsParameter(&quot;Name&quot;, name));</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                        success();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                    },</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                    delegate(Exception error) {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                        <a class="code hl_function" href="class_original_community_content_manager.html#a8a938252a343375fdbfae7ea5cb32ea7">Feedback</a>(</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                            address,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                            <span class="stringliteral">&quot;ImportFailure&quot;</span>,</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                            hash,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                            data.Length,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                            userId,</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                            delegate { },</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                            delegate { }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                        );</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                        <span class="comment">//AnalyticsManager.LogEvent(&quot;[OriginalCommunityContentManager] Import Failure&quot;, new AnalyticsParameter(&quot;Name&quot;, name), new AnalyticsParameter(&quot;Error&quot;, error.Message.ToString()));</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                        failure(error);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                );</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            },</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            delegate(Exception error) {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <a class="code hl_function" href="class_original_community_content_manager.html#a8a938252a343375fdbfae7ea5cb32ea7">Feedback</a>(</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                    address,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                    <span class="stringliteral">&quot;DownloadFailure&quot;</span>,</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                    <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                    0L,</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                    userId,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                    <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                    delegate { },</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                    delegate { }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                );</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                <span class="comment">//AnalyticsManager.LogEvent(&quot;[OriginalCommunityContentManager] Download Failure&quot;, new AnalyticsParameter(&quot;Name&quot;, name), new AnalyticsParameter(&quot;Error&quot;, error.Message.ToString()));</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                failure(error);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        );</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
+</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="foldopen" id="foldopen00182" data-start="{" data-end="}">
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#aaea3e73c7aca75dbebda53686d33fe07">  182</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#aaea3e73c7aca75dbebda53686d33fe07">Publish</a>(<span class="keywordtype">string</span> address,</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordtype">string</span> name,</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a> type,</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordtype">string</span> userId,</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress,</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        Action success,</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        Action&lt;Exception&gt; failure) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        progress = progress ?? <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a>();</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_marketplace_manager.html">MarketplaceManager</a>.<a class="code hl_property" href="class_game_1_1_marketplace_manager.html#a51ea817b3fc226435c9d4b386e5a4bbf">IsTrialMode</a>) {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            failure(<span class="keyword">new</span> InvalidOperationException(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a>, <span class="stringliteral">&quot;2&quot;</span>)));</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a3576f94279c0f76ac66727ee7975c81c">IsInternetConnectionAvailable</a>()) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            failure(<span class="keyword">new</span> InvalidOperationException(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a>, <span class="stringliteral">&quot;1&quot;</span>)));</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <a class="code hl_function" href="class_original_community_content_manager.html#a57d8b3ad9e9d04ea1537b0c07fbcf1d3">VerifyLinkContent</a>(</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            address,</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            name,</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            type,</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            progress,</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            delegate(<span class="keywordtype">byte</span>[] data) {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                <span class="keywordtype">string</span> value = <a class="code hl_function" href="class_original_community_content_manager.html#aef4eee425738f684f2022bc74cd2b435">CalculateContentHashString</a>(data);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a062220724defd9dc857a9fef7a278814">Post</a>(</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                    <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager.html#aea80189fe8e9a22d0d24284939935d2c">CurrentOriginalInfo</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager_1_1_info.html#a939e5250272acebfd930cbb196460853">ApiUrl</a>,</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                    <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                    <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                    <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a6e959bc5d29e1e3f3c344492a0783395">UrlParametersToStream</a>(</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                        <span class="keyword">new</span> Dictionary&lt;string, string&gt; {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                            { <span class="stringliteral">&quot;Action&quot;</span>, <span class="stringliteral">&quot;publish&quot;</span> },</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                            { <span class="stringliteral">&quot;UserId&quot;</span>, userId },</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                            { <span class="stringliteral">&quot;Name&quot;</span>, name },</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                            { <span class="stringliteral">&quot;Url&quot;</span>, address },</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                            { <span class="stringliteral">&quot;Type&quot;</span>, type.ToString() },</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                            { <span class="stringliteral">&quot;Hash&quot;</span>, value },</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                            { <span class="stringliteral">&quot;Size&quot;</span>, data.Length.ToString(CultureInfo.InvariantCulture) },</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                            { <span class="stringliteral">&quot;Platform&quot;</span>, VersionsManager.PlatformString },</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                            { <span class="stringliteral">&quot;Version&quot;</span>, VersionsManager.Version }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                        }</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                    ),</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                    progress,</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    delegate {</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                        success();</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                        <span class="comment">//AnalyticsManager.LogEvent(&quot;[OriginalCommunityContentManager] Publish Success&quot;, new AnalyticsParameter(&quot;Name&quot;, name), new AnalyticsParameter(&quot;Type&quot;, type.ToString()), new AnalyticsParameter(&quot;Size&quot;, data.Length.ToString()), new AnalyticsParameter(&quot;User&quot;, userId));</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                    },</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                    delegate(Exception error) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                        failure(error);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                        <span class="comment">//AnalyticsManager.LogEvent(&quot;[OriginalCommunityContentManager] Publish Failure&quot;, new AnalyticsParameter(&quot;Name&quot;, name), new AnalyticsParameter(&quot;Type&quot;, type.ToString()), new AnalyticsParameter(&quot;Size&quot;, data.Length.ToString()), new AnalyticsParameter(&quot;User&quot;, userId), new AnalyticsParameter(&quot;Error&quot;, error.Message.ToString()));</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                    }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                );</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            },</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            failure</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        );</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
+</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="foldopen" id="foldopen00237" data-start="{" data-end="}">
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a52db663fab1b3b646dd21be09d135f97">  237</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#a52db663fab1b3b646dd21be09d135f97">Delete</a>(<span class="keywordtype">string</span> address, <span class="keywordtype">string</span> userId, <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress, Action success, Action&lt;Exception&gt; failure) {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        progress = progress ?? <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a>();</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a3576f94279c0f76ac66727ee7975c81c">IsInternetConnectionAvailable</a>()) {</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            failure(<span class="keyword">new</span> InvalidOperationException(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a>, <span class="stringliteral">&quot;1&quot;</span>)));</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        Dictionary&lt;string, string&gt; dictionary = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        dictionary.Add(<span class="stringliteral">&quot;Action&quot;</span>, <span class="stringliteral">&quot;delete&quot;</span>);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        dictionary.Add(<span class="stringliteral">&quot;UserId&quot;</span>, userId);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        dictionary.Add(<span class="stringliteral">&quot;Url&quot;</span>, address);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        dictionary.Add(<span class="stringliteral">&quot;Platform&quot;</span>, <a class="code hl_class" href="class_game_1_1_versions_manager.html">VersionsManager</a>.<a class="code hl_property" href="class_game_1_1_versions_manager.html#ad14419f671d9619e578ab869fc4db8c8">PlatformString</a>);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        dictionary.Add(<span class="stringliteral">&quot;Version&quot;</span>, <a class="code hl_class" href="class_game_1_1_versions_manager.html">VersionsManager</a>.<a class="code hl_property" href="class_game_1_1_versions_manager.html#a1547d85bbabd6099ed6f16260a518d5e">Version</a>);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a062220724defd9dc857a9fef7a278814">Post</a>(</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager.html#aea80189fe8e9a22d0d24284939935d2c">CurrentOriginalInfo</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager_1_1_info.html#a939e5250272acebfd930cbb196460853">ApiUrl</a>,</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a6e959bc5d29e1e3f3c344492a0783395">UrlParametersToStream</a>(dictionary),</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            progress,</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            delegate {</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                success();</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                <span class="comment">//AnalyticsManager.LogEvent(&quot;[OriginalCommunityContentManager] Delete Success&quot;, new AnalyticsParameter(&quot;Name&quot;, address), new AnalyticsParameter(&quot;User&quot;, userId));</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            },</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            delegate(Exception error) {</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                failure(error);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>                <span class="comment">//AnalyticsManager.LogEvent(&quot;[OriginalCommunityContentManager] Delete Failure&quot;, new AnalyticsParameter(&quot;Name&quot;, address), new AnalyticsParameter(&quot;User&quot;, userId), new AnalyticsParameter(&quot;Error&quot;, error.Message.ToString()));</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        );</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    }</div>
+</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="foldopen" id="foldopen00266" data-start="{" data-end="}">
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a927030e9648ca0a9b7903d5cfc1aee18">  266</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#a927030e9648ca0a9b7903d5cfc1aee18">Rate</a>(<span class="keywordtype">string</span> address, <span class="keywordtype">string</span> userId, <span class="keywordtype">int</span> rating, <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress, Action success, Action&lt;Exception&gt; failure) {</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        rating = Math.Clamp(rating, 1, 5);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <a class="code hl_function" href="class_original_community_content_manager.html#a8a938252a343375fdbfae7ea5cb32ea7">Feedback</a>(</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            address,</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <span class="stringliteral">&quot;Rating&quot;</span>,</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            rating.ToString(CultureInfo.InvariantCulture),</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            0L,</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            userId,</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            progress,</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            success,</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            failure</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        );</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    }</div>
+</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="foldopen" id="foldopen00281" data-start="{" data-end="}">
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#ace93c4465548ac5fb5af0052ee4082f0">  281</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#ace93c4465548ac5fb5af0052ee4082f0">Report</a>(<span class="keywordtype">string</span> address, <span class="keywordtype">string</span> userId, <span class="keywordtype">string</span> report, <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress, Action success, Action&lt;Exception&gt; failure) {</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        <a class="code hl_function" href="class_original_community_content_manager.html#a8a938252a343375fdbfae7ea5cb32ea7">Feedback</a>(</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            address,</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            <span class="stringliteral">&quot;Report&quot;</span>,</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            report,</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            0L,</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            userId,</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            progress,</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            success,</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            failure</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        );</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    }</div>
+</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="foldopen" id="foldopen00295" data-start="{" data-end="}">
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a06e78d84e4cae01555f2b6e370d4cde0">  295</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#a06e78d84e4cae01555f2b6e370d4cde0">SendPlayTime</a>(<span class="keywordtype">string</span> address,</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keywordtype">string</span> userId,</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordtype">double</span> time,</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress,</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        Action success,</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        Action&lt;Exception&gt; failure) {</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        <a class="code hl_function" href="class_original_community_content_manager.html#a8a938252a343375fdbfae7ea5cb32ea7">Feedback</a>(</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            address,</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            <span class="stringliteral">&quot;PlayTime&quot;</span>,</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            Math.Round(time).ToString(CultureInfo.InvariantCulture),</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            0L,</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>            userId,</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            progress,</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            success,</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            failure</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        );</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    }</div>
+</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="comment">// ReSharper disable UnusedParameter.Local</span></div>
+<div class="foldopen" id="foldopen00315" data-start="{" data-end="}">
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a57d8b3ad9e9d04ea1537b0c07fbcf1d3">  315</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#a57d8b3ad9e9d04ea1537b0c07fbcf1d3">VerifyLinkContent</a>(<span class="keywordtype">string</span> address,</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            <span class="keywordtype">string</span> name,</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            <a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a> type,</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress,</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            Action&lt;<span class="keywordtype">byte</span>[]&gt; success,</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            Action&lt;Exception&gt; failure)</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="comment">// ReSharper restore UnusedParameter.Local</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    {</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        progress = progress ?? <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a>();</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a84022562942c82b6f5b5251a85497ef3">Get</a>(</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            address,</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            progress,</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            delegate(<span class="keywordtype">byte</span>[] data) {</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                <a class="code hl_class" href="class_game_1_1_external_content_manager.html">ExternalContentManager</a>.<a class="code hl_function" href="class_game_1_1_external_content_manager.html#a025f2e872be3af540dd1ffef53e1482d">ImportExternalContent</a>(</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                    <span class="keyword">new</span> MemoryStream(data),</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                    type,</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                    <span class="stringliteral">&quot;__Temp&quot;</span>,</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                    delegate(<span class="keywordtype">string</span> downloadedName) {</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                        <a class="code hl_class" href="class_game_1_1_external_content_manager.html">ExternalContentManager</a>.<a class="code hl_function" href="class_game_1_1_external_content_manager.html#aca656c28622e8645b608fe6a4b4520f1">DeleteExternalContent</a>(type, downloadedName);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                        success(data);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                    },</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                    failure</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                );</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>            },</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            failure</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        );</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    }</div>
+</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="foldopen" id="foldopen00345" data-start="{" data-end="}">
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a8a938252a343375fdbfae7ea5cb32ea7">  345</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#a8a938252a343375fdbfae7ea5cb32ea7">Feedback</a>(<span class="keywordtype">string</span> address,</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        <span class="keywordtype">string</span> feedback,</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        <span class="keywordtype">string</span> feedbackParameter,</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <span class="keywordtype">string</span> hash,</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        <span class="keywordtype">long</span> size,</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        <span class="keywordtype">string</span> userId,</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress,</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        Action success,</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        Action&lt;Exception&gt; failure) {</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        progress = progress ?? <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a>();</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a3576f94279c0f76ac66727ee7975c81c">IsInternetConnectionAvailable</a>()) {</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>            failure(<span class="keyword">new</span> InvalidOperationException(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a>, <span class="stringliteral">&quot;1&quot;</span>)));</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        <span class="keywordtype">string</span> key = <a class="code hl_function" href="class_original_community_content_manager.html#a61ef43b7c4ac151e90242fcc745d89aa">MakeFeedbackCacheKey</a>(address, feedback, userId);</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_original_community_content_manager.html#ae3ffaaacee00b598d287c9eb979a595f">m_feedbackCache</a>.TryAdd(key, <span class="keyword">true</span>)) {</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>            Task.Run(</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                delegate {</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                    Task.Delay(1500).Wait();</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                    failure(<span class="keyword">new</span> InvalidOperationException(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a>, <span class="stringliteral">&quot;3&quot;</span>)));</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                }</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            );</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        }</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        Dictionary&lt;string, string&gt; dictionary = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        dictionary.Add(<span class="stringliteral">&quot;Action&quot;</span>, <span class="stringliteral">&quot;feedback&quot;</span>);</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        dictionary.Add(<span class="stringliteral">&quot;Feedback&quot;</span>, feedback);</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        <span class="keywordflow">if</span> (feedbackParameter != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>            dictionary.Add(<span class="stringliteral">&quot;FeedbackParameter&quot;</span>, feedbackParameter);</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        }</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        dictionary.Add(<span class="stringliteral">&quot;UserId&quot;</span>, userId);</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <span class="keywordflow">if</span> (address != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>            dictionary.Add(<span class="stringliteral">&quot;Url&quot;</span>, address);</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        }</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        <span class="keywordflow">if</span> (hash != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>            dictionary.Add(<span class="stringliteral">&quot;Hash&quot;</span>, hash);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        }</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>        <span class="keywordflow">if</span> (size &gt; 0) {</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>            dictionary.Add(<span class="stringliteral">&quot;Size&quot;</span>, size.ToString(CultureInfo.InvariantCulture));</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        }</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        dictionary.Add(<span class="stringliteral">&quot;Platform&quot;</span>, <a class="code hl_class" href="class_game_1_1_versions_manager.html">VersionsManager</a>.<a class="code hl_property" href="class_game_1_1_versions_manager.html#ad14419f671d9619e578ab869fc4db8c8">PlatformString</a>);</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        dictionary.Add(<span class="stringliteral">&quot;Version&quot;</span>, <a class="code hl_class" href="class_game_1_1_versions_manager.html">VersionsManager</a>.<a class="code hl_property" href="class_game_1_1_versions_manager.html#a1547d85bbabd6099ed6f16260a518d5e">Version</a>);</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>        <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a062220724defd9dc857a9fef7a278814">Post</a>(</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>            <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager.html#aea80189fe8e9a22d0d24284939935d2c">CurrentOriginalInfo</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager_1_1_info.html#a939e5250272acebfd930cbb196460853">ApiUrl</a>,</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>            <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>            <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a6e959bc5d29e1e3f3c344492a0783395">UrlParametersToStream</a>(dictionary),</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>            progress,</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>            delegate { success(); },</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>            delegate(Exception error) { failure(error); }</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        );</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    }</div>
+</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#aef4eee425738f684f2022bc74cd2b435">  398</a></span>    <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_original_community_content_manager.html#aef4eee425738f684f2022bc74cd2b435">CalculateContentHashString</a>(<span class="keywordtype">byte</span>[] data) =&gt; Convert.ToBase64String(SHA1.HashData(data));</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a61ef43b7c4ac151e90242fcc745d89aa">  400</a></span>    <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_original_community_content_manager.html#a61ef43b7c4ac151e90242fcc745d89aa">MakeFeedbackCacheKey</a>(<span class="keywordtype">string</span> address, <span class="keywordtype">string</span> feedback, <span class="keywordtype">string</span> userId) =&gt; $<span class="stringliteral">&quot;{address}\n{feedback}\n{userId}&quot;</span>;</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a345500f04d201c365890dcf813bd5f01">  402</a></span>    <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_original_community_content_manager.html#a345500f04d201c365890dcf813bd5f01">MakeContentIdString</a>(<a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a> type, <span class="keywordtype">string</span> name) =&gt; $<span class="stringliteral">&quot;{type}:{name}&quot;</span>;</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
+<div class="foldopen" id="foldopen00404" data-start="{" data-end="}">
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a82dcdf2aae36e772dc8fe3938870863e">  404</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#a82dcdf2aae36e772dc8fe3938870863e">Load</a>() {</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a99d6c83e1e607a8037faa718810f9321">FileExists</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a7bafd9ef5a0e510d36e7a89aa22bfdf0">OriginalCommunityContentCachePath</a>)) {</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>            }</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>            <span class="keyword">using </span>Stream stream = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a7bafd9ef5a0e510d36e7a89aa22bfdf0">OriginalCommunityContentCachePath</a>, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.Read);</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>            XElement xElement = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a8ccb324769f1be9a4f1ae6d4ec41f369">LoadXmlFromStream</a>(stream, <span class="keyword">null</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>            IEnumerable&lt;XElement&gt; feedbackElements = xElement.Element(<span class="stringliteral">&quot;Feedback&quot;</span>)?.Elements();</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>            <span class="keywordflow">if</span> (feedbackElements != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>                <span class="keywordflow">foreach</span> (XElement item <span class="keywordflow">in</span> feedbackElements) {</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>                    <span class="keywordtype">string</span> attributeValue = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>&lt;<span class="keywordtype">string</span>&gt;(item, <span class="stringliteral">&quot;Key&quot;</span>);</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>                    <a class="code hl_variable" href="class_original_community_content_manager.html#ae3ffaaacee00b598d287c9eb979a595f">m_feedbackCache</a>[attributeValue] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>                }</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>            }</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>            IEnumerable&lt;XElement&gt; contentElements = xElement.Element(<span class="stringliteral">&quot;Content&quot;</span>)?.Elements();</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>            <span class="keywordflow">if</span> (contentElements != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>                <span class="keywordflow">foreach</span> (XElement item2 <span class="keywordflow">in</span> contentElements) {</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>                    <span class="keywordtype">string</span> attributeValue2 = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>&lt;<span class="keywordtype">string</span>&gt;(item2, <span class="stringliteral">&quot;Path&quot;</span>);</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>                    <span class="keywordtype">string</span> attributeValue3 = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>&lt;<span class="keywordtype">string</span>&gt;(item2, <span class="stringliteral">&quot;Address&quot;</span>);</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>                    <a class="code hl_variable" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">m_idToAddressMap</a>[attributeValue2] = attributeValue3;</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>                }</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>            }</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        }</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>        <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>            <a class="code hl_class" href="class_game_1_1_exception_manager.html">ExceptionManager</a>.<a class="code hl_function" href="class_game_1_1_exception_manager.html#adf9cd3e67962dd1c8fd31e511e3cc7f9">ReportExceptionToUser</a>(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a>, <span class="stringliteral">&quot;4&quot;</span>), e);</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>        }</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    }</div>
+</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
+<div class="foldopen" id="foldopen00432" data-start="{" data-end="}">
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno"><a class="line" href="class_original_community_content_manager.html#a59623c008639efe268d5a62bf7b4bb1e">  432</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_original_community_content_manager.html#a59623c008639efe268d5a62bf7b4bb1e">Save</a>() {</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>            XElement xElement = <span class="keyword">new</span>(<span class="stringliteral">&quot;Cache&quot;</span>);</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>            XElement xElement2 = <span class="keyword">new</span>(<span class="stringliteral">&quot;Feedback&quot;</span>);</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>            xElement.Add(xElement2);</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>            <span class="keywordflow">foreach</span> (<span class="keywordtype">string</span> key <span class="keywordflow">in</span> <a class="code hl_variable" href="class_original_community_content_manager.html#ae3ffaaacee00b598d287c9eb979a595f">m_feedbackCache</a>.Keys) {</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>                XElement xElement3 = <span class="keyword">new</span>(<span class="stringliteral">&quot;Item&quot;</span>);</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>                <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(xElement3, <span class="stringliteral">&quot;Key&quot;</span>, key);</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>                xElement2.Add(xElement3);</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>            }</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>            XElement xElement4 = <span class="keyword">new</span>(<span class="stringliteral">&quot;Content&quot;</span>);</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>            xElement.Add(xElement4);</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>            <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, string&gt; item <span class="keywordflow">in</span> <a class="code hl_variable" href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">m_idToAddressMap</a>) {</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>                XElement xElement5 = <span class="keyword">new</span>(<span class="stringliteral">&quot;Item&quot;</span>);</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>                <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(xElement5, <span class="stringliteral">&quot;Path&quot;</span>, item.Key);</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>                <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(xElement5, <span class="stringliteral">&quot;Address&quot;</span>, item.Value);</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>                xElement4.Add(xElement5);</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>            }</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>            <span class="keyword">using </span>Stream stream = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a7bafd9ef5a0e510d36e7a89aa22bfdf0">OriginalCommunityContentCachePath</a>, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.Create);</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#ad88716f073eb951e2062a83754959ede">SaveXmlToStream</a>(xElement, stream, <span class="keyword">null</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>        }</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>            <a class="code hl_class" href="class_game_1_1_exception_manager.html">ExceptionManager</a>.<a class="code hl_function" href="class_game_1_1_exception_manager.html#adf9cd3e67962dd1c8fd31e511e3cc7f9">ReportExceptionToUser</a>(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">fName1</a>, <span class="stringliteral">&quot;5&quot;</span>), e);</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>        }</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    }</div>
+</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>}</div>
+</div>
+<div class="ttc" id="aclass_engine_1_1_storage_html"><div class="ttname"><a href="class_engine_1_1_storage.html">Engine.Storage</a></div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00024">Storage.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a3a6586a9f70dd693b5c907a1b4a3dbea"><div class="ttname"><a href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">Engine.Storage.OpenFile</a></div><div class="ttdeci">static Stream OpenFile(string path, OpenFileMode openFileMode)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00093">Storage.cs:93</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a99d6c83e1e607a8037faa718810f9321"><div class="ttname"><a href="class_engine_1_1_storage.html#a99d6c83e1e607a8037faa718810f9321">Engine.Storage.FileExists</a></div><div class="ttdeci">static bool FileExists(string path)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00077">Storage.cs:77</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_window_html_a78b0e31756f20fe6b7752d3d3d2f4e12"><div class="ttname"><a href="class_engine_1_1_window.html#a78b0e31756f20fe6b7752d3d3d2f4e12">Engine.Window.Deactivated</a></div><div class="ttdeci">static Action Deactivated</div><div class="ttdef"><b>定义</b> <a href="_window_8cs_source.html#l00372">Window.cs:372</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_textures_manager_html_a124c084d6f4d1764642fb424bb72c007"><div class="ttname"><a href="class_game_1_1_blocks_textures_manager.html#a124c084d6f4d1764642fb424bb72c007">Game.BlocksTexturesManager.BlocksTextureDeleted</a></div><div class="ttdeci">static Action&lt; string &gt; BlocksTextureDeleted</div><div class="ttdef"><b>定义</b> <a href="_blocks_textures_manager_8cs_source.html#l00017">BlocksTexturesManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cancellable_progress_html"><div class="ttname"><a href="class_game_1_1_cancellable_progress.html">Game.CancellableProgress</a></div><div class="ttdef"><b>定义</b> <a href="_cancellable_progress_8cs_source.html#l00002">CancellableProgress.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_character_skins_manager_html_aa214d1795b9a633a79e1b1d143e0abfb"><div class="ttname"><a href="class_game_1_1_character_skins_manager.html#aa214d1795b9a633a79e1b1d143e0abfb">Game.CharacterSkinsManager.CharacterSkinDeleted</a></div><div class="ttdeci">static Action&lt; string &gt; CharacterSkinDeleted</div><div class="ttdef"><b>定义</b> <a href="_character_skins_manager_8cs_source.html#l00018">CharacterSkinsManager.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_1_1_info_html_a939e5250272acebfd930cbb196460853"><div class="ttname"><a href="class_game_1_1_community_server_manager_1_1_info.html#a939e5250272acebfd930cbb196460853">Game.CommunityServerManager.Info.ApiUrl</a></div><div class="ttdeci">string ApiUrl</div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00011">CommunityServerManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html"><div class="ttname"><a href="class_game_1_1_community_server_manager.html">Game.CommunityServerManager</a></div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00002">CommunityServerManager.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html_aea80189fe8e9a22d0d24284939935d2c"><div class="ttname"><a href="class_game_1_1_community_server_manager.html#aea80189fe8e9a22d0d24284939935d2c">Game.CommunityServerManager.CurrentOriginalInfo</a></div><div class="ttdeci">static Info CurrentOriginalInfo</div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00054">CommunityServerManager.cs:54</a></div></div>
+<div class="ttc" id="aclass_game_1_1_exception_manager_html"><div class="ttname"><a href="class_game_1_1_exception_manager.html">Game.ExceptionManager</a></div><div class="ttdef"><b>定义</b> <a href="_exception_manager_8cs_source.html#l00005">ExceptionManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_exception_manager_html_adf9cd3e67962dd1c8fd31e511e3cc7f9"><div class="ttname"><a href="class_game_1_1_exception_manager.html#adf9cd3e67962dd1c8fd31e511e3cc7f9">Game.ExceptionManager.ReportExceptionToUser</a></div><div class="ttdeci">static void ReportExceptionToUser(string additionalMessage, Exception e)</div><div class="ttdef"><b>定义</b> <a href="_exception_manager_8cs_source.html#l00010">ExceptionManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_external_content_manager_html"><div class="ttname"><a href="class_game_1_1_external_content_manager.html">Game.ExternalContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_external_content_manager_8cs_source.html#l00005">ExternalContentManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_external_content_manager_html_a025f2e872be3af540dd1ffef53e1482d"><div class="ttname"><a href="class_game_1_1_external_content_manager.html#a025f2e872be3af540dd1ffef53e1482d">Game.ExternalContentManager.ImportExternalContent</a></div><div class="ttdeci">static void ImportExternalContent(Stream stream, ExternalContentType type, string name, Action&lt; string &gt; success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="_external_content_manager_8cs_source.html#l00124">ExternalContentManager.cs:124</a></div></div>
+<div class="ttc" id="aclass_game_1_1_external_content_manager_html_aca656c28622e8645b608fe6a4b4520f1"><div class="ttname"><a href="class_game_1_1_external_content_manager.html#aca656c28622e8645b608fe6a4b4520f1">Game.ExternalContentManager.DeleteExternalContent</a></div><div class="ttdeci">static void DeleteExternalContent(ExternalContentType type, string name)</div><div class="ttdef"><b>定义</b> <a href="_external_content_manager_8cs_source.html#l00114">ExternalContentManager.cs:114</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_packs_manager_html_a34e223dd236aa276c5e6a2c526a9d833"><div class="ttname"><a href="class_game_1_1_furniture_packs_manager.html#a34e223dd236aa276c5e6a2c526a9d833">Game.FurniturePacksManager.FurniturePackDeleted</a></div><div class="ttdeci">static Action&lt; string &gt; FurniturePackDeleted</div><div class="ttdef"><b>定义</b> <a href="_furniture_packs_manager_8cs_source.html#l00013">FurniturePacksManager.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_marketplace_manager_html"><div class="ttname"><a href="class_game_1_1_marketplace_manager.html">Game.MarketplaceManager</a></div><div class="ttdef"><b>定义</b> <a href="_marketplace_manager_8cs_source.html#l00002">MarketplaceManager.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_marketplace_manager_html_a51ea817b3fc226435c9d4b386e5a4bbf"><div class="ttname"><a href="class_game_1_1_marketplace_manager.html#a51ea817b3fc226435c9d4b386e5a4bbf">Game.MarketplaceManager.IsTrialMode</a></div><div class="ttdeci">static bool IsTrialMode</div><div class="ttdef"><b>定义</b> <a href="_marketplace_manager_8cs_source.html#l00007">MarketplaceManager.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_original_community_content_entry_html"><div class="ttname"><a href="class_game_1_1_original_community_content_entry.html">Game.OriginalCommunityContentEntry</a></div><div class="ttdef"><b>定义</b> <a href="_original_community_content_entry_8cs_source.html#l00002">OriginalCommunityContentEntry.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_versions_manager_html"><div class="ttname"><a href="class_game_1_1_versions_manager.html">Game.VersionsManager</a></div><div class="ttdef"><b>定义</b> <a href="_versions_manager_8cs_source.html#l00008">VersionsManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_versions_manager_html_a1547d85bbabd6099ed6f16260a518d5e"><div class="ttname"><a href="class_game_1_1_versions_manager.html#a1547d85bbabd6099ed6f16260a518d5e">Game.VersionsManager.Version</a></div><div class="ttdeci">static string Version</div><div class="ttdef"><b>定义</b> <a href="_versions_manager_8cs_source.html#l00050">VersionsManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_versions_manager_html_ad14419f671d9619e578ab869fc4db8c8"><div class="ttname"><a href="class_game_1_1_versions_manager.html#ad14419f671d9619e578ab869fc4db8c8">Game.VersionsManager.PlatformString</a></div><div class="ttdeci">static string PlatformString</div><div class="ttdef"><b>定义</b> <a href="_versions_manager_8cs_source.html#l00015">VersionsManager.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_web_manager_html"><div class="ttname"><a href="class_game_1_1_web_manager.html">Game.WebManager</a></div><div class="ttdef"><b>定义</b> <a href="_web_manager_8cs_source.html#l00017">WebManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_web_manager_html_a062220724defd9dc857a9fef7a278814"><div class="ttname"><a href="class_game_1_1_web_manager.html#a062220724defd9dc857a9fef7a278814">Game.WebManager.Post</a></div><div class="ttdeci">static void Post(string address, Dictionary&lt; string, string &gt; parameters, Dictionary&lt; string, string &gt; headers, Stream data, CancellableProgress progress, Action&lt; byte[]&gt; success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="_web_manager_8cs_source.html#l00179">WebManager.cs:179</a></div></div>
+<div class="ttc" id="aclass_game_1_1_web_manager_html_a3576f94279c0f76ac66727ee7975c81c"><div class="ttname"><a href="class_game_1_1_web_manager.html#a3576f94279c0f76ac66727ee7975c81c">Game.WebManager.IsInternetConnectionAvailable</a></div><div class="ttdeci">static bool IsInternetConnectionAvailable()</div><div class="ttdef"><b>定义</b> <a href="_web_manager_8cs_source.html#l00056">WebManager.cs:56</a></div></div>
+<div class="ttc" id="aclass_game_1_1_web_manager_html_a6e959bc5d29e1e3f3c344492a0783395"><div class="ttname"><a href="class_game_1_1_web_manager.html#a6e959bc5d29e1e3f3c344492a0783395">Game.WebManager.UrlParametersToStream</a></div><div class="ttdeci">static MemoryStream UrlParametersToStream(Dictionary&lt; string, string &gt; values)</div><div class="ttdef"><b>定义</b> <a href="_web_manager_8cs_source.html#l00286">WebManager.cs:286</a></div></div>
+<div class="ttc" id="aclass_game_1_1_web_manager_html_a84022562942c82b6f5b5251a85497ef3"><div class="ttname"><a href="class_game_1_1_web_manager.html#a84022562942c82b6f5b5251a85497ef3">Game.WebManager.Get</a></div><div class="ttdeci">static void Get(string address, Dictionary&lt; string, string &gt; parameters, Dictionary&lt; string, string &gt; headers, CancellableProgress progress, Action&lt; byte[]&gt; success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="_web_manager_8cs_source.html#l00089">WebManager.cs:89</a></div></div>
+<div class="ttc" id="aclass_game_1_1_worlds_manager_html_a24dbea935df526e988aa9c80ab9c3d63"><div class="ttname"><a href="class_game_1_1_worlds_manager.html#a24dbea935df526e988aa9c80ab9c3d63">Game.WorldsManager.WorldDeleted</a></div><div class="ttdeci">static Action&lt; string &gt; WorldDeleted</div><div class="ttdef"><b>定义</b> <a href="_worlds_manager_8cs_source.html#l00021">WorldsManager.cs:21</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html"><div class="ttname"><a href="class_mods_manager.html">ModsManager</a></div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00019">ModsManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a7bafd9ef5a0e510d36e7a89aa22bfdf0"><div class="ttname"><a href="class_mods_manager.html#a7bafd9ef5a0e510d36e7a89aa22bfdf0">ModsManager.OriginalCommunityContentCachePath</a></div><div class="ttdeci">static string OriginalCommunityContentCachePath</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00063">ModsManager.cs:63</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html"><div class="ttname"><a href="class_original_community_content_manager.html">OriginalCommunityContentManager</a></div><div class="ttdef"><b>定义</b> <a href="#l00009">OriginalCommunityContentManager.cs:9</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a06e78d84e4cae01555f2b6e370d4cde0"><div class="ttname"><a href="class_original_community_content_manager.html#a06e78d84e4cae01555f2b6e370d4cde0">OriginalCommunityContentManager.SendPlayTime</a></div><div class="ttdeci">static void SendPlayTime(string address, string userId, double time, CancellableProgress progress, Action success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="#l00295">OriginalCommunityContentManager.cs:295</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a072df90ea171a3b04bff694ef24e43ea"><div class="ttname"><a href="class_original_community_content_manager.html#a072df90ea171a3b04bff694ef24e43ea">OriginalCommunityContentManager.Download</a></div><div class="ttdeci">static void Download(string address, string name, ExternalContentType type, string userId, CancellableProgress progress, Action success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="#l00108">OriginalCommunityContentManager.cs:108</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a345500f04d201c365890dcf813bd5f01"><div class="ttname"><a href="class_original_community_content_manager.html#a345500f04d201c365890dcf813bd5f01">OriginalCommunityContentManager.MakeContentIdString</a></div><div class="ttdeci">static string MakeContentIdString(ExternalContentType type, string name)</div><div class="ttdef"><b>定义</b> <a href="#l00402">OriginalCommunityContentManager.cs:402</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a449ba095f98af94cb343e5c17495c5b1"><div class="ttname"><a href="class_original_community_content_manager.html#a449ba095f98af94cb343e5c17495c5b1">OriginalCommunityContentManager.m_idToAddressMap</a></div><div class="ttdeci">static Dictionary&lt; string, string &gt; m_idToAddressMap</div><div class="ttdef"><b>定义</b> <a href="#l00011">OriginalCommunityContentManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a44d0ece1568c0898b78544225fc71cc3"><div class="ttname"><a href="class_original_community_content_manager.html#a44d0ece1568c0898b78544225fc71cc3">OriginalCommunityContentManager.IsContentRated</a></div><div class="ttdeci">static bool IsContentRated(string address, string userId)</div><div class="ttdef"><b>定义</b> <a href="#l00037">OriginalCommunityContentManager.cs:37</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a4c0a9cca3fc46635378b783336200e35"><div class="ttname"><a href="class_original_community_content_manager.html#a4c0a9cca3fc46635378b783336200e35">OriginalCommunityContentManager.GetDownloadedContentAddress</a></div><div class="ttdeci">static string GetDownloadedContentAddress(ExternalContentType type, string name)</div><div class="ttdef"><b>定义</b> <a href="#l00032">OriginalCommunityContentManager.cs:32</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a50bfbceb095dd22effb4cd47d2560476"><div class="ttname"><a href="class_original_community_content_manager.html#a50bfbceb095dd22effb4cd47d2560476">OriginalCommunityContentManager.Initialize</a></div><div class="ttdeci">static void Initialize()</div><div class="ttdef"><b>定义</b> <a href="#l00017">OriginalCommunityContentManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a52db663fab1b3b646dd21be09d135f97"><div class="ttname"><a href="class_original_community_content_manager.html#a52db663fab1b3b646dd21be09d135f97">OriginalCommunityContentManager.Delete</a></div><div class="ttdeci">static void Delete(string address, string userId, CancellableProgress progress, Action success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="#l00237">OriginalCommunityContentManager.cs:237</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a57d8b3ad9e9d04ea1537b0c07fbcf1d3"><div class="ttname"><a href="class_original_community_content_manager.html#a57d8b3ad9e9d04ea1537b0c07fbcf1d3">OriginalCommunityContentManager.VerifyLinkContent</a></div><div class="ttdeci">static void VerifyLinkContent(string address, string name, ExternalContentType type, CancellableProgress progress, Action&lt; byte[]&gt; success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="#l00315">OriginalCommunityContentManager.cs:315</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a59623c008639efe268d5a62bf7b4bb1e"><div class="ttname"><a href="class_original_community_content_manager.html#a59623c008639efe268d5a62bf7b4bb1e">OriginalCommunityContentManager.Save</a></div><div class="ttdeci">static void Save()</div><div class="ttdef"><b>定义</b> <a href="#l00432">OriginalCommunityContentManager.cs:432</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a61ef43b7c4ac151e90242fcc745d89aa"><div class="ttname"><a href="class_original_community_content_manager.html#a61ef43b7c4ac151e90242fcc745d89aa">OriginalCommunityContentManager.MakeFeedbackCacheKey</a></div><div class="ttdeci">static string MakeFeedbackCacheKey(string address, string feedback, string userId)</div><div class="ttdef"><b>定义</b> <a href="#l00400">OriginalCommunityContentManager.cs:400</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a82dcdf2aae36e772dc8fe3938870863e"><div class="ttname"><a href="class_original_community_content_manager.html#a82dcdf2aae36e772dc8fe3938870863e">OriginalCommunityContentManager.Load</a></div><div class="ttdeci">static void Load()</div><div class="ttdef"><b>定义</b> <a href="#l00404">OriginalCommunityContentManager.cs:404</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a8a938252a343375fdbfae7ea5cb32ea7"><div class="ttname"><a href="class_original_community_content_manager.html#a8a938252a343375fdbfae7ea5cb32ea7">OriginalCommunityContentManager.Feedback</a></div><div class="ttdeci">static void Feedback(string address, string feedback, string feedbackParameter, string hash, long size, string userId, CancellableProgress progress, Action success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="#l00345">OriginalCommunityContentManager.cs:345</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_a927030e9648ca0a9b7903d5cfc1aee18"><div class="ttname"><a href="class_original_community_content_manager.html#a927030e9648ca0a9b7903d5cfc1aee18">OriginalCommunityContentManager.Rate</a></div><div class="ttdeci">static void Rate(string address, string userId, int rating, CancellableProgress progress, Action success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="#l00266">OriginalCommunityContentManager.cs:266</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_aaea3e73c7aca75dbebda53686d33fe07"><div class="ttname"><a href="class_original_community_content_manager.html#aaea3e73c7aca75dbebda53686d33fe07">OriginalCommunityContentManager.Publish</a></div><div class="ttdeci">static void Publish(string address, string name, ExternalContentType type, string userId, CancellableProgress progress, Action success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="#l00182">OriginalCommunityContentManager.cs:182</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_ab2603978cb30b250435dd5bcdbd031a4"><div class="ttname"><a href="class_original_community_content_manager.html#ab2603978cb30b250435dd5bcdbd031a4">OriginalCommunityContentManager.List</a></div><div class="ttdeci">static void List(string cursor, string userId, string userUrl, string type, string moderation, string search, string sortOrder, CancellableProgress progress, Action&lt; List&lt; OriginalCommunityContentEntry &gt;, string &gt; success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="#l00042">OriginalCommunityContentManager.cs:42</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_ace93c4465548ac5fb5af0052ee4082f0"><div class="ttname"><a href="class_original_community_content_manager.html#ace93c4465548ac5fb5af0052ee4082f0">OriginalCommunityContentManager.Report</a></div><div class="ttdeci">static void Report(string address, string userId, string report, CancellableProgress progress, Action success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="#l00281">OriginalCommunityContentManager.cs:281</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_ae3ffaaacee00b598d287c9eb979a595f"><div class="ttname"><a href="class_original_community_content_manager.html#ae3ffaaacee00b598d287c9eb979a595f">OriginalCommunityContentManager.m_feedbackCache</a></div><div class="ttdeci">static Dictionary&lt; string, bool &gt; m_feedbackCache</div><div class="ttdef"><b>定义</b> <a href="#l00013">OriginalCommunityContentManager.cs:13</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_aef4eee425738f684f2022bc74cd2b435"><div class="ttname"><a href="class_original_community_content_manager.html#aef4eee425738f684f2022bc74cd2b435">OriginalCommunityContentManager.CalculateContentHashString</a></div><div class="ttdeci">static string CalculateContentHashString(byte[] data)</div><div class="ttdef"><b>定义</b> <a href="#l00398">OriginalCommunityContentManager.cs:398</a></div></div>
+<div class="ttc" id="aclass_original_community_content_manager_html_af5eee1a917972b6b90e4b90537f1925c"><div class="ttname"><a href="class_original_community_content_manager.html#af5eee1a917972b6b90e4b90537f1925c">OriginalCommunityContentManager.fName1</a></div><div class="ttdeci">const string fName1</div><div class="ttdef"><b>定义</b> <a href="#l00015">OriginalCommunityContentManager.cs:15</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html">XmlUtilities.XmlUtils</a></div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00010">XmlUtils.cs:10</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a25d3e91fe37b8d97d8dc55e7aa141441"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">XmlUtilities.XmlUtils.SetAttributeValue</a></div><div class="ttdeci">static void SetAttributeValue(XElement node, string attributeName, object value)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00037">XmlUtils.cs:37</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a7247d2c34e2bbc55abc84aa86bdd6d23"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">XmlUtilities.XmlUtils.GetAttributeValue</a></div><div class="ttdeci">static object GetAttributeValue(XElement node, string attributeName, Type type)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00011">XmlUtils.cs:11</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a8ccb324769f1be9a4f1ae6d4ec41f369"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a8ccb324769f1be9a4f1ae6d4ec41f369">XmlUtilities.XmlUtils.LoadXmlFromStream</a></div><div class="ttdeci">static XElement LoadXmlFromStream(Stream stream, Encoding encoding, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00072">XmlUtils.cs:72</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_aa742b5dd76bcb003115fe2fa5d7762db"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#aa742b5dd76bcb003115fe2fa5d7762db">XmlUtilities.XmlUtils.LoadXmlFromString</a></div><div class="ttdeci">static XElement LoadXmlFromString(string data, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00078">XmlUtils.cs:78</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_ad88716f073eb951e2062a83754959ede"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#ad88716f073eb951e2062a83754959ede">XmlUtilities.XmlUtils.SaveXmlToStream</a></div><div class="ttdeci">static void SaveXmlToStream(XElement node, Stream stream, Encoding encoding, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00092">XmlUtils.cs:92</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html_ae47610d75f8bb133c22ca5f9de906ae3"><div class="ttname"><a href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">Engine.OpenFileMode</a></div><div class="ttdeci">OpenFileMode</div><div class="ttdef"><b>定义</b> <a href="_open_file_mode_8cs_source.html#l00002">OpenFileMode.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a6c4c0aadae3e3edc23592d9ee74550f5"><div class="ttname"><a href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">Game.ExternalContentType</a></div><div class="ttdeci">ExternalContentType</div><div class="ttdef"><b>定义</b> <a href="_external_content_type_8cs_source.html#l00002">ExternalContentType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_xml_utilities_html"><div class="ttname"><a href="namespace_xml_utilities.html">XmlUtilities</a></div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00009">XmlUtils.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_819697851f82aaa78e1e98801cc3f64c.html">Screen</a></li><li class="navelem"><a href="dir_19127db91f3bfcaaba95720ed1c492fa.html">OriginalCommunity</a></li><li class="navelem"><a href="_original_community_content_manager_8cs.html">OriginalCommunityContentManager.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

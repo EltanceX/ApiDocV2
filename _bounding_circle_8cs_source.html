@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine/BoundingCircle.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_bounding_circle_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BoundingCircle.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_bounding_circle_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">BoundingCircle</a> : IEquatable&lt;BoundingCircle&gt; {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#a0786c9ba7ecc143a6a7ac5b77e22b71f">    3</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a0786c9ba7ecc143a6a7ac5b77e22b71f">Center</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#a5318bac76b03611a26f2275897a5cbee">    5</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a5318bac76b03611a26f2275897a5cbee">Radius</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">    7</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">BoundingCircle</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> center, <span class="keywordtype">float</span> radius) {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a0786c9ba7ecc143a6a7ac5b77e22b71f">Center</a> = center;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a5318bac76b03611a26f2275897a5cbee">Radius</a> = radius;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        }</div>
+</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#a04e565fb64dae4d9749eac039e50ecc3">   12</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a04e565fb64dae4d9749eac039e50ecc3">Equals</a>(<span class="keywordtype">object</span> obj) =&gt; obj is <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">BoundingCircle</a> circle &amp;&amp; <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a04e565fb64dae4d9749eac039e50ecc3">Equals</a>(circle);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#a94602831b66a5c2ac27989c4f8e1977f">   14</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a94602831b66a5c2ac27989c4f8e1977f">GetHashCode</a>() =&gt; <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a0786c9ba7ecc143a6a7ac5b77e22b71f">Center</a>.GetHashCode() + <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a5318bac76b03611a26f2275897a5cbee">Radius</a>.GetHashCode();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#a6f9695affb9402ae7dc9784e5417ce32">   16</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a6f9695affb9402ae7dc9784e5417ce32">Equals</a>(<a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">BoundingCircle</a> other) =&gt; <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a0786c9ba7ecc143a6a7ac5b77e22b71f">Center</a> == other.Center &amp;&amp; <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a5318bac76b03611a26f2275897a5cbee">Radius</a> == other.<a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a5318bac76b03611a26f2275897a5cbee">Radius</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#ae0ce330fce6ca9c915aa1a4b45128a57">   18</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#ae0ce330fce6ca9c915aa1a4b45128a57">ToString</a>() =&gt; $<span class="stringliteral">&quot;{Center},{Radius}&quot;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#a084e14c6bfd0b811e009b82075e4e0fd">   20</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a084e14c6bfd0b811e009b82075e4e0fd">Contains</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> p) =&gt; <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#a5e19111ae2e2f28e49a1e40574e57844">DistanceSquared</a>(<a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a0786c9ba7ecc143a6a7ac5b77e22b71f">Center</a>, p) &lt;= <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a5318bac76b03611a26f2275897a5cbee">Radius</a> * <a class="code hl_variable" href="struct_engine_1_1_bounding_circle.html#a5318bac76b03611a26f2275897a5cbee">Radius</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#ae6e31a0f3c8fa2a9a0f2e8d843be9d2e">   22</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#ae6e31a0f3c8fa2a9a0f2e8d843be9d2e">operator ==</a>(<a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">BoundingCircle</a> c1, <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">BoundingCircle</a> c2) =&gt; c1.<a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a04e565fb64dae4d9749eac039e50ecc3">Equals</a>(c2);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_circle.html#a9a7975275ff1a8b869c5fc1e678b251a">   24</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a9a7975275ff1a8b869c5fc1e678b251a">operator !=</a>(<a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">BoundingCircle</a> c1, <a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">BoundingCircle</a> c2) =&gt; !c1.<a class="code hl_function" href="struct_engine_1_1_bounding_circle.html#a04e565fb64dae4d9749eac039e50ecc3">Equals</a>(c2);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_a04e565fb64dae4d9749eac039e50ecc3"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#a04e565fb64dae4d9749eac039e50ecc3">Engine.BoundingCircle.Equals</a></div><div class="ttdeci">override bool Equals(object obj)</div><div class="ttdef"><b>定义</b> <a href="#l00012">BoundingCircle.cs:12</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_a0786c9ba7ecc143a6a7ac5b77e22b71f"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#a0786c9ba7ecc143a6a7ac5b77e22b71f">Engine.BoundingCircle.Center</a></div><div class="ttdeci">Vector2 Center</div><div class="ttdef"><b>定义</b> <a href="#l00003">BoundingCircle.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_a084e14c6bfd0b811e009b82075e4e0fd"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#a084e14c6bfd0b811e009b82075e4e0fd">Engine.BoundingCircle.Contains</a></div><div class="ttdeci">bool Contains(Vector2 p)</div><div class="ttdef"><b>定义</b> <a href="#l00020">BoundingCircle.cs:20</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_a5318bac76b03611a26f2275897a5cbee"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#a5318bac76b03611a26f2275897a5cbee">Engine.BoundingCircle.Radius</a></div><div class="ttdeci">float Radius</div><div class="ttdef"><b>定义</b> <a href="#l00005">BoundingCircle.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_a6f9695affb9402ae7dc9784e5417ce32"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#a6f9695affb9402ae7dc9784e5417ce32">Engine.BoundingCircle.Equals</a></div><div class="ttdeci">bool Equals(BoundingCircle other)</div><div class="ttdef"><b>定义</b> <a href="#l00016">BoundingCircle.cs:16</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_a8b53c99d0ff3351812c510692d5d207d"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#a8b53c99d0ff3351812c510692d5d207d">Engine.BoundingCircle.BoundingCircle</a></div><div class="ttdeci">BoundingCircle(Vector2 center, float radius)</div><div class="ttdef"><b>定义</b> <a href="#l00007">BoundingCircle.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_a94602831b66a5c2ac27989c4f8e1977f"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#a94602831b66a5c2ac27989c4f8e1977f">Engine.BoundingCircle.GetHashCode</a></div><div class="ttdeci">override int GetHashCode()</div><div class="ttdef"><b>定义</b> <a href="#l00014">BoundingCircle.cs:14</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_a9a7975275ff1a8b869c5fc1e678b251a"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#a9a7975275ff1a8b869c5fc1e678b251a">Engine.BoundingCircle.operator!=</a></div><div class="ttdeci">static bool operator!=(BoundingCircle c1, BoundingCircle c2)</div><div class="ttdef"><b>定义</b> <a href="#l00024">BoundingCircle.cs:24</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_ae0ce330fce6ca9c915aa1a4b45128a57"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#ae0ce330fce6ca9c915aa1a4b45128a57">Engine.BoundingCircle.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>定义</b> <a href="#l00018">BoundingCircle.cs:18</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_circle_html_ae6e31a0f3c8fa2a9a0f2e8d843be9d2e"><div class="ttname"><a href="struct_engine_1_1_bounding_circle.html#ae6e31a0f3c8fa2a9a0f2e8d843be9d2e">Engine.BoundingCircle.operator==</a></div><div class="ttdeci">static bool operator==(BoundingCircle c1, BoundingCircle c2)</div><div class="ttdef"><b>定义</b> <a href="#l00022">BoundingCircle.cs:22</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a5e19111ae2e2f28e49a1e40574e57844"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a5e19111ae2e2f28e49a1e40574e57844">Engine.Vector2.DistanceSquared</a></div><div class="ttdeci">static float DistanceSquared(Vector2 v1, Vector2 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00055">Vector2.cs:55</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_449d29b21d204a5ee92421b755e01672.html">Engine</a></li><li class="navelem"><a href="_bounding_circle_8cs.html">BoundingCircle.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

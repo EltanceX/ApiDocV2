@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Component/ComponentIntroShip.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_component_intro_ship_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ComponentIntroShip.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_intro_ship_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_component_intro_ship.html">ComponentIntroShip</a> : <a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#aa13f5efd6d6127c758d291c851afab20">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a> <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aa13f5efd6d6127c758d291c851afab20">m_subsystemTime</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#a368ccf594f96f4a6add891dee54c8569">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_game_widgets.html">SubsystemGameWidgets</a> <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a368ccf594f96f4a6add891dee54c8569">m_subsystemViews</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#aa755ef00e3847514f800c20ef648a459">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a> <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aa755ef00e3847514f800c20ef648a459">m_subsystemGameInfo</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#a1ba280f885932b334a38639c8bd3ddef">   13</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_sky.html">SubsystemSky</a> <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a1ba280f885932b334a38639c8bd3ddef">m_subsystemSky</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#a5563850b232e0c76b2deb63662c369cb">   15</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_frame.html">ComponentFrame</a> <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a5563850b232e0c76b2deb63662c369cb">m_componentFrame</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#a3c8cca77c8015596589eac064815dc0c">   17</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_model.html">ComponentModel</a> <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a3c8cca77c8015596589eac064815dc0c">m_componentModel</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#aeece9f99fa061d8891c8e903b31ef3d4">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aeece9f99fa061d8891c8e903b31ef3d4">m_creationTime</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#a4bf7ddd9b100bc349fbbc2f03a2e55ae">   21</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_intro_ship.html#a4bf7ddd9b100bc349fbbc2f03a2e55ae">Heading</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#a380ef7aa8b18693a2f417718af89b95f">   23</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_component_intro_ship.html#a380ef7aa8b18693a2f417718af89b95f">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_component_intro_ship.html#a380ef7aa8b18693a2f417718af89b95f">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_component_intro_ship.html#a380ef7aa8b18693a2f417718af89b95f">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#afdc73204a38b199b8c9c9e9919d6381a">   25</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_intro_ship.html#afdc73204a38b199b8c9c9e9919d6381a">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordtype">float</span> s = 3.5f * <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#aba76343a94db3db4ced19eae368c79e7">Saturate</a>(0.07f * ((<span class="keywordtype">float</span>)<a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aa755ef00e3847514f800c20ef648a459">m_subsystemGameInfo</a>.TotalElapsedGameTime - 6f));</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> matrix = <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a5563850b232e0c76b2deb63662c369cb">m_componentFrame</a>.Matrix;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> vector = <a class="code hl_struct" href="struct_engine_1_1_quaternion.html">Quaternion</a>.<a class="code hl_function" href="struct_engine_1_1_quaternion.html#a35921f975eb33d90da3ec216e122653d">CreateFromRotationMatrix</a>(matrix).<a class="code hl_function" href="struct_engine_1_1_quaternion.html#a948b408c302f2068f26766d71bb43e04">ToYawPitchRoll</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            vector.X = <a class="code hl_property" href="class_game_1_1_component_intro_ship.html#a4bf7ddd9b100bc349fbbc2f03a2e55ae">Heading</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            vector.Y = 0.05f * MathF.Sin((<span class="keywordtype">float</span>)<a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a9e22929f1c9ce92b0559aa8b2269f15b">NormalizeAngle</a>(0.77 * <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aa13f5efd6d6127c758d291c851afab20">m_subsystemTime</a>.GameTime + 1.0));</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            vector.Z = 0.12f * MathF.Sin((<span class="keywordtype">float</span>)<a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a9e22929f1c9ce92b0559aa8b2269f15b">NormalizeAngle</a>(1.12 * <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aa13f5efd6d6127c758d291c851afab20">m_subsystemTime</a>.GameTime + 2.0));</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            matrix = <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a8c762b0735dff1eaa348be31684ee023">CreateFromYawPitchRoll</a>(vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a>, vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Y</a>, vector.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>) * <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a32fc30c91bdca2111fbc41b625a624cf">CreateTranslation</a>(matrix.<a class="code hl_property" href="struct_engine_1_1_matrix.html#abc97f24eea8faecda605d9e48d0434bf">Translation</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            matrix.Translation += s * matrix.Forward * <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(1f, 0f, 1f) * dt;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            m_componentFrame.Position = matrix.<a class="code hl_property" href="struct_engine_1_1_matrix.html#abc97f24eea8faecda605d9e48d0434bf">Translation</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            m_componentFrame.Rotation = <a class="code hl_struct" href="struct_engine_1_1_quaternion.html">Quaternion</a>.<a class="code hl_function" href="struct_engine_1_1_quaternion.html#a35921f975eb33d90da3ec216e122653d">CreateFromRotationMatrix</a>(matrix);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a3c8cca77c8015596589eac064815dc0c">m_componentModel</a>.SetBoneTransform(<a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a3c8cca77c8015596589eac064815dc0c">m_componentModel</a>.Model.RootBone.Index, matrix);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aa13f5efd6d6127c758d291c851afab20">m_subsystemTime</a>.GameTime - <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aeece9f99fa061d8891c8e903b31ef3d4">m_creationTime</a> &gt; 10.0</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                &amp;&amp; <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a368ccf594f96f4a6add891dee54c8569">m_subsystemViews</a>.CalculateDistanceFromNearestView(matrix.<a class="code hl_property" href="struct_engine_1_1_matrix.html#abc97f24eea8faecda605d9e48d0434bf">Translation</a>) &gt; <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a1ba280f885932b334a38639c8bd3ddef">m_subsystemSky</a>.VisibilityRange + 30f) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.RemoveEntity(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#a3bb878eebda8d2c1aaa99afcc8946c60">   43</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_intro_ship.html#a3bb878eebda8d2c1aaa99afcc8946c60">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aa13f5efd6d6127c758d291c851afab20">m_subsystemTime</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a368ccf594f96f4a6add891dee54c8569">m_subsystemViews</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_widgets.html">SubsystemGameWidgets</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aa755ef00e3847514f800c20ef648a459">m_subsystemGameInfo</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a1ba280f885932b334a38639c8bd3ddef">m_subsystemSky</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_sky.html">SubsystemSky</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a5563850b232e0c76b2deb63662c369cb">m_componentFrame</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_frame.html">ComponentFrame</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#a3c8cca77c8015596589eac064815dc0c">m_componentModel</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_model.html">ComponentModel</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aeece9f99fa061d8891c8e903b31ef3d4">m_creationTime</a> = <a class="code hl_variable" href="class_game_1_1_component_intro_ship.html#aa13f5efd6d6127c758d291c851afab20">m_subsystemTime</a>.GameTime;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_property" href="class_game_1_1_component_intro_ship.html#a4bf7ddd9b100bc349fbbc2f03a2e55ae">Heading</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;Heading&quot;</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_game_1_1_component_intro_ship.html#a95167291c7fd2396a5dfff1509a071a5">   54</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_intro_ship.html#a95167291c7fd2396a5dfff1509a071a5">Save</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_entity_to_id_map.html">EntityToIdMap</a> entityToIdMap) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            valuesDictionary.SetValue(<span class="stringliteral">&quot;Heading&quot;</span>, <a class="code hl_property" href="class_game_1_1_component_intro_ship.html#a4bf7ddd9b100bc349fbbc2f03a2e55ae">Heading</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="ttc" id="a_subsystem_audio_8cs_html_aa72bd5818d1fb1c95123ce286b96e775"><div class="ttname"><a href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a></div><div class="ttdeci">Engine.Vector3 Vector3</div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00005">SubsystemAudio.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a9e22929f1c9ce92b0559aa8b2269f15b"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a9e22929f1c9ce92b0559aa8b2269f15b">Engine.MathUtils.NormalizeAngle</a></div><div class="ttdeci">static float NormalizeAngle(float angle)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00226">MathUtils.cs:226</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_aba76343a94db3db4ced19eae368c79e7"><div class="ttname"><a href="class_engine_1_1_math_utils.html#aba76343a94db3db4ced19eae368c79e7">Engine.MathUtils.Saturate</a></div><div class="ttdeci">static float Saturate(float x)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00163">MathUtils.cs:163</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_frame_html"><div class="ttname"><a href="class_game_1_1_component_frame.html">Game.ComponentFrame</a></div><div class="ttdef"><b>定义</b> <a href="_component_frame_8cs_source.html#l00006">ComponentFrame.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html">Game.ComponentIntroShip</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">ComponentIntroShip.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_a1ba280f885932b334a38639c8bd3ddef"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#a1ba280f885932b334a38639c8bd3ddef">Game.ComponentIntroShip.m_subsystemSky</a></div><div class="ttdeci">SubsystemSky m_subsystemSky</div><div class="ttdef"><b>定义</b> <a href="#l00013">ComponentIntroShip.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_a368ccf594f96f4a6add891dee54c8569"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#a368ccf594f96f4a6add891dee54c8569">Game.ComponentIntroShip.m_subsystemViews</a></div><div class="ttdeci">SubsystemGameWidgets m_subsystemViews</div><div class="ttdef"><b>定义</b> <a href="#l00009">ComponentIntroShip.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_a380ef7aa8b18693a2f417718af89b95f"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#a380ef7aa8b18693a2f417718af89b95f">Game.ComponentIntroShip.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00023">ComponentIntroShip.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_a3bb878eebda8d2c1aaa99afcc8946c60"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#a3bb878eebda8d2c1aaa99afcc8946c60">Game.ComponentIntroShip.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary, IdToEntityMap idToEntityMap)</div><div class="ttdef"><b>定义</b> <a href="#l00043">ComponentIntroShip.cs:43</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_a3c8cca77c8015596589eac064815dc0c"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#a3c8cca77c8015596589eac064815dc0c">Game.ComponentIntroShip.m_componentModel</a></div><div class="ttdeci">ComponentModel m_componentModel</div><div class="ttdef"><b>定义</b> <a href="#l00017">ComponentIntroShip.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_a4bf7ddd9b100bc349fbbc2f03a2e55ae"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#a4bf7ddd9b100bc349fbbc2f03a2e55ae">Game.ComponentIntroShip.Heading</a></div><div class="ttdeci">float Heading</div><div class="ttdef"><b>定义</b> <a href="#l00021">ComponentIntroShip.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_a5563850b232e0c76b2deb63662c369cb"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#a5563850b232e0c76b2deb63662c369cb">Game.ComponentIntroShip.m_componentFrame</a></div><div class="ttdeci">ComponentFrame m_componentFrame</div><div class="ttdef"><b>定义</b> <a href="#l00015">ComponentIntroShip.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_a95167291c7fd2396a5dfff1509a071a5"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#a95167291c7fd2396a5dfff1509a071a5">Game.ComponentIntroShip.Save</a></div><div class="ttdeci">override void Save(ValuesDictionary valuesDictionary, EntityToIdMap entityToIdMap)</div><div class="ttdef"><b>定义</b> <a href="#l00054">ComponentIntroShip.cs:54</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_aa13f5efd6d6127c758d291c851afab20"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#aa13f5efd6d6127c758d291c851afab20">Game.ComponentIntroShip.m_subsystemTime</a></div><div class="ttdeci">SubsystemTime m_subsystemTime</div><div class="ttdef"><b>定义</b> <a href="#l00007">ComponentIntroShip.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_aa755ef00e3847514f800c20ef648a459"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#aa755ef00e3847514f800c20ef648a459">Game.ComponentIntroShip.m_subsystemGameInfo</a></div><div class="ttdeci">SubsystemGameInfo m_subsystemGameInfo</div><div class="ttdef"><b>定义</b> <a href="#l00011">ComponentIntroShip.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_aeece9f99fa061d8891c8e903b31ef3d4"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#aeece9f99fa061d8891c8e903b31ef3d4">Game.ComponentIntroShip.m_creationTime</a></div><div class="ttdeci">double m_creationTime</div><div class="ttdef"><b>定义</b> <a href="#l00019">ComponentIntroShip.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_intro_ship_html_afdc73204a38b199b8c9c9e9919d6381a"><div class="ttname"><a href="class_game_1_1_component_intro_ship.html#afdc73204a38b199b8c9c9e9919d6381a">Game.ComponentIntroShip.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00025">ComponentIntroShip.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_model_html"><div class="ttname"><a href="class_game_1_1_component_model.html">Game.ComponentModel</a></div><div class="ttdef"><b>定义</b> <a href="_component_model_8cs_source.html#l00008">ComponentModel.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html">Game.SubsystemGameInfo</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00005">SubsystemGameInfo.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_widgets_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_widgets.html">Game.SubsystemGameWidgets</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_widgets_8cs_source.html#l00006">SubsystemGameWidgets.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_sky_html"><div class="ttname"><a href="class_game_1_1_subsystem_sky.html">Game.SubsystemSky</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_sky_8cs_source.html#l00008">SubsystemSky.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_time_html"><div class="ttname"><a href="class_game_1_1_subsystem_time.html">Game.SubsystemTime</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_time_8cs_source.html#l00006">SubsystemTime.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html"><div class="ttname"><a href="class_game_entity_system_1_1_component.html">GameEntitySystem.Component</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00007">Component.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a4b812f6825600e5419612a580d3094ff"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">GameEntitySystem.Component.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00012">Component.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a771baadae7a12358301d000d2e127421"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">GameEntitySystem.Component.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00016">Component.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_to_id_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity_to_id_map.html">GameEntitySystem.EntityToIdMap</a></div><div class="ttdef"><b>定义</b> <a href="_entity_to_id_map_8cs_source.html#l00005">EntityToIdMap.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html">GameEntitySystem.IdToEntityMap</a></div><div class="ttdef"><b>定义</b> <a href="_id_to_entity_map_8cs_source.html#l00005">IdToEntityMap.cs:5</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html_a32fc30c91bdca2111fbc41b625a624cf"><div class="ttname"><a href="struct_engine_1_1_matrix.html#a32fc30c91bdca2111fbc41b625a624cf">Engine.Matrix.CreateTranslation</a></div><div class="ttdeci">static Matrix CreateTranslation(float x, float y, float z)</div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00580">Matrix.cs:580</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html_a8c762b0735dff1eaa348be31684ee023"><div class="ttname"><a href="struct_engine_1_1_matrix.html#a8c762b0735dff1eaa348be31684ee023">Engine.Matrix.CreateFromYawPitchRoll</a></div><div class="ttdeci">static Matrix CreateFromYawPitchRoll(float yaw, float pitch, float roll)</div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00279">Matrix.cs:279</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html_abc97f24eea8faecda605d9e48d0434bf"><div class="ttname"><a href="struct_engine_1_1_matrix.html#abc97f24eea8faecda605d9e48d0434bf">Engine.Matrix.Translation</a></div><div class="ttdeci">Vector3 Translation</div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00083">Matrix.cs:83</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_quaternion_html"><div class="ttname"><a href="struct_engine_1_1_quaternion.html">Engine.Quaternion</a></div><div class="ttdef"><b>定义</b> <a href="_quaternion_8cs_source.html#l00004">Quaternion.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_quaternion_html_a35921f975eb33d90da3ec216e122653d"><div class="ttname"><a href="struct_engine_1_1_quaternion.html#a35921f975eb33d90da3ec216e122653d">Engine.Quaternion.CreateFromRotationMatrix</a></div><div class="ttdeci">static Quaternion CreateFromRotationMatrix(Matrix m)</div><div class="ttdef"><b>定义</b> <a href="_quaternion_8cs_source.html#l00054">Quaternion.cs:54</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_quaternion_html_a948b408c302f2068f26766d71bb43e04"><div class="ttname"><a href="struct_engine_1_1_quaternion.html#a948b408c302f2068f26766d71bb43e04">Engine.Quaternion.ToYawPitchRoll</a></div><div class="ttdeci">Vector3 ToYawPitchRoll()</div><div class="ttdef"><b>定义</b> <a href="_quaternion_8cs_source.html#l00220">Quaternion.cs:220</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a314e02a8d3f359d653a67338b4e8f68f"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a314e02a8d3f359d653a67338b4e8f68f">Engine.Vector3.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00005">Vector3.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ac42c72f356e9dd9d691b1aa8a07a64a9"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Engine.Vector3.Z</a></div><div class="ttdeci">float Z</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00007">Vector3.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ae5605507fc62897e712e939bacbf1738"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">Engine.Vector3.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00003">Vector3.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_0ae50620953341a2d59f4b8faa145d4c.html">Component</a></li><li class="navelem"><a href="_component_intro_ship_8cs.html">ComponentIntroShip.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

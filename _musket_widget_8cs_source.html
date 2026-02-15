@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/MusketWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_musket_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MusketWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_musket_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_musket_widget.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_musket_widget.html#a7bf44833537154cfd31e0c89c59c6b46">MusketWidget</a> : <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_musket_widget.html#a8e630674e174fe27baf337ea7d244d33">    6</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a> <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a8e630674e174fe27baf337ea7d244d33">m_inventory</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_musket_widget.html#a974b1dd4ae50eeaf9d9b19d033276573">    8</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a974b1dd4ae50eeaf9d9b19d033276573">m_slotIndex</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_musket_widget.html#a811a52aa1d18942e9836cdaacc61ec47">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_grid_panel_widget.html">GridPanelWidget</a> <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a811a52aa1d18942e9836cdaacc61ec47">m_inventoryGrid</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_musket_widget.html#aae21b69dff0e9ee921d1e9644a4be380">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_inventory_slot_widget.html">InventorySlotWidget</a> <a class="code hl_variable" href="class_game_1_1_musket_widget.html#aae21b69dff0e9ee921d1e9644a4be380">m_inventorySlotWidget</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_musket_widget.html#a0e0bc4ee32debeec19bd425de81df748">   14</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a0e0bc4ee32debeec19bd425de81df748">m_instructionsLabel</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_musket_widget.html#a71d8cd09e1c02ffa1390fe08c1bce83f">   15</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a71d8cd09e1c02ffa1390fe08c1bce83f">fName</a> = <span class="stringliteral">&quot;MusketWidget&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_musket_widget.html#a7bf44833537154cfd31e0c89c59c6b46">   17</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_musket_widget.html#a7bf44833537154cfd31e0c89c59c6b46">MusketWidget</a>(<a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a> inventory, <span class="keywordtype">int</span> slotIndex) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a8e630674e174fe27baf337ea7d244d33">m_inventory</a> = inventory;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a974b1dd4ae50eeaf9d9b19d033276573">m_slotIndex</a> = slotIndex;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Widgets/MusketWidget&quot;</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a811a52aa1d18942e9836cdaacc61ec47">m_inventoryGrid</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_grid_panel_widget.html">GridPanelWidget</a>&gt;(<span class="stringliteral">&quot;InventoryGrid&quot;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_variable" href="class_game_1_1_musket_widget.html#aae21b69dff0e9ee921d1e9644a4be380">m_inventorySlotWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_inventory_slot_widget.html">InventorySlotWidget</a>&gt;(<span class="stringliteral">&quot;InventorySlot&quot;</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a0e0bc4ee32debeec19bd425de81df748">m_instructionsLabel</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;InstructionsLabel&quot;</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a811a52aa1d18942e9836cdaacc61ec47">m_inventoryGrid</a>.RowsCount; i++) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a811a52aa1d18942e9836cdaacc61ec47">m_inventoryGrid</a>.ColumnsCount; j++) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    <a class="code hl_class" href="class_game_1_1_inventory_slot_widget.html">InventorySlotWidget</a> widget = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a811a52aa1d18942e9836cdaacc61ec47">m_inventoryGrid</a>.Children.Add(widget);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a811a52aa1d18942e9836cdaacc61ec47">m_inventoryGrid</a>.SetWidgetCell(widget, <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a>(j, i));</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordtype">int</span> num = 10;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> child <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a811a52aa1d18942e9836cdaacc61ec47">m_inventoryGrid</a>.Children) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                (child as <a class="code hl_class" href="class_game_1_1_inventory_slot_widget.html">InventorySlotWidget</a>)?.AssignInventorySlot(inventory, num++);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_variable" href="class_game_1_1_musket_widget.html#aae21b69dff0e9ee921d1e9644a4be380">m_inventorySlotWidget</a>.AssignInventorySlot(inventory, slotIndex);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            m_inventorySlotWidget.CustomViewMatrix = <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a8adc5ad9b28931a5838724fd25979ede">CreateLookAt</a>(<span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(1f, 0f, 0f), <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(0f, 0f, 0f), -<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#af46f7cb8a73f44875d60900c65e4b787">UnitZ</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_game_1_1_musket_widget.html#a3834e02efe26deef60c4c8254e91aa97">   40</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_musket_widget.html#a3834e02efe26deef60c4c8254e91aa97">Update</a>() {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordtype">int</span> slotValue = <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a8e630674e174fe27baf337ea7d244d33">m_inventory</a>.GetSlotValue(<a class="code hl_variable" href="class_game_1_1_musket_widget.html#a974b1dd4ae50eeaf9d9b19d033276573">m_slotIndex</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordtype">int</span> slotCount = <a class="code hl_variable" href="class_game_1_1_musket_widget.html#a8e630674e174fe27baf337ea7d244d33">m_inventory</a>.GetSlotCount(<a class="code hl_variable" href="class_game_1_1_musket_widget.html#a974b1dd4ae50eeaf9d9b19d033276573">m_slotIndex</a>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">ExtractContents</a>(slotValue) == 212</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                &amp;&amp; slotCount &gt; 0) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keywordflow">switch</span> (<a class="code hl_class" href="class_game_1_1_musket_block.html">MusketBlock</a>.<a class="code hl_function" href="class_game_1_1_musket_block.html#a93122dbd618f8655f1153aae5c23047a">GetLoadState</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(slotValue))) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    <span class="keywordflow">case</span> <a class="code hl_class" href="class_game_1_1_musket_block.html">MusketBlock</a>.<a class="code hl_enumeration" href="class_game_1_1_musket_block.html#a9518311bb842082a739a39372c4084eb">LoadState</a>.Empty: m_instructionsLabel.Text = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_musket_widget.html#a71d8cd09e1c02ffa1390fe08c1bce83f">fName</a>, 0); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    <span class="keywordflow">case</span> <a class="code hl_class" href="class_game_1_1_musket_block.html">MusketBlock</a>.<a class="code hl_enumeration" href="class_game_1_1_musket_block.html#a9518311bb842082a739a39372c4084eb">LoadState</a>.Gunpowder: m_instructionsLabel.Text = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_musket_widget.html#a71d8cd09e1c02ffa1390fe08c1bce83f">fName</a>, 1); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    <span class="keywordflow">case</span> <a class="code hl_class" href="class_game_1_1_musket_block.html">MusketBlock</a>.<a class="code hl_enumeration" href="class_game_1_1_musket_block.html#a9518311bb842082a739a39372c4084eb">LoadState</a>.Wad: m_instructionsLabel.Text = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_musket_widget.html#a71d8cd09e1c02ffa1390fe08c1bce83f">fName</a>, 2); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    <span class="keywordflow">case</span> <a class="code hl_class" href="class_game_1_1_musket_block.html">MusketBlock</a>.<a class="code hl_enumeration" href="class_game_1_1_musket_block.html#a9518311bb842082a739a39372c4084eb">LoadState</a>.Loaded: m_instructionsLabel.Text = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_musket_widget.html#a71d8cd09e1c02ffa1390fe08c1bce83f">fName</a>, 3); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    <span class="keywordflow">default</span>: m_instructionsLabel.Text = <span class="keywordtype">string</span>.Empty; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <a class="code hl_property" href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">ParentWidget</a>.Children.Remove(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="ttc" id="a_subsystem_audio_8cs_html_aa72bd5818d1fb1c95123ce286b96e775"><div class="ttname"><a href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a></div><div class="ttdeci">Engine.Vector3 Vector3</div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00005">SubsystemAudio.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_canvas_widget_html"><div class="ttname"><a href="class_game_1_1_canvas_widget.html">Game.CanvasWidget</a></div><div class="ttdef"><b>定义</b> <a href="_canvas_widget_8cs_source.html#l00004">CanvasWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html">Game.GridPanelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_grid_panel_widget_8cs_source.html#l00004">GridPanelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_inventory_slot_widget_html"><div class="ttname"><a href="class_game_1_1_inventory_slot_widget.html">Game.InventorySlotWidget</a></div><div class="ttdef"><b>定义</b> <a href="_inventory_slot_widget_8cs_source.html#l00007">InventorySlotWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_block_html"><div class="ttname"><a href="class_game_1_1_musket_block.html">Game.MusketBlock</a></div><div class="ttdef"><b>定义</b> <a href="_musket_block_8cs_source.html#l00005">MusketBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_block_html_a93122dbd618f8655f1153aae5c23047a"><div class="ttname"><a href="class_game_1_1_musket_block.html#a93122dbd618f8655f1153aae5c23047a">Game.MusketBlock.GetLoadState</a></div><div class="ttdeci">static LoadState GetLoadState(int data)</div><div class="ttdef"><b>定义</b> <a href="_musket_block_8cs_source.html#l00098">MusketBlock.cs:98</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_block_html_a9518311bb842082a739a39372c4084eb"><div class="ttname"><a href="class_game_1_1_musket_block.html#a9518311bb842082a739a39372c4084eb">Game.MusketBlock.LoadState</a></div><div class="ttdeci">LoadState</div><div class="ttdef"><b>定义</b> <a href="_musket_block_8cs_source.html#l00007">MusketBlock.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_widget_html_a0e0bc4ee32debeec19bd425de81df748"><div class="ttname"><a href="class_game_1_1_musket_widget.html#a0e0bc4ee32debeec19bd425de81df748">Game.MusketWidget.m_instructionsLabel</a></div><div class="ttdeci">LabelWidget m_instructionsLabel</div><div class="ttdef"><b>定义</b> <a href="#l00014">MusketWidget.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_widget_html_a3834e02efe26deef60c4c8254e91aa97"><div class="ttname"><a href="class_game_1_1_musket_widget.html#a3834e02efe26deef60c4c8254e91aa97">Game.MusketWidget.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00040">MusketWidget.cs:40</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_widget_html_a71d8cd09e1c02ffa1390fe08c1bce83f"><div class="ttname"><a href="class_game_1_1_musket_widget.html#a71d8cd09e1c02ffa1390fe08c1bce83f">Game.MusketWidget.fName</a></div><div class="ttdeci">static string fName</div><div class="ttdef"><b>定义</b> <a href="#l00015">MusketWidget.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_widget_html_a7bf44833537154cfd31e0c89c59c6b46"><div class="ttname"><a href="class_game_1_1_musket_widget.html#a7bf44833537154cfd31e0c89c59c6b46">Game.MusketWidget.MusketWidget</a></div><div class="ttdeci">MusketWidget(IInventory inventory, int slotIndex)</div><div class="ttdef"><b>定义</b> <a href="#l00017">MusketWidget.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_widget_html_a811a52aa1d18942e9836cdaacc61ec47"><div class="ttname"><a href="class_game_1_1_musket_widget.html#a811a52aa1d18942e9836cdaacc61ec47">Game.MusketWidget.m_inventoryGrid</a></div><div class="ttdeci">GridPanelWidget m_inventoryGrid</div><div class="ttdef"><b>定义</b> <a href="#l00010">MusketWidget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_widget_html_a8e630674e174fe27baf337ea7d244d33"><div class="ttname"><a href="class_game_1_1_musket_widget.html#a8e630674e174fe27baf337ea7d244d33">Game.MusketWidget.m_inventory</a></div><div class="ttdeci">IInventory m_inventory</div><div class="ttdef"><b>定义</b> <a href="#l00006">MusketWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_widget_html_a974b1dd4ae50eeaf9d9b19d033276573"><div class="ttname"><a href="class_game_1_1_musket_widget.html#a974b1dd4ae50eeaf9d9b19d033276573">Game.MusketWidget.m_slotIndex</a></div><div class="ttdeci">int m_slotIndex</div><div class="ttdef"><b>定义</b> <a href="#l00008">MusketWidget.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_musket_widget_html_aae21b69dff0e9ee921d1e9644a4be380"><div class="ttname"><a href="class_game_1_1_musket_widget.html#aae21b69dff0e9ee921d1e9644a4be380">Game.MusketWidget.m_inventorySlotWidget</a></div><div class="ttdeci">InventorySlotWidget m_inventorySlotWidget</div><div class="ttdef"><b>定义</b> <a href="#l00012">MusketWidget.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a221de37baa4a0f91e934920030005677"><div class="ttname"><a href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">Game.Terrain.ExtractContents</a></div><div class="ttdeci">static int ExtractContents(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00303">Terrain.cs:303</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aec56ea916e034b2e4db00d1814fdadba"><div class="ttname"><a href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">Game.Terrain.ExtractData</a></div><div class="ttdeci">static int ExtractData(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00307">Terrain.cs:307</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html"><div class="ttname"><a href="class_game_1_1_widget.html">Game.Widget</a></div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00010">Widget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a49a806f5e237559162c1632e8dbb9d41"><div class="ttname"><a href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">Game.Widget.ParentWidget</a></div><div class="ttdeci">ContainerWidget ParentWidget</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00468">Widget.cs:468</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html"><div class="ttname"><a href="interface_game_1_1_i_inventory.html">Game.IInventory</a></div><div class="ttdef"><b>定义</b> <a href="_i_inventory_8cs_source.html#l00005">IInventory.cs:5</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html_a8adc5ad9b28931a5838724fd25979ede"><div class="ttname"><a href="struct_engine_1_1_matrix.html#a8adc5ad9b28931a5838724fd25979ede">Engine.Matrix.CreateLookAt</a></div><div class="ttdeci">static Matrix CreateLookAt(Vector3 position, Vector3 target, Vector3 up)</div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00282">Matrix.cs:282</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html"><div class="ttname"><a href="struct_engine_1_1_point2.html">Engine.Point2</a></div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00002">Point2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_af46f7cb8a73f44875d60900c65e4b787"><div class="ttname"><a href="struct_engine_1_1_vector3.html#af46f7cb8a73f44875d60900c65e4b787">Engine.Vector3.UnitZ</a></div><div class="ttdeci">static readonly Vector3 UnitZ</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00017">Vector3.cs:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_musket_widget_8cs.html">MusketWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

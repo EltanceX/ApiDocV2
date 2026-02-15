@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemSaddleBlockBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_saddle_block_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemSaddleBlockBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_saddle_block_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_saddle_block_behavior.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_saddle_block_behavior.html">SubsystemSaddleBlockBehavior</a> : <a class="code hl_class" href="class_game_1_1_subsystem_block_behavior.html">SubsystemBlockBehavior</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_saddle_block_behavior.html#aeb8b576fd5d55b33db82fcceec6eb083">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a> <a class="code hl_variable" href="class_game_1_1_subsystem_saddle_block_behavior.html#aeb8b576fd5d55b33db82fcceec6eb083">m_subsystemAudio</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_saddle_block_behavior.html#a54a0b4073acfa8f6cf1147875020a277">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_subsystem_saddle_block_behavior.html#a54a0b4073acfa8f6cf1147875020a277">m_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_saddle_block_behavior.html#ac9994527cf8adb00dbf2966b139bb39c">   11</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span>[] <a class="code hl_property" href="class_game_1_1_subsystem_saddle_block_behavior.html#ac9994527cf8adb00dbf2966b139bb39c">HandledBlocks</a> =&gt; [158];</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_saddle_block_behavior.html#a9ea88dfd21db226204ef738414240379">   13</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_subsystem_saddle_block_behavior.html#a9ea88dfd21db226204ef738414240379">OnUse</a>(<a class="code hl_struct" href="struct_engine_1_1_ray3.html">Ray3</a> ray, <a class="code hl_class" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_struct" href="struct_game_1_1_body_raycast_result.html">BodyRaycastResult</a>? bodyRaycastResult = componentMiner.<a class="code hl_function" href="class_game_1_1_component_miner.html#abbaa24d07ac02bbe4d7ceefea16c642a">Raycast</a>&lt;<a class="code hl_struct" href="struct_game_1_1_body_raycast_result.html">BodyRaycastResult</a>&gt;(ray, <a class="code hl_enumeration" href="namespace_game.html#a664a10d17b5481c0b3fd9fe744bc96ff">RaycastMode</a>.Interaction);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">if</span> (bodyRaycastResult.HasValue) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                <a class="code hl_class" href="class_game_1_1_component_health.html">ComponentHealth</a> componentHealth = bodyRaycastResult.Value.<a class="code hl_variable" href="struct_game_1_1_body_raycast_result.html#a534af37260ffd37461e0cc27bcde58b2">ComponentBody</a>.<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_health.html">ComponentHealth</a>&gt;();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <span class="keywordflow">if</span> (componentHealth == <span class="keyword">null</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                    || componentHealth.<a class="code hl_property" href="class_game_1_1_component_health.html#a6fe1094dd780310e4ad937039ade374f">Health</a> &gt; 0f) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                    <span class="keywordtype">string</span> entityTemplateName = $<span class="stringliteral">&quot;{bodyRaycastResult.Value.ComponentBody.Entity.ValuesDictionary.DatabaseObject.Name}_Saddled&quot;</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                    <a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity = <a class="code hl_class" href="class_game_1_1_database_manager.html">DatabaseManager</a>.<a class="code hl_function" href="class_game_1_1_database_manager.html#aa7ab7bdeceff749fc205063ee2ca3929">CreateEntity</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>, entityTemplateName, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                    <span class="keywordflow">if</span> (entity != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                        <a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody = entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                        componentBody.Position = bodyRaycastResult.Value.<a class="code hl_variable" href="struct_game_1_1_body_raycast_result.html#a534af37260ffd37461e0cc27bcde58b2">ComponentBody</a>.<a class="code hl_property" href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Position</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                        componentBody.Rotation = bodyRaycastResult.Value.<a class="code hl_variable" href="struct_game_1_1_body_raycast_result.html#a534af37260ffd37461e0cc27bcde58b2">ComponentBody</a>.<a class="code hl_property" href="class_game_1_1_component_frame.html#a3edf5e2b1c3d69681ba9bfd0249bdbd1">Rotation</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                        componentBody.Velocity = bodyRaycastResult.Value.<a class="code hl_variable" href="struct_game_1_1_body_raycast_result.html#a534af37260ffd37461e0cc27bcde58b2">ComponentBody</a>.<a class="code hl_property" href="class_game_1_1_component_body.html#a81b3119e04b176475d8a504e7cc8cc01">Velocity</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                        entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_spawn.html">ComponentSpawn</a>&gt;(<span class="keyword">true</span>).SpawnDuration = 0f;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                        <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.RemoveEntity(bodyRaycastResult.Value.<a class="code hl_variable" href="struct_game_1_1_body_raycast_result.html#a534af37260ffd37461e0cc27bcde58b2">ComponentBody</a>.<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.AddEntity(entity);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                        <a class="code hl_variable" href="class_game_1_1_subsystem_saddle_block_behavior.html#aeb8b576fd5d55b33db82fcceec6eb083">m_subsystemAudio</a>.PlaySound(<span class="stringliteral">&quot;Audio/BlockPlaced&quot;</span>, 1f, <a class="code hl_variable" href="class_game_1_1_subsystem_saddle_block_behavior.html#a54a0b4073acfa8f6cf1147875020a277">m_random</a>.Float(-0.1f, 0.1f), ray.<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>, 1f, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                        componentMiner.<a class="code hl_function" href="class_game_1_1_component_miner.html#a137bc4eba186ff5ad543d9d5a34ab127">RemoveActiveTool</a>(1);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_saddle_block_behavior.html#a87b65bf2d3504aea6f69a643ed44f5f1">   38</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_saddle_block_behavior.html#a87b65bf2d3504aea6f69a643ed44f5f1">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            base.Load(valuesDictionary);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_saddle_block_behavior.html#aeb8b576fd5d55b33db82fcceec6eb083">m_subsystemAudio</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="ttc" id="aclass_game_1_1_component_body_html"><div class="ttname"><a href="class_game_1_1_component_body.html">Game.ComponentBody</a></div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00007">ComponentBody.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_body_html_a81b3119e04b176475d8a504e7cc8cc01"><div class="ttname"><a href="class_game_1_1_component_body.html#a81b3119e04b176475d8a504e7cc8cc01">Game.ComponentBody.Velocity</a></div><div class="ttdeci">virtual Vector3 Velocity</div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00142">ComponentBody.cs:142</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_frame_html_a22743827a45e864ab98902cf65cdb54f"><div class="ttname"><a href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Game.ComponentFrame.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="_component_frame_8cs_source.html#l00015">ComponentFrame.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_frame_html_a3edf5e2b1c3d69681ba9bfd0249bdbd1"><div class="ttname"><a href="class_game_1_1_component_frame.html#a3edf5e2b1c3d69681ba9bfd0249bdbd1">Game.ComponentFrame.Rotation</a></div><div class="ttdeci">Quaternion Rotation</div><div class="ttdef"><b>定义</b> <a href="_component_frame_8cs_source.html#l00026">ComponentFrame.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_health_html"><div class="ttname"><a href="class_game_1_1_component_health.html">Game.ComponentHealth</a></div><div class="ttdef"><b>定义</b> <a href="_component_health_8cs_source.html#l00006">ComponentHealth.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_health_html_a6fe1094dd780310e4ad937039ade374f"><div class="ttname"><a href="class_game_1_1_component_health.html#a6fe1094dd780310e4ad937039ade374f">Game.ComponentHealth.Health</a></div><div class="ttdeci">virtual float Health</div><div class="ttdef"><b>定义</b> <a href="_component_health_8cs_source.html#l00070">ComponentHealth.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html"><div class="ttname"><a href="class_game_1_1_component_miner.html">Game.ComponentMiner</a></div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00007">ComponentMiner.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html_a137bc4eba186ff5ad543d9d5a34ab127"><div class="ttname"><a href="class_game_1_1_component_miner.html#a137bc4eba186ff5ad543d9d5a34ab127">Game.ComponentMiner.RemoveActiveTool</a></div><div class="ttdeci">virtual void RemoveActiveTool(int removeCount)</div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00692">ComponentMiner.cs:692</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html_abbaa24d07ac02bbe4d7ceefea16c642a"><div class="ttname"><a href="class_game_1_1_component_miner.html#abbaa24d07ac02bbe4d7ceefea16c642a">Game.ComponentMiner.Raycast</a></div><div class="ttdeci">virtual object Raycast(Ray3 ray, RaycastMode mode, bool raycastTerrain=true, bool raycastBodies=true, bool raycastMovingBlocks=true, float? Reach=null)</div><div class="ttdoc">发出射线检测，检测玩家点击到的目标</div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00596">ComponentMiner.cs:596</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html"><div class="ttname"><a href="class_game_1_1_component_spawn.html">Game.ComponentSpawn</a></div><div class="ttdef"><b>定义</b> <a href="_component_spawn_8cs_source.html#l00005">ComponentSpawn.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_database_manager_html"><div class="ttname"><a href="class_game_1_1_database_manager.html">Game.DatabaseManager</a></div><div class="ttdef"><b>定义</b> <a href="_database_manager_8cs_source.html#l00008">DatabaseManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_database_manager_html_aa7ab7bdeceff749fc205063ee2ca3929"><div class="ttname"><a href="class_game_1_1_database_manager.html#aa7ab7bdeceff749fc205063ee2ca3929">Game.DatabaseManager.CreateEntity</a></div><div class="ttdeci">static Entity CreateEntity(Project project, SpawnEntityData spawnEntityData, bool throwIfNotFound)</div><div class="ttdef"><b>定义</b> <a href="_database_manager_8cs_source.html#l00064">DatabaseManager.cs:64</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_audio_html"><div class="ttname"><a href="class_game_1_1_subsystem_audio.html">Game.SubsystemAudio</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00008">SubsystemAudio.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html">Game.SubsystemBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00006">SubsystemBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_saddle_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_saddle_block_behavior.html">Game.SubsystemSaddleBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">SubsystemSaddleBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_saddle_block_behavior_html_a54a0b4073acfa8f6cf1147875020a277"><div class="ttname"><a href="class_game_1_1_subsystem_saddle_block_behavior.html#a54a0b4073acfa8f6cf1147875020a277">Game.SubsystemSaddleBlockBehavior.m_random</a></div><div class="ttdeci">Random m_random</div><div class="ttdef"><b>定义</b> <a href="#l00009">SubsystemSaddleBlockBehavior.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_saddle_block_behavior_html_a87b65bf2d3504aea6f69a643ed44f5f1"><div class="ttname"><a href="class_game_1_1_subsystem_saddle_block_behavior.html#a87b65bf2d3504aea6f69a643ed44f5f1">Game.SubsystemSaddleBlockBehavior.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00038">SubsystemSaddleBlockBehavior.cs:38</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_saddle_block_behavior_html_a9ea88dfd21db226204ef738414240379"><div class="ttname"><a href="class_game_1_1_subsystem_saddle_block_behavior.html#a9ea88dfd21db226204ef738414240379">Game.SubsystemSaddleBlockBehavior.OnUse</a></div><div class="ttdeci">override bool OnUse(Ray3 ray, ComponentMiner componentMiner)</div><div class="ttdef"><b>定义</b> <a href="#l00013">SubsystemSaddleBlockBehavior.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_saddle_block_behavior_html_ac9994527cf8adb00dbf2966b139bb39c"><div class="ttname"><a href="class_game_1_1_subsystem_saddle_block_behavior.html#ac9994527cf8adb00dbf2966b139bb39c">Game.SubsystemSaddleBlockBehavior.HandledBlocks</a></div><div class="ttdeci">override int[] HandledBlocks</div><div class="ttdef"><b>定义</b> <a href="#l00011">SubsystemSaddleBlockBehavior.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_saddle_block_behavior_html_aeb8b576fd5d55b33db82fcceec6eb083"><div class="ttname"><a href="class_game_1_1_subsystem_saddle_block_behavior.html#aeb8b576fd5d55b33db82fcceec6eb083">Game.SubsystemSaddleBlockBehavior.m_subsystemAudio</a></div><div class="ttdeci">SubsystemAudio m_subsystemAudio</div><div class="ttdef"><b>定义</b> <a href="#l00007">SubsystemSaddleBlockBehavior.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html">GameEntitySystem.Entity</a></div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00010">Entity.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_afbe091d90718bd24bc5b528daa3245cf"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">GameEntitySystem.Entity.FindComponent</a></div><div class="ttdeci">Component FindComponent(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00132">Entity.cs:132</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a664a10d17b5481c0b3fd9fe744bc96ff"><div class="ttname"><a href="namespace_game.html#a664a10d17b5481c0b3fd9fe744bc96ff">Game.RaycastMode</a></div><div class="ttdeci">RaycastMode</div><div class="ttdef"><b>定义</b> <a href="_raycast_mode_8cs_source.html#l00002">RaycastMode.cs:2</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html"><div class="ttname"><a href="struct_engine_1_1_ray3.html">Engine.Ray3</a></div><div class="ttdef"><b>定义</b> <a href="_ray3_8cs_source.html#l00002">Ray3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_ac46a0dc2481a6e1f4c513fcddbb579ff"><div class="ttname"><a href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Engine.Ray3.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="_ray3_8cs_source.html#l00003">Ray3.cs:3</a></div></div>
+<div class="ttc" id="astruct_game_1_1_body_raycast_result_html"><div class="ttname"><a href="struct_game_1_1_body_raycast_result.html">Game.BodyRaycastResult</a></div><div class="ttdef"><b>定义</b> <a href="_body_raycast_result_8cs_source.html#l00005">BodyRaycastResult.cs:5</a></div></div>
+<div class="ttc" id="astruct_game_1_1_body_raycast_result_html_a534af37260ffd37461e0cc27bcde58b2"><div class="ttname"><a href="struct_game_1_1_body_raycast_result.html#a534af37260ffd37461e0cc27bcde58b2">Game.BodyRaycastResult.ComponentBody</a></div><div class="ttdeci">ComponentBody ComponentBody</div><div class="ttdef"><b>定义</b> <a href="_body_raycast_result_8cs_source.html#l00009">BodyRaycastResult.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_saddle_block_behavior_8cs.html">SubsystemSaddleBlockBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

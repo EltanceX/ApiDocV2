@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Block/ArrowBlock.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_arrow_block_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ArrowBlock.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_arrow_block_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_arrow_block.html">ArrowBlock</a> : <a class="code hl_class" href="class_game_1_1_block.html">Block</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        [Flags]</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">    7</a></span>        <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">ArrowType</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a6ca6c646596b60964650cf1c37aa3ae6">    8</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a6ca6c646596b60964650cf1c37aa3ae6">WoodenArrow</a>,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a1b3bf4d032420f035961a33f311919b1">    9</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a1b3bf4d032420f035961a33f311919b1">StoneArrow</a>,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a64b3109308e9473bab80e6315b6ef37a">   10</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a64b3109308e9473bab80e6315b6ef37a">IronArrow</a>,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a112927f435324c2c49e501687112831c">   11</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a112927f435324c2c49e501687112831c">DiamondArrow</a>,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49af7f3b17a71c0a3176511972671904fd0">   12</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49af7f3b17a71c0a3176511972671904fd0">FireArrow</a>,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49af2804bbd6aa0ceefb300ca17ab543c93">   13</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49af2804bbd6aa0ceefb300ca17ab543c93">IronBolt</a>,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49ab9646ba6d8154ed4b108c3b62a0f0bea">   14</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49ab9646ba6d8154ed4b108c3b62a0f0bea">DiamondBolt</a>,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49acc6ca7daa837fdd98e67304ad97ffe84">   15</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49acc6ca7daa837fdd98e67304ad97ffe84">ExplosiveBolt</a>,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49abfc3fe3dceadf553bf1599ab49dec470">   16</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49abfc3fe3dceadf553bf1599ab49dec470">CopperArrow</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        }</div>
+</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a85d160fcac8ffc2cef304748c9f31b3e">   19</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a85d160fcac8ffc2cef304748c9f31b3e">Index</a> = 192;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#aa098b1fb162f86f3ec286f9f450110e9">   21</a></span>        <span class="keyword">public</span> List&lt;BlockMesh&gt; <a class="code hl_variable" href="class_game_1_1_arrow_block.html#aa098b1fb162f86f3ec286f9f450110e9">m_standaloneBlockMeshes</a> = [];</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a8e2172104ef9cb612358c7cf50025916">   23</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a8e2172104ef9cb612358c7cf50025916">m_order</a> = [</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            0,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            1,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            8,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            2,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            3,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            4,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            5,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            6,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            7</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        ];</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#ae8c7e062c081fca31d18fb4d37655bab">   35</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#ae8c7e062c081fca31d18fb4d37655bab">m_tipNames</a> = [</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="stringliteral">&quot;ArrowTip&quot;</span>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="stringliteral">&quot;ArrowTip&quot;</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="stringliteral">&quot;ArrowTip&quot;</span>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="stringliteral">&quot;ArrowTip&quot;</span>,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="stringliteral">&quot;ArrowFireTip&quot;</span>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="stringliteral">&quot;BoltTip&quot;</span>,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="stringliteral">&quot;BoltTip&quot;</span>,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="stringliteral">&quot;BoltExplosiveTip&quot;</span>,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="stringliteral">&quot;ArrowTip&quot;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        ];</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a6853a44df8a538f9743f023fbda37f5a">   47</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a6853a44df8a538f9743f023fbda37f5a">m_tipTextureSlots</a> = [</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            47,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            1,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            63,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            182,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            62,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            63,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            182,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            183,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            79</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        ];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a1bf1b5662a5663bcb2e3cbc2bc1b5d44">   59</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a1bf1b5662a5663bcb2e3cbc2bc1b5d44">m_shaftNames</a> = [</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="stringliteral">&quot;ArrowShaft&quot;</span>,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="stringliteral">&quot;ArrowShaft&quot;</span>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="stringliteral">&quot;ArrowShaft&quot;</span>,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="stringliteral">&quot;ArrowShaft&quot;</span>,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="stringliteral">&quot;ArrowShaft&quot;</span>,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="stringliteral">&quot;BoltShaft&quot;</span>,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="stringliteral">&quot;BoltShaft&quot;</span>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="stringliteral">&quot;BoltShaft&quot;</span>,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="stringliteral">&quot;ArrowShaft&quot;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        ];</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a7f11a1b6d4d3feffda98a39173033bc6">   71</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a7f11a1b6d4d3feffda98a39173033bc6">m_shaftTextureSlots</a> = [</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            4,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            4,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            4,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            4,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            4,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            63,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            63,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            63,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            4</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        ];</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a6fd893dd7f955a0e2d558ec0f379bc44">   83</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a6fd893dd7f955a0e2d558ec0f379bc44">m_stabilizerNames</a> = [</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="stringliteral">&quot;ArrowStabilizer&quot;</span>,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="stringliteral">&quot;ArrowStabilizer&quot;</span>,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="stringliteral">&quot;ArrowStabilizer&quot;</span>,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="stringliteral">&quot;ArrowStabilizer&quot;</span>,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="stringliteral">&quot;ArrowStabilizer&quot;</span>,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="stringliteral">&quot;BoltStabilizer&quot;</span>,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="stringliteral">&quot;BoltStabilizer&quot;</span>,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="stringliteral">&quot;BoltStabilizer&quot;</span>,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="stringliteral">&quot;ArrowStabilizer&quot;</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        ];</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a4bdb730a536405d96ad47349ac4dcbee">   95</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a4bdb730a536405d96ad47349ac4dcbee">m_stabilizerTextureSlots</a> = [</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            15,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            15,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            15,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            15,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            15,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            63,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            63,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            63,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            15</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        ];</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#ac1925a78a819834a3cf2df8f564c3c14">  107</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#ac1925a78a819834a3cf2df8f564c3c14">m_offsets</a> = [</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            -0.5f,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            -0.5f,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            -0.5f,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            -0.5f,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            -0.5f,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            -0.3f,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            -0.3f,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            -0.3f,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            -0.5f</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        ];</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#afbf77b16e69663ec027f482373b2299f">  119</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#afbf77b16e69663ec027f482373b2299f">m_weaponPowers</a> = [</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            5f,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            7f,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            14f,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            18f,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            4f,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            28f,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            36f,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            8f,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            10f</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        ];</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a462aedaf6900d81f7166ad577d417c3e">  131</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a462aedaf6900d81f7166ad577d417c3e">m_iconViewScales</a> = [</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            0.8f,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            0.8f,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            0.8f,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            0.8f,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            0.8f,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            1.1f,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            1.1f,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            1.1f,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            0.8f</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        ];</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a22b1558443e8ca09dde40ef4490d3dc5">  143</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span>[] <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a22b1558443e8ca09dde40ef4490d3dc5">m_explosionPressures</a> = [</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            0f,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            0f,</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            0f,</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            0f,</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            0f,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            0f,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            0f,</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            40f,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            0f</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        ];</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="foldopen" id="foldopen00155" data-start="{" data-end="}">
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a4fcd0ba16d8fcd7ab321f2ae0354c8e2">  155</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_arrow_block.html#a4fcd0ba16d8fcd7ab321f2ae0354c8e2">Initialize</a>() {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <a class="code hl_class" href="class_engine_1_1_graphics_1_1_model.html">Model</a> model = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;<a class="code hl_class" href="class_engine_1_1_graphics_1_1_model.html">Model</a>&gt;(<span class="stringliteral">&quot;Models/Arrows&quot;</span>);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keywordflow">foreach</span> (<span class="keywordtype">int</span> enumValue <span class="keywordflow">in</span> <a class="code hl_class" href="class_game_1_1_enum_utils.html">EnumUtils</a>.<a class="code hl_function" href="class_game_1_1_enum_utils.html#aec6c44bc5d080c25fb8ae8bab720a859">GetEnumValues</a>&lt;<a class="code hl_enumeration" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">ArrowType</a>&gt;()) {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                <span class="keywordflow">if</span> (enumValue &gt; 15) {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Too many arrow types.&quot;</span>);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> boneAbsoluteTransform = <a class="code hl_class" href="class_game_1_1_block_mesh.html">BlockMesh</a>.<a class="code hl_function" href="class_game_1_1_block_mesh.html#ab5ddbb129e1704afb06a29b7d1f9a996">GetBoneAbsoluteTransform</a>(model.FindMesh(<a class="code hl_variable" href="class_game_1_1_arrow_block.html#a1bf1b5662a5663bcb2e3cbc2bc1b5d44">m_shaftNames</a>[enumValue]).ParentBone);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> boneAbsoluteTransform2 = <a class="code hl_class" href="class_game_1_1_block_mesh.html">BlockMesh</a>.<a class="code hl_function" href="class_game_1_1_block_mesh.html#ab5ddbb129e1704afb06a29b7d1f9a996">GetBoneAbsoluteTransform</a>(model.FindMesh(<a class="code hl_variable" href="class_game_1_1_arrow_block.html#a6fd893dd7f955a0e2d558ec0f379bc44">m_stabilizerNames</a>[enumValue]).ParentBone);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> boneAbsoluteTransform3 = <a class="code hl_class" href="class_game_1_1_block_mesh.html">BlockMesh</a>.<a class="code hl_function" href="class_game_1_1_block_mesh.html#ab5ddbb129e1704afb06a29b7d1f9a996">GetBoneAbsoluteTransform</a>(model.FindMesh(<a class="code hl_variable" href="class_game_1_1_arrow_block.html#ae8c7e062c081fca31d18fb4d37655bab">m_tipNames</a>[enumValue]).ParentBone);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                <a class="code hl_class" href="class_game_1_1_block_mesh.html">BlockMesh</a> blockMesh = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                blockMesh.<a class="code hl_function" href="class_game_1_1_block_mesh.html#afef4015b1e16efec43badc0336482f4a">AppendModelMeshPart</a>(</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                    model.FindMesh(<a class="code hl_variable" href="class_game_1_1_arrow_block.html#ae8c7e062c081fca31d18fb4d37655bab">m_tipNames</a>[enumValue]).MeshParts[0],</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                    boneAbsoluteTransform3 * <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a32fc30c91bdca2111fbc41b625a624cf">CreateTranslation</a>(0f, <a class="code hl_variable" href="class_game_1_1_arrow_block.html#ac1925a78a819834a3cf2df8f564c3c14">m_offsets</a>[enumValue], 0f),</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                    <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">White</a></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                );</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                blockMesh.<a class="code hl_function" href="class_game_1_1_block_mesh.html#a11b62ee676c7db964af62603c4b21a43">TransformTextureCoordinates</a>(</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a32fc30c91bdca2111fbc41b625a624cf">CreateTranslation</a>(<a class="code hl_variable" href="class_game_1_1_arrow_block.html#a6853a44df8a538f9743f023fbda37f5a">m_tipTextureSlots</a>[enumValue] % 16 / 16f, <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a6853a44df8a538f9743f023fbda37f5a">m_tipTextureSlots</a>[enumValue] / 16 / 16f, 0f)</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                );</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                <a class="code hl_class" href="class_game_1_1_block_mesh.html">BlockMesh</a> blockMesh2 = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                blockMesh2.<a class="code hl_function" href="class_game_1_1_block_mesh.html#afef4015b1e16efec43badc0336482f4a">AppendModelMeshPart</a>(</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                    model.FindMesh(<a class="code hl_variable" href="class_game_1_1_arrow_block.html#a1bf1b5662a5663bcb2e3cbc2bc1b5d44">m_shaftNames</a>[enumValue]).MeshParts[0],</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                    boneAbsoluteTransform * <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a32fc30c91bdca2111fbc41b625a624cf">CreateTranslation</a>(0f, <a class="code hl_variable" href="class_game_1_1_arrow_block.html#ac1925a78a819834a3cf2df8f564c3c14">m_offsets</a>[enumValue], 0f),</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                    <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">White</a></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                );</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                blockMesh2.<a class="code hl_function" href="class_game_1_1_block_mesh.html#a11b62ee676c7db964af62603c4b21a43">TransformTextureCoordinates</a>(</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                    <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a32fc30c91bdca2111fbc41b625a624cf">CreateTranslation</a>(<a class="code hl_variable" href="class_game_1_1_arrow_block.html#a7f11a1b6d4d3feffda98a39173033bc6">m_shaftTextureSlots</a>[enumValue] % 16 / 16f, <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a7f11a1b6d4d3feffda98a39173033bc6">m_shaftTextureSlots</a>[enumValue] / 16 / 16f, 0f)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                );</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                <a class="code hl_class" href="class_game_1_1_block_mesh.html">BlockMesh</a> blockMesh3 = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                blockMesh3.<a class="code hl_function" href="class_game_1_1_block_mesh.html#afef4015b1e16efec43badc0336482f4a">AppendModelMeshPart</a>(</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                    model.FindMesh(<a class="code hl_variable" href="class_game_1_1_arrow_block.html#a6fd893dd7f955a0e2d558ec0f379bc44">m_stabilizerNames</a>[enumValue]).MeshParts[0],</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                    boneAbsoluteTransform2 * <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a32fc30c91bdca2111fbc41b625a624cf">CreateTranslation</a>(0f, <a class="code hl_variable" href="class_game_1_1_arrow_block.html#ac1925a78a819834a3cf2df8f564c3c14">m_offsets</a>[enumValue], 0f),</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                    <span class="keyword">true</span>,</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                    <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">White</a></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                );</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                blockMesh3.<a class="code hl_function" href="class_game_1_1_block_mesh.html#a11b62ee676c7db964af62603c4b21a43">TransformTextureCoordinates</a>(</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                    <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a32fc30c91bdca2111fbc41b625a624cf">CreateTranslation</a>(<a class="code hl_variable" href="class_game_1_1_arrow_block.html#a4bdb730a536405d96ad47349ac4dcbee">m_stabilizerTextureSlots</a>[enumValue] % 16 / 16f, <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a4bdb730a536405d96ad47349ac4dcbee">m_stabilizerTextureSlots</a>[enumValue] / 16 / 16f, 0f)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                );</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                <a class="code hl_class" href="class_game_1_1_block_mesh.html">BlockMesh</a> blockMesh4 = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                blockMesh4.<a class="code hl_function" href="class_game_1_1_block_mesh.html#ac78f32945a1de3938132107624937993">AppendBlockMesh</a>(blockMesh);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                blockMesh4.<a class="code hl_function" href="class_game_1_1_block_mesh.html#ac78f32945a1de3938132107624937993">AppendBlockMesh</a>(blockMesh2);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                blockMesh4.<a class="code hl_function" href="class_game_1_1_block_mesh.html#ac78f32945a1de3938132107624937993">AppendBlockMesh</a>(blockMesh3);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                <a class="code hl_variable" href="class_game_1_1_arrow_block.html#aa098b1fb162f86f3ec286f9f450110e9">m_standaloneBlockMeshes</a>.Add(blockMesh4);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            base.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_model.html#a9cb702f522962199899225607bd3a8d4">Initialize</a>();</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        }</div>
+</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a94fdb26d569f692ec214c3d58fe85a33">  212</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_arrow_block.html#a94fdb26d569f692ec214c3d58fe85a33">GenerateTerrainVertices</a>(<a class="code hl_class" href="class_game_1_1_block_geometry_generator.html">BlockGeometryGenerator</a> generator, <a class="code hl_class" href="class_game_1_1_terrain_geometry.html">TerrainGeometry</a> geometry, <span class="keywordtype">int</span> value, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) { }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a02335ddc7ee94ac431294034fb10b3fb">  214</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_arrow_block.html#a02335ddc7ee94ac431294034fb10b3fb">DrawBlock</a>(<a class="code hl_class" href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">PrimitivesRenderer3D</a> primitivesRenderer,</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <span class="keywordtype">int</span> value,</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> color,</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordtype">float</span> size,</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            ref <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> matrix,</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <a class="code hl_class" href="class_game_1_1_draw_block_environment_data.html">DrawBlockEnvironmentData</a> environmentData) {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            <span class="keywordtype">int</span> arrowType = (int)<a class="code hl_function" href="class_game_1_1_arrow_block.html#a9a1ec72b09e22e11f19e5adeaced867a">GetArrowType</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value));</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            <span class="keywordflow">if</span> (arrowType &gt;= 0</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                &amp;&amp; arrowType &lt; <a class="code hl_variable" href="class_game_1_1_arrow_block.html#aa098b1fb162f86f3ec286f9f450110e9">m_standaloneBlockMeshes</a>.Count) {</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#a4e142f30618593a14003fab65d090f2d">DrawMeshBlock</a>(primitivesRenderer, <a class="code hl_variable" href="class_game_1_1_arrow_block.html#aa098b1fb162f86f3ec286f9f450110e9">m_standaloneBlockMeshes</a>[arrowType], color, 2f * size, ref matrix, environmentData);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        }</div>
+</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="foldopen" id="foldopen00227" data-start="{" data-end="}">
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#af1e94e367339e74612d02402534097c4">  227</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_arrow_block.html#af1e94e367339e74612d02402534097c4">GetProjectilePower</a>(<span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keywordtype">int</span> arrowType = (int)<a class="code hl_function" href="class_game_1_1_arrow_block.html#a9a1ec72b09e22e11f19e5adeaced867a">GetArrowType</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value));</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            <span class="keywordflow">if</span> (arrowType &lt; 0</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                || arrowType &gt;= <a class="code hl_variable" href="class_game_1_1_arrow_block.html#afbf77b16e69663ec027f482373b2299f">m_weaponPowers</a>.Length) {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <span class="keywordflow">return</span> 0f;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            }</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_arrow_block.html#afbf77b16e69663ec027f482373b2299f">m_weaponPowers</a>[arrowType];</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        }</div>
+</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="foldopen" id="foldopen00236" data-start="{" data-end="}">
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a215417c7bb2743a9eea9996ca63047c2">  236</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_arrow_block.html#a215417c7bb2743a9eea9996ca63047c2">GetExplosionPressure</a>(<span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="keywordtype">int</span> arrowType = (int)<a class="code hl_function" href="class_game_1_1_arrow_block.html#a9a1ec72b09e22e11f19e5adeaced867a">GetArrowType</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value));</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <span class="keywordflow">if</span> (arrowType &lt; 0</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                || arrowType &gt;= <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a22b1558443e8ca09dde40ef4490d3dc5">m_explosionPressures</a>.Length) {</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                <span class="keywordflow">return</span> 0f;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a22b1558443e8ca09dde40ef4490d3dc5">m_explosionPressures</a>[arrowType];</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        }</div>
+</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="foldopen" id="foldopen00245" data-start="{" data-end="}">
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a98ad16b52ea4ddf6aafdf4cd5d3544b5">  245</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_arrow_block.html#a98ad16b52ea4ddf6aafdf4cd5d3544b5">GetIconViewScale</a>(<span class="keywordtype">int</span> value, <a class="code hl_class" href="class_game_1_1_draw_block_environment_data.html">DrawBlockEnvironmentData</a> environmentData) {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            <span class="keywordtype">int</span> arrowType = (int)<a class="code hl_function" href="class_game_1_1_arrow_block.html#a9a1ec72b09e22e11f19e5adeaced867a">GetArrowType</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value));</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keywordflow">if</span> (arrowType &lt; 0</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                || arrowType &gt;= <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a462aedaf6900d81f7166ad577d417c3e">m_iconViewScales</a>.Length) {</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                <span class="keywordflow">return</span> 1f;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            }</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a462aedaf6900d81f7166ad577d417c3e">m_iconViewScales</a>[arrowType];</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        }</div>
+</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="foldopen" id="foldopen00254" data-start="{" data-end="}">
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a16600101cb3beef06eec78502055562c">  254</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> IEnumerable&lt;int&gt; <a class="code hl_function" href="class_game_1_1_arrow_block.html#a16600101cb3beef06eec78502055562c">GetCreativeValues</a>() {</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            <span class="keywordflow">while</span> (i &lt; <a class="code hl_variable" href="class_game_1_1_arrow_block.html#a8e2172104ef9cb612358c7cf50025916">m_order</a>.Length) {</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                yield <span class="keywordflow">return</span> <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(<a class="code hl_variable" href="class_game_1_1_block.html#a0b1a87d92dc3fdfccdcff1609740702d">BlockIndex</a>, 0, <a class="code hl_function" href="class_game_1_1_arrow_block.html#a4831533616a9dea1b0fefad776a8208f">SetArrowType</a>(0, (<a class="code hl_enumeration" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">ArrowType</a>)<a class="code hl_variable" href="class_game_1_1_arrow_block.html#a8e2172104ef9cb612358c7cf50025916">m_order</a>[i]));</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                <span class="keywordtype">int</span> num = i + 1;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                i = num;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            }</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        }</div>
+</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="foldopen" id="foldopen00263" data-start="{" data-end="}">
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a78cb2cb67f47171c5776077f9f273370">  263</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_arrow_block.html#a78cb2cb67f47171c5776077f9f273370">GetDisplayName</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> subsystemTerrain, <span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            <span class="keywordtype">int</span> arrowType = (int)<a class="code hl_function" href="class_game_1_1_arrow_block.html#a9a1ec72b09e22e11f19e5adeaced867a">GetArrowType</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value));</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            <span class="keywordflow">if</span> (arrowType &lt; 0</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                || arrowType &gt;= Enum.GetValues&lt;<a class="code hl_enumeration" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">ArrowType</a>&gt;().Length) {</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            }</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<span class="stringliteral">&quot;ArrowBlock&quot;</span>, arrowType);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        }</div>
+</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a9a1ec72b09e22e11f19e5adeaced867a">  272</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_enumeration" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">ArrowType</a> <a class="code hl_function" href="class_game_1_1_arrow_block.html#a9a1ec72b09e22e11f19e5adeaced867a">GetArrowType</a>(<span class="keywordtype">int</span> data) =&gt; (<a class="code hl_enumeration" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">ArrowType</a>)(data &amp; 0xF);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="class_game_1_1_arrow_block.html#a4831533616a9dea1b0fefad776a8208f">  274</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_arrow_block.html#a4831533616a9dea1b0fefad776a8208f">SetArrowType</a>(<span class="keywordtype">int</span> data, <a class="code hl_enumeration" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">ArrowType</a> arrowType) =&gt; (data &amp; -16) | (<span class="keywordtype">int</span>)(arrowType &amp; (<a class="code hl_enumeration" href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">ArrowType</a>)15);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
+</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model.html">Engine.Graphics.Model</a></div><div class="ttdef"><b>定义</b> <a href="_model_8cs_source.html#l00004">Model.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_html_a9cb702f522962199899225607bd3a8d4"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model.html#a9cb702f522962199899225607bd3a8d4">Engine.Graphics.Model.Initialize</a></div><div class="ttdeci">void Initialize(ModelData modelData, bool keepSourceVertexDataInTags)</div><div class="ttdef"><b>定义</b> <a href="_model_8cs_source.html#l00150">Model.cs:150</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_primitives_renderer3_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">Engine.Graphics.PrimitivesRenderer3D</a></div><div class="ttdef"><b>定义</b> <a href="_primitives_renderer3_d_8cs_source.html#l00004">PrimitivesRenderer3D.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html"><div class="ttname"><a href="class_game_1_1_arrow_block.html">Game.ArrowBlock</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">ArrowBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a02335ddc7ee94ac431294034fb10b3fb"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a02335ddc7ee94ac431294034fb10b3fb">Game.ArrowBlock.DrawBlock</a></div><div class="ttdeci">override void DrawBlock(PrimitivesRenderer3D primitivesRenderer, int value, Color color, float size, ref Matrix matrix, DrawBlockEnvironmentData environmentData)</div><div class="ttdef"><b>定义</b> <a href="#l00214">ArrowBlock.cs:214</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49">Game.ArrowBlock.ArrowType</a></div><div class="ttdeci">ArrowType</div><div class="ttdef"><b>定义</b> <a href="#l00007">ArrowBlock.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49a112927f435324c2c49e501687112831c"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a112927f435324c2c49e501687112831c">Game.ArrowBlock.ArrowType.DiamondArrow</a></div><div class="ttdeci">@ DiamondArrow</div><div class="ttdef"><b>定义</b> <a href="#l00011">ArrowBlock.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49a1b3bf4d032420f035961a33f311919b1"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a1b3bf4d032420f035961a33f311919b1">Game.ArrowBlock.ArrowType.StoneArrow</a></div><div class="ttdeci">@ StoneArrow</div><div class="ttdef"><b>定义</b> <a href="#l00009">ArrowBlock.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49a64b3109308e9473bab80e6315b6ef37a"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a64b3109308e9473bab80e6315b6ef37a">Game.ArrowBlock.ArrowType.IronArrow</a></div><div class="ttdeci">@ IronArrow</div><div class="ttdef"><b>定义</b> <a href="#l00010">ArrowBlock.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49a6ca6c646596b60964650cf1c37aa3ae6"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49a6ca6c646596b60964650cf1c37aa3ae6">Game.ArrowBlock.ArrowType.WoodenArrow</a></div><div class="ttdeci">@ WoodenArrow</div><div class="ttdef"><b>定义</b> <a href="#l00008">ArrowBlock.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49ab9646ba6d8154ed4b108c3b62a0f0bea"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49ab9646ba6d8154ed4b108c3b62a0f0bea">Game.ArrowBlock.ArrowType.DiamondBolt</a></div><div class="ttdeci">@ DiamondBolt</div><div class="ttdef"><b>定义</b> <a href="#l00014">ArrowBlock.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49abfc3fe3dceadf553bf1599ab49dec470"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49abfc3fe3dceadf553bf1599ab49dec470">Game.ArrowBlock.ArrowType.CopperArrow</a></div><div class="ttdeci">@ CopperArrow</div><div class="ttdef"><b>定义</b> <a href="#l00016">ArrowBlock.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49acc6ca7daa837fdd98e67304ad97ffe84"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49acc6ca7daa837fdd98e67304ad97ffe84">Game.ArrowBlock.ArrowType.ExplosiveBolt</a></div><div class="ttdeci">@ ExplosiveBolt</div><div class="ttdef"><b>定义</b> <a href="#l00015">ArrowBlock.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49af2804bbd6aa0ceefb300ca17ab543c93"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49af2804bbd6aa0ceefb300ca17ab543c93">Game.ArrowBlock.ArrowType.IronBolt</a></div><div class="ttdeci">@ IronBolt</div><div class="ttdef"><b>定义</b> <a href="#l00013">ArrowBlock.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a0339421cbb01679d0b9bafb6e49cfe49af7f3b17a71c0a3176511972671904fd0"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a0339421cbb01679d0b9bafb6e49cfe49af7f3b17a71c0a3176511972671904fd0">Game.ArrowBlock.ArrowType.FireArrow</a></div><div class="ttdeci">@ FireArrow</div><div class="ttdef"><b>定义</b> <a href="#l00012">ArrowBlock.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a16600101cb3beef06eec78502055562c"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a16600101cb3beef06eec78502055562c">Game.ArrowBlock.GetCreativeValues</a></div><div class="ttdeci">override IEnumerable&lt; int &gt; GetCreativeValues()</div><div class="ttdef"><b>定义</b> <a href="#l00254">ArrowBlock.cs:254</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a1bf1b5662a5663bcb2e3cbc2bc1b5d44"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a1bf1b5662a5663bcb2e3cbc2bc1b5d44">Game.ArrowBlock.m_shaftNames</a></div><div class="ttdeci">static string[] m_shaftNames</div><div class="ttdef"><b>定义</b> <a href="#l00059">ArrowBlock.cs:59</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a215417c7bb2743a9eea9996ca63047c2"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a215417c7bb2743a9eea9996ca63047c2">Game.ArrowBlock.GetExplosionPressure</a></div><div class="ttdeci">override float GetExplosionPressure(int value)</div><div class="ttdef"><b>定义</b> <a href="#l00236">ArrowBlock.cs:236</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a22b1558443e8ca09dde40ef4490d3dc5"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a22b1558443e8ca09dde40ef4490d3dc5">Game.ArrowBlock.m_explosionPressures</a></div><div class="ttdeci">static float[] m_explosionPressures</div><div class="ttdef"><b>定义</b> <a href="#l00143">ArrowBlock.cs:143</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a462aedaf6900d81f7166ad577d417c3e"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a462aedaf6900d81f7166ad577d417c3e">Game.ArrowBlock.m_iconViewScales</a></div><div class="ttdeci">static float[] m_iconViewScales</div><div class="ttdef"><b>定义</b> <a href="#l00131">ArrowBlock.cs:131</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a4831533616a9dea1b0fefad776a8208f"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a4831533616a9dea1b0fefad776a8208f">Game.ArrowBlock.SetArrowType</a></div><div class="ttdeci">static int SetArrowType(int data, ArrowType arrowType)</div><div class="ttdef"><b>定义</b> <a href="#l00274">ArrowBlock.cs:274</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a4bdb730a536405d96ad47349ac4dcbee"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a4bdb730a536405d96ad47349ac4dcbee">Game.ArrowBlock.m_stabilizerTextureSlots</a></div><div class="ttdeci">static int[] m_stabilizerTextureSlots</div><div class="ttdef"><b>定义</b> <a href="#l00095">ArrowBlock.cs:95</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a4fcd0ba16d8fcd7ab321f2ae0354c8e2"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a4fcd0ba16d8fcd7ab321f2ae0354c8e2">Game.ArrowBlock.Initialize</a></div><div class="ttdeci">override void Initialize()</div><div class="ttdef"><b>定义</b> <a href="#l00155">ArrowBlock.cs:155</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a6853a44df8a538f9743f023fbda37f5a"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a6853a44df8a538f9743f023fbda37f5a">Game.ArrowBlock.m_tipTextureSlots</a></div><div class="ttdeci">static int[] m_tipTextureSlots</div><div class="ttdef"><b>定义</b> <a href="#l00047">ArrowBlock.cs:47</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a6fd893dd7f955a0e2d558ec0f379bc44"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a6fd893dd7f955a0e2d558ec0f379bc44">Game.ArrowBlock.m_stabilizerNames</a></div><div class="ttdeci">static string[] m_stabilizerNames</div><div class="ttdef"><b>定义</b> <a href="#l00083">ArrowBlock.cs:83</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a78cb2cb67f47171c5776077f9f273370"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a78cb2cb67f47171c5776077f9f273370">Game.ArrowBlock.GetDisplayName</a></div><div class="ttdeci">override string GetDisplayName(SubsystemTerrain subsystemTerrain, int value)</div><div class="ttdef"><b>定义</b> <a href="#l00263">ArrowBlock.cs:263</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a7f11a1b6d4d3feffda98a39173033bc6"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a7f11a1b6d4d3feffda98a39173033bc6">Game.ArrowBlock.m_shaftTextureSlots</a></div><div class="ttdeci">static int[] m_shaftTextureSlots</div><div class="ttdef"><b>定义</b> <a href="#l00071">ArrowBlock.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a85d160fcac8ffc2cef304748c9f31b3e"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a85d160fcac8ffc2cef304748c9f31b3e">Game.ArrowBlock.Index</a></div><div class="ttdeci">static int Index</div><div class="ttdef"><b>定义</b> <a href="#l00019">ArrowBlock.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a8e2172104ef9cb612358c7cf50025916"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a8e2172104ef9cb612358c7cf50025916">Game.ArrowBlock.m_order</a></div><div class="ttdeci">static int[] m_order</div><div class="ttdef"><b>定义</b> <a href="#l00023">ArrowBlock.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a94fdb26d569f692ec214c3d58fe85a33"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a94fdb26d569f692ec214c3d58fe85a33">Game.ArrowBlock.GenerateTerrainVertices</a></div><div class="ttdeci">override void GenerateTerrainVertices(BlockGeometryGenerator generator, TerrainGeometry geometry, int value, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00212">ArrowBlock.cs:212</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a98ad16b52ea4ddf6aafdf4cd5d3544b5"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a98ad16b52ea4ddf6aafdf4cd5d3544b5">Game.ArrowBlock.GetIconViewScale</a></div><div class="ttdeci">override float GetIconViewScale(int value, DrawBlockEnvironmentData environmentData)</div><div class="ttdef"><b>定义</b> <a href="#l00245">ArrowBlock.cs:245</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_a9a1ec72b09e22e11f19e5adeaced867a"><div class="ttname"><a href="class_game_1_1_arrow_block.html#a9a1ec72b09e22e11f19e5adeaced867a">Game.ArrowBlock.GetArrowType</a></div><div class="ttdeci">static ArrowType GetArrowType(int data)</div><div class="ttdef"><b>定义</b> <a href="#l00272">ArrowBlock.cs:272</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_aa098b1fb162f86f3ec286f9f450110e9"><div class="ttname"><a href="class_game_1_1_arrow_block.html#aa098b1fb162f86f3ec286f9f450110e9">Game.ArrowBlock.m_standaloneBlockMeshes</a></div><div class="ttdeci">List&lt; BlockMesh &gt; m_standaloneBlockMeshes</div><div class="ttdef"><b>定义</b> <a href="#l00021">ArrowBlock.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_ac1925a78a819834a3cf2df8f564c3c14"><div class="ttname"><a href="class_game_1_1_arrow_block.html#ac1925a78a819834a3cf2df8f564c3c14">Game.ArrowBlock.m_offsets</a></div><div class="ttdeci">static float[] m_offsets</div><div class="ttdef"><b>定义</b> <a href="#l00107">ArrowBlock.cs:107</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_ae8c7e062c081fca31d18fb4d37655bab"><div class="ttname"><a href="class_game_1_1_arrow_block.html#ae8c7e062c081fca31d18fb4d37655bab">Game.ArrowBlock.m_tipNames</a></div><div class="ttdeci">static string[] m_tipNames</div><div class="ttdef"><b>定义</b> <a href="#l00035">ArrowBlock.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_af1e94e367339e74612d02402534097c4"><div class="ttname"><a href="class_game_1_1_arrow_block.html#af1e94e367339e74612d02402534097c4">Game.ArrowBlock.GetProjectilePower</a></div><div class="ttdeci">override float GetProjectilePower(int value)</div><div class="ttdef"><b>定义</b> <a href="#l00227">ArrowBlock.cs:227</a></div></div>
+<div class="ttc" id="aclass_game_1_1_arrow_block_html_afbf77b16e69663ec027f482373b2299f"><div class="ttname"><a href="class_game_1_1_arrow_block.html#afbf77b16e69663ec027f482373b2299f">Game.ArrowBlock.m_weaponPowers</a></div><div class="ttdeci">static float[] m_weaponPowers</div><div class="ttdef"><b>定义</b> <a href="#l00119">ArrowBlock.cs:119</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_geometry_generator_html"><div class="ttname"><a href="class_game_1_1_block_geometry_generator.html">Game.BlockGeometryGenerator</a></div><div class="ttdef"><b>定义</b> <a href="_block_geometry_generator_8cs_source.html#l00004">BlockGeometryGenerator.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html"><div class="ttname"><a href="class_game_1_1_block.html">Game.Block</a></div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00005">Block.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a0b1a87d92dc3fdfccdcff1609740702d"><div class="ttname"><a href="class_game_1_1_block.html#a0b1a87d92dc3fdfccdcff1609740702d">Game.Block.BlockIndex</a></div><div class="ttdeci">int BlockIndex</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00006">Block.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_mesh_html"><div class="ttname"><a href="class_game_1_1_block_mesh.html">Game.BlockMesh</a></div><div class="ttdef"><b>定义</b> <a href="_block_mesh_8cs_source.html#l00007">BlockMesh.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_mesh_html_a11b62ee676c7db964af62603c4b21a43"><div class="ttname"><a href="class_game_1_1_block_mesh.html#a11b62ee676c7db964af62603c4b21a43">Game.BlockMesh.TransformTextureCoordinates</a></div><div class="ttdeci">virtual void TransformTextureCoordinates(Matrix matrix, int facesMask=-1)</div><div class="ttdef"><b>定义</b> <a href="_block_mesh_8cs_source.html#l00388">BlockMesh.cs:388</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_mesh_html_ab5ddbb129e1704afb06a29b7d1f9a996"><div class="ttname"><a href="class_game_1_1_block_mesh.html#ab5ddbb129e1704afb06a29b7d1f9a996">Game.BlockMesh.GetBoneAbsoluteTransform</a></div><div class="ttdeci">static Matrix GetBoneAbsoluteTransform(ModelBone modelBone)</div><div class="ttdef"><b>定义</b> <a href="_block_mesh_8cs_source.html#l00037">BlockMesh.cs:37</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_mesh_html_ac78f32945a1de3938132107624937993"><div class="ttname"><a href="class_game_1_1_block_mesh.html#ac78f32945a1de3938132107624937993">Game.BlockMesh.AppendBlockMesh</a></div><div class="ttdeci">virtual void AppendBlockMesh(BlockMesh blockMesh)</div><div class="ttdef"><b>定义</b> <a href="_block_mesh_8cs_source.html#l00346">BlockMesh.cs:346</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_mesh_html_afef4015b1e16efec43badc0336482f4a"><div class="ttname"><a href="class_game_1_1_block_mesh.html#afef4015b1e16efec43badc0336482f4a">Game.BlockMesh.AppendModelMeshPart</a></div><div class="ttdeci">virtual void AppendModelMeshPart(ModelMeshPart meshPart, Matrix matrix, bool makeEmissive, bool flipWindingOrder, bool doubleSided, bool flipNormals, Color color)</div><div class="ttdef"><b>定义</b> <a href="_block_mesh_8cs_source.html#l00257">BlockMesh.cs:257</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_a4e142f30618593a14003fab65d090f2d"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#a4e142f30618593a14003fab65d090f2d">Game.BlocksManager.DrawMeshBlock</a></div><div class="ttdeci">static void DrawMeshBlock(PrimitivesRenderer3D primitivesRenderer, BlockMesh blockMesh, float size, ref Matrix matrix, DrawBlockEnvironmentData environmentData)</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00829">BlocksManager.cs:829</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_draw_block_environment_data_html"><div class="ttname"><a href="class_game_1_1_draw_block_environment_data.html">Game.DrawBlockEnvironmentData</a></div><div class="ttdef"><b>定义</b> <a href="_draw_block_environment_data_8cs_source.html#l00005">DrawBlockEnvironmentData.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_enum_utils_html"><div class="ttname"><a href="class_game_1_1_enum_utils.html">Game.EnumUtils</a></div><div class="ttdef"><b>定义</b> <a href="_enum_utils_8cs_source.html#l00004">EnumUtils.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_enum_utils_html_aec6c44bc5d080c25fb8ae8bab720a859"><div class="ttname"><a href="class_game_1_1_enum_utils.html#aec6c44bc5d080c25fb8ae8bab720a859">Game.EnumUtils.GetEnumValues</a></div><div class="ttdeci">static IList&lt; int &gt; GetEnumValues(Type type)</div><div class="ttdef"><b>定义</b> <a href="_enum_utils_8cs_source.html#l00060">EnumUtils.cs:60</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html">Game.SubsystemTerrain</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00006">SubsystemTerrain.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_geometry_html"><div class="ttname"><a href="class_game_1_1_terrain_geometry.html">Game.TerrainGeometry</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_geometry_8cs_source.html#l00005">TerrainGeometry.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aea9a8c0114bc872225f02ebc8b7b8b9f"><div class="ttname"><a href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">Game.Terrain.MakeBlockValue</a></div><div class="ttdeci">static int MakeBlockValue(int contents)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00298">Terrain.cs:298</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aec56ea916e034b2e4db00d1814fdadba"><div class="ttname"><a href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">Game.Terrain.ExtractData</a></div><div class="ttdeci">static int ExtractData(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00307">Terrain.cs:307</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_a4e57f347f3c15133444b3f62f18a8221"><div class="ttname"><a href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">Engine.Color.White</a></div><div class="ttdeci">static Color White</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00015">Color.cs:15</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html_a32fc30c91bdca2111fbc41b625a624cf"><div class="ttname"><a href="struct_engine_1_1_matrix.html#a32fc30c91bdca2111fbc41b625a624cf">Engine.Matrix.CreateTranslation</a></div><div class="ttdeci">static Matrix CreateTranslation(float x, float y, float z)</div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00580">Matrix.cs:580</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_407fceb6d650316801e32c7b7f8f0e13.html">Block</a></li><li class="navelem"><a href="_arrow_block_8cs.html">ArrowBlock.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

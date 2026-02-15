@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Game/MemoryBankData.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_memory_bank_data_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MemoryBankData.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_memory_bank_data_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Text;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_memory_bank_data.html">MemoryBankData</a> : <a class="code hl_interface" href="interface_game_1_1_i_editable_item_data.html">IEditableItemData</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html#a716c599db5b5aa38647908f4f15e8328">    6</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> List&lt;char&gt; <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a716c599db5b5aa38647908f4f15e8328">m_hexChars</a> = [</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>            <span class="charliteral">&#39;0&#39;</span>,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            <span class="charliteral">&#39;1&#39;</span>,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            <span class="charliteral">&#39;2&#39;</span>,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            <span class="charliteral">&#39;3&#39;</span>,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="charliteral">&#39;4&#39;</span>,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="charliteral">&#39;5&#39;</span>,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="charliteral">&#39;6&#39;</span>,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <span class="charliteral">&#39;7&#39;</span>,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="charliteral">&#39;8&#39;</span>,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="charliteral">&#39;9&#39;</span>,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="charliteral">&#39;A&#39;</span>,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="charliteral">&#39;B&#39;</span>,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="charliteral">&#39;C&#39;</span>,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="charliteral">&#39;D&#39;</span>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="charliteral">&#39;E&#39;</span>,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="charliteral">&#39;F&#39;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        ];</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">   25</a></span>        <span class="keyword">public</span> DynamicArray&lt;byte&gt; <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a> = [];</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html#aeedebb25c8b66511db4fc76edd4c4e43">   27</a></span>        <span class="keyword">public</span> <span class="keywordtype">byte</span> <a class="code hl_property" href="class_game_1_1_memory_bank_data.html#aeedebb25c8b66511db4fc76edd4c4e43">LastOutput</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html#a10faba10bbcbb70c1b3b902ce4119864">   29</a></span>        <span class="keyword">public</span> <span class="keywordtype">byte</span> <a class="code hl_function" href="class_game_1_1_memory_bank_data.html#a10faba10bbcbb70c1b3b902ce4119864">Read</a>(<span class="keywordtype">int</span> address) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (address &gt;= 0</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                &amp;&amp; address &lt; <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Count) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Array[address];</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html#a157a6423bb6ca763ccee54dc2b4f17f2">   37</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_memory_bank_data.html#a157a6423bb6ca763ccee54dc2b4f17f2">Write</a>(<span class="keywordtype">int</span> address, <span class="keywordtype">byte</span> data) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">if</span> (address &gt;= 0</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                &amp;&amp; address &lt; <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Count) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Array[address] = data;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (address &gt;= 0</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                &amp;&amp; address &lt; 256</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                &amp;&amp; data != 0) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                Data.Count = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(<a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Count, address + 1);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Array[address] = data;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html#a2028e729f4a3ed374c4556f3889bb8b0">   50</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_game_1_1_i_editable_item_data.html">IEditableItemData</a> <a class="code hl_function" href="class_game_1_1_memory_bank_data.html#a2028e729f4a3ed374c4556f3889bb8b0">Copy</a>() =&gt; <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_memory_bank_data.html">MemoryBankData</a> { <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a> = <span class="keyword">new</span> DynamicArray&lt;byte&gt;(<a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>), <a class="code hl_property" href="class_game_1_1_memory_bank_data.html#aeedebb25c8b66511db4fc76edd4c4e43">LastOutput</a> = <a class="code hl_property" href="class_game_1_1_memory_bank_data.html#aeedebb25c8b66511db4fc76edd4c4e43">LastOutput</a> };</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html#afcc157fdb7b34551aceab939fcded14a">   52</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_memory_bank_data.html#afcc157fdb7b34551aceab939fcded14a">LoadString</a>(<span class="keywordtype">string</span> data) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordtype">string</span>[] array = data.Split([<span class="charliteral">&#39;;&#39;</span>], StringSplitOptions.RemoveEmptyEntries);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">if</span> (array.Length &gt;= 1) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <span class="keywordtype">string</span> text = array[0];</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                text = text.TrimEnd(<span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Clear();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(text.Length, 256); i++) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    <span class="keywordtype">int</span> num = <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a716c599db5b5aa38647908f4f15e8328">m_hexChars</a>.IndexOf(<span class="keywordtype">char</span>.ToUpperInvariant(text[i]));</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    <span class="keywordflow">if</span> (num &lt; 0) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                        num = 0;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Add((<span class="keywordtype">byte</span>)num);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">if</span> (array.Length &gt;= 2) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordtype">string</span> text2 = array[1];</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="keywordtype">int</span> num2 = <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a716c599db5b5aa38647908f4f15e8328">m_hexChars</a>.IndexOf(<span class="keywordtype">char</span>.ToUpperInvariant(text2[0]));</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">if</span> (num2 &lt; 0) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    num2 = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <a class="code hl_property" href="class_game_1_1_memory_bank_data.html#aeedebb25c8b66511db4fc76edd4c4e43">LastOutput</a> = (byte)num2;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html#ac836dfac264efb9d4822fd05cee91375">   76</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_memory_bank_data.html#ac836dfac264efb9d4822fd05cee91375">SaveString</a>() =&gt; <a class="code hl_function" href="class_game_1_1_memory_bank_data.html#ac836dfac264efb9d4822fd05cee91375">SaveString</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_game_1_1_memory_bank_data.html#a21d19c1943e251be136ccdad0239f929">   78</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_memory_bank_data.html#a21d19c1943e251be136ccdad0239f929">SaveString</a>(<span class="keywordtype">bool</span> saveLastOutput) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            StringBuilder stringBuilder = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordtype">int</span> num = 0;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Count; i++) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Array[i] != 0) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    num = i + 1;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; num; j++) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                <span class="keywordtype">int</span> index = Math.Clamp((<span class="keywordtype">int</span>)<a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Data</a>.Array[j], 0, 15);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                stringBuilder.Append(<a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a716c599db5b5aa38647908f4f15e8328">m_hexChars</a>[index]);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">if</span> (saveLastOutput) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                stringBuilder.Append(<span class="charliteral">&#39;;&#39;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                stringBuilder.Append(<a class="code hl_variable" href="class_game_1_1_memory_bank_data.html#a716c599db5b5aa38647908f4f15e8328">m_hexChars</a>[Math.Clamp((<span class="keywordtype">int</span>)<a class="code hl_property" href="class_game_1_1_memory_bank_data.html#aeedebb25c8b66511db4fc76edd4c4e43">LastOutput</a>, 0, 15)]);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">return</span> stringBuilder.ToString();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a5f2b24627ca7cc5256edc10831fe295b"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Engine.MathUtils.Min</a></div><div class="ttdeci">static int Min(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00007">MathUtils.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html">Game.MemoryBankData</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">MemoryBankData.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html_a10faba10bbcbb70c1b3b902ce4119864"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html#a10faba10bbcbb70c1b3b902ce4119864">Game.MemoryBankData.Read</a></div><div class="ttdeci">byte Read(int address)</div><div class="ttdef"><b>定义</b> <a href="#l00029">MemoryBankData.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html_a157a6423bb6ca763ccee54dc2b4f17f2"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html#a157a6423bb6ca763ccee54dc2b4f17f2">Game.MemoryBankData.Write</a></div><div class="ttdeci">void Write(int address, byte data)</div><div class="ttdef"><b>定义</b> <a href="#l00037">MemoryBankData.cs:37</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html_a2028e729f4a3ed374c4556f3889bb8b0"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html#a2028e729f4a3ed374c4556f3889bb8b0">Game.MemoryBankData.Copy</a></div><div class="ttdeci">IEditableItemData Copy()</div><div class="ttdef"><b>定义</b> <a href="#l00050">MemoryBankData.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html_a21d19c1943e251be136ccdad0239f929"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html#a21d19c1943e251be136ccdad0239f929">Game.MemoryBankData.SaveString</a></div><div class="ttdeci">string SaveString(bool saveLastOutput)</div><div class="ttdef"><b>定义</b> <a href="#l00078">MemoryBankData.cs:78</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html_a45f2840e290dc48933332667cb4baf0b"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html#a45f2840e290dc48933332667cb4baf0b">Game.MemoryBankData.Data</a></div><div class="ttdeci">DynamicArray&lt; byte &gt; Data</div><div class="ttdef"><b>定义</b> <a href="#l00025">MemoryBankData.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html_a716c599db5b5aa38647908f4f15e8328"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html#a716c599db5b5aa38647908f4f15e8328">Game.MemoryBankData.m_hexChars</a></div><div class="ttdeci">static List&lt; char &gt; m_hexChars</div><div class="ttdef"><b>定义</b> <a href="#l00006">MemoryBankData.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html_ac836dfac264efb9d4822fd05cee91375"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html#ac836dfac264efb9d4822fd05cee91375">Game.MemoryBankData.SaveString</a></div><div class="ttdeci">string SaveString()</div><div class="ttdef"><b>定义</b> <a href="#l00076">MemoryBankData.cs:76</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html_aeedebb25c8b66511db4fc76edd4c4e43"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html#aeedebb25c8b66511db4fc76edd4c4e43">Game.MemoryBankData.LastOutput</a></div><div class="ttdeci">byte LastOutput</div><div class="ttdef"><b>定义</b> <a href="#l00027">MemoryBankData.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_memory_bank_data_html_afcc157fdb7b34551aceab939fcded14a"><div class="ttname"><a href="class_game_1_1_memory_bank_data.html#afcc157fdb7b34551aceab939fcded14a">Game.MemoryBankData.LoadString</a></div><div class="ttdeci">void LoadString(string data)</div><div class="ttdef"><b>定义</b> <a href="#l00052">MemoryBankData.cs:52</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_editable_item_data_html"><div class="ttname"><a href="interface_game_1_1_i_editable_item_data.html">Game.IEditableItemData</a></div><div class="ttdef"><b>定义</b> <a href="_i_editable_item_data_8cs_source.html#l00002">IEditableItemData.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_afb822b09482a1c506ad46299f82cac5.html">Game</a></li><li class="navelem"><a href="_memory_bank_data_8cs.html">MemoryBankData.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Component/ComponentSpawn.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_component_spawn_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ComponentSpawn.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_spawn_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_component_spawn.html">ComponentSpawn</a> : <a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#ae5b5d4a1e9f9dad8c9a6e5ac29c73252">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a> <a class="code hl_variable" href="class_game_1_1_component_spawn.html#ae5b5d4a1e9f9dad8c9a6e5ac29c73252">m_subsystemGameInfo</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a7ac74205c5e4e1a3005c72d996ca5e63">    8</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_component_spawn.html#a7ac74205c5e4e1a3005c72d996ca5e63">ComponentFrame</a> <a class="code hl_property" href="class_game_1_1_component_spawn.html#a7ac74205c5e4e1a3005c72d996ca5e63">ComponentFrame</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a14f1f342a31a8a1a4ced07f99e7dcae6">   10</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_component_spawn.html#a14f1f342a31a8a1a4ced07f99e7dcae6">ComponentCreature</a> <a class="code hl_property" href="class_game_1_1_component_spawn.html#a14f1f342a31a8a1a4ced07f99e7dcae6">ComponentCreature</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#ac3141bb232d99089554dc5d1fa32811f">   12</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_component_spawn.html#ac3141bb232d99089554dc5d1fa32811f">AutoDespawn</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a96ea2346dd30389414ef4c5602a2cdd3">   14</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_component_spawn.html#a96ea2346dd30389414ef4c5602a2cdd3">IsDespawning</a> =&gt; <a class="code hl_property" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">DespawnTime</a>.HasValue;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a3723c0c7c6f5793c137dd1be32c1ded9">   16</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_property" href="class_game_1_1_component_spawn.html#a3723c0c7c6f5793c137dd1be32c1ded9">SpawnTime</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">   18</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span>? <a class="code hl_property" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">DespawnTime</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a37b240ef53c9e39b027ddc8dc36ba881">   20</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_spawn.html#a37b240ef53c9e39b027ddc8dc36ba881">SpawnDuration</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#aa383686121c4fa3b6bb857b8e527d4ae">   22</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_spawn.html#aa383686121c4fa3b6bb857b8e527d4ae">DespawnDuration</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a1057ef8fdf6b4b855dbaa39a86288754">   24</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_component_spawn.html#a1057ef8fdf6b4b855dbaa39a86288754">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_component_spawn.html#a1057ef8fdf6b4b855dbaa39a86288754">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_component_spawn.html#a1057ef8fdf6b4b855dbaa39a86288754">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a50a4e5bb8423002cbf839796f421cf47">   26</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> Action&lt;ComponentSpawn&gt; <a class="code hl_property" href="class_game_1_1_component_spawn.html#a50a4e5bb8423002cbf839796f421cf47">Despawned</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a6b041a8608998b2c9cf8d51b79718246">   28</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_spawn.html#a6b041a8608998b2c9cf8d51b79718246">Despawn</a>() {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">DespawnTime</a>.HasValue) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <a class="code hl_property" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">DespawnTime</a> = <a class="code hl_variable" href="class_game_1_1_component_spawn.html#ae5b5d4a1e9f9dad8c9a6e5ac29c73252">m_subsystemGameInfo</a>.TotalElapsedGameTime;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a94f6799188781d1b81d2d7a516e37dfa">   34</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_spawn.html#a94f6799188781d1b81d2d7a516e37dfa">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_variable" href="class_game_1_1_component_spawn.html#ae5b5d4a1e9f9dad8c9a6e5ac29c73252">m_subsystemGameInfo</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_property" href="class_game_1_1_component_spawn.html#a7ac74205c5e4e1a3005c72d996ca5e63">ComponentFrame</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_property" href="class_game_1_1_component_spawn.html#a7ac74205c5e4e1a3005c72d996ca5e63">ComponentFrame</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_property" href="class_game_1_1_component_spawn.html#a14f1f342a31a8a1a4ced07f99e7dcae6">ComponentCreature</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_property" href="class_game_1_1_component_spawn.html#a14f1f342a31a8a1a4ced07f99e7dcae6">ComponentCreature</a>&gt;();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_property" href="class_game_1_1_component_spawn.html#ac3141bb232d99089554dc5d1fa32811f">AutoDespawn</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;AutoDespawn&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordtype">double</span> value = valuesDictionary.GetValue&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;SpawnTime&quot;</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordtype">double</span> value2 = valuesDictionary.GetValue&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;DespawnTime&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_property" href="class_game_1_1_component_spawn.html#a37b240ef53c9e39b027ddc8dc36ba881">SpawnDuration</a> = 2f;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <a class="code hl_property" href="class_game_1_1_component_spawn.html#aa383686121c4fa3b6bb857b8e527d4ae">DespawnDuration</a> = 2f;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_property" href="class_game_1_1_component_spawn.html#a3723c0c7c6f5793c137dd1be32c1ded9">SpawnTime</a> = value &lt; 0.0 ? m_subsystemGameInfo.TotalElapsedGameTime : value;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_property" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">DespawnTime</a> = value2 &gt;= 0.0 ? <span class="keyword">new</span> <span class="keywordtype">double</span>?(value2) : <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a670963384d8b400857d4eea515c0eec8">   47</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_spawn.html#a670963384d8b400857d4eea515c0eec8">Save</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_entity_to_id_map.html">EntityToIdMap</a> entityToIdMap) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            valuesDictionary.SetValue(<span class="stringliteral">&quot;SpawnTime&quot;</span>, <a class="code hl_property" href="class_game_1_1_component_spawn.html#a3723c0c7c6f5793c137dd1be32c1ded9">SpawnTime</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">DespawnTime</a>.HasValue) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                valuesDictionary.SetValue(<span class="stringliteral">&quot;DespawnTime&quot;</span>, <a class="code hl_property" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">DespawnTime</a>.Value);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_game_1_1_component_spawn.html#a78e158f56ef5edbbb8660e3bddefe189">   54</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_spawn.html#a78e158f56ef5edbbb8660e3bddefe189">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">DespawnTime</a>.HasValue</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                &amp;&amp; <a class="code hl_variable" href="class_game_1_1_component_spawn.html#ae5b5d4a1e9f9dad8c9a6e5ac29c73252">m_subsystemGameInfo</a>.TotalElapsedGameTime &gt;= <a class="code hl_property" href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">DespawnTime</a>.Value + <a class="code hl_property" href="class_game_1_1_component_spawn.html#aa383686121c4fa3b6bb857b8e527d4ae">DespawnDuration</a>) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.RemoveEntity(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <a class="code hl_property" href="class_game_1_1_component_spawn.html#a50a4e5bb8423002cbf839796f421cf47">Despawned</a>?.Invoke(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html"><div class="ttname"><a href="class_game_1_1_component_spawn.html">Game.ComponentSpawn</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">ComponentSpawn.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a1057ef8fdf6b4b855dbaa39a86288754"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a1057ef8fdf6b4b855dbaa39a86288754">Game.ComponentSpawn.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00024">ComponentSpawn.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a10a22d50f469aa8d6a26936174471a46"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a10a22d50f469aa8d6a26936174471a46">Game.ComponentSpawn.DespawnTime</a></div><div class="ttdeci">double? DespawnTime</div><div class="ttdef"><b>定义</b> <a href="#l00018">ComponentSpawn.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a14f1f342a31a8a1a4ced07f99e7dcae6"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a14f1f342a31a8a1a4ced07f99e7dcae6">Game.ComponentSpawn.ComponentCreature</a></div><div class="ttdeci">ComponentCreature ComponentCreature</div><div class="ttdef"><b>定义</b> <a href="#l00010">ComponentSpawn.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a3723c0c7c6f5793c137dd1be32c1ded9"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a3723c0c7c6f5793c137dd1be32c1ded9">Game.ComponentSpawn.SpawnTime</a></div><div class="ttdeci">double SpawnTime</div><div class="ttdef"><b>定义</b> <a href="#l00016">ComponentSpawn.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a37b240ef53c9e39b027ddc8dc36ba881"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a37b240ef53c9e39b027ddc8dc36ba881">Game.ComponentSpawn.SpawnDuration</a></div><div class="ttdeci">float SpawnDuration</div><div class="ttdef"><b>定义</b> <a href="#l00020">ComponentSpawn.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a50a4e5bb8423002cbf839796f421cf47"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a50a4e5bb8423002cbf839796f421cf47">Game.ComponentSpawn.Despawned</a></div><div class="ttdeci">virtual Action&lt; ComponentSpawn &gt; Despawned</div><div class="ttdef"><b>定义</b> <a href="#l00026">ComponentSpawn.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a670963384d8b400857d4eea515c0eec8"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a670963384d8b400857d4eea515c0eec8">Game.ComponentSpawn.Save</a></div><div class="ttdeci">override void Save(ValuesDictionary valuesDictionary, EntityToIdMap entityToIdMap)</div><div class="ttdef"><b>定义</b> <a href="#l00047">ComponentSpawn.cs:47</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a6b041a8608998b2c9cf8d51b79718246"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a6b041a8608998b2c9cf8d51b79718246">Game.ComponentSpawn.Despawn</a></div><div class="ttdeci">virtual void Despawn()</div><div class="ttdef"><b>定义</b> <a href="#l00028">ComponentSpawn.cs:28</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a78e158f56ef5edbbb8660e3bddefe189"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a78e158f56ef5edbbb8660e3bddefe189">Game.ComponentSpawn.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00054">ComponentSpawn.cs:54</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a7ac74205c5e4e1a3005c72d996ca5e63"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a7ac74205c5e4e1a3005c72d996ca5e63">Game.ComponentSpawn.ComponentFrame</a></div><div class="ttdeci">ComponentFrame ComponentFrame</div><div class="ttdef"><b>定义</b> <a href="#l00008">ComponentSpawn.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a94f6799188781d1b81d2d7a516e37dfa"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a94f6799188781d1b81d2d7a516e37dfa">Game.ComponentSpawn.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary, IdToEntityMap idToEntityMap)</div><div class="ttdef"><b>定义</b> <a href="#l00034">ComponentSpawn.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_a96ea2346dd30389414ef4c5602a2cdd3"><div class="ttname"><a href="class_game_1_1_component_spawn.html#a96ea2346dd30389414ef4c5602a2cdd3">Game.ComponentSpawn.IsDespawning</a></div><div class="ttdeci">bool IsDespawning</div><div class="ttdef"><b>定义</b> <a href="#l00014">ComponentSpawn.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_aa383686121c4fa3b6bb857b8e527d4ae"><div class="ttname"><a href="class_game_1_1_component_spawn.html#aa383686121c4fa3b6bb857b8e527d4ae">Game.ComponentSpawn.DespawnDuration</a></div><div class="ttdeci">float DespawnDuration</div><div class="ttdef"><b>定义</b> <a href="#l00022">ComponentSpawn.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_ac3141bb232d99089554dc5d1fa32811f"><div class="ttname"><a href="class_game_1_1_component_spawn.html#ac3141bb232d99089554dc5d1fa32811f">Game.ComponentSpawn.AutoDespawn</a></div><div class="ttdeci">bool AutoDespawn</div><div class="ttdef"><b>定义</b> <a href="#l00012">ComponentSpawn.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html_ae5b5d4a1e9f9dad8c9a6e5ac29c73252"><div class="ttname"><a href="class_game_1_1_component_spawn.html#ae5b5d4a1e9f9dad8c9a6e5ac29c73252">Game.ComponentSpawn.m_subsystemGameInfo</a></div><div class="ttdeci">SubsystemGameInfo m_subsystemGameInfo</div><div class="ttdef"><b>定义</b> <a href="#l00006">ComponentSpawn.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html">Game.SubsystemGameInfo</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00005">SubsystemGameInfo.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html"><div class="ttname"><a href="class_game_entity_system_1_1_component.html">GameEntitySystem.Component</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00007">Component.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a4b812f6825600e5419612a580d3094ff"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">GameEntitySystem.Component.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00012">Component.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a771baadae7a12358301d000d2e127421"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">GameEntitySystem.Component.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00016">Component.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_to_id_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity_to_id_map.html">GameEntitySystem.EntityToIdMap</a></div><div class="ttdef"><b>定义</b> <a href="_entity_to_id_map_8cs_source.html#l00005">EntityToIdMap.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html">GameEntitySystem.IdToEntityMap</a></div><div class="ttdef"><b>定义</b> <a href="_id_to_entity_map_8cs_source.html#l00005">IdToEntityMap.cs:5</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_0ae50620953341a2d59f4b8faa145d4c.html">Component</a></li><li class="navelem"><a href="_component_spawn_8cs.html">ComponentSpawn.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

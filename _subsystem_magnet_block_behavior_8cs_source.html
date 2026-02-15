@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemMagnetBlockBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_magnet_block_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemMagnetBlockBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_magnet_block_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_serialization.html">Engine.Serialization</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_magnet_block_behavior.html">SubsystemMagnetBlockBehavior</a> : <a class="code hl_class" href="class_game_1_1_subsystem_block_behavior.html">SubsystemBlockBehavior</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae3fb4c641e314ed56d58c3d57896d7c8">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_players.html">SubsystemPlayers</a> <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae3fb4c641e314ed56d58c3d57896d7c8">m_subsystemPlayers</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">    9</a></span>        <span class="keyword">public</span> DynamicArray&lt;Vector3&gt; <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">m_magnets</a> = [];</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#ad8163b73caae37eea1726d70f23bd784">   11</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#ad8163b73caae37eea1726d70f23bd784">MaxMagnets</a> = 8;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#af7102ea93530f20adbb029cb8e528c8b">   13</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span>[] <a class="code hl_property" href="class_game_1_1_subsystem_magnet_block_behavior.html#af7102ea93530f20adbb029cb8e528c8b">HandledBlocks</a> =&gt; [167];</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae6b2374e449eea14822bc378e683e6aa">   15</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae6b2374e449eea14822bc378e683e6aa">MagnetsCount</a> =&gt; <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">m_magnets</a>.Count;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae6447651137ac068e4d6deffd2af4c8d">   17</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> <a class="code hl_function" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae6447651137ac068e4d6deffd2af4c8d">FindNearestCompassTarget</a>(<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> compassPosition) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">m_magnets</a>.Count &gt; 0) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <span class="keywordtype">float</span> num = <span class="keywordtype">float</span>.MaxValue;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> v = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a98a94a043a55585c57a3d02e35875092">Zero</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m_magnets.Count &amp;&amp; i &lt; 8; i++) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> vector = <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">m_magnets</a>.Array[i];</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    <span class="keywordtype">float</span> num2 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#a0c70229365ece541448397c98a2b7c05">DistanceSquared</a>(compassPosition, vector);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    <span class="keywordflow">if</span> (num2 &lt; num) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                        num = num2;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                        v = vector;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keywordflow">return</span> v + <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(0.5f);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordtype">float</span> num3 = <span class="keywordtype">float</span>.MaxValue;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> v2 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#a98a94a043a55585c57a3d02e35875092">Zero</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_player_data.html">PlayerData</a> playersDatum <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae3fb4c641e314ed56d58c3d57896d7c8">m_subsystemPlayers</a>.PlayersData) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> spawnPosition = playersDatum.<a class="code hl_property" href="class_game_1_1_player_data.html#a5eae45c8d0dbad330a2ff025708187d5">SpawnPosition</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keywordtype">float</span> num4 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#a0c70229365ece541448397c98a2b7c05">DistanceSquared</a>(compassPosition, spawnPosition);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keywordflow">if</span> (num4 &lt; num3) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    num3 = num4;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    v2 = spawnPosition;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">return</span> v2 + <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(0.5f);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#a3faeda72488b14dc840a1960e9d2d8e3">   44</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_magnet_block_behavior.html#a3faeda72488b14dc840a1960e9d2d8e3">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            base.Load(valuesDictionary);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae3fb4c641e314ed56d58c3d57896d7c8">m_subsystemPlayers</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_players.html">SubsystemPlayers</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordtype">string</span> value = valuesDictionary.GetValue&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;Magnets&quot;</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">m_magnets</a> = <span class="keyword">new</span> DynamicArray&lt;Vector3&gt;((IEnumerable&lt;Vector3&gt;)<a class="code hl_class" href="class_engine_1_1_serialization_1_1_human_readable_converter.html">HumanReadableConverter</a>.ValuesListFromString&lt;<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>&gt;(<span class="charliteral">&#39;;&#39;</span>, value));</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#aa55f5067e3beafc7944f2a17c500d002">   51</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_magnet_block_behavior.html#aa55f5067e3beafc7944f2a17c500d002">Save</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            base.Save(valuesDictionary);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordtype">string</span> value = <a class="code hl_class" href="class_engine_1_1_serialization_1_1_human_readable_converter.html">HumanReadableConverter</a>.ValuesListToString(<span class="charliteral">&#39;;&#39;</span>, <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">m_magnets</a>.ToArray());</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            valuesDictionary.SetValue(<span class="stringliteral">&quot;Magnets&quot;</span>, value);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#a1a1bf6ccd76db07dc2a016fd3f872234">   57</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_magnet_block_behavior.html#a1a1bf6ccd76db07dc2a016fd3f872234">OnBlockAdded</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> oldValue, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">m_magnets</a>.Add(<span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(x, y, z));</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae0bf67d08a9ce852198a6d895b481ebb">   61</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae0bf67d08a9ce852198a6d895b481ebb">OnBlockRemoved</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> newValue, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">m_magnets</a>.Remove(<span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(x, y, z));</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_magnet_block_behavior.html#a8097127b07b5daf11389e39914f722c5">   65</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_magnet_block_behavior.html#a8097127b07b5daf11389e39914f722c5">OnNeighborBlockChanged</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z, <span class="keywordtype">int</span> neighborX, <span class="keywordtype">int</span> neighborY, <span class="keywordtype">int</span> neighborZ) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordtype">int</span> cellValue = <a class="code hl_property" href="class_game_1_1_subsystem_block_behavior.html#aa5d990a2c3e869337c27e92fff363bf8">SubsystemTerrain</a>.Terrain.GetCellValue(x, y - 1, z);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_property" href="class_game_1_1_blocks_manager.html#afa0414b230000fb6f807cf24d2de4334">Blocks</a>[<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">ExtractContents</a>(cellValue)].<a class="code hl_function" href="class_game_1_1_block.html#a20b2132868c180481aa64b31ad69a0b9">IsNonAttachable</a>(cellValue)) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <a class="code hl_property" href="class_game_1_1_subsystem_block_behavior.html#aa5d990a2c3e869337c27e92fff363bf8">SubsystemTerrain</a>.DestroyCell(</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    0,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    x,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    y,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    z,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    0,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    <span class="keyword">false</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                );</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="ttc" id="a_subsystem_audio_8cs_html_aa72bd5818d1fb1c95123ce286b96e775"><div class="ttname"><a href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a></div><div class="ttdeci">Engine.Vector3 Vector3</div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00005">SubsystemAudio.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_human_readable_converter_html"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_human_readable_converter.html">Engine.Serialization.HumanReadableConverter</a></div><div class="ttdef"><b>定义</b> <a href="_human_readable_converter_8cs_source.html#l00005">HumanReadableConverter.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a20b2132868c180481aa64b31ad69a0b9"><div class="ttname"><a href="class_game_1_1_block.html#a20b2132868c180481aa64b31ad69a0b9">Game.Block.IsNonAttachable</a></div><div class="ttdeci">virtual bool IsNonAttachable(int value)</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00547">Block.cs:547</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_afa0414b230000fb6f807cf24d2de4334"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#afa0414b230000fb6f807cf24d2de4334">Game.BlocksManager.Blocks</a></div><div class="ttdeci">static Block[] Blocks</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00041">BlocksManager.cs:41</a></div></div>
+<div class="ttc" id="aclass_game_1_1_player_data_html"><div class="ttname"><a href="class_game_1_1_player_data.html">Game.PlayerData</a></div><div class="ttdef"><b>定义</b> <a href="_player_data_8cs_source.html#l00007">PlayerData.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_player_data_html_a5eae45c8d0dbad330a2ff025708187d5"><div class="ttname"><a href="class_game_1_1_player_data.html#a5eae45c8d0dbad330a2ff025708187d5">Game.PlayerData.SpawnPosition</a></div><div class="ttdeci">Vector3 SpawnPosition</div><div class="ttdef"><b>定义</b> <a href="_player_data_8cs_source.html#l00069">PlayerData.cs:69</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html">Game.SubsystemBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00006">SubsystemBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html_aa5d990a2c3e869337c27e92fff363bf8"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html#aa5d990a2c3e869337c27e92fff363bf8">Game.SubsystemBlockBehavior.SubsystemTerrain</a></div><div class="ttdeci">SubsystemTerrain SubsystemTerrain</div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00009">SubsystemBlockBehavior.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html">Game.SubsystemMagnetBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">SubsystemMagnetBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_a1a1bf6ccd76db07dc2a016fd3f872234"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#a1a1bf6ccd76db07dc2a016fd3f872234">Game.SubsystemMagnetBlockBehavior.OnBlockAdded</a></div><div class="ttdeci">override void OnBlockAdded(int value, int oldValue, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00057">SubsystemMagnetBlockBehavior.cs:57</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_a3faeda72488b14dc840a1960e9d2d8e3"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#a3faeda72488b14dc840a1960e9d2d8e3">Game.SubsystemMagnetBlockBehavior.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00044">SubsystemMagnetBlockBehavior.cs:44</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_a8097127b07b5daf11389e39914f722c5"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#a8097127b07b5daf11389e39914f722c5">Game.SubsystemMagnetBlockBehavior.OnNeighborBlockChanged</a></div><div class="ttdeci">override void OnNeighborBlockChanged(int x, int y, int z, int neighborX, int neighborY, int neighborZ)</div><div class="ttdef"><b>定义</b> <a href="#l00065">SubsystemMagnetBlockBehavior.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_a87deaf785a0750952c5ef45282d451ab"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#a87deaf785a0750952c5ef45282d451ab">Game.SubsystemMagnetBlockBehavior.m_magnets</a></div><div class="ttdeci">DynamicArray&lt; Vector3 &gt; m_magnets</div><div class="ttdef"><b>定义</b> <a href="#l00009">SubsystemMagnetBlockBehavior.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_aa55f5067e3beafc7944f2a17c500d002"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#aa55f5067e3beafc7944f2a17c500d002">Game.SubsystemMagnetBlockBehavior.Save</a></div><div class="ttdeci">override void Save(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00051">SubsystemMagnetBlockBehavior.cs:51</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_ad8163b73caae37eea1726d70f23bd784"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#ad8163b73caae37eea1726d70f23bd784">Game.SubsystemMagnetBlockBehavior.MaxMagnets</a></div><div class="ttdeci">const int MaxMagnets</div><div class="ttdef"><b>定义</b> <a href="#l00011">SubsystemMagnetBlockBehavior.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_ae0bf67d08a9ce852198a6d895b481ebb"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#ae0bf67d08a9ce852198a6d895b481ebb">Game.SubsystemMagnetBlockBehavior.OnBlockRemoved</a></div><div class="ttdeci">override void OnBlockRemoved(int value, int newValue, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00061">SubsystemMagnetBlockBehavior.cs:61</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_ae3fb4c641e314ed56d58c3d57896d7c8"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#ae3fb4c641e314ed56d58c3d57896d7c8">Game.SubsystemMagnetBlockBehavior.m_subsystemPlayers</a></div><div class="ttdeci">SubsystemPlayers m_subsystemPlayers</div><div class="ttdef"><b>定义</b> <a href="#l00007">SubsystemMagnetBlockBehavior.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_ae6447651137ac068e4d6deffd2af4c8d"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#ae6447651137ac068e4d6deffd2af4c8d">Game.SubsystemMagnetBlockBehavior.FindNearestCompassTarget</a></div><div class="ttdeci">Vector3 FindNearestCompassTarget(Vector3 compassPosition)</div><div class="ttdef"><b>定义</b> <a href="#l00017">SubsystemMagnetBlockBehavior.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_ae6b2374e449eea14822bc378e683e6aa"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#ae6b2374e449eea14822bc378e683e6aa">Game.SubsystemMagnetBlockBehavior.MagnetsCount</a></div><div class="ttdeci">int MagnetsCount</div><div class="ttdef"><b>定义</b> <a href="#l00015">SubsystemMagnetBlockBehavior.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_magnet_block_behavior_html_af7102ea93530f20adbb029cb8e528c8b"><div class="ttname"><a href="class_game_1_1_subsystem_magnet_block_behavior.html#af7102ea93530f20adbb029cb8e528c8b">Game.SubsystemMagnetBlockBehavior.HandledBlocks</a></div><div class="ttdeci">override int[] HandledBlocks</div><div class="ttdef"><b>定义</b> <a href="#l00013">SubsystemMagnetBlockBehavior.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_players_html"><div class="ttname"><a href="class_game_1_1_subsystem_players.html">Game.SubsystemPlayers</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_players_8cs_source.html#l00007">SubsystemPlayers.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a221de37baa4a0f91e934920030005677"><div class="ttname"><a href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">Game.Terrain.ExtractContents</a></div><div class="ttdeci">static int ExtractContents(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00303">Terrain.cs:303</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_serialization_html"><div class="ttname"><a href="namespace_engine_1_1_serialization.html">Engine.Serialization</a></div><div class="ttdef"><b>定义</b> <a href="_archive_8cs_source.html#l00004">Archive.cs:4</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a0c70229365ece541448397c98a2b7c05"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a0c70229365ece541448397c98a2b7c05">Engine.Vector3.DistanceSquared</a></div><div class="ttdeci">static float DistanceSquared(Vector3 v1, Vector3 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00109">Vector3.cs:109</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a98a94a043a55585c57a3d02e35875092"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a98a94a043a55585c57a3d02e35875092">Engine.Vector3.Zero</a></div><div class="ttdeci">static readonly Vector3 Zero</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00009">Vector3.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_magnet_block_behavior_8cs.html">SubsystemMagnetBlockBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

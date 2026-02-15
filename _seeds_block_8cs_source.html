@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Block/SeedsBlock.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_seeds_block_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SeedsBlock.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_seeds_block_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_seeds_block.html">SeedsBlock</a> : <a class="code hl_class" href="class_game_1_1_flat_block.html">FlatBlock</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">    6</a></span>        <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2aea4b843f4a0cd87c1a4b33745cb4b91b">    7</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2aea4b843f4a0cd87c1a4b33745cb4b91b">TallGrass</a>,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a1cd2d1d99b721b57d39606c48ea8f18c">    8</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a1cd2d1d99b721b57d39606c48ea8f18c">RedFlower</a>,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2ac90e794fd774e0d1e6f11356c334745a">    9</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2ac90e794fd774e0d1e6f11356c334745a">PurpleFlower</a>,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a8df1c603a586c20c44cc20a8c5eec40c">   10</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a8df1c603a586c20c44cc20a8c5eec40c">WhiteFlower</a>,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2aaa81643048a752ca5b79bff39abf4316">   11</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2aaa81643048a752ca5b79bff39abf4316">WildRye</a>,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a4e3b6f9a0ec93941b64efc416638db4c">   12</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a4e3b6f9a0ec93941b64efc416638db4c">Rye</a>,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2adb547a9a5b84991c24ec850ac0749c0b">   13</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2adb547a9a5b84991c24ec850ac0749c0b">Cotton</a>,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a423a2ace9b1e747146305116649368dd">   14</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a423a2ace9b1e747146305116649368dd">Pumpkin</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        }</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#a7d7bdf709e258a16442afaa307dabfc3">   17</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_seeds_block.html#a7d7bdf709e258a16442afaa307dabfc3">Index</a> = 173;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#a3585ee4a208c5ebd676f6df6780d4081">   19</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> IEnumerable&lt;int&gt; <a class="code hl_function" href="class_game_1_1_seeds_block.html#a3585ee4a208c5ebd676f6df6780d4081">GetCreativeValues</a>() {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            List&lt;int&gt; list = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">foreach</span> (<span class="keywordtype">int</span> enumValue <span class="keywordflow">in</span> <a class="code hl_class" href="class_game_1_1_enum_utils.html">EnumUtils</a>.<a class="code hl_function" href="class_game_1_1_enum_utils.html#aec6c44bc5d080c25fb8ae8bab720a859">GetEnumValues</a>&lt;<a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>&gt;()) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                list.Add(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(173, 0, enumValue));</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">return</span> list;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ae404bf6bfae4fcd2ed3035c02daa6bcb">   27</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_seeds_block.html#ae404bf6bfae4fcd2ed3035c02daa6bcb">GetFaceTextureSlot</a>(<span class="keywordtype">int</span> face, <span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordtype">int</span> num = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">if</span> (num == 5</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                || num == 4) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">return</span> 74;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">return</span> 75;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ab5301c12720a29c993b37cc379bec143">   36</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_struct" href="struct_game_1_1_block_placement_data.html">BlockPlacementData</a> <a class="code hl_function" href="class_game_1_1_seeds_block.html#ab5301c12720a29c993b37cc379bec143">GetPlacementValue</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> subsystemTerrain,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_class" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordtype">int</span> value,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_struct" href="struct_game_1_1_terrain_raycast_result.html">TerrainRaycastResult</a> raycastResult) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_struct" href="struct_game_1_1_block_placement_data.html">BlockPlacementData</a> result = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            result.CellFace = raycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#af81a33a7ddfc5e3bf119cbd4262a94ce">CellFace</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">if</span> (raycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#af81a33a7ddfc5e3bf119cbd4262a94ce">CellFace</a>.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#ac8697128c0af897dbd25f5676652faa6">Face</a> == 4) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keywordflow">switch</span> ((<a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>)<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value)) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.TallGrass: result.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(19, 0, <a class="code hl_class" href="class_game_1_1_tall_grass_block.html">TallGrassBlock</a>.<a class="code hl_function" href="class_game_1_1_tall_grass_block.html#a2df4601d2cf430dedd9120c10f6d93ac">SetIsSmall</a>(0, <span class="keyword">true</span>)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.RedFlower: result.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(20, 0, <a class="code hl_class" href="class_game_1_1_flower_block.html">FlowerBlock</a>.<a class="code hl_function" href="class_game_1_1_flower_block.html#a0b306ec490c06db1e0ca22466526a8e0">SetIsSmall</a>(0, <span class="keyword">true</span>)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.PurpleFlower: result.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(24, 0, <a class="code hl_class" href="class_game_1_1_flower_block.html">FlowerBlock</a>.<a class="code hl_function" href="class_game_1_1_flower_block.html#a0b306ec490c06db1e0ca22466526a8e0">SetIsSmall</a>(0, <span class="keyword">true</span>)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.WhiteFlower: result.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(25, 0, <a class="code hl_class" href="class_game_1_1_flower_block.html">FlowerBlock</a>.<a class="code hl_function" href="class_game_1_1_flower_block.html#a0b306ec490c06db1e0ca22466526a8e0">SetIsSmall</a>(0, <span class="keyword">true</span>)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.WildRye: result.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(174, 0, <a class="code hl_class" href="class_game_1_1_rye_block.html">RyeBlock</a>.<a class="code hl_function" href="class_game_1_1_rye_block.html#a599598599d09feb814a686a839cfa826">SetSize</a>(<a class="code hl_class" href="class_game_1_1_rye_block.html">RyeBlock</a>.<a class="code hl_function" href="class_game_1_1_rye_block.html#a458e5b924364baafc665d092b8301817">SetIsWild</a>(0, <span class="keyword">false</span>), 0)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.Rye: result.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(174, 0, <a class="code hl_class" href="class_game_1_1_rye_block.html">RyeBlock</a>.<a class="code hl_function" href="class_game_1_1_rye_block.html#a599598599d09feb814a686a839cfa826">SetSize</a>(<a class="code hl_class" href="class_game_1_1_rye_block.html">RyeBlock</a>.<a class="code hl_function" href="class_game_1_1_rye_block.html#a458e5b924364baafc665d092b8301817">SetIsWild</a>(0, <span class="keyword">false</span>), 0)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.Cotton: result.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(204, 0, <a class="code hl_class" href="class_game_1_1_cotton_block.html">CottonBlock</a>.<a class="code hl_function" href="class_game_1_1_cotton_block.html#ae1394b51e070e74eb9c8cfc6bc869d1a">SetSize</a>(<a class="code hl_class" href="class_game_1_1_cotton_block.html">CottonBlock</a>.<a class="code hl_function" href="class_game_1_1_cotton_block.html#afcca25ee3421e75ed079537ba0b1637a">SetIsWild</a>(0, <span class="keyword">false</span>), 0)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.Pumpkin: result.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(131, 0, <a class="code hl_class" href="class_game_1_1_base_pumpkin_block.html">BasePumpkinBlock</a>.<a class="code hl_function" href="class_game_1_1_base_pumpkin_block.html#ab362e8238abdc314bd0a7da58848f9d7">SetSize</a>(<a class="code hl_class" href="class_game_1_1_base_pumpkin_block.html">BasePumpkinBlock</a>.<a class="code hl_function" href="class_game_1_1_base_pumpkin_block.html#a42569d3c8d368609843cc6d9f1783fc9">SetIsDead</a>(0, <span class="keyword">false</span>), 0)); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_game_1_1_seeds_block.html#ade1c6d02df138478474a69400ba6d5b9">   57</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_seeds_block.html#ade1c6d02df138478474a69400ba6d5b9">DrawBlock</a>(<a class="code hl_class" href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">PrimitivesRenderer3D</a> primitivesRenderer,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordtype">int</span> value,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> color,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordtype">float</span> size,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            ref <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> matrix,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_class" href="class_game_1_1_draw_block_environment_data.html">DrawBlockEnvironmentData</a> environmentData) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">switch</span> ((<a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>)<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value)) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.TallGrass: color *= <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(160, 150, 125); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.RedFlower: color *= <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(192, 160, 160); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.PurpleFlower: color *= <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(192, 160, 192); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.WhiteFlower: color *= <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(192, 192, 192); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.WildRye: color *= <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(60, 138, 76); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.Rye: color *= <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(255, 255, 255); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">SeedType</a>.Pumpkin: color *= <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(240, 225, 190); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#ac09498f0a2957cae8a7054342c2512e5">DrawFlatOrImageExtrusionBlock</a>(</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                primitivesRenderer,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                value,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                size,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                ref matrix,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                color,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                environmentData</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            );</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+<div class="ttc" id="a_community_content_screen_8cs_html_ab9f09ac3214ff6f75ad9e8c823688d4a"><div class="ttname"><a href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a></div><div class="ttdeci">Engine.Color Color</div><div class="ttdef"><b>定义</b> <a href="_community_content_screen_8cs_source.html#l00009">CommunityContentScreen.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_primitives_renderer3_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">Engine.Graphics.PrimitivesRenderer3D</a></div><div class="ttdef"><b>定义</b> <a href="_primitives_renderer3_d_8cs_source.html#l00004">PrimitivesRenderer3D.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_base_pumpkin_block_html"><div class="ttname"><a href="class_game_1_1_base_pumpkin_block.html">Game.BasePumpkinBlock</a></div><div class="ttdef"><b>定义</b> <a href="_base_pumpkin_block_8cs_source.html#l00005">BasePumpkinBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_base_pumpkin_block_html_a42569d3c8d368609843cc6d9f1783fc9"><div class="ttname"><a href="class_game_1_1_base_pumpkin_block.html#a42569d3c8d368609843cc6d9f1783fc9">Game.BasePumpkinBlock.SetIsDead</a></div><div class="ttdeci">static int SetIsDead(int data, bool isDead)</div><div class="ttdef"><b>定义</b> <a href="_base_pumpkin_block_8cs_source.html#l00207">BasePumpkinBlock.cs:207</a></div></div>
+<div class="ttc" id="aclass_game_1_1_base_pumpkin_block_html_ab362e8238abdc314bd0a7da58848f9d7"><div class="ttname"><a href="class_game_1_1_base_pumpkin_block.html#ab362e8238abdc314bd0a7da58848f9d7">Game.BasePumpkinBlock.SetSize</a></div><div class="ttdeci">static int SetSize(int data, int size)</div><div class="ttdef"><b>定义</b> <a href="_base_pumpkin_block_8cs_source.html#l00203">BasePumpkinBlock.cs:203</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_ac09498f0a2957cae8a7054342c2512e5"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#ac09498f0a2957cae8a7054342c2512e5">Game.BlocksManager.DrawFlatOrImageExtrusionBlock</a></div><div class="ttdeci">static void DrawFlatOrImageExtrusionBlock(PrimitivesRenderer3D primitivesRenderer, int value, float size, ref Matrix matrix, Texture2D texture, Color color, bool isEmissive, DrawBlockEnvironmentData environmentData)</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00670">BlocksManager.cs:670</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html"><div class="ttname"><a href="class_game_1_1_component_miner.html">Game.ComponentMiner</a></div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00007">ComponentMiner.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cotton_block_html"><div class="ttname"><a href="class_game_1_1_cotton_block.html">Game.CottonBlock</a></div><div class="ttdef"><b>定义</b> <a href="_cotton_block_8cs_source.html#l00005">CottonBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cotton_block_html_ae1394b51e070e74eb9c8cfc6bc869d1a"><div class="ttname"><a href="class_game_1_1_cotton_block.html#ae1394b51e070e74eb9c8cfc6bc869d1a">Game.CottonBlock.SetSize</a></div><div class="ttdeci">static int SetSize(int data, int size)</div><div class="ttdef"><b>定义</b> <a href="_cotton_block_8cs_source.html#l00153">CottonBlock.cs:153</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cotton_block_html_afcca25ee3421e75ed079537ba0b1637a"><div class="ttname"><a href="class_game_1_1_cotton_block.html#afcca25ee3421e75ed079537ba0b1637a">Game.CottonBlock.SetIsWild</a></div><div class="ttdeci">static int SetIsWild(int data, bool isWild)</div><div class="ttdef"><b>定义</b> <a href="_cotton_block_8cs_source.html#l00160">CottonBlock.cs:160</a></div></div>
+<div class="ttc" id="aclass_game_1_1_draw_block_environment_data_html"><div class="ttname"><a href="class_game_1_1_draw_block_environment_data.html">Game.DrawBlockEnvironmentData</a></div><div class="ttdef"><b>定义</b> <a href="_draw_block_environment_data_8cs_source.html#l00005">DrawBlockEnvironmentData.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_enum_utils_html"><div class="ttname"><a href="class_game_1_1_enum_utils.html">Game.EnumUtils</a></div><div class="ttdef"><b>定义</b> <a href="_enum_utils_8cs_source.html#l00004">EnumUtils.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_enum_utils_html_aec6c44bc5d080c25fb8ae8bab720a859"><div class="ttname"><a href="class_game_1_1_enum_utils.html#aec6c44bc5d080c25fb8ae8bab720a859">Game.EnumUtils.GetEnumValues</a></div><div class="ttdeci">static IList&lt; int &gt; GetEnumValues(Type type)</div><div class="ttdef"><b>定义</b> <a href="_enum_utils_8cs_source.html#l00060">EnumUtils.cs:60</a></div></div>
+<div class="ttc" id="aclass_game_1_1_flat_block_html"><div class="ttname"><a href="class_game_1_1_flat_block.html">Game.FlatBlock</a></div><div class="ttdef"><b>定义</b> <a href="_flat_block_8cs_source.html#l00005">FlatBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_flower_block_html"><div class="ttname"><a href="class_game_1_1_flower_block.html">Game.FlowerBlock</a></div><div class="ttdef"><b>定义</b> <a href="_flower_block_8cs_source.html#l00002">FlowerBlock.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_flower_block_html_a0b306ec490c06db1e0ca22466526a8e0"><div class="ttname"><a href="class_game_1_1_flower_block.html#a0b306ec490c06db1e0ca22466526a8e0">Game.FlowerBlock.SetIsSmall</a></div><div class="ttdeci">static int SetIsSmall(int data, bool isSmall)</div><div class="ttdef"><b>定义</b> <a href="_flower_block_8cs_source.html#l00032">FlowerBlock.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_rye_block_html"><div class="ttname"><a href="class_game_1_1_rye_block.html">Game.RyeBlock</a></div><div class="ttdef"><b>定义</b> <a href="_rye_block_8cs_source.html#l00005">RyeBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_rye_block_html_a458e5b924364baafc665d092b8301817"><div class="ttname"><a href="class_game_1_1_rye_block.html#a458e5b924364baafc665d092b8301817">Game.RyeBlock.SetIsWild</a></div><div class="ttdeci">static int SetIsWild(int data, bool isWild)</div><div class="ttdef"><b>定义</b> <a href="_rye_block_8cs_source.html#l00175">RyeBlock.cs:175</a></div></div>
+<div class="ttc" id="aclass_game_1_1_rye_block_html_a599598599d09feb814a686a839cfa826"><div class="ttname"><a href="class_game_1_1_rye_block.html#a599598599d09feb814a686a839cfa826">Game.RyeBlock.SetSize</a></div><div class="ttdeci">static int SetSize(int data, int size)</div><div class="ttdef"><b>定义</b> <a href="_rye_block_8cs_source.html#l00168">RyeBlock.cs:168</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html"><div class="ttname"><a href="class_game_1_1_seeds_block.html">Game.SeedsBlock</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">SeedsBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_a3585ee4a208c5ebd676f6df6780d4081"><div class="ttname"><a href="class_game_1_1_seeds_block.html#a3585ee4a208c5ebd676f6df6780d4081">Game.SeedsBlock.GetCreativeValues</a></div><div class="ttdeci">override IEnumerable&lt; int &gt; GetCreativeValues()</div><div class="ttdef"><b>定义</b> <a href="#l00019">SeedsBlock.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_a7d7bdf709e258a16442afaa307dabfc3"><div class="ttname"><a href="class_game_1_1_seeds_block.html#a7d7bdf709e258a16442afaa307dabfc3">Game.SeedsBlock.Index</a></div><div class="ttdeci">static int Index</div><div class="ttdef"><b>定义</b> <a href="#l00017">SeedsBlock.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ab5301c12720a29c993b37cc379bec143"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ab5301c12720a29c993b37cc379bec143">Game.SeedsBlock.GetPlacementValue</a></div><div class="ttdeci">override BlockPlacementData GetPlacementValue(SubsystemTerrain subsystemTerrain, ComponentMiner componentMiner, int value, TerrainRaycastResult raycastResult)</div><div class="ttdoc">方块放置方向</div><div class="ttdef"><b>定义</b> <a href="#l00036">SeedsBlock.cs:36</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ade1c6d02df138478474a69400ba6d5b9"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ade1c6d02df138478474a69400ba6d5b9">Game.SeedsBlock.DrawBlock</a></div><div class="ttdeci">override void DrawBlock(PrimitivesRenderer3D primitivesRenderer, int value, Color color, float size, ref Matrix matrix, DrawBlockEnvironmentData environmentData)</div><div class="ttdef"><b>定义</b> <a href="#l00057">SeedsBlock.cs:57</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae404bf6bfae4fcd2ed3035c02daa6bcb"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae404bf6bfae4fcd2ed3035c02daa6bcb">Game.SeedsBlock.GetFaceTextureSlot</a></div><div class="ttdeci">override int GetFaceTextureSlot(int face, int value)</div><div class="ttdef"><b>定义</b> <a href="#l00027">SeedsBlock.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae7875acf2e352b98c70a0d2d87cc20d2"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2">Game.SeedsBlock.SeedType</a></div><div class="ttdeci">SeedType</div><div class="ttdef"><b>定义</b> <a href="#l00006">SeedsBlock.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae7875acf2e352b98c70a0d2d87cc20d2a1cd2d1d99b721b57d39606c48ea8f18c"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a1cd2d1d99b721b57d39606c48ea8f18c">Game.SeedsBlock.SeedType.RedFlower</a></div><div class="ttdeci">@ RedFlower</div><div class="ttdef"><b>定义</b> <a href="#l00008">SeedsBlock.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae7875acf2e352b98c70a0d2d87cc20d2a423a2ace9b1e747146305116649368dd"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a423a2ace9b1e747146305116649368dd">Game.SeedsBlock.SeedType.Pumpkin</a></div><div class="ttdeci">@ Pumpkin</div><div class="ttdef"><b>定义</b> <a href="#l00014">SeedsBlock.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae7875acf2e352b98c70a0d2d87cc20d2a4e3b6f9a0ec93941b64efc416638db4c"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a4e3b6f9a0ec93941b64efc416638db4c">Game.SeedsBlock.SeedType.Rye</a></div><div class="ttdeci">@ Rye</div><div class="ttdef"><b>定义</b> <a href="#l00012">SeedsBlock.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae7875acf2e352b98c70a0d2d87cc20d2a8df1c603a586c20c44cc20a8c5eec40c"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2a8df1c603a586c20c44cc20a8c5eec40c">Game.SeedsBlock.SeedType.WhiteFlower</a></div><div class="ttdeci">@ WhiteFlower</div><div class="ttdef"><b>定义</b> <a href="#l00010">SeedsBlock.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae7875acf2e352b98c70a0d2d87cc20d2aaa81643048a752ca5b79bff39abf4316"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2aaa81643048a752ca5b79bff39abf4316">Game.SeedsBlock.SeedType.WildRye</a></div><div class="ttdeci">@ WildRye</div><div class="ttdef"><b>定义</b> <a href="#l00011">SeedsBlock.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae7875acf2e352b98c70a0d2d87cc20d2ac90e794fd774e0d1e6f11356c334745a"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2ac90e794fd774e0d1e6f11356c334745a">Game.SeedsBlock.SeedType.PurpleFlower</a></div><div class="ttdeci">@ PurpleFlower</div><div class="ttdef"><b>定义</b> <a href="#l00009">SeedsBlock.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae7875acf2e352b98c70a0d2d87cc20d2adb547a9a5b84991c24ec850ac0749c0b"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2adb547a9a5b84991c24ec850ac0749c0b">Game.SeedsBlock.SeedType.Cotton</a></div><div class="ttdeci">@ Cotton</div><div class="ttdef"><b>定义</b> <a href="#l00013">SeedsBlock.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_seeds_block_html_ae7875acf2e352b98c70a0d2d87cc20d2aea4b843f4a0cd87c1a4b33745cb4b91b"><div class="ttname"><a href="class_game_1_1_seeds_block.html#ae7875acf2e352b98c70a0d2d87cc20d2aea4b843f4a0cd87c1a4b33745cb4b91b">Game.SeedsBlock.SeedType.TallGrass</a></div><div class="ttdeci">@ TallGrass</div><div class="ttdef"><b>定义</b> <a href="#l00007">SeedsBlock.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html">Game.SubsystemTerrain</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00006">SubsystemTerrain.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_tall_grass_block_html"><div class="ttname"><a href="class_game_1_1_tall_grass_block.html">Game.TallGrassBlock</a></div><div class="ttdef"><b>定义</b> <a href="_tall_grass_block_8cs_source.html#l00005">TallGrassBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_tall_grass_block_html_a2df4601d2cf430dedd9120c10f6d93ac"><div class="ttname"><a href="class_game_1_1_tall_grass_block.html#a2df4601d2cf430dedd9120c10f6d93ac">Game.TallGrassBlock.SetIsSmall</a></div><div class="ttdeci">static int SetIsSmall(int data, bool isSmall)</div><div class="ttdef"><b>定义</b> <a href="_tall_grass_block_8cs_source.html#l00081">TallGrassBlock.cs:81</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aea9a8c0114bc872225f02ebc8b7b8b9f"><div class="ttname"><a href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">Game.Terrain.MakeBlockValue</a></div><div class="ttdeci">static int MakeBlockValue(int contents)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00298">Terrain.cs:298</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aec56ea916e034b2e4db00d1814fdadba"><div class="ttname"><a href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">Game.Terrain.ExtractData</a></div><div class="ttdeci">static int ExtractData(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00307">Terrain.cs:307</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_game_1_1_block_placement_data_html"><div class="ttname"><a href="struct_game_1_1_block_placement_data.html">Game.BlockPlacementData</a></div><div class="ttdef"><b>定义</b> <a href="_block_placement_data_8cs_source.html#l00004">BlockPlacementData.cs:4</a></div></div>
+<div class="ttc" id="astruct_game_1_1_cell_face_html_ac8697128c0af897dbd25f5676652faa6"><div class="ttname"><a href="struct_game_1_1_cell_face.html#ac8697128c0af897dbd25f5676652faa6">Game.CellFace.Face</a></div><div class="ttdeci">int Face</div><div class="ttdef"><b>定义</b> <a href="_cell_face_8cs_source.html#l00011">CellFace.cs:11</a></div></div>
+<div class="ttc" id="astruct_game_1_1_terrain_raycast_result_html"><div class="ttname"><a href="struct_game_1_1_terrain_raycast_result.html">Game.TerrainRaycastResult</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_raycast_result_8cs_source.html#l00005">TerrainRaycastResult.cs:5</a></div></div>
+<div class="ttc" id="astruct_game_1_1_terrain_raycast_result_html_af81a33a7ddfc5e3bf119cbd4262a94ce"><div class="ttname"><a href="struct_game_1_1_terrain_raycast_result.html#af81a33a7ddfc5e3bf119cbd4262a94ce">Game.TerrainRaycastResult.CellFace</a></div><div class="ttdeci">CellFace CellFace</div><div class="ttdef"><b>定义</b> <a href="_terrain_raycast_result_8cs_source.html#l00012">TerrainRaycastResult.cs:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_407fceb6d650316801e32c7b7f8f0e13.html">Block</a></li><li class="navelem"><a href="_seeds_block_8cs.html">SeedsBlock.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

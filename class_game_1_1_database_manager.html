@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Game.DatabaseManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_game_1_1_database_manager.html','','class_game_1_1_database_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game.DatabaseManager</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Game.DatabaseManager 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager__coll__graph.png" border="0" usemap="#a_game_8_database_manager_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_8_database_manager_coll__map" id="a_game_8_database_manager_coll__map">
+<area shape="rect" title=" " alt="" coords="37,104,204,131"/>
+<area shape="rect" href="class_game_entity_system_1_1_game_database.html" title=" " alt="" coords="5,5,236,32"/>
+<area shape="poly" title=" " alt="" coords="123,46,123,105,118,103,118,49"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a7a6c8776c65fbc271dc4b8860bc77514" id="r_a7a6c8776c65fbc271dc4b8860bc77514"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a7a6c8776c65fbc271dc4b8860bc77514">Initialize</a> ()</td></tr>
+<tr class="memitem:ad26e009dba755f192e4904d3056fd187" id="r_ad26e009dba755f192e4904d3056fd187"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad26e009dba755f192e4904d3056fd187">LoadDataBaseFromXml</a> (XElement node)</td></tr>
+<tr class="memitem:ae77466b8c0c644812412145db4ab992e" id="r_ae77466b8c0c644812412145db4ab992e"><td class="memItemLeft">static <a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae77466b8c0c644812412145db4ab992e">FindEntityValuesDictionary</a> (string entityTemplateName, bool throwIfNotFound)</td></tr>
+<tr class="memitem:a80a8262fc0a18d7ed77b17b43ea72cae" id="r_a80a8262fc0a18d7ed77b17b43ea72cae"><td class="memItemLeft">static <a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a>&#160;</td><td class="memItemRight"><a class="el" href="#a80a8262fc0a18d7ed77b17b43ea72cae">FindValuesDictionaryForComponent</a> (<a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> entityVd, Type componentType)</td></tr>
+<tr class="memitem:aa7ab7bdeceff749fc205063ee2ca3929" id="r_aa7ab7bdeceff749fc205063ee2ca3929"><td class="memItemLeft">static <a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa7ab7bdeceff749fc205063ee2ca3929">CreateEntity</a> (<a class="el" href="class_game_entity_system_1_1_project.html">Project</a> project, <a class="el" href="class_game_1_1_spawn_entity_data.html">SpawnEntityData</a> spawnEntityData, bool throwIfNotFound)</td></tr>
+<tr class="memitem:ab6bf74c77ba7bdcd047691a960dc4077" id="r_ab6bf74c77ba7bdcd047691a960dc4077"><td class="memItemLeft">static <a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab6bf74c77ba7bdcd047691a960dc4077">CreateEntity</a> (<a class="el" href="class_game_entity_system_1_1_project.html">Project</a> project, string entityTemplateName, bool throwIfNotFound)</td></tr>
+<tr class="memitem:aceb1030c8ba2df508a38bcc4b56644c9" id="r_aceb1030c8ba2df508a38bcc4b56644c9"><td class="memItemLeft">static <a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight"><a class="el" href="#aceb1030c8ba2df508a38bcc4b56644c9">CreateEntity</a> (<a class="el" href="class_game_entity_system_1_1_project.html">Project</a> project, string entityTemplateName, <a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> overrides, bool throwIfNotFound)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a2034a0ae12056522c8503894d4149609" id="r_a2034a0ae12056522c8503894d4149609"><td class="memItemLeft">static <a class="el" href="#ac35cab95487140bdf83c6effe6f169f7">GameDatabase</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2034a0ae12056522c8503894d4149609">m_gameDatabase</a></td></tr>
+<tr class="memitem:aad9040f29b49d7cc832520830cf3dc69" id="r_aad9040f29b49d7cc832520830cf3dc69"><td class="memItemLeft">static Dictionary&lt; string, <a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aad9040f29b49d7cc832520830cf3dc69">m_valueDictionaries</a> = []</td></tr>
+<tr class="memitem:ab0a0282a7eabfee3fde85d404d236361" id="r_ab0a0282a7eabfee3fde85d404d236361"><td class="memItemLeft">static XElement&#160;</td><td class="memItemRight"><a class="el" href="#ab0a0282a7eabfee3fde85d404d236361">DatabaseNode</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ac35cab95487140bdf83c6effe6f169f7" id="r_ac35cab95487140bdf83c6effe6f169f7"><td class="memItemLeft">static GameDatabase&#160;</td><td class="memItemRight"><a class="el" href="#ac35cab95487140bdf83c6effe6f169f7">GameDatabase</a><code> [get]</code></td></tr>
+<tr class="memitem:a13fe04922666e703ce6b10cd4c811e24" id="r_a13fe04922666e703ce6b10cd4c811e24"><td class="memItemLeft">static ICollection&lt; <a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a13fe04922666e703ce6b10cd4c811e24">EntitiesValuesDictionaries</a><code> [get]</code></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00008">8</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="aa7ab7bdeceff749fc205063ee2ca3929" name="aa7ab7bdeceff749fc205063ee2ca3929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ab7bdeceff749fc205063ee2ca3929">&#9670;&#160;</a></span>CreateEntity() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a> Game.DatabaseManager.CreateEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_entity_system_1_1_project.html">Project</a></td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_spawn_entity_data.html">SpawnEntityData</a></td>          <td class="paramname"><span class="paramname"><em>spawnEntityData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>throwIfNotFound</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00064">64</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_aa7ab7bdeceff749fc205063ee2ca3929_cgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_aa7ab7bdeceff749fc205063ee2ca3929_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_aa7ab7bdeceff749fc205063ee2ca3929_cgraph" id="aclass_game_1_1_database_manager_aa7ab7bdeceff749fc205063ee2ca3929_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,215,72"/>
+<area shape="poly" title=" " alt="" coords="70,28,68,19,75,10,89,5,110,3,133,5,148,14,142,14,131,10,110,8,90,10,78,15,74,21,75,30"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_aa7ab7bdeceff749fc205063ee2ca3929_icgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_aa7ab7bdeceff749fc205063ee2ca3929_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_aa7ab7bdeceff749fc205063ee2ca3929_icgraph" id="aclass_game_1_1_database_manager_aa7ab7bdeceff749fc205063ee2ca3929_icgraph">
+<area shape="rect" title=" " alt="" coords="1140,172,1349,215"/>
+<area shape="poly" title=" " alt="" coords="1288,156,1273,153,1244,151,1218,153,1202,157,1196,163,1198,173,1193,170,1191,162,1200,153,1217,147,1244,145,1274,148,1293,157"/>
+<area shape="rect" href="class_game_1_1_component_shapeshifter.html#af767c9b5cfc765b16f5d3bba8dc4ab01" title=" " alt="" coords="869,5,1073,48"/>
+<area shape="poly" title=" " alt="" coords="1211,160,1158,111,1126,85,1090,62,1066,51,1067,46,1093,58,1129,80,1162,107,1216,161"/>
+<area shape="rect" href="class_game_1_1_subsystem_egg_block_behavior.html#acae1f05f18fecf4567c47c481a55fa55" title=" " alt="" coords="852,72,1090,115"/>
+<area shape="poly" title=" " alt="" coords="1181,165,1091,129,1056,118,1056,112,1093,124,1187,165"/>
+<area shape="rect" href="class_game_1_1_subsystem_boat_block_behavior.html#a7c3c0ff9c30a3b7b7bf586faf942c890" title=" " alt="" coords="850,139,1092,181"/>
+<area shape="poly" title=" " alt="" coords="1122,179,1092,177,1092,172,1127,179"/>
+<area shape="rect" href="class_game_1_1_subsystem_saddle_block_behavior.html#a9ea88dfd21db226204ef738414240379" title=" " alt="" coords="871,205,1071,248"/>
+<area shape="poly" title=" " alt="" coords="1122,208,1071,217,1071,212,1127,208"/>
+<area shape="rect" href="class_game_1_1_subsystem_creature_spawn.html#a3bcfb1da6fc9c4ac52c7ecc3e5e34839" title=" " alt="" coords="861,272,1081,315"/>
+<area shape="poly" title=" " alt="" coords="1187,221,1093,263,1057,274,1056,269,1091,257,1182,222"/>
+<area shape="rect" href="class_game_1_1_player_data.html#a5846fce670715e4ed4391976075c97a8" title=" " alt="" coords="868,344,1074,371"/>
+<area shape="poly" title=" " alt="" coords="1216,226,1162,280,1129,307,1093,329,1049,346,1048,341,1090,324,1126,302,1159,276,1212,228"/>
+<area shape="rect" href="class_game_1_1_component_shapeshifter.html#a05a94650d6d24f3c4f9eda286d4b499b" title=" " alt="" coords="570,13,802,40"/>
+<area shape="poly" title=" " alt="" coords="851,27,803,29,802,24,856,26"/>
+<area shape="rect" href="class_game_1_1_subsystem_creature_spawn.html#a39be898e92616cc7370adf96196950c8" title=" " alt="" coords="576,265,796,308"/>
+<area shape="poly" title=" " alt="" coords="842,291,797,292,797,287,848,290"/>
+<area shape="rect" href="class_game_1_1_subsystem_creature_spawn.html#a65eba06489f8602f4e2f95c85d13b02a" title=" " alt="" coords="302,265,522,308"/>
+<area shape="poly" title=" " alt="" coords="558,287,523,289,522,284,563,286"/>
+<area shape="rect" href="class_game_1_1_subsystem_creature_spawn.html#a1cb851541c3767f9c5d3cb02e0889152" title=" " alt="" coords="5,273,254,300"/>
+<area shape="poly" title=" " alt="" coords="284,287,254,289,253,284,289,286"/>
+<area shape="rect" href="class_game_1_1_player_data.html#aadd6f73ea1001dc3f963ea79762e5e34" title=" " alt="" coords="589,356,783,383"/>
+<area shape="poly" title=" " alt="" coords="850,362,784,368,784,363,855,362"/>
+<area shape="poly" title=" " alt="" coords="733,341,718,337,686,335,657,337,641,342,637,347,645,356,640,355,632,347,638,337,656,331,686,329,719,332,738,342"/>
+<area shape="rect" href="class_game_1_1_player_data.html#a121345377476e65514f4e8691183ce30" title=" " alt="" coords="309,340,515,383"/>
+<area shape="poly" title=" " alt="" coords="571,366,516,367,516,362,576,366"/>
+<area shape="rect" href="class_game_1_1_player_data.html#aa5810e923ea0f28948d7bf4fd0e26a7a" title=" " alt="" coords="31,369,228,412"/>
+<area shape="poly" title=" " alt="" coords="291,374,229,383,228,378,296,373"/>
+<area shape="poly" title=" " alt="" coords="244,394,377,397,522,392,608,383,614,383,522,397,377,402,244,400"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab6bf74c77ba7bdcd047691a960dc4077" name="ab6bf74c77ba7bdcd047691a960dc4077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6bf74c77ba7bdcd047691a960dc4077">&#9670;&#160;</a></span>CreateEntity() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a> Game.DatabaseManager.CreateEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_entity_system_1_1_project.html">Project</a></td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>entityTemplateName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>throwIfNotFound</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00077">77</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_ab6bf74c77ba7bdcd047691a960dc4077_cgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_ab6bf74c77ba7bdcd047691a960dc4077_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_ab6bf74c77ba7bdcd047691a960dc4077_cgraph" id="aclass_game_1_1_database_manager_ab6bf74c77ba7bdcd047691a960dc4077_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,215,81"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a822841946bd9c4a8bd60ce90dca6a27a" title=" " alt="" coords="268,5,452,48"/>
+<area shape="poly" title=" " alt="" coords="215,43,255,40,250,42,216,49"/>
+<area shape="rect" href="class_game_1_1_database_manager.html#ae77466b8c0c644812412145db4ab992e" title=" " alt="" coords="263,72,458,115"/>
+<area shape="poly" title=" " alt="" coords="215,71,250,78,244,78,215,77"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#ac8e9b99aa520900256324b6bfee43cbb" title=" " alt="" coords="506,5,682,48"/>
+<area shape="poly" title=" " alt="" coords="453,24,493,26,488,27,453,29"/>
+<area shape="rect" href="class_game_entity_system_1_1_component.html#a9a88afacfaf9419361e96c8cc77607ec" title=" " alt="" coords="730,13,969,40"/>
+<area shape="poly" title=" " alt="" coords="683,24,717,26,712,27,683,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aceb1030c8ba2df508a38bcc4b56644c9" name="aceb1030c8ba2df508a38bcc4b56644c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb1030c8ba2df508a38bcc4b56644c9">&#9670;&#160;</a></span>CreateEntity() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a> Game.DatabaseManager.CreateEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_entity_system_1_1_project.html">Project</a></td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>entityTemplateName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a></td>          <td class="paramname"><span class="paramname"><em>overrides</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>throwIfNotFound</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00085">85</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_aceb1030c8ba2df508a38bcc4b56644c9_cgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_aceb1030c8ba2df508a38bcc4b56644c9_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_aceb1030c8ba2df508a38bcc4b56644c9_cgraph" id="aclass_game_1_1_database_manager_aceb1030c8ba2df508a38bcc4b56644c9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,72,215,115"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html#afcd2ff793df2661b3b945fa751b3bed2" title=" " alt="" coords="270,5,450,48"/>
+<area shape="poly" title=" " alt="" coords="192,69,266,51,261,54,194,74"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#a822841946bd9c4a8bd60ce90dca6a27a" title=" " alt="" coords="268,72,452,115"/>
+<area shape="poly" title=" " alt="" coords="215,91,255,93,250,94,216,96"/>
+<area shape="rect" href="class_game_1_1_database_manager.html#ae77466b8c0c644812412145db4ab992e" title=" " alt="" coords="263,139,458,181"/>
+<area shape="poly" title=" " alt="" coords="193,113,266,134,261,135,193,118"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#ac8e9b99aa520900256324b6bfee43cbb" title=" " alt="" coords="506,72,682,115"/>
+<area shape="poly" title=" " alt="" coords="453,91,493,93,488,94,453,96"/>
+<area shape="rect" href="class_game_entity_system_1_1_component.html#a9a88afacfaf9419361e96c8cc77607ec" title=" " alt="" coords="730,80,969,107"/>
+<area shape="poly" title=" " alt="" coords="683,91,717,93,712,94,683,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae77466b8c0c644812412145db4ab992e" name="ae77466b8c0c644812412145db4ab992e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77466b8c0c644812412145db4ab992e">&#9670;&#160;</a></span>FindEntityValuesDictionary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> Game.DatabaseManager.FindEntityValuesDictionary </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>entityTemplateName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>throwIfNotFound</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00044">44</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_ae77466b8c0c644812412145db4ab992e_icgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_ae77466b8c0c644812412145db4ab992e_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_ae77466b8c0c644812412145db4ab992e_icgraph" id="aclass_game_1_1_database_manager_ae77466b8c0c644812412145db4ab992e_icgraph">
+<area shape="rect" title=" " alt="" coords="821,205,1017,248"/>
+<area shape="rect" href="class_game_1_1_database_manager.html#ab6bf74c77ba7bdcd047691a960dc4077" title=" " alt="" coords="552,5,762,48"/>
+<area shape="poly" title=" " alt="" coords="894,191,844,126,810,92,772,62,751,51,752,46,775,58,813,88,848,123,899,192"/>
+<area shape="rect" href="class_game_1_1_database_manager.html#aceb1030c8ba2df508a38bcc4b56644c9" title=" " alt="" coords="552,72,762,115"/>
+<area shape="poly" title=" " alt="" coords="877,195,829,162,772,129,745,118,746,113,775,124,832,157,882,196"/>
+<area shape="rect" href="class_game_1_1_character_skins_manager.html#a20eb85bd23d21c3105b0a0dd3e8d4f23" title=" " alt="" coords="555,205,759,248"/>
+<area shape="poly" title=" " alt="" coords="803,227,760,229,759,224,808,226"/>
+<area shape="rect" href="class_game_1_1_character_skins_manager.html#afd58f74e69d0a71406422fd6be0482cc" title=" " alt="" coords="555,139,759,181"/>
+<area shape="poly" title=" " alt="" coords="815,201,744,185,744,179,821,201"/>
+<area shape="rect" href="class_game_1_1_component_shapeshifter.html#a05a94650d6d24f3c4f9eda286d4b499b" title=" " alt="" coords="541,272,773,299"/>
+<area shape="poly" title=" " alt="" coords="811,251,774,263,723,274,722,269,773,257,806,253"/>
+<area shape="rect" href="class_game_1_1_subsystem_spawn.html#a3353c874a33ead55c2feb1537a479ee0" title=" " alt="" coords="552,323,762,365"/>
+<area shape="poly" title=" " alt="" coords="875,256,827,287,774,313,743,325,742,320,772,308,824,282,870,258"/>
+<area shape="rect" href="class_game_1_1_player_screen.html#a392ab47b4162e602b1a900782759f5e2" title=" " alt="" coords="565,389,749,416"/>
+<area shape="poly" title=" " alt="" coords="897,260,845,323,812,354,775,380,748,391,746,386,772,375,809,350,842,320,892,262"/>
+<area shape="rect" href="class_game_1_1_clothing_block.html#a9ef8603b1bd197dc99b72b61be0ca011" title=" " alt="" coords="283,209,476,236"/>
+<area shape="poly" title=" " alt="" coords="537,226,477,227,476,221,542,224"/>
+<area shape="rect" href="class_game_1_1_player_model_widget.html#a2e9149291feffb408b964d8570542083" title=" " alt="" coords="266,141,493,184"/>
+<area shape="poly" title=" " alt="" coords="544,202,475,187,475,182,550,201"/>
+<area shape="poly" title=" " alt="" coords="542,186,443,211,441,206,547,184"/>
+<area shape="poly" title=" " alt="" coords="537,162,494,164,493,159,542,160"/>
+<area shape="rect" href="class_game_1_1_subsystem_spawn.html#a3fb3b5e0529a727d7b9b0adee9976f20" title=" " alt="" coords="274,323,484,365"/>
+<area shape="poly" title=" " alt="" coords="534,344,485,347,485,341,539,344"/>
+<area shape="rect" href="class_game_1_1_subsystem_spawn.html#a11a563d50269d81518042930e6045a17" title=" " alt="" coords="5,331,218,357"/>
+<area shape="poly" title=" " alt="" coords="256,345,218,347,218,341,261,343"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80a8262fc0a18d7ed77b17b43ea72cae" name="a80a8262fc0a18d7ed77b17b43ea72cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a8262fc0a18d7ed77b17b43ea72cae">&#9670;&#160;</a></span>FindValuesDictionaryForComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> Game.DatabaseManager.FindValuesDictionaryForComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a></td>          <td class="paramname"><span class="paramname"><em>entityVd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type</td>          <td class="paramname"><span class="paramname"><em>componentType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00051">51</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_a80a8262fc0a18d7ed77b17b43ea72cae_cgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_a80a8262fc0a18d7ed77b17b43ea72cae_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_a80a8262fc0a18d7ed77b17b43ea72cae_cgraph" id="aclass_game_1_1_database_manager_a80a8262fc0a18d7ed77b17b43ea72cae_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,211,81"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a513797ad03c6705956ccdbd15367b91d" title=" " alt="" coords="259,39,427,81"/>
+<area shape="poly" title=" " alt="" coords="211,57,246,60,240,60,211,63"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#aa4f17e927f6f81bc9b82d967e67d380a" title=" " alt="" coords="496,5,671,48"/>
+<area shape="poly" title=" " alt="" coords="427,46,483,40,478,41,428,51"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="475,72,692,115"/>
+<area shape="poly" title=" " alt="" coords="428,69,462,76,457,76,427,74"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_a80a8262fc0a18d7ed77b17b43ea72cae_icgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_a80a8262fc0a18d7ed77b17b43ea72cae_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_a80a8262fc0a18d7ed77b17b43ea72cae_icgraph" id="aclass_game_1_1_database_manager_a80a8262fc0a18d7ed77b17b43ea72cae_icgraph">
+<area shape="rect" title=" " alt="" coords="493,64,698,107"/>
+<area shape="rect" href="class_game_1_1_bestiary_screen.html#a824b99711292c997256d165db5c5d36a" title=" " alt="" coords="236,5,437,48"/>
+<area shape="poly" title=" " alt="" coords="481,60,434,51,434,46,487,60"/>
+<area shape="rect" href="class_game_1_1_player_screen.html#a392ab47b4162e602b1a900782759f5e2" title=" " alt="" coords="244,72,428,99"/>
+<area shape="poly" title=" " alt="" coords="475,86,429,88,429,83,480,85"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#afe3390687445f60c678fdad320fcacbb" title=" " alt="" coords="228,123,445,165"/>
+<area shape="poly" title=" " alt="" coords="487,110,434,125,433,119,481,111"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#a3fa9d1a17b0d55e893207d660dfd2b21" title=" " alt="" coords="5,89,180,132"/>
+<area shape="poly" title=" " alt="" coords="209,127,180,125,180,120,215,127"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#a820bccc53d50f550264546d78735f287" title=" " alt="" coords="5,156,180,199"/>
+<area shape="poly" title=" " alt="" coords="209,161,181,168,180,163,215,161"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a6c8776c65fbc271dc4b8860bc77514" name="a7a6c8776c65fbc271dc4b8860bc77514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a6c8776c65fbc271dc4b8860bc77514">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.DatabaseManager.Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00026">26</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_a7a6c8776c65fbc271dc4b8860bc77514_icgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_a7a6c8776c65fbc271dc4b8860bc77514_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_a7a6c8776c65fbc271dc4b8860bc77514_icgraph" id="aclass_game_1_1_database_manager_a7a6c8776c65fbc271dc4b8860bc77514_icgraph">
+<area shape="rect" title=" " alt="" coords="495,5,713,32"/>
+<area shape="rect" href="class_game_1_1_loading_screen.html#adc21dc9521543b084e0ec739d965f1c3" title=" " alt="" coords="235,5,447,32"/>
+<area shape="poly" title=" " alt="" coords="477,19,448,21,448,16,482,19"/>
+<area shape="rect" href="class_game_1_1_loading_screen.html#a3fa9431900a72c088ce71ac017c59473" title=" " alt="" coords="5,5,187,32"/>
+<area shape="poly" title=" " alt="" coords="217,19,187,21,187,16,222,19"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad26e009dba755f192e4904d3056fd187" name="ad26e009dba755f192e4904d3056fd187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26e009dba755f192e4904d3056fd187">&#9670;&#160;</a></span>LoadDataBaseFromXml()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.DatabaseManager.LoadDataBaseFromXml </td>
+          <td>(</td>
+          <td class="paramtype">XElement</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00031">31</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_ad26e009dba755f192e4904d3056fd187_cgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_ad26e009dba755f192e4904d3056fd187_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_ad26e009dba755f192e4904d3056fd187_cgraph" id="aclass_game_1_1_database_manager_ad26e009dba755f192e4904d3056fd187_cgraph">
+<area shape="rect" title=" " alt="" coords="5,212,204,255"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#a5712c0ee43dd35ae855a5c7f931361af" title=" " alt="" coords="252,163,472,205"/>
+<area shape="poly" title=" " alt="" coords="203,212,239,207,234,209,205,217"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html#aeacaffd4201983068ed6b92fc3728e57" title=" " alt="" coords="252,253,472,312"/>
+<area shape="poly" title=" " alt="" coords="204,250,239,258,234,259,204,255"/>
+<area shape="rect" href="class_xml_utilities_1_1_xml_utils.html#aba1b188e615e90bdbece9927f96983ad" title=" " alt="" coords="549,5,720,48"/>
+<area shape="poly" title=" " alt="" coords="384,160,442,109,479,81,519,58,537,52,532,54,521,62,482,86,445,113,387,164"/>
+<area shape="rect" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23" title=" " alt="" coords="551,96,718,139"/>
+<area shape="poly" title=" " alt="" coords="451,160,538,141,533,142,453,165"/>
+<area shape="rect" href="class_templates_database_1_1_database_object_type.html#aa138aa14998a44561dada88e3eb5bc20" title=" " alt="" coords="536,163,733,205"/>
+<area shape="poly" title=" " alt="" coords="472,181,523,184,518,184,473,187"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#a6c3e79edca0caff6eb13113f815ad86a" title=" " alt="" coords="520,229,749,272"/>
+<area shape="poly" title=" " alt="" coords="452,203,532,225,527,225,452,209"/>
+<area shape="rect" href="class_engine_1_1_log.html#ad3c8a97d36cba145c0159ad596a815b4" title=" " alt="" coords="566,296,703,323"/>
+<area shape="poly" title=" " alt="" coords="453,203,474,215,490,232,498,250,506,267,522,282,554,299,548,298,518,286,502,270,493,252,486,235,470,219,452,208"/>
+<area shape="poly" title=" " alt="" coords="584,94,582,86,590,77,608,71,635,69,664,72,683,81,678,81,663,77,635,75,609,77,593,81,587,87,589,97"/>
+<area shape="rect" href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4" title=" " alt="" coords="797,163,1011,205"/>
+<area shape="poly" title=" " alt="" coords="734,181,784,184,779,184,734,187"/>
+<area shape="rect" href="class_engine_1_1_log.html#aeec71e1f21824c2398a876ff9b1cf589" title=" " alt="" coords="844,296,964,323"/>
+<area shape="poly" title=" " alt="" coords="704,307,831,309,826,309,704,312"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html#a7428b3c7c6cc5b17701ad73d606de84e" title=" " alt="" coords="1059,296,1200,323"/>
+<area shape="poly" title=" " alt="" coords="964,307,1046,309,1041,309,964,312"/>
+<area shape="poly" title=" " alt="" coords="312,251,313,243,322,234,338,229,362,227,389,229,407,239,402,239,388,235,362,232,339,234,325,239,317,245,316,255"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_database_manager_ad26e009dba755f192e4904d3056fd187_icgraph.png" border="0" usemap="#aclass_game_1_1_database_manager_ad26e009dba755f192e4904d3056fd187_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_database_manager_ad26e009dba755f192e4904d3056fd187_icgraph" id="aclass_game_1_1_database_manager_ad26e009dba755f192e4904d3056fd187_icgraph">
+<area shape="rect" title=" " alt="" coords="495,27,693,69"/>
+<area shape="rect" href="class_game_1_1_loading_screen.html#adc21dc9521543b084e0ec739d965f1c3" title=" " alt="" coords="235,5,447,32"/>
+<area shape="poly" title=" " alt="" coords="477,35,447,34,447,28,482,35"/>
+<area shape="rect" href="class_game_1_1_manage_class_substitutes_screen.html#ad36586bcc9b594aaf8bf2cf18a5498a5" title=" " alt="" coords="238,56,444,99"/>
+<area shape="poly" title=" " alt="" coords="482,61,445,68,444,63,477,62"/>
+<area shape="rect" href="class_game_1_1_loading_screen.html#a3fa9431900a72c088ce71ac017c59473" title=" " alt="" coords="5,5,187,32"/>
+<area shape="poly" title=" " alt="" coords="217,19,188,21,187,16,222,18"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="ab0a0282a7eabfee3fde85d404d236361" name="ab0a0282a7eabfee3fde85d404d236361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a0282a7eabfee3fde85d404d236361">&#9670;&#160;</a></span>DatabaseNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XElement Game.DatabaseManager.DatabaseNode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2034a0ae12056522c8503894d4149609" name="a2034a0ae12056522c8503894d4149609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2034a0ae12056522c8503894d4149609">&#9670;&#160;</a></span>m_gameDatabase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac35cab95487140bdf83c6effe6f169f7">GameDatabase</a> Game.DatabaseManager.m_gameDatabase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aad9040f29b49d7cc832520830cf3dc69" name="aad9040f29b49d7cc832520830cf3dc69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad9040f29b49d7cc832520830cf3dc69">&#9670;&#160;</a></span>m_valueDictionaries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, <a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a>&gt; Game.DatabaseManager.m_valueDictionaries = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="a13fe04922666e703ce6b10cd4c811e24" name="a13fe04922666e703ce6b10cd4c811e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fe04922666e703ce6b10cd4c811e24">&#9670;&#160;</a></span>EntitiesValuesDictionaries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ICollection&lt;<a class="el" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a>&gt; Game.DatabaseManager.EntitiesValuesDictionaries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac35cab95487140bdf83c6effe6f169f7" name="ac35cab95487140bdf83c6effe6f169f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35cab95487140bdf83c6effe6f169f7">&#9670;&#160;</a></span>GameDatabase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameDatabase Game.DatabaseManager.GameDatabase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a> 第 <a class="el" href="_database_manager_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/ModsManager/Changes/<a class="el" href="_database_manager_8cs_source.html">DatabaseManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game.html">Game</a></li><li class="navelem"><a href="class_game_1_1_database_manager.html">DatabaseManager</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

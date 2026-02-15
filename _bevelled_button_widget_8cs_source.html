@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/BevelledButtonWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_bevelled_button_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BevelledButtonWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_bevelled_button_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_media.html">Engine.Media</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_bevelled_button_widget.html#a198cd8c857be362afaed44284b31aed4">BevelledButtonWidget</a> : <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a93ff2fed36caea8ddb93eb426a2ac158">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_bevelled_rectangle_widget.html">BevelledRectangleWidget</a> <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a93ff2fed36caea8ddb93eb426a2ac158">m_rectangleWidget</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a53f82556f764c1c9b3f2ba1879265efe">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_rectangle_widget.html">RectangleWidget</a> <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a53f82556f764c1c9b3f2ba1879265efe">m_imageWidget</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a656cc798b6229cb19d0174c1fb3f8c22">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a656cc798b6229cb19d0174c1fb3f8c22">m_labelWidget</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#aa4551057e87da451470e9f9d7f6624a1">   13</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_clickable_widget.html">ClickableWidget</a> <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#aa4551057e87da451470e9f9d7f6624a1">m_clickableWidget</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a88cc4c249913e0ccc481225a163e7132">   15</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a88cc4c249913e0ccc481225a163e7132">FontScale</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a656cc798b6229cb19d0174c1fb3f8c22">m_labelWidget</a>.FontScale;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keyword">set</span> =&gt; m_labelWidget.FontScale = value;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a594eba12955614361a0fa3027e66a44b">   20</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a594eba12955614361a0fa3027e66a44b">IsClicked</a> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#aa4551057e87da451470e9f9d7f6624a1">m_clickableWidget</a>.IsClicked;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a6b742345b6c76dd83dc0e5f68d4cfeae">   22</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a6b742345b6c76dd83dc0e5f68d4cfeae">IsChecked</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#aa4551057e87da451470e9f9d7f6624a1">m_clickableWidget</a>.IsChecked;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keyword">set</span> =&gt; m_clickableWidget.IsChecked = value;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#ab9fc13003cd0975db975d09ae5669fd1">   27</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#ab9fc13003cd0975db975d09ae5669fd1">IsAutoCheckingEnabled</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#aa4551057e87da451470e9f9d7f6624a1">m_clickableWidget</a>.IsAutoCheckingEnabled;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keyword">set</span> =&gt; m_clickableWidget.IsAutoCheckingEnabled = value;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a73d334e3da996be48586d519b3460501">   32</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a73d334e3da996be48586d519b3460501">Text</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a656cc798b6229cb19d0174c1fb3f8c22">m_labelWidget</a>.Text;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keyword">set</span> =&gt; m_labelWidget.Text = value;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a93571e11da2c38845523799165957473">   37</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_class" href="class_engine_1_1_media_1_1_bitmap_font.html">BitmapFont</a> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a93571e11da2c38845523799165957473">Font</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a656cc798b6229cb19d0174c1fb3f8c22">m_labelWidget</a>.Font;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">set</span> =&gt; m_labelWidget.Font = value;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a52fa2b533b611404d066cd4cabd4a801">   42</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a52fa2b533b611404d066cd4cabd4a801">Subtexture</a> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a52fa2b533b611404d066cd4cabd4a801">Subtexture</a> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a53f82556f764c1c9b3f2ba1879265efe">m_imageWidget</a>.Subtexture;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keyword">set</span> =&gt; m_imageWidget.Subtexture = value;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">   47</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#aaa0d781ed1fbcf4466f992cb32dd9d74">   49</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#aaa0d781ed1fbcf4466f992cb32dd9d74">BevelColor</a> {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a93ff2fed36caea8ddb93eb426a2ac158">m_rectangleWidget</a>.BevelColor;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">set</span> =&gt; m_rectangleWidget.BevelColor = value;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#aaa76164ceb05ba48397e5928ec561a74">   54</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#aaa76164ceb05ba48397e5928ec561a74">CenterColor</a> {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a93ff2fed36caea8ddb93eb426a2ac158">m_rectangleWidget</a>.CenterColor;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">set</span> =&gt; m_rectangleWidget.CenterColor = value;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="};">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#ac816138cf3756c26530ff773dbdb88a3">   59</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#ac816138cf3756c26530ff773dbdb88a3">AmbientLight</a> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a93ff2fed36caea8ddb93eb426a2ac158">m_rectangleWidget</a>.AmbientLight;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keyword">set</span> =&gt; m_rectangleWidget.AmbientLight = value;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="};">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#ab3094fab42d2b11ded9bbb4cd672d782">   64</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#ab3094fab42d2b11ded9bbb4cd672d782">DirectionalLight</a> {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a93ff2fed36caea8ddb93eb426a2ac158">m_rectangleWidget</a>.DirectionalLight;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keyword">set</span> =&gt; m_rectangleWidget.DirectionalLight = value;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#ac3ec046ce8de11a05c80dd5ee65e8f35">   69</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#ac3ec046ce8de11a05c80dd5ee65e8f35">BevelSize</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a198cd8c857be362afaed44284b31aed4">   71</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_bevelled_button_widget.html#a198cd8c857be362afaed44284b31aed4">BevelledButtonWidget</a>() {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a> = <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a>.White;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#ac3ec046ce8de11a05c80dd5ee65e8f35">BevelSize</a> = 2f;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Widgets/BevelledButtonContents&quot;</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aee6067d3061705fa89815fcdd3cc5032">LoadChildren</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a93ff2fed36caea8ddb93eb426a2ac158">m_rectangleWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_bevelled_rectangle_widget.html">BevelledRectangleWidget</a>&gt;(<span class="stringliteral">&quot;BevelledButton.Rectangle&quot;</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a53f82556f764c1c9b3f2ba1879265efe">m_imageWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_rectangle_widget.html">RectangleWidget</a>&gt;(<span class="stringliteral">&quot;BevelledButton.Image&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#a656cc798b6229cb19d0174c1fb3f8c22">m_labelWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;BevelledButton.Label&quot;</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <a class="code hl_variable" href="class_game_1_1_bevelled_button_widget.html#aa4551057e87da451470e9f9d7f6624a1">m_clickableWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_clickable_widget.html">ClickableWidget</a>&gt;(<span class="stringliteral">&quot;BevelledButton.Clickable&quot;</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            m_labelWidget.VerticalAlignment = <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Center;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <a class="code hl_function" href="class_game_1_1_widget.html#ac9ac4c563e314040c2cd3851720e7ff8">LoadProperties</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_game_1_1_bevelled_button_widget.html#a4da7eab063751b898fcc9ebd86f693c3">   84</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_bevelled_button_widget.html#a4da7eab063751b898fcc9ebd86f693c3">MeasureOverride</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> parentAvailableSize) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordtype">bool</span> isEnabledGlobal = <a class="code hl_property" href="class_game_1_1_widget.html#ac2df75a467220b8c5b1a2c999e452ece">IsEnabledGlobal</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            m_labelWidget.Color = isEnabledGlobal ? <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a> : <span class="keyword">new</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a>(112, 112, 112);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            m_imageWidget.FillColor = isEnabledGlobal ? <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a> : <span class="keyword">new</span> <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Color</a>(112, 112, 112);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            m_rectangleWidget.BevelSize = m_clickableWidget.IsPressed || <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#a6b742345b6c76dd83dc0e5f68d4cfeae">IsChecked</a> ? -0.5f * <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#ac3ec046ce8de11a05c80dd5ee65e8f35">BevelSize</a> : <a class="code hl_property" href="class_game_1_1_bevelled_button_widget.html#ac3ec046ce8de11a05c80dd5ee65e8f35">BevelSize</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            base.MeasureOverride(parentAvailableSize);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_bitmap_font_html"><div class="ttname"><a href="class_engine_1_1_media_1_1_bitmap_font.html">Engine.Media.BitmapFont</a></div><div class="ttdef"><b>定义</b> <a href="_bitmap_font_8cs_source.html#l00006">BitmapFont.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a1908bb15aa98d90e19c99d3ff93f6fed"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a1908bb15aa98d90e19c99d3ff93f6fed">Game.BevelledButtonWidget.Color</a></div><div class="ttdeci">override Color Color</div><div class="ttdef"><b>定义</b> <a href="#l00047">BevelledButtonWidget.cs:47</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a198cd8c857be362afaed44284b31aed4"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a198cd8c857be362afaed44284b31aed4">Game.BevelledButtonWidget.BevelledButtonWidget</a></div><div class="ttdeci">BevelledButtonWidget()</div><div class="ttdef"><b>定义</b> <a href="#l00071">BevelledButtonWidget.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a4da7eab063751b898fcc9ebd86f693c3"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a4da7eab063751b898fcc9ebd86f693c3">Game.BevelledButtonWidget.MeasureOverride</a></div><div class="ttdeci">override void MeasureOverride(Vector2 parentAvailableSize)</div><div class="ttdef"><b>定义</b> <a href="#l00084">BevelledButtonWidget.cs:84</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a52fa2b533b611404d066cd4cabd4a801"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a52fa2b533b611404d066cd4cabd4a801">Game.BevelledButtonWidget.Subtexture</a></div><div class="ttdeci">Subtexture Subtexture</div><div class="ttdef"><b>定义</b> <a href="#l00042">BevelledButtonWidget.cs:42</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a53f82556f764c1c9b3f2ba1879265efe"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a53f82556f764c1c9b3f2ba1879265efe">Game.BevelledButtonWidget.m_imageWidget</a></div><div class="ttdeci">RectangleWidget m_imageWidget</div><div class="ttdef"><b>定义</b> <a href="#l00009">BevelledButtonWidget.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a594eba12955614361a0fa3027e66a44b"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a594eba12955614361a0fa3027e66a44b">Game.BevelledButtonWidget.IsClicked</a></div><div class="ttdeci">override bool IsClicked</div><div class="ttdef"><b>定义</b> <a href="#l00020">BevelledButtonWidget.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a656cc798b6229cb19d0174c1fb3f8c22"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a656cc798b6229cb19d0174c1fb3f8c22">Game.BevelledButtonWidget.m_labelWidget</a></div><div class="ttdeci">LabelWidget m_labelWidget</div><div class="ttdef"><b>定义</b> <a href="#l00011">BevelledButtonWidget.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a6b742345b6c76dd83dc0e5f68d4cfeae"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a6b742345b6c76dd83dc0e5f68d4cfeae">Game.BevelledButtonWidget.IsChecked</a></div><div class="ttdeci">override bool IsChecked</div><div class="ttdef"><b>定义</b> <a href="#l00022">BevelledButtonWidget.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a73d334e3da996be48586d519b3460501"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a73d334e3da996be48586d519b3460501">Game.BevelledButtonWidget.Text</a></div><div class="ttdeci">override string Text</div><div class="ttdef"><b>定义</b> <a href="#l00032">BevelledButtonWidget.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a88cc4c249913e0ccc481225a163e7132"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a88cc4c249913e0ccc481225a163e7132">Game.BevelledButtonWidget.FontScale</a></div><div class="ttdeci">float FontScale</div><div class="ttdef"><b>定义</b> <a href="#l00015">BevelledButtonWidget.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a93571e11da2c38845523799165957473"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a93571e11da2c38845523799165957473">Game.BevelledButtonWidget.Font</a></div><div class="ttdeci">override BitmapFont Font</div><div class="ttdef"><b>定义</b> <a href="#l00037">BevelledButtonWidget.cs:37</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_a93ff2fed36caea8ddb93eb426a2ac158"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#a93ff2fed36caea8ddb93eb426a2ac158">Game.BevelledButtonWidget.m_rectangleWidget</a></div><div class="ttdeci">BevelledRectangleWidget m_rectangleWidget</div><div class="ttdef"><b>定义</b> <a href="#l00007">BevelledButtonWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_aa4551057e87da451470e9f9d7f6624a1"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#aa4551057e87da451470e9f9d7f6624a1">Game.BevelledButtonWidget.m_clickableWidget</a></div><div class="ttdeci">ClickableWidget m_clickableWidget</div><div class="ttdef"><b>定义</b> <a href="#l00013">BevelledButtonWidget.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_aaa0d781ed1fbcf4466f992cb32dd9d74"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#aaa0d781ed1fbcf4466f992cb32dd9d74">Game.BevelledButtonWidget.BevelColor</a></div><div class="ttdeci">Color BevelColor</div><div class="ttdef"><b>定义</b> <a href="#l00049">BevelledButtonWidget.cs:49</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_aaa76164ceb05ba48397e5928ec561a74"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#aaa76164ceb05ba48397e5928ec561a74">Game.BevelledButtonWidget.CenterColor</a></div><div class="ttdeci">Color CenterColor</div><div class="ttdef"><b>定义</b> <a href="#l00054">BevelledButtonWidget.cs:54</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_ab3094fab42d2b11ded9bbb4cd672d782"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#ab3094fab42d2b11ded9bbb4cd672d782">Game.BevelledButtonWidget.DirectionalLight</a></div><div class="ttdeci">float DirectionalLight</div><div class="ttdef"><b>定义</b> <a href="#l00064">BevelledButtonWidget.cs:64</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_ab9fc13003cd0975db975d09ae5669fd1"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#ab9fc13003cd0975db975d09ae5669fd1">Game.BevelledButtonWidget.IsAutoCheckingEnabled</a></div><div class="ttdeci">override bool IsAutoCheckingEnabled</div><div class="ttdef"><b>定义</b> <a href="#l00027">BevelledButtonWidget.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_ac3ec046ce8de11a05c80dd5ee65e8f35"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#ac3ec046ce8de11a05c80dd5ee65e8f35">Game.BevelledButtonWidget.BevelSize</a></div><div class="ttdeci">float BevelSize</div><div class="ttdef"><b>定义</b> <a href="#l00069">BevelledButtonWidget.cs:69</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html_ac816138cf3756c26530ff773dbdb88a3"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html#ac816138cf3756c26530ff773dbdb88a3">Game.BevelledButtonWidget.AmbientLight</a></div><div class="ttdeci">float AmbientLight</div><div class="ttdef"><b>定义</b> <a href="#l00059">BevelledButtonWidget.cs:59</a></div></div>
+<div class="ttc" id="aclass_game_1_1_bevelled_rectangle_widget_html"><div class="ttname"><a href="class_game_1_1_bevelled_rectangle_widget.html">Game.BevelledRectangleWidget</a></div><div class="ttdef"><b>定义</b> <a href="_bevelled_rectangle_widget_8cs_source.html#l00005">BevelledRectangleWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html"><div class="ttname"><a href="class_game_1_1_clickable_widget.html">Game.ClickableWidget</a></div><div class="ttdef"><b>定义</b> <a href="_clickable_widget_8cs_source.html#l00002">ClickableWidget.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_rectangle_widget_html"><div class="ttname"><a href="class_game_1_1_rectangle_widget.html">Game.RectangleWidget</a></div><div class="ttdef"><b>定义</b> <a href="_rectangle_widget_8cs_source.html#l00005">RectangleWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ac2df75a467220b8c5b1a2c999e452ece"><div class="ttname"><a href="class_game_1_1_widget.html#ac2df75a467220b8c5b1a2c999e452ece">Game.Widget.IsEnabledGlobal</a></div><div class="ttdeci">bool IsEnabledGlobal</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00394">Widget.cs:394</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ac9ac4c563e314040c2cd3851720e7ff8"><div class="ttname"><a href="class_game_1_1_widget.html#ac9ac4c563e314040c2cd3851720e7ff8">Game.Widget.LoadProperties</a></div><div class="ttdeci">virtual void LoadProperties(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00519">Widget.cs:519</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aee6067d3061705fa89815fcdd3cc5032"><div class="ttname"><a href="class_game_1_1_widget.html#aee6067d3061705fa89815fcdd3cc5032">Game.Widget.LoadChildren</a></div><div class="ttdeci">virtual void LoadChildren(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00586">Widget.cs:586</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_media_html"><div class="ttname"><a href="namespace_engine_1_1_media.html">Engine.Media</a></div><div class="ttdef"><b>定义</b> <a href="_bitmap_font_8cs_source.html#l00005">BitmapFont.cs:5</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_ab4e40cd76f07a77bf33d7a814c4126eb"><div class="ttname"><a href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">Game.WidgetAlignment</a></div><div class="ttdeci">WidgetAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_alignment_8cs_source.html#l00002">WidgetAlignment.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_bevelled_button_widget_8cs.html">BevelledButtonWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

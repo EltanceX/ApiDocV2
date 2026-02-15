@@ -1,0 +1,965 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Game.VrManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_game_1_1_vr_manager.html','','class_game_1_1_vr_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game.VrManager</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aed3149170c8d5dc5c600e185c929b78f" id="r_aed3149170c8d5dc5c600e185c929b78f"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aed3149170c8d5dc5c600e185c929b78f">Initialize</a> ()</td></tr>
+<tr class="memitem:a05f1a294891bebad467812f106adaa7a" id="r_a05f1a294891bebad467812f106adaa7a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a05f1a294891bebad467812f106adaa7a">StartVr</a> ()</td></tr>
+<tr class="memitem:a562e7716af8cd799a6cc5d624ef5aed4" id="r_a562e7716af8cd799a6cc5d624ef5aed4"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a562e7716af8cd799a6cc5d624ef5aed4">StopVr</a> ()</td></tr>
+<tr class="memitem:aa389eeb7d3ad263add152cb222d465d0" id="r_aa389eeb7d3ad263add152cb222d465d0"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aa389eeb7d3ad263add152cb222d465d0">WaitGetPoses</a> ()</td></tr>
+<tr class="memitem:ab5879afd6c1674987fcedc5bd02217ed" id="r_ab5879afd6c1674987fcedc5bd02217ed"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab5879afd6c1674987fcedc5bd02217ed">SubmitEyeTexture</a> (<a class="el" href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">VrEye</a> eye, <a class="el" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a> texture)</td></tr>
+<tr class="memitem:a44ac572a227b17ea75331f72d1c5149a" id="r_a44ac572a227b17ea75331f72d1c5149a"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="#a44ac572a227b17ea75331f72d1c5149a">GetEyeToHeadTransform</a> (<a class="el" href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">VrEye</a> eye)</td></tr>
+<tr class="memitem:aa9105e240823036bbf4c00736ebbd3e7" id="r_aa9105e240823036bbf4c00736ebbd3e7"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa9105e240823036bbf4c00736ebbd3e7">GetProjectionMatrix</a> (<a class="el" href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">VrEye</a> eye, float near, float far)</td></tr>
+<tr class="memitem:ae0e48504037fa575e09bdd70737d06e1" id="r_ae0e48504037fa575e09bdd70737d06e1"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ae0e48504037fa575e09bdd70737d06e1">IsControllerPresent</a> (<a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller)</td></tr>
+<tr class="memitem:a1d9f3a6634e8a590c6a3c2e651ea4e14" id="r_a1d9f3a6634e8a590c6a3c2e651ea4e14"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1d9f3a6634e8a590c6a3c2e651ea4e14">GetControllerMatrix</a> (<a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller)</td></tr>
+<tr class="memitem:acafaaed0fe1c611f7eb81387823abce3" id="r_acafaaed0fe1c611f7eb81387823abce3"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#acafaaed0fe1c611f7eb81387823abce3">GetStickPosition</a> (<a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, float deadZone=0f)</td></tr>
+<tr class="memitem:a5a2d749bc171ff88663308d0d45fe75c" id="r_a5a2d749bc171ff88663308d0d45fe75c"><td class="memItemLeft">static ? <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5a2d749bc171ff88663308d0d45fe75c">GetTouchpadPosition</a> (<a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, float deadZone=0f)</td></tr>
+<tr class="memitem:a1686b8eb5fe3ba6b340825947f2c3773" id="r_a1686b8eb5fe3ba6b340825947f2c3773"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a1686b8eb5fe3ba6b340825947f2c3773">GetTriggerPosition</a> (<a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, float deadZone=0f)</td></tr>
+<tr class="memitem:a3c08ff2141eed60441f9ac325f0f478b" id="r_a3c08ff2141eed60441f9ac325f0f478b"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a3c08ff2141eed60441f9ac325f0f478b">IsButtonDown</a> (<a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, <a class="el" href="namespace_game.html#a84d1cb766ffec53f0e7b83348e1185e1">VrControllerButton</a> button)</td></tr>
+<tr class="memitem:a8477e22f45832f5740d06864a7801b46" id="r_a8477e22f45832f5740d06864a7801b46"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a8477e22f45832f5740d06864a7801b46">IsButtonDownOnce</a> (<a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, <a class="el" href="namespace_game.html#a84d1cb766ffec53f0e7b83348e1185e1">VrControllerButton</a> button)</td></tr>
+<tr class="memitem:a80cbbfb4d4caf6191701134bde215906" id="r_a80cbbfb4d4caf6191701134bde215906"><td class="memItemLeft">static ? <a class="el" href="struct_game_1_1_touch_input.html">TouchInput</a>&#160;</td><td class="memItemRight"><a class="el" href="#a80cbbfb4d4caf6191701134bde215906">GetTouchInput</a> (<a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a8cf726fe2c7ae3772b5025c40b1e148a" id="r_a8cf726fe2c7ae3772b5025c40b1e148a"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a8cf726fe2c7ae3772b5025c40b1e148a">IsVrAvailable</a><code> [get]</code></td></tr>
+<tr class="memitem:a826e513d31daf5b112f4555f951ca434" id="r_a826e513d31daf5b112f4555f951ca434"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a826e513d31daf5b112f4555f951ca434">IsVrStarted</a><code> [get]</code></td></tr>
+<tr class="memitem:a8a8d63b840b36da6643d54f8425b9205" id="r_a8a8d63b840b36da6643d54f8425b9205"><td class="memItemLeft">static <a class="el" href="class_engine_1_1_graphics_1_1_render_target2_d.html">RenderTarget2D</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8a8d63b840b36da6643d54f8425b9205">VrRenderTarget</a><code> [get]</code></td></tr>
+<tr class="memitem:ac5c868ed42da25c65aeee5d165b4ee74" id="r_ac5c868ed42da25c65aeee5d165b4ee74"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac5c868ed42da25c65aeee5d165b4ee74">HmdMatrix</a><code> [get]</code></td></tr>
+<tr class="memitem:a040927bf3499595794114c2c209cdf66" id="r_a040927bf3499595794114c2c209cdf66"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="#a040927bf3499595794114c2c209cdf66">HmdMatrixInverted</a><code> [get]</code></td></tr>
+<tr class="memitem:a345f4c7ec41d119377e2e268c4f90586" id="r_a345f4c7ec41d119377e2e268c4f90586"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a345f4c7ec41d119377e2e268c4f90586">HmdMatrixYpr</a><code> [get]</code></td></tr>
+<tr class="memitem:afa764efc90319d050f6ae0483c558ec0" id="r_afa764efc90319d050f6ae0483c558ec0"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="#afa764efc90319d050f6ae0483c558ec0">HmdLastMatrix</a><code> [get]</code></td></tr>
+<tr class="memitem:add2b24488947cf27f196b5dae8392df5" id="r_add2b24488947cf27f196b5dae8392df5"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="#add2b24488947cf27f196b5dae8392df5">HmdLastMatrixInverted</a><code> [get]</code></td></tr>
+<tr class="memitem:ac52335fc771aef8ad8224c8823edc088" id="r_ac52335fc771aef8ad8224c8823edc088"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac52335fc771aef8ad8224c8823edc088">HmdLastMatrixYpr</a><code> [get]</code></td></tr>
+<tr class="memitem:ac1b5a89a607eb0ec6ae1a2e51a941024" id="r_ac1b5a89a607eb0ec6ae1a2e51a941024"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac1b5a89a607eb0ec6ae1a2e51a941024">HeadMove</a><code> [get]</code></td></tr>
+<tr class="memitem:a13f6045e54ea6b2593e9406cb29717eb" id="r_a13f6045e54ea6b2593e9406cb29717eb"><td class="memItemLeft">static <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a13f6045e54ea6b2593e9406cb29717eb">WalkingVelocity</a><code> [get]</code></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00005">5</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a1d9f3a6634e8a590c6a3c2e651ea4e14" name="a1d9f3a6634e8a590c6a3c2e651ea4e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d9f3a6634e8a590c6a3c2e651ea4e14">&#9670;&#160;</a></span>GetControllerMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a> Game.VrManager.GetControllerMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a></td>          <td class="paramname"><span class="paramname"><em>controller</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00044">44</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_vr_manager_a1d9f3a6634e8a590c6a3c2e651ea4e14_icgraph.png" border="0" usemap="#aclass_game_1_1_vr_manager_a1d9f3a6634e8a590c6a3c2e651ea4e14_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_vr_manager_a1d9f3a6634e8a590c6a3c2e651ea4e14_icgraph" id="aclass_game_1_1_vr_manager_a1d9f3a6634e8a590c6a3c2e651ea4e14_icgraph">
+<area shape="rect" title=" " alt="" coords="301,5,504,48"/>
+<area shape="rect" href="class_game_1_1_component_vr_hands_model.html#a5c988ed4d83838233a6fe534d02de55e" title=" " alt="" coords="5,13,253,40"/>
+<area shape="poly" title=" " alt="" coords="282,27,253,29,253,24,288,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a44ac572a227b17ea75331f72d1c5149a" name="a44ac572a227b17ea75331f72d1c5149a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ac572a227b17ea75331f72d1c5149a">&#9670;&#160;</a></span>GetEyeToHeadTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a> Game.VrManager.GetEyeToHeadTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">VrEye</a></td>          <td class="paramname"><span class="paramname"><em>eye</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa9105e240823036bbf4c00736ebbd3e7" name="aa9105e240823036bbf4c00736ebbd3e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9105e240823036bbf4c00736ebbd3e7">&#9670;&#160;</a></span>GetProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a> Game.VrManager.GetProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">VrEye</a></td>          <td class="paramname"><span class="paramname"><em>eye</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>near</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>far</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00040">40</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_vr_manager_aa9105e240823036bbf4c00736ebbd3e7_icgraph.png" border="0" usemap="#aclass_game_1_1_vr_manager_aa9105e240823036bbf4c00736ebbd3e7_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_vr_manager_aa9105e240823036bbf4c00736ebbd3e7_icgraph" id="aclass_game_1_1_vr_manager_aa9105e240823036bbf4c00736ebbd3e7_icgraph">
+<area shape="rect" title=" " alt="" coords="263,5,468,48"/>
+<area shape="rect" href="class_game_1_1_base_perspective_camera.html#ac1520dceaaf34c0777fd91fe79d7e3c9" title="计算基础投影矩阵，创建透视视野" alt="" coords="5,5,215,48"/>
+<area shape="poly" title=" " alt="" coords="245,27,215,29,215,24,250,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acafaaed0fe1c611f7eb81387823abce3" name="acafaaed0fe1c611f7eb81387823abce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acafaaed0fe1c611f7eb81387823abce3">&#9670;&#160;</a></span>GetStickPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> Game.VrManager.GetStickPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a></td>          <td class="paramname"><span class="paramname"><em>controller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deadZone</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00046">46</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_vr_manager_acafaaed0fe1c611f7eb81387823abce3_icgraph.png" border="0" usemap="#aclass_game_1_1_vr_manager_acafaaed0fe1c611f7eb81387823abce3_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_vr_manager_acafaaed0fe1c611f7eb81387823abce3_icgraph" id="aclass_game_1_1_vr_manager_acafaaed0fe1c611f7eb81387823abce3_icgraph">
+<area shape="rect" title=" " alt="" coords="751,13,976,40"/>
+<area shape="rect" href="class_game_1_1_widget_input.html#a6a6b9710684afac418e1194536daaef8" title=" " alt="" coords="506,5,703,48"/>
+<area shape="poly" title=" " alt="" coords="733,27,704,29,704,24,738,27"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5e16914e5c91cb8e52be12d94d3d42f3" title=" " alt="" coords="256,5,458,48"/>
+<area shape="poly" title=" " alt="" coords="488,27,458,29,458,24,493,27"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5b15d9665d99632907adf4910b53f058" title=" " alt="" coords="5,13,208,40"/>
+<area shape="poly" title=" " alt="" coords="237,27,208,29,208,24,243,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80cbbfb4d4caf6191701134bde215906" name="a80cbbfb4d4caf6191701134bde215906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80cbbfb4d4caf6191701134bde215906">&#9670;&#160;</a></span>GetTouchInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? <a class="el" href="struct_game_1_1_touch_input.html">TouchInput</a> Game.VrManager.GetTouchInput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a></td>          <td class="paramname"><span class="paramname"><em>controller</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00056">56</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_vr_manager_a80cbbfb4d4caf6191701134bde215906_icgraph.png" border="0" usemap="#aclass_game_1_1_vr_manager_a80cbbfb4d4caf6191701134bde215906_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_vr_manager_a80cbbfb4d4caf6191701134bde215906_icgraph" id="aclass_game_1_1_vr_manager_a80cbbfb4d4caf6191701134bde215906_icgraph">
+<area shape="rect" title=" " alt="" coords="506,13,717,40"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5e16914e5c91cb8e52be12d94d3d42f3" title=" " alt="" coords="256,5,458,48"/>
+<area shape="poly" title=" " alt="" coords="488,27,459,29,458,24,493,27"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5b15d9665d99632907adf4910b53f058" title=" " alt="" coords="5,13,208,40"/>
+<area shape="poly" title=" " alt="" coords="237,27,208,29,208,24,243,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5a2d749bc171ff88663308d0d45fe75c" name="a5a2d749bc171ff88663308d0d45fe75c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2d749bc171ff88663308d0d45fe75c">&#9670;&#160;</a></span>GetTouchpadPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> Game.VrManager.GetTouchpadPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a></td>          <td class="paramname"><span class="paramname"><em>controller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deadZone</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00048">48</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_vr_manager_a5a2d749bc171ff88663308d0d45fe75c_icgraph.png" border="0" usemap="#aclass_game_1_1_vr_manager_a5a2d749bc171ff88663308d0d45fe75c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_vr_manager_a5a2d749bc171ff88663308d0d45fe75c_icgraph" id="aclass_game_1_1_vr_manager_a5a2d749bc171ff88663308d0d45fe75c_icgraph">
+<area shape="rect" title=" " alt="" coords="277,5,480,48"/>
+<area shape="rect" href="class_game_1_1_widget_input.html#aac66ecb2c701d7ef1ebf0d65df999091" title=" " alt="" coords="5,5,229,48"/>
+<area shape="poly" title=" " alt="" coords="259,27,229,29,229,24,264,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1686b8eb5fe3ba6b340825947f2c3773" name="a1686b8eb5fe3ba6b340825947f2c3773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1686b8eb5fe3ba6b340825947f2c3773">&#9670;&#160;</a></span>GetTriggerPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.VrManager.GetTriggerPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a></td>          <td class="paramname"><span class="paramname"><em>controller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deadZone</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00050">50</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_vr_manager_a1686b8eb5fe3ba6b340825947f2c3773_icgraph.png" border="0" usemap="#aclass_game_1_1_vr_manager_a1686b8eb5fe3ba6b340825947f2c3773_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_vr_manager_a1686b8eb5fe3ba6b340825947f2c3773_icgraph" id="aclass_game_1_1_vr_manager_a1686b8eb5fe3ba6b340825947f2c3773_icgraph">
+<area shape="rect" title=" " alt="" coords="261,5,448,48"/>
+<area shape="rect" href="class_game_1_1_widget_input.html#a6b70dac3a925ea2b03bd855a009c2e9f" title=" " alt="" coords="5,5,213,48"/>
+<area shape="poly" title=" " alt="" coords="242,27,213,29,213,24,248,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed3149170c8d5dc5c600e185c929b78f" name="aed3149170c8d5dc5c600e185c929b78f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed3149170c8d5dc5c600e185c929b78f">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.VrManager.Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3c08ff2141eed60441f9ac325f0f478b" name="a3c08ff2141eed60441f9ac325f0f478b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c08ff2141eed60441f9ac325f0f478b">&#9670;&#160;</a></span>IsButtonDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.VrManager.IsButtonDown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a></td>          <td class="paramname"><span class="paramname"><em>controller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a84d1cb766ffec53f0e7b83348e1185e1">VrControllerButton</a></td>          <td class="paramname"><span class="paramname"><em>button</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00052">52</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_vr_manager_a3c08ff2141eed60441f9ac325f0f478b_icgraph.png" border="0" usemap="#aclass_game_1_1_vr_manager_a3c08ff2141eed60441f9ac325f0f478b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_vr_manager_a3c08ff2141eed60441f9ac325f0f478b_icgraph" id="aclass_game_1_1_vr_manager_a3c08ff2141eed60441f9ac325f0f478b_icgraph">
+<area shape="rect" title=" " alt="" coords="533,35,742,61"/>
+<area shape="rect" href="class_game_1_1_widget_input.html#af5047f876c3e566ea5eec2b7495f614a" title=" " alt="" coords="256,5,485,32"/>
+<area shape="poly" title=" " alt="" coords="515,35,485,34,485,29,520,35"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5e16914e5c91cb8e52be12d94d3d42f3" title=" " alt="" coords="269,56,472,99"/>
+<area shape="poly" title=" " alt="" coords="520,61,472,69,471,64,515,61"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5b15d9665d99632907adf4910b53f058" title=" " alt="" coords="5,64,208,91"/>
+<area shape="poly" title=" " alt="" coords="251,78,208,80,208,75,256,77"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8477e22f45832f5740d06864a7801b46" name="a8477e22f45832f5740d06864a7801b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8477e22f45832f5740d06864a7801b46">&#9670;&#160;</a></span>IsButtonDownOnce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.VrManager.IsButtonDownOnce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a></td>          <td class="paramname"><span class="paramname"><em>controller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a84d1cb766ffec53f0e7b83348e1185e1">VrControllerButton</a></td>          <td class="paramname"><span class="paramname"><em>button</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00054">54</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_vr_manager_a8477e22f45832f5740d06864a7801b46_icgraph.png" border="0" usemap="#aclass_game_1_1_vr_manager_a8477e22f45832f5740d06864a7801b46_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_vr_manager_a8477e22f45832f5740d06864a7801b46_icgraph" id="aclass_game_1_1_vr_manager_a8477e22f45832f5740d06864a7801b46_icgraph">
+<area shape="rect" title=" " alt="" coords="749,43,990,69"/>
+<area shape="rect" href="class_game_1_1_widget_input.html#a69c04f993762c189327e653fd1592afc" title=" " alt="" coords="506,5,701,48"/>
+<area shape="poly" title=" " alt="" coords="731,41,702,40,702,35,736,41"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5e16914e5c91cb8e52be12d94d3d42f3" title=" " alt="" coords="256,35,458,77"/>
+<area shape="poly" title=" " alt="" coords="731,60,701,63,506,63,458,62,458,56,506,57,701,57,736,59"/>
+<area shape="poly" title=" " alt="" coords="493,40,459,47,458,41,488,40"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5b15d9665d99632907adf4910b53f058" title=" " alt="" coords="5,43,208,69"/>
+<area shape="poly" title=" " alt="" coords="237,56,208,59,208,53,243,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0e48504037fa575e09bdd70737d06e1" name="ae0e48504037fa575e09bdd70737d06e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e48504037fa575e09bdd70737d06e1">&#9670;&#160;</a></span>IsControllerPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.VrManager.IsControllerPresent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a></td>          <td class="paramname"><span class="paramname"><em>controller</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00042">42</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_vr_manager_ae0e48504037fa575e09bdd70737d06e1_icgraph.png" border="0" usemap="#aclass_game_1_1_vr_manager_ae0e48504037fa575e09bdd70737d06e1_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_vr_manager_ae0e48504037fa575e09bdd70737d06e1_icgraph" id="aclass_game_1_1_vr_manager_ae0e48504037fa575e09bdd70737d06e1_icgraph">
+<area shape="rect" title=" " alt="" coords="551,27,744,69"/>
+<area shape="rect" href="class_game_1_1_component_vr_hands_model.html#a5c988ed4d83838233a6fe534d02de55e" title=" " alt="" coords="256,5,503,32"/>
+<area shape="poly" title=" " alt="" coords="533,36,503,35,503,30,538,36"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5e16914e5c91cb8e52be12d94d3d42f3" title=" " alt="" coords="278,56,480,99"/>
+<area shape="poly" title=" " alt="" coords="538,60,481,69,481,64,533,60"/>
+<area shape="rect" href="class_game_1_1_component_input.html#a5b15d9665d99632907adf4910b53f058" title=" " alt="" coords="5,64,208,91"/>
+<area shape="poly" title=" " alt="" coords="260,78,208,80,208,75,265,77"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a05f1a294891bebad467812f106adaa7a" name="a05f1a294891bebad467812f106adaa7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f1a294891bebad467812f106adaa7a">&#9670;&#160;</a></span>StartVr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.VrManager.StartVr </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a562e7716af8cd799a6cc5d624ef5aed4" name="a562e7716af8cd799a6cc5d624ef5aed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562e7716af8cd799a6cc5d624ef5aed4">&#9670;&#160;</a></span>StopVr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.VrManager.StopVr </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab5879afd6c1674987fcedc5bd02217ed" name="ab5879afd6c1674987fcedc5bd02217ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5879afd6c1674987fcedc5bd02217ed">&#9670;&#160;</a></span>SubmitEyeTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.VrManager.SubmitEyeTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">VrEye</a></td>          <td class="paramname"><span class="paramname"><em>eye</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a></td>          <td class="paramname"><span class="paramname"><em>texture</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa389eeb7d3ad263add152cb222d465d0" name="aa389eeb7d3ad263add152cb222d465d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa389eeb7d3ad263add152cb222d465d0">&#9670;&#160;</a></span>WaitGetPoses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.VrManager.WaitGetPoses </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="ac1b5a89a607eb0ec6ae1a2e51a941024" name="ac1b5a89a607eb0ec6ae1a2e51a941024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b5a89a607eb0ec6ae1a2e51a941024">&#9670;&#160;</a></span>HeadMove</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> Game.VrManager.HeadMove</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afa764efc90319d050f6ae0483c558ec0" name="afa764efc90319d050f6ae0483c558ec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa764efc90319d050f6ae0483c558ec0">&#9670;&#160;</a></span>HmdLastMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a> Game.VrManager.HmdLastMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="add2b24488947cf27f196b5dae8392df5" name="add2b24488947cf27f196b5dae8392df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add2b24488947cf27f196b5dae8392df5">&#9670;&#160;</a></span>HmdLastMatrixInverted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a> Game.VrManager.HmdLastMatrixInverted</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac52335fc771aef8ad8224c8823edc088" name="ac52335fc771aef8ad8224c8823edc088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52335fc771aef8ad8224c8823edc088">&#9670;&#160;</a></span>HmdLastMatrixYpr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Game.VrManager.HmdLastMatrixYpr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac5c868ed42da25c65aeee5d165b4ee74" name="ac5c868ed42da25c65aeee5d165b4ee74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c868ed42da25c65aeee5d165b4ee74">&#9670;&#160;</a></span>HmdMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a> Game.VrManager.HmdMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00012">12</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a040927bf3499595794114c2c209cdf66" name="a040927bf3499595794114c2c209cdf66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040927bf3499595794114c2c209cdf66">&#9670;&#160;</a></span>HmdMatrixInverted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a> Game.VrManager.HmdMatrixInverted</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a345f4c7ec41d119377e2e268c4f90586" name="a345f4c7ec41d119377e2e268c4f90586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345f4c7ec41d119377e2e268c4f90586">&#9670;&#160;</a></span>HmdMatrixYpr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Game.VrManager.HmdMatrixYpr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00016">16</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8cf726fe2c7ae3772b5025c40b1e148a" name="a8cf726fe2c7ae3772b5025c40b1e148a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf726fe2c7ae3772b5025c40b1e148a">&#9670;&#160;</a></span>IsVrAvailable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.VrManager.IsVrAvailable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00006">6</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a826e513d31daf5b112f4555f951ca434" name="a826e513d31daf5b112f4555f951ca434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a826e513d31daf5b112f4555f951ca434">&#9670;&#160;</a></span>IsVrStarted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.VrManager.IsVrStarted</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00008">8</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8a8d63b840b36da6643d54f8425b9205" name="a8a8d63b840b36da6643d54f8425b9205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a8d63b840b36da6643d54f8425b9205">&#9670;&#160;</a></span>VrRenderTarget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_render_target2_d.html">RenderTarget2D</a> Game.VrManager.VrRenderTarget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a13f6045e54ea6b2593e9406cb29717eb" name="a13f6045e54ea6b2593e9406cb29717eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f6045e54ea6b2593e9406cb29717eb">&#9670;&#160;</a></span>WalkingVelocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> Game.VrManager.WalkingVelocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a> 第 <a class="el" href="_vr_manager_8cs_source.html#l00026">26</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Managers/<a class="el" href="_vr_manager_8cs_source.html">VrManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game.html">Game</a></li><li class="navelem"><a href="class_game_1_1_vr_manager.html">VrManager</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

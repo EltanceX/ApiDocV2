@@ -1,0 +1,25 @@
+var class_game_1_1_releases_screen =
+[
+    [ "ReleaseInfoComparer", "class_game_1_1_releases_screen_1_1_release_info_comparer.html", "class_game_1_1_releases_screen_1_1_release_info_comparer" ],
+    [ "ReleasesScreen", "class_game_1_1_releases_screen.html#a03408f83d26e02dda4856ecd5bdb3019", null ],
+    [ "DisplayReleaseInfo", "class_game_1_1_releases_screen.html#a9581cea4beca47badb7b7d87add06cac", null ],
+    [ "Enter", "class_game_1_1_releases_screen.html#a98b12eb2f6a857e248c55a410a2a40a9", null ],
+    [ "GetReleasesAsync", "class_game_1_1_releases_screen.html#a2305817eb99b1b8aed68311b7f0eb11b", null ],
+    [ "GetVersionSuffix", "class_game_1_1_releases_screen.html#a97565b3791fac249392b9098014b2006", null ],
+    [ "PopulateAssetsList", "class_game_1_1_releases_screen.html#ad554db73113372766874eec625e0d2bb", null ],
+    [ "PopulateReleasesList", "class_game_1_1_releases_screen.html#a077de12460358c8293d4ab278f092bb3", null ],
+    [ "Update", "class_game_1_1_releases_screen.html#a6c03b090154e243abec9c2f3ea2cd3e4", null ],
+    [ "fName", "class_game_1_1_releases_screen.html#ac9b53ac8aaaa7add2f4298eb2baeb084", null ],
+    [ "m_assetButtons", "class_game_1_1_releases_screen.html#a871837cc13da7da35162f9c84f3343bd", null ],
+    [ "m_busyDialog", "class_game_1_1_releases_screen.html#a74636bc9914d03a0cb6ebe5b237e7ab0", null ],
+    [ "m_infoLabel", "class_game_1_1_releases_screen.html#a8f034d8d95d2962b5ee906c6c4873512", null ],
+    [ "m_releaseInfoPanel", "class_game_1_1_releases_screen.html#aeea0df20aa2b751d834fe765c0ac71e3", null ],
+    [ "m_releasesListPanel", "class_game_1_1_releases_screen.html#a1c4ba72dd65c5159a83c6022e575109a", null ],
+    [ "m_releasesName", "class_game_1_1_releases_screen.html#af4ee3f4c95855cb7ddc8562ddc433677", null ],
+    [ "m_releasesURL", "class_game_1_1_releases_screen.html#a90a568d0dc23c341a730662fa408a2a3", null ],
+    [ "m_scrollPanel", "class_game_1_1_releases_screen.html#ab12a64ab6e9f4143d5b65eb8294a73dc", null ],
+    [ "m_textLabel", "class_game_1_1_releases_screen.html#aefc598a36a78bc3197cbafa39cf38935", null ],
+    [ "m_titleLabel", "class_game_1_1_releases_screen.html#aa1baf8aaf1432d8583f903f08ca60ce0", null ],
+    [ "m_versionComparer", "class_game_1_1_releases_screen.html#ab008def143d5bf577be461382ba82065", null ],
+    [ "Releases", "class_game_1_1_releases_screen.html#a0da675eec83e21a6bb06c8a015e2cc9f", null ]
+];

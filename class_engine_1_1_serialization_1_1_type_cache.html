@@ -1,0 +1,912 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Engine.Serialization.TypeCache</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_engine_1_1_serialization_1_1_type_cache.html','','class_engine_1_1_serialization_1_1_type_cache-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Engine.Serialization.TypeCache</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a00104a92dabe050763ffd470d1736aa6" id="r_a00104a92dabe050763ffd470d1736aa6"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a00104a92dabe050763ffd470d1736aa6">IsKnownSystemAssembly</a> (Assembly assembly)</td></tr>
+<tr class="memitem:a513797ad03c6705956ccdbd15367b91d" id="r_a513797ad03c6705956ccdbd15367b91d"><td class="memItemLeft">static Type&#160;</td><td class="memItemRight"><a class="el" href="#a513797ad03c6705956ccdbd15367b91d">FindType</a> (string typeName, bool skipSystemAssemblies, bool throwIfNotFound)</td></tr>
+<tr class="memitem:addffc53a1f4d2c98e20b43032e2e77e6" id="r_addffc53a1f4d2c98e20b43032e2e77e6"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#addffc53a1f4d2c98e20b43032e2e77e6">GetShortTypeName</a> (string longTypeName)</td></tr>
+<tr class="memitem:aa4f17e927f6f81bc9b82d967e67d380a" id="r_aa4f17e927f6f81bc9b82d967e67d380a"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#aa4f17e927f6f81bc9b82d967e67d380a">GetLongTypeName</a> (string shortTypeName)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a5c74e4ef24c69bb066ad7ade2bf0aa51" id="r_a5c74e4ef24c69bb066ad7ade2bf0aa51"><td class="memItemLeft">static Dictionary&lt; string, Type &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5c74e4ef24c69bb066ad7ade2bf0aa51">m_typesByName</a></td></tr>
+<tr class="memitem:a57bc95b768b2a42da3d12365e87f346f" id="r_a57bc95b768b2a42da3d12365e87f346f"><td class="memItemLeft">static Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a57bc95b768b2a42da3d12365e87f346f">m_shortToLong</a></td></tr>
+<tr class="memitem:a7854c87780f5bd5ea1a2f129e23fba6d" id="r_a7854c87780f5bd5ea1a2f129e23fba6d"><td class="memItemLeft">static Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7854c87780f5bd5ea1a2f129e23fba6d">m_longToShort</a></td></tr>
+<tr class="memitem:a1451203bff8b1dc7fa81cf6793d79e0e" id="r_a1451203bff8b1dc7fa81cf6793d79e0e"><td class="memItemLeft">static List&lt; Assembly &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1451203bff8b1dc7fa81cf6793d79e0e">m_loadedAssemblies</a></td></tr>
+<tr class="memitem:add88ab0b18dea180415c9b109a0381ff" id="r_add88ab0b18dea180415c9b109a0381ff"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#add88ab0b18dea180415c9b109a0381ff">m_rescanAssemblies</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ac3321ba18573314ed7e9af7e0fdb94eb" id="r_ac3321ba18573314ed7e9af7e0fdb94eb"><td class="memItemLeft">static ReadOnlyList&lt; Assembly &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac3321ba18573314ed7e9af7e0fdb94eb">LoadedAssemblies</a><code> [get]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静态 Private 成员函数</h2></td></tr>
+<tr class="memitem:a4c024ac70c05d823210fc74ab4cac68a" id="r_a4c024ac70c05d823210fc74ab4cac68a"><td class="memItemLeft">static&#160;</td><td class="memItemRight"><a class="el" href="#a4c024ac70c05d823210fc74ab4cac68a">TypeCache</a> ()</td></tr>
+<tr class="memitem:a43af2b8c73f98d81276af84c521aa33e" id="r_a43af2b8c73f98d81276af84c521aa33e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a43af2b8c73f98d81276af84c521aa33e">AddShortTypeName</a> (string shortTypeName, string longTypeName)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00004">4</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="a4c024ac70c05d823210fc74ab4cac68a" name="a4c024ac70c05d823210fc74ab4cac68a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c024ac70c05d823210fc74ab4cac68a">&#9670;&#160;</a></span>TypeCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Engine.Serialization.TypeCache.TypeCache </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00027">27</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_type_cache_a4c024ac70c05d823210fc74ab4cac68a_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_type_cache_a4c024ac70c05d823210fc74ab4cac68a_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_type_cache_a4c024ac70c05d823210fc74ab4cac68a_cgraph" id="aclass_engine_1_1_serialization_1_1_type_cache_a4c024ac70c05d823210fc74ab4cac68a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,174,48"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a43af2b8c73f98d81276af84c521aa33e" title=" " alt="" coords="222,5,402,48"/>
+<area shape="poly" title=" " alt="" coords="174,24,209,26,203,27,174,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a43af2b8c73f98d81276af84c521aa33e" name="a43af2b8c73f98d81276af84c521aa33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43af2b8c73f98d81276af84c521aa33e">&#9670;&#160;</a></span>AddShortTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Serialization.TypeCache.AddShortTypeName </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>shortTypeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>longTypeName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00119">119</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_type_cache_a43af2b8c73f98d81276af84c521aa33e_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_type_cache_a43af2b8c73f98d81276af84c521aa33e_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_type_cache_a43af2b8c73f98d81276af84c521aa33e_icgraph" id="aclass_engine_1_1_serialization_1_1_type_cache_a43af2b8c73f98d81276af84c521aa33e_icgraph">
+<area shape="rect" title=" " alt="" coords="222,5,402,48"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a4c024ac70c05d823210fc74ab4cac68a" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="203,27,174,29,174,24,209,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a513797ad03c6705956ccdbd15367b91d" name="a513797ad03c6705956ccdbd15367b91d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513797ad03c6705956ccdbd15367b91d">&#9670;&#160;</a></span>FindType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Type Engine.Serialization.TypeCache.FindType </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>skipSystemAssemblies</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>throwIfNotFound</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00087">87</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_type_cache_a513797ad03c6705956ccdbd15367b91d_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_type_cache_a513797ad03c6705956ccdbd15367b91d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_type_cache_a513797ad03c6705956ccdbd15367b91d_cgraph" id="aclass_engine_1_1_serialization_1_1_type_cache_a513797ad03c6705956ccdbd15367b91d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,174,81"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#aa4f17e927f6f81bc9b82d967e67d380a" title=" " alt="" coords="243,5,418,48"/>
+<area shape="poly" title=" " alt="" coords="174,46,230,40,225,42,175,51"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a00104a92dabe050763ffd470d1736aa6" title=" " alt="" coords="222,72,439,115"/>
+<area shape="poly" title=" " alt="" coords="174,69,209,76,203,76,174,74"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_type_cache_a513797ad03c6705956ccdbd15367b91d_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_type_cache_a513797ad03c6705956ccdbd15367b91d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_type_cache_a513797ad03c6705956ccdbd15367b91d_icgraph" id="aclass_engine_1_1_serialization_1_1_type_cache_a513797ad03c6705956ccdbd15367b91d_icgraph">
+<area shape="rect" title=" " alt="" coords="1484,820,1652,863"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html#a4315bf77306e186af36c6edf5243f014" title=" " alt="" coords="1221,207,1402,249"/>
+<area shape="poly" title=" " alt="" coords="1561,803,1547,683,1521,520,1504,438,1484,364,1460,304,1434,263,1419,251,1402,242,1402,237,1422,246,1438,260,1465,302,1489,363,1509,437,1527,519,1552,682,1566,806"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#a817d04ce077e06d18a32c3968c3bd203" title=" " alt="" coords="1223,273,1400,316"/>
+<area shape="poly" title=" " alt="" coords="1548,805,1321,319,1324,314,1553,806"/>
+<area shape="rect" href="class_game_1_1_widget.html#aafecd4ee18154b93a141c147e5ed63a1" title=" " alt="" coords="1217,593,1406,636"/>
+<area shape="poly" title=" " alt="" coords="1548,805,1529,771,1504,731,1472,691,1434,657,1404,639,1404,634,1438,653,1476,687,1508,728,1534,769,1553,807"/>
+<area shape="rect" href="class_game_1_1_database_manager.html#a80a8262fc0a18d7ed77b17b43ea72cae" title=" " alt="" coords="601,1011,806,1053"/>
+<area shape="poly" title=" " alt="" coords="1545,806,1525,780,1500,750,1470,722,1435,701,1397,692,1330,685,1149,678,969,682,904,690,868,701,852,715,842,730,835,762,833,798,829,819,821,841,769,938,722,1012,718,1008,764,935,816,839,824,818,827,798,830,761,838,728,848,712,865,696,903,684,969,677,1149,673,1330,680,1397,687,1437,696,1473,718,1504,746,1530,777,1550,808"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#a38532526018fadfaffa6650d0fa360f0" title=" " alt="" coords="1189,711,1434,753"/>
+<area shape="poly" title=" " alt="" coords="1519,811,1480,790,1435,768,1405,757,1404,751,1437,763,1482,785,1525,811"/>
+<area shape="rect" href="class_game_1_1_component_model.html#acdc1bdafa5f2a70854abbdeaa95bcd97" title=" " alt="" coords="1214,777,1408,804"/>
+<area shape="poly" title=" " alt="" coords="1466,822,1383,807,1383,802,1471,821"/>
+<area shape="rect" href="class_game_1_1_subsystem_pickables.html#ae946f919d58954c51e64d081d4abcc36" title=" " alt="" coords="1204,828,1419,855"/>
+<area shape="poly" title=" " alt="" coords="1466,842,1420,844,1419,839,1471,841"/>
+<area shape="rect" href="class_game_1_1_subsystem_projectiles.html#ad16fbfeae0a403ec1006032ce59be329" title=" " alt="" coords="1202,879,1421,905"/>
+<area shape="poly" title=" " alt="" coords="1466,862,1384,881,1382,875,1471,860"/>
+<area shape="rect" href="class_game_1_1_clothing_block.html#a528846e9f17e5d45ef49866d94db1cc3" title=" " alt="" coords="1187,953,1436,980"/>
+<area shape="poly" title=" " alt="" coords="1522,870,1437,920,1353,955,1351,950,1435,915,1517,872"/>
+<area shape="rect" href="class_game_1_1_survival_craft_mod_loader.html#a680028eb9c1aff7784da28d3aced6a04" title="改变相机模式时执行" alt="" coords="1209,1004,1414,1047"/>
+<area shape="poly" title=" " alt="" coords="1548,874,1502,937,1472,968,1437,994,1415,1006,1413,1001,1435,990,1468,964,1498,934,1544,877"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#aacbfab89e5913601f50dd3128f975b6b" title=" " alt="" coords="1219,1071,1404,1113"/>
+<area shape="poly" title=" " alt="" coords="1557,876,1540,921,1514,970,1480,1019,1438,1061,1405,1078,1403,1073,1434,1057,1476,1016,1510,968,1535,919,1553,880"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#abb2ac2a33fe505efcff866b152c02204" title=" " alt="" coords="1217,1137,1406,1180"/>
+<area shape="poly" title=" " alt="" coords="1562,876,1549,934,1525,1001,1489,1069,1465,1100,1438,1127,1408,1145,1406,1140,1434,1123,1461,1097,1484,1066,1520,999,1544,932,1558,880"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_xml_input_archive.html#a5c0b5164b024b94765de0dc675bcd5c1" title=" " alt="" coords="1217,1204,1406,1247"/>
+<area shape="poly" title=" " alt="" coords="1566,876,1556,946,1535,1031,1518,1075,1497,1119,1470,1159,1438,1194,1408,1213,1406,1208,1434,1190,1466,1155,1492,1116,1513,1073,1529,1029,1551,945,1562,880"/>
+<area shape="rect" href="class_game_1_1_component_inventory_base.html#a5bd07bd577a7264a3e633486666bac77" title=" " alt="" coords="895,72,1110,115"/>
+<area shape="poly" title=" " alt="" coords="1206,275,1185,263,1166,241,1159,218,1152,196,1137,172,1098,141,1058,118,1057,113,1101,137,1141,169,1157,194,1164,217,1171,238,1188,259,1212,275"/>
+<area shape="rect" href="struct_game_entity_system_1_1_entity_1_1_filtered_components_enumerable-1-g.html#a68bc213273beaea863bd66afbfce7cbc" title=" " alt="" coords="886,183,1119,241"/>
+<area shape="poly" title=" " alt="" coords="1212,270,1115,245,1114,239,1217,268"/>
+<area shape="rect" href="struct_game_entity_system_1_1_entity_1_1_filtered_components_enumerator-1-g.html#ac8086d07e90846fe27f17f1cd709219c" title=" " alt="" coords="887,265,1118,324"/>
+<area shape="poly" title=" " alt="" coords="1205,296,1120,297,1118,292,1210,294"/>
+<area shape="rect" href="class_game_1_1_component_crafting_table.html#a89f58a1835f01f081e5423e86c1bdccb" title=" " alt="" coords="600,72,808,115"/>
+<area shape="poly" title=" " alt="" coords="877,95,810,96,807,91,881,92"/>
+<area shape="rect" href="class_game_1_1_component_inventory_base.html#a413f02fd7b0d9934b483ff90243e976a" title=" " alt="" coords="596,5,811,48"/>
+<area shape="poly" title=" " alt="" coords="887,69,803,51,802,46,891,67"/>
+<area shape="rect" href="class_game_1_1_widget.html#ac9ac4c563e314040c2cd3851720e7ff8" title=" " alt="" coords="906,348,1099,375"/>
+<area shape="poly" title=" " alt="" coords="1270,584,1020,378,1021,373,1275,583"/>
+<area shape="rect" href="class_game_1_1_widget.html#a17c4236221d46002b6cf74bd503b5220" title=" " alt="" coords="616,801,791,828"/>
+<area shape="poly" title=" " alt="" coords="1199,605,1125,606,1039,612,951,628,908,641,868,657,817,689,773,730,739,771,716,803,712,799,735,767,769,726,813,685,865,652,906,636,950,623,1038,607,1125,601,1204,604"/>
+<area shape="rect" href="class_game_1_1_bevelled_button_widget.html#a198cd8c857be362afaed44284b31aed4" title=" " alt="" coords="20,253,214,296"/>
+<area shape="poly" title=" " alt="" coords="900,345,866,339,842,330,818,323,653,298,487,283,336,277,215,275,212,271,336,272,487,278,653,292,819,317,843,325,867,333,905,343"/>
+<area shape="rect" href="class_game_1_1_bitmap_button_widget.html#a0f19c598f71c5aa5f6ef8e6cb8bd5347" title=" " alt="" coords="25,320,209,363"/>
+<area shape="poly" title=" " alt="" coords="889,353,726,342,541,332,409,329,277,332,211,335,208,331,277,327,409,323,541,327,726,336,893,350"/>
+<area shape="rect" href="class_game_1_1_checkbox_widget.html#acbc4bb7ead5311d2f4b3004f420e352a" title=" " alt="" coords="5,387,229,429"/>
+<area shape="poly" title=" " alt="" coords="890,369,230,405,228,400,892,365"/>
+<area shape="rect" href="class_game_1_1_link_widget.html#a80bbdc23f5c3939475d7f5282eef67aa" title=" " alt="" coords="20,136,214,163"/>
+<area shape="poly" title=" " alt="" coords="889,351,865,338,852,326,845,312,840,285,835,259,828,247,817,235,781,211,743,190,661,157,575,136,489,125,404,122,324,124,196,137,192,133,324,119,404,117,489,120,576,131,663,152,745,185,784,206,820,231,832,244,840,257,845,284,850,310,857,322,868,334,894,350"/>
+<area shape="rect" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c" title=" " alt="" coords="610,501,797,528"/>
+<area shape="poly" title=" " alt="" coords="959,384,734,503,730,499,963,380"/>
+<area shape="rect" href="class_game_1_1_slider_widget.html#a909dcec56dabb2f7c5eb879d4616066c" title=" " alt="" coords="31,187,203,229"/>
+<area shape="poly" title=" " alt="" coords="889,347,865,338,849,326,840,312,832,300,817,289,738,256,655,232,570,216,486,205,404,200,328,198,205,202,202,198,328,193,405,194,486,200,571,210,656,227,740,251,820,284,836,296,845,309,853,322,868,334,894,346"/>
+<area shape="rect" href="class_game_1_1_bestiary_screen.html#a824b99711292c997256d165db5c5d36a" title=" " alt="" coords="308,1011,510,1053"/>
+<area shape="poly" title=" " alt="" coords="690,540,644,651,592,790,584,822,581,851,582,903,580,927,575,951,563,975,543,1001,512,1021,509,1017,539,997,559,972,570,949,575,926,576,902,576,851,579,821,586,789,639,649,688,545"/>
+<area shape="rect" href="class_game_1_1_external_content_screen.html#ac90c7f96d937adc017ad38dc5de1d55f" title=" " alt="" coords="309,693,508,736"/>
+<area shape="poly" title=" " alt="" coords="683,543,628,613,588,651,542,684,511,698,507,694,540,679,584,647,624,609,686,538"/>
+<area shape="rect" href="class_game_1_1_help_screen.html#a31ef7fb9a02640494a88c345b39c74b9" title=" " alt="" coords="309,443,509,469"/>
+<area shape="poly" title=" " alt="" coords="619,499,540,484,484,472,482,468,542,479,623,496"/>
+<area shape="rect" href="class_game_1_1_widget.html#aee6067d3061705fa89815fcdd3cc5032" title=" " alt="" coords="318,341,500,368"/>
+<area shape="poly" title=" " alt="" coords="650,495,530,432,428,371,427,366,532,427,655,493"/>
+<area shape="rect" href="class_manage_content_screen.html#af9dae7377eac4728630ad906bb3fb566" title=" " alt="" coords="307,560,511,603"/>
+<area shape="poly" title=" " alt="" coords="624,534,508,562,505,557,628,530"/>
+<area shape="rect" href="class_game_1_1_original_community_content_screen.html#a7aaa6d0d541865692ece11b97342c27b" title=" " alt="" coords="277,627,541,669"/>
+<area shape="poly" title=" " alt="" coords="670,539,614,579,542,617,511,628,508,624,540,612,612,575,674,536"/>
+<area shape="rect" href="class_game_1_1_recipaedia_screen.html#aed7148cff6b70dfde15d8e2d42297f20" title=" " alt="" coords="291,493,526,536"/>
+<area shape="poly" title=" " alt="" coords="593,516,528,517,525,512,597,513"/>
+<area shape="poly" title=" " alt="" coords="340,338,199,299,196,294,345,335"/>
+<area shape="poly" title=" " alt="" coords="300,352,211,348,208,343,304,348"/>
+<area shape="poly" title=" " alt="" coords="315,373,231,390,227,386,319,369"/>
+<area shape="poly" title=" " alt="" coords="387,329,360,295,323,253,278,212,227,177,203,166,201,161,230,172,281,208,327,250,364,292,392,328"/>
+<area shape="poly" title=" " alt="" coords="460,373,583,437,688,500,683,502,581,442,461,378"/>
+<area shape="poly" title=" " alt="" coords="375,333,310,289,228,244,201,232,199,228,230,239,313,285,380,331"/>
+<area shape="poly" title=" " alt="" coords="689,839,665,878,631,921,590,964,542,1001,511,1016,509,1011,540,996,586,961,627,918,661,875,685,843"/>
+<area shape="poly" title=" " alt="" coords="656,796,540,751,504,739,502,734,542,745,661,794"/>
+<area shape="poly" title=" " alt="" coords="690,786,663,715,624,623,581,537,559,505,539,483,510,467,509,462,543,479,564,501,585,535,629,621,668,713,695,787"/>
+<area shape="poly" title=" " alt="" coords="688,787,602,580,539,432,518,413,494,396,448,371,446,366,497,391,521,408,543,429,607,578,694,787"/>
+<area shape="poly" title=" " alt="" coords="686,788,663,750,630,704,588,656,540,617,512,603,511,597,542,612,592,653,634,700,667,748,691,788"/>
+<area shape="poly" title=" " alt="" coords="677,790,619,737,581,708,540,684,515,673,514,667,542,679,584,704,622,733,682,790"/>
+<area shape="poly" title=" " alt="" coords="691,786,671,736,640,672,596,606,569,576,539,550,523,539,522,534,543,546,573,572,600,602,644,669,676,734,696,787"/>
+<area shape="rect" href="class_game_1_1_gamepad_mapping_screen.html#a6ac1457d46dbc599716d1f2476df74ac" title=" " alt="" coords="304,760,514,803"/>
+<area shape="poly" title=" " alt="" coords="598,804,515,796,514,791,603,802"/>
+<area shape="rect" href="class_game_1_1_camera_manage_screen.html#aecb7b7bf207808bfbb6f3fc5d5ae107f" title=" " alt="" coords="310,827,508,869"/>
+<area shape="poly" title=" " alt="" coords="599,828,509,839,507,834,603,825"/>
+<area shape="rect" href="class_game_1_1_keyboard_mapping_screen.html#ac068cac0d78b1bf319586a6c6ae7af2e" title=" " alt="" coords="304,893,514,936"/>
+<area shape="poly" title=" " alt="" coords="657,836,542,884,505,895,502,890,540,879,661,833"/>
+<area shape="rect" href="class_game_1_1_motd_widget.html#a2e26528dc24ecf6534011b4d038e5d42" title=" " alt="" coords="313,960,505,987"/>
+<area shape="poly" title=" " alt="" coords="682,838,623,897,584,926,542,950,507,963,504,958,540,946,581,922,619,893,678,841"/>
+<area shape="rect" href="class_game_1_1_select_external_content_type_dialog.html#a2b7c5445f4f1f4aea1837f8c3e83f6c4" title=" " alt="" coords="298,1077,520,1136"/>
+<area shape="poly" title=" " alt="" coords="688,839,605,975,543,1067,521,1081,518,1077,539,1063,601,972,684,843"/>
+<area shape="rect" href="class_game_1_1_inventory_slot_widget.html#a77f8b7d441cdafb611e51e476a196e7c" title=" " alt="" coords="318,1160,500,1203"/>
+<area shape="poly" title=" " alt="" coords="685,839,640,912,591,1000,579,1042,576,1080,568,1114,559,1132,543,1150,523,1164,502,1174,499,1169,521,1159,539,1146,554,1129,563,1112,570,1079,574,1042,587,998,635,909,682,842"/>
+<area shape="rect" href="class_game_1_1_player_screen.html#a392ab47b4162e602b1a900782759f5e2" title=" " alt="" coords="317,1293,501,1320"/>
+<area shape="poly" title=" " alt="" coords="684,839,637,911,612,954,592,1000,580,1042,578,1080,584,1150,586,1183,582,1216,569,1249,543,1283,524,1297,502,1306,501,1301,521,1293,539,1279,564,1247,577,1215,581,1183,579,1151,572,1080,575,1041,586,998,607,952,632,908,680,842"/>
+<area shape="rect" href="class_game_1_1_play_screen.html#a6cccfe6f82cbb0d1d8dd577109517330" title=" " alt="" coords="316,1227,502,1269"/>
+<area shape="poly" title=" " alt="" coords="684,839,638,911,613,955,591,1000,582,1032,578,1061,579,1114,579,1140,575,1165,563,1190,543,1217,525,1231,504,1241,502,1236,522,1226,539,1213,559,1187,570,1163,574,1139,574,1114,573,1061,577,1031,587,998,608,952,633,908,681,843"/>
+<area shape="poly" title=" " alt="" coords="583,1033,511,1035,509,1029,588,1031"/>
+<area shape="poly" title=" " alt="" coords="593,1062,591,1067,573,1094,566,1120,566,1147,569,1174,572,1202,571,1229,563,1257,543,1283,524,1297,502,1306,501,1300,521,1292,539,1279,558,1254,566,1228,567,1202,564,1175,560,1147,560,1119,568,1091,587,1064,589,1065"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#afe3390687445f60c678fdad320fcacbb" title=" " alt="" coords="300,1344,518,1387"/>
+<area shape="poly" title=" " alt="" coords="593,1062,591,1067,570,1100,562,1133,563,1166,568,1199,574,1232,574,1266,566,1300,543,1334,519,1352,517,1347,539,1330,561,1298,569,1265,568,1233,563,1200,557,1166,556,1132,565,1098,587,1064,589,1065"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#a3fa9d1a17b0d55e893207d660dfd2b21" title=" " alt="" coords="30,1377,204,1420"/>
+<area shape="poly" title=" " alt="" coords="282,1380,205,1391,204,1386,288,1379"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#a820bccc53d50f550264546d78735f287" title=" " alt="" coords="30,1311,204,1353"/>
+<area shape="poly" title=" " alt="" coords="282,1352,204,1345,204,1339,287,1351"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#ae03924cf5adf227bbe0d348d947ec0b6" title=" " alt="" coords="866,711,1139,753"/>
+<area shape="poly" title=" " alt="" coords="1171,742,1140,744,1139,738,1176,740"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#ae6cb2d929c5ff21fc500c4e9cd99c497" title=" " alt="" coords="892,777,1113,820"/>
+<area shape="poly" title=" " alt="" coords="1192,758,1105,779,1104,774,1197,756"/>
+<area shape="poly" title=" " alt="" coords="1154,720,1191,722,1186,724,1155,726"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#a3b85821fdf5d1f2032ae23635e90f3df" title=" " alt="" coords="589,1077,818,1120"/>
+<area shape="poly" title=" " alt="" coords="870,762,868,767,854,785,844,804,835,840,837,877,844,914,851,952,853,990,845,1028,835,1048,820,1067,807,1079,804,1074,816,1064,830,1045,840,1027,848,989,846,952,839,915,832,878,830,840,839,802,849,783,864,764,866,765"/>
+<area shape="rect" href="class_game_1_1_subsystem_throwable_block_behavior.html#a626b15421965cab7b87701719cf258e5" title=" " alt="" coords="893,871,1112,913"/>
+<area shape="poly" title=" " alt="" coords="1183,893,1113,895,1112,889,1188,891"/>
+<area shape="poly" title=" " alt="" coords="1355,938,1341,934,1311,932,1284,934,1269,939,1266,944,1273,954,1268,952,1261,945,1266,935,1283,929,1311,927,1342,929,1360,939"/>
+<area shape="rect" href="class_game_1_1_clothing_block.html#a9ef8603b1bd197dc99b72b61be0ca011" title=" " alt="" coords="906,953,1099,980"/>
+<area shape="poly" title=" " alt="" coords="1168,967,1100,969,1099,964,1174,966"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa4f17e927f6f81bc9b82d967e67d380a" name="aa4f17e927f6f81bc9b82d967e67d380a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f17e927f6f81bc9b82d967e67d380a">&#9670;&#160;</a></span>GetLongTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Engine.Serialization.TypeCache.GetLongTypeName </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>shortTypeName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00116">116</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_type_cache_aa4f17e927f6f81bc9b82d967e67d380a_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_type_cache_aa4f17e927f6f81bc9b82d967e67d380a_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_type_cache_aa4f17e927f6f81bc9b82d967e67d380a_icgraph" id="aclass_engine_1_1_serialization_1_1_type_cache_aa4f17e927f6f81bc9b82d967e67d380a_icgraph">
+<area shape="rect" title=" " alt="" coords="1686,561,1862,604"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a513797ad03c6705956ccdbd15367b91d" title=" " alt="" coords="1470,561,1638,604"/>
+<area shape="poly" title=" " alt="" coords="1668,583,1639,585,1638,580,1674,582"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html#a4315bf77306e186af36c6edf5243f014" title=" " alt="" coords="1207,159,1388,201"/>
+<area shape="poly" title=" " alt="" coords="1548,545,1539,476,1518,386,1502,340,1480,294,1453,252,1420,215,1405,204,1388,195,1387,190,1407,199,1424,211,1457,249,1485,292,1506,338,1523,385,1544,475,1553,547"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#a817d04ce077e06d18a32c3968c3bd203" title=" " alt="" coords="1209,225,1386,268"/>
+<area shape="poly" title=" " alt="" coords="1539,545,1522,499,1496,441,1462,380,1420,324,1384,294,1347,271,1347,266,1388,290,1424,321,1467,377,1501,438,1527,497,1544,547"/>
+<area shape="rect" href="class_game_1_1_widget.html#aafecd4ee18154b93a141c147e5ed63a1" title=" " alt="" coords="1203,335,1392,377"/>
+<area shape="poly" title=" " alt="" coords="1534,546,1515,513,1490,472,1458,432,1420,398,1390,381,1389,375,1424,394,1462,429,1494,469,1520,510,1539,548"/>
+<area shape="rect" href="class_game_1_1_database_manager.html#a80a8262fc0a18d7ed77b17b43ea72cae" title=" " alt="" coords="594,1092,799,1135"/>
+<area shape="poly" title=" " alt="" coords="1531,548,1511,521,1486,491,1456,463,1421,442,1382,434,1315,426,1133,417,1038,417,953,421,889,430,867,435,854,442,843,455,834,472,822,516,816,571,814,631,814,751,813,803,807,843,785,917,758,987,711,1093,707,1090,753,985,780,915,802,842,807,802,809,751,809,631,811,570,817,515,829,470,839,452,851,438,865,430,888,424,953,416,1038,412,1133,412,1315,421,1383,428,1423,438,1459,459,1490,487,1516,518,1536,549"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#a38532526018fadfaffa6650d0fa360f0" title=" " alt="" coords="1175,452,1420,495"/>
+<area shape="poly" title=" " alt="" coords="1505,553,1466,531,1421,509,1391,498,1390,493,1423,504,1468,526,1511,553"/>
+<area shape="rect" href="class_game_1_1_component_model.html#acdc1bdafa5f2a70854abbdeaa95bcd97" title=" " alt="" coords="1200,519,1394,545"/>
+<area shape="poly" title=" " alt="" coords="1452,564,1369,549,1368,543,1457,563"/>
+<area shape="rect" href="class_game_1_1_subsystem_pickables.html#ae946f919d58954c51e64d081d4abcc36" title=" " alt="" coords="1190,569,1405,596"/>
+<area shape="poly" title=" " alt="" coords="1452,583,1406,585,1405,580,1457,582"/>
+<area shape="rect" href="class_game_1_1_subsystem_projectiles.html#ad16fbfeae0a403ec1006032ce59be329" title=" " alt="" coords="1188,620,1407,647"/>
+<area shape="poly" title=" " alt="" coords="1452,603,1370,622,1368,617,1457,601"/>
+<area shape="rect" href="class_game_1_1_clothing_block.html#a528846e9f17e5d45ef49866d94db1cc3" title=" " alt="" coords="1173,695,1422,721"/>
+<area shape="poly" title=" " alt="" coords="1508,611,1423,661,1339,696,1336,692,1421,656,1503,614"/>
+<area shape="rect" href="class_game_1_1_survival_craft_mod_loader.html#a680028eb9c1aff7784da28d3aced6a04" title="改变相机模式时执行" alt="" coords="1195,745,1400,788"/>
+<area shape="poly" title=" " alt="" coords="1534,615,1488,679,1458,709,1423,736,1401,747,1399,742,1421,731,1454,705,1484,675,1530,619"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#aacbfab89e5913601f50dd3128f975b6b" title=" " alt="" coords="1205,812,1390,855"/>
+<area shape="poly" title=" " alt="" coords="1543,617,1526,662,1500,712,1466,761,1424,802,1391,820,1389,815,1420,798,1462,757,1496,709,1521,660,1539,621"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#abb2ac2a33fe505efcff866b152c02204" title=" " alt="" coords="1203,879,1392,921"/>
+<area shape="poly" title=" " alt="" coords="1548,617,1535,675,1511,742,1475,810,1451,841,1424,869,1394,887,1391,882,1420,865,1447,838,1470,808,1506,740,1530,674,1545,621"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_xml_input_archive.html#a5c0b5164b024b94765de0dc675bcd5c1" title=" " alt="" coords="1203,945,1392,988"/>
+<area shape="poly" title=" " alt="" coords="1552,617,1542,687,1521,772,1504,817,1483,860,1456,900,1424,935,1394,954,1391,949,1420,931,1452,897,1478,857,1499,815,1515,771,1537,686,1548,622"/>
+<area shape="rect" href="class_game_1_1_component_inventory_base.html#a5bd07bd577a7264a3e633486666bac77" title=" " alt="" coords="881,68,1096,111"/>
+<area shape="poly" title=" " alt="" coords="1192,227,1171,215,1153,192,1146,169,1140,146,1123,125,1097,109,1096,104,1126,121,1145,143,1151,167,1158,190,1174,211,1198,227"/>
+<area shape="rect" href="struct_game_entity_system_1_1_entity_1_1_filtered_components_enumerable-1-g.html#a68bc213273beaea863bd66afbfce7cbc" title=" " alt="" coords="872,135,1105,193"/>
+<area shape="poly" title=" " alt="" coords="1198,222,1101,197,1100,191,1203,220"/>
+<area shape="rect" href="struct_game_entity_system_1_1_entity_1_1_filtered_components_enumerator-1-g.html#ac8086d07e90846fe27f17f1cd709219c" title=" " alt="" coords="873,217,1104,276"/>
+<area shape="poly" title=" " alt="" coords="1191,248,1106,249,1104,244,1196,246"/>
+<area shape="rect" href="class_game_1_1_component_crafting_table.html#a89f58a1835f01f081e5423e86c1bdccb" title=" " alt="" coords="592,5,801,48"/>
+<area shape="poly" title=" " alt="" coords="869,65,800,51,798,46,874,63"/>
+<area shape="rect" href="class_game_1_1_component_inventory_base.html#a413f02fd7b0d9934b483ff90243e976a" title=" " alt="" coords="589,72,804,115"/>
+<area shape="poly" title=" " alt="" coords="863,92,806,94,804,90,867,90"/>
+<area shape="rect" href="class_game_1_1_widget.html#ac9ac4c563e314040c2cd3851720e7ff8" title=" " alt="" coords="892,300,1085,327"/>
+<area shape="poly" title=" " alt="" coords="1185,342,1086,329,1084,324,1190,340"/>
+<area shape="rect" href="class_game_1_1_widget.html#a17c4236221d46002b6cf74bd503b5220" title=" " alt="" coords="610,804,784,831"/>
+<area shape="poly" title=" " alt="" coords="1185,353,1094,356,996,361,910,375,877,385,854,398,837,415,827,431,819,465,817,505,807,551,750,700,706,805,702,802,745,698,802,550,811,504,814,464,822,429,833,411,851,394,875,380,909,369,995,356,1094,350,1190,351"/>
+<area shape="rect" href="class_game_1_1_bevelled_button_widget.html#a198cd8c857be362afaed44284b31aed4" title=" " alt="" coords="20,385,214,428"/>
+<area shape="poly" title=" " alt="" coords="895,332,732,360,541,385,368,399,216,406,213,402,368,394,541,380,731,355,899,328"/>
+<area shape="rect" href="class_game_1_1_bitmap_button_widget.html#a0f19c598f71c5aa5f6ef8e6cb8bd5347" title=" " alt="" coords="25,135,209,177"/>
+<area shape="poly" title=" " alt="" coords="875,298,851,290,836,280,826,270,817,259,803,250,726,221,646,199,564,182,483,169,332,157,211,155,208,150,332,152,484,164,565,176,647,193,728,216,806,246,821,255,830,266,840,276,854,286,880,297"/>
+<area shape="rect" href="class_game_1_1_checkbox_widget.html#acbc4bb7ead5311d2f4b3004f420e352a" title=" " alt="" coords="5,201,229,244"/>
+<area shape="poly" title=" " alt="" coords="895,298,852,291,804,281,648,263,492,248,230,230,228,226,492,243,649,257,805,276,853,285,900,296"/>
+<area shape="rect" href="class_game_1_1_link_widget.html#a80bbdc23f5c3939475d7f5282eef67aa" title=" " alt="" coords="20,268,214,295"/>
+<area shape="poly" title=" " alt="" coords="874,307,804,304,480,292,216,285,213,281,480,287,804,299,879,304"/>
+<area shape="rect" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c" title=" " alt="" coords="604,512,790,539"/>
+<area shape="poly" title=" " alt="" coords="876,333,854,347,836,365,828,384,821,405,806,428,760,477,718,514,714,510,756,473,802,425,816,403,823,382,832,362,851,343,880,329"/>
+<area shape="rect" href="class_game_1_1_slider_widget.html#a909dcec56dabb2f7c5eb879d4616066c" title=" " alt="" coords="31,319,203,361"/>
+<area shape="poly" title=" " alt="" coords="875,318,277,335,205,337,201,333,277,329,878,313"/>
+<area shape="rect" href="class_game_1_1_bestiary_screen.html#a824b99711292c997256d165db5c5d36a" title=" " alt="" coords="308,896,510,939"/>
+<area shape="poly" title=" " alt="" coords="686,551,608,746,567,840,543,886,512,904,508,900,539,882,562,838,603,744,683,555"/>
+<area shape="rect" href="class_game_1_1_external_content_screen.html#ac90c7f96d937adc017ad38dc5de1d55f" title=" " alt="" coords="309,445,508,488"/>
+<area shape="poly" title=" " alt="" coords="610,510,510,489,508,484,615,507"/>
+<area shape="rect" href="class_game_1_1_help_screen.html#a31ef7fb9a02640494a88c345b39c74b9" title=" " alt="" coords="309,512,509,539"/>
+<area shape="poly" title=" " alt="" coords="586,527,511,528,508,523,590,524"/>
+<area shape="rect" href="class_game_1_1_widget.html#aee6067d3061705fa89815fcdd3cc5032" title=" " alt="" coords="318,344,500,371"/>
+<area shape="poly" title=" " alt="" coords="640,505,540,448,472,408,423,374,421,368,475,403,542,443,645,503"/>
+<area shape="rect" href="class_manage_content_screen.html#af9dae7377eac4728630ad906bb3fb566" title=" " alt="" coords="307,629,511,672"/>
+<area shape="poly" title=" " alt="" coords="662,550,609,586,542,620,511,631,507,627,540,615,607,581,666,546"/>
+<area shape="rect" href="class_game_1_1_original_community_content_screen.html#a7aaa6d0d541865692ece11b97342c27b" title=" " alt="" coords="277,563,541,605"/>
+<area shape="poly" title=" " alt="" coords="610,544,518,564,515,560,615,541"/>
+<area shape="rect" href="class_game_1_1_recipaedia_screen.html#aed7148cff6b70dfde15d8e2d42297f20" title=" " alt="" coords="291,696,526,739"/>
+<area shape="poly" title=" " alt="" coords="676,553,623,620,585,656,542,686,519,697,515,693,540,682,582,652,620,616,679,549"/>
+<area shape="poly" title=" " alt="" coords="309,376,216,392,212,388,313,372"/>
+<area shape="poly" title=" " alt="" coords="385,333,320,263,276,225,227,192,206,180,204,176,230,187,279,221,323,260,390,332"/>
+<area shape="poly" title=" " alt="" coords="372,336,307,298,228,258,200,247,197,242,230,254,309,294,377,334"/>
+<area shape="poly" title=" " alt="" coords="344,341,228,309,183,298,180,293,229,304,348,338"/>
+<area shape="poly" title=" " alt="" coords="465,376,542,419,623,468,686,511,680,512,621,472,540,424,466,381"/>
+<area shape="poly" title=" " alt="" coords="300,353,205,347,202,343,304,349"/>
+<area shape="poly" title=" " alt="" coords="651,839,542,887,505,898,503,893,540,881,655,836"/>
+<area shape="poly" title=" " alt="" coords="683,789,619,634,578,553,558,523,539,502,510,484,508,479,543,498,562,519,583,551,624,632,688,790"/>
+<area shape="poly" title=" " alt="" coords="685,788,667,738,637,673,595,607,569,578,540,553,510,538,509,532,542,548,573,574,599,604,642,670,672,736,690,789"/>
+<area shape="poly" title=" " alt="" coords="682,790,539,435,518,415,495,398,449,374,447,369,497,394,522,411,543,432,687,789"/>
+<area shape="poly" title=" " alt="" coords="671,793,615,739,579,711,540,686,512,674,511,669,542,682,582,706,619,735,676,792"/>
+<area shape="poly" title=" " alt="" coords="679,790,658,752,626,706,587,659,540,620,520,608,519,603,542,615,590,655,631,703,662,750,685,790"/>
+<area shape="poly" title=" " alt="" coords="651,798,540,753,505,742,503,737,542,748,656,796"/>
+<area shape="rect" href="class_game_1_1_gamepad_mapping_screen.html#a6ac1457d46dbc599716d1f2476df74ac" title=" " alt="" coords="304,829,514,872"/>
+<area shape="poly" title=" " alt="" coords="592,831,515,841,513,836,596,828"/>
+<area shape="rect" href="class_game_1_1_camera_manage_screen.html#aecb7b7bf207808bfbb6f3fc5d5ae107f" title=" " alt="" coords="310,963,508,1005"/>
+<area shape="poly" title=" " alt="" coords="676,840,619,899,582,928,542,953,510,967,507,962,540,948,579,924,615,895,672,844"/>
+<area shape="rect" href="class_game_1_1_keyboard_mapping_screen.html#ac068cac0d78b1bf319586a6c6ae7af2e" title=" " alt="" coords="304,1029,514,1072"/>
+<area shape="poly" title=" " alt="" coords="684,843,662,885,631,932,590,980,542,1020,515,1033,513,1029,540,1015,587,976,626,929,658,882,680,847"/>
+<area shape="rect" href="class_game_1_1_motd_widget.html#a2e26528dc24ecf6534011b4d038e5d42" title=" " alt="" coords="313,1096,505,1123"/>
+<area shape="poly" title=" " alt="" coords="689,844,672,899,642,964,599,1031,573,1061,542,1086,507,1103,504,1099,540,1082,569,1057,595,1028,637,962,667,897,686,848"/>
+<area shape="rect" href="class_game_1_1_select_external_content_type_dialog.html#a2b7c5445f4f1f4aea1837f8c3e83f6c4" title=" " alt="" coords="298,1147,520,1205"/>
+<area shape="poly" title=" " alt="" coords="687,843,623,1002,582,1083,562,1115,543,1137,521,1152,518,1147,539,1133,558,1112,578,1081,619,1000,683,847"/>
+<area shape="rect" href="class_game_1_1_inventory_slot_widget.html#a77f8b7d441cdafb611e51e476a196e7c" title=" " alt="" coords="318,1229,500,1272"/>
+<area shape="poly" title=" " alt="" coords="686,843,592,1081,581,1121,577,1156,568,1187,558,1203,543,1219,523,1233,502,1243,500,1238,521,1228,539,1215,554,1200,563,1185,572,1154,576,1120,586,1079,682,847"/>
+<area shape="rect" href="class_game_1_1_player_screen.html#a392ab47b4162e602b1a900782759f5e2" title=" " alt="" coords="317,1296,501,1323"/>
+<area shape="poly" title=" " alt="" coords="684,843,641,948,592,1081,584,1112,582,1140,582,1191,581,1215,575,1238,563,1262,543,1286,524,1299,502,1308,501,1303,521,1295,539,1282,559,1259,570,1236,576,1214,577,1191,576,1140,579,1111,586,1079,636,946,681,847"/>
+<area shape="rect" href="class_game_1_1_play_screen.html#a6cccfe6f82cbb0d1d8dd577109517330" title=" " alt="" coords="316,763,502,805"/>
+<area shape="poly" title=" " alt="" coords="592,807,503,797,502,792,597,804"/>
+<area shape="poly" title=" " alt="" coords="670,1079,616,1015,580,981,540,953,510,939,510,934,542,948,583,977,619,1012,675,1080"/>
+<area shape="poly" title=" " alt="" coords="676,1146,653,1183,622,1220,585,1256,542,1286,502,1302,501,1297,540,1282,581,1252,618,1216,649,1179,672,1149"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#afe3390687445f60c678fdad320fcacbb" title=" " alt="" coords="300,1347,518,1389"/>
+<area shape="poly" title=" " alt="" coords="682,1147,661,1194,630,1244,590,1294,543,1337,519,1350,517,1345,539,1332,587,1291,626,1241,656,1191,678,1151"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#a3fa9d1a17b0d55e893207d660dfd2b21" title=" " alt="" coords="30,1380,204,1423"/>
+<area shape="poly" title=" " alt="" coords="282,1383,205,1394,204,1389,288,1382"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#a820bccc53d50f550264546d78735f287" title=" " alt="" coords="30,1313,204,1356"/>
+<area shape="poly" title=" " alt="" coords="282,1355,204,1347,204,1342,287,1353"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#ae03924cf5adf227bbe0d348d947ec0b6" title=" " alt="" coords="852,452,1125,495"/>
+<area shape="poly" title=" " alt="" coords="1157,483,1126,485,1124,480,1162,481"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#ae6cb2d929c5ff21fc500c4e9cd99c497" title=" " alt="" coords="878,519,1099,561"/>
+<area shape="poly" title=" " alt="" coords="1178,500,1092,520,1089,516,1183,497"/>
+<area shape="poly" title=" " alt="" coords="1139,462,1177,464,1172,465,1141,467"/>
+<area shape="rect" href="class_game_1_1_subsystem_throwable_block_behavior.html#a626b15421965cab7b87701719cf258e5" title=" " alt="" coords="879,612,1098,655"/>
+<area shape="poly" title=" " alt="" coords="1169,634,1100,636,1098,631,1174,632"/>
+<area shape="poly" title=" " alt="" coords="1341,680,1327,676,1297,673,1270,675,1255,680,1252,685,1259,695,1254,694,1247,686,1252,676,1269,670,1297,668,1328,671,1346,680"/>
+<area shape="rect" href="class_game_1_1_clothing_block.html#a9ef8603b1bd197dc99b72b61be0ca011" title=" " alt="" coords="892,695,1085,721"/>
+<area shape="poly" title=" " alt="" coords="1154,709,1086,711,1085,705,1160,707"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="addffc53a1f4d2c98e20b43032e2e77e6" name="addffc53a1f4d2c98e20b43032e2e77e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addffc53a1f4d2c98e20b43032e2e77e6">&#9670;&#160;</a></span>GetShortTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Engine.Serialization.TypeCache.GetShortTypeName </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>longTypeName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00113">113</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_type_cache_addffc53a1f4d2c98e20b43032e2e77e6_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_type_cache_addffc53a1f4d2c98e20b43032e2e77e6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_type_cache_addffc53a1f4d2c98e20b43032e2e77e6_icgraph" id="aclass_engine_1_1_serialization_1_1_type_cache_addffc53a1f4d2c98e20b43032e2e77e6_icgraph">
+<area shape="rect" title=" " alt="" coords="1854,205,2032,248"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#aee4451d8d20fdc529effb61ff05471b3" title=" " alt="" coords="1559,39,1806,81"/>
+<area shape="poly" title=" " alt="" coords="1893,197,1717,84,1718,79,1898,197"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html#aa9f36b6f421a15f57a3aac5b1f745205" title=" " alt="" coords="1592,205,1773,248"/>
+<area shape="poly" title=" " alt="" coords="1836,227,1773,229,1773,224,1841,226"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_xml_output_archive.html#a60445a66500e5315b63779eaea1dcccf" title=" " alt="" coords="1583,272,1782,315"/>
+<area shape="poly" title=" " alt="" coords="1845,252,1769,274,1768,269,1839,253"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#a685edb55a9077fc2192027e484f8b15a" title=" " alt="" coords="1237,5,1511,48"/>
+<area shape="poly" title=" " alt="" coords="1541,54,1496,51,1496,46,1546,54"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#ac9db4277692f6ed74de8f4494609f395" title=" " alt="" coords="1264,72,1484,115"/>
+<area shape="poly" title=" " alt="" coords="1541,75,1485,84,1484,79,1547,74"/>
+<area shape="poly" title=" " alt="" coords="1526,31,1563,38,1558,38,1527,37"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#a39be3793cb82345b6370a9d86c105b90" title=" " alt="" coords="958,5,1189,48"/>
+<area shape="poly" title=" " alt="" coords="1219,27,1190,29,1189,24,1224,26"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#a83af944053d460aac380855d9085b5e2" title=" " alt="" coords="689,5,910,48"/>
+<area shape="poly" title=" " alt="" coords="939,27,911,29,909,24,945,26"/>
+<area shape="rect" href="class_game_1_1_worlds_manager.html#ae547cf055ab8039dcdad380d6d46c482" title=" " alt="" coords="1274,139,1474,181"/>
+<area shape="poly" title=" " alt="" coords="1574,204,1474,184,1475,179,1580,204"/>
+<area shape="rect" href="class_game_1_1_furniture_packs_manager.html#a6520bd359d20fcf6a96cb9c75e1ba45f" title=" " alt="" coords="1273,205,1475,248"/>
+<area shape="poly" title=" " alt="" coords="1574,227,1476,229,1475,224,1579,226"/>
+<area shape="rect" href="class_game_1_1_worlds_manager.html#ab2306d3758685254f8a1b15073574015" title=" " alt="" coords="1278,272,1471,315"/>
+<area shape="poly" title=" " alt="" coords="1580,249,1472,275,1471,270,1574,250"/>
+<area shape="rect" href="class_game_1_1_settings_manager.html#accb1f0d6fb9c27e4f3eaf1e1e6cbfa1c" title=" " alt="" coords="1278,339,1470,381"/>
+<area shape="poly" title=" " alt="" coords="1581,248,1561,262,1546,278,1538,295,1530,312,1513,329,1472,348,1470,343,1510,324,1525,309,1533,292,1541,275,1558,258,1576,250"/>
+<area shape="rect" href="class_game_1_1_modify_world_screen.html#a197cc749c84ceb9c4053b47cf8dac5d9" title=" " alt="" coords="964,147,1183,173"/>
+<area shape="poly" title=" " alt="" coords="1256,160,1184,163,1183,157,1261,160"/>
+<area shape="rect" href="class_game_1_1_furniture_inventory_panel.html#a56bb31d57c697eacbb055f246f6f88b5" title=" " alt="" coords="972,205,1174,248"/>
+<area shape="poly" title=" " alt="" coords="1255,227,1175,229,1175,224,1260,226"/>
+<area shape="rect" href="class_game_1_1_furniture_inventory_panel.html#a7d1d0863c118181222b9d8c92c068766" title=" " alt="" coords="698,205,901,248"/>
+<area shape="poly" title=" " alt="" coords="954,227,901,229,901,224,959,226"/>
+<area shape="rect" href="class_game_1_1_settings_manager.html#a152d12312db7d325e37d3a5d9cc62057" title=" " alt="" coords="968,284,1178,311"/>
+<area shape="poly" title=" " alt="" coords="1260,337,1141,314,1141,309,1266,337"/>
+<area shape="rect" href="class_mods_manager.html#a3f0a85fd1c9a4f820291620a814b65f3" title=" " alt="" coords="999,335,1148,361"/>
+<area shape="poly" title=" " alt="" coords="1260,356,1149,354,1149,348,1265,355"/>
+<area shape="rect" href="class_game_1_1_game_screen.html#a47b79f41c0ae7ae20127d2d1da40a809" title=" " alt="" coords="982,385,1164,412"/>
+<area shape="poly" title=" " alt="" coords="1265,374,1165,390,1165,384,1260,375"/>
+<area shape="rect" href="class_mods_manage_content_screen.html#a1e0648f14f5516073ffe4a4497715088" title=" " alt="" coords="978,436,1168,479"/>
+<area shape="poly" title=" " alt="" coords="1301,387,1190,427,1152,438,1151,433,1188,421,1295,388"/>
+<area shape="rect" href="class_game_1_1_program.html#af49f276dffcf1a3a8870e9bd6e1c1a0b" title=" " alt="" coords="719,284,880,311"/>
+<area shape="poly" title=" " alt="" coords="950,298,881,300,881,295,955,297"/>
+<area shape="rect" href="class_game_1_1_program.html#a8643991366e62fe02d3984c43a911b37" title=" " alt="" coords="446,284,641,311"/>
+<area shape="poly" title=" " alt="" coords="701,298,642,300,641,295,706,297"/>
+<area shape="rect" href="class_game_1_1_program.html#a55a3dad6cca9640c7f710fb4fb17442d" title=" " alt="" coords="224,284,398,311"/>
+<area shape="poly" title=" " alt="" coords="428,298,399,300,398,295,433,297"/>
+<area shape="rect" href="class_game_1_1_program.html#a7df94f599463cb6486ccfb8a56e8e482" title=" " alt="" coords="20,255,161,281"/>
+<area shape="poly" title=" " alt="" coords="206,285,162,280,161,275,211,282"/>
+<area shape="rect" href="class_s_c4_android_1_1_main_activity.html#a6b2ea45f6db7a1eafc61ed5ac19c4ecf" title=" " alt="" coords="5,305,176,348"/>
+<area shape="poly" title=" " alt="" coords="206,312,177,318,175,313,211,310"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a00104a92dabe050763ffd470d1736aa6" name="a00104a92dabe050763ffd470d1736aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00104a92dabe050763ffd470d1736aa6">&#9670;&#160;</a></span>IsKnownSystemAssembly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Engine.Serialization.TypeCache.IsKnownSystemAssembly </td>
+          <td>(</td>
+          <td class="paramtype">Assembly</td>          <td class="paramname"><span class="paramname"><em>assembly</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00070">70</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_type_cache_a00104a92dabe050763ffd470d1736aa6_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_type_cache_a00104a92dabe050763ffd470d1736aa6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_type_cache_a00104a92dabe050763ffd470d1736aa6_icgraph" id="aclass_engine_1_1_serialization_1_1_type_cache_a00104a92dabe050763ffd470d1736aa6_icgraph">
+<area shape="rect" title=" " alt="" coords="1172,629,1389,672"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_type_cache.html#a513797ad03c6705956ccdbd15367b91d" title=" " alt="" coords="922,629,1090,672"/>
+<area shape="poly" title=" " alt="" coords="1154,652,1092,653,1090,648,1158,649"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a3668397b9b0ebbbce2085412cda53e07" title=" " alt="" coords="888,347,1124,405"/>
+<area shape="poly" title=" " alt="" coords="1245,619,1036,408,1037,403,1250,618"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a8aa44f0bcc0e6828d95b35a87d53a696" title=" " alt="" coords="906,1100,1106,1143"/>
+<area shape="poly" title=" " alt="" coords="1261,683,1022,1101,1018,1098,1257,687"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html#a4315bf77306e186af36c6edf5243f014" title=" " alt="" coords="626,547,806,589"/>
+<area shape="poly" title=" " alt="" coords="916,625,840,604,800,592,798,587,841,599,921,623"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity.html#a817d04ce077e06d18a32c3968c3bd203" title=" " alt="" coords="628,755,804,797"/>
+<area shape="poly" title=" " alt="" coords="956,683,904,715,841,745,806,757,802,753,839,740,902,710,960,679"/>
+<area shape="rect" href="class_game_1_1_widget.html#aafecd4ee18154b93a141c147e5ed63a1" title=" " alt="" coords="622,280,810,323"/>
+<area shape="poly" title=" " alt="" coords="984,615,901,450,860,373,838,337,811,320,809,315,842,333,865,370,906,447,990,615"/>
+<area shape="rect" href="class_game_1_1_database_manager.html#a80a8262fc0a18d7ed77b17b43ea72cae" title=" " alt="" coords="304,811,510,853"/>
+<area shape="poly" title=" " alt="" coords="980,687,958,718,925,753,886,786,841,812,800,827,757,838,670,851,585,853,511,848,509,844,585,848,669,845,756,833,799,822,839,807,883,782,921,749,954,715,983,682"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#a38532526018fadfaffa6650d0fa360f0" title=" " alt="" coords="594,873,838,916"/>
+<area shape="poly" title=" " alt="" coords="987,683,963,726,929,771,889,816,842,856,805,875,801,871,839,851,885,812,925,767,958,723,984,687"/>
+<area shape="rect" href="class_game_1_1_component_model.html#acdc1bdafa5f2a70854abbdeaa95bcd97" title=" " alt="" coords="618,940,813,967"/>
+<area shape="poly" title=" " alt="" coords="995,684,976,742,944,809,900,875,872,905,842,930,815,944,812,940,839,926,869,901,895,871,939,806,971,740,993,689"/>
+<area shape="rect" href="class_game_1_1_subsystem_pickables.html#ae946f919d58954c51e64d081d4abcc36" title=" " alt="" coords="608,991,823,1017"/>
+<area shape="poly" title=" " alt="" coords="998,685,982,752,952,832,931,873,906,913,876,949,842,981,823,992,819,988,839,977,872,946,902,910,926,870,947,830,977,751,996,690"/>
+<area shape="rect" href="class_game_1_1_subsystem_projectiles.html#ad16fbfeae0a403ec1006032ce59be329" title=" " alt="" coords="606,229,825,256"/>
+<area shape="poly" title=" " alt="" coords="983,616,936,528,886,418,874,374,871,336,864,303,854,287,839,270,824,259,823,254,842,266,858,284,869,301,877,335,880,373,891,416,941,526,988,616"/>
+<area shape="rect" href="class_game_1_1_clothing_block.html#a528846e9f17e5d45ef49866d94db1cc3" title=" " alt="" coords="591,637,840,664"/>
+<area shape="poly" title=" " alt="" coords="904,652,842,653,839,648,909,649"/>
+<area shape="rect" href="class_game_1_1_survival_craft_mod_loader.html#a680028eb9c1aff7784da28d3aced6a04" title="改变相机模式时执行" alt="" coords="614,347,818,389"/>
+<area shape="poly" title=" " alt="" coords="988,615,966,567,934,510,891,452,866,426,839,404,819,391,817,386,842,399,870,422,895,449,938,507,971,565,994,615"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html#aacbfab89e5913601f50dd3128f975b6b" title=" " alt="" coords="624,413,808,456"/>
+<area shape="poly" title=" " alt="" coords="980,617,923,543,883,504,839,470,809,455,808,450,842,466,887,500,927,539,986,616"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#abb2ac2a33fe505efcff866b152c02204" title=" " alt="" coords="621,480,810,523"/>
+<area shape="poly" title=" " alt="" coords="965,620,908,578,839,537,811,525,810,520,842,532,911,573,971,618"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_xml_input_archive.html#a5c0b5164b024b94765de0dc675bcd5c1" title=" " alt="" coords="621,688,810,731"/>
+<area shape="poly" title=" " alt="" coords="904,672,812,692,809,688,909,669"/>
+<area shape="rect" href="class_game_1_1_component_inventory_base.html#a5bd07bd577a7264a3e633486666bac77" title=" " alt="" coords="299,661,514,704"/>
+<area shape="poly" title=" " alt="" coords="610,752,590,745,566,732,542,718,511,707,508,702,544,714,568,727,592,740,615,750"/>
+<area shape="rect" href="struct_game_entity_system_1_1_entity_1_1_filtered_components_enumerable-1-g.html#a68bc213273beaea863bd66afbfce7cbc" title=" " alt="" coords="290,728,524,787"/>
+<area shape="poly" title=" " alt="" coords="610,771,525,767,522,762,614,768"/>
+<area shape="rect" href="struct_game_entity_system_1_1_entity_1_1_filtered_components_enumerator-1-g.html#ac8086d07e90846fe27f17f1cd709219c" title=" " alt="" coords="291,579,522,637"/>
+<area shape="poly" title=" " alt="" coords="611,757,589,745,571,721,564,697,558,674,541,651,524,638,522,633,545,647,563,671,569,696,576,719,593,741,616,756"/>
+<area shape="rect" href="class_game_1_1_widget.html#ac9ac4c563e314040c2cd3851720e7ff8" title=" " alt="" coords="18,225,210,252"/>
+<area shape="poly" title=" " alt="" coords="604,302,447,296,270,279,165,255,162,250,271,273,447,291,608,299"/>
+<area shape="rect" href="class_game_1_1_widget.html#a17c4236221d46002b6cf74bd503b5220" title=" " alt="" coords="320,477,494,504"/>
+<area shape="poly" title=" " alt="" coords="605,329,592,337,539,371,490,411,423,478,418,475,487,407,536,367,590,332,609,325"/>
+<area shape="rect" href="class_game_1_1_bestiary_screen.html#a824b99711292c997256d165db5c5d36a" title=" " alt="" coords="13,581,215,624"/>
+<area shape="poly" title=" " alt="" coords="303,508,272,518,205,549,149,582,145,579,202,545,270,514,306,504"/>
+<area shape="rect" href="class_game_1_1_player_screen.html#a392ab47b4162e602b1a900782759f5e2" title=" " alt="" coords="22,704,206,731"/>
+<area shape="poly" title=" " alt="" coords="303,500,272,518,259,531,252,545,246,573,241,604,235,620,225,638,184,677,143,705,139,702,181,673,221,634,231,618,236,602,240,572,247,543,255,528,269,514,306,496"/>
+<area shape="poly" title=" " alt="" coords="288,812,269,801,248,775,241,749,235,722,220,694,185,656,150,627,148,622,189,652,225,690,240,721,246,748,253,773,272,797,293,810"/>
+<area shape="poly" title=" " alt="" coords="289,807,270,801,195,767,139,734,137,729,198,762,272,796,293,804"/>
+<area shape="rect" href="class_game_1_1_bestiary_description_screen.html#afe3390687445f60c678fdad320fcacbb" title=" " alt="" coords="5,811,223,853"/>
+<area shape="poly" title=" " alt="" coords="287,834,225,834,221,830,291,830"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#ae03924cf5adf227bbe0d348d947ec0b6" title=" " alt="" coords="271,944,543,987"/>
+<area shape="poly" title=" " alt="" coords="635,922,543,946,540,941,639,919"/>
+<area shape="rect" href="class_templates_database_1_1_xml_database_serializer.html#ae6cb2d929c5ff21fc500c4e9cd99c497" title=" " alt="" coords="297,877,517,920"/>
+<area shape="poly" title=" " alt="" coords="575,898,519,900,516,895,580,895"/>
+<area shape="poly" title=" " alt="" coords="484,937,595,912,591,916,487,942"/>
+<area shape="rect" href="class_game_1_1_subsystem_throwable_block_behavior.html#a626b15421965cab7b87701719cf258e5" title=" " alt="" coords="297,221,516,264"/>
+<area shape="poly" title=" " alt="" coords="588,244,519,245,516,240,592,241"/>
+<area shape="poly" title=" " alt="" coords="765,623,749,618,716,616,685,618,668,623,664,628,672,636,667,637,659,628,665,619,684,613,716,611,750,613,770,621"/>
+<area shape="rect" href="class_game_1_1_clothing_block.html#a9ef8603b1bd197dc99b72b61be0ca011" title=" " alt="" coords="310,528,504,555"/>
+<area shape="poly" title=" " alt="" coords="655,632,590,604,566,585,542,569,505,556,503,552,544,564,569,581,592,599,660,630"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#ab21f09f2957f4e1babfdf69a5317b84a" title=" " alt="" coords="608,117,823,160"/>
+<area shape="poly" title=" " alt="" coords="964,336,907,279,839,219,756,163,755,158,842,215,911,276,970,335"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#ad14f32019814f1389d6a0d83c35b3c90" title=" " alt="" coords="283,155,530,197"/>
+<area shape="poly" title=" " alt="" coords="591,155,532,163,529,159,595,152"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a0b0c342dd030c68bf6b2a970843c563e" title=" " alt="" coords="291,5,522,48"/>
+<area shape="poly" title=" " alt="" coords="657,111,603,87,542,63,508,51,505,46,544,57,605,82,662,109"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#a8f36113a89608dfd0e102b8981a8cebd" title=" " alt="" coords="291,72,523,131"/>
+<area shape="poly" title=" " alt="" coords="591,125,525,118,522,113,595,122"/>
+<area shape="poly" title=" " alt="" coords="288,203,182,227,178,223,291,199"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#a07f3724f6dbb2d5ba48af669d2664d2d" title=" " alt="" coords="622,1509,810,1552"/>
+<area shape="poly" title=" " alt="" coords="983,1153,734,1511,730,1507,979,1157"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_archive.html#aa89e38282121418793a1b92af7165d6e" title=" " alt="" coords="313,1509,501,1552"/>
+<area shape="poly" title=" " alt="" coords="604,1541,502,1542,501,1536,609,1538"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3c97e87df5b9a4bac9dcc09b014e4c24" title=" " alt="" coords="294,1576,520,1619"/>
+<area shape="poly" title=" " alt="" coords="604,1556,510,1578,508,1573,609,1553"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#af1391b502199d287017db7b761a822c5" title=" " alt="" coords="285,1643,528,1685"/>
+<area shape="poly" title=" " alt="" coords="669,1562,613,1599,544,1633,512,1644,509,1640,542,1628,610,1595,673,1559"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#ae8bd0cfa54fc4709250cff5d10a31c12" title=" " alt="" coords="322,1709,492,1752"/>
+<area shape="poly" title=" " alt="" coords="691,1562,629,1634,589,1670,544,1700,493,1720,491,1715,542,1695,586,1665,626,1630,687,1566"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3defab86a69a75ff5e7d6cfa5595f26c" title=" " alt="" coords="322,1776,492,1819"/>
+<area shape="poly" title=" " alt="" coords="700,1564,676,1613,642,1667,598,1721,572,1745,544,1766,519,1780,493,1789,491,1784,517,1775,542,1762,569,1741,594,1717,637,1664,672,1610,696,1568"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_output_archive.html#a2352f639bd9f676020b162dbfe9c3968" title=" " alt="" coords="317,1843,496,1885"/>
+<area shape="poly" title=" " alt="" coords="706,1565,686,1626,652,1698,606,1771,577,1804,545,1833,522,1846,498,1855,496,1850,520,1841,541,1829,573,1800,601,1768,648,1696,681,1624,702,1569"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a51e144347298b9490b266cb4e5497421" title=" " alt="" coords="322,1909,492,1952"/>
+<area shape="poly" title=" " alt="" coords="710,1565,694,1638,662,1728,640,1775,614,1821,582,1863,545,1899,520,1915,493,1925,491,1920,518,1910,541,1895,578,1859,609,1818,636,1773,657,1726,688,1637,706,1569"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a3f6d3a3ecbb0bbd5d50b52a3a93d013a" title=" " alt="" coords="322,1976,492,2019"/>
+<area shape="poly" title=" " alt="" coords="712,1566,700,1651,672,1758,650,1815,622,1870,587,1921,545,1966,520,1982,493,1992,491,1987,518,1977,541,1962,583,1918,617,1867,645,1813,667,1756,695,1649,709,1570"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a68bc3cf4940228bc3e30da02651a37c8" title=" " alt="" coords="322,2043,492,2085"/>
+<area shape="poly" title=" " alt="" coords="715,1565,707,1661,696,1722,681,1787,659,1854,630,1919,592,1980,545,2033,520,2049,492,2059,491,2054,518,2044,541,2029,588,1977,625,1917,654,1852,676,1786,691,1721,701,1661,712,1570"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_input_archive.html#a71cf4fb1f7e35f414df160bd210e2bad" title=" " alt="" coords="322,1011,492,1053"/>
+<area shape="poly" title=" " alt="" coords="710,1493,698,1407,687,1351,671,1291,649,1230,621,1170,585,1115,541,1067,518,1052,493,1042,491,1037,520,1047,545,1063,589,1112,626,1168,654,1228,676,1290,692,1350,703,1406,715,1495"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a5877da533e859fc747c26e5bb8449110" title=" " alt="" coords="288,1077,526,1120"/>
+<area shape="poly" title=" " alt="" coords="707,1493,692,1418,662,1321,640,1269,613,1220,580,1174,541,1134,526,1123,525,1118,545,1130,584,1170,618,1217,645,1267,667,1319,697,1417,712,1495"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_output_archive.html#a1d65b1cc366232ea02b4323cbcbc7c0c" title=" " alt="" coords="283,1144,530,1187"/>
+<area shape="poly" title=" " alt="" coords="704,1494,685,1431,652,1351,631,1309,605,1269,576,1233,541,1201,526,1190,525,1185,545,1197,579,1229,610,1266,636,1307,657,1349,690,1429,709,1495"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_xml_input_archive.html#a5286a48f7822cd1c547c51ef60d8bad8" title=" " alt="" coords="288,1211,526,1253"/>
+<area shape="poly" title=" " alt="" coords="699,1494,676,1444,642,1382,597,1320,571,1292,541,1268,524,1257,523,1251,545,1263,574,1288,601,1316,647,1379,681,1442,704,1495"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_xml_output_archive.html#af73fe65b5020d75dd2daff5f52e94412" title=" " alt="" coords="283,1277,530,1320"/>
+<area shape="poly" title=" " alt="" coords="691,1496,666,1459,631,1415,590,1371,542,1334,521,1323,520,1318,544,1330,593,1367,635,1411,670,1456,697,1496"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_input_archive.html#a1eacd8d91dc40f42c63fef5de2e85c19" title=" " alt="" coords="303,1344,510,1403"/>
+<area shape="poly" title=" " alt="" coords="673,1500,614,1459,542,1417,512,1404,510,1399,544,1412,617,1454,679,1499"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_binary_output_archive.html#a3ad80714016906aef134344ce6290802" title=" " alt="" coords="298,1427,516,1485"/>
+<area shape="poly" title=" " alt="" coords="607,1506,517,1485,516,1480,612,1504"/>
+<area shape="poly" title=" " alt="" coords="515,1519,624,1521,619,1524,517,1525"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a1451203bff8b1dc7fa81cf6793d79e0e" name="a1451203bff8b1dc7fa81cf6793d79e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1451203bff8b1dc7fa81cf6793d79e0e">&#9670;&#160;</a></span>m_loadedAssemblies</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Assembly&gt; Engine.Serialization.TypeCache.m_loadedAssemblies</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7854c87780f5bd5ea1a2f129e23fba6d" name="a7854c87780f5bd5ea1a2f129e23fba6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7854c87780f5bd5ea1a2f129e23fba6d">&#9670;&#160;</a></span>m_longToShort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, string&gt; Engine.Serialization.TypeCache.m_longToShort</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="add88ab0b18dea180415c9b109a0381ff" name="add88ab0b18dea180415c9b109a0381ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add88ab0b18dea180415c9b109a0381ff">&#9670;&#160;</a></span>m_rescanAssemblies</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Engine.Serialization.TypeCache.m_rescanAssemblies</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a57bc95b768b2a42da3d12365e87f346f" name="a57bc95b768b2a42da3d12365e87f346f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57bc95b768b2a42da3d12365e87f346f">&#9670;&#160;</a></span>m_shortToLong</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, string&gt; Engine.Serialization.TypeCache.m_shortToLong</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5c74e4ef24c69bb066ad7ade2bf0aa51" name="a5c74e4ef24c69bb066ad7ade2bf0aa51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c74e4ef24c69bb066ad7ade2bf0aa51">&#9670;&#160;</a></span>m_typesByName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, Type&gt; Engine.Serialization.TypeCache.m_typesByName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="ac3321ba18573314ed7e9af7e0fdb94eb" name="ac3321ba18573314ed7e9af7e0fdb94eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3321ba18573314ed7e9af7e0fdb94eb">&#9670;&#160;</a></span>LoadedAssemblies</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadOnlyList&lt;Assembly&gt; Engine.Serialization.TypeCache.LoadedAssemblies</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a> 第 <a class="el" href="_type_cache_8cs_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Serialization/<a class="el" href="_type_cache_8cs_source.html">TypeCache.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_engine.html">Engine</a></li><li class="navelem"><a href="namespace_engine_1_1_serialization.html">Serialization</a></li><li class="navelem"><a href="class_engine_1_1_serialization_1_1_type_cache.html">TypeCache</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

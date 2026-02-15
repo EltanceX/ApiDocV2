@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/EntitySystem/TemplatesDatabase/DatabaseObjectType.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_database_object_type_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DatabaseObjectType.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_database_object_type_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Linq;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a> {</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html">    7</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4">DatabaseObjectType</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a6a2d9f0cc03001b64ed91ad9bab1f228">    8</a></span>        <span class="keywordtype">string</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a6a2d9f0cc03001b64ed91ad9bab1f228">m_name</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a5a794463752efcea128d4b4225e15e84">   10</a></span>        <span class="keywordtype">string</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a5a794463752efcea128d4b4225e15e84">m_defaultInstanceName</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a29fa455ad56f112d0de08a6055198f2b">   12</a></span>        <span class="keywordtype">string</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a29fa455ad56f112d0de08a6055198f2b">m_iconName</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#afa2bccb97978c422a49919f4f0569ded">   14</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#afa2bccb97978c422a49919f4f0569ded">m_order</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a52feceebde2a1127e2005901e31f4e80">   16</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a52feceebde2a1127e2005901e31f4e80">m_supportsValue</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#abb9db5a9f76087b11fd7849f309e8687">   18</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#abb9db5a9f76087b11fd7849f309e8687">m_mustInherit</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a5398b1ebabc415d1c2cf133e9781ede7">   20</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a5398b1ebabc415d1c2cf133e9781ede7">m_nameLengthLimit</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a0a098341e3c577ca7dd665ff62934f51">   22</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a0a098341e3c577ca7dd665ff62934f51">m_saveStandalone</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a6903401b915ca70c5150d4b57a95744b">   24</a></span>        List&lt;DatabaseObjectType&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a6903401b915ca70c5150d4b57a95744b">m_allowedNestingParents</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a41e0a9efdcfd7f65391591f7a39d3581">   26</a></span>        List&lt;DatabaseObjectType&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a41e0a9efdcfd7f65391591f7a39d3581">m_allowedInheritanceParents</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#ae082ff769a5ba40dccaf40d92a5ee3ba">   28</a></span>        List&lt;DatabaseObjectType&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#ae082ff769a5ba40dccaf40d92a5ee3ba">m_allowedNestingChildren</a> = [];</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a382ac6c05d7cc5a24ed5640b95c072b9">   30</a></span>        List&lt;DatabaseObjectType&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a382ac6c05d7cc5a24ed5640b95c072b9">m_allowedInheritanceChildren</a> = [];</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a1692d39b677f2c00b2934424a6e71c75">   32</a></span>        <a class="code hl_function" href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4">DatabaseObjectType</a> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a1692d39b677f2c00b2934424a6e71c75">m_nestedValueType</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a5e23456e476f8d3a89b097781ed289ff">   34</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a5e23456e476f8d3a89b097781ed289ff">IsInitialized</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a6903401b915ca70c5150d4b57a95744b">m_allowedNestingParents</a> != <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a1e3c490ad7462451cd2ad87f138d2883">   36</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a1e3c490ad7462451cd2ad87f138d2883">Name</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a6a2d9f0cc03001b64ed91ad9bab1f228">m_name</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a69bb88805ab4c9ba71b0c6aa7140cd2b">   38</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a69bb88805ab4c9ba71b0c6aa7140cd2b">DefaultInstanceName</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a5a794463752efcea128d4b4225e15e84">m_defaultInstanceName</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#ac35a034e51ff60409a65baf0eb5e9e7f">   40</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#ac35a034e51ff60409a65baf0eb5e9e7f">IconName</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a29fa455ad56f112d0de08a6055198f2b">m_iconName</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#ada766418fd21b1a5c6049b2d2e691a2d">   42</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#ada766418fd21b1a5c6049b2d2e691a2d">Order</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#afa2bccb97978c422a49919f4f0569ded">m_order</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#ac73c96e7b2db4b103ab1b1dca9762b3e">   44</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#ac73c96e7b2db4b103ab1b1dca9762b3e">SupportsValue</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a52feceebde2a1127e2005901e31f4e80">m_supportsValue</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#aba81fcb71754a116158106c806a212b5">   46</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#aba81fcb71754a116158106c806a212b5">MustInherit</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#abb9db5a9f76087b11fd7849f309e8687">m_mustInherit</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#adf21eb83cfd0d167511d179e5563d01c">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#adf21eb83cfd0d167511d179e5563d01c">NameLengthLimit</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a5398b1ebabc415d1c2cf133e9781ede7">m_nameLengthLimit</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a6d54d49206414906a915c7d0679b1e43">   50</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a6d54d49206414906a915c7d0679b1e43">SaveStandalone</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a0a098341e3c577ca7dd665ff62934f51">m_saveStandalone</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a7741b797f1872d8ccebfc0db63ad195f">   52</a></span>        <span class="keyword">public</span> ReadOnlyList&lt;DatabaseObjectType&gt; <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a7741b797f1872d8ccebfc0db63ad195f">AllowedNestingParents</a> =&gt; <span class="keyword">new</span>(<a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a6903401b915ca70c5150d4b57a95744b">m_allowedNestingParents</a>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a9d47012a2e94d538ece8418639e8d4df">   54</a></span>        <span class="keyword">public</span> ReadOnlyList&lt;DatabaseObjectType&gt; <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a9d47012a2e94d538ece8418639e8d4df">AllowedInheritanceParents</a> =&gt; <span class="keyword">new</span>(<a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a41e0a9efdcfd7f65391591f7a39d3581">m_allowedInheritanceParents</a>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a372b674e30a6669bd8daf6357ed26814">   56</a></span>        <span class="keyword">public</span> ReadOnlyList&lt;DatabaseObjectType&gt; <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a372b674e30a6669bd8daf6357ed26814">AllowedNestingChildren</a> =&gt; <span class="keyword">new</span>(<a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#ae082ff769a5ba40dccaf40d92a5ee3ba">m_allowedNestingChildren</a>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a375434cbd2472d6114abb0452a0c9c38">   58</a></span>        <span class="keyword">public</span> ReadOnlyList&lt;DatabaseObjectType&gt; <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a375434cbd2472d6114abb0452a0c9c38">AllowedInheritanceChildren</a> =&gt; <span class="keyword">new</span>(<a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a382ac6c05d7cc5a24ed5640b95c072b9">m_allowedInheritanceChildren</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#a26d9a69b953e33e4f3bea8066bc05b84">   60</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4">DatabaseObjectType</a> <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a26d9a69b953e33e4f3bea8066bc05b84">NestedValueType</a> =&gt; <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a1692d39b677f2c00b2934424a6e71c75">m_nestedValueType</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4">   62</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4">DatabaseObjectType</a>(<span class="keywordtype">string</span> name,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordtype">string</span> defaultInstanceName,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordtype">string</span> iconName,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordtype">int</span> order,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordtype">bool</span> supportsValue,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordtype">bool</span> mustInherit,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordtype">int</span> nameLengthLimit,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordtype">bool</span> saveStandalone) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a6a2d9f0cc03001b64ed91ad9bab1f228">m_name</a> = name;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a5a794463752efcea128d4b4225e15e84">m_defaultInstanceName</a> = defaultInstanceName;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a29fa455ad56f112d0de08a6055198f2b">m_iconName</a> = iconName;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#afa2bccb97978c422a49919f4f0569ded">m_order</a> = order;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a52feceebde2a1127e2005901e31f4e80">m_supportsValue</a> = supportsValue;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#abb9db5a9f76087b11fd7849f309e8687">m_mustInherit</a> = mustInherit;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a5398b1ebabc415d1c2cf133e9781ede7">m_nameLengthLimit</a> = nameLengthLimit;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a0a098341e3c577ca7dd665ff62934f51">m_saveStandalone</a> = saveStandalone;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#aa138aa14998a44561dada88e3eb5bc20">   80</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_templates_database_1_1_database_object_type.html#aa138aa14998a44561dada88e3eb5bc20">InitializeRelations</a>(IEnumerable&lt;DatabaseObjectType&gt; allowedNestingParents,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            IEnumerable&lt;DatabaseObjectType&gt; allowedInheritanceParents,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <a class="code hl_function" href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4">DatabaseObjectType</a> nestedValueType) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a5e23456e476f8d3a89b097781ed289ff">IsInitialized</a>) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;InitializeRelations of this DatabaseObjectType was already called.&quot;</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a1692d39b677f2c00b2934424a6e71c75">m_nestedValueType</a> = nestedValueType;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">if</span> (allowedNestingParents != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a6903401b915ca70c5150d4b57a95744b">m_allowedNestingParents</a> = allowedNestingParents.Distinct().ToList();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <span class="keywordflow">foreach</span> (<a class="code hl_function" href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4">DatabaseObjectType</a> allowedNestingParent <span class="keywordflow">in</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a6903401b915ca70c5150d4b57a95744b">m_allowedNestingParents</a>) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    allowedNestingParent.<a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#ae082ff769a5ba40dccaf40d92a5ee3ba">m_allowedNestingChildren</a>.Add(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a6903401b915ca70c5150d4b57a95744b">m_allowedNestingParents</a> = [];</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">if</span> (allowedInheritanceParents != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a41e0a9efdcfd7f65391591f7a39d3581">m_allowedInheritanceParents</a> = allowedInheritanceParents.Distinct().ToList();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <span class="keywordflow">foreach</span> (<a class="code hl_function" href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4">DatabaseObjectType</a> allowedInheritanceParent <span class="keywordflow">in</span> <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a41e0a9efdcfd7f65391591f7a39d3581">m_allowedInheritanceParents</a>) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    allowedInheritanceParent.<a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a382ac6c05d7cc5a24ed5640b95c072b9">m_allowedInheritanceChildren</a>.Add(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                <a class="code hl_variable" href="class_templates_database_1_1_database_object_type.html#a41e0a9efdcfd7f65391591f7a39d3581">m_allowedInheritanceParents</a> = [];</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_database_object_type.html#aa87abdfc215e11893e07fe2dd53a85eb">  107</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_templates_database_1_1_database_object_type.html#aa87abdfc215e11893e07fe2dd53a85eb">ToString</a>() =&gt; <a class="code hl_property" href="class_templates_database_1_1_database_object_type.html#a1e3c490ad7462451cd2ad87f138d2883">Name</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a0a098341e3c577ca7dd665ff62934f51"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a0a098341e3c577ca7dd665ff62934f51">TemplatesDatabase.DatabaseObjectType.m_saveStandalone</a></div><div class="ttdeci">bool m_saveStandalone</div><div class="ttdef"><b>定义</b> <a href="#l00022">DatabaseObjectType.cs:22</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a1692d39b677f2c00b2934424a6e71c75"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a1692d39b677f2c00b2934424a6e71c75">TemplatesDatabase.DatabaseObjectType.m_nestedValueType</a></div><div class="ttdeci">DatabaseObjectType m_nestedValueType</div><div class="ttdef"><b>定义</b> <a href="#l00032">DatabaseObjectType.cs:32</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a1e3c490ad7462451cd2ad87f138d2883"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a1e3c490ad7462451cd2ad87f138d2883">TemplatesDatabase.DatabaseObjectType.Name</a></div><div class="ttdeci">string Name</div><div class="ttdef"><b>定义</b> <a href="#l00036">DatabaseObjectType.cs:36</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a26d9a69b953e33e4f3bea8066bc05b84"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a26d9a69b953e33e4f3bea8066bc05b84">TemplatesDatabase.DatabaseObjectType.NestedValueType</a></div><div class="ttdeci">DatabaseObjectType NestedValueType</div><div class="ttdef"><b>定义</b> <a href="#l00060">DatabaseObjectType.cs:60</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a29fa455ad56f112d0de08a6055198f2b"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a29fa455ad56f112d0de08a6055198f2b">TemplatesDatabase.DatabaseObjectType.m_iconName</a></div><div class="ttdeci">string m_iconName</div><div class="ttdef"><b>定义</b> <a href="#l00012">DatabaseObjectType.cs:12</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a372b674e30a6669bd8daf6357ed26814"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a372b674e30a6669bd8daf6357ed26814">TemplatesDatabase.DatabaseObjectType.AllowedNestingChildren</a></div><div class="ttdeci">ReadOnlyList&lt; DatabaseObjectType &gt; AllowedNestingChildren</div><div class="ttdef"><b>定义</b> <a href="#l00056">DatabaseObjectType.cs:56</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a375434cbd2472d6114abb0452a0c9c38"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a375434cbd2472d6114abb0452a0c9c38">TemplatesDatabase.DatabaseObjectType.AllowedInheritanceChildren</a></div><div class="ttdeci">ReadOnlyList&lt; DatabaseObjectType &gt; AllowedInheritanceChildren</div><div class="ttdef"><b>定义</b> <a href="#l00058">DatabaseObjectType.cs:58</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a382ac6c05d7cc5a24ed5640b95c072b9"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a382ac6c05d7cc5a24ed5640b95c072b9">TemplatesDatabase.DatabaseObjectType.m_allowedInheritanceChildren</a></div><div class="ttdeci">List&lt; DatabaseObjectType &gt; m_allowedInheritanceChildren</div><div class="ttdef"><b>定义</b> <a href="#l00030">DatabaseObjectType.cs:30</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a41e0a9efdcfd7f65391591f7a39d3581"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a41e0a9efdcfd7f65391591f7a39d3581">TemplatesDatabase.DatabaseObjectType.m_allowedInheritanceParents</a></div><div class="ttdeci">List&lt; DatabaseObjectType &gt; m_allowedInheritanceParents</div><div class="ttdef"><b>定义</b> <a href="#l00026">DatabaseObjectType.cs:26</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a52feceebde2a1127e2005901e31f4e80"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a52feceebde2a1127e2005901e31f4e80">TemplatesDatabase.DatabaseObjectType.m_supportsValue</a></div><div class="ttdeci">bool m_supportsValue</div><div class="ttdef"><b>定义</b> <a href="#l00016">DatabaseObjectType.cs:16</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a5398b1ebabc415d1c2cf133e9781ede7"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a5398b1ebabc415d1c2cf133e9781ede7">TemplatesDatabase.DatabaseObjectType.m_nameLengthLimit</a></div><div class="ttdeci">int m_nameLengthLimit</div><div class="ttdef"><b>定义</b> <a href="#l00020">DatabaseObjectType.cs:20</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a5a794463752efcea128d4b4225e15e84"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a5a794463752efcea128d4b4225e15e84">TemplatesDatabase.DatabaseObjectType.m_defaultInstanceName</a></div><div class="ttdeci">string m_defaultInstanceName</div><div class="ttdef"><b>定义</b> <a href="#l00010">DatabaseObjectType.cs:10</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a5e23456e476f8d3a89b097781ed289ff"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a5e23456e476f8d3a89b097781ed289ff">TemplatesDatabase.DatabaseObjectType.IsInitialized</a></div><div class="ttdeci">bool IsInitialized</div><div class="ttdef"><b>定义</b> <a href="#l00034">DatabaseObjectType.cs:34</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a6903401b915ca70c5150d4b57a95744b"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a6903401b915ca70c5150d4b57a95744b">TemplatesDatabase.DatabaseObjectType.m_allowedNestingParents</a></div><div class="ttdeci">List&lt; DatabaseObjectType &gt; m_allowedNestingParents</div><div class="ttdef"><b>定义</b> <a href="#l00024">DatabaseObjectType.cs:24</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a69bb88805ab4c9ba71b0c6aa7140cd2b"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a69bb88805ab4c9ba71b0c6aa7140cd2b">TemplatesDatabase.DatabaseObjectType.DefaultInstanceName</a></div><div class="ttdeci">string DefaultInstanceName</div><div class="ttdef"><b>定义</b> <a href="#l00038">DatabaseObjectType.cs:38</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a6a2d9f0cc03001b64ed91ad9bab1f228"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a6a2d9f0cc03001b64ed91ad9bab1f228">TemplatesDatabase.DatabaseObjectType.m_name</a></div><div class="ttdeci">string m_name</div><div class="ttdef"><b>定义</b> <a href="#l00008">DatabaseObjectType.cs:8</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a6d54d49206414906a915c7d0679b1e43"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a6d54d49206414906a915c7d0679b1e43">TemplatesDatabase.DatabaseObjectType.SaveStandalone</a></div><div class="ttdeci">bool SaveStandalone</div><div class="ttdef"><b>定义</b> <a href="#l00050">DatabaseObjectType.cs:50</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a7741b797f1872d8ccebfc0db63ad195f"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a7741b797f1872d8ccebfc0db63ad195f">TemplatesDatabase.DatabaseObjectType.AllowedNestingParents</a></div><div class="ttdeci">ReadOnlyList&lt; DatabaseObjectType &gt; AllowedNestingParents</div><div class="ttdef"><b>定义</b> <a href="#l00052">DatabaseObjectType.cs:52</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_a9d47012a2e94d538ece8418639e8d4df"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#a9d47012a2e94d538ece8418639e8d4df">TemplatesDatabase.DatabaseObjectType.AllowedInheritanceParents</a></div><div class="ttdeci">ReadOnlyList&lt; DatabaseObjectType &gt; AllowedInheritanceParents</div><div class="ttdef"><b>定义</b> <a href="#l00054">DatabaseObjectType.cs:54</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_aa138aa14998a44561dada88e3eb5bc20"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#aa138aa14998a44561dada88e3eb5bc20">TemplatesDatabase.DatabaseObjectType.InitializeRelations</a></div><div class="ttdeci">void InitializeRelations(IEnumerable&lt; DatabaseObjectType &gt; allowedNestingParents, IEnumerable&lt; DatabaseObjectType &gt; allowedInheritanceParents, DatabaseObjectType nestedValueType)</div><div class="ttdef"><b>定义</b> <a href="#l00080">DatabaseObjectType.cs:80</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_aa87abdfc215e11893e07fe2dd53a85eb"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#aa87abdfc215e11893e07fe2dd53a85eb">TemplatesDatabase.DatabaseObjectType.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>定义</b> <a href="#l00107">DatabaseObjectType.cs:107</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_aa89cffd21a942576448a7fac3e353da4"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#aa89cffd21a942576448a7fac3e353da4">TemplatesDatabase.DatabaseObjectType.DatabaseObjectType</a></div><div class="ttdeci">DatabaseObjectType(string name, string defaultInstanceName, string iconName, int order, bool supportsValue, bool mustInherit, int nameLengthLimit, bool saveStandalone)</div><div class="ttdef"><b>定义</b> <a href="#l00062">DatabaseObjectType.cs:62</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_aba81fcb71754a116158106c806a212b5"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#aba81fcb71754a116158106c806a212b5">TemplatesDatabase.DatabaseObjectType.MustInherit</a></div><div class="ttdeci">bool MustInherit</div><div class="ttdef"><b>定义</b> <a href="#l00046">DatabaseObjectType.cs:46</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_abb9db5a9f76087b11fd7849f309e8687"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#abb9db5a9f76087b11fd7849f309e8687">TemplatesDatabase.DatabaseObjectType.m_mustInherit</a></div><div class="ttdeci">bool m_mustInherit</div><div class="ttdef"><b>定义</b> <a href="#l00018">DatabaseObjectType.cs:18</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_ac35a034e51ff60409a65baf0eb5e9e7f"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#ac35a034e51ff60409a65baf0eb5e9e7f">TemplatesDatabase.DatabaseObjectType.IconName</a></div><div class="ttdeci">string IconName</div><div class="ttdef"><b>定义</b> <a href="#l00040">DatabaseObjectType.cs:40</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_ac73c96e7b2db4b103ab1b1dca9762b3e"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#ac73c96e7b2db4b103ab1b1dca9762b3e">TemplatesDatabase.DatabaseObjectType.SupportsValue</a></div><div class="ttdeci">bool SupportsValue</div><div class="ttdef"><b>定义</b> <a href="#l00044">DatabaseObjectType.cs:44</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_ada766418fd21b1a5c6049b2d2e691a2d"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#ada766418fd21b1a5c6049b2d2e691a2d">TemplatesDatabase.DatabaseObjectType.Order</a></div><div class="ttdeci">int Order</div><div class="ttdef"><b>定义</b> <a href="#l00042">DatabaseObjectType.cs:42</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_adf21eb83cfd0d167511d179e5563d01c"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#adf21eb83cfd0d167511d179e5563d01c">TemplatesDatabase.DatabaseObjectType.NameLengthLimit</a></div><div class="ttdeci">int NameLengthLimit</div><div class="ttdef"><b>定义</b> <a href="#l00048">DatabaseObjectType.cs:48</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_ae082ff769a5ba40dccaf40d92a5ee3ba"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#ae082ff769a5ba40dccaf40d92a5ee3ba">TemplatesDatabase.DatabaseObjectType.m_allowedNestingChildren</a></div><div class="ttdeci">List&lt; DatabaseObjectType &gt; m_allowedNestingChildren</div><div class="ttdef"><b>定义</b> <a href="#l00028">DatabaseObjectType.cs:28</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_database_object_type_html_afa2bccb97978c422a49919f4f0569ded"><div class="ttname"><a href="class_templates_database_1_1_database_object_type.html#afa2bccb97978c422a49919f4f0569ded">TemplatesDatabase.DatabaseObjectType.m_order</a></div><div class="ttdeci">int m_order</div><div class="ttdef"><b>定义</b> <a href="#l00014">DatabaseObjectType.cs:14</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_292d907b3205a0225a4c31bdc9de5e31.html">EntitySystem</a></li><li class="navelem"><a href="dir_573980ea4295b93181ff47e4f106e4ed.html">TemplatesDatabase</a></li><li class="navelem"><a href="_database_object_type_8cs.html">DatabaseObjectType.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

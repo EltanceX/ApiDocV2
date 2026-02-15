@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemWaterBlockBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_water_block_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemWaterBlockBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_water_block_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_water_block_behavior.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_subsystem_water_block_behavior.html#a9e943d2e1f3281ac13d7ad1bdc9bc96d">SubsystemWaterBlockBehavior</a> : <a class="code hl_function" href="class_game_1_1_subsystem_fluid_block_behavior.html#af0f2ce35714f0d7648427e4c29b59b7e">SubsystemFluidBlockBehavior</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_water_block_behavior.html#a188d363b6fb637b20355b07b87520c34">    5</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_subsystem_water_block_behavior.html#a188d363b6fb637b20355b07b87520c34">m_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_water_block_behavior.html#a6d6c750b3bf284c7b30d21206082600c">    7</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_subsystem_water_block_behavior.html#a6d6c750b3bf284c7b30d21206082600c">m_soundVolume</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_water_block_behavior.html#a8bdde0d8af923ece3d67c3a68ade74a1">    9</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span>[] <a class="code hl_property" href="class_game_1_1_subsystem_water_block_behavior.html#a8bdde0d8af923ece3d67c3a68ade74a1">HandledBlocks</a> =&gt; [18];</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_water_block_behavior.html#a6a63d47f60612523cb9367b286cca6b3">   11</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_subsystem_water_block_behavior.html#a6a63d47f60612523cb9367b286cca6b3">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_subsystem_water_block_behavior.html#a6a63d47f60612523cb9367b286cca6b3">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_subsystem_water_block_behavior.html#a6a63d47f60612523cb9367b286cca6b3">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_water_block_behavior.html#a9e943d2e1f3281ac13d7ad1bdc9bc96d">   13</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_subsystem_water_block_behavior.html#a9e943d2e1f3281ac13d7ad1bdc9bc96d">SubsystemWaterBlockBehavior</a>() : base(<a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.FluidBlocks[18], true) { }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_water_block_behavior.html#ab6c502bb6ae2da8bd818c18affe61f26">   15</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_water_block_behavior.html#ab6c502bb6ae2da8bd818c18affe61f26">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_subsystem_fluid_block_behavior.html#a1ec4867573bc2165fcce74d4e3af1b5e">SubsystemTime</a>.PeriodicGameTimeEvent(0.25, 0.0)) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <a class="code hl_function" href="class_game_1_1_subsystem_fluid_block_behavior.html#a97255fa8abe9569f703f563f1387468a">SpreadFluid</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_subsystem_fluid_block_behavior.html#a1ec4867573bc2165fcce74d4e3af1b5e">SubsystemTime</a>.PeriodicGameTimeEvent(1.0, 0.25)) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <span class="keywordtype">float</span> num = <span class="keywordtype">float</span>.MaxValue;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">foreach</span> (<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> listenerPosition <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_1_1_subsystem_fluid_block_behavior.html#aadb25b2b18da9d9fd0cf13f6c20b5cb0">SubsystemAudio</a>.ListenerPositions) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    <span class="keywordtype">float</span>? num2 = <a class="code hl_function" href="class_game_1_1_subsystem_fluid_block_behavior.html#aa581ae24c6296b44e8c3633f4a7290c9">CalculateDistanceToFluid</a>(listenerPosition, 8, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    <span class="keywordflow">if</span> (num2.HasValue</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                        &amp;&amp; num2.Value &lt; num) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                        num = num2.Value;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <a class="code hl_variable" href="class_game_1_1_subsystem_water_block_behavior.html#a6d6c750b3bf284c7b30d21206082600c">m_soundVolume</a> = 0.5f * <a class="code hl_property" href="class_game_1_1_subsystem_fluid_block_behavior.html#aadb25b2b18da9d9fd0cf13f6c20b5cb0">SubsystemAudio</a>.CalculateVolume(num, 2f, 3.5f);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_property" href="class_game_1_1_subsystem_ambient_sounds.html#ae8ea4f3c404f72b4c41dfda7e635a3ae">SubsystemAmbientSounds.WaterSoundVolume</a> = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(<a class="code hl_property" href="class_game_1_1_subsystem_fluid_block_behavior.html#a0df02880ae14582d841d400068c8b5a1">SubsystemAmbientSounds</a>.WaterSoundVolume, <a class="code hl_variable" href="class_game_1_1_subsystem_water_block_behavior.html#a6d6c750b3bf284c7b30d21206082600c">m_soundVolume</a>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_water_block_behavior.html#af4f48c24242efc678e9ac4a9caa545e9">   33</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_subsystem_water_block_behavior.html#af4f48c24242efc678e9ac4a9caa545e9">OnFluidInteract</a>(<span class="keywordtype">int</span> interactValue, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z, <span class="keywordtype">int</span> fluidValue) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_property" href="class_game_1_1_blocks_manager.html#afa0414b230000fb6f807cf24d2de4334">Blocks</a>[<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">ExtractContents</a>(interactValue)] is <a class="code hl_class" href="class_game_1_1_magma_block.html">MagmaBlock</a>) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <a class="code hl_property" href="class_game_1_1_subsystem_fluid_block_behavior.html#aadb25b2b18da9d9fd0cf13f6c20b5cb0">SubsystemAudio</a>.PlayRandomSound(<span class="stringliteral">&quot;Audio/Sizzles&quot;</span>, 1f, <a class="code hl_variable" href="class_game_1_1_subsystem_water_block_behavior.html#a188d363b6fb637b20355b07b87520c34">m_random</a>.Float(-0.1f, 0.1f), <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>(x, y, z), 5f, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a>.<a class="code hl_function" href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589">DestroyCell</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    0,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    x,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    y,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    z,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    0,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keyword">false</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                );</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <a class="code hl_function" href="class_game_1_1_subsystem_fluid_block_behavior.html#a196c4b52ad8b77227dfba2b173fb28b1">Set</a>(x, y, z, 3);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">return</span> base.OnFluidInteract(interactValue, x, y, z, fluidValue);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_water_block_behavior.html#af6c398670bd8c4108c603d347e8a644e">   51</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_water_block_behavior.html#af6c398670bd8c4108c603d347e8a644e">OnItemHarvested</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z, <span class="keywordtype">int</span> blockValue, ref <a class="code hl_struct" href="struct_game_1_1_block_drop_value.html">BlockDropValue</a> dropValue, ref <span class="keywordtype">int</span> newBlockValue) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">if</span> (y &gt; 80</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                &amp;&amp; <a class="code hl_class" href="class_game_1_1_subsystem_weather.html">SubsystemWeather</a>.<a class="code hl_variable" href="class_game_1_1_subsystem_weather.html#a50ddd5196fb35c8b6638776ab71239d0">IsPlaceFrozen</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a>.<a class="code hl_property" href="class_game_1_1_subsystem_terrain.html#ad54b44f7935f57de97494a007f2d5fcb">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#ada14d74c436c8d75fbe1319536f7b945">GetSeasonalTemperature</a>(x, z), y)) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                dropValue.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(62);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                base.OnItemHarvested(x, y, z, blockValue, ref dropValue, ref newBlockValue);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_afa0414b230000fb6f807cf24d2de4334"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#afa0414b230000fb6f807cf24d2de4334">Game.BlocksManager.Blocks</a></div><div class="ttdeci">static Block[] Blocks</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00041">BlocksManager.cs:41</a></div></div>
+<div class="ttc" id="aclass_game_1_1_magma_block_html"><div class="ttname"><a href="class_game_1_1_magma_block.html">Game.MagmaBlock</a></div><div class="ttdef"><b>定义</b> <a href="_magma_block_8cs_source.html#l00003">MagmaBlock.cs:3</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_ambient_sounds_html_ae8ea4f3c404f72b4c41dfda7e635a3ae"><div class="ttname"><a href="class_game_1_1_subsystem_ambient_sounds.html#ae8ea4f3c404f72b4c41dfda7e635a3ae">Game.SubsystemAmbientSounds.WaterSoundVolume</a></div><div class="ttdeci">float WaterSoundVolume</div><div class="ttdef"><b>定义</b> <a href="_subsystem_ambient_sounds_8cs_source.html#l00020">SubsystemAmbientSounds.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_fluid_block_behavior_html_a0df02880ae14582d841d400068c8b5a1"><div class="ttname"><a href="class_game_1_1_subsystem_fluid_block_behavior.html#a0df02880ae14582d841d400068c8b5a1">Game.SubsystemFluidBlockBehavior.SubsystemAmbientSounds</a></div><div class="ttdeci">SubsystemAmbientSounds SubsystemAmbientSounds</div><div class="ttdef"><b>定义</b> <a href="_subsystem_fluid_block_behavior_8cs_source.html#l00024">SubsystemFluidBlockBehavior.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_fluid_block_behavior_html_a196c4b52ad8b77227dfba2b173fb28b1"><div class="ttname"><a href="class_game_1_1_subsystem_fluid_block_behavior.html#a196c4b52ad8b77227dfba2b173fb28b1">Game.SubsystemFluidBlockBehavior.Set</a></div><div class="ttdeci">void Set(int x, int y, int z, int value)</div><div class="ttdef"><b>定义</b> <a href="_subsystem_fluid_block_behavior_8cs_source.html#l00331">SubsystemFluidBlockBehavior.cs:331</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_fluid_block_behavior_html_a1ec4867573bc2165fcce74d4e3af1b5e"><div class="ttname"><a href="class_game_1_1_subsystem_fluid_block_behavior.html#a1ec4867573bc2165fcce74d4e3af1b5e">Game.SubsystemFluidBlockBehavior.SubsystemTime</a></div><div class="ttdeci">SubsystemTime SubsystemTime</div><div class="ttdef"><b>定义</b> <a href="_subsystem_fluid_block_behavior_8cs_source.html#l00020">SubsystemFluidBlockBehavior.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_fluid_block_behavior_html_a97255fa8abe9569f703f563f1387468a"><div class="ttname"><a href="class_game_1_1_subsystem_fluid_block_behavior.html#a97255fa8abe9569f703f563f1387468a">Game.SubsystemFluidBlockBehavior.SpreadFluid</a></div><div class="ttdeci">void SpreadFluid()</div><div class="ttdef"><b>定义</b> <a href="_subsystem_fluid_block_behavior_8cs_source.html#l00149">SubsystemFluidBlockBehavior.cs:149</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_fluid_block_behavior_html_aa581ae24c6296b44e8c3633f4a7290c9"><div class="ttname"><a href="class_game_1_1_subsystem_fluid_block_behavior.html#aa581ae24c6296b44e8c3633f4a7290c9">Game.SubsystemFluidBlockBehavior.CalculateDistanceToFluid</a></div><div class="ttdeci">float? CalculateDistanceToFluid(Vector3 p, int radius, bool flowingFluidOnly)</div><div class="ttdef"><b>定义</b> <a href="_subsystem_fluid_block_behavior_8cs_source.html#l00284">SubsystemFluidBlockBehavior.cs:284</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_fluid_block_behavior_html_aadb25b2b18da9d9fd0cf13f6c20b5cb0"><div class="ttname"><a href="class_game_1_1_subsystem_fluid_block_behavior.html#aadb25b2b18da9d9fd0cf13f6c20b5cb0">Game.SubsystemFluidBlockBehavior.SubsystemAudio</a></div><div class="ttdeci">SubsystemAudio SubsystemAudio</div><div class="ttdef"><b>定义</b> <a href="_subsystem_fluid_block_behavior_8cs_source.html#l00022">SubsystemFluidBlockBehavior.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_fluid_block_behavior_html_af0f2ce35714f0d7648427e4c29b59b7e"><div class="ttname"><a href="class_game_1_1_subsystem_fluid_block_behavior.html#af0f2ce35714f0d7648427e4c29b59b7e">Game.SubsystemFluidBlockBehavior.SubsystemFluidBlockBehavior</a></div><div class="ttdeci">SubsystemFluidBlockBehavior(FluidBlock fluidBlock, bool generateSources)</div><div class="ttdef"><b>定义</b> <a href="_subsystem_fluid_block_behavior_8cs_source.html#l00026">SubsystemFluidBlockBehavior.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html">Game.SubsystemTerrain</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00006">SubsystemTerrain.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html_a98561e3887a06100ada64369ae43f589"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589">Game.SubsystemTerrain.DestroyCell</a></div><div class="ttdeci">virtual void DestroyCell(int toolLevel, int x, int y, int z, int newValue, bool noDrop, bool noParticleSystem, MovingBlock movingBlock=null)</div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00429">SubsystemTerrain.cs:429</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html_ad54b44f7935f57de97494a007f2d5fcb"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html#ad54b44f7935f57de97494a007f2d5fcb">Game.SubsystemTerrain.Terrain</a></div><div class="ttdeci">virtual Terrain Terrain</div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00050">SubsystemTerrain.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_water_block_behavior_html_a188d363b6fb637b20355b07b87520c34"><div class="ttname"><a href="class_game_1_1_subsystem_water_block_behavior.html#a188d363b6fb637b20355b07b87520c34">Game.SubsystemWaterBlockBehavior.m_random</a></div><div class="ttdeci">Random m_random</div><div class="ttdef"><b>定义</b> <a href="#l00005">SubsystemWaterBlockBehavior.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_water_block_behavior_html_a6a63d47f60612523cb9367b286cca6b3"><div class="ttname"><a href="class_game_1_1_subsystem_water_block_behavior.html#a6a63d47f60612523cb9367b286cca6b3">Game.SubsystemWaterBlockBehavior.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00011">SubsystemWaterBlockBehavior.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_water_block_behavior_html_a6d6c750b3bf284c7b30d21206082600c"><div class="ttname"><a href="class_game_1_1_subsystem_water_block_behavior.html#a6d6c750b3bf284c7b30d21206082600c">Game.SubsystemWaterBlockBehavior.m_soundVolume</a></div><div class="ttdeci">float m_soundVolume</div><div class="ttdef"><b>定义</b> <a href="#l00007">SubsystemWaterBlockBehavior.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_water_block_behavior_html_a8bdde0d8af923ece3d67c3a68ade74a1"><div class="ttname"><a href="class_game_1_1_subsystem_water_block_behavior.html#a8bdde0d8af923ece3d67c3a68ade74a1">Game.SubsystemWaterBlockBehavior.HandledBlocks</a></div><div class="ttdeci">override int[] HandledBlocks</div><div class="ttdef"><b>定义</b> <a href="#l00009">SubsystemWaterBlockBehavior.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_water_block_behavior_html_a9e943d2e1f3281ac13d7ad1bdc9bc96d"><div class="ttname"><a href="class_game_1_1_subsystem_water_block_behavior.html#a9e943d2e1f3281ac13d7ad1bdc9bc96d">Game.SubsystemWaterBlockBehavior.SubsystemWaterBlockBehavior</a></div><div class="ttdeci">SubsystemWaterBlockBehavior()</div><div class="ttdef"><b>定义</b> <a href="#l00013">SubsystemWaterBlockBehavior.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_water_block_behavior_html_ab6c502bb6ae2da8bd818c18affe61f26"><div class="ttname"><a href="class_game_1_1_subsystem_water_block_behavior.html#ab6c502bb6ae2da8bd818c18affe61f26">Game.SubsystemWaterBlockBehavior.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00015">SubsystemWaterBlockBehavior.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_water_block_behavior_html_af4f48c24242efc678e9ac4a9caa545e9"><div class="ttname"><a href="class_game_1_1_subsystem_water_block_behavior.html#af4f48c24242efc678e9ac4a9caa545e9">Game.SubsystemWaterBlockBehavior.OnFluidInteract</a></div><div class="ttdeci">override bool OnFluidInteract(int interactValue, int x, int y, int z, int fluidValue)</div><div class="ttdef"><b>定义</b> <a href="#l00033">SubsystemWaterBlockBehavior.cs:33</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_water_block_behavior_html_af6c398670bd8c4108c603d347e8a644e"><div class="ttname"><a href="class_game_1_1_subsystem_water_block_behavior.html#af6c398670bd8c4108c603d347e8a644e">Game.SubsystemWaterBlockBehavior.OnItemHarvested</a></div><div class="ttdeci">override void OnItemHarvested(int x, int y, int z, int blockValue, ref BlockDropValue dropValue, ref int newBlockValue)</div><div class="ttdef"><b>定义</b> <a href="#l00051">SubsystemWaterBlockBehavior.cs:51</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_weather_html"><div class="ttname"><a href="class_game_1_1_subsystem_weather.html">Game.SubsystemWeather</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_weather_8cs_source.html#l00007">SubsystemWeather.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_weather_html_a50ddd5196fb35c8b6638776ab71239d0"><div class="ttname"><a href="class_game_1_1_subsystem_weather.html#a50ddd5196fb35c8b6638776ab71239d0">Game.SubsystemWeather.IsPlaceFrozen</a></div><div class="ttdeci">static Func&lt; int, int, bool &gt; IsPlaceFrozen</div><div class="ttdef"><b>定义</b> <a href="_subsystem_weather_8cs_source.html#l00099">SubsystemWeather.cs:99</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a221de37baa4a0f91e934920030005677"><div class="ttname"><a href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">Game.Terrain.ExtractContents</a></div><div class="ttdeci">static int ExtractContents(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00303">Terrain.cs:303</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_ada14d74c436c8d75fbe1319536f7b945"><div class="ttname"><a href="class_game_1_1_terrain.html#ada14d74c436c8d75fbe1319536f7b945">Game.Terrain.GetSeasonalTemperature</a></div><div class="ttdeci">virtual int GetSeasonalTemperature(int x, int z)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00344">Terrain.cs:344</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aea9a8c0114bc872225f02ebc8b7b8b9f"><div class="ttname"><a href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">Game.Terrain.MakeBlockValue</a></div><div class="ttdeci">static int MakeBlockValue(int contents)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00298">Terrain.cs:298</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_game_1_1_block_drop_value_html"><div class="ttname"><a href="struct_game_1_1_block_drop_value.html">Game.BlockDropValue</a></div><div class="ttdef"><b>定义</b> <a href="_block_drop_value_8cs_source.html#l00004">BlockDropValue.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_water_block_behavior_8cs.html">SubsystemWaterBlockBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

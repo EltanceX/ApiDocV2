@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Engine.Media.PeekStream</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_engine_1_1_media_1_1_peek_stream.html','','class_engine_1_1_media_1_1_peek_stream-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Engine.Media.PeekStream</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Engine.Media.PeekStream 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_media_1_1_peek_stream__inherit__graph.png" border="0" usemap="#a_engine_8_media_8_peek_stream_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_engine_8_media_8_peek_stream_inherit__map" id="a_engine_8_media_8_peek_stream_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,182,107"/>
+<area shape="rect" title=" " alt="" coords="62,5,125,32"/>
+<area shape="poly" title=" " alt="" coords="95,46,96,81,91,79,92,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Engine.Media.PeekStream 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_media_1_1_peek_stream__coll__graph.png" border="0" usemap="#a_engine_8_media_8_peek_stream_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_engine_8_media_8_peek_stream_coll__map" id="a_engine_8_media_8_peek_stream_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,182,107"/>
+<area shape="rect" title=" " alt="" coords="62,5,125,32"/>
+<area shape="poly" title=" " alt="" coords="95,46,96,81,91,79,92,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aafbebaf8e1f76919a2189db63a98ba82" id="r_aafbebaf8e1f76919a2189db63a98ba82"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aafbebaf8e1f76919a2189db63a98ba82">PeekStream</a> (Stream stream, int peekSize)</td></tr>
+<tr class="memitem:ac7ab11019255389cf40da4354e0d94d3" id="r_ac7ab11019255389cf40da4354e0d94d3"><td class="memItemLeft">MemoryStream&#160;</td><td class="memItemRight"><a class="el" href="#ac7ab11019255389cf40da4354e0d94d3">GetInitialBytesStream</a> ()</td></tr>
+<tr class="memitem:a09f79ddffe22ffd8a859da8cc83a6615" id="r_a09f79ddffe22ffd8a859da8cc83a6615"><td class="memItemLeft">override long&#160;</td><td class="memItemRight"><a class="el" href="#a09f79ddffe22ffd8a859da8cc83a6615">Seek</a> (long offset, SeekOrigin origin)</td></tr>
+<tr class="memitem:a88248ba3171c78ee69da98cea727226a" id="r_a88248ba3171c78ee69da98cea727226a"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a88248ba3171c78ee69da98cea727226a">SetLength</a> (long value)</td></tr>
+<tr class="memitem:aad8a21d2209acea85c3932ace1aab517" id="r_aad8a21d2209acea85c3932ace1aab517"><td class="memItemLeft">override int&#160;</td><td class="memItemRight"><a class="el" href="#aad8a21d2209acea85c3932ace1aab517">Read</a> (byte[] buffer, int offset, int count)</td></tr>
+<tr class="memitem:aafd015e075e83968b019150c016aa5c0" id="r_aafd015e075e83968b019150c016aa5c0"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#aafd015e075e83968b019150c016aa5c0">Write</a> (byte[] buffer, int offset, int count)</td></tr>
+<tr class="memitem:aec2a3fd7829f441a26db73fa30325cd8" id="r_aec2a3fd7829f441a26db73fa30325cd8"><td class="memItemLeft">override int&#160;</td><td class="memItemRight"><a class="el" href="#aec2a3fd7829f441a26db73fa30325cd8">ReadByte</a> ()</td></tr>
+<tr class="memitem:acf3b53bb293ad69a70893ac6abe7cbb4" id="r_acf3b53bb293ad69a70893ac6abe7cbb4"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#acf3b53bb293ad69a70893ac6abe7cbb4">Flush</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a367098493eb5d51d3b547064926cc08e" id="r_a367098493eb5d51d3b547064926cc08e"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a367098493eb5d51d3b547064926cc08e">Dispose</a> (bool disposing)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a44dc8cc3e8d62dba69373c17be122367" id="r_a44dc8cc3e8d62dba69373c17be122367"><td class="memItemLeft">override bool&#160;</td><td class="memItemRight"><a class="el" href="#a44dc8cc3e8d62dba69373c17be122367">CanRead</a><code> [get]</code></td></tr>
+<tr class="memitem:ae169c03c50e591b06d943585afdc8aed" id="r_ae169c03c50e591b06d943585afdc8aed"><td class="memItemLeft">override bool&#160;</td><td class="memItemRight"><a class="el" href="#ae169c03c50e591b06d943585afdc8aed">CanWrite</a><code> [get]</code></td></tr>
+<tr class="memitem:a038cc3f54c77ef4d54eea7c5c64a1c05" id="r_a038cc3f54c77ef4d54eea7c5c64a1c05"><td class="memItemLeft">override bool&#160;</td><td class="memItemRight"><a class="el" href="#a038cc3f54c77ef4d54eea7c5c64a1c05">CanSeek</a><code> [get]</code></td></tr>
+<tr class="memitem:a3172eb31926b7f7a79a77b0dac262815" id="r_a3172eb31926b7f7a79a77b0dac262815"><td class="memItemLeft">override long&#160;</td><td class="memItemRight"><a class="el" href="#a3172eb31926b7f7a79a77b0dac262815">Length</a><code> [get]</code></td></tr>
+<tr class="memitem:a96c7d21c840ced37705dde24e24eaf74" id="r_a96c7d21c840ced37705dde24e24eaf74"><td class="memItemLeft">override long&#160;</td><td class="memItemRight"><a class="el" href="#a96c7d21c840ced37705dde24e24eaf74">Position</a><code> [get, set]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a3cf686cde9b251d465e10f743e9b7c0d" id="r_a3cf686cde9b251d465e10f743e9b7c0d"><td class="memItemLeft">Stream&#160;</td><td class="memItemRight"><a class="el" href="#a3cf686cde9b251d465e10f743e9b7c0d">m_stream</a></td></tr>
+<tr class="memitem:abe9aaa05d42ac79b74775f574da89cd5" id="r_abe9aaa05d42ac79b74775f574da89cd5"><td class="memItemLeft">byte[]&#160;</td><td class="memItemRight"><a class="el" href="#abe9aaa05d42ac79b74775f574da89cd5">m_buffer</a></td></tr>
+<tr class="memitem:ac4636053f2882e88583131c744fc10c9" id="r_ac4636053f2882e88583131c744fc10c9"><td class="memItemLeft">long&#160;</td><td class="memItemRight"><a class="el" href="#ac4636053f2882e88583131c744fc10c9">m_position</a></td></tr>
+<tr class="memitem:ac6d1d223ade8853c0780b794c78af979" id="r_ac6d1d223ade8853c0780b794c78af979"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac6d1d223ade8853c0780b794c78af979">m_end</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00002">2</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="aafbebaf8e1f76919a2189db63a98ba82" name="aafbebaf8e1f76919a2189db63a98ba82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbebaf8e1f76919a2189db63a98ba82">&#9670;&#160;</a></span>PeekStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Engine.Media.PeekStream.PeekStream </td>
+          <td>(</td>
+          <td class="paramtype">Stream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>peekSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a367098493eb5d51d3b547064926cc08e" name="a367098493eb5d51d3b547064926cc08e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a367098493eb5d51d3b547064926cc08e">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Media.PeekStream.Dispose </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>disposing</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00102">102</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acf3b53bb293ad69a70893ac6abe7cbb4" name="acf3b53bb293ad69a70893ac6abe7cbb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3b53bb293ad69a70893ac6abe7cbb4">&#9670;&#160;</a></span>Flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Media.PeekStream.Flush </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00098">98</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac7ab11019255389cf40da4354e0d94d3" name="ac7ab11019255389cf40da4354e0d94d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7ab11019255389cf40da4354e0d94d3">&#9670;&#160;</a></span>GetInitialBytesStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MemoryStream Engine.Media.PeekStream.GetInitialBytesStream </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00042">42</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_media_1_1_peek_stream_ac7ab11019255389cf40da4354e0d94d3_icgraph.png" border="0" usemap="#aclass_engine_1_1_media_1_1_peek_stream_ac7ab11019255389cf40da4354e0d94d3_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_media_1_1_peek_stream_ac7ab11019255389cf40da4354e0d94d3_icgraph" id="aclass_engine_1_1_media_1_1_peek_stream_ac7ab11019255389cf40da4354e0d94d3_icgraph">
+<area shape="rect" title=" " alt="" coords="255,23,435,65"/>
+<area shape="rect" href="class_engine_1_1_media_1_1_model_data.html#a90ccf84c5ab025177a766a08bc43825c" title=" " alt="" coords="6,5,206,32"/>
+<area shape="poly" title=" " alt="" coords="236,33,206,32,206,27,242,32"/>
+<area shape="rect" href="class_engine_1_1_media_1_1_sound_data.html#a6681ade004cfda162529c9c3a89e2d62" title=" " alt="" coords="5,56,207,83"/>
+<area shape="poly" title=" " alt="" coords="237,55,207,61,207,56,242,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad8a21d2209acea85c3932ace1aab517" name="aad8a21d2209acea85c3932ace1aab517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad8a21d2209acea85c3932ace1aab517">&#9670;&#160;</a></span>Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override int Engine.Media.PeekStream.Read </td>
+          <td>(</td>
+          <td class="paramtype">byte[]</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00058">58</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_media_1_1_peek_stream_aad8a21d2209acea85c3932ace1aab517_cgraph.png" border="0" usemap="#aclass_engine_1_1_media_1_1_peek_stream_aad8a21d2209acea85c3932ace1aab517_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_media_1_1_peek_stream_aad8a21d2209acea85c3932ace1aab517_cgraph" id="aclass_engine_1_1_media_1_1_peek_stream_aad8a21d2209acea85c3932ace1aab517_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,217,32"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b" title=" " alt="" coords="265,5,411,32"/>
+<area shape="poly" title=" " alt="" coords="217,16,252,19,247,19,217,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec2a3fd7829f441a26db73fa30325cd8" name="aec2a3fd7829f441a26db73fa30325cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec2a3fd7829f441a26db73fa30325cd8">&#9670;&#160;</a></span>ReadByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override int Engine.Media.PeekStream.ReadByte </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a09f79ddffe22ffd8a859da8cc83a6615" name="a09f79ddffe22ffd8a859da8cc83a6615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f79ddffe22ffd8a859da8cc83a6615">&#9670;&#160;</a></span>Seek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override long Engine.Media.PeekStream.Seek </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SeekOrigin</td>          <td class="paramname"><span class="paramname"><em>origin</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a88248ba3171c78ee69da98cea727226a" name="a88248ba3171c78ee69da98cea727226a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88248ba3171c78ee69da98cea727226a">&#9670;&#160;</a></span>SetLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Media.PeekStream.SetLength </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aafd015e075e83968b019150c016aa5c0" name="aafd015e075e83968b019150c016aa5c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd015e075e83968b019150c016aa5c0">&#9670;&#160;</a></span>Write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Media.PeekStream.Write </td>
+          <td>(</td>
+          <td class="paramtype">byte[]</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00083">83</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="abe9aaa05d42ac79b74775f574da89cd5" name="abe9aaa05d42ac79b74775f574da89cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe9aaa05d42ac79b74775f574da89cd5">&#9670;&#160;</a></span>m_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte [] Engine.Media.PeekStream.m_buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac6d1d223ade8853c0780b794c78af979" name="ac6d1d223ade8853c0780b794c78af979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d1d223ade8853c0780b794c78af979">&#9670;&#160;</a></span>m_end</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Engine.Media.PeekStream.m_end</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac4636053f2882e88583131c744fc10c9" name="ac4636053f2882e88583131c744fc10c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4636053f2882e88583131c744fc10c9">&#9670;&#160;</a></span>m_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long Engine.Media.PeekStream.m_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3cf686cde9b251d465e10f743e9b7c0d" name="a3cf686cde9b251d465e10f743e9b7c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf686cde9b251d465e10f743e9b7c0d">&#9670;&#160;</a></span>m_stream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stream Engine.Media.PeekStream.m_stream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00003">3</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="a44dc8cc3e8d62dba69373c17be122367" name="a44dc8cc3e8d62dba69373c17be122367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44dc8cc3e8d62dba69373c17be122367">&#9670;&#160;</a></span>CanRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool Engine.Media.PeekStream.CanRead</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a038cc3f54c77ef4d54eea7c5c64a1c05" name="a038cc3f54c77ef4d54eea7c5c64a1c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038cc3f54c77ef4d54eea7c5c64a1c05">&#9670;&#160;</a></span>CanSeek</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool Engine.Media.PeekStream.CanSeek</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae169c03c50e591b06d943585afdc8aed" name="ae169c03c50e591b06d943585afdc8aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae169c03c50e591b06d943585afdc8aed">&#9670;&#160;</a></span>CanWrite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool Engine.Media.PeekStream.CanWrite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3172eb31926b7f7a79a77b0dac262815" name="a3172eb31926b7f7a79a77b0dac262815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3172eb31926b7f7a79a77b0dac262815">&#9670;&#160;</a></span>Length</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override long Engine.Media.PeekStream.Length</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a96c7d21c840ced37705dde24e24eaf74" name="a96c7d21c840ced37705dde24e24eaf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c7d21c840ced37705dde24e24eaf74">&#9670;&#160;</a></span>Position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override long Engine.Media.PeekStream.Position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a> 第 <a class="el" href="_peek_stream_8cs_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Media/<a class="el" href="_peek_stream_8cs_source.html">PeekStream.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_engine.html">Engine</a></li><li class="navelem"><a href="namespace_engine_1_1_media.html">Media</a></li><li class="navelem"><a href="class_engine_1_1_media_1_1_peek_stream.html">PeekStream</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

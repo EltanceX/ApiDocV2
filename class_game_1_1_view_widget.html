@@ -1,0 +1,974 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Game.ViewWidget</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_game_1_1_view_widget.html','','class_game_1_1_view_widget-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game.ViewWidget</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Game.ViewWidget 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget__inherit__graph.png" border="0" usemap="#a_game_8_view_widget_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_game_8_view_widget_inherit__map" id="a_game_8_view_widget_inherit__map">
+<area shape="rect" title=" " alt="" coords="119,229,249,256"/>
+<area shape="rect" href="class_game_1_1_touch_input_widget.html" title=" " alt="" coords="5,155,171,181"/>
+<area shape="poly" title=" " alt="" coords="117,188,170,228,165,229,116,193"/>
+<area shape="rect" href="class_game_1_1_widget.html" title=" " alt="" coords="37,80,139,107"/>
+<area shape="poly" title=" " alt="" coords="89,120,91,155,85,154,87,125"/>
+<area shape="rect" title=" " alt="" coords="43,5,133,32"/>
+<area shape="poly" title=" " alt="" coords="89,45,91,80,85,79,87,50"/>
+<area shape="rect" href="interface_game_1_1_i_drag_target_widget.html" title=" " alt="" coords="195,155,365,181"/>
+<area shape="poly" title=" " alt="" coords="254,190,202,231,199,227,249,191"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Game.ViewWidget 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget__coll__graph.png" border="0" usemap="#a_game_8_view_widget_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_8_view_widget_coll__map" id="a_game_8_view_widget_coll__map">
+<area shape="rect" title=" " alt="" coords="2800,807,2931,833"/>
+<area shape="rect" href="class_game_1_1_touch_input_widget.html" title=" " alt="" coords="2156,668,2322,695"/>
+<area shape="poly" title=" " alt="" coords="2337,689,2542,721,2660,746,2777,777,2841,806,2836,806,2775,783,2659,751,2541,726,2337,695"/>
+<area shape="rect" href="class_game_1_1_widget.html" title=" " alt="" coords="1792,560,1893,587"/>
+<area shape="poly" title=" " alt="" coords="1908,586,2113,639,2199,667,2193,667,2112,644,1908,591"/>
+<area shape="rect" href="class_game_1_1_widget_input.html" title=" " alt="" coords="2174,505,2304,532"/>
+<area shape="poly" title=" " alt="" coords="1908,580,2005,585,2059,583,2112,575,2168,555,2213,534,2218,532,2170,560,2113,580,2060,588,2005,591,1909,585"/>
+<area shape="rect" title=" " alt="" coords="1371,869,1461,896"/>
+<area shape="poly" title=" " alt="" coords="1475,867,1532,850,1598,825,1666,791,1726,747,1764,706,1795,661,1833,589,1837,585,1799,663,1768,710,1730,751,1668,796,1601,830,1534,855,1476,872"/>
+<area shape="rect" href="class_game_entity_system_1_1_subsystem.html" title=" " alt="" coords="2136,933,2342,960"/>
+<area shape="poly" title=" " alt="" coords="1477,883,1752,898,2113,927,2144,933,2139,933,2112,932,1752,903,1477,888"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html" title=" " alt="" coords="1752,948,1932,975"/>
+<area shape="poly" title=" " alt="" coords="1476,892,1555,907,1766,947,1760,948,1555,912,1476,897"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_graphics_resource.html" title=" " alt="" coords="1756,831,1929,873"/>
+<area shape="poly" title=" " alt="" coords="1476,876,1758,858,1753,859,1477,881"/>
+<area shape="rect" href="struct_engine_1_1_vector2.html" title=" " alt="" coords="850,536,959,563"/>
+<area shape="poly" title=" " alt="" coords="974,559,1230,599,1392,621,1555,640,1722,654,1889,665,2159,679,2153,679,1888,670,1722,660,1555,645,1391,626,1229,604,975,564"/>
+<area shape="poly" title=" " alt="" coords="974,549,1301,559,1793,571,1788,573,1301,564,975,554"/>
+<area shape="poly" title=" " alt="" coords="865,518,879,512,904,509,928,511,942,518,946,527,940,537,936,534,941,527,938,521,926,517,904,515,881,517,868,523"/>
+<area shape="rect" href="struct_engine_1_1_bounding_rectangle.html" title=" " alt="" coords="1327,435,1505,461"/>
+<area shape="poly" title=" " alt="" coords="973,533,1347,461,1342,463,975,538"/>
+<area shape="poly" title=" " alt="" coords="922,522,970,470,1002,444,1038,424,1121,396,1206,376,1293,363,1381,356,1469,355,1557,359,1726,378,1882,408,2018,443,2127,476,2204,505,2199,505,2126,481,2017,448,1881,413,1725,384,1556,364,1469,361,1381,362,1294,368,1207,381,1122,401,1040,429,1005,448,973,473,926,526"/>
+<area shape="rect" href="struct_game_1_1_touch_input.html" title=" " alt="" coords="1354,808,1478,835"/>
+<area shape="poly" title=" " alt="" coords="921,574,980,668,1013,712,1041,739,1072,754,1101,761,1128,762,1155,760,1211,756,1242,759,1278,770,1290,778,1302,787,1356,808,1351,808,1299,792,1287,782,1276,774,1241,764,1211,761,1155,765,1128,768,1101,767,1071,759,1038,744,1009,716,976,671,920,579"/>
+<area shape="rect" title=" " alt="" coords="453,415,536,441"/>
+<area shape="poly" title=" " alt="" coords="551,442,859,534,854,537,551,447"/>
+<area shape="poly" title=" " alt="" coords="551,422,793,409,1035,406,1141,411,1277,424,1336,433,1330,435,1276,429,1141,417,1035,411,793,415,553,427"/>
+<area shape="rect" href="struct_engine_1_1_matrix.html" title=" " alt="" coords="1107,843,1209,869"/>
+<area shape="poly" title=" " alt="" coords="527,448,618,510,924,707,1137,842,1132,842,921,712,616,514,528,453"/>
+<area shape="rect" href="struct_engine_1_1_color.html" title=" " alt="" coords="1110,267,1206,293"/>
+<area shape="poly" title=" " alt="" coords="520,402,564,370,616,343,683,321,753,305,892,284,1016,276,1112,277,1107,279,1016,282,892,289,754,310,685,326,618,348,566,375,524,406"/>
+<area shape="poly" title=" " alt="" coords="1482,463,1532,477,1798,559,1793,560,1530,483,1482,469"/>
+<area shape="poly" title=" " alt="" coords="1201,833,1300,793,1365,775,1421,764,1520,753,1567,747,1615,736,1667,717,1727,687,1760,664,1789,636,1829,589,1834,586,1792,639,1763,668,1729,692,1670,722,1616,741,1568,752,1521,759,1422,769,1366,780,1302,799,1203,838"/>
+<area shape="poly" title=" " alt="" coords="1112,825,1127,819,1158,816,1186,818,1203,824,1208,834,1200,844,1197,840,1203,833,1199,828,1185,823,1158,821,1129,824,1114,830"/>
+<area shape="poly" title=" " alt="" coords="1207,259,1311,228,1376,214,1447,204,1521,202,1594,209,1665,229,1698,244,1730,263,1764,295,1791,333,1811,375,1825,419,1840,502,1843,561,1839,558,1834,502,1820,421,1806,377,1786,335,1760,298,1726,267,1696,249,1663,234,1593,215,1521,207,1448,210,1377,219,1312,233,1210,263"/>
+<area shape="poly" title=" " alt="" coords="1111,250,1127,243,1158,240,1186,242,1203,248,1208,258,1200,268,1196,264,1203,257,1199,252,1185,247,1158,245,1129,248,1114,254"/>
+<area shape="poly" title=" " alt="" coords="2156,525,2062,536,1957,551,1894,563,1893,558,1956,545,2061,531,2161,524"/>
+<area shape="poly" title=" " alt="" coords="1493,806,2159,695,2154,696,1494,811"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html" title=" " alt="" coords="814,1071,994,1113"/>
+<area shape="poly" title=" " alt="" coords="1006,1064,1013,1057,1023,1041,1027,1026,1023,993,1020,961,1025,944,1038,929,1058,918,1087,913,1156,913,1227,914,1255,911,1275,903,1284,893,1287,881,1290,868,1299,855,1324,839,1351,832,1356,830,1327,844,1303,859,1294,871,1292,883,1289,895,1278,908,1256,916,1227,920,1156,919,1087,918,1060,923,1041,933,1030,947,1026,961,1029,993,1032,1026,1028,1043,1017,1060,1008,1069"/>
+<area shape="poly" title=" " alt="" coords="1010,1101,1153,1112,1332,1120,1530,1117,1630,1110,1728,1099,1869,1070,2005,1030,2121,990,2202,961,2207,960,2123,995,2006,1035,1870,1075,1728,1104,1630,1116,1530,1123,1332,1125,1152,1118,1010,1106"/>
+<area shape="rect" href="class_game_entity_system_1_1_project_data.html" title=" " alt="" coords="1312,997,1520,1024"/>
+<area shape="poly" title=" " alt="" coords="998,1063,1014,1056,1038,1043,1089,1032,1158,1024,1314,1015,1308,1016,1159,1029,1090,1038,1040,1048,1016,1061,1000,1068"/>
+<area shape="rect" title=" " alt="" coords="447,1199,542,1225"/>
+<area shape="poly" title=" " alt="" coords="557,1222,607,1228,663,1227,718,1215,744,1205,767,1190,778,1176,779,1159,781,1141,791,1124,811,1112,816,1110,795,1127,786,1143,785,1160,783,1178,771,1194,746,1209,720,1220,663,1232,607,1233,557,1228"/>
+<area shape="rect" href="class_templates_database_1_1_database_object.html" title=" " alt="" coords="396,984,593,1027"/>
+<area shape="poly" title=" " alt="" coords="591,1034,595,1038,605,1054,608,1071,605,1102,603,1131,608,1144,619,1157,655,1179,690,1184,726,1175,768,1156,775,1150,779,1142,783,1132,791,1123,811,1114,816,1113,795,1127,788,1135,784,1144,780,1153,770,1161,728,1180,690,1189,653,1184,615,1161,603,1147,598,1132,600,1102,603,1071,600,1056,591,1042,589,1039"/>
+<area shape="poly" title=" " alt="" coords="461,966,473,960,494,957,514,959,527,965,533,974,531,985,527,982,528,975,524,969,513,965,494,963,475,965,463,971"/>
+<area shape="rect" href="class_templates_database_1_1_database.html" title=" " alt="" coords="806,1020,1003,1047"/>
+<area shape="poly" title=" " alt="" coords="608,1010,808,1026,802,1027,608,1016"/>
+<area shape="poly" title=" " alt="" coords="608,984,617,983,853,970,1176,963,1754,961,1749,962,1176,969,853,976,617,988,609,989"/>
+<area shape="poly" title=" " alt="" coords="821,1050,769,1060,692,1070,658,1070,616,1060,603,1052,592,1042,565,1030,565,1025,594,1038,606,1047,618,1055,659,1064,692,1065,769,1055,826,1049"/>
+<area shape="rect" href="struct_engine_1_1_read_only_list-1-g.html" title=" " alt="" coords="407,1100,582,1127"/>
+<area shape="poly" title=" " alt="" coords="592,1126,636,1127,681,1124,726,1113,767,1095,776,1087,779,1078,782,1067,791,1057,811,1048,816,1046,795,1061,787,1070,784,1079,780,1090,771,1100,728,1119,682,1129,636,1132,592,1131"/>
+<area shape="poly" title=" " alt="" coords="459,1082,471,1076,494,1073,516,1075,529,1082,534,1091,527,1102,524,1097,528,1091,526,1085,515,1081,494,1079,473,1081,461,1087"/>
+<area shape="rect" title=" " alt="" coords="81,1100,127,1127"/>
+<area shape="poly" title=" " alt="" coords="142,1111,407,1111,405,1116,143,1116"/>
+<area shape="rect" href="class_templates_database_1_1_database_object_type.html" title=" " alt="" coords="5,984,203,1027"/>
+<area shape="poly" title=" " alt="" coords="218,1003,397,1004,393,1007,219,1008"/>
+<area shape="poly" title=" " alt="" coords="69,967,83,960,104,957,124,959,137,965,143,974,141,984,136,983,138,975,133,969,122,965,104,963,84,965,73,970"/>
+<area shape="rect" href="interface_game_1_1_i_drag_target_widget.html" title=" " alt="" coords="2414,773,2584,800"/>
+<area shape="poly" title=" " alt="" coords="2599,788,2777,803,2803,809,2797,809,2776,808,2599,794"/>
+<area shape="rect" href="class_game_1_1_subsystem_drawing.html" title=" " alt="" coords="2412,903,2586,929"/>
+<area shape="poly" title=" " alt="" coords="2602,917,2688,910,2733,901,2775,887,2798,875,2818,861,2850,835,2854,832,2822,865,2800,880,2777,892,2734,906,2689,915,2602,922"/>
+<area shape="poly" title=" " alt="" coords="2357,930,2414,926,2409,927,2358,935"/>
+<area shape="poly" title=" " alt="" coords="1947,956,2112,951,2138,952,2133,953,2112,956,1948,961"/>
+<area shape="rect" href="class_game_entity_system_1_1_game_database.html" title=" " alt="" coords="1301,1048,1531,1075"/>
+<area shape="poly" title=" " alt="" coords="1546,1070,1637,1065,1683,1057,1727,1044,1757,1030,1785,1010,1826,976,1831,974,1788,1015,1760,1034,1729,1049,1684,1062,1638,1070,1547,1075"/>
+<area shape="poly" title=" " alt="" coords="1536,1015,1630,1013,1727,1001,1772,989,1810,976,1815,975,1774,994,1729,1007,1631,1018,1536,1020"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity_data_list.html" title=" " alt="" coords="793,1137,1015,1164"/>
+<area shape="poly" title=" " alt="" coords="1030,1147,1091,1140,1155,1126,1218,1104,1275,1073,1283,1064,1286,1054,1290,1044,1299,1034,1319,1025,1324,1024,1302,1038,1295,1047,1291,1056,1287,1067,1278,1077,1220,1109,1156,1131,1092,1145,1031,1152"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_render_target2_d.html" title=" " alt="" coords="2391,839,2607,865"/>
+<area shape="poly" title=" " alt="" coords="2623,857,2699,856,2776,848,2830,835,2835,833,2777,853,2699,862,2623,863"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_texture2_d.html" title=" " alt="" coords="2148,839,2330,865"/>
+<area shape="poly" title=" " alt="" coords="2345,849,2393,852,2388,852,2345,855"/>
+<area shape="poly" title=" " alt="" coords="1944,849,2151,852,2145,852,1944,855"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa9a2f7db7dfa9312e895e95ca40499a0" id="r_aa9a2f7db7dfa9312e895e95ca40499a0"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#aa9a2f7db7dfa9312e895e95ca40499a0">ChangeParent</a> (<a class="el" href="class_game_1_1_container_widget.html">ContainerWidget</a> parentWidget)</td></tr>
+<tr class="memitem:a94aa659bcb8785d8b38ce62e5d73c994" id="r_a94aa659bcb8785d8b38ce62e5d73c994"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a94aa659bcb8785d8b38ce62e5d73c994">MeasureOverride</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> parentAvailableSize)</td></tr>
+<tr class="memitem:a35b7d37edad515c92133a5172c178643" id="r_a35b7d37edad515c92133a5172c178643"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a35b7d37edad515c92133a5172c178643">Draw</a> (<a class="el" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a> dc)</td></tr>
+<tr class="memitem:a34b70802dad8d733eeb5c6b0b2daf8e1" id="r_a34b70802dad8d733eeb5c6b0b2daf8e1"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a34b70802dad8d733eeb5c6b0b2daf8e1">Dispose</a> ()</td></tr>
+<tr class="memitem:a5027fa087dafad15c1bb3ecd5c98ab33" id="r_a5027fa087dafad15c1bb3ecd5c98ab33"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a5027fa087dafad15c1bb3ecd5c98ab33">DragOver</a> (<a class="el" href="class_game_1_1_widget.html">Widget</a> dragWidget, object data)</td></tr>
+<tr class="memitem:a96d0382d6b0e2558c1a97379ecf0d82b" id="r_a96d0382d6b0e2558c1a97379ecf0d82b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a96d0382d6b0e2558c1a97379ecf0d82b">DragDrop</a> (<a class="el" href="class_game_1_1_widget.html">Widget</a> dragWidget, object data)</td></tr>
+<tr class="memitem:a00d690832107733281c048ab2cc67a2b" id="r_a00d690832107733281c048ab2cc67a2b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a00d690832107733281c048ab2cc67a2b">SetupScalingRenderTarget</a> ()</td></tr>
+<tr class="memitem:a3577d59f467ad510e9c56a9de29cc280" id="r_a3577d59f467ad510e9c56a9de29cc280"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3577d59f467ad510e9c56a9de29cc280">ApplyScalingRenderTarget</a> (<a class="el" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a> dc)</td></tr>
+<tr class="memitem:af6598b556c6aa523d10e9dae5d0a3ec9" id="r_af6598b556c6aa523d10e9dae5d0a3ec9"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#af6598b556c6aa523d10e9dae5d0a3ec9">DrawToScreen</a> (<a class="el" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a> dc)</td></tr>
+<tr class="inherit_header pub_methods_class_game_1_1_touch_input_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_1_1_touch_input_widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="class_game_1_1_touch_input_widget.html">Game.TouchInputWidget</a></td></tr>
+<tr class="memitem:a5520fdd05736d5f4b7a01c2ceb315933 inherit pub_methods_class_game_1_1_touch_input_widget" id="r_a5520fdd05736d5f4b7a01c2ceb315933"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#a5520fdd05736d5f4b7a01c2ceb315933">Update</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_game_1_1_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_1_1_widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="class_game_1_1_widget.html">Game.Widget</a></td></tr>
+<tr class="memitem:a2e6ce445c2f889d95ef1328d72e25dcb inherit pub_methods_class_game_1_1_widget" id="r_a2e6ce445c2f889d95ef1328d72e25dcb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> ()</td></tr>
+<tr class="memitem:aca0d46d9703b9c3f62da685a048b598c inherit pub_methods_class_game_1_1_widget" id="r_aca0d46d9703b9c3f62da685a048b598c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a> (object eventsTarget, XElement node)</td></tr>
+<tr class="memitem:ac9ac4c563e314040c2cd3851720e7ff8 inherit pub_methods_class_game_1_1_widget" id="r_ac9ac4c563e314040c2cd3851720e7ff8"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ac9ac4c563e314040c2cd3851720e7ff8">LoadProperties</a> (object eventsTarget, XElement node)</td></tr>
+<tr class="memitem:aee6067d3061705fa89815fcdd3cc5032 inherit pub_methods_class_game_1_1_widget" id="r_aee6067d3061705fa89815fcdd3cc5032"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#aee6067d3061705fa89815fcdd3cc5032">LoadChildren</a> (object eventsTarget, XElement node)</td></tr>
+<tr class="memitem:af6ede76c64dc883b8507ef0e48be6885 inherit pub_methods_class_game_1_1_widget" id="r_af6ede76c64dc883b8507ef0e48be6885"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#af6ede76c64dc883b8507ef0e48be6885">IsChildWidgetOf</a> (<a class="el" href="class_game_1_1_container_widget.html">ContainerWidget</a> containerWidget)</td></tr>
+<tr class="memitem:af2805d135ccb917d1b3f86bec67e8a88 inherit pub_methods_class_game_1_1_widget" id="r_af2805d135ccb917d1b3f86bec67e8a88"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#af2805d135ccb917d1b3f86bec67e8a88">Measure</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> parentAvailableSize)</td></tr>
+<tr class="memitem:a0c583ccbb5d098e873ac445da291bbc5 inherit pub_methods_class_game_1_1_widget" id="r_a0c583ccbb5d098e873ac445da291bbc5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a0c583ccbb5d098e873ac445da291bbc5">Arrange</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> position, <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> parentActualSize)</td></tr>
+<tr class="memitem:a5fa3103d62e8da7fdea1f452b7aaa15c inherit pub_methods_class_game_1_1_widget" id="r_a5fa3103d62e8da7fdea1f452b7aaa15c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a5fa3103d62e8da7fdea1f452b7aaa15c">ArrangeOverride</a> ()</td></tr>
+<tr class="memitem:adb4e22f6e476cf274a00b8d898887f13 inherit pub_methods_class_game_1_1_widget" id="r_adb4e22f6e476cf274a00b8d898887f13"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#adb4e22f6e476cf274a00b8d898887f13">UpdateCeases</a> ()</td></tr>
+<tr class="memitem:af38cbcdf197e28731ccba4f052306ad1 inherit pub_methods_class_game_1_1_widget" id="r_af38cbcdf197e28731ccba4f052306ad1"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#af38cbcdf197e28731ccba4f052306ad1">Overdraw</a> (<a class="el" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a> dc)</td></tr>
+<tr class="memitem:a512a6f73479d2b32af4ba92f012b918b inherit pub_methods_class_game_1_1_widget" id="r_a512a6f73479d2b32af4ba92f012b918b"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a512a6f73479d2b32af4ba92f012b918b">HitTest</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> point)</td></tr>
+<tr class="memitem:a1ee7e699b3058c09d3b226f985b7db48 inherit pub_methods_class_game_1_1_widget" id="r_a1ee7e699b3058c09d3b226f985b7db48"><td class="memItemLeft">virtual <a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">HitTestGlobal</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> point, Func&lt; <a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a>, bool &gt; predicate=null)</td></tr>
+<tr class="memitem:aca5005c0b7fdb2ca0668e7fc0e314c32 inherit pub_methods_class_game_1_1_widget" id="r_aca5005c0b7fdb2ca0668e7fc0e314c32"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#aca5005c0b7fdb2ca0668e7fc0e314c32">ScreenToWidget</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> p)</td></tr>
+<tr class="memitem:aa175f80633c613c98e4dfdec43be7cfc inherit pub_methods_class_game_1_1_widget" id="r_aa175f80633c613c98e4dfdec43be7cfc"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#aa175f80633c613c98e4dfdec43be7cfc">WidgetToScreen</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> p)</td></tr>
+<tr class="memitem:a5967fa9735095f15035324e6519661cb inherit pub_methods_class_game_1_1_widget" id="r_a5967fa9735095f15035324e6519661cb"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_bounding_rectangle.html">BoundingRectangle</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a5967fa9735095f15035324e6519661cb">TransformBoundsToParent</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> size)</td></tr>
+<tr class="memitem:a2fb746e8f8a5eaf68ffc582f192b309a inherit pub_methods_class_game_1_1_widget" id="r_a2fb746e8f8a5eaf68ffc582f192b309a"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_bounding_rectangle.html">BoundingRectangle</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a2fb746e8f8a5eaf68ffc582f192b309a">TransformBoundsToGlobal</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> size)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ab68314de5a7d185a1bf2aabb64df7eef" id="r_ab68314de5a7d185a1bf2aabb64df7eef"><td class="memItemLeft"><a class="el" href="class_game_1_1_subsystem_drawing.html">SubsystemDrawing</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab68314de5a7d185a1bf2aabb64df7eef">m_subsystemDrawing</a></td></tr>
+<tr class="memitem:a256f7c39afbfd0ee94f520bfaf9cc58f" id="r_a256f7c39afbfd0ee94f520bfaf9cc58f"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_render_target2_d.html">RenderTarget2D</a>&#160;</td><td class="memItemRight"><a class="el" href="#a256f7c39afbfd0ee94f520bfaf9cc58f">m_scalingRenderTarget</a></td></tr>
+<tr class="inherit_header pub_attribs_class_game_1_1_touch_input_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_game_1_1_touch_input_widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="class_game_1_1_touch_input_widget.html">Game.TouchInputWidget</a></td></tr>
+<tr class="memitem:a4eef901d32d37981b6af60bb04607042 inherit pub_attribs_class_game_1_1_touch_input_widget" id="r_a4eef901d32d37981b6af60bb04607042"><td class="memItemLeft">int?&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#a4eef901d32d37981b6af60bb04607042">m_touchId</a></td></tr>
+<tr class="memitem:a8130005d1caa07f2ae5376ae9e306f91 inherit pub_attribs_class_game_1_1_touch_input_widget" id="r_a8130005d1caa07f2ae5376ae9e306f91"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#a8130005d1caa07f2ae5376ae9e306f91">m_touchLastPosition</a></td></tr>
+<tr class="memitem:a7ca56f6d848dd8dfd1f3494d0a6c0085 inherit pub_attribs_class_game_1_1_touch_input_widget" id="r_a7ca56f6d848dd8dfd1f3494d0a6c0085"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#a7ca56f6d848dd8dfd1f3494d0a6c0085">m_touchOrigin</a></td></tr>
+<tr class="memitem:ac82f6a5596cde235b2896e5c8086f32e inherit pub_attribs_class_game_1_1_touch_input_widget" id="r_ac82f6a5596cde235b2896e5c8086f32e"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#ac82f6a5596cde235b2896e5c8086f32e">m_touchOriginLimited</a></td></tr>
+<tr class="memitem:a7841c6464ce3d2dc0ebcc56946dc34e4 inherit pub_attribs_class_game_1_1_touch_input_widget" id="r_a7841c6464ce3d2dc0ebcc56946dc34e4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#a7841c6464ce3d2dc0ebcc56946dc34e4">m_touchMoved</a></td></tr>
+<tr class="memitem:a523a647b868bd29aadec84e95b8d6e41 inherit pub_attribs_class_game_1_1_touch_input_widget" id="r_a523a647b868bd29aadec84e95b8d6e41"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#a523a647b868bd29aadec84e95b8d6e41">m_touchTime</a></td></tr>
+<tr class="memitem:af3658cea54151fb55406abc980e96a80 inherit pub_attribs_class_game_1_1_touch_input_widget" id="r_af3658cea54151fb55406abc980e96a80"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#af3658cea54151fb55406abc980e96a80">m_touchFrameIndex</a></td></tr>
+<tr class="memitem:affb7507a8ede7af3a2d283394f4a22e7 inherit pub_attribs_class_game_1_1_touch_input_widget" id="r_affb7507a8ede7af3a2d283394f4a22e7"><td class="memItemLeft"><a class="el" href="class_game_1_1_touch_input_widget.html#a7e21cd7997cfb4acfaad4a69d52c9233">TouchInput</a>?&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#affb7507a8ede7af3a2d283394f4a22e7">m_touchInput</a></td></tr>
+<tr class="memitem:a96c61ed40aa5df21d822be14478cb992 inherit pub_attribs_class_game_1_1_touch_input_widget" id="r_a96c61ed40aa5df21d822be14478cb992"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#a96c61ed40aa5df21d822be14478cb992">m_radius</a> = 30f</td></tr>
+<tr class="inherit_header pub_attribs_class_game_1_1_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_game_1_1_widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="class_game_1_1_widget.html">Game.Widget</a></td></tr>
+<tr class="memitem:ad9b0a7303271fc9aee121fefbc140d29 inherit pub_attribs_class_game_1_1_widget" id="r_ad9b0a7303271fc9aee121fefbc140d29"><td class="memItemLeft">Action&lt; <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ad9b0a7303271fc9aee121fefbc140d29">MeasureOverride1</a></td></tr>
+<tr class="memitem:a0614f7d9f3247db5ececd5a794544349 inherit pub_attribs_class_game_1_1_widget" id="r_a0614f7d9f3247db5ececd5a794544349"><td class="memItemLeft">Action&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a0614f7d9f3247db5ececd5a794544349">Update1</a></td></tr>
+<tr class="memitem:a680c42208c2ffed75e7a0c2680057904 inherit pub_attribs_class_game_1_1_widget" id="r_a680c42208c2ffed75e7a0c2680057904"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a680c42208c2ffed75e7a0c2680057904">m_isVisible</a></td></tr>
+<tr class="memitem:a51d314010cf30e9294e45ed7a51a56cc inherit pub_attribs_class_game_1_1_widget" id="r_a51d314010cf30e9294e45ed7a51a56cc"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a51d314010cf30e9294e45ed7a51a56cc">m_isEnabled</a></td></tr>
+<tr class="memitem:a33b0423f919c6c9fabee8557eb3b3e03 inherit pub_attribs_class_game_1_1_widget" id="r_a33b0423f919c6c9fabee8557eb3b3e03"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a33b0423f919c6c9fabee8557eb3b3e03">m_actualSize</a></td></tr>
+<tr class="memitem:a6de328491607dae6d12b27ddeaea797d inherit pub_attribs_class_game_1_1_widget" id="r_a6de328491607dae6d12b27ddeaea797d"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a6de328491607dae6d12b27ddeaea797d">m_desiredSize</a></td></tr>
+<tr class="memitem:a32a511aea8842d68d7b61e55b14b0a70 inherit pub_attribs_class_game_1_1_widget" id="r_a32a511aea8842d68d7b61e55b14b0a70"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a32a511aea8842d68d7b61e55b14b0a70">m_parentDesiredSize</a></td></tr>
+<tr class="memitem:acf3da95987be8e9a5e7805427af72d77 inherit pub_attribs_class_game_1_1_widget" id="r_acf3da95987be8e9a5e7805427af72d77"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_bounding_rectangle.html">BoundingRectangle</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#acf3da95987be8e9a5e7805427af72d77">m_globalBounds</a></td></tr>
+<tr class="memitem:abd8afc5b44c56cd7c019758f445a4770 inherit pub_attribs_class_game_1_1_widget" id="r_abd8afc5b44c56cd7c019758f445a4770"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#abd8afc5b44c56cd7c019758f445a4770">m_parentOffset</a></td></tr>
+<tr class="memitem:a0c06d39b50d3b84b24aee55449193b75 inherit pub_attribs_class_game_1_1_widget" id="r_a0c06d39b50d3b84b24aee55449193b75"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a0c06d39b50d3b84b24aee55449193b75">m_isLayoutTransformIdentity</a> = true</td></tr>
+<tr class="memitem:a114e51dc48065d6988d95edaf511139a inherit pub_attribs_class_game_1_1_widget" id="r_a114e51dc48065d6988d95edaf511139a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a114e51dc48065d6988d95edaf511139a">m_isRenderTransformIdentity</a> = true</td></tr>
+<tr class="memitem:ac9f8b03e0854799469edde83ec14e9b1 inherit pub_attribs_class_game_1_1_widget" id="r_ac9f8b03e0854799469edde83ec14e9b1"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ac9f8b03e0854799469edde83ec14e9b1">m_layoutTransform</a> = <a class="el" href="struct_engine_1_1_matrix.html#a7dbeeeb10cd6efe90b28776ed18c5f29">Matrix.Identity</a></td></tr>
+<tr class="memitem:ad6b4018875561193c4fcfb5d07ed4ab0 inherit pub_attribs_class_game_1_1_widget" id="r_ad6b4018875561193c4fcfb5d07ed4ab0"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ad6b4018875561193c4fcfb5d07ed4ab0">m_renderTransform</a> = <a class="el" href="struct_engine_1_1_matrix.html#a7dbeeeb10cd6efe90b28776ed18c5f29">Matrix.Identity</a></td></tr>
+<tr class="memitem:a0d9f874807b68010080848b036a723af inherit pub_attribs_class_game_1_1_widget" id="r_a0d9f874807b68010080848b036a723af"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a0d9f874807b68010080848b036a723af">m_globalTransform</a> = <a class="el" href="struct_engine_1_1_matrix.html#a7dbeeeb10cd6efe90b28776ed18c5f29">Matrix.Identity</a></td></tr>
+<tr class="memitem:a318ef35a24d8e2521de98128a33e4060 inherit pub_attribs_class_game_1_1_widget" id="r_a318ef35a24d8e2521de98128a33e4060"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>?&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a318ef35a24d8e2521de98128a33e4060">m_invertedGlobalTransform</a></td></tr>
+<tr class="memitem:ac33684000aad55e5c904d67bcf97ade6 inherit pub_attribs_class_game_1_1_widget" id="r_ac33684000aad55e5c904d67bcf97ade6"><td class="memItemLeft">float?&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ac33684000aad55e5c904d67bcf97ade6">m_globalScale</a></td></tr>
+<tr class="memitem:a259dac0e590249691f201dd0265758ca inherit pub_attribs_class_game_1_1_widget" id="r_a259dac0e590249691f201dd0265758ca"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_color.html">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a259dac0e590249691f201dd0265758ca">m_colorTransform</a> = Color.White</td></tr>
+<tr class="memitem:aa88bcddfa6f2c26e689fccc4b11ee932 inherit pub_attribs_class_game_1_1_widget" id="r_aa88bcddfa6f2c26e689fccc4b11ee932"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_color.html">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#aa88bcddfa6f2c26e689fccc4b11ee932">m_globalColorTransform</a></td></tr>
+<tr class="memitem:aff8741bbf6ab7de00bd1de46343dc80c inherit pub_attribs_class_game_1_1_widget" id="r_aff8741bbf6ab7de00bd1de46343dc80c"><td class="memItemLeft"><a class="el" href="class_game_1_1_widget_input.html">WidgetInput</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#aff8741bbf6ab7de00bd1de46343dc80c">m_widgetsHierarchyInput</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:ad1d0d1154725ce93e3c7dcc6db6b519e" id="r_ad1d0d1154725ce93e3c7dcc6db6b519e"><td class="memItemLeft">static <a class="el" href="class_engine_1_1_graphics_1_1_render_target2_d.html">RenderTarget2D</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad1d0d1154725ce93e3c7dcc6db6b519e">ScreenTexture</a> = new(Window.Size.X, Window.Size.Y, 1, ColorFormat.Rgba8888, DepthFormat.Depth24Stencil8)</td></tr>
+<tr class="inherit_header pub_static_attribs_class_game_1_1_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_class_game_1_1_widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>静态 Public 属性 继承自 <a class="el" href="class_game_1_1_widget.html">Game.Widget</a></td></tr>
+<tr class="memitem:a9b3a379428cea477cb4821b5c7accfb0 inherit pub_static_attribs_class_game_1_1_widget" id="r_a9b3a379428cea477cb4821b5c7accfb0"><td class="memItemLeft">static Queue&lt; <a class="el" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a9b3a379428cea477cb4821b5c7accfb0">m_drawContextsCache</a> = new()</td></tr>
+<tr class="memitem:ad64ce4c683bb4b662a67ba3d7e8cc836 inherit pub_static_attribs_class_game_1_1_widget" id="r_ad64ce4c683bb4b662a67ba3d7e8cc836"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ad64ce4c683bb4b662a67ba3d7e8cc836">LayersLimit</a> = -1</td></tr>
+<tr class="memitem:a8ddeddea48d4eb4e878520a9ba551dbb inherit pub_static_attribs_class_game_1_1_widget" id="r_a8ddeddea48d4eb4e878520a9ba551dbb"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a8ddeddea48d4eb4e878520a9ba551dbb">DrawWidgetBounds</a> = false</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a40d1103434ff44919361f96f1f3205ea" id="r_a40d1103434ff44919361f96f1f3205ea"><td class="memItemLeft"><a class="el" href="class_game_widget.html">GameWidget</a>&#160;</td><td class="memItemRight"><a class="el" href="#a40d1103434ff44919361f96f1f3205ea">GameWidget</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ac49201531689552e451b27b1128ecd73" id="r_ac49201531689552e451b27b1128ecd73"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_point2.html">Point2</a>?&#160;</td><td class="memItemRight"><a class="el" href="#ac49201531689552e451b27b1128ecd73">ScalingRenderTargetSize</a><code> [get]</code></td></tr>
+<tr class="inherit_header properties_class_game_1_1_touch_input_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_game_1_1_touch_input_widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>属性 继承自 <a class="el" href="class_game_1_1_touch_input_widget.html">Game.TouchInputWidget</a></td></tr>
+<tr class="memitem:a9add0e5655132bbcb15c232600ef05dd inherit properties_class_game_1_1_touch_input_widget" id="r_a9add0e5655132bbcb15c232600ef05dd"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#a9add0e5655132bbcb15c232600ef05dd">Radius</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a7e21cd7997cfb4acfaad4a69d52c9233 inherit properties_class_game_1_1_touch_input_widget" id="r_a7e21cd7997cfb4acfaad4a69d52c9233"><td class="memItemLeft">TouchInput?&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_touch_input_widget.html#a7e21cd7997cfb4acfaad4a69d52c9233">TouchInput</a><code> [get]</code></td></tr>
+<tr class="inherit_header properties_class_game_1_1_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_game_1_1_widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>属性 继承自 <a class="el" href="class_game_1_1_widget.html">Game.Widget</a></td></tr>
+<tr class="memitem:a5cbf75a0ffd5e004de3e90699aff56a7 inherit properties_class_game_1_1_widget" id="r_a5cbf75a0ffd5e004de3e90699aff56a7"><td class="memItemLeft"><a class="el" href="class_game_1_1_widget_input.html">WidgetInput</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a5cbf75a0ffd5e004de3e90699aff56a7">WidgetsHierarchyInput</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a3738facfe6a7f955f8539fcf8de3b387 inherit properties_class_game_1_1_widget" id="r_a3738facfe6a7f955f8539fcf8de3b387"><td class="memItemLeft"><a class="el" href="class_game_1_1_widget_input.html">WidgetInput</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Input</a><code> [get]</code></td></tr>
+<tr class="memitem:a93fbe31ad1694d94a0fc07d0376d4718 inherit properties_class_game_1_1_widget" id="r_a93fbe31ad1694d94a0fc07d0376d4718"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a93fbe31ad1694d94a0fc07d0376d4718">LayoutTransform</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a8054bb480f339df2297f2ee61c0617aa inherit properties_class_game_1_1_widget" id="r_a8054bb480f339df2297f2ee61c0617aa"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a8054bb480f339df2297f2ee61c0617aa">RenderTransform</a><code> [get, set]</code></td></tr>
+<tr class="memitem:adbf55b13c5ef4ecd8cc21c4fc38e8e49 inherit properties_class_game_1_1_widget" id="r_adbf55b13c5ef4ecd8cc21c4fc38e8e49"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#adbf55b13c5ef4ecd8cc21c4fc38e8e49">GlobalTransform</a><code> [get]</code></td></tr>
+<tr class="memitem:a07263e32c11786fef4bf3039da41d71c inherit properties_class_game_1_1_widget" id="r_a07263e32c11786fef4bf3039da41d71c"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a07263e32c11786fef4bf3039da41d71c">GlobalScale</a><code> [get]</code></td></tr>
+<tr class="memitem:a12e4877b2835c6957d457e2fc0f4d92c inherit properties_class_game_1_1_widget" id="r_a12e4877b2835c6957d457e2fc0f4d92c"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a12e4877b2835c6957d457e2fc0f4d92c">InvertedGlobalTransform</a><code> [get]</code></td></tr>
+<tr class="memitem:a4eeeb376e07d505b8665b73712f8c491 inherit properties_class_game_1_1_widget" id="r_a4eeeb376e07d505b8665b73712f8c491"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_bounding_rectangle.html">BoundingRectangle</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a4eeeb376e07d505b8665b73712f8c491">GlobalBounds</a><code> [get]</code></td></tr>
+<tr class="memitem:a62cad033ad787a5d22d4223ad101e3c4 inherit properties_class_game_1_1_widget" id="r_a62cad033ad787a5d22d4223ad101e3c4"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_color.html">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a62cad033ad787a5d22d4223ad101e3c4">ColorTransform</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a37faca8be205fde652377203138b74c1 inherit properties_class_game_1_1_widget" id="r_a37faca8be205fde652377203138b74c1"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_color.html">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a37faca8be205fde652377203138b74c1">GlobalColorTransform</a><code> [get]</code></td></tr>
+<tr class="memitem:a052639c7469bd431088b0aad830f6a69 inherit properties_class_game_1_1_widget" id="r_a052639c7469bd431088b0aad830f6a69"><td class="memItemLeft">virtual string&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a052639c7469bd431088b0aad830f6a69">Name</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a86cfc517a4b17188b7c0d20c1b96c38c inherit properties_class_game_1_1_widget" id="r_a86cfc517a4b17188b7c0d20c1b96c38c"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a86cfc517a4b17188b7c0d20c1b96c38c">Tag</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a5c7fbf961889f0a795126c2aea97c584 inherit properties_class_game_1_1_widget" id="r_a5c7fbf961889f0a795126c2aea97c584"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a5c7fbf961889f0a795126c2aea97c584">ExtraData</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a23d7a8869f277e48d5e0b8ce5a88c5b1 inherit properties_class_game_1_1_widget" id="r_a23d7a8869f277e48d5e0b8ce5a88c5b1"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a23d7a8869f277e48d5e0b8ce5a88c5b1">IsVisible</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a9bb42a2edfef33952ad91ade8e498bb1 inherit properties_class_game_1_1_widget" id="r_a9bb42a2edfef33952ad91ade8e498bb1"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a9bb42a2edfef33952ad91ade8e498bb1">IsEnabled</a><code> [get, set]</code></td></tr>
+<tr class="memitem:abb2bfb50316059fbb331871524c739bd inherit properties_class_game_1_1_widget" id="r_abb2bfb50316059fbb331871524c739bd"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#abb2bfb50316059fbb331871524c739bd">IsHitTestVisible</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a165616cc4ffff5df1b3130417ee1089b inherit properties_class_game_1_1_widget" id="r_a165616cc4ffff5df1b3130417ee1089b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a165616cc4ffff5df1b3130417ee1089b">IsVisibleGlobal</a><code> [get]</code></td></tr>
+<tr class="memitem:ac2df75a467220b8c5b1a2c999e452ece inherit properties_class_game_1_1_widget" id="r_ac2df75a467220b8c5b1a2c999e452ece"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ac2df75a467220b8c5b1a2c999e452ece">IsEnabledGlobal</a><code> [get]</code></td></tr>
+<tr class="memitem:af96fb79ac4012c3f124dc06056cf2dd4 inherit properties_class_game_1_1_widget" id="r_af96fb79ac4012c3f124dc06056cf2dd4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#af96fb79ac4012c3f124dc06056cf2dd4">ClampToBounds</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a79ba811373d4d5923563614811a30fbd inherit properties_class_game_1_1_widget" id="r_a79ba811373d4d5923563614811a30fbd"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a79ba811373d4d5923563614811a30fbd">Margin</a><code> [get, set]</code></td></tr>
+<tr class="memitem:afdf395767f401bad23ab5f57db0c46eb inherit properties_class_game_1_1_widget" id="r_afdf395767f401bad23ab5f57db0c46eb"><td class="memItemLeft">virtual float&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#afdf395767f401bad23ab5f57db0c46eb">MarginLeft</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ad5d79213269e9c536aa940523f1901c1 inherit properties_class_game_1_1_widget" id="r_ad5d79213269e9c536aa940523f1901c1"><td class="memItemLeft">virtual float&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ad5d79213269e9c536aa940523f1901c1">MarginRight</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ade52f83bbb89aac7dabfbdcb9b367426 inherit properties_class_game_1_1_widget" id="r_ade52f83bbb89aac7dabfbdcb9b367426"><td class="memItemLeft">virtual float&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ade52f83bbb89aac7dabfbdcb9b367426">MarginTop</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ad53d2ff478bdd45c1d5dd92eb63d5032 inherit properties_class_game_1_1_widget" id="r_ad53d2ff478bdd45c1d5dd92eb63d5032"><td class="memItemLeft">virtual float&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ad53d2ff478bdd45c1d5dd92eb63d5032">MarginBottom</a><code> [get, set]</code></td></tr>
+<tr class="memitem:acfcad662c1115f270a28900d37c64304 inherit properties_class_game_1_1_widget" id="r_acfcad662c1115f270a28900d37c64304"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_vector4.html">Vector4</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#acfcad662c1115f270a28900d37c64304">Margin4</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a28109d97883ab6deea45af873a2f7ced inherit properties_class_game_1_1_widget" id="r_a28109d97883ab6deea45af873a2f7ced"><td class="memItemLeft">virtual float&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a28109d97883ab6deea45af873a2f7ced">MarginHorizontalSum</a><code> [get]</code></td></tr>
+<tr class="memitem:a00659890b15de37473ad9cf780951413 inherit properties_class_game_1_1_widget" id="r_a00659890b15de37473ad9cf780951413"><td class="memItemLeft">virtual float&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a00659890b15de37473ad9cf780951413">MarginVerticalSum</a><code> [get]</code></td></tr>
+<tr class="memitem:a62fcbc6e032f148994e01b988ffd9d8a inherit properties_class_game_1_1_widget" id="r_a62fcbc6e032f148994e01b988ffd9d8a"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a62fcbc6e032f148994e01b988ffd9d8a">MarginHorizontalSumAndVerticalSum</a><code> [get]</code></td></tr>
+<tr class="memitem:a7f6aa568376ef5e1c5acdd1d879e860a inherit properties_class_game_1_1_widget" id="r_a7f6aa568376ef5e1c5acdd1d879e860a"><td class="memItemLeft">virtual <a class="el" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">HorizontalAlignment</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a605213e7e1ce146f1b191a24ccd09fbb inherit properties_class_game_1_1_widget" id="r_a605213e7e1ce146f1b191a24ccd09fbb"><td class="memItemLeft">virtual <a class="el" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ac9ff25efbe724241ec9d3678a1559527 inherit properties_class_game_1_1_widget" id="r_ac9ff25efbe724241ec9d3678a1559527"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">ActualSize</a><code> [get]</code></td></tr>
+<tr class="memitem:a4fcf3eb07446501ee363931839ce003a inherit properties_class_game_1_1_widget" id="r_a4fcf3eb07446501ee363931839ce003a"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a4fcf3eb07446501ee363931839ce003a">DesiredSize</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a0702f54b746d8a8430922053fbf18771 inherit properties_class_game_1_1_widget" id="r_a0702f54b746d8a8430922053fbf18771"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a0702f54b746d8a8430922053fbf18771">ParentDesiredSize</a><code> [get]</code></td></tr>
+<tr class="memitem:a0fff521e96f2b5dc1926c39b7b9ef052 inherit properties_class_game_1_1_widget" id="r_a0fff521e96f2b5dc1926c39b7b9ef052"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a0fff521e96f2b5dc1926c39b7b9ef052">IsUpdateEnabled</a> = true<code> [get, set]</code></td></tr>
+<tr class="memitem:a451de454a7ceefb927e9ae68180cb0f7 inherit properties_class_game_1_1_widget" id="r_a451de454a7ceefb927e9ae68180cb0f7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a451de454a7ceefb927e9ae68180cb0f7">IsDrawEnabled</a> = true<code> [get, set]</code></td></tr>
+<tr class="memitem:ab7453bbe06dbc7188b1d2a6d95e7663e inherit properties_class_game_1_1_widget" id="r_ab7453bbe06dbc7188b1d2a6d95e7663e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ab7453bbe06dbc7188b1d2a6d95e7663e">IsDrawRequired</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ac4e2e245495b5d411867e7dd4924a8d0 inherit properties_class_game_1_1_widget" id="r_ac4e2e245495b5d411867e7dd4924a8d0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ac4e2e245495b5d411867e7dd4924a8d0">IsOverdrawRequired</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a81863ce2a6712e89d731af82e569402d inherit properties_class_game_1_1_widget" id="r_a81863ce2a6712e89d731af82e569402d"><td class="memItemLeft">XElement&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a81863ce2a6712e89d731af82e569402d">Style</a><code> [set]</code></td></tr>
+<tr class="memitem:a49a806f5e237559162c1632e8dbb9d41 inherit properties_class_game_1_1_widget" id="r_a49a806f5e237559162c1632e8dbb9d41"><td class="memItemLeft"><a class="el" href="class_game_1_1_container_widget.html">ContainerWidget</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">ParentWidget</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a156ee6b518c3155e86fe2bc06be6a295 inherit properties_class_game_1_1_widget" id="r_a156ee6b518c3155e86fe2bc06be6a295"><td class="memItemLeft"><a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a156ee6b518c3155e86fe2bc06be6a295">RootWidget</a><code> [get]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_game_1_1_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_game_1_1_widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>静态 Public 成员函数 继承自 <a class="el" href="class_game_1_1_widget.html">Game.Widget</a></td></tr>
+<tr class="memitem:a17c4236221d46002b6cf74bd503b5220 inherit pub_static_methods_class_game_1_1_widget" id="r_a17c4236221d46002b6cf74bd503b5220"><td class="memItemLeft">static <a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a17c4236221d46002b6cf74bd503b5220">LoadWidget</a> (object eventsTarget, XElement node, <a class="el" href="class_game_1_1_container_widget.html">ContainerWidget</a> parentWidget)</td></tr>
+<tr class="memitem:a57cb100e14de9f088b26ef51bf63dc2c inherit pub_static_methods_class_game_1_1_widget" id="r_a57cb100e14de9f088b26ef51bf63dc2c"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a57cb100e14de9f088b26ef51bf63dc2c">TestOverlap</a> (<a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> w1, <a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> w2)</td></tr>
+<tr class="memitem:ac493f46fa1268dc8178746297ae96007 inherit pub_static_methods_class_game_1_1_widget" id="r_ac493f46fa1268dc8178746297ae96007"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#ac493f46fa1268dc8178746297ae96007">IsNodeIncludedOnCurrentPlatform</a> (XElement node)</td></tr>
+<tr class="memitem:aaa591ab2d973b136cf3375758aa72376 inherit pub_static_methods_class_game_1_1_widget" id="r_aaa591ab2d973b136cf3375758aa72376"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#aaa591ab2d973b136cf3375758aa72376">UpdateWidgetsHierarchy</a> (<a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> rootWidget)</td></tr>
+<tr class="memitem:a9ebde4a3b9cd78c684f13cc33e2ebd30 inherit pub_static_methods_class_game_1_1_widget" id="r_a9ebde4a3b9cd78c684f13cc33e2ebd30"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a9ebde4a3b9cd78c684f13cc33e2ebd30">LayoutWidgetsHierarchy</a> (<a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> rootWidget, <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> availableSize)</td></tr>
+<tr class="memitem:a3e95849b5392ab634bed351be3a86e2f inherit pub_static_methods_class_game_1_1_widget" id="r_a3e95849b5392ab634bed351be3a86e2f"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a3e95849b5392ab634bed351be3a86e2f">DrawWidgetsHierarchy</a> (<a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> rootWidget)</td></tr>
+<tr class="memitem:aafecd4ee18154b93a141c147e5ed63a1 inherit pub_static_methods_class_game_1_1_widget" id="r_aafecd4ee18154b93a141c147e5ed63a1"><td class="memItemLeft">static Type&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#aafecd4ee18154b93a141c147e5ed63a1">FindTypeFromXmlName</a> (string name, string namespaceName)</td></tr>
+<tr class="memitem:aee51cc734959ccc30e0b4f3b43263fa4 inherit pub_static_methods_class_game_1_1_widget" id="r_aee51cc734959ccc30e0b4f3b43263fa4"><td class="memItemLeft">static <a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a>&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#aee51cc734959ccc30e0b4f3b43263fa4">HitTestGlobal</a> (<a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> widget, <a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> point, Func&lt; <a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a>, bool &gt; predicate)</td></tr>
+<tr class="memitem:a0055dd982652066d4dc0c71acb387a6a inherit pub_static_methods_class_game_1_1_widget" id="r_a0055dd982652066d4dc0c71acb387a6a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="class_game_1_1_widget.html#a0055dd982652066d4dc0c71acb387a6a">UpdateWidgetsHierarchy</a> (<a class="el" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> widget, ref bool isMouseCursorVisible)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00005">5</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a3577d59f467ad510e9c56a9de29cc280" name="a3577d59f467ad510e9c56a9de29cc280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3577d59f467ad510e9c56a9de29cc280">&#9670;&#160;</a></span>ApplyScalingRenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.ViewWidget.ApplyScalingRenderTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a></td>          <td class="paramname"><span class="paramname"><em>dc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00102">102</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget_a3577d59f467ad510e9c56a9de29cc280_cgraph.png" border="0" usemap="#aclass_game_1_1_view_widget_a3577d59f467ad510e9c56a9de29cc280_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_view_widget_a3577d59f467ad510e9c56a9de29cc280_cgraph" id="aclass_game_1_1_view_widget_a3577d59f467ad510e9c56a9de29cc280_cgraph">
+<area shape="rect" title=" " alt="" coords="5,129,216,172"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#aaca95997a841ddefa0e485385f3ee93f" title=" " alt="" coords="275,29,454,72"/>
+<area shape="poly" title=" " alt="" coords="158,126,263,82,283,76,278,79,265,86,160,131"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_textured_batch2_d.html#a31279b2fb7e32469a12f6932c08f880f" title=" " alt="" coords="279,96,450,139"/>
+<area shape="poly" title=" " alt="" coords="215,134,265,130,260,132,217,139"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a5635de68b0fa0f6e1d5447462d54edfa" title=" " alt="" coords="275,163,454,205"/>
+<area shape="poly" title=" " alt="" coords="216,162,262,170,256,171,216,167"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_base_textured_batch.html#a1ae9394ab3bd94fa97afb10a73d4587d" title=" " alt="" coords="264,229,465,272"/>
+<area shape="poly" title=" " alt="" coords="159,170,265,215,283,224,278,223,263,220,158,175"/>
+<area shape="poly" title=" " alt="" coords="317,28,315,19,323,10,339,5,364,3,391,5,409,13,404,14,390,10,364,8,340,10,326,15,320,21,322,30"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a4e4a863238fd0377bbf1a4f0a90f0cac" title=" " alt="" coords="526,29,709,72"/>
+<area shape="poly" title=" " alt="" coords="454,48,514,50,508,51,455,53"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_base_primitives_renderer-3-g.html#af9fb8bda0a9549d91f08f2ad1b58ea83" title=" " alt="" coords="513,163,722,205"/>
+<area shape="poly" title=" " alt="" coords="454,181,500,184,495,184,455,187"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a64bd2f6b440876d8c485102114be5ae4" title=" " alt="" coords="532,237,704,264"/>
+<area shape="poly" title=" " alt="" coords="465,248,519,251,513,251,466,253"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a8fef12aa356a17385c518bd93477eb81" title=" " alt="" coords="770,237,928,264"/>
+<area shape="poly" title=" " alt="" coords="704,248,757,251,752,251,704,253"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget_a3577d59f467ad510e9c56a9de29cc280_icgraph.png" border="0" usemap="#aclass_game_1_1_view_widget_a3577d59f467ad510e9c56a9de29cc280_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_view_widget_a3577d59f467ad510e9c56a9de29cc280_icgraph" id="aclass_game_1_1_view_widget_a3577d59f467ad510e9c56a9de29cc280_icgraph">
+<area shape="rect" title=" " alt="" coords="487,5,697,48"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#af6598b556c6aa523d10e9dae5d0a3ec9" title=" " alt="" coords="219,13,439,40"/>
+<area shape="poly" title=" " alt="" coords="469,27,439,29,439,24,474,27"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#a35b7d37edad515c92133a5172c178643" title=" " alt="" coords="5,13,171,40"/>
+<area shape="poly" title=" " alt="" coords="200,27,171,29,171,24,206,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa9a2f7db7dfa9312e895e95ca40499a0" name="aa9a2f7db7dfa9312e895e95ca40499a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a2f7db7dfa9312e895e95ca40499a0">&#9670;&#160;</a></span>ChangeParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Game.ViewWidget.ChangeParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_container_widget.html">ContainerWidget</a></td>          <td class="paramname"><span class="paramname"><em>parentWidget</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_game_1_1_widget.html#a4a18a022fabdccb55ad52cfa0b34dd36">Game.Widget</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a34b70802dad8d733eeb5c6b0b2daf8e1" name="a34b70802dad8d733eeb5c6b0b2daf8e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b70802dad8d733eeb5c6b0b2daf8e1">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Game.ViewWidget.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_game_1_1_widget.html#aff78ac886eb849aaabb4fc4cb92b95ca">Game.Widget</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a96d0382d6b0e2558c1a97379ecf0d82b" name="a96d0382d6b0e2558c1a97379ecf0d82b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d0382d6b0e2558c1a97379ecf0d82b">&#9670;&#160;</a></span>DragDrop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.ViewWidget.DragDrop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_widget.html">Widget</a></td>          <td class="paramname"><span class="paramname"><em>dragWidget</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="interface_game_1_1_i_drag_target_widget.html#aaff8b872751ea51eded47ad1df207cf8">Game.IDragTargetWidget</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00052">52</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget_a96d0382d6b0e2558c1a97379ecf0d82b_cgraph.png" border="0" usemap="#aclass_game_1_1_view_widget_a96d0382d6b0e2558c1a97379ecf0d82b_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_view_widget_a96d0382d6b0e2558c1a97379ecf0d82b_cgraph" id="aclass_game_1_1_view_widget_a96d0382d6b0e2558c1a97379ecf0d82b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,97,196,124"/>
+<area shape="rect" href="class_game_1_1_subsystem_pickables.html#a297eda5ec8c552ca2c54b67d65b0afce" title=" " alt="" coords="251,5,438,48"/>
+<area shape="poly" title=" " alt="" coords="139,94,243,57,265,52,261,55,245,63,141,99"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b" title=" " alt="" coords="271,72,418,99"/>
+<area shape="poly" title=" " alt="" coords="196,98,258,94,253,95,197,103"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a90dcd03eb7ca9d55d111171a5e497fcd" title=" " alt="" coords="258,123,430,149"/>
+<area shape="poly" title=" " alt="" coords="196,118,245,125,240,126,196,123"/>
+<area shape="rect" href="class_game_1_1_widget.html#aa175f80633c613c98e4dfdec43be7cfc" title=" " alt="" coords="244,173,445,200"/>
+<area shape="poly" title=" " alt="" coords="138,122,244,159,272,169,267,169,243,164,137,127"/>
+<area shape="rect" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f" title="执行Hook" alt="" coords="493,13,668,40"/>
+<area shape="poly" title=" " alt="" coords="438,24,480,26,475,27,439,29"/>
+<area shape="rect" href="class_mods_manager.html#a0cc2c850b5c5363331d1bb670c963b9b" title=" " alt="" coords="716,13,882,40"/>
+<area shape="poly" title=" " alt="" coords="668,24,703,26,698,27,669,29"/>
+<area shape="rect" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0" title=" " alt="" coords="930,13,1048,40"/>
+<area shape="poly" title=" " alt="" coords="882,24,917,26,911,27,882,29"/>
+<area shape="rect" href="class_engine_1_1_log.html#aeec71e1f21824c2398a876ff9b1cf589" title=" " alt="" coords="1096,13,1216,40"/>
+<area shape="poly" title=" " alt="" coords="1048,24,1083,26,1078,27,1048,29"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html#a7428b3c7c6cc5b17701ad73d606de84e" title=" " alt="" coords="1264,13,1406,40"/>
+<area shape="poly" title=" " alt="" coords="1216,24,1251,26,1246,27,1217,29"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#ac23619307c7a520950d3bf50444f9cb7" title=" " alt="" coords="504,97,657,124"/>
+<area shape="poly" title=" " alt="" coords="430,124,492,120,486,121,431,129"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a8fef12aa356a17385c518bd93477eb81" title=" " alt="" coords="502,148,659,175"/>
+<area shape="poly" title=" " alt="" coords="431,143,489,151,484,151,431,148"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5027fa087dafad15c1bb3ecd5c98ab33" name="a5027fa087dafad15c1bb3ecd5c98ab33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5027fa087dafad15c1bb3ecd5c98ab33">&#9670;&#160;</a></span>DragOver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.ViewWidget.DragOver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_widget.html">Widget</a></td>          <td class="paramname"><span class="paramname"><em>dragWidget</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="interface_game_1_1_i_drag_target_widget.html#a8f285d80af757be1d910b6e60626aa82">Game.IDragTargetWidget</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a35b7d37edad515c92133a5172c178643" name="a35b7d37edad515c92133a5172c178643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b7d37edad515c92133a5172c178643">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Game.ViewWidget.Draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a></td>          <td class="paramname"><span class="paramname"><em>dc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_game_1_1_widget.html#aa3e5d5633f7f5355f9c22f58e50c8260">Game.Widget</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00038">38</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget_a35b7d37edad515c92133a5172c178643_cgraph.png" border="0" usemap="#aclass_game_1_1_view_widget_a35b7d37edad515c92133a5172c178643_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_view_widget_a35b7d37edad515c92133a5172c178643_cgraph" id="aclass_game_1_1_view_widget_a35b7d37edad515c92133a5172c178643_cgraph">
+<area shape="rect" title=" " alt="" coords="5,296,171,323"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#af6598b556c6aa523d10e9dae5d0a3ec9" title=" " alt="" coords="219,296,439,323"/>
+<area shape="poly" title=" " alt="" coords="170,307,205,308,201,311,173,312"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#a3577d59f467ad510e9c56a9de29cc280" title=" " alt="" coords="488,163,698,205"/>
+<area shape="poly" title=" " alt="" coords="358,293,534,211,530,214,361,298"/>
+<area shape="rect" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f" title="执行Hook" alt="" coords="505,296,680,323"/>
+<area shape="poly" title=" " alt="" coords="438,307,492,308,487,310,440,312"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#a00d690832107733281c048ab2cc67a2b" title=" " alt="" coords="487,507,698,549"/>
+<area shape="poly" title=" " alt="" coords="347,320,556,496,551,497,346,326"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#aaca95997a841ddefa0e485385f3ee93f" title=" " alt="" coords="757,29,937,72"/>
+<area shape="poly" title=" " alt="" coords="621,160,677,121,745,82,761,77,757,80,748,86,680,125,624,164"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_textured_batch2_d.html#a31279b2fb7e32469a12f6932c08f880f" title=" " alt="" coords="761,96,933,139"/>
+<area shape="poly" title=" " alt="" coords="676,160,751,142,746,144,678,164"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a5635de68b0fa0f6e1d5447462d54edfa" title=" " alt="" coords="757,163,937,205"/>
+<area shape="poly" title=" " alt="" coords="697,181,744,183,739,185,699,187"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_base_textured_batch.html#a1ae9394ab3bd94fa97afb10a73d4587d" title=" " alt="" coords="746,229,948,272"/>
+<area shape="poly" title=" " alt="" coords="676,203,751,224,746,226,677,209"/>
+<area shape="poly" title=" " alt="" coords="799,28,797,19,805,10,822,5,847,3,874,5,892,13,887,14,873,10,847,8,823,10,808,15,802,21,804,30"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a4e4a863238fd0377bbf1a4f0a90f0cac" title=" " alt="" coords="1009,29,1192,72"/>
+<area shape="poly" title=" " alt="" coords="936,48,996,50,991,52,938,53"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_base_primitives_renderer-3-g.html#af9fb8bda0a9549d91f08f2ad1b58ea83" title=" " alt="" coords="996,163,1205,205"/>
+<area shape="poly" title=" " alt="" coords="936,181,983,183,978,185,938,187"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a64bd2f6b440876d8c485102114be5ae4" title=" " alt="" coords="1014,237,1186,264"/>
+<area shape="poly" title=" " alt="" coords="948,248,1001,250,996,251,949,253"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a8fef12aa356a17385c518bd93477eb81" title=" " alt="" coords="1269,237,1426,264"/>
+<area shape="poly" title=" " alt="" coords="1186,248,1256,250,1251,251,1187,253"/>
+<area shape="rect" href="class_mods_manager.html#a0cc2c850b5c5363331d1bb670c963b9b" title=" " alt="" coords="764,296,930,323"/>
+<area shape="poly" title=" " alt="" coords="680,307,751,308,746,310,682,312"/>
+<area shape="rect" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0" title=" " alt="" coords="1041,292,1160,319"/>
+<area shape="poly" title=" " alt="" coords="930,305,1028,306,1023,307,931,311"/>
+<area shape="rect" href="class_engine_1_1_log.html#aeec71e1f21824c2398a876ff9b1cf589" title=" " alt="" coords="1288,289,1408,316"/>
+<area shape="poly" title=" " alt="" coords="1159,302,1275,303,1269,304,1160,307"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html#a7428b3c7c6cc5b17701ad73d606de84e" title=" " alt="" coords="1514,289,1656,316"/>
+<area shape="poly" title=" " alt="" coords="1408,300,1502,302,1496,303,1409,305"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_display.html#a156730067b107ea7862728346defb9f1" title=" " alt="" coords="763,507,931,549"/>
+<area shape="poly" title=" " alt="" coords="698,525,750,528,745,528,699,531"/>
+<area shape="rect" href="struct_engine_1_1_point2.html#a4774eb66f20d90cd6e78c0c67dc48ac4" title=" " alt="" coords="775,573,919,600"/>
+<area shape="poly" title=" " alt="" coords="688,547,773,569,768,569,688,553"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a929d5d5baac209c6d83842641b7672ae" title=" " alt="" coords="1006,507,1195,549"/>
+<area shape="poly" title=" " alt="" coords="931,525,993,528,988,528,932,531"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#adfb5ca8918c876293884198f7a38a139" title=" " alt="" coords="1253,340,1442,383"/>
+<area shape="poly" title=" " alt="" coords="1120,504,1176,449,1212,419,1252,392,1259,391,1264,389,1254,397,1215,423,1179,453,1123,509"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a7237470b8d9adcecae636a55c816f34f" title=" " alt="" coords="1253,407,1442,449"/>
+<area shape="poly" title=" " alt="" coords="1148,504,1252,459,1266,456,1271,454,1254,464,1150,509"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#af73ab4ccbfdfbf218c56ac78dab5c8d3" title=" " alt="" coords="1253,473,1442,516"/>
+<area shape="poly" title=" " alt="" coords="1195,513,1240,509,1235,510,1196,518"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a1f1c0a11b06f1b1ab6b15a8ca16e62a2" title=" " alt="" coords="1253,540,1442,583"/>
+<area shape="poly" title=" " alt="" coords="1196,538,1240,546,1235,547,1196,543"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a337d8a67a4b6324f19a6a1d8e51affcb" title=" " alt="" coords="1253,607,1442,649"/>
+<area shape="poly" title=" " alt="" coords="1179,547,1206,559,1231,576,1254,592,1267,600,1262,600,1252,597,1228,580,1204,564,1178,553"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#ad0452f2157dccabb43269f4e6530442d" title=" " alt="" coords="1253,673,1442,716"/>
+<area shape="poly" title=" " alt="" coords="1189,547,1207,559,1218,572,1226,585,1232,610,1238,635,1244,647,1255,659,1259,665,1254,664,1251,663,1240,650,1233,637,1227,612,1221,587,1214,575,1203,563,1188,553"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#af8001f72baad462f4fb88779eb323e24" title=" " alt="" coords="1253,740,1442,783"/>
+<area shape="poly" title=" " alt="" coords="1192,547,1207,559,1223,581,1230,602,1232,644,1233,686,1240,706,1255,726,1257,731,1252,729,1251,730,1236,708,1228,687,1227,644,1225,603,1218,583,1203,563,1190,553"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a924bde93028bd65b077b4bf6c8d9b75a" title=" " alt="" coords="1490,340,1680,383"/>
+<area shape="poly" title=" " alt="" coords="1442,359,1477,361,1472,362,1443,364"/>
+<area shape="rect" href="struct_engine_1_1_point2.html#a55b26b2ba859498c350fad0cfe60489c" title=" " alt="" coords="1029,573,1172,600"/>
+<area shape="poly" title=" " alt="" coords="920,584,1016,586,1011,587,920,589"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af6598b556c6aa523d10e9dae5d0a3ec9" name="af6598b556c6aa523d10e9dae5d0a3ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6598b556c6aa523d10e9dae5d0a3ec9">&#9670;&#160;</a></span>DrawToScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.ViewWidget.DrawToScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a></td>          <td class="paramname"><span class="paramname"><em>dc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00121">121</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget_af6598b556c6aa523d10e9dae5d0a3ec9_cgraph.png" border="0" usemap="#aclass_game_1_1_view_widget_af6598b556c6aa523d10e9dae5d0a3ec9_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_view_widget_af6598b556c6aa523d10e9dae5d0a3ec9_cgraph" id="aclass_game_1_1_view_widget_af6598b556c6aa523d10e9dae5d0a3ec9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,296,226,323"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#a3577d59f467ad510e9c56a9de29cc280" title=" " alt="" coords="274,163,484,205"/>
+<area shape="poly" title=" " alt="" coords="144,293,320,210,317,215,147,297"/>
+<area shape="rect" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f" title="执行Hook" alt="" coords="292,296,467,323"/>
+<area shape="poly" title=" " alt="" coords="225,307,278,308,274,311,227,312"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#a00d690832107733281c048ab2cc67a2b" title=" " alt="" coords="274,507,485,549"/>
+<area shape="poly" title=" " alt="" coords="134,320,343,495,338,498,133,326"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#aaca95997a841ddefa0e485385f3ee93f" title=" " alt="" coords="544,29,723,72"/>
+<area shape="poly" title=" " alt="" coords="407,160,464,121,532,82,548,77,544,80,534,86,466,125,411,164"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_textured_batch2_d.html#a31279b2fb7e32469a12f6932c08f880f" title=" " alt="" coords="548,96,719,139"/>
+<area shape="poly" title=" " alt="" coords="462,160,537,142,533,145,465,164"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a5635de68b0fa0f6e1d5447462d54edfa" title=" " alt="" coords="544,163,723,205"/>
+<area shape="poly" title=" " alt="" coords="484,182,531,183,526,185,486,186"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_base_textured_batch.html#a1ae9394ab3bd94fa97afb10a73d4587d" title=" " alt="" coords="533,229,734,272"/>
+<area shape="poly" title=" " alt="" coords="463,203,538,224,533,226,464,209"/>
+<area shape="poly" title=" " alt="" coords="586,28,584,19,592,10,609,5,634,3,661,5,678,13,673,14,659,10,634,8,610,10,595,15,589,21,591,29"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a4e4a863238fd0377bbf1a4f0a90f0cac" title=" " alt="" coords="796,29,978,72"/>
+<area shape="poly" title=" " alt="" coords="723,48,783,50,778,52,725,53"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_base_primitives_renderer-3-g.html#af9fb8bda0a9549d91f08f2ad1b58ea83" title=" " alt="" coords="782,163,992,205"/>
+<area shape="poly" title=" " alt="" coords="723,181,769,183,764,185,725,187"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a64bd2f6b440876d8c485102114be5ae4" title=" " alt="" coords="801,237,973,264"/>
+<area shape="poly" title=" " alt="" coords="734,248,788,250,783,252,736,253"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a8fef12aa356a17385c518bd93477eb81" title=" " alt="" coords="1056,237,1213,264"/>
+<area shape="poly" title=" " alt="" coords="973,248,1043,250,1038,251,974,253"/>
+<area shape="rect" href="class_mods_manager.html#a0cc2c850b5c5363331d1bb670c963b9b" title=" " alt="" coords="551,296,716,323"/>
+<area shape="poly" title=" " alt="" coords="467,307,538,308,533,310,469,312"/>
+<area shape="rect" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0" title=" " alt="" coords="828,292,946,319"/>
+<area shape="poly" title=" " alt="" coords="716,305,815,306,810,307,717,311"/>
+<area shape="rect" href="class_engine_1_1_log.html#aeec71e1f21824c2398a876ff9b1cf589" title=" " alt="" coords="1074,289,1194,316"/>
+<area shape="poly" title=" " alt="" coords="946,302,1061,303,1056,304,947,307"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html#a7428b3c7c6cc5b17701ad73d606de84e" title=" " alt="" coords="1301,289,1442,316"/>
+<area shape="poly" title=" " alt="" coords="1194,300,1288,302,1283,303,1195,305"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_display.html#a156730067b107ea7862728346defb9f1" title=" " alt="" coords="550,507,718,549"/>
+<area shape="poly" title=" " alt="" coords="485,525,537,527,531,529,486,531"/>
+<area shape="rect" href="struct_engine_1_1_point2.html#a4774eb66f20d90cd6e78c0c67dc48ac4" title=" " alt="" coords="562,573,706,600"/>
+<area shape="poly" title=" " alt="" coords="475,547,560,569,555,570,475,553"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a929d5d5baac209c6d83842641b7672ae" title=" " alt="" coords="792,507,982,549"/>
+<area shape="poly" title=" " alt="" coords="718,525,780,528,774,528,719,531"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#adfb5ca8918c876293884198f7a38a139" title=" " alt="" coords="1040,340,1229,383"/>
+<area shape="poly" title=" " alt="" coords="906,504,962,449,999,419,1038,392,1046,391,1051,389,1041,397,1002,423,966,453,909,508"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a7237470b8d9adcecae636a55c816f34f" title=" " alt="" coords="1040,407,1229,449"/>
+<area shape="poly" title=" " alt="" coords="935,504,1039,459,1053,456,1058,454,1041,464,937,509"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#af73ab4ccbfdfbf218c56ac78dab5c8d3" title=" " alt="" coords="1040,473,1229,516"/>
+<area shape="poly" title=" " alt="" coords="982,513,1027,509,1022,510,983,518"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a1f1c0a11b06f1b1ab6b15a8ca16e62a2" title=" " alt="" coords="1040,540,1229,583"/>
+<area shape="poly" title=" " alt="" coords="982,538,1027,546,1022,547,982,543"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a337d8a67a4b6324f19a6a1d8e51affcb" title=" " alt="" coords="1040,607,1229,649"/>
+<area shape="poly" title=" " alt="" coords="965,547,993,559,1017,576,1041,592,1053,600,1048,600,1038,597,1014,580,990,564,965,553"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#ad0452f2157dccabb43269f4e6530442d" title=" " alt="" coords="1040,673,1229,716"/>
+<area shape="poly" title=" " alt="" coords="976,547,993,559,1005,572,1012,585,1018,610,1024,635,1031,647,1042,659,1046,665,1041,664,1038,663,1026,650,1019,637,1013,612,1007,587,1001,575,990,563,975,553"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#af8001f72baad462f4fb88779eb323e24" title=" " alt="" coords="1040,740,1229,783"/>
+<area shape="poly" title=" " alt="" coords="978,547,994,559,1009,581,1017,602,1019,644,1020,686,1027,706,1042,726,1044,731,1039,729,1038,730,1022,708,1015,687,1013,644,1012,603,1005,583,990,563,977,553"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a924bde93028bd65b077b4bf6c8d9b75a" title=" " alt="" coords="1277,340,1466,383"/>
+<area shape="poly" title=" " alt="" coords="1229,359,1264,361,1259,362,1230,364"/>
+<area shape="rect" href="struct_engine_1_1_point2.html#a55b26b2ba859498c350fad0cfe60489c" title=" " alt="" coords="815,573,959,600"/>
+<area shape="poly" title=" " alt="" coords="706,584,803,586,797,587,707,589"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget_af6598b556c6aa523d10e9dae5d0a3ec9_icgraph.png" border="0" usemap="#aclass_game_1_1_view_widget_af6598b556c6aa523d10e9dae5d0a3ec9_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_view_widget_af6598b556c6aa523d10e9dae5d0a3ec9_icgraph" id="aclass_game_1_1_view_widget_af6598b556c6aa523d10e9dae5d0a3ec9_icgraph">
+<area shape="rect" title=" " alt="" coords="219,5,439,32"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#a35b7d37edad515c92133a5172c178643" title=" " alt="" coords="5,5,171,32"/>
+<area shape="poly" title=" " alt="" coords="200,19,171,21,171,16,206,19"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a94aa659bcb8785d8b38ce62e5d73c994" name="a94aa659bcb8785d8b38ce62e5d73c994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94aa659bcb8785d8b38ce62e5d73c994">&#9670;&#160;</a></span>MeasureOverride()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Game.ViewWidget.MeasureOverride </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>parentAvailableSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_game_1_1_widget.html#a2335f54b3d22cf7887048053d03b9ee6">Game.Widget</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a00d690832107733281c048ab2cc67a2b" name="a00d690832107733281c048ab2cc67a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d690832107733281c048ab2cc67a2b">&#9670;&#160;</a></span>SetupScalingRenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.ViewWidget.SetupScalingRenderTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00076">76</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget_a00d690832107733281c048ab2cc67a2b_cgraph.png" border="0" usemap="#aclass_game_1_1_view_widget_a00d690832107733281c048ab2cc67a2b_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_view_widget_a00d690832107733281c048ab2cc67a2b_cgraph" id="aclass_game_1_1_view_widget_a00d690832107733281c048ab2cc67a2b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,235,217,277"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_display.html#a156730067b107ea7862728346defb9f1" title=" " alt="" coords="265,205,433,248"/>
+<area shape="poly" title=" " alt="" coords="216,240,251,238,247,240,218,245"/>
+<area shape="rect" href="struct_engine_1_1_point2.html#a4774eb66f20d90cd6e78c0c67dc48ac4" title=" " alt="" coords="277,272,421,299"/>
+<area shape="poly" title=" " alt="" coords="217,266,264,274,259,275,218,272"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a929d5d5baac209c6d83842641b7672ae" title=" " alt="" coords="481,205,670,248"/>
+<area shape="poly" title=" " alt="" coords="433,224,468,226,463,227,434,229"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#adfb5ca8918c876293884198f7a38a139" title=" " alt="" coords="718,5,908,48"/>
+<area shape="poly" title=" " alt="" coords="588,203,639,133,675,93,717,58,723,57,727,54,720,62,679,97,643,136,592,207"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a7237470b8d9adcecae636a55c816f34f" title=" " alt="" coords="718,72,908,115"/>
+<area shape="poly" title=" " alt="" coords="602,203,653,164,717,124,727,122,732,120,720,129,656,168,605,207"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#af73ab4ccbfdfbf218c56ac78dab5c8d3" title=" " alt="" coords="718,139,908,181"/>
+<area shape="poly" title=" " alt="" coords="653,202,723,185,718,187,655,207"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a1f1c0a11b06f1b1ab6b15a8ca16e62a2" title=" " alt="" coords="718,205,908,248"/>
+<area shape="poly" title=" " alt="" coords="670,224,705,226,700,227,671,229"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a337d8a67a4b6324f19a6a1d8e51affcb" title=" " alt="" coords="718,272,908,315"/>
+<area shape="poly" title=" " alt="" coords="654,246,723,267,717,267,654,251"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#ad0452f2157dccabb43269f4e6530442d" title=" " alt="" coords="718,339,908,381"/>
+<area shape="poly" title=" " alt="" coords="652,246,672,258,688,275,697,292,705,309,720,325,727,331,721,330,717,329,700,312,692,295,684,278,669,262,651,251"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#af8001f72baad462f4fb88779eb323e24" title=" " alt="" coords="718,405,908,448"/>
+<area shape="poly" title=" " alt="" coords="656,246,672,258,686,275,693,293,697,326,701,359,708,375,720,392,723,397,718,395,716,395,703,378,696,361,692,327,688,294,681,278,668,262,655,251"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_g_l_wrapper.html#a924bde93028bd65b077b4bf6c8d9b75a" title=" " alt="" coords="956,5,1145,48"/>
+<area shape="poly" title=" " alt="" coords="908,24,943,26,937,27,909,29"/>
+<area shape="rect" href="struct_engine_1_1_point2.html#a55b26b2ba859498c350fad0cfe60489c" title=" " alt="" coords="504,272,647,299"/>
+<area shape="poly" title=" " alt="" coords="421,283,491,285,486,286,421,288"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_view_widget_a00d690832107733281c048ab2cc67a2b_icgraph.png" border="0" usemap="#aclass_game_1_1_view_widget_a00d690832107733281c048ab2cc67a2b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_view_widget_a00d690832107733281c048ab2cc67a2b_icgraph" id="aclass_game_1_1_view_widget_a00d690832107733281c048ab2cc67a2b_icgraph">
+<area shape="rect" title=" " alt="" coords="487,5,698,48"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#af6598b556c6aa523d10e9dae5d0a3ec9" title=" " alt="" coords="219,13,439,40"/>
+<area shape="poly" title=" " alt="" coords="469,27,440,29,440,24,474,27"/>
+<area shape="rect" href="class_game_1_1_view_widget.html#a35b7d37edad515c92133a5172c178643" title=" " alt="" coords="5,13,171,40"/>
+<area shape="poly" title=" " alt="" coords="200,27,171,29,171,24,206,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="a256f7c39afbfd0ee94f520bfaf9cc58f" name="a256f7c39afbfd0ee94f520bfaf9cc58f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a256f7c39afbfd0ee94f520bfaf9cc58f">&#9670;&#160;</a></span>m_scalingRenderTarget</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_render_target2_d.html">RenderTarget2D</a> Game.ViewWidget.m_scalingRenderTarget</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00008">8</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab68314de5a7d185a1bf2aabb64df7eef" name="ab68314de5a7d185a1bf2aabb64df7eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68314de5a7d185a1bf2aabb64df7eef">&#9670;&#160;</a></span>m_subsystemDrawing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_1_1_subsystem_drawing.html">SubsystemDrawing</a> Game.ViewWidget.m_subsystemDrawing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00006">6</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad1d0d1154725ce93e3c7dcc6db6b519e" name="ad1d0d1154725ce93e3c7dcc6db6b519e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d0d1154725ce93e3c7dcc6db6b519e">&#9670;&#160;</a></span>ScreenTexture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_render_target2_d.html">RenderTarget2D</a> Game.ViewWidget.ScreenTexture = new(Window.Size.X, Window.Size.Y, 1, ColorFormat.Rgba8888, DepthFormat.Depth24Stencil8)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="a40d1103434ff44919361f96f1f3205ea" name="a40d1103434ff44919361f96f1f3205ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40d1103434ff44919361f96f1f3205ea">&#9670;&#160;</a></span>GameWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_widget.html">GameWidget</a> Game.ViewWidget.GameWidget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00012">12</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac49201531689552e451b27b1128ecd73" name="ac49201531689552e451b27b1128ecd73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49201531689552e451b27b1128ecd73">&#9670;&#160;</a></span>ScalingRenderTargetSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_point2.html">Point2</a>? Game.ViewWidget.ScalingRenderTargetSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a> 第 <a class="el" href="_view_widget_8cs_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/<a class="el" href="_view_widget_8cs_source.html">ViewWidget.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game.html">Game</a></li><li class="navelem"><a href="class_game_1_1_view_widget.html">ViewWidget</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

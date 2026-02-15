@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Block/DispenserBlock.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_dispenser_block_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DispenserBlock.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_dispenser_block_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a> : <a class="code hl_class" href="class_game_1_1_cube_block.html">CubeBlock</a>, <a class="code hl_interface" href="interface_game_1_1_i_electric_element_block.html">IElectricElementBlock</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">    5</a></span>        <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784ae766f2bd3d581ab7cbb7910d96b60f57">    6</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784ae766f2bd3d581ab7cbb7910d96b60f57">Dispense</a>,</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784acf4a0298c82a0d16c03788f8d0ce273c">    7</a></span>            <a class="code hl_enumvalue" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784acf4a0298c82a0d16c03788f8d0ce273c">Shoot</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        }</div>
+</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#ac270f6a77efeb84b3338967b6d2a1e08">   10</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_dispenser_block.html#ac270f6a77efeb84b3338967b6d2a1e08">Index</a> = 216;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#ac4e329b3af37bd6138bdcbf760bcc952">   12</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#ac4e329b3af37bd6138bdcbf760bcc952">GetFaceTextureSlot</a>(<span class="keywordtype">int</span> face, <span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="keywordtype">int</span> direction = <a class="code hl_function" href="class_game_1_1_dispenser_block.html#adbce0358517c3f40ee7228b6478b2ed1">GetDirection</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value));</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <span class="keywordflow">if</span> (face != direction) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                <span class="keywordflow">return</span> 42;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">return</span> 59;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#a776fb267d4bf299024c84c9ef0bc2c41">   20</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_struct" href="struct_game_1_1_block_placement_data.html">BlockPlacementData</a> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#a776fb267d4bf299024c84c9ef0bc2c41">GetPlacementValue</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> subsystemTerrain,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_class" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordtype">int</span> value,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_struct" href="struct_game_1_1_terrain_raycast_result.html">TerrainRaycastResult</a> raycastResult) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> forward = <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>.<a class="code hl_function" href="struct_engine_1_1_matrix.html#a2ec97704b937ba47ce6f9c2209c8696a">CreateFromQuaternion</a>(componentMiner.<a class="code hl_property" href="class_game_1_1_component_miner.html#a1209a3c65fc317bfc6ef366c2e1882f7">ComponentCreature</a>.<a class="code hl_property" href="class_game_1_1_component_creature.html#a6d7da7d327cfe593f6e2dee93354adb7">ComponentCreatureModel</a>.<a class="code hl_property" href="class_game_1_1_component_creature_model.html#a35875bbf99d80e743b3b42b0dafce091">EyeRotation</a>).<a class="code hl_property" href="struct_engine_1_1_matrix.html#ac8ca7067edc2c2bed607f779af7b4ab1">Forward</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordtype">float</span> num = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(forward, <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#af46f7cb8a73f44875d60900c65e4b787">UnitZ</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordtype">float</span> num2 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(forward, <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac1a1ef176cb38576a2fd0ba9f3905ab3">UnitX</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordtype">float</span> num3 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(forward, -<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#af46f7cb8a73f44875d60900c65e4b787">UnitZ</a>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordtype">float</span> num4 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(forward, -<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac1a1ef176cb38576a2fd0ba9f3905ab3">UnitX</a>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordtype">float</span> num5 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(forward, <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae470b2f3e4a3f639fa05966fc3e36665">UnitY</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordtype">float</span> num6 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(forward, -<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae470b2f3e4a3f639fa05966fc3e36665">UnitY</a>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordtype">float</span> num7 = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(<a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(num, num2, num3), <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(num4, num5, num6));</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordtype">int</span> direction = 0;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">if</span> (num == num7) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                direction = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num2 == num7) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                direction = 1;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num3 == num7) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                direction = 2;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num4 == num7) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                direction = 3;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num5 == num7) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                direction = 4;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num6 == num7) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                direction = 5;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_struct" href="struct_game_1_1_block_placement_data.html">BlockPlacementData</a> result = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            result.Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(216, 0, <a class="code hl_function" href="class_game_1_1_dispenser_block.html#ae4723a92a32392f29649a22b11faf4a2">SetAcceptsDrops</a>(<a class="code hl_function" href="class_game_1_1_dispenser_block.html#a30f7e4913f0b9aea23885b5fc069daf0">SetMode</a>(<a class="code hl_function" href="class_game_1_1_dispenser_block.html#a979321f594fe467905fca66b36438f45">SetDirection</a>(0, direction), <a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a>.Shoot), <span class="keyword">true</span>));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            result.CellFace = raycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#af81a33a7ddfc5e3bf119cbd4262a94ce">CellFace</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#adbce0358517c3f40ee7228b6478b2ed1">   57</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#adbce0358517c3f40ee7228b6478b2ed1">GetDirection</a>(<span class="keywordtype">int</span> data) =&gt; data &amp; 7;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#a979321f594fe467905fca66b36438f45">   59</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#a979321f594fe467905fca66b36438f45">SetDirection</a>(<span class="keywordtype">int</span> data, <span class="keywordtype">int</span> direction) =&gt; (data &amp; -8) | (direction &amp; 7);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#a86a951830ce7c3f50ff2847d68c17896">   61</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#a86a951830ce7c3f50ff2847d68c17896">GetMode</a>(<span class="keywordtype">int</span> data) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> ((data &amp; 8) != 0) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">return</span> <a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a>.Shoot;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">return</span> <a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a>.Dispense;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#a30f7e4913f0b9aea23885b5fc069daf0">   68</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#a30f7e4913f0b9aea23885b5fc069daf0">SetMode</a>(<span class="keywordtype">int</span> data, <a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a> mode) =&gt; (data &amp; -9) | (mode != 0 ? 8 : 0);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#a7752ec16d93150047f5184aca6a19247">   70</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#a7752ec16d93150047f5184aca6a19247">GetAcceptsDrops</a>(<span class="keywordtype">int</span> data) =&gt; (data &amp; 0x10) != 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#ae4723a92a32392f29649a22b11faf4a2">   72</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#ae4723a92a32392f29649a22b11faf4a2">SetAcceptsDrops</a>(<span class="keywordtype">int</span> data, <span class="keywordtype">bool</span> acceptsDrops) =&gt; (data &amp; -17) | (acceptsDrops ? 16 : 0);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#a88bc4c5f58bccd5b433c77edc6861bda">   74</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_electric_element.html">ElectricElement</a> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#a88bc4c5f58bccd5b433c77edc6861bda">CreateElectricElement</a>(<a class="code hl_class" href="class_game_1_1_subsystem_electricity.html">SubsystemElectricity</a> subsystemElectricity, <span class="keywordtype">int</span> value, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) =&gt;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_dispenser_electric_element.html">DispenserElectricElement</a>(subsystemElectricity, <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_point3.html">Point3</a>(x, y, z));</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#a6c313c85732f0b141e81d5b1da2037be">   77</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_game.html#a918a372743e573bef75fc7939b951b76">ElectricConnectorType</a>? <a class="code hl_function" href="class_game_1_1_dispenser_block.html#a6c313c85732f0b141e81d5b1da2037be">GetConnectorType</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> terrain,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordtype">int</span> value,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordtype">int</span> face,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordtype">int</span> connectorFace,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordtype">int</span> x,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordtype">int</span> y,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordtype">int</span> z) =&gt; <a class="code hl_enumeration" href="namespace_game.html#a918a372743e573bef75fc7939b951b76">ElectricConnectorType</a>.Input;</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_block.html#a96599f7891aaed34651d288d7dfe8a56">   85</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_dispenser_block.html#a96599f7891aaed34651d288d7dfe8a56">GetConnectionMask</a>(<span class="keywordtype">int</span> value) =&gt; <span class="keywordtype">int</span>.MaxValue;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a5f2b24627ca7cc5256edc10831fe295b"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Engine.MathUtils.Min</a></div><div class="ttdeci">static int Min(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00007">MathUtils.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_creature_html_a6d7da7d327cfe593f6e2dee93354adb7"><div class="ttname"><a href="class_game_1_1_component_creature.html#a6d7da7d327cfe593f6e2dee93354adb7">Game.ComponentCreature.ComponentCreatureModel</a></div><div class="ttdeci">ComponentCreatureModel ComponentCreatureModel</div><div class="ttdef"><b>定义</b> <a href="_component_creature_8cs_source.html#l00018">ComponentCreature.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_creature_model_html_a35875bbf99d80e743b3b42b0dafce091"><div class="ttname"><a href="class_game_1_1_component_creature_model.html#a35875bbf99d80e743b3b42b0dafce091">Game.ComponentCreatureModel.EyeRotation</a></div><div class="ttdeci">Quaternion EyeRotation</div><div class="ttdef"><b>定义</b> <a href="_component_creature_model_8cs_source.html#l00063">ComponentCreatureModel.cs:63</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html"><div class="ttname"><a href="class_game_1_1_component_miner.html">Game.ComponentMiner</a></div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00007">ComponentMiner.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html_a1209a3c65fc317bfc6ef366c2e1882f7"><div class="ttname"><a href="class_game_1_1_component_miner.html#a1209a3c65fc317bfc6ef366c2e1882f7">Game.ComponentMiner.ComponentCreature</a></div><div class="ttdeci">ComponentCreature ComponentCreature</div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00055">ComponentMiner.cs:55</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cube_block_html"><div class="ttname"><a href="class_game_1_1_cube_block.html">Game.CubeBlock</a></div><div class="ttdef"><b>定义</b> <a href="_cube_block_8cs_source.html#l00005">CubeBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html"><div class="ttname"><a href="class_game_1_1_dispenser_block.html">Game.DispenserBlock</a></div><div class="ttdef"><b>定义</b> <a href="#l00004">DispenserBlock.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a30f7e4913f0b9aea23885b5fc069daf0"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a30f7e4913f0b9aea23885b5fc069daf0">Game.DispenserBlock.SetMode</a></div><div class="ttdeci">static int SetMode(int data, Mode mode)</div><div class="ttdef"><b>定义</b> <a href="#l00068">DispenserBlock.cs:68</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a6c313c85732f0b141e81d5b1da2037be"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a6c313c85732f0b141e81d5b1da2037be">Game.DispenserBlock.GetConnectorType</a></div><div class="ttdeci">ElectricConnectorType? GetConnectorType(SubsystemTerrain terrain, int value, int face, int connectorFace, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00077">DispenserBlock.cs:77</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a7752ec16d93150047f5184aca6a19247"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a7752ec16d93150047f5184aca6a19247">Game.DispenserBlock.GetAcceptsDrops</a></div><div class="ttdeci">static bool GetAcceptsDrops(int data)</div><div class="ttdef"><b>定义</b> <a href="#l00070">DispenserBlock.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a776fb267d4bf299024c84c9ef0bc2c41"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a776fb267d4bf299024c84c9ef0bc2c41">Game.DispenserBlock.GetPlacementValue</a></div><div class="ttdeci">override BlockPlacementData GetPlacementValue(SubsystemTerrain subsystemTerrain, ComponentMiner componentMiner, int value, TerrainRaycastResult raycastResult)</div><div class="ttdoc">方块放置方向</div><div class="ttdef"><b>定义</b> <a href="#l00020">DispenserBlock.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a86a951830ce7c3f50ff2847d68c17896"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a86a951830ce7c3f50ff2847d68c17896">Game.DispenserBlock.GetMode</a></div><div class="ttdeci">static Mode GetMode(int data)</div><div class="ttdef"><b>定义</b> <a href="#l00061">DispenserBlock.cs:61</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a88bc4c5f58bccd5b433c77edc6861bda"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a88bc4c5f58bccd5b433c77edc6861bda">Game.DispenserBlock.CreateElectricElement</a></div><div class="ttdeci">ElectricElement CreateElectricElement(SubsystemElectricity subsystemElectricity, int value, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00074">DispenserBlock.cs:74</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a96599f7891aaed34651d288d7dfe8a56"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a96599f7891aaed34651d288d7dfe8a56">Game.DispenserBlock.GetConnectionMask</a></div><div class="ttdeci">int GetConnectionMask(int value)</div><div class="ttdef"><b>定义</b> <a href="#l00085">DispenserBlock.cs:85</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a979321f594fe467905fca66b36438f45"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a979321f594fe467905fca66b36438f45">Game.DispenserBlock.SetDirection</a></div><div class="ttdeci">static int SetDirection(int data, int direction)</div><div class="ttdef"><b>定义</b> <a href="#l00059">DispenserBlock.cs:59</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_aaf0371b41e8f89039f47c4493bac2784"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Game.DispenserBlock.Mode</a></div><div class="ttdeci">Mode</div><div class="ttdef"><b>定义</b> <a href="#l00005">DispenserBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_aaf0371b41e8f89039f47c4493bac2784acf4a0298c82a0d16c03788f8d0ce273c"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784acf4a0298c82a0d16c03788f8d0ce273c">Game.DispenserBlock.Mode.Shoot</a></div><div class="ttdeci">@ Shoot</div><div class="ttdef"><b>定义</b> <a href="#l00007">DispenserBlock.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_aaf0371b41e8f89039f47c4493bac2784ae766f2bd3d581ab7cbb7910d96b60f57"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784ae766f2bd3d581ab7cbb7910d96b60f57">Game.DispenserBlock.Mode.Dispense</a></div><div class="ttdeci">@ Dispense</div><div class="ttdef"><b>定义</b> <a href="#l00006">DispenserBlock.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_ac270f6a77efeb84b3338967b6d2a1e08"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#ac270f6a77efeb84b3338967b6d2a1e08">Game.DispenserBlock.Index</a></div><div class="ttdeci">static int Index</div><div class="ttdef"><b>定义</b> <a href="#l00010">DispenserBlock.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_ac4e329b3af37bd6138bdcbf760bcc952"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#ac4e329b3af37bd6138bdcbf760bcc952">Game.DispenserBlock.GetFaceTextureSlot</a></div><div class="ttdeci">override int GetFaceTextureSlot(int face, int value)</div><div class="ttdef"><b>定义</b> <a href="#l00012">DispenserBlock.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_adbce0358517c3f40ee7228b6478b2ed1"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#adbce0358517c3f40ee7228b6478b2ed1">Game.DispenserBlock.GetDirection</a></div><div class="ttdeci">static int GetDirection(int data)</div><div class="ttdef"><b>定义</b> <a href="#l00057">DispenserBlock.cs:57</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_ae4723a92a32392f29649a22b11faf4a2"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#ae4723a92a32392f29649a22b11faf4a2">Game.DispenserBlock.SetAcceptsDrops</a></div><div class="ttdeci">static int SetAcceptsDrops(int data, bool acceptsDrops)</div><div class="ttdef"><b>定义</b> <a href="#l00072">DispenserBlock.cs:72</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_electric_element_html"><div class="ttname"><a href="class_game_1_1_dispenser_electric_element.html">Game.DispenserElectricElement</a></div><div class="ttdef"><b>定义</b> <a href="_dispenser_electric_element_8cs_source.html#l00004">DispenserElectricElement.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_electric_element_html"><div class="ttname"><a href="class_game_1_1_electric_element.html">Game.ElectricElement</a></div><div class="ttdef"><b>定义</b> <a href="_electric_element_8cs_source.html#l00004">ElectricElement.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electricity_html"><div class="ttname"><a href="class_game_1_1_subsystem_electricity.html">Game.SubsystemElectricity</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_electricity_8cs_source.html#l00009">SubsystemElectricity.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html">Game.SubsystemTerrain</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00006">SubsystemTerrain.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aea9a8c0114bc872225f02ebc8b7b8b9f"><div class="ttname"><a href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">Game.Terrain.MakeBlockValue</a></div><div class="ttdeci">static int MakeBlockValue(int contents)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00298">Terrain.cs:298</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aec56ea916e034b2e4db00d1814fdadba"><div class="ttname"><a href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">Game.Terrain.ExtractData</a></div><div class="ttdeci">static int ExtractData(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00307">Terrain.cs:307</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_electric_element_block_html"><div class="ttname"><a href="interface_game_1_1_i_electric_element_block.html">Game.IElectricElementBlock</a></div><div class="ttdef"><b>定义</b> <a href="_i_electric_element_block_8cs_source.html#l00002">IElectricElementBlock.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a918a372743e573bef75fc7939b951b76"><div class="ttname"><a href="namespace_game.html#a918a372743e573bef75fc7939b951b76">Game.ElectricConnectorType</a></div><div class="ttdeci">ElectricConnectorType</div><div class="ttdef"><b>定义</b> <a href="_electric_connector_type_8cs_source.html#l00002">ElectricConnectorType.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html_a2ec97704b937ba47ce6f9c2209c8696a"><div class="ttname"><a href="struct_engine_1_1_matrix.html#a2ec97704b937ba47ce6f9c2209c8696a">Engine.Matrix.CreateFromQuaternion</a></div><div class="ttdeci">static Matrix CreateFromQuaternion(Quaternion quaternion)</div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00277">Matrix.cs:277</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html_ac8ca7067edc2c2bed607f779af7b4ab1"><div class="ttname"><a href="struct_engine_1_1_matrix.html#ac8ca7067edc2c2bed607f779af7b4ab1">Engine.Matrix.Forward</a></div><div class="ttdeci">Vector3 Forward</div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00074">Matrix.cs:74</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point3_html"><div class="ttname"><a href="struct_engine_1_1_point3.html">Engine.Point3</a></div><div class="ttdef"><b>定义</b> <a href="_point3_8cs_source.html#l00002">Point3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ac1a1ef176cb38576a2fd0ba9f3905ab3"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ac1a1ef176cb38576a2fd0ba9f3905ab3">Engine.Vector3.UnitX</a></div><div class="ttdeci">static readonly Vector3 UnitX</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00013">Vector3.cs:13</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ae470b2f3e4a3f639fa05966fc3e36665"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ae470b2f3e4a3f639fa05966fc3e36665">Engine.Vector3.UnitY</a></div><div class="ttdeci">static readonly Vector3 UnitY</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00015">Vector3.cs:15</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_af46f7cb8a73f44875d60900c65e4b787"><div class="ttname"><a href="struct_engine_1_1_vector3.html#af46f7cb8a73f44875d60900c65e4b787">Engine.Vector3.UnitZ</a></div><div class="ttdeci">static readonly Vector3 UnitZ</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00017">Vector3.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_afb241ba10f85725de8e143a303ae4275"><div class="ttname"><a href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Engine.Vector3.Dot</a></div><div class="ttdeci">static float Dot(Vector3 v1, Vector3 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00112">Vector3.cs:112</a></div></div>
+<div class="ttc" id="astruct_game_1_1_block_placement_data_html"><div class="ttname"><a href="struct_game_1_1_block_placement_data.html">Game.BlockPlacementData</a></div><div class="ttdef"><b>定义</b> <a href="_block_placement_data_8cs_source.html#l00004">BlockPlacementData.cs:4</a></div></div>
+<div class="ttc" id="astruct_game_1_1_terrain_raycast_result_html"><div class="ttname"><a href="struct_game_1_1_terrain_raycast_result.html">Game.TerrainRaycastResult</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_raycast_result_8cs_source.html#l00005">TerrainRaycastResult.cs:5</a></div></div>
+<div class="ttc" id="astruct_game_1_1_terrain_raycast_result_html_af81a33a7ddfc5e3bf119cbd4262a94ce"><div class="ttname"><a href="struct_game_1_1_terrain_raycast_result.html#af81a33a7ddfc5e3bf119cbd4262a94ce">Game.TerrainRaycastResult.CellFace</a></div><div class="ttdeci">CellFace CellFace</div><div class="ttdef"><b>定义</b> <a href="_terrain_raycast_result_8cs_source.html#l00012">TerrainRaycastResult.cs:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_407fceb6d650316801e32c7b7f8f0e13.html">Block</a></li><li class="navelem"><a href="_dispenser_block_8cs.html">DispenserBlock.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

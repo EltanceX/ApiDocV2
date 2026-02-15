@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/FurnitureSetItemWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_furniture_set_item_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">FurnitureSetItemWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_furniture_set_item_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#a40aeaa05a97d65526c31c18c773488fa">FurnitureSetItemWidget</a> : <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a>, <a class="code hl_interface" href="interface_game_1_1_i_drag_target_widget.html">IDragTargetWidget</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_furniture_inventory_panel.html">FurnitureInventoryPanel</a> <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">m_furnitureInventoryPanel</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#a68185192696ed5be232eec96dbdf584d">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_furniture_set.html">FurnitureSet</a> <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a68185192696ed5be232eec96dbdf584d">m_furnitureSet</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#a8d43ccdd1b9097474ae5386f77af56e5">   10</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a8d43ccdd1b9097474ae5386f77af56e5">m_highlighted</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#a5f86af7c2be9c5d9afee516a1f1c1fe5">   11</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a5f86af7c2be9c5d9afee516a1f1c1fe5">fName</a> = <span class="stringliteral">&quot;FurnitureSetItemWidget&quot;</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#a40aeaa05a97d65526c31c18c773488fa">   13</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#a40aeaa05a97d65526c31c18c773488fa">FurnitureSetItemWidget</a>(<a class="code hl_class" href="class_game_1_1_furniture_inventory_panel.html">FurnitureInventoryPanel</a> furnitureInventoryWidget, <a class="code hl_class" href="class_game_1_1_furniture_set.html">FurnitureSet</a> furnitureSet) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">m_furnitureInventoryPanel</a> = furnitureInventoryWidget;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a68185192696ed5be232eec96dbdf584d">m_furnitureSet</a> = furnitureSet;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Widgets/FurnitureSetItemWidget&quot;</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> labelWidget = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;FurnitureSetItem.Name&quot;</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> labelWidget2 = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;FurnitureSetItem.DesignsCount&quot;</span>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            labelWidget.Text = furnitureSet == <span class="keyword">null</span> ? <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a5f86af7c2be9c5d9afee516a1f1c1fe5">fName</a>, 0) : furnitureSet.<a class="code hl_variable" href="class_game_1_1_furniture_set.html#a408f49a1b0c79430376538213cc270e5">Name</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            labelWidget2.Text = <span class="keywordtype">string</span>.Format(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a5f86af7c2be9c5d9afee516a1f1c1fe5">fName</a>, 1), <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#ae39027535b35b3b51bf696d3427dd1fd">CountFurnitureDesigns</a>());</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#adb15fc06521295009ac5b88b0b98a1c6">   24</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#adb15fc06521295009ac5b88b0b98a1c6">DragDrop</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> dragWidget, <span class="keywordtype">object</span> data) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_class" href="class_game_1_1_furniture_design.html">FurnitureDesign</a> furnitureDesign = <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#a50051cdbfc24c779b8f83b6bdb58f1da">GetFurnitureDesign</a>(data);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">if</span> (furnitureDesign != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">m_furnitureInventoryPanel</a>.SubsystemFurnitureBlockBehavior.AddToFurnitureSet(furnitureDesign, <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a68185192696ed5be232eec96dbdf584d">m_furnitureSet</a>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">m_furnitureInventoryPanel</a>.Invalidate();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#abe0de3b1006b2a7a1944545ae68b265d">   32</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#abe0de3b1006b2a7a1944545ae68b265d">DragOver</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> dragWidget, <span class="keywordtype">object</span> data) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a8d43ccdd1b9097474ae5386f77af56e5">m_highlighted</a> = <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#a50051cdbfc24c779b8f83b6bdb58f1da">GetFurnitureDesign</a>(data) != <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#a8d7f61c2bbf2d25d9edf9284e76232fd">   36</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#a8d7f61c2bbf2d25d9edf9284e76232fd">MeasureOverride</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> parentAvailableSize) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_property" href="class_game_1_1_widget.html#ab7453bbe06dbc7188b1d2a6d95e7663e">IsDrawRequired</a> = <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a8d43ccdd1b9097474ae5386f77af56e5">m_highlighted</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            base.MeasureOverride(parentAvailableSize);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#a9e9c4f9ab1a46fb7223701ea3c47e649">   41</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#a9e9c4f9ab1a46fb7223701ea3c47e649">Draw</a>(<a class="code hl_class" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a> dc) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a8d43ccdd1b9097474ae5386f77af56e5">m_highlighted</a>) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_flat_batch2_d.html">FlatBatch2D</a> flatBatch2D = dc.<a class="code hl_variable" href="class_game_1_1_widget_1_1_draw_context.html#aaf406a8eb9c9394f43e0261ad1bf5b3c">PrimitivesRenderer2D</a>.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a72d77263ced51f82786e005127e2f1ba">FlatBatch</a>(100, <a class="code hl_class" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html">DepthStencilState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html#a31698bdbf4d22273ea1a9198bc6a72a8">None</a>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordtype">int</span> count = flatBatch2D.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_base_flat_batch.html#a5dd6c83c3d19fa532e97ccb31d9f438f">TriangleVertices</a>.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Count</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                flatBatch2D.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_flat_batch2_d.html#a0a5ac42a7c93aeabb46efbb7e74245ca">QueueQuad</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>, <a class="code hl_property" href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">ActualSize</a>, 0f, <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>(128, 128, 128, 128));</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                flatBatch2D.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_base_flat_batch.html#abb7d47899c727f3fa532fa582ed68dd2">TransformTriangles</a>(<a class="code hl_property" href="class_game_1_1_widget.html#adbf55b13c5ef4ecd8cc21c4fc38e8e49">GlobalTransform</a>, count);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a8d43ccdd1b9097474ae5386f77af56e5">m_highlighted</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#a50051cdbfc24c779b8f83b6bdb58f1da">   51</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_furniture_design.html">FurnitureDesign</a> <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#a50051cdbfc24c779b8f83b6bdb58f1da">GetFurnitureDesign</a>(<span class="keywordtype">object</span> dragData) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">if</span> (dragData is <a class="code hl_class" href="class_game_1_1_inventory_drag_data.html">InventoryDragData</a> inventoryDragData) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <span class="keywordtype">int</span> slotValue = inventoryDragData.Inventory.GetSlotValue(inventoryDragData.SlotIndex);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">ExtractContents</a>(slotValue) == 227) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    <span class="keywordtype">int</span> designIndex = <a class="code hl_class" href="class_game_1_1_furniture_block.html">FurnitureBlock</a>.<a class="code hl_function" href="class_game_1_1_furniture_block.html#ab6bb5bd4132e960c7a58c4b2afd1b5f7">GetDesignIndex</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(slotValue));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">m_furnitureInventoryPanel</a>.SubsystemFurnitureBlockBehavior.GetDesign(designIndex);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_game_1_1_furniture_set_item_widget.html#ae39027535b35b3b51bf696d3427dd1fd">   62</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_furniture_set_item_widget.html#ae39027535b35b3b51bf696d3427dd1fd">CountFurnitureDesigns</a>() {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordtype">int</span> num = 0;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">m_furnitureInventoryPanel</a>.ComponentFurnitureInventory.SlotsCount; i++) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordtype">int</span> slotValue = <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">m_furnitureInventoryPanel</a>.ComponentFurnitureInventory.GetSlotValue(i);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">ExtractContents</a>(slotValue) == 227) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    <span class="keywordtype">int</span> designIndex = <a class="code hl_class" href="class_game_1_1_furniture_block.html">FurnitureBlock</a>.<a class="code hl_function" href="class_game_1_1_furniture_block.html#ab6bb5bd4132e960c7a58c4b2afd1b5f7">GetDesignIndex</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(slotValue));</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                    <a class="code hl_class" href="class_game_1_1_furniture_design.html">FurnitureDesign</a> design = <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">m_furnitureInventoryPanel</a>.SubsystemFurnitureBlockBehavior.GetDesign(designIndex);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    <span class="keywordflow">if</span> (design != <span class="keyword">null</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                        &amp;&amp; design.<a class="code hl_property" href="class_game_1_1_furniture_design.html#a63981cd07c00d82f06f0a5e192c3cc38">FurnitureSet</a> == <a class="code hl_variable" href="class_game_1_1_furniture_set_item_widget.html#a68185192696ed5be232eec96dbdf584d">m_furnitureSet</a>) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                        num++;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> num;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_dynamic_array-1-g_html_a20becafe5aa7ed6b772ba44dea80f1ab"><div class="ttname"><a href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Engine.DynamicArray-1-g.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>定义</b> <a href="_dynamic_array_8cs_source.html#l00064">DynamicArray.cs:64</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_base_flat_batch_html_a5dd6c83c3d19fa532e97ccb31d9f438f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_base_flat_batch.html#a5dd6c83c3d19fa532e97ccb31d9f438f">Engine.Graphics.BaseFlatBatch.TriangleVertices</a></div><div class="ttdeci">readonly DynamicArray&lt; VertexPositionColor &gt; TriangleVertices</div><div class="ttdef"><b>定义</b> <a href="_base_flat_batch_8cs_source.html#l00009">BaseFlatBatch.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_base_flat_batch_html_abb7d47899c727f3fa532fa582ed68dd2"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_base_flat_batch.html#abb7d47899c727f3fa532fa582ed68dd2">Engine.Graphics.BaseFlatBatch.TransformTriangles</a></div><div class="ttdeci">void TransformTriangles(Matrix matrix, int start=0, int end=-1)</div><div class="ttdef"><b>定义</b> <a href="_base_flat_batch_8cs_source.html#l00107">BaseFlatBatch.cs:107</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_depth_stencil_state_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_depth_stencil_state.html">Engine.Graphics.DepthStencilState</a></div><div class="ttdef"><b>定义</b> <a href="_depth_stencil_state_8cs_source.html#l00002">DepthStencilState.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_depth_stencil_state_html_a31698bdbf4d22273ea1a9198bc6a72a8"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_depth_stencil_state.html#a31698bdbf4d22273ea1a9198bc6a72a8">Engine.Graphics.DepthStencilState.None</a></div><div class="ttdeci">static readonly DepthStencilState None</div><div class="ttdef"><b>定义</b> <a href="_depth_stencil_state_8cs_source.html#l00015">DepthStencilState.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_flat_batch2_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_flat_batch2_d.html">Engine.Graphics.FlatBatch2D</a></div><div class="ttdef"><b>定义</b> <a href="_flat_batch2_d_8cs_source.html#l00002">FlatBatch2D.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_flat_batch2_d_html_a0a5ac42a7c93aeabb46efbb7e74245ca"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_flat_batch2_d.html#a0a5ac42a7c93aeabb46efbb7e74245ca">Engine.Graphics.FlatBatch2D.QueueQuad</a></div><div class="ttdeci">void QueueQuad(Vector2 corner1, Vector2 corner2, float depth, Color color)</div><div class="ttdef"><b>定义</b> <a href="_flat_batch2_d_8cs_source.html#l00260">FlatBatch2D.cs:260</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_primitives_renderer2_d_html_a72d77263ced51f82786e005127e2f1ba"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a72d77263ced51f82786e005127e2f1ba">Engine.Graphics.PrimitivesRenderer2D.FlatBatch</a></div><div class="ttdeci">FlatBatch2D FlatBatch(int layer=0, DepthStencilState depthStencilState=null, RasterizerState rasterizerState=null, BlendState blendState=null)</div><div class="ttdef"><b>定义</b> <a href="_primitives_renderer2_d_8cs_source.html#l00029">PrimitivesRenderer2D.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_canvas_widget_html"><div class="ttname"><a href="class_game_1_1_canvas_widget.html">Game.CanvasWidget</a></div><div class="ttdef"><b>定义</b> <a href="_canvas_widget_8cs_source.html#l00004">CanvasWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_block_html"><div class="ttname"><a href="class_game_1_1_furniture_block.html">Game.FurnitureBlock</a></div><div class="ttdef"><b>定义</b> <a href="_furniture_block_8cs_source.html#l00005">FurnitureBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_block_html_ab6bb5bd4132e960c7a58c4b2afd1b5f7"><div class="ttname"><a href="class_game_1_1_furniture_block.html#ab6bb5bd4132e960c7a58c4b2afd1b5f7">Game.FurnitureBlock.GetDesignIndex</a></div><div class="ttdeci">static int GetDesignIndex(int data)</div><div class="ttdef"><b>定义</b> <a href="_furniture_block_8cs_source.html#l00475">FurnitureBlock.cs:475</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_design_html"><div class="ttname"><a href="class_game_1_1_furniture_design.html">Game.FurnitureDesign</a></div><div class="ttdef"><b>定义</b> <a href="_furniture_design_8cs_source.html#l00007">FurnitureDesign.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_design_html_a63981cd07c00d82f06f0a5e192c3cc38"><div class="ttname"><a href="class_game_1_1_furniture_design.html#a63981cd07c00d82f06f0a5e192c3cc38">Game.FurnitureDesign.FurnitureSet</a></div><div class="ttdeci">FurnitureSet FurnitureSet</div><div class="ttdef"><b>定义</b> <a href="_furniture_design_8cs_source.html#l00164">FurnitureDesign.cs:164</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_inventory_panel_html"><div class="ttname"><a href="class_game_1_1_furniture_inventory_panel.html">Game.FurnitureInventoryPanel</a></div><div class="ttdef"><b>定义</b> <a href="_furniture_inventory_panel_8cs_source.html#l00005">FurnitureInventoryPanel.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_html"><div class="ttname"><a href="class_game_1_1_furniture_set.html">Game.FurnitureSet</a></div><div class="ttdef"><b>定义</b> <a href="_furniture_set_8cs_source.html#l00002">FurnitureSet.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_html_a408f49a1b0c79430376538213cc270e5"><div class="ttname"><a href="class_game_1_1_furniture_set.html#a408f49a1b0c79430376538213cc270e5">Game.FurnitureSet.Name</a></div><div class="ttdeci">string Name</div><div class="ttdef"><b>定义</b> <a href="_furniture_set_8cs_source.html#l00003">FurnitureSet.cs:3</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_a40aeaa05a97d65526c31c18c773488fa"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#a40aeaa05a97d65526c31c18c773488fa">Game.FurnitureSetItemWidget.FurnitureSetItemWidget</a></div><div class="ttdeci">FurnitureSetItemWidget(FurnitureInventoryPanel furnitureInventoryWidget, FurnitureSet furnitureSet)</div><div class="ttdef"><b>定义</b> <a href="#l00013">FurnitureSetItemWidget.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_a50051cdbfc24c779b8f83b6bdb58f1da"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#a50051cdbfc24c779b8f83b6bdb58f1da">Game.FurnitureSetItemWidget.GetFurnitureDesign</a></div><div class="ttdeci">FurnitureDesign GetFurnitureDesign(object dragData)</div><div class="ttdef"><b>定义</b> <a href="#l00051">FurnitureSetItemWidget.cs:51</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_a5f86af7c2be9c5d9afee516a1f1c1fe5"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#a5f86af7c2be9c5d9afee516a1f1c1fe5">Game.FurnitureSetItemWidget.fName</a></div><div class="ttdeci">const string fName</div><div class="ttdef"><b>定义</b> <a href="#l00011">FurnitureSetItemWidget.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_a68185192696ed5be232eec96dbdf584d"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#a68185192696ed5be232eec96dbdf584d">Game.FurnitureSetItemWidget.m_furnitureSet</a></div><div class="ttdeci">FurnitureSet m_furnitureSet</div><div class="ttdef"><b>定义</b> <a href="#l00009">FurnitureSetItemWidget.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_a795c825cd7816bc642229516097bf587"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#a795c825cd7816bc642229516097bf587">Game.FurnitureSetItemWidget.m_furnitureInventoryPanel</a></div><div class="ttdeci">FurnitureInventoryPanel m_furnitureInventoryPanel</div><div class="ttdef"><b>定义</b> <a href="#l00007">FurnitureSetItemWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_a8d43ccdd1b9097474ae5386f77af56e5"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#a8d43ccdd1b9097474ae5386f77af56e5">Game.FurnitureSetItemWidget.m_highlighted</a></div><div class="ttdeci">bool m_highlighted</div><div class="ttdef"><b>定义</b> <a href="#l00010">FurnitureSetItemWidget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_a8d7f61c2bbf2d25d9edf9284e76232fd"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#a8d7f61c2bbf2d25d9edf9284e76232fd">Game.FurnitureSetItemWidget.MeasureOverride</a></div><div class="ttdeci">override void MeasureOverride(Vector2 parentAvailableSize)</div><div class="ttdef"><b>定义</b> <a href="#l00036">FurnitureSetItemWidget.cs:36</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_a9e9c4f9ab1a46fb7223701ea3c47e649"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#a9e9c4f9ab1a46fb7223701ea3c47e649">Game.FurnitureSetItemWidget.Draw</a></div><div class="ttdeci">override void Draw(DrawContext dc)</div><div class="ttdef"><b>定义</b> <a href="#l00041">FurnitureSetItemWidget.cs:41</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_abe0de3b1006b2a7a1944545ae68b265d"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#abe0de3b1006b2a7a1944545ae68b265d">Game.FurnitureSetItemWidget.DragOver</a></div><div class="ttdeci">void DragOver(Widget dragWidget, object data)</div><div class="ttdef"><b>定义</b> <a href="#l00032">FurnitureSetItemWidget.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_adb15fc06521295009ac5b88b0b98a1c6"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#adb15fc06521295009ac5b88b0b98a1c6">Game.FurnitureSetItemWidget.DragDrop</a></div><div class="ttdeci">void DragDrop(Widget dragWidget, object data)</div><div class="ttdef"><b>定义</b> <a href="#l00024">FurnitureSetItemWidget.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_furniture_set_item_widget_html_ae39027535b35b3b51bf696d3427dd1fd"><div class="ttname"><a href="class_game_1_1_furniture_set_item_widget.html#ae39027535b35b3b51bf696d3427dd1fd">Game.FurnitureSetItemWidget.CountFurnitureDesigns</a></div><div class="ttdeci">int CountFurnitureDesigns()</div><div class="ttdef"><b>定义</b> <a href="#l00062">FurnitureSetItemWidget.cs:62</a></div></div>
+<div class="ttc" id="aclass_game_1_1_inventory_drag_data_html"><div class="ttname"><a href="class_game_1_1_inventory_drag_data.html">Game.InventoryDragData</a></div><div class="ttdef"><b>定义</b> <a href="_inventory_drag_data_8cs_source.html#l00002">InventoryDragData.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a221de37baa4a0f91e934920030005677"><div class="ttname"><a href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">Game.Terrain.ExtractContents</a></div><div class="ttdeci">static int ExtractContents(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00303">Terrain.cs:303</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aec56ea916e034b2e4db00d1814fdadba"><div class="ttname"><a href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">Game.Terrain.ExtractData</a></div><div class="ttdeci">static int ExtractData(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00307">Terrain.cs:307</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_1_1_draw_context_html"><div class="ttname"><a href="class_game_1_1_widget_1_1_draw_context.html">Game.Widget.DrawContext</a></div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00011">Widget.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_1_1_draw_context_html_aaf406a8eb9c9394f43e0261ad1bf5b3c"><div class="ttname"><a href="class_game_1_1_widget_1_1_draw_context.html#aaf406a8eb9c9394f43e0261ad1bf5b3c">Game.Widget.DrawContext.PrimitivesRenderer2D</a></div><div class="ttdeci">readonly PrimitivesRenderer2D PrimitivesRenderer2D</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00016">Widget.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html"><div class="ttname"><a href="class_game_1_1_widget.html">Game.Widget</a></div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00010">Widget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ab7453bbe06dbc7188b1d2a6d95e7663e"><div class="ttname"><a href="class_game_1_1_widget.html#ab7453bbe06dbc7188b1d2a6d95e7663e">Game.Widget.IsDrawRequired</a></div><div class="ttdeci">bool IsDrawRequired</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00460">Widget.cs:460</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ac9ff25efbe724241ec9d3678a1559527"><div class="ttname"><a href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">Game.Widget.ActualSize</a></div><div class="ttdeci">Vector2 ActualSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00447">Widget.cs:447</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_adbf55b13c5ef4ecd8cc21c4fc38e8e49"><div class="ttname"><a href="class_game_1_1_widget.html#adbf55b13c5ef4ecd8cc21c4fc38e8e49">Game.Widget.GlobalTransform</a></div><div class="ttdeci">Matrix GlobalTransform</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00326">Widget.cs:326</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_drag_target_widget_html"><div class="ttname"><a href="interface_game_1_1_i_drag_target_widget.html">Game.IDragTargetWidget</a></div><div class="ttdef"><b>定义</b> <a href="_i_drag_target_widget_8cs_source.html#l00002">IDragTargetWidget.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a43b88325ddcd07f42e931b1a0d3281c7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Engine.Vector2.Zero</a></div><div class="ttdeci">static readonly Vector2 Zero</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00007">Vector2.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_furniture_set_item_widget_8cs.html">FurnitureSetItemWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

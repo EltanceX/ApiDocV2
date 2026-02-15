@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Dialog/DownloadContentFromLinkDialog.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_download_content_from_link_dialog_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DownloadContentFromLinkDialog.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_download_content_from_link_dialog_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#ad66ad9cb4b95a0c2664793083a54f503">DownloadContentFromLinkDialog</a> : <a class="code hl_function" href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Dialog</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#a3a2c8409f4e568e3c12ed9536711c172">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_text_box_widget.html">TextBoxWidget</a> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a3a2c8409f4e568e3c12ed9536711c172">m_linkTextBoxWidget</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#ac436c08280dd9d4a2fa0d21b630b4287">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_text_box_widget.html">TextBoxWidget</a> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#ac436c08280dd9d4a2fa0d21b630b4287">m_nameTextBoxWidget</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#ae854eba4ee9f87a0b88303d95a109b88">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_rectangle_widget.html">RectangleWidget</a> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#ae854eba4ee9f87a0b88303d95a109b88">m_typeIconWidget</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#acf31c0f5f1e19b156a54b71ebddd7ebd">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#acf31c0f5f1e19b156a54b71ebddd7ebd">m_typeLabelWidget</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#a8a8a37e3887f31a1cb81b922518f059f">   14</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a8a8a37e3887f31a1cb81b922518f059f">m_changeTypeButtonWidget</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#a0df69da698d61a3dbcbb9bf62ab4550a">   16</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a0df69da698d61a3dbcbb9bf62ab4550a">m_downloadButtonWidget</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#a3e94e70b17912892827e6a5657a7d6c7">   18</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a3e94e70b17912892827e6a5657a7d6c7">m_cancelButtonWidget</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#a011e9851cc0ef645a11affe2005f3893">   20</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a011e9851cc0ef645a11affe2005f3893">m_updateContentName</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#ab67ac358109c3b8ac8acc069bd8644ef">   22</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#ab67ac358109c3b8ac8acc069bd8644ef">m_updateContentType</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">   24</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a> <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">m_type</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#ad66ad9cb4b95a0c2664793083a54f503">   26</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#ad66ad9cb4b95a0c2664793083a54f503">DownloadContentFromLinkDialog</a>() {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Dialogs/DownloadContentFromLinkDialog&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a3a2c8409f4e568e3c12ed9536711c172">m_linkTextBoxWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_text_box_widget.html">TextBoxWidget</a>&gt;(<span class="stringliteral">&quot;DownloadContentFromLinkDialog.Link&quot;</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#ac436c08280dd9d4a2fa0d21b630b4287">m_nameTextBoxWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_text_box_widget.html">TextBoxWidget</a>&gt;(<span class="stringliteral">&quot;DownloadContentFromLinkDialog.Name&quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#ae854eba4ee9f87a0b88303d95a109b88">m_typeIconWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_rectangle_widget.html">RectangleWidget</a>&gt;(<span class="stringliteral">&quot;DownloadContentFromLinkDialog.TypeIcon&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#acf31c0f5f1e19b156a54b71ebddd7ebd">m_typeLabelWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;DownloadContentFromLinkDialog.Type&quot;</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a8a8a37e3887f31a1cb81b922518f059f">m_changeTypeButtonWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;DownloadContentFromLinkDialog.ChangeType&quot;</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a0df69da698d61a3dbcbb9bf62ab4550a">m_downloadButtonWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;DownloadContentFromLinkDialog.Download&quot;</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a3e94e70b17912892827e6a5657a7d6c7">m_cancelButtonWidget</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;DownloadContentFromLinkDialog.Cancel&quot;</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            m_linkTextBoxWidget.TextChanged += delegate {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a011e9851cc0ef645a11affe2005f3893">m_updateContentName</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#ab67ac358109c3b8ac8acc069bd8644ef">m_updateContentType</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#a8c255abe47e38a4022ae4b3c65679f13">   42</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#a8c255abe47e38a4022ae4b3c65679f13">Update</a>() {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordtype">string</span> text = <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a3a2c8409f4e568e3c12ed9536711c172">m_linkTextBoxWidget</a>.Text.Trim();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordtype">string</span> name = <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#ac436c08280dd9d4a2fa0d21b630b4287">m_nameTextBoxWidget</a>.Text.Trim();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            m_typeLabelWidget.Text = <a class="code hl_class" href="class_game_1_1_external_content_manager.html">ExternalContentManager</a>.<a class="code hl_function" href="class_game_1_1_external_content_manager.html#ace14e222e937752954ae1a9decaa0577">GetEntryTypeDescription</a>(<a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">m_type</a>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            m_typeIconWidget.Subtexture = <a class="code hl_class" href="class_game_1_1_external_content_manager.html">ExternalContentManager</a>.<a class="code hl_function" href="class_game_1_1_external_content_manager.html#ac167136d46f52b7a5819e32530d2105e">GetEntryTypeIcon</a>(<a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">m_type</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_external_content_manager.html">ExternalContentManager</a>.<a class="code hl_function" href="class_game_1_1_external_content_manager.html#ac0cd9c9b8fe6d71d9d98ac70438f8883">DoesEntryTypeRequireName</a>(<a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">m_type</a>)) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                m_nameTextBoxWidget.IsEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                m_downloadButtonWidget.IsEnabled = text.Length &gt; 0 &amp;&amp; name.Length &gt; 0 &amp;&amp; <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">m_type</a> != <a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a>.Unknown;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a011e9851cc0ef645a11affe2005f3893">m_updateContentName</a>) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    m_nameTextBoxWidget.Text = <a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#aae9429771b2f646ca1300b7bdfefd457">GetNameFromLink</a>(<a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a3a2c8409f4e568e3c12ed9536711c172">m_linkTextBoxWidget</a>.Text);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a011e9851cc0ef645a11affe2005f3893">m_updateContentName</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                m_nameTextBoxWidget.IsEnabled = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                m_nameTextBoxWidget.Text = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                m_downloadButtonWidget.IsEnabled = text.Length &gt; 0 &amp;&amp; <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">m_type</a> != <a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a>.Unknown;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#ab67ac358109c3b8ac8acc069bd8644ef">m_updateContentType</a>) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">m_type</a> = <a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#a69e04098c0f8a3203fcd8957d4518cc0">GetTypeFromLink</a>(<a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a3a2c8409f4e568e3c12ed9536711c172">m_linkTextBoxWidget</a>.Text);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#ab67ac358109c3b8ac8acc069bd8644ef">m_updateContentType</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a8a8a37e3887f31a1cb81b922518f059f">m_changeTypeButtonWidget</a>.IsClicked) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    <a class="code hl_property" href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">ParentWidget</a>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_select_external_content_type_dialog.html">SelectExternalContentTypeDialog</a>(</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        <span class="stringliteral">&quot;Select Content Type&quot;</span>,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                        delegate(<a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a> item) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">m_type</a> = item;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a011e9851cc0ef645a11affe2005f3893">m_updateContentName</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    )</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                );</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.Cancel</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                || <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a3e94e70b17912892827e6a5657a7d6c7">m_cancelButtonWidget</a>.IsClicked) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a0df69da698d61a3dbcbb9bf62ab4550a">m_downloadButtonWidget</a>.IsClicked) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <a class="code hl_class" href="class_game_1_1_cancellable_busy_dialog.html">CancellableBusyDialog</a> busyDialog = <span class="keyword">new</span>(<span class="stringliteral">&quot;Downloading&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(<a class="code hl_property" href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">ParentWidget</a>, busyDialog);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <a class="code hl_class" href="class_game_1_1_web_manager.html">WebManager</a>.<a class="code hl_function" href="class_game_1_1_web_manager.html#a84022562942c82b6f5b5251a85497ef3">Get</a>(</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    text,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                    <span class="keyword">null</span>,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    busyDialog.<a class="code hl_property" href="class_game_1_1_cancellable_busy_dialog.html#aa89ec49abf1c418e66769c6662abc935">Progress</a>,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    delegate(<span class="keywordtype">byte</span>[] data) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        <a class="code hl_class" href="class_game_1_1_external_content_manager.html">ExternalContentManager</a>.<a class="code hl_function" href="class_game_1_1_external_content_manager.html#a025f2e872be3af540dd1ffef53e1482d">ImportExternalContent</a>(</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                            <span class="keyword">new</span> MemoryStream(data),</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                            <a class="code hl_variable" href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">m_type</a>,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                            name,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                            delegate {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(busyDialog);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                            },</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                            delegate(Exception error) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(busyDialog);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(<a class="code hl_property" href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">ParentWidget</a>, <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_message_dialog.html">MessageDialog</a>(<span class="stringliteral">&quot;Error&quot;</span>, error.Message, <span class="stringliteral">&quot;OK&quot;</span>, <span class="keyword">null</span>, <span class="keyword">null</span>));</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                            }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                        );</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    },</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                    delegate(Exception error) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                        <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(busyDialog);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                        <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(<a class="code hl_property" href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">ParentWidget</a>, <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_message_dialog.html">MessageDialog</a>(<span class="stringliteral">&quot;Error&quot;</span>, error.Message, <span class="stringliteral">&quot;OK&quot;</span>, <span class="keyword">null</span>, <span class="keyword">null</span>));</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                );</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#ac989c0bfa92fbabfa5a47478f7319677">  111</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#ac989c0bfa92fbabfa5a47478f7319677">UnclutterLink</a>(<span class="keywordtype">string</span> address) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                <span class="keywordtype">string</span> text = address;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <span class="keywordtype">int</span> num = text.IndexOf(<span class="charliteral">&#39;&amp;&#39;</span>);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <span class="keywordflow">if</span> (num &gt; 0) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                    text = text.Remove(num);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <span class="keywordtype">int</span> num2 = text.IndexOf(<span class="charliteral">&#39;?&#39;</span>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                <span class="keywordflow">if</span> (num2 &gt; 0) {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    text = text.Remove(num2);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                <span class="keywordflow">return</span> <a class="code hl_typedef" href="_import_external_content_activity_8cs.html#a47e1c021f31487018530532b06f1b87a">Uri</a>.UnescapeDataString(text);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordflow">catch</span> (Exception) {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }</div>
+</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#aae9429771b2f646ca1300b7bdfefd457">  129</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#aae9429771b2f646ca1300b7bdfefd457">GetNameFromLink</a>(<span class="keywordtype">string</span> address) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#aabcc38a1c152317c7273ab25ccb3ce72">GetFileNameWithoutExtension</a>(<a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#ac989c0bfa92fbabfa5a47478f7319677">UnclutterLink</a>(address));</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <span class="keywordflow">catch</span> (Exception) {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        }</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="class_game_1_1_download_content_from_link_dialog.html#a69e04098c0f8a3203fcd8957d4518cc0">  138</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a> <a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#a69e04098c0f8a3203fcd8957d4518cc0">GetTypeFromLink</a>(<span class="keywordtype">string</span> address) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_game_1_1_external_content_manager.html">ExternalContentManager</a>.<a class="code hl_function" href="class_game_1_1_external_content_manager.html#a60990938a8a582458b6674150a20dd0c">ExtensionToType</a>(<a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a40d92e021126e291203fe8bf1cc46af2">GetExtension</a>(<a class="code hl_function" href="class_game_1_1_download_content_from_link_dialog.html#ac989c0bfa92fbabfa5a47478f7319677">UnclutterLink</a>(address)));</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keywordflow">catch</span> (Exception) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">ExternalContentType</a>.Unknown;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        }</div>
+</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
+</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+<div class="ttc" id="a_import_external_content_activity_8cs_html_a47e1c021f31487018530532b06f1b87a"><div class="ttname"><a href="_import_external_content_activity_8cs.html#a47e1c021f31487018530532b06f1b87a">Uri</a></div><div class="ttdeci">Android.Net.Uri Uri</div><div class="ttdef"><b>定义</b> <a href="_import_external_content_activity_8cs_source.html#l00013">ImportExternalContentActivity.cs:13</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html"><div class="ttname"><a href="class_engine_1_1_storage.html">Engine.Storage</a></div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00024">Storage.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a40d92e021126e291203fe8bf1cc46af2"><div class="ttname"><a href="class_engine_1_1_storage.html#a40d92e021126e291203fe8bf1cc46af2">Engine.Storage.GetExtension</a></div><div class="ttdeci">static string GetExtension(string path)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00190">Storage.cs:190</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_aabcc38a1c152317c7273ab25ccb3ce72"><div class="ttname"><a href="class_engine_1_1_storage.html#aabcc38a1c152317c7273ab25ccb3ce72">Engine.Storage.GetFileNameWithoutExtension</a></div><div class="ttdeci">static string GetFileNameWithoutExtension(string path)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00203">Storage.cs:203</a></div></div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cancellable_busy_dialog_html"><div class="ttname"><a href="class_game_1_1_cancellable_busy_dialog.html">Game.CancellableBusyDialog</a></div><div class="ttdef"><b>定义</b> <a href="_cancellable_busy_dialog_8cs_source.html#l00005">CancellableBusyDialog.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cancellable_busy_dialog_html_aa89ec49abf1c418e66769c6662abc935"><div class="ttname"><a href="class_game_1_1_cancellable_busy_dialog.html#aa89ec49abf1c418e66769c6662abc935">Game.CancellableBusyDialog.Progress</a></div><div class="ttdeci">CancellableProgress Progress</div><div class="ttdef"><b>定义</b> <a href="_cancellable_busy_dialog_8cs_source.html#l00016">CancellableBusyDialog.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialog_html_a6b78fd0c524e930298bbfe02c896866f"><div class="ttname"><a href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Game.Dialog.Dialog</a></div><div class="ttdeci">Dialog()</div><div class="ttdef"><b>定义</b> <a href="_dialog_8cs_source.html#l00005">Dialog.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html">Game.DialogsManager</a></div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00004">DialogsManager.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_a1924cf0e777145d7e36ec311d686c7e4"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">Game.DialogsManager.HideDialog</a></div><div class="ttdeci">static void HideDialog(Dialog dialog)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00058">DialogsManager.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_affe2cf99704932f650a2bffa6eefa833"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">Game.DialogsManager.ShowDialog</a></div><div class="ttdeci">static void ShowDialog(ContainerWidget parentWidget, Dialog dialog)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00035">DialogsManager.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_a011e9851cc0ef645a11affe2005f3893"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#a011e9851cc0ef645a11affe2005f3893">Game.DownloadContentFromLinkDialog.m_updateContentName</a></div><div class="ttdeci">bool m_updateContentName</div><div class="ttdef"><b>定义</b> <a href="#l00020">DownloadContentFromLinkDialog.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_a0df69da698d61a3dbcbb9bf62ab4550a"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#a0df69da698d61a3dbcbb9bf62ab4550a">Game.DownloadContentFromLinkDialog.m_downloadButtonWidget</a></div><div class="ttdeci">ButtonWidget m_downloadButtonWidget</div><div class="ttdef"><b>定义</b> <a href="#l00016">DownloadContentFromLinkDialog.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_a3a2c8409f4e568e3c12ed9536711c172"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#a3a2c8409f4e568e3c12ed9536711c172">Game.DownloadContentFromLinkDialog.m_linkTextBoxWidget</a></div><div class="ttdeci">TextBoxWidget m_linkTextBoxWidget</div><div class="ttdef"><b>定义</b> <a href="#l00006">DownloadContentFromLinkDialog.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_a3e94e70b17912892827e6a5657a7d6c7"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#a3e94e70b17912892827e6a5657a7d6c7">Game.DownloadContentFromLinkDialog.m_cancelButtonWidget</a></div><div class="ttdeci">ButtonWidget m_cancelButtonWidget</div><div class="ttdef"><b>定义</b> <a href="#l00018">DownloadContentFromLinkDialog.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_a69e04098c0f8a3203fcd8957d4518cc0"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#a69e04098c0f8a3203fcd8957d4518cc0">Game.DownloadContentFromLinkDialog.GetTypeFromLink</a></div><div class="ttdeci">static ExternalContentType GetTypeFromLink(string address)</div><div class="ttdef"><b>定义</b> <a href="#l00138">DownloadContentFromLinkDialog.cs:138</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_a8a8a37e3887f31a1cb81b922518f059f"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#a8a8a37e3887f31a1cb81b922518f059f">Game.DownloadContentFromLinkDialog.m_changeTypeButtonWidget</a></div><div class="ttdeci">ButtonWidget m_changeTypeButtonWidget</div><div class="ttdef"><b>定义</b> <a href="#l00014">DownloadContentFromLinkDialog.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_a8c255abe47e38a4022ae4b3c65679f13"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#a8c255abe47e38a4022ae4b3c65679f13">Game.DownloadContentFromLinkDialog.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00042">DownloadContentFromLinkDialog.cs:42</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_a912260c3c8e7584e5627a3b30b4d3a5f"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#a912260c3c8e7584e5627a3b30b4d3a5f">Game.DownloadContentFromLinkDialog.m_type</a></div><div class="ttdeci">ExternalContentType m_type</div><div class="ttdef"><b>定义</b> <a href="#l00024">DownloadContentFromLinkDialog.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_aae9429771b2f646ca1300b7bdfefd457"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#aae9429771b2f646ca1300b7bdfefd457">Game.DownloadContentFromLinkDialog.GetNameFromLink</a></div><div class="ttdeci">static string GetNameFromLink(string address)</div><div class="ttdef"><b>定义</b> <a href="#l00129">DownloadContentFromLinkDialog.cs:129</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_ab67ac358109c3b8ac8acc069bd8644ef"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#ab67ac358109c3b8ac8acc069bd8644ef">Game.DownloadContentFromLinkDialog.m_updateContentType</a></div><div class="ttdeci">bool m_updateContentType</div><div class="ttdef"><b>定义</b> <a href="#l00022">DownloadContentFromLinkDialog.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_ac436c08280dd9d4a2fa0d21b630b4287"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#ac436c08280dd9d4a2fa0d21b630b4287">Game.DownloadContentFromLinkDialog.m_nameTextBoxWidget</a></div><div class="ttdeci">TextBoxWidget m_nameTextBoxWidget</div><div class="ttdef"><b>定义</b> <a href="#l00008">DownloadContentFromLinkDialog.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_ac989c0bfa92fbabfa5a47478f7319677"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#ac989c0bfa92fbabfa5a47478f7319677">Game.DownloadContentFromLinkDialog.UnclutterLink</a></div><div class="ttdeci">static string UnclutterLink(string address)</div><div class="ttdef"><b>定义</b> <a href="#l00111">DownloadContentFromLinkDialog.cs:111</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_acf31c0f5f1e19b156a54b71ebddd7ebd"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#acf31c0f5f1e19b156a54b71ebddd7ebd">Game.DownloadContentFromLinkDialog.m_typeLabelWidget</a></div><div class="ttdeci">LabelWidget m_typeLabelWidget</div><div class="ttdef"><b>定义</b> <a href="#l00012">DownloadContentFromLinkDialog.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_ad66ad9cb4b95a0c2664793083a54f503"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#ad66ad9cb4b95a0c2664793083a54f503">Game.DownloadContentFromLinkDialog.DownloadContentFromLinkDialog</a></div><div class="ttdeci">DownloadContentFromLinkDialog()</div><div class="ttdef"><b>定义</b> <a href="#l00026">DownloadContentFromLinkDialog.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_download_content_from_link_dialog_html_ae854eba4ee9f87a0b88303d95a109b88"><div class="ttname"><a href="class_game_1_1_download_content_from_link_dialog.html#ae854eba4ee9f87a0b88303d95a109b88">Game.DownloadContentFromLinkDialog.m_typeIconWidget</a></div><div class="ttdeci">RectangleWidget m_typeIconWidget</div><div class="ttdef"><b>定义</b> <a href="#l00010">DownloadContentFromLinkDialog.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_external_content_manager_html"><div class="ttname"><a href="class_game_1_1_external_content_manager.html">Game.ExternalContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_external_content_manager_8cs_source.html#l00005">ExternalContentManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_external_content_manager_html_a025f2e872be3af540dd1ffef53e1482d"><div class="ttname"><a href="class_game_1_1_external_content_manager.html#a025f2e872be3af540dd1ffef53e1482d">Game.ExternalContentManager.ImportExternalContent</a></div><div class="ttdeci">static void ImportExternalContent(Stream stream, ExternalContentType type, string name, Action&lt; string &gt; success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="_external_content_manager_8cs_source.html#l00124">ExternalContentManager.cs:124</a></div></div>
+<div class="ttc" id="aclass_game_1_1_external_content_manager_html_a60990938a8a582458b6674150a20dd0c"><div class="ttname"><a href="class_game_1_1_external_content_manager.html#a60990938a8a582458b6674150a20dd0c">Game.ExternalContentManager.ExtensionToType</a></div><div class="ttdeci">static ExternalContentType ExtensionToType(string extension)</div><div class="ttdef"><b>定义</b> <a href="_external_content_manager_8cs_source.html#l00029">ExternalContentManager.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_external_content_manager_html_ac0cd9c9b8fe6d71d9d98ac70438f8883"><div class="ttname"><a href="class_game_1_1_external_content_manager.html#ac0cd9c9b8fe6d71d9d98ac70438f8883">Game.ExternalContentManager.DoesEntryTypeRequireName</a></div><div class="ttdeci">static bool DoesEntryTypeRequireName(ExternalContentType type)</div><div class="ttdef"><b>定义</b> <a href="_external_content_manager_8cs_source.html#l00091">ExternalContentManager.cs:91</a></div></div>
+<div class="ttc" id="aclass_game_1_1_external_content_manager_html_ac167136d46f52b7a5819e32530d2105e"><div class="ttname"><a href="class_game_1_1_external_content_manager.html#ac167136d46f52b7a5819e32530d2105e">Game.ExternalContentManager.GetEntryTypeIcon</a></div><div class="ttdeci">static Subtexture GetEntryTypeIcon(ExternalContentType type)</div><div class="ttdef"><b>定义</b> <a href="_external_content_manager_8cs_source.html#l00056">ExternalContentManager.cs:56</a></div></div>
+<div class="ttc" id="aclass_game_1_1_external_content_manager_html_ace14e222e937752954ae1a9decaa0577"><div class="ttname"><a href="class_game_1_1_external_content_manager.html#ace14e222e937752954ae1a9decaa0577">Game.ExternalContentManager.GetEntryTypeDescription</a></div><div class="ttdeci">static string GetEntryTypeDescription(ExternalContentType type)</div><div class="ttdef"><b>定义</b> <a href="_external_content_manager_8cs_source.html#l00068">ExternalContentManager.cs:68</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_message_dialog_html"><div class="ttname"><a href="class_game_1_1_message_dialog.html">Game.MessageDialog</a></div><div class="ttdef"><b>定义</b> <a href="_message_dialog_8cs_source.html#l00005">MessageDialog.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_rectangle_widget_html"><div class="ttname"><a href="class_game_1_1_rectangle_widget.html">Game.RectangleWidget</a></div><div class="ttdef"><b>定义</b> <a href="_rectangle_widget_8cs_source.html#l00005">RectangleWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_external_content_type_dialog_html"><div class="ttname"><a href="class_game_1_1_select_external_content_type_dialog.html">Game.SelectExternalContentTypeDialog</a></div><div class="ttdef"><b>定义</b> <a href="_select_external_content_type_dialog_8cs_source.html#l00004">SelectExternalContentTypeDialog.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_text_box_widget_html"><div class="ttname"><a href="class_game_1_1_text_box_widget.html">Game.TextBoxWidget</a></div><div class="ttdef"><b>定义</b> <a href="_text_box_widget_8cs_source.html#l00022">TextBoxWidget.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_web_manager_html"><div class="ttname"><a href="class_game_1_1_web_manager.html">Game.WebManager</a></div><div class="ttdef"><b>定义</b> <a href="_web_manager_8cs_source.html#l00017">WebManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_web_manager_html_a84022562942c82b6f5b5251a85497ef3"><div class="ttname"><a href="class_game_1_1_web_manager.html#a84022562942c82b6f5b5251a85497ef3">Game.WebManager.Get</a></div><div class="ttdeci">static void Get(string address, Dictionary&lt; string, string &gt; parameters, Dictionary&lt; string, string &gt; headers, CancellableProgress progress, Action&lt; byte[]&gt; success, Action&lt; Exception &gt; failure)</div><div class="ttdef"><b>定义</b> <a href="_web_manager_8cs_source.html#l00089">WebManager.cs:89</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a49a806f5e237559162c1632e8dbb9d41"><div class="ttname"><a href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">Game.Widget.ParentWidget</a></div><div class="ttdeci">ContainerWidget ParentWidget</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00468">Widget.cs:468</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_input_html"><div class="ttname"><a href="namespace_engine_1_1_input.html">Engine.Input</a></div><div class="ttdef"><b>定义</b> <a href="_cursor_type_8cs_source.html#l00001">CursorType.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a6c4c0aadae3e3edc23592d9ee74550f5"><div class="ttname"><a href="namespace_game.html#a6c4c0aadae3e3edc23592d9ee74550f5">Game.ExternalContentType</a></div><div class="ttdeci">ExternalContentType</div><div class="ttdef"><b>定义</b> <a href="_external_content_type_8cs_source.html#l00002">ExternalContentType.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_b6205966024a0faf73eb78e73558e78e.html">Dialog</a></li><li class="navelem"><a href="_download_content_from_link_dialog_8cs.html">DownloadContentFromLinkDialog.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

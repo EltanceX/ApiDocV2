@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Block/WaterBlock.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_water_block_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">WaterBlock.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_water_block_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="};">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_game_1_1_water_block.html">    3</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_water_block.html">WaterBlock</a> : <a class="code hl_function" href="class_game_1_1_fluid_block.html#a60e43a9f1f860d82c66b90c2ed610d7b">FluidBlock</a> {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_water_block.html#aae2343a9bde8f67cec5afb21628facc2">    4</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_water_block.html#aae2343a9bde8f67cec5afb21628facc2">Index</a> = 18;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_water_block.html#a7e7442ec3f570fb0a39d122afe2bd714">    6</a></span>        <span class="keyword">public</span> <span class="keyword">new</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_water_block.html#a7e7442ec3f570fb0a39d122afe2bd714">MaxLevel</a> = 7;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_water_block.html">WaterBlock</a>() : base(<a class="code hl_variable" href="class_game_1_1_water_block.html#a7e7442ec3f570fb0a39d122afe2bd714">MaxLevel</a>) =&gt; <a class="code hl_variable" href="class_game_1_1_block.html#a05f5fbdf84c79424b620fc0229259d52">CanBeBuiltIntoFurniture</a> = true;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_water_block.html#aaaa33b877186e6811d7ddc01b5f9c898">   10</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_water_block.html#aaaa33b877186e6811d7ddc01b5f9c898">GenerateTerrainVertices</a>(<a class="code hl_class" href="class_game_1_1_block_geometry_generator.html">BlockGeometryGenerator</a> generator, <a class="code hl_class" href="class_game_1_1_terrain_geometry.html">TerrainGeometry</a> geometry, <span class="keywordtype">int</span> value, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> sideColor;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> color = sideColor = <a class="code hl_class" href="class_game_1_1_block_colors_map.html">BlockColorsMap</a>.<a class="code hl_variable" href="class_game_1_1_block_colors_map.html#ac9f98cd13d0f003de6b6a99f933e4237">Water</a>.<a class="code hl_function" href="class_game_1_1_block_colors_map.html#a72f5a83c256753cd3ac9acfffee3a49f">Lookup</a>(generator.<a class="code hl_variable" href="class_game_1_1_block_geometry_generator.html#a9125d3016bd0ad8fed096e3dfa507c34">Terrain</a>, x, y, z);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            sideColor.A = <span class="keywordtype">byte</span>.MaxValue;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> topColor = color;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            topColor.A = 0;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_function" href="class_game_1_1_fluid_block.html#ab6b904ee77ff678b0aba872d6861fab4">GenerateFluidTerrainVertices</a>(</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                generator,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                value,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                x,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                y,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                z,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                sideColor,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                topColor,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                geometry.<a class="code hl_variable" href="class_game_1_1_terrain_geometry.html#a3559f13b82e41eab28c7dcbf29b844e5">TransparentSubsetsByFace</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            );</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="ttc" id="aclass_game_1_1_block_colors_map_html"><div class="ttname"><a href="class_game_1_1_block_colors_map.html">Game.BlockColorsMap</a></div><div class="ttdef"><b>定义</b> <a href="_block_colors_map_8cs_source.html#l00004">BlockColorsMap.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_colors_map_html_a72f5a83c256753cd3ac9acfffee3a49f"><div class="ttname"><a href="class_game_1_1_block_colors_map.html#a72f5a83c256753cd3ac9acfffee3a49f">Game.BlockColorsMap.Lookup</a></div><div class="ttdeci">Color Lookup(int temperature, int humidity)</div><div class="ttdef"><b>定义</b> <a href="_block_colors_map_8cs_source.html#l00073">BlockColorsMap.cs:73</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_colors_map_html_ac9f98cd13d0f003de6b6a99f933e4237"><div class="ttname"><a href="class_game_1_1_block_colors_map.html#ac9f98cd13d0f003de6b6a99f933e4237">Game.BlockColorsMap.Water</a></div><div class="ttdeci">static BlockColorsMap Water</div><div class="ttdef"><b>定义</b> <a href="_block_colors_map_8cs_source.html#l00007">BlockColorsMap.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_geometry_generator_html"><div class="ttname"><a href="class_game_1_1_block_geometry_generator.html">Game.BlockGeometryGenerator</a></div><div class="ttdef"><b>定义</b> <a href="_block_geometry_generator_8cs_source.html#l00004">BlockGeometryGenerator.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_geometry_generator_html_a9125d3016bd0ad8fed096e3dfa507c34"><div class="ttname"><a href="class_game_1_1_block_geometry_generator.html#a9125d3016bd0ad8fed096e3dfa507c34">Game.BlockGeometryGenerator.Terrain</a></div><div class="ttdeci">Terrain Terrain</div><div class="ttdef"><b>定义</b> <a href="_block_geometry_generator_8cs_source.html#l00034">BlockGeometryGenerator.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html_a05f5fbdf84c79424b620fc0229259d52"><div class="ttname"><a href="class_game_1_1_block.html#a05f5fbdf84c79424b620fc0229259d52">Game.Block.CanBeBuiltIntoFurniture</a></div><div class="ttdeci">bool CanBeBuiltIntoFurniture</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00031">Block.cs:31</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fluid_block_html_a60e43a9f1f860d82c66b90c2ed610d7b"><div class="ttname"><a href="class_game_1_1_fluid_block.html#a60e43a9f1f860d82c66b90c2ed610d7b">Game.FluidBlock.FluidBlock</a></div><div class="ttdeci">FluidBlock(int maxLevel)</div><div class="ttdef"><b>定义</b> <a href="_fluid_block_8cs_source.html#l00014">FluidBlock.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fluid_block_html_ab6b904ee77ff678b0aba872d6861fab4"><div class="ttname"><a href="class_game_1_1_fluid_block.html#ab6b904ee77ff678b0aba872d6861fab4">Game.FluidBlock.GenerateFluidTerrainVertices</a></div><div class="ttdeci">void GenerateFluidTerrainVertices(BlockGeometryGenerator generator, int value, int x, int y, int z, Color sideColor, Color topColor, TerrainGeometrySubset[] subset)</div><div class="ttdef"><b>定义</b> <a href="_fluid_block_8cs_source.html#l00052">FluidBlock.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_geometry_html"><div class="ttname"><a href="class_game_1_1_terrain_geometry.html">Game.TerrainGeometry</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_geometry_8cs_source.html#l00005">TerrainGeometry.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_geometry_html_a3559f13b82e41eab28c7dcbf29b844e5"><div class="ttname"><a href="class_game_1_1_terrain_geometry.html#a3559f13b82e41eab28c7dcbf29b844e5">Game.TerrainGeometry.TransparentSubsetsByFace</a></div><div class="ttdeci">TerrainGeometrySubset[] TransparentSubsetsByFace</div><div class="ttdef"><b>定义</b> <a href="_terrain_geometry_8cs_source.html#l00016">TerrainGeometry.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_water_block_html"><div class="ttname"><a href="class_game_1_1_water_block.html">Game.WaterBlock</a></div><div class="ttdef"><b>定义</b> <a href="#l00003">WaterBlock.cs:3</a></div></div>
+<div class="ttc" id="aclass_game_1_1_water_block_html_a7e7442ec3f570fb0a39d122afe2bd714"><div class="ttname"><a href="class_game_1_1_water_block.html#a7e7442ec3f570fb0a39d122afe2bd714">Game.WaterBlock.MaxLevel</a></div><div class="ttdeci">static new int MaxLevel</div><div class="ttdef"><b>定义</b> <a href="#l00006">WaterBlock.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_water_block_html_aaaa33b877186e6811d7ddc01b5f9c898"><div class="ttname"><a href="class_game_1_1_water_block.html#aaaa33b877186e6811d7ddc01b5f9c898">Game.WaterBlock.GenerateTerrainVertices</a></div><div class="ttdeci">WaterBlock() override void GenerateTerrainVertices(BlockGeometryGenerator generator, TerrainGeometry geometry, int value, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00010">WaterBlock.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_water_block_html_aae2343a9bde8f67cec5afb21628facc2"><div class="ttname"><a href="class_game_1_1_water_block.html#aae2343a9bde8f67cec5afb21628facc2">Game.WaterBlock.Index</a></div><div class="ttdeci">static int Index</div><div class="ttdef"><b>定义</b> <a href="#l00004">WaterBlock.cs:4</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_407fceb6d650316801e32c7b7f8f0e13.html">Block</a></li><li class="navelem"><a href="_water_block_8cs.html">WaterBlock.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

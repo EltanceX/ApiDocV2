@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemEggBlockBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_egg_block_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemEggBlockBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_egg_block_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_egg_block_behavior.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_egg_block_behavior.html">SubsystemEggBlockBehavior</a> : <a class="code hl_class" href="class_game_1_1_subsystem_block_behavior.html">SubsystemBlockBehavior</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_egg_block_behavior.html#a9fb703e65f57125fc0ef06f38211303e">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a> <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#a9fb703e65f57125fc0ef06f38211303e">m_subsystemGameInfo</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_egg_block_behavior.html#ac75389737546476759df0666dc44ed3f">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_creature_spawn.html">SubsystemCreatureSpawn</a> <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#ac75389737546476759df0666dc44ed3f">m_subsystemCreatureSpawn</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_egg_block_behavior.html#ab529b4ddb8f6c41fab61ff11f5fcfd75">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_egg_block.html">EggBlock</a> <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#ab529b4ddb8f6c41fab61ff11f5fcfd75">m_eggBlock</a> = (<a class="code hl_class" href="class_game_1_1_egg_block.html">EggBlock</a>)<a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_property" href="class_game_1_1_blocks_manager.html#afa0414b230000fb6f807cf24d2de4334">Blocks</a>[118];</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_egg_block_behavior.html#abe5754f439d34d5290c30e9bedb81730">   13</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#abe5754f439d34d5290c30e9bedb81730">m_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_egg_block_behavior.html#ad75e39cda6d499bb0496f2b00c124ead">   15</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#ad75e39cda6d499bb0496f2b00c124ead">fName</a> = <span class="stringliteral">&quot;SubsystemEggBlockBehavior&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_egg_block_behavior.html#afe26a7a8cd818866e09b9503167541d2">   17</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span>[] <a class="code hl_property" href="class_game_1_1_subsystem_egg_block_behavior.html#afe26a7a8cd818866e09b9503167541d2">HandledBlocks</a> =&gt; [];</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_egg_block_behavior.html#acae1f05f18fecf4567c47c481a55fa55">   19</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_subsystem_egg_block_behavior.html#acae1f05f18fecf4567c47c481a55fa55">OnHitAsProjectile</a>(<a class="code hl_struct" href="struct_game_1_1_cell_face.html">CellFace</a>? cellFace, <a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody, <a class="code hl_class" href="class_game_1_1_world_item.html">WorldItem</a> worldItem) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordtype">int</span> data = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(worldItem.<a class="code hl_variable" href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Value</a>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordtype">bool</span> isCooked = <a class="code hl_class" href="class_game_1_1_egg_block.html">EggBlock</a>.<a class="code hl_function" href="class_game_1_1_egg_block.html#afbb91f6ceee6d21e269a5925ec187c79">GetIsCooked</a>(data);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordtype">bool</span> isLaid = <a class="code hl_class" href="class_game_1_1_egg_block.html">EggBlock</a>.<a class="code hl_function" href="class_game_1_1_egg_block.html#af2e03a44616aef11cc58b0af1ce5b92d">GetIsLaid</a>(data);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">if</span> (!isCooked</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                &amp;&amp; (<a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#a9fb703e65f57125fc0ef06f38211303e">m_subsystemGameInfo</a>.WorldSettings.GameMode == <a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a>.Creative || <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#abe5754f439d34d5290c30e9bedb81730">m_random</a>.Float(0f, 1f) &lt;= (isLaid ? 0.15f : 1f))) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    <a class="code hl_class" href="class_game_1_1_egg_block_1_1_egg_type.html">EggBlock.EggType</a> eggType = <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#ab529b4ddb8f6c41fab61ff11f5fcfd75">m_eggBlock</a>.GetEggType(data);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    <a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity = <a class="code hl_class" href="class_game_1_1_database_manager.html">DatabaseManager</a>.<a class="code hl_function" href="class_game_1_1_database_manager.html#aa7ab7bdeceff749fc205063ee2ca3929">CreateEntity</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>, eggType.TemplateName, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a>&gt;(<span class="keyword">true</span>).Position = worldItem.<a class="code hl_variable" href="class_game_1_1_world_item.html#a7e38e757cf4cea001d1a6e00dfe98f18">Position</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a>&gt;(<span class="keyword">true</span>).Rotation = <a class="code hl_struct" href="struct_engine_1_1_quaternion.html">Quaternion</a>.<a class="code hl_function" href="struct_engine_1_1_quaternion.html#afc37db71e4e8214092d95684f8c57dac">CreateFromAxisAngle</a>(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                        <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae470b2f3e4a3f639fa05966fc3e36665">UnitY</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                        <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#abe5754f439d34d5290c30e9bedb81730">m_random</a>.Float(0f, (<span class="keywordtype">float</span>)Math.PI * 2f)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    );</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_spawn.html">ComponentSpawn</a>&gt;(<span class="keyword">true</span>).SpawnDuration = 0.25f;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.AddEntity(entity);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0">Error</a>($<span class="stringliteral">&quot;Spawning creature from egg (index: {(data &gt;&gt; 4) &amp; 0xFFF}) error: {e}&quot;</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keywordflow">if</span> (worldItem is <a class="code hl_class" href="class_game_1_1_projectile.html">Projectile</a> projectile) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                        <a class="code hl_class" href="class_game_1_1_component_gui.html">ComponentGui</a> componentGui = projectile.Owner?.<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_gui.html">ComponentGui</a>&gt;();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                        <span class="keywordflow">if</span> (componentGui != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                            componentGui.<a class="code hl_function" href="class_game_1_1_component_gui.html#a30c43593b0bc142469c3b748a9f7483c">DisplaySmallMessage</a>(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#ad75e39cda6d499bb0496f2b00c124ead">fName</a>, <span class="stringliteral">&quot;1&quot;</span>), <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">White</a>, <span class="keyword">true</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                        }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_egg_block_behavior.html#a6bc853e39734da07fa3378e22e85df39">   49</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_egg_block_behavior.html#a6bc853e39734da07fa3378e22e85df39">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            base.Load(valuesDictionary);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#a9fb703e65f57125fc0ef06f38211303e">m_subsystemGameInfo</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_egg_block_behavior.html#ac75389737546476759df0666dc44ed3f">m_subsystemCreatureSpawn</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_creature_spawn.html">SubsystemCreatureSpawn</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_log_html"><div class="ttname"><a href="class_engine_1_1_log.html">Engine.Log</a></div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00002">Log.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_log_html_a29175d191a29bc87f88772458dec2ef0"><div class="ttname"><a href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0">Engine.Log.Error</a></div><div class="ttdeci">static void Error(object message)</div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00080">Log.cs:80</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_afa0414b230000fb6f807cf24d2de4334"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#afa0414b230000fb6f807cf24d2de4334">Game.BlocksManager.Blocks</a></div><div class="ttdeci">static Block[] Blocks</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00041">BlocksManager.cs:41</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_body_html"><div class="ttname"><a href="class_game_1_1_component_body.html">Game.ComponentBody</a></div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00007">ComponentBody.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_gui_html"><div class="ttname"><a href="class_game_1_1_component_gui.html">Game.ComponentGui</a></div><div class="ttdef"><b>定义</b> <a href="_component_gui_8cs_source.html#l00006">ComponentGui.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_gui_html_a30c43593b0bc142469c3b748a9f7483c"><div class="ttname"><a href="class_game_1_1_component_gui.html#a30c43593b0bc142469c3b748a9f7483c">Game.ComponentGui.DisplaySmallMessage</a></div><div class="ttdeci">virtual void DisplaySmallMessage(string text, Color color, bool blinking, bool playNotificationSound)</div><div class="ttdef"><b>定义</b> <a href="_component_gui_8cs_source.html#l00187">ComponentGui.cs:187</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html"><div class="ttname"><a href="class_game_1_1_component_spawn.html">Game.ComponentSpawn</a></div><div class="ttdef"><b>定义</b> <a href="_component_spawn_8cs_source.html#l00005">ComponentSpawn.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_database_manager_html"><div class="ttname"><a href="class_game_1_1_database_manager.html">Game.DatabaseManager</a></div><div class="ttdef"><b>定义</b> <a href="_database_manager_8cs_source.html#l00008">DatabaseManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_database_manager_html_aa7ab7bdeceff749fc205063ee2ca3929"><div class="ttname"><a href="class_game_1_1_database_manager.html#aa7ab7bdeceff749fc205063ee2ca3929">Game.DatabaseManager.CreateEntity</a></div><div class="ttdeci">static Entity CreateEntity(Project project, SpawnEntityData spawnEntityData, bool throwIfNotFound)</div><div class="ttdef"><b>定义</b> <a href="_database_manager_8cs_source.html#l00064">DatabaseManager.cs:64</a></div></div>
+<div class="ttc" id="aclass_game_1_1_egg_block_1_1_egg_type_html"><div class="ttname"><a href="class_game_1_1_egg_block_1_1_egg_type.html">Game.EggBlock.EggType</a></div><div class="ttdef"><b>定义</b> <a href="_egg_block_8cs_source.html#l00008">EggBlock.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_egg_block_html"><div class="ttname"><a href="class_game_1_1_egg_block.html">Game.EggBlock</a></div><div class="ttdef"><b>定义</b> <a href="_egg_block_8cs_source.html#l00007">EggBlock.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_egg_block_html_af2e03a44616aef11cc58b0af1ce5b92d"><div class="ttname"><a href="class_game_1_1_egg_block.html#af2e03a44616aef11cc58b0af1ce5b92d">Game.EggBlock.GetIsLaid</a></div><div class="ttdeci">static bool GetIsLaid(int data)</div><div class="ttdef"><b>定义</b> <a href="_egg_block_8cs_source.html#l00223">EggBlock.cs:223</a></div></div>
+<div class="ttc" id="aclass_game_1_1_egg_block_html_afbb91f6ceee6d21e269a5925ec187c79"><div class="ttname"><a href="class_game_1_1_egg_block.html#afbb91f6ceee6d21e269a5925ec187c79">Game.EggBlock.GetIsCooked</a></div><div class="ttdeci">static bool GetIsCooked(int data)</div><div class="ttdef"><b>定义</b> <a href="_egg_block_8cs_source.html#l00214">EggBlock.cs:214</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_projectile_html"><div class="ttname"><a href="class_game_1_1_projectile.html">Game.Projectile</a></div><div class="ttdef"><b>定义</b> <a href="_projectile_8cs_source.html#l00007">Projectile.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html">Game.SubsystemBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00006">SubsystemBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_creature_spawn_html"><div class="ttname"><a href="class_game_1_1_subsystem_creature_spawn.html">Game.SubsystemCreatureSpawn</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_creature_spawn_8cs_source.html#l00006">SubsystemCreatureSpawn.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_egg_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_egg_block_behavior.html">Game.SubsystemEggBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">SubsystemEggBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_egg_block_behavior_html_a6bc853e39734da07fa3378e22e85df39"><div class="ttname"><a href="class_game_1_1_subsystem_egg_block_behavior.html#a6bc853e39734da07fa3378e22e85df39">Game.SubsystemEggBlockBehavior.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00049">SubsystemEggBlockBehavior.cs:49</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_egg_block_behavior_html_a9fb703e65f57125fc0ef06f38211303e"><div class="ttname"><a href="class_game_1_1_subsystem_egg_block_behavior.html#a9fb703e65f57125fc0ef06f38211303e">Game.SubsystemEggBlockBehavior.m_subsystemGameInfo</a></div><div class="ttdeci">SubsystemGameInfo m_subsystemGameInfo</div><div class="ttdef"><b>定义</b> <a href="#l00007">SubsystemEggBlockBehavior.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_egg_block_behavior_html_ab529b4ddb8f6c41fab61ff11f5fcfd75"><div class="ttname"><a href="class_game_1_1_subsystem_egg_block_behavior.html#ab529b4ddb8f6c41fab61ff11f5fcfd75">Game.SubsystemEggBlockBehavior.m_eggBlock</a></div><div class="ttdeci">EggBlock m_eggBlock</div><div class="ttdef"><b>定义</b> <a href="#l00011">SubsystemEggBlockBehavior.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_egg_block_behavior_html_abe5754f439d34d5290c30e9bedb81730"><div class="ttname"><a href="class_game_1_1_subsystem_egg_block_behavior.html#abe5754f439d34d5290c30e9bedb81730">Game.SubsystemEggBlockBehavior.m_random</a></div><div class="ttdeci">Random m_random</div><div class="ttdef"><b>定义</b> <a href="#l00013">SubsystemEggBlockBehavior.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_egg_block_behavior_html_ac75389737546476759df0666dc44ed3f"><div class="ttname"><a href="class_game_1_1_subsystem_egg_block_behavior.html#ac75389737546476759df0666dc44ed3f">Game.SubsystemEggBlockBehavior.m_subsystemCreatureSpawn</a></div><div class="ttdeci">SubsystemCreatureSpawn m_subsystemCreatureSpawn</div><div class="ttdef"><b>定义</b> <a href="#l00009">SubsystemEggBlockBehavior.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_egg_block_behavior_html_acae1f05f18fecf4567c47c481a55fa55"><div class="ttname"><a href="class_game_1_1_subsystem_egg_block_behavior.html#acae1f05f18fecf4567c47c481a55fa55">Game.SubsystemEggBlockBehavior.OnHitAsProjectile</a></div><div class="ttdeci">override bool OnHitAsProjectile(CellFace? cellFace, ComponentBody componentBody, WorldItem worldItem)</div><div class="ttdef"><b>定义</b> <a href="#l00019">SubsystemEggBlockBehavior.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_egg_block_behavior_html_ad75e39cda6d499bb0496f2b00c124ead"><div class="ttname"><a href="class_game_1_1_subsystem_egg_block_behavior.html#ad75e39cda6d499bb0496f2b00c124ead">Game.SubsystemEggBlockBehavior.fName</a></div><div class="ttdeci">const string fName</div><div class="ttdef"><b>定义</b> <a href="#l00015">SubsystemEggBlockBehavior.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_egg_block_behavior_html_afe26a7a8cd818866e09b9503167541d2"><div class="ttname"><a href="class_game_1_1_subsystem_egg_block_behavior.html#afe26a7a8cd818866e09b9503167541d2">Game.SubsystemEggBlockBehavior.HandledBlocks</a></div><div class="ttdeci">override int[] HandledBlocks</div><div class="ttdef"><b>定义</b> <a href="#l00017">SubsystemEggBlockBehavior.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html">Game.SubsystemGameInfo</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00005">SubsystemGameInfo.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aec56ea916e034b2e4db00d1814fdadba"><div class="ttname"><a href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">Game.Terrain.ExtractData</a></div><div class="ttdeci">static int ExtractData(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00307">Terrain.cs:307</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html"><div class="ttname"><a href="class_game_1_1_world_item.html">Game.WorldItem</a></div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00005">WorldItem.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html_a7e38e757cf4cea001d1a6e00dfe98f18"><div class="ttname"><a href="class_game_1_1_world_item.html#a7e38e757cf4cea001d1a6e00dfe98f18">Game.WorldItem.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00008">WorldItem.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html_af0ede2c07cebb2fac063328e8aaa9694"><div class="ttname"><a href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Game.WorldItem.Value</a></div><div class="ttdeci">int Value</div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00006">WorldItem.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html">GameEntitySystem.Entity</a></div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00010">Entity.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_afbe091d90718bd24bc5b528daa3245cf"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">GameEntitySystem.Entity.FindComponent</a></div><div class="ttdeci">Component FindComponent(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00132">Entity.cs:132</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_ac2b04dd85ce59ea4aa71a5779c97bfef"><div class="ttname"><a href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">Game.GameMode</a></div><div class="ttdeci">GameMode</div><div class="ttdef"><b>定义</b> <a href="_game_mode_8cs_source.html#l00002">GameMode.cs:2</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_a4e57f347f3c15133444b3f62f18a8221"><div class="ttname"><a href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">Engine.Color.White</a></div><div class="ttdeci">static Color White</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00015">Color.cs:15</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_quaternion_html"><div class="ttname"><a href="struct_engine_1_1_quaternion.html">Engine.Quaternion</a></div><div class="ttdef"><b>定义</b> <a href="_quaternion_8cs_source.html#l00004">Quaternion.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_quaternion_html_afc37db71e4e8214092d95684f8c57dac"><div class="ttname"><a href="struct_engine_1_1_quaternion.html#afc37db71e4e8214092d95684f8c57dac">Engine.Quaternion.CreateFromAxisAngle</a></div><div class="ttdeci">static Quaternion CreateFromAxisAngle(Vector3 axis, float angle)</div><div class="ttdef"><b>定义</b> <a href="_quaternion_8cs_source.html#l00042">Quaternion.cs:42</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ae470b2f3e4a3f639fa05966fc3e36665"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ae470b2f3e4a3f639fa05966fc3e36665">Engine.Vector3.UnitY</a></div><div class="ttdeci">static readonly Vector3 UnitY</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00015">Vector3.cs:15</a></div></div>
+<div class="ttc" id="astruct_game_1_1_cell_face_html"><div class="ttname"><a href="struct_game_1_1_cell_face.html">Game.CellFace</a></div><div class="ttdef"><b>定义</b> <a href="_cell_face_8cs_source.html#l00004">CellFace.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_egg_block_behavior_8cs.html">SubsystemEggBlockBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

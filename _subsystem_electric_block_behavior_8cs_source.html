@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemElectricBlockBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_electric_block_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemElectricBlockBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_electric_block_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_electric_block_behavior.html">SubsystemElectricBlockBehavior</a> : <a class="code hl_class" href="class_game_1_1_subsystem_block_behavior.html">SubsystemBlockBehavior</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_electricity.html">SubsystemElectricity</a> <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a66681e66a388dfffab5165816aeeb0e4">    8</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span>[] <a class="code hl_property" href="class_game_1_1_subsystem_electric_block_behavior.html#a66681e66a388dfffab5165816aeeb0e4">HandledBlocks</a> =&gt; [</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            133,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            140,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            137,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            143,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            156,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            134,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            135,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            145,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            224,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            146,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            157,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            180,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            181,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            183,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            138,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            139,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            141,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            142,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            184,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            187,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            186,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            188,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            144,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            151,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            179,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            152,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            254,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            253,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            182,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            185,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            56,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            57,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            58,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            83,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            84,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            166,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            194,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            86,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            63,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            97,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            98,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            210,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            211,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            105,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            106,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            107,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            234,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            235,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            236,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            147,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            153,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            154,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            223,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            155,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            243,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            120,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            121,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            199,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            216,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            227,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            237</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        ];</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a0b4a6cc87f29b15388631fe2aa506970">   72</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#a0b4a6cc87f29b15388631fe2aa506970">OnBlockGenerated</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z, <span class="keywordtype">bool</span> isLoaded) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.OnElectricElementBlockGenerated(x, y, z);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a3be5ea3869e3b7ca6ece748e6e9ca0ac">   76</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#a3be5ea3869e3b7ca6ece748e6e9ca0ac">OnBlockAdded</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> oldValue, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.OnElectricElementBlockAdded(x, y, z);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#ad84e71c815c59a883451ab7cf5e3c092">   80</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#ad84e71c815c59a883451ab7cf5e3c092">OnBlockRemoved</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> newValue, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.OnElectricElementBlockRemoved(x, y, z);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a57bef215632873477aefff2e96313dd2">   84</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#a57bef215632873477aefff2e96313dd2">OnBlockModified</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> oldValue, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.OnElectricElementBlockModified(x, y, z);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a6fd2fd775f7e31ed49ea7d6c3606cb4a">   88</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#a6fd2fd775f7e31ed49ea7d6c3606cb4a">OnBlockStartMoving</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> newValue, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z, <a class="code hl_class" href="class_game_1_1_moving_block.html">MovingBlock</a> movingBlock) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.m_pointsToUpdate[<span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_point3.html">Point3</a>(x, y, z)] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#aa68966013c80385924afc7d2ef97bc76">   92</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#aa68966013c80385924afc7d2ef97bc76">OnBlockStopMoving</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> oldValue, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z, <a class="code hl_class" href="class_game_1_1_moving_block.html">MovingBlock</a> movingBlock) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.m_pointsToUpdate[<span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_point3.html">Point3</a>(x, y, z)] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a85e739561041e1679641a71f2c70eb91">   96</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#a85e739561041e1679641a71f2c70eb91">OnChunkDiscarding</a>(<a class="code hl_class" href="class_game_1_1_terrain_chunk.html">TerrainChunk</a> chunk) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.OnChunkDiscarding(chunk);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a617090188e42a7d568b0f61c5e1abdbe">  100</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#a617090188e42a7d568b0f61c5e1abdbe">OnNeighborBlockChanged</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z, <span class="keywordtype">int</span> neighborX, <span class="keywordtype">int</span> neighborY, <span class="keywordtype">int</span> neighborZ) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 6; i++) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.GetElectricElement(x, y, z, i)</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                    ?.OnNeighborBlockChanged(<span class="keyword">new</span> <a class="code hl_struct" href="struct_game_1_1_cell_face.html">CellFace</a>(x, y, z, i), neighborX, neighborY, neighborZ);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a48d25ff949c217e94b73bd9d15a49ef1">  107</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#a48d25ff949c217e94b73bd9d15a49ef1">OnInteract</a>(<a class="code hl_struct" href="struct_game_1_1_terrain_raycast_result.html">TerrainRaycastResult</a> raycastResult, <a class="code hl_class" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordtype">int</span> x = raycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#af81a33a7ddfc5e3bf119cbd4262a94ce">CellFace</a>.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#a5da83fae506f85455f0bd0e00360d296">X</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordtype">int</span> y = raycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#af81a33a7ddfc5e3bf119cbd4262a94ce">CellFace</a>.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#a71ae7b7c707a6826c37c662d04e83ef3">Y</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordtype">int</span> z = raycastResult.<a class="code hl_variable" href="struct_game_1_1_terrain_raycast_result.html#af81a33a7ddfc5e3bf119cbd4262a94ce">CellFace</a>.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#ae0d60a72a1dd6d4ee84d4a8b7ead7abd">Z</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 6; i++) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                <a class="code hl_class" href="class_game_1_1_electric_element.html">ElectricElement</a> electricElement = <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.GetElectricElement(x, y, z, i);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                <span class="keywordflow">if</span> (electricElement != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    <span class="keywordflow">return</span> electricElement.<a class="code hl_function" href="class_game_1_1_electric_element.html#ad6d0fb1b99e582f143ed8624509da69a">OnInteract</a>(raycastResult, componentMiner);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#aa75fd082e9cb34c77b495b4f8922d42c">  120</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#aa75fd082e9cb34c77b495b4f8922d42c">OnCollide</a>(<a class="code hl_struct" href="struct_game_1_1_cell_face.html">CellFace</a> cellFace, <span class="keywordtype">float</span> velocity, <a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody) {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordtype">int</span> x = cellFace.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#a5da83fae506f85455f0bd0e00360d296">X</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordtype">int</span> y = cellFace.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#a71ae7b7c707a6826c37c662d04e83ef3">Y</a>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordtype">int</span> z = cellFace.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#ae0d60a72a1dd6d4ee84d4a8b7ead7abd">Z</a>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordtype">int</span> num = 0;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <a class="code hl_class" href="class_game_1_1_electric_element.html">ElectricElement</a> electricElement;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                <span class="keywordflow">if</span> (num &lt; 6) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                    electricElement = <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.GetElectricElement(x, y, z, num);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                    <span class="keywordflow">if</span> (electricElement != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                    }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                    num++;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            electricElement.<a class="code hl_function" href="class_game_1_1_electric_element.html#a56e5357377fdcc0063ab713774e6fe64">OnCollide</a>(cellFace, velocity, componentBody);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        }</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="foldopen" id="foldopen00140" data-start="{" data-end="}">
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#a2f6cd84c9d132843d40f58bb639b1657">  140</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#a2f6cd84c9d132843d40f58bb639b1657">OnHitByProjectile</a>(<a class="code hl_struct" href="struct_game_1_1_cell_face.html">CellFace</a> cellFace, <a class="code hl_class" href="class_game_1_1_world_item.html">WorldItem</a> worldItem) {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordtype">int</span> x = cellFace.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#a5da83fae506f85455f0bd0e00360d296">X</a>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keywordtype">int</span> y = cellFace.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#a71ae7b7c707a6826c37c662d04e83ef3">Y</a>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="keywordtype">int</span> z = cellFace.<a class="code hl_variable" href="struct_game_1_1_cell_face.html#ae0d60a72a1dd6d4ee84d4a8b7ead7abd">Z</a>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keywordtype">int</span> num = 0;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <a class="code hl_class" href="class_game_1_1_electric_element.html">ElectricElement</a> electricElement;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                <span class="keywordflow">if</span> (num &lt; 6) {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                    electricElement = <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a>.GetElectricElement(x, y, z, num);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                    <span class="keywordflow">if</span> (electricElement != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                    num++;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            electricElement.<a class="code hl_function" href="class_game_1_1_electric_element.html#af0696134d7d2599681896b0d8547c448">OnHitByProjectile</a>(cellFace, worldItem);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        }</div>
+</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_electric_block_behavior.html#ac9f885fe386671e3eee1d439dcb978f3">  160</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_electric_block_behavior.html#ac9f885fe386671e3eee1d439dcb978f3">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            base.Load(valuesDictionary);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">m_subsystemElectricity</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_electricity.html">SubsystemElectricity</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        }</div>
+</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
+</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
+<div class="ttc" id="aclass_game_1_1_component_body_html"><div class="ttname"><a href="class_game_1_1_component_body.html">Game.ComponentBody</a></div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00007">ComponentBody.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html"><div class="ttname"><a href="class_game_1_1_component_miner.html">Game.ComponentMiner</a></div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00007">ComponentMiner.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_electric_element_html"><div class="ttname"><a href="class_game_1_1_electric_element.html">Game.ElectricElement</a></div><div class="ttdef"><b>定义</b> <a href="_electric_element_8cs_source.html#l00004">ElectricElement.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_electric_element_html_a56e5357377fdcc0063ab713774e6fe64"><div class="ttname"><a href="class_game_1_1_electric_element.html#a56e5357377fdcc0063ab713774e6fe64">Game.ElectricElement.OnCollide</a></div><div class="ttdeci">virtual void OnCollide(CellFace cellFace, float velocity, ComponentBody componentBody)</div><div class="ttdef"><b>定义</b> <a href="_electric_element_8cs_source.html#l00034">ElectricElement.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_electric_element_html_ad6d0fb1b99e582f143ed8624509da69a"><div class="ttname"><a href="class_game_1_1_electric_element.html#ad6d0fb1b99e582f143ed8624509da69a">Game.ElectricElement.OnInteract</a></div><div class="ttdeci">virtual bool OnInteract(TerrainRaycastResult raycastResult, ComponentMiner componentMiner)</div><div class="ttdef"><b>定义</b> <a href="_electric_element_8cs_source.html#l00032">ElectricElement.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_electric_element_html_af0696134d7d2599681896b0d8547c448"><div class="ttname"><a href="class_game_1_1_electric_element.html#af0696134d7d2599681896b0d8547c448">Game.ElectricElement.OnHitByProjectile</a></div><div class="ttdeci">virtual void OnHitByProjectile(CellFace cellFace, WorldItem worldItem)</div><div class="ttdef"><b>定义</b> <a href="_electric_element_8cs_source.html#l00036">ElectricElement.cs:36</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html"><div class="ttname"><a href="class_game_1_1_moving_block.html">Game.MovingBlock</a></div><div class="ttdef"><b>定义</b> <a href="_moving_block_8cs_source.html#l00007">MovingBlock.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html">Game.SubsystemBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00006">SubsystemBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html">Game.SubsystemElectricBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">SubsystemElectricBlockBehavior.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a0b4a6cc87f29b15388631fe2aa506970"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a0b4a6cc87f29b15388631fe2aa506970">Game.SubsystemElectricBlockBehavior.OnBlockGenerated</a></div><div class="ttdeci">override void OnBlockGenerated(int value, int x, int y, int z, bool isLoaded)</div><div class="ttdef"><b>定义</b> <a href="#l00072">SubsystemElectricBlockBehavior.cs:72</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a2f6cd84c9d132843d40f58bb639b1657"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a2f6cd84c9d132843d40f58bb639b1657">Game.SubsystemElectricBlockBehavior.OnHitByProjectile</a></div><div class="ttdeci">override void OnHitByProjectile(CellFace cellFace, WorldItem worldItem)</div><div class="ttdef"><b>定义</b> <a href="#l00140">SubsystemElectricBlockBehavior.cs:140</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a3be5ea3869e3b7ca6ece748e6e9ca0ac"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a3be5ea3869e3b7ca6ece748e6e9ca0ac">Game.SubsystemElectricBlockBehavior.OnBlockAdded</a></div><div class="ttdeci">override void OnBlockAdded(int value, int oldValue, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00076">SubsystemElectricBlockBehavior.cs:76</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a48d25ff949c217e94b73bd9d15a49ef1"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a48d25ff949c217e94b73bd9d15a49ef1">Game.SubsystemElectricBlockBehavior.OnInteract</a></div><div class="ttdeci">override bool OnInteract(TerrainRaycastResult raycastResult, ComponentMiner componentMiner)</div><div class="ttdef"><b>定义</b> <a href="#l00107">SubsystemElectricBlockBehavior.cs:107</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a57bef215632873477aefff2e96313dd2"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a57bef215632873477aefff2e96313dd2">Game.SubsystemElectricBlockBehavior.OnBlockModified</a></div><div class="ttdeci">override void OnBlockModified(int value, int oldValue, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00084">SubsystemElectricBlockBehavior.cs:84</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a617090188e42a7d568b0f61c5e1abdbe"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a617090188e42a7d568b0f61c5e1abdbe">Game.SubsystemElectricBlockBehavior.OnNeighborBlockChanged</a></div><div class="ttdeci">override void OnNeighborBlockChanged(int x, int y, int z, int neighborX, int neighborY, int neighborZ)</div><div class="ttdef"><b>定义</b> <a href="#l00100">SubsystemElectricBlockBehavior.cs:100</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a66681e66a388dfffab5165816aeeb0e4"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a66681e66a388dfffab5165816aeeb0e4">Game.SubsystemElectricBlockBehavior.HandledBlocks</a></div><div class="ttdeci">override int[] HandledBlocks</div><div class="ttdef"><b>定义</b> <a href="#l00008">SubsystemElectricBlockBehavior.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a6fd2fd775f7e31ed49ea7d6c3606cb4a"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a6fd2fd775f7e31ed49ea7d6c3606cb4a">Game.SubsystemElectricBlockBehavior.OnBlockStartMoving</a></div><div class="ttdeci">override void OnBlockStartMoving(int value, int newValue, int x, int y, int z, MovingBlock movingBlock)</div><div class="ttdef"><b>定义</b> <a href="#l00088">SubsystemElectricBlockBehavior.cs:88</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a85e739561041e1679641a71f2c70eb91"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a85e739561041e1679641a71f2c70eb91">Game.SubsystemElectricBlockBehavior.OnChunkDiscarding</a></div><div class="ttdeci">override void OnChunkDiscarding(TerrainChunk chunk)</div><div class="ttdef"><b>定义</b> <a href="#l00096">SubsystemElectricBlockBehavior.cs:96</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_a860b42552b69d990b7ef8b33f2d4483b"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#a860b42552b69d990b7ef8b33f2d4483b">Game.SubsystemElectricBlockBehavior.m_subsystemElectricity</a></div><div class="ttdeci">SubsystemElectricity m_subsystemElectricity</div><div class="ttdef"><b>定义</b> <a href="#l00006">SubsystemElectricBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_aa68966013c80385924afc7d2ef97bc76"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#aa68966013c80385924afc7d2ef97bc76">Game.SubsystemElectricBlockBehavior.OnBlockStopMoving</a></div><div class="ttdeci">override void OnBlockStopMoving(int value, int oldValue, int x, int y, int z, MovingBlock movingBlock)</div><div class="ttdef"><b>定义</b> <a href="#l00092">SubsystemElectricBlockBehavior.cs:92</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_aa75fd082e9cb34c77b495b4f8922d42c"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#aa75fd082e9cb34c77b495b4f8922d42c">Game.SubsystemElectricBlockBehavior.OnCollide</a></div><div class="ttdeci">override void OnCollide(CellFace cellFace, float velocity, ComponentBody componentBody)</div><div class="ttdef"><b>定义</b> <a href="#l00120">SubsystemElectricBlockBehavior.cs:120</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_ac9f885fe386671e3eee1d439dcb978f3"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#ac9f885fe386671e3eee1d439dcb978f3">Game.SubsystemElectricBlockBehavior.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00160">SubsystemElectricBlockBehavior.cs:160</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electric_block_behavior_html_ad84e71c815c59a883451ab7cf5e3c092"><div class="ttname"><a href="class_game_1_1_subsystem_electric_block_behavior.html#ad84e71c815c59a883451ab7cf5e3c092">Game.SubsystemElectricBlockBehavior.OnBlockRemoved</a></div><div class="ttdeci">override void OnBlockRemoved(int value, int newValue, int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="#l00080">SubsystemElectricBlockBehavior.cs:80</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_electricity_html"><div class="ttname"><a href="class_game_1_1_subsystem_electricity.html">Game.SubsystemElectricity</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_electricity_8cs_source.html#l00009">SubsystemElectricity.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_chunk_html"><div class="ttname"><a href="class_game_1_1_terrain_chunk.html">Game.TerrainChunk</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_chunk_8cs_source.html#l00004">TerrainChunk.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html"><div class="ttname"><a href="class_game_1_1_world_item.html">Game.WorldItem</a></div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00005">WorldItem.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point3_html"><div class="ttname"><a href="struct_engine_1_1_point3.html">Engine.Point3</a></div><div class="ttdef"><b>定义</b> <a href="_point3_8cs_source.html#l00002">Point3.cs:2</a></div></div>
+<div class="ttc" id="astruct_game_1_1_cell_face_html"><div class="ttname"><a href="struct_game_1_1_cell_face.html">Game.CellFace</a></div><div class="ttdef"><b>定义</b> <a href="_cell_face_8cs_source.html#l00004">CellFace.cs:4</a></div></div>
+<div class="ttc" id="astruct_game_1_1_cell_face_html_a5da83fae506f85455f0bd0e00360d296"><div class="ttname"><a href="struct_game_1_1_cell_face.html#a5da83fae506f85455f0bd0e00360d296">Game.CellFace.X</a></div><div class="ttdeci">int X</div><div class="ttdef"><b>定义</b> <a href="_cell_face_8cs_source.html#l00005">CellFace.cs:5</a></div></div>
+<div class="ttc" id="astruct_game_1_1_cell_face_html_a71ae7b7c707a6826c37c662d04e83ef3"><div class="ttname"><a href="struct_game_1_1_cell_face.html#a71ae7b7c707a6826c37c662d04e83ef3">Game.CellFace.Y</a></div><div class="ttdeci">int Y</div><div class="ttdef"><b>定义</b> <a href="_cell_face_8cs_source.html#l00007">CellFace.cs:7</a></div></div>
+<div class="ttc" id="astruct_game_1_1_cell_face_html_ae0d60a72a1dd6d4ee84d4a8b7ead7abd"><div class="ttname"><a href="struct_game_1_1_cell_face.html#ae0d60a72a1dd6d4ee84d4a8b7ead7abd">Game.CellFace.Z</a></div><div class="ttdeci">int Z</div><div class="ttdef"><b>定义</b> <a href="_cell_face_8cs_source.html#l00009">CellFace.cs:9</a></div></div>
+<div class="ttc" id="astruct_game_1_1_terrain_raycast_result_html"><div class="ttname"><a href="struct_game_1_1_terrain_raycast_result.html">Game.TerrainRaycastResult</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_raycast_result_8cs_source.html#l00005">TerrainRaycastResult.cs:5</a></div></div>
+<div class="ttc" id="astruct_game_1_1_terrain_raycast_result_html_af81a33a7ddfc5e3bf119cbd4262a94ce"><div class="ttname"><a href="struct_game_1_1_terrain_raycast_result.html#af81a33a7ddfc5e3bf119cbd4262a94ce">Game.TerrainRaycastResult.CellFace</a></div><div class="ttdeci">CellFace CellFace</div><div class="ttdef"><b>定义</b> <a href="_terrain_raycast_result_8cs_source.html#l00012">TerrainRaycastResult.cs:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_electric_block_behavior_8cs.html">SubsystemElectricBlockBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

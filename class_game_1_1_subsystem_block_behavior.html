@@ -1,0 +1,1978 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Game.SubsystemBlockBehavior</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_game_1_1_subsystem_block_behavior.html','','class_game_1_1_subsystem_block_behavior-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game.SubsystemBlockBehavior<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>继承自 <a class="el" href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a> .</p>
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_adjustable_delay_gate_block_behavior.html">Game.SubsystemAdjustableDelayGateBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_arrow_block_behavior.html">Game.SubsystemArrowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_battery_block_behavior.html">Game.SubsystemBatteryBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_boat_block_behavior.html">Game.SubsystemBoatBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bomb_block_behavior.html">Game.SubsystemBombBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bow_block_behavior.html">Game.SubsystemBowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bucket_block_behavior.html">Game.SubsystemBucketBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bullet_block_behavior.html">Game.SubsystemBulletBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_button_block_behavior.html">Game.SubsystemButtonBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_collapsing_block_behavior.html">Game.SubsystemCollapsingBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_crossbow_block_behavior.html">Game.SubsystemCrossbowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_door_block_behavior.html">Game.SubsystemDoorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_editable_item_behavior-1-g.html">Game.SubsystemEditableItemBehavior&lt; T &gt;</a>, <a class="el" href="class_game_1_1_subsystem_egg_block_behavior.html">Game.SubsystemEggBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html">Game.SubsystemEntityBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_experience_block_behavior.html">Game.SubsystemExperienceBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_explosives_block_behavior.html">Game.SubsystemExplosivesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fence_block_behavior.html">Game.SubsystemFenceBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fence_gate_block_behavior.html">Game.SubsystemFenceGateBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fertilizer_block_behavior.html">Game.SubsystemFertilizerBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fire_block_behavior.html">Game.SubsystemFireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fireworks_block_behavior.html">Game.SubsystemFireworksBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fluid_block_behavior.html">Game.SubsystemFluidBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furniture_block_behavior.html">Game.SubsystemFurnitureBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_grass_trap_block_behavior.html">Game.SubsystemGrassTrapBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_gravestone_block_behavior.html">Game.SubsystemGravestoneBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_hammer_block_behavior.html">Game.SubsystemHammerBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_impact_explosives_block_behavior.html">Game.SubsystemImpactExplosivesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_ladder_block_behavior.html">Game.SubsystemLadderBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_magnet_block_behavior.html">Game.SubsystemMagnetBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_match_block_behavior.html">Game.SubsystemMatchBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_meters_block_behavior.html">Game.SubsystemMetersBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_musket_block_behavior.html">Game.SubsystemMusketBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_piston_block_behavior.html">Game.SubsystemPistonBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_pollable_block_behavior.html">Game.SubsystemPollableBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_rake_block_behavior.html">Game.SubsystemRakeBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_saddle_block_behavior.html">Game.SubsystemSaddleBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sapling_block_behavior.html">Game.SubsystemSaplingBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sign_block_behavior.html">Game.SubsystemSignBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_snow_block_behavior.html">Game.SubsystemSnowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_spikes_block_behavior.html">Game.SubsystemSpikesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_stairs_block_behavior.html">Game.SubsystemStairsBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_switch_block_behavior.html">Game.SubsystemSwitchBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_throwable_block_behavior.html">Game.SubsystemThrowableBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_torch_block_behavior.html">Game.SubsystemTorchBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_trapdoor_block_behavior.html">Game.SubsystemTrapdoorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_treasure_generator_block_behavior.html">Game.SubsystemTreasureGeneratorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_whistle_block_behavior.html">Game.SubsystemWhistleBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_wood_block_behavior.html">Game.SubsystemWoodBlockBehavior</a> 继承.</p>
+<div class="dynheader">
+Game.SubsystemBlockBehavior 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior__coll__graph.png" border="0" usemap="#a_game_8_subsystem_block_behavior_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_8_subsystem_block_behavior_coll__map" id="a_game_8_subsystem_block_behavior_coll__map">
+<area shape="rect" title=" " alt="" coords="2131,48,2341,74"/>
+<area shape="rect" href="class_game_entity_system_1_1_subsystem.html" title=" " alt="" coords="1876,48,2081,74"/>
+<area shape="poly" title=" " alt="" coords="2097,58,2133,61,2127,61,2097,64"/>
+<area shape="rect" title=" " alt="" coords="1251,49,1342,76"/>
+<area shape="poly" title=" " alt="" coords="1357,60,1878,61,1873,62,1357,65"/>
+<area shape="rect" href="class_game_entity_system_1_1_project.html" title=" " alt="" coords="1583,125,1763,152"/>
+<area shape="poly" title=" " alt="" coords="1357,71,1559,110,1613,124,1608,124,1558,116,1357,76"/>
+<area shape="poly" title=" " alt="" coords="1773,119,1851,101,1938,75,1944,74,1853,106,1774,124"/>
+<area shape="rect" href="class_game_entity_system_1_1_game_database.html" title=" " alt="" coords="1181,180,1412,206"/>
+<area shape="poly" title=" " alt="" coords="1427,184,1558,168,1627,153,1632,152,1559,173,1428,189"/>
+<area shape="rect" href="class_templates_database_1_1_database_object.html" title=" " alt="" coords="396,157,593,200"/>
+<area shape="poly" title=" " alt="" coords="576,202,617,210,666,216,705,217,793,216,967,221,1103,226,1238,227,1411,216,1486,208,1558,189,1605,170,1645,153,1650,151,1608,175,1559,194,1487,213,1412,221,1238,232,1103,232,967,226,793,221,705,222,666,221,617,216,576,207"/>
+<area shape="poly" title=" " alt="" coords="461,139,473,133,494,130,514,132,527,138,533,147,531,158,527,155,528,148,524,142,513,138,494,136,475,138,463,144"/>
+<area shape="rect" href="class_templates_database_1_1_database.html" title=" " alt="" coords="806,180,1003,206"/>
+<area shape="poly" title=" " alt="" coords="607,200,617,201,714,205,808,203,803,204,714,210,617,206,607,205"/>
+<area shape="rect" href="class_templates_database_1_1_values_dictionary.html" title=" " alt="" coords="814,32,994,74"/>
+<area shape="poly" title=" " alt="" coords="581,149,829,76,834,74,582,154"/>
+<area shape="poly" title=" " alt="" coords="797,177,769,177,693,175,617,177,593,177,593,172,617,172,693,169,769,172,803,177"/>
+<area shape="rect" href="struct_engine_1_1_read_only_list-1-g.html" title=" " alt="" coords="407,274,582,301"/>
+<area shape="poly" title=" " alt="" coords="597,269,681,254,768,234,863,207,868,206,770,240,682,259,598,275"/>
+<area shape="poly" title=" " alt="" coords="459,257,471,250,494,248,516,250,529,256,534,266,527,276,524,272,528,265,526,260,515,255,494,253,473,255,461,262"/>
+<area shape="rect" title=" " alt="" coords="81,274,127,301"/>
+<area shape="poly" title=" " alt="" coords="143,285,406,285,406,290,143,290"/>
+<area shape="rect" href="class_templates_database_1_1_database_object_type.html" title=" " alt="" coords="5,157,203,200"/>
+<area shape="poly" title=" " alt="" coords="218,176,397,177,393,180,219,181"/>
+<area shape="poly" title=" " alt="" coords="70,139,83,133,104,130,124,132,137,138,143,147,141,158,136,155,138,148,133,142,122,138,104,136,84,138,73,143"/>
+<area shape="rect" href="class_game_entity_system_1_1_project_data.html" title=" " alt="" coords="1192,101,1401,128"/>
+<area shape="poly" title=" " alt="" coords="1384,128,1436,134,1511,138,1585,141,1580,141,1510,143,1435,140,1384,133"/>
+<area shape="poly" title=" " alt="" coords="1009,39,1039,37,1181,34,1517,27,1664,28,1852,40,1897,47,1892,47,1852,45,1664,34,1517,32,1181,40,1039,42,1010,44"/>
+<area shape="poly" title=" " alt="" coords="1010,62,1158,84,1234,100,1229,100,1157,89,1010,68"/>
+<area shape="rect" title=" " alt="" coords="447,33,542,60"/>
+<area shape="poly" title=" " alt="" coords="557,45,816,51,811,52,557,50"/>
+<area shape="rect" href="class_game_entity_system_1_1_entity_data_list.html" title=" " alt="" coords="793,101,1015,128"/>
+<area shape="poly" title=" " alt="" coords="1031,112,1195,114,1189,115,1031,117"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3e861682c043bc04cca9bede3e45c8b1" id="r_a3e861682c043bc04cca9bede3e45c8b1"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3e861682c043bc04cca9bede3e45c8b1">OnChunkInitialized</a> (<a class="el" href="class_game_1_1_terrain_chunk.html">TerrainChunk</a> chunk)</td></tr>
+<tr class="memitem:ac3a709d5a6c93edf31d77251fa243d27" id="r_ac3a709d5a6c93edf31d77251fa243d27"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac3a709d5a6c93edf31d77251fa243d27">OnChunkDiscarding</a> (<a class="el" href="class_game_1_1_terrain_chunk.html">TerrainChunk</a> chunk)</td></tr>
+<tr class="memitem:a429cac38b10d1acd8326ec327a9293a5" id="r_a429cac38b10d1acd8326ec327a9293a5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a429cac38b10d1acd8326ec327a9293a5">OnBlockGenerated</a> (int value, int x, int y, int z, bool isLoaded)</td></tr>
+<tr class="memitem:a89f5f7bcf4373c999dc16c6f8eaba75a" id="r_a89f5f7bcf4373c999dc16c6f8eaba75a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a89f5f7bcf4373c999dc16c6f8eaba75a">OnBlockAdded</a> (int value, int oldValue, int x, int y, int z)</td></tr>
+<tr class="memitem:ac4262491adf4a984d12f6175df146cbc" id="r_ac4262491adf4a984d12f6175df146cbc"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac4262491adf4a984d12f6175df146cbc">OnBlockRemoved</a> (int value, int newValue, int x, int y, int z)</td></tr>
+<tr class="memitem:a8a8166ef989effac8a73cb7e190e14c2" id="r_a8a8166ef989effac8a73cb7e190e14c2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a8a8166ef989effac8a73cb7e190e14c2">OnBlockModified</a> (int value, int oldValue, int x, int y, int z)</td></tr>
+<tr class="memitem:aec47bf39914261b71659fcc73e4cdd72" id="r_aec47bf39914261b71659fcc73e4cdd72"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aec47bf39914261b71659fcc73e4cdd72">OnBlockStartMoving</a> (int value, int newValue, int x, int y, int z, <a class="el" href="class_game_1_1_moving_block.html">MovingBlock</a> movingBlock)</td></tr>
+<tr class="memitem:a29f2caea74923858f38ae865aa0fe8e3" id="r_a29f2caea74923858f38ae865aa0fe8e3"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a29f2caea74923858f38ae865aa0fe8e3">OnBlockStopMoving</a> (int value, int oldValue, int x, int y, int z, <a class="el" href="class_game_1_1_moving_block.html">MovingBlock</a> movingBlock)</td></tr>
+<tr class="memitem:a7080a063fc1f24651522a84687f9bf0e" id="r_a7080a063fc1f24651522a84687f9bf0e"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a7080a063fc1f24651522a84687f9bf0e">OnNeighborBlockChanged</a> (int x, int y, int z, int neighborX, int neighborY, int neighborZ)</td></tr>
+<tr class="memitem:aaa59d2daf75f1cd8e6e692e9d5867e02" id="r_aaa59d2daf75f1cd8e6e692e9d5867e02"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#aaa59d2daf75f1cd8e6e692e9d5867e02">OnUse</a> (<a class="el" href="struct_engine_1_1_ray3.html">Ray3</a> ray, <a class="el" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner)</td></tr>
+<tr class="memitem:a4cfb3cc5e9d312d77d1c3c3842b8e89c" id="r_a4cfb3cc5e9d312d77d1c3c3842b8e89c"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a4cfb3cc5e9d312d77d1c3c3842b8e89c">OnInteract</a> (<a class="el" href="struct_game_1_1_terrain_raycast_result.html">TerrainRaycastResult</a> raycastResult, <a class="el" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner)</td></tr>
+<tr class="memitem:ab8a7ab140484f6c20703336b15089a73" id="r_ab8a7ab140484f6c20703336b15089a73"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ab8a7ab140484f6c20703336b15089a73">OnInteract</a> (<a class="el" href="struct_game_1_1_moving_blocks_raycast_result.html">MovingBlocksRaycastResult</a> movingBlocksRaycastResult, <a class="el" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner)</td></tr>
+<tr class="memitem:abfbb10470ce73fa41b5f8e6684f5fee5" id="r_abfbb10470ce73fa41b5f8e6684f5fee5"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#abfbb10470ce73fa41b5f8e6684f5fee5">OnAim</a> (<a class="el" href="struct_engine_1_1_ray3.html">Ray3</a> aim, <a class="el" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner, <a class="el" href="namespace_game.html#a4afc3783b0d5c223eb10256c2a80a586">AimState</a> state)</td></tr>
+<tr class="memitem:a08de8902fb4c873d8f28c6e2cd86f3ba" id="r_a08de8902fb4c873d8f28c6e2cd86f3ba"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a08de8902fb4c873d8f28c6e2cd86f3ba">OnEditBlock</a> (int x, int y, int z, int value, <a class="el" href="class_game_1_1_component_player.html">ComponentPlayer</a> componentPlayer)</td></tr>
+<tr class="memitem:ab6cf3039be5bf2e9bd46b36e0d32510e" id="r_ab6cf3039be5bf2e9bd46b36e0d32510e"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ab6cf3039be5bf2e9bd46b36e0d32510e">OnEditInventoryItem</a> (<a class="el" href="interface_game_1_1_i_inventory.html">IInventory</a> inventory, int slotIndex, <a class="el" href="class_game_1_1_component_player.html">ComponentPlayer</a> componentPlayer)</td></tr>
+<tr class="memitem:affc5db53c7039284922ab4d90da12c9d" id="r_affc5db53c7039284922ab4d90da12c9d"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#affc5db53c7039284922ab4d90da12c9d">OnItemPlaced</a> (int x, int y, int z, ref <a class="el" href="struct_game_1_1_block_placement_data.html">BlockPlacementData</a> placementData, int itemValue)</td></tr>
+<tr class="memitem:a1672049ba80ea9bf91ab321cda6eb451" id="r_a1672049ba80ea9bf91ab321cda6eb451"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a1672049ba80ea9bf91ab321cda6eb451">OnItemHarvested</a> (int x, int y, int z, int blockValue, ref <a class="el" href="struct_game_1_1_block_drop_value.html">BlockDropValue</a> dropValue, ref int newBlockValue)</td></tr>
+<tr class="memitem:a36b235e0a1379bb4b573005df98bc7c2" id="r_a36b235e0a1379bb4b573005df98bc7c2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a36b235e0a1379bb4b573005df98bc7c2">OnCollide</a> (<a class="el" href="struct_game_1_1_cell_face.html">CellFace</a> cellFace, float velocity, <a class="el" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody)</td></tr>
+<tr class="memitem:a884cf8878074ae031734805aab0048b6" id="r_a884cf8878074ae031734805aab0048b6"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a884cf8878074ae031734805aab0048b6">OnExplosion</a> (int value, int x, int y, int z, float damage)</td></tr>
+<tr class="memitem:ab9d2f23ee8e6ac6520df0c8d3a768543" id="r_ab9d2f23ee8e6ac6520df0c8d3a768543"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab9d2f23ee8e6ac6520df0c8d3a768543">OnFiredAsProjectile</a> (<a class="el" href="class_game_1_1_projectile.html">Projectile</a> projectile)</td></tr>
+<tr class="memitem:a5eff44ee3e7bf233b4dd76f605242407" id="r_a5eff44ee3e7bf233b4dd76f605242407"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a5eff44ee3e7bf233b4dd76f605242407">OnHitAsProjectile</a> (<a class="el" href="struct_game_1_1_cell_face.html">CellFace</a>? cellFace, <a class="el" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody, <a class="el" href="class_game_1_1_world_item.html">WorldItem</a> worldItem)</td></tr>
+<tr class="memitem:a923814a003e5ed47b068a8b82a5453ca" id="r_a923814a003e5ed47b068a8b82a5453ca"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a923814a003e5ed47b068a8b82a5453ca">OnHitByProjectile</a> (<a class="el" href="struct_game_1_1_cell_face.html">CellFace</a> cellFace, <a class="el" href="class_game_1_1_world_item.html">WorldItem</a> worldItem)</td></tr>
+<tr class="memitem:ae99e9a92ac4c72df0cc66e38a8a32f81" id="r_ae99e9a92ac4c72df0cc66e38a8a32f81"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ae99e9a92ac4c72df0cc66e38a8a32f81">OnHitByProjectile</a> (<a class="el" href="class_game_1_1_moving_block.html">MovingBlock</a> movingBlock, <a class="el" href="class_game_1_1_world_item.html">WorldItem</a> worldItem)</td></tr>
+<tr class="memitem:ae37990d829ef1f2b6e47675a7d10b699" id="r_ae37990d829ef1f2b6e47675a7d10b699"><td class="memItemLeft">virtual int&#160;</td><td class="memItemRight"><a class="el" href="#ae37990d829ef1f2b6e47675a7d10b699">GetProcessInventoryItemCapacity</a> (<a class="el" href="interface_game_1_1_i_inventory.html">IInventory</a> inventory, int slotIndex, int value)</td></tr>
+<tr class="memitem:a95e32b366d677fd402554d97219879e2" id="r_a95e32b366d677fd402554d97219879e2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a95e32b366d677fd402554d97219879e2">ProcessInventoryItem</a> (<a class="el" href="interface_game_1_1_i_inventory.html">IInventory</a> inventory, int slotIndex, int value, int count, int processCount, out int processedValue, out int processedCount)</td></tr>
+<tr class="memitem:a829196aa494cc29f5f46fbc860aeed49" id="r_a829196aa494cc29f5f46fbc860aeed49"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a829196aa494cc29f5f46fbc860aeed49">Load</a> (<a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary)</td></tr>
+<tr class="memitem:ac825726f23a80d7dd6266c59a69470ee" id="r_ac825726f23a80d7dd6266c59a69470ee"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac825726f23a80d7dd6266c59a69470ee">OnPickableGathered</a> (<a class="el" href="class_game_1_1_pickable.html">Pickable</a> pickable, <a class="el" href="class_game_1_1_component_pickable_gatherer.html">ComponentPickableGatherer</a> target, <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> distanceToTarget)</td></tr>
+<tr class="inherit_header pub_methods_class_game_entity_system_1_1_subsystem"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_entity_system_1_1_subsystem')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></td></tr>
+<tr class="memitem:a05dcf7baf01016754b6d8c1c80b91531 inherit pub_methods_class_game_entity_system_1_1_subsystem" id="r_a05dcf7baf01016754b6d8c1c80b91531"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a05dcf7baf01016754b6d8c1c80b91531">OnEntityAdded</a> (<a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:a5f78ff2f7c62a689f476de11eae556a5 inherit pub_methods_class_game_entity_system_1_1_subsystem" id="r_a5f78ff2f7c62a689f476de11eae556a5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a5f78ff2f7c62a689f476de11eae556a5">OnEntityRemoved</a> (<a class="el" href="class_game_entity_system_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:a665a2f92d209828dfda4cd6f5a6c93b9 inherit pub_methods_class_game_entity_system_1_1_subsystem" id="r_a665a2f92d209828dfda4cd6f5a6c93b9"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a665a2f92d209828dfda4cd6f5a6c93b9">Save</a> (<a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary)</td></tr>
+<tr class="memitem:aead0e114b03d34cccede675cc97a969c inherit pub_methods_class_game_entity_system_1_1_subsystem" id="r_aead0e114b03d34cccede675cc97a969c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#aead0e114b03d34cccede675cc97a969c">Dispose</a> ()</td></tr>
+<tr class="memitem:a3f2f78761e90dc6dc5d2579bea59cf44 inherit pub_methods_class_game_entity_system_1_1_subsystem" id="r_a3f2f78761e90dc6dc5d2579bea59cf44"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a3f2f78761e90dc6dc5d2579bea59cf44">Initialize</a> (<a class="el" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a> project, <a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a2a45ea2614dfb1188747fce04bb89d5a" id="r_a2a45ea2614dfb1188747fce04bb89d5a"><td class="memItemLeft">virtual int[]&#160;</td><td class="memItemRight"><a class="el" href="#a2a45ea2614dfb1188747fce04bb89d5a">HandledBlocks</a><code> [get]</code></td></tr>
+<tr class="memitem:aa5d990a2c3e869337c27e92fff363bf8" id="r_aa5d990a2c3e869337c27e92fff363bf8"><td class="memItemLeft">SubsystemTerrain&#160;</td><td class="memItemRight"><a class="el" href="#aa5d990a2c3e869337c27e92fff363bf8">SubsystemTerrain</a><code> [get, set]</code></td></tr>
+<tr class="inherit_header properties_class_game_entity_system_1_1_subsystem"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_game_entity_system_1_1_subsystem')"><span class="dynarrow"><span class="arrowhead closed"></span></span>属性 继承自 <a class="el" href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></td></tr>
+<tr class="memitem:a646bbedf1e95de23007334891e1f77c0 inherit properties_class_game_entity_system_1_1_subsystem" id="r_a646bbedf1e95de23007334891e1f77c0"><td class="memItemLeft">Project&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a><code> [get]</code></td></tr>
+<tr class="memitem:a24b8e8b6ac383c2d7666a4c4bfa995a2 inherit properties_class_game_entity_system_1_1_subsystem" id="r_a24b8e8b6ac383c2d7666a4c4bfa995a2"><td class="memItemLeft">ValuesDictionary&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a><code> [get]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pac_methods_class_game_entity_system_1_1_subsystem"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pac_methods_class_game_entity_system_1_1_subsystem')"><span class="dynarrow"><span class="arrowhead closed"></span></span>包函数 继承自 <a class="el" href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></td></tr>
+<tr class="memitem:a7ebc38b9ab90697459f6ce6c98f82fbc inherit pac_methods_class_game_entity_system_1_1_subsystem" id="r_a7ebc38b9ab90697459f6ce6c98f82fbc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a7ebc38b9ab90697459f6ce6c98f82fbc">DisposeInternal</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00006">6</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="ae37990d829ef1f2b6e47675a7d10b699" name="ae37990d829ef1f2b6e47675a7d10b699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37990d829ef1f2b6e47675a7d10b699">&#9670;&#160;</a></span>GetProcessInventoryItemCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int Game.SubsystemBlockBehavior.GetProcessInventoryItemCapacity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_game_1_1_i_inventory.html">IInventory</a></td>          <td class="paramname"><span class="paramname"><em>inventory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>slotIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_bow_block_behavior.html#a2dc3e3b8ea0957c13ef99c0adb20c64d">Game.SubsystemBowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_crossbow_block_behavior.html#a079d50fc2e62ecc1eb138fccb7476257">Game.SubsystemCrossbowBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_musket_block_behavior.html#a70c66fffae3e3d84b50c9ed9c8922088">Game.SubsystemMusketBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00060">60</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_ae37990d829ef1f2b6e47675a7d10b699_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_ae37990d829ef1f2b6e47675a7d10b699_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_ae37990d829ef1f2b6e47675a7d10b699_icgraph" id="aclass_game_1_1_subsystem_block_behavior_ae37990d829ef1f2b6e47675a7d10b699_icgraph">
+<area shape="rect" title=" " alt="" coords="289,172,511,215"/>
+<area shape="rect" href="class_game_1_1_component_creative_inventory.html#ae84d7a40f3cea89d2e4f433e48f4be42" title=" " alt="" coords="6,5,240,48"/>
+<area shape="poly" title=" " alt="" coords="366,161,310,111,276,85,239,62,216,51,215,46,242,58,279,80,314,107,371,161"/>
+<area shape="rect" href="class_game_1_1_component_furniture_inventory.html#a8fe62f60310225647f9e88c11bcf9b1e" title=" " alt="" coords="5,72,241,115"/>
+<area shape="poly" title=" " alt="" coords="335,166,240,129,206,118,205,113,242,124,340,164"/>
+<area shape="rect" href="class_game_1_1_component_inventory_base.html#aa1cceac0bcd2c4dccb6b0c247accbc49" title=" " alt="" coords="15,139,231,181"/>
+<area shape="poly" title=" " alt="" coords="271,179,232,176,231,170,276,177"/>
+<area shape="rect" href="class_game_1_1_component_creative_inventory.html#a674c62b2bdeb43754fe484d9da001484" title=" " alt="" coords="6,205,240,248"/>
+<area shape="poly" title=" " alt="" coords="271,210,241,215,239,210,276,208"/>
+<area shape="rect" href="class_game_1_1_component_furniture_inventory.html#a47772e474d91162cf67a301c683c887f" title=" " alt="" coords="5,272,241,315"/>
+<area shape="poly" title=" " alt="" coords="335,222,242,263,206,274,204,269,240,257,339,220"/>
+<area shape="rect" href="class_game_1_1_component_inventory_base.html#af59bdee00525b33572810da2b3f57dd4" title=" " alt="" coords="15,339,231,381"/>
+<area shape="poly" title=" " alt="" coords="371,225,314,280,279,306,242,329,216,341,214,335,239,324,276,302,310,276,366,227"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a829196aa494cc29f5f46fbc860aeed49" name="a829196aa494cc29f5f46fbc860aeed49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a829196aa494cc29f5f46fbc860aeed49">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Game.SubsystemBlockBehavior.Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a></td>          <td class="paramname"><span class="paramname"><em>valuesDictionary</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_game_entity_system_1_1_subsystem.html#a5d685b5beedc822eeea38c4e1a302e1e">GameEntitySystem.Subsystem</a> .</p>
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_boat_block_behavior.html#ad1330659d7ecc72860dc4b296acf6621">Game.SubsystemBoatBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bomb_block_behavior.html#a64eb55ab42e2fa25ed7d85657a0c664e">Game.SubsystemBombBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bottom_sucker_block_behavior.html#afb4e297371ca15f6feba472c100407d1">Game.SubsystemBottomSuckerBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bow_block_behavior.html#a4e5abc7dfb8bcbc0fb9a4b5c39f10d85">Game.SubsystemBowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bucket_block_behavior.html#aa83438d9be411a42e9ed68eb7ed82e3a">Game.SubsystemBucketBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bullet_block_behavior.html#a4e84ab35ca016e5304daf30780cafb93">Game.SubsystemBulletBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_cactus_block_behavior.html#abcf62b650f2374a3bec21c6053db428a">Game.SubsystemCactusBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html#a8c2e26f64485391abc56aa09d16118aa">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_carpet_block_behavior.html#a41e624340973b6cf669696f3e6f41a17">Game.SubsystemCarpetBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_chest_block_behavior.html#a8f41a3ccd207f7ac3923f30261ca57a8">Game.SubsystemChestBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_collapsing_block_behavior.html#a5b575d2a70ba52fb416c9ba59825e8f9">Game.SubsystemCollapsingBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_crafting_table_block_behavior.html#aaa549ca0d1d22a831a2d83acd706b1d8">Game.SubsystemCraftingTableBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_crossbow_block_behavior.html#a12ddc214be2f636fd0cd69c747b36345">Game.SubsystemCrossbowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_deciduous_leaves_block_behavior.html#a834d3ff462ca4c5d0eb6a750790029dd">Game.SubsystemDeciduousLeavesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_dispenser_block_behavior.html#ab7aeed5bdc3813922d01bf5b76b21f7e">Game.SubsystemDispenserBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_door_block_behavior.html#a493b043ba872ed447bccfc4627108521">Game.SubsystemDoorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_editable_item_behavior-1-g.html#a20d66dba382b6416b4f0326b3d46436d">Game.SubsystemEditableItemBehavior&lt; T &gt;</a>, <a class="el" href="class_game_1_1_subsystem_egg_block_behavior.html#a6bc853e39734da07fa3378e22e85df39">Game.SubsystemEggBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#ac9f885fe386671e3eee1d439dcb978f3">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html#a41797736729b8e6f2b204e6b4baa611c">Game.SubsystemEntityBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_explosives_block_behavior.html#a327b67f7ddf7ebf519d1027c82a75785">Game.SubsystemExplosivesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fallen_leaves_block_behavior.html#a14d9f237d315bc837e50d620e82dfc09">Game.SubsystemFallenLeavesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fence_gate_block_behavior.html#a250a3ffe58d750044cbca341a68f5a49">Game.SubsystemFenceGateBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fertilizer_block_behavior.html#a4d632c64427470b0b89f7dc0c7c26485">Game.SubsystemFertilizerBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fire_block_behavior.html#aeffbc998d6f2fa60ccb16d3a4f2bd43c">Game.SubsystemFireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fireworks_block_behavior.html#a2ed3751bd32d3a3877b08c91782750af">Game.SubsystemFireworksBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fluid_block_behavior.html#aed19e4dc6180b64b8ca4d1deb95f9722">Game.SubsystemFluidBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furnace_block_behavior.html#aa09d06bd86c337dc6a071f153532e6cf">Game.SubsystemFurnaceBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furniture_block_behavior.html#a07c75a7d8bb8632e62275253d7f0f460">Game.SubsystemFurnitureBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_grass_block_behavior.html#a84a83cb1e5b816bde5e6905e24300a9a">Game.SubsystemGrassBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_hammer_block_behavior.html#a0694503cd44e286b0b84c61096c58436">Game.SubsystemHammerBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_impact_explosives_block_behavior.html#a1a3407479257d54d5a52b609fb53aa74">Game.SubsystemImpactExplosivesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_ivy_block_behavior.html#a150ceb42958964abde5eea9e59cd2a8c">Game.SubsystemIvyBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_magma_block_behavior.html#a02b88d45626468655272f83453d75593">Game.SubsystemMagmaBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_magnet_block_behavior.html#a3faeda72488b14dc840a1960e9d2d8e3">Game.SubsystemMagnetBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_match_block_behavior.html#add1b3a371de89cbc5c6a4b559ff150f3">Game.SubsystemMatchBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_meters_block_behavior.html#aeff569121226610f7ae2ac7f78ffe528">Game.SubsystemMetersBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_musket_block_behavior.html#a0861494029bc49d52e20319d002f36b4">Game.SubsystemMusketBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_piston_block_behavior.html#a31d9e1ea1a39da294cc991e61a8fdf09">Game.SubsystemPistonBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_plant_block_behavior.html#ace841065abe98ff3f4893a6b0139f286">Game.SubsystemPlantBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_rake_block_behavior.html#a9c4cb62487f55f001d21e4e2400d896c">Game.SubsystemRakeBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_rot_block_behavior.html#a8adf170503aee4c399368021240576ac">Game.SubsystemRotBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_saddle_block_behavior.html#a87b65bf2d3504aea6f69a643ed44f5f1">Game.SubsystemSaddleBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sapling_block_behavior.html#a97a38d1fcc7ba626008a928f58fa7b17">Game.SubsystemSaplingBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sign_block_behavior.html#a239e3fc35b7db1c4acd81bfc72a1106f">Game.SubsystemSignBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_soil_block_behavior.html#a4f28f3b2ed1fcd43f857cd381cc69576">Game.SubsystemSoilBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_spikes_block_behavior.html#aa9fc565df711f59a3dba2c359c0b3927">Game.SubsystemSpikesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_throwable_block_behavior.html#a626b15421965cab7b87701719cf258e5">Game.SubsystemThrowableBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_torch_block_behavior.html#ad3b21a1e7bfa6fab6faaac4ed6c44eb4">Game.SubsystemTorchBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_trapdoor_block_behavior.html#abe55d445d2ac5a225ac23f0c2ddee7b0">Game.SubsystemTrapdoorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_treasure_generator_block_behavior.html#ac36d76adb20795b2886017b9e5a4f136">Game.SubsystemTreasureGeneratorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_whistle_block_behavior.html#a0346d9cb4564745f31d6f107b21ce433">Game.SubsystemWhistleBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_wood_block_behavior.html#aff5467f1c0ae7538778a2f652d90cc25">Game.SubsystemWoodBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abfbb10470ce73fa41b5f8e6684f5fee5" name="abfbb10470ce73fa41b5f8e6684f5fee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfbb10470ce73fa41b5f8e6684f5fee5">&#9670;&#160;</a></span>OnAim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Game.SubsystemBlockBehavior.OnAim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_ray3.html">Ray3</a></td>          <td class="paramname"><span class="paramname"><em>aim</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_component_miner.html">ComponentMiner</a></td>          <td class="paramname"><span class="paramname"><em>componentMiner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_game.html#a4afc3783b0d5c223eb10256c2a80a586">AimState</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_bow_block_behavior.html#a087533783a4ea4d3fb1de0a2b970292b">Game.SubsystemBowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_crossbow_block_behavior.html#a70754e87fab89e627bb6d7fd46deee53">Game.SubsystemCrossbowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_musket_block_behavior.html#abc1dccabbea68787be3ff02cc33a056f">Game.SubsystemMusketBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_throwable_block_behavior.html#a3a913ffaf8d845fcdd79ff53ef0d12b3">Game.SubsystemThrowableBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a89f5f7bcf4373c999dc16c6f8eaba75a" name="a89f5f7bcf4373c999dc16c6f8eaba75a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f5f7bcf4373c999dc16c6f8eaba75a">&#9670;&#160;</a></span>OnBlockAdded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnBlockAdded </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>oldValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html#af7f17aee2920bbcd7a7cf2175ff82544">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_door_block_behavior.html#a29ccb8711599183e07cf88240b9f49a9">Game.SubsystemDoorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#a3be5ea3869e3b7ca6ece748e6e9ca0ac">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html#aa08ce39a336f46e17e1d462c28df2ee2">Game.SubsystemEntityBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fence_block_behavior.html#aad8476c6813f8ab8568df6003920673b">Game.SubsystemFenceBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fire_block_behavior.html#a1e7c185ae037d450e89a34e4cbc38867">Game.SubsystemFireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fluid_block_behavior.html#ad249eb5911f7b97122b761917ee2c0f5">Game.SubsystemFluidBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furnace_block_behavior.html#afa0e48a6cec929f0d6d7410ddf74bfc0">Game.SubsystemFurnaceBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furniture_block_behavior.html#a8d14f20e88d901dc44d9616b7f0cf0bf">Game.SubsystemFurnitureBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_magma_block_behavior.html#acaf20de87f9765deab17f5064cbc9ab1">Game.SubsystemMagmaBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_magnet_block_behavior.html#a1a1bf6ccd76db07dc2a016fd3f872234">Game.SubsystemMagnetBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_meters_block_behavior.html#a612ecceca065e85daa3b4a1a11f4a851">Game.SubsystemMetersBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sapling_block_behavior.html#a67e464fb23e9063f921339a86f4add2b">Game.SubsystemSaplingBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_stairs_block_behavior.html#a650fcde6bd8c047d2f58b1d0a8371b09">Game.SubsystemStairsBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_torch_block_behavior.html#ad765a262eefba0d28a075bb871631a40">Game.SubsystemTorchBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00017">17</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a89f5f7bcf4373c999dc16c6f8eaba75a_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a89f5f7bcf4373c999dc16c6f8eaba75a_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a89f5f7bcf4373c999dc16c6f8eaba75a_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a89f5f7bcf4373c999dc16c6f8eaba75a_icgraph">
+<area shape="rect" title=" " alt="" coords="1942,672,2156,715"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#acb46c8891dfb0cd698eea535a663359a" title=" " alt="" coords="1417,672,1631,715"/>
+<area shape="poly" title=" " alt="" coords="1924,690,1894,692,1679,692,1632,693,1632,688,1679,687,1894,687,1929,690"/>
+<area shape="rect" href="class_game_1_1_subsystem_block_behavior.html#a29f2caea74923858f38ae865aa0fe8e3" title=" " alt="" coords="1679,701,1894,744"/>
+<area shape="poly" title=" " alt="" coords="1923,707,1894,713,1894,708,1929,707"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a37c89537a0769424261c50445ad62477" title=" " alt="" coords="1132,680,1369,707"/>
+<area shape="poly" title=" " alt="" coords="1398,694,1370,696,1369,691,1404,693"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a0fd8b4427597c7136a8c4e7a0e9507f9" title=" " alt="" coords="550,31,782,89"/>
+<area shape="poly" title=" " alt="" coords="1236,665,1177,537,1133,456,1081,378,1014,288,956,221,890,165,796,104,776,93,775,87,799,99,893,160,960,218,1018,285,1086,374,1138,453,1182,535,1241,667"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589" title=" " alt="" coords="845,388,1084,415"/>
+<area shape="poly" title=" " alt="" coords="1238,664,1217,614,1185,550,1140,484,1113,454,1082,429,1063,418,1062,413,1085,424,1116,450,1144,480,1189,547,1222,612,1242,666"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a082a8398cd992386baafdfeeca166dfb" title=" " alt="" coords="867,439,1062,481"/>
+<area shape="poly" title=" " alt="" coords="1232,666,1208,630,1174,583,1131,536,1082,496,1062,484,1062,479,1085,491,1135,532,1178,579,1212,627,1237,668"/>
+<area shape="rect" href="class_game_1_1_switch_electric_element.html#a260cd1354e76bbc10626b3b2d57e89da" title=" " alt="" coords="866,505,1063,548"/>
+<area shape="poly" title=" " alt="" coords="1222,668,1162,616,1124,587,1082,562,1057,551,1057,546,1085,558,1127,583,1166,612,1228,669"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a6318ecf1dc7a3ec6db248a8df965ed97" title=" " alt="" coords="849,572,1080,615"/>
+<area shape="poly" title=" " alt="" coords="1201,674,1083,629,1047,618,1047,612,1085,624,1207,674"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a4b1d2f0c03bb6b1cb6833d2c414fdec2" title=" " alt="" coords="846,639,1083,681"/>
+<area shape="poly" title=" " alt="" coords="1114,678,1083,676,1083,671,1119,677"/>
+<area shape="rect" href="class_game_1_1_subsystem_rot_block_behavior.html#ad69cd5e6e01c300f56881647d1b0be7a" title=" " alt="" coords="847,705,1082,748"/>
+<area shape="poly" title=" " alt="" coords="1114,710,1083,716,1082,710,1119,708"/>
+<area shape="rect" href="class_game_1_1_terrain_brush.html#a0b0cd7bb9f33050510e2ccb4b9a921ce" title=" " alt="" coords="881,772,1048,799"/>
+<area shape="poly" title=" " alt="" coords="1208,712,1149,740,1084,763,1041,774,1039,769,1083,757,1147,735,1203,714"/>
+<area shape="rect" href="class_game_1_1_light_bulb_electric_element.html#af1045bc931cb0ff70fa2333271c68849" title=" " alt="" coords="859,823,1070,865"/>
+<area shape="poly" title=" " alt="" coords="1225,716,1163,766,1125,791,1085,813,1057,825,1055,819,1083,808,1122,787,1160,762,1220,718"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a37cb84d9e81804c9e4f7f457cbd003bc" title=" " alt="" coords="867,889,1062,932"/>
+<area shape="poly" title=" " alt="" coords="1235,718,1209,757,1175,800,1133,843,1085,880,1062,891,1060,886,1082,875,1129,839,1171,796,1205,754,1230,721"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#a7a7c8585c07b3a900b4874f5f3c7f5d7" title=" " alt="" coords="848,956,1081,999"/>
+<area shape="poly" title=" " alt="" coords="1240,720,1219,771,1186,831,1141,893,1114,922,1085,946,1065,958,1063,953,1082,942,1111,918,1137,890,1181,829,1214,769,1236,723"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a0191a3e83c4cff1955688d108b24b2b6" title=" " alt="" coords="846,1023,1083,1065"/>
+<area shape="poly" title=" " alt="" coords="1244,720,1227,783,1195,862,1174,903,1149,943,1119,980,1085,1013,1067,1025,1065,1020,1082,1009,1115,977,1144,940,1169,900,1190,859,1222,782,1240,724"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#acaf20de87f9765deab17f5064cbc9ab1" title=" " alt="" coords="270,5,472,48"/>
+<area shape="poly" title=" " alt="" coords="532,47,474,41,471,36,536,44"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a66f15d26ccd8d18a9c9bca469431f3b0" title=" " alt="" coords="256,72,486,115"/>
+<area shape="poly" title=" " alt="" coords="532,76,488,83,485,78,536,73"/>
+<area shape="poly" title=" " alt="" coords="941,375,894,310,843,225,830,189,825,159,817,131,795,103,782,92,782,87,799,99,821,129,830,158,835,188,848,223,898,307,946,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#ab84e48e07850852c10ad8c719eaa4658" title=" " alt="" coords="564,113,767,156"/>
+<area shape="poly" title=" " alt="" coords="943,375,863,257,822,200,796,170,768,155,767,150,799,166,826,197,867,254,949,375"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_block_behavior.html#af4f48c24242efc678e9ac4a9caa545e9" title=" " alt="" coords="569,180,762,223"/>
+<area shape="poly" title=" " alt="" coords="942,375,883,307,842,269,796,237,763,222,762,217,799,232,845,265,887,303,947,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_bottom_sucker_block_behavior.html#ab1e977e27670b31a239ce335d7ff7e84" title=" " alt="" coords="534,247,797,289"/>
+<area shape="poly" title=" " alt="" coords="929,379,870,342,796,304,766,293,765,287,798,299,873,337,935,379"/>
+<area shape="rect" href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e" title=" " alt="" coords="550,313,781,356"/>
+<area shape="poly" title=" " alt="" coords="884,385,765,359,764,354,889,383"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#ace3f0b73c16a6b5c16b4d478dc77cd8e" title=" " alt="" coords="550,380,781,423"/>
+<area shape="poly" title=" " alt="" coords="827,402,782,404,780,399,832,400"/>
+<area shape="rect" href="class_game_1_1_subsystem_fallen_leaves_block_behavior.html#a97d5e9a4e8880956274fcc8ea2b5ecf4" title=" " alt="" coords="534,447,797,489"/>
+<area shape="poly" title=" " alt="" coords="881,420,846,429,762,448,759,444,845,424,885,417"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#afaae64c6eebd42339912f2b0d7f6c67f" title=" " alt="" coords="550,513,782,556"/>
+<area shape="poly" title=" " alt="" coords="851,423,847,429,831,446,824,465,816,484,799,503,779,515,776,511,796,499,811,482,819,463,826,443,844,425,855,420"/>
+<area shape="rect" href="class_game_1_1_subsystem_plant_block_behavior.html#a17c18428b3a658156fff8eff5d4d75f2" title="该方法进行封装，不再允许覆盖 添加新的放置植物的逻辑： 如果是添加新植物，则建议自己添加新的ModPlantBlockBehavior，只负责属于自己模组的植物的生长 如果是添加新的能种植植物的土质（如..." alt="" coords="550,580,781,623"/>
+<area shape="poly" title=" " alt="" coords="852,421,847,429,833,445,826,462,824,497,821,534,814,552,799,570,782,582,779,578,795,566,809,549,816,533,818,497,821,460,829,442,843,425,848,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_plant_block_behavior.html#ac5b9d44b87f903116831fbe854030052" title=" " alt="" coords="560,647,771,705"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,829,453,821,478,820,503,823,529,826,556,825,583,818,610,799,636,773,656,770,652,795,633,813,607,820,582,820,556,817,530,815,503,816,477,824,451,843,425,846,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#af638bada10ac8ae36df1a2989d8a0b96" title=" " alt="" coords="566,729,765,772"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,823,463,815,499,816,535,823,571,830,608,832,645,824,682,799,719,784,732,766,741,764,737,781,728,795,716,819,680,827,644,825,608,818,572,811,535,810,498,819,461,843,425,846,426"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#a298ecf1b9ea2cff52c416e258c01daed" title=" " alt="" coords="564,796,767,839"/>
+<area shape="poly" title=" " alt="" coords="863,797,768,809,767,804,868,795"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#aea5916e87edb88355776d4299e52cc7a" title=" " alt="" coords="270,796,472,839"/>
+<area shape="poly" title=" " alt="" coords="546,818,473,820,472,815,552,817"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#abf90a199409a8dab9f9649997fdf2fc8" title=" " alt="" coords="5,796,208,839"/>
+<area shape="poly" title=" " alt="" coords="252,819,209,820,207,815,256,816"/>
+<area shape="poly" title=" " alt="" coords="1661,709,1632,708,1632,703,1666,709"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a429cac38b10d1acd8326ec327a9293a5" name="a429cac38b10d1acd8326ec327a9293a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429cac38b10d1acd8326ec327a9293a5">&#9670;&#160;</a></span>OnBlockGenerated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnBlockGenerated </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isLoaded</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html#a872aa2d78de0f2c749af44d3a9db16c3">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_deciduous_leaves_block_behavior.html#aecd0e70f9a5597ed2f6bf00e243e8de8">Game.SubsystemDeciduousLeavesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#a0b4a6cc87f29b15388631fe2aa506970">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fallen_leaves_block_behavior.html#aada48cc3c09c0617cc2f646cd43c7c79">Game.SubsystemFallenLeavesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fire_block_behavior.html#a8809dcb5c57d53953c44a88eb25d3130">Game.SubsystemFireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furnace_block_behavior.html#aca1e1689812b53ac86b3a3aa7b2ec111">Game.SubsystemFurnaceBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furniture_block_behavior.html#a0a59f83b1ed7e686d007f423c025743d">Game.SubsystemFurnitureBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_meters_block_behavior.html#aca5dfe40363ee79b21cb28e1e8ab4fe7">Game.SubsystemMetersBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_plant_block_behavior.html#ae1ce1bcd5a313dcd50908859280a958b">Game.SubsystemPlantBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_stairs_block_behavior.html#affd75f68ae759cbc6005bf6d6eed1cd1">Game.SubsystemStairsBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_torch_block_behavior.html#af7ff021b51d04fa953d527dee1af75dc">Game.SubsystemTorchBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00015">15</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a429cac38b10d1acd8326ec327a9293a5_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a429cac38b10d1acd8326ec327a9293a5_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a429cac38b10d1acd8326ec327a9293a5_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a429cac38b10d1acd8326ec327a9293a5_icgraph">
+<area shape="rect" title=" " alt="" coords="477,5,691,48"/>
+<area shape="rect" href="class_game_1_1_terrain_updater.html#a67751eb407114da2e1caa0e4b8530eaa" title=" " alt="" coords="245,5,429,48"/>
+<area shape="poly" title=" " alt="" coords="459,27,429,29,429,24,464,27"/>
+<area shape="rect" href="class_game_1_1_terrain_updater.html#a6e86c6d3ab0988d386bcd267d53cb4dc" title=" " alt="" coords="5,13,197,40"/>
+<area shape="poly" title=" " alt="" coords="226,27,197,29,197,24,232,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8a8166ef989effac8a73cb7e190e14c2" name="a8a8166ef989effac8a73cb7e190e14c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a8166ef989effac8a73cb7e190e14c2">&#9670;&#160;</a></span>OnBlockModified()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnBlockModified </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>oldValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html#affe72b0c927485914183cc977f84e47c">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#a57bef215632873477aefff2e96313dd2">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fluid_block_behavior.html#af3e5e91aeb45409b5448e15d122f418b">Game.SubsystemFluidBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furniture_block_behavior.html#a9b17d78c860349c86cefe43e0b71f49c">Game.SubsystemFurnitureBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_meters_block_behavior.html#afd629ed489730f3e9b60ef03bb16b42d">Game.SubsystemMetersBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_torch_block_behavior.html#acfec009bcc0f4cba45d25bcd0d1244d4">Game.SubsystemTorchBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00021">21</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a8a8166ef989effac8a73cb7e190e14c2_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a8a8166ef989effac8a73cb7e190e14c2_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a8a8166ef989effac8a73cb7e190e14c2_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a8a8166ef989effac8a73cb7e190e14c2_icgraph">
+<area shape="rect" title=" " alt="" coords="1679,672,1894,715"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#acb46c8891dfb0cd698eea535a663359a" title=" " alt="" coords="1417,672,1631,715"/>
+<area shape="poly" title=" " alt="" coords="1661,694,1632,696,1631,691,1666,693"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a37c89537a0769424261c50445ad62477" title=" " alt="" coords="1132,680,1369,707"/>
+<area shape="poly" title=" " alt="" coords="1398,694,1370,696,1369,691,1404,693"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a0fd8b4427597c7136a8c4e7a0e9507f9" title=" " alt="" coords="550,31,782,89"/>
+<area shape="poly" title=" " alt="" coords="1236,665,1177,537,1133,456,1081,378,1014,288,956,221,890,165,796,104,776,93,775,87,799,99,893,160,960,218,1018,285,1086,374,1138,453,1182,535,1241,667"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589" title=" " alt="" coords="845,388,1084,415"/>
+<area shape="poly" title=" " alt="" coords="1238,664,1217,614,1185,550,1140,484,1113,454,1082,429,1063,418,1062,413,1085,424,1116,450,1144,480,1189,547,1222,612,1242,666"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a082a8398cd992386baafdfeeca166dfb" title=" " alt="" coords="867,439,1062,481"/>
+<area shape="poly" title=" " alt="" coords="1232,666,1208,630,1174,583,1131,536,1082,496,1062,484,1062,479,1085,491,1135,532,1178,579,1212,627,1237,668"/>
+<area shape="rect" href="class_game_1_1_switch_electric_element.html#a260cd1354e76bbc10626b3b2d57e89da" title=" " alt="" coords="866,505,1063,548"/>
+<area shape="poly" title=" " alt="" coords="1222,668,1162,616,1124,587,1082,562,1057,551,1057,546,1085,558,1127,583,1166,612,1228,669"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a6318ecf1dc7a3ec6db248a8df965ed97" title=" " alt="" coords="849,572,1080,615"/>
+<area shape="poly" title=" " alt="" coords="1201,674,1083,629,1047,618,1047,612,1085,624,1207,674"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a4b1d2f0c03bb6b1cb6833d2c414fdec2" title=" " alt="" coords="846,639,1083,681"/>
+<area shape="poly" title=" " alt="" coords="1114,678,1083,676,1083,671,1119,677"/>
+<area shape="rect" href="class_game_1_1_subsystem_rot_block_behavior.html#ad69cd5e6e01c300f56881647d1b0be7a" title=" " alt="" coords="847,705,1082,748"/>
+<area shape="poly" title=" " alt="" coords="1114,710,1083,716,1082,710,1119,708"/>
+<area shape="rect" href="class_game_1_1_terrain_brush.html#a0b0cd7bb9f33050510e2ccb4b9a921ce" title=" " alt="" coords="881,772,1048,799"/>
+<area shape="poly" title=" " alt="" coords="1208,712,1149,740,1084,763,1041,774,1039,769,1083,757,1147,735,1203,714"/>
+<area shape="rect" href="class_game_1_1_light_bulb_electric_element.html#af1045bc931cb0ff70fa2333271c68849" title=" " alt="" coords="859,823,1070,865"/>
+<area shape="poly" title=" " alt="" coords="1225,716,1163,766,1125,791,1085,813,1057,825,1055,819,1083,808,1122,787,1160,762,1220,718"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a37cb84d9e81804c9e4f7f457cbd003bc" title=" " alt="" coords="867,889,1062,932"/>
+<area shape="poly" title=" " alt="" coords="1235,718,1209,757,1175,800,1133,843,1085,880,1062,891,1060,886,1082,875,1129,839,1171,796,1205,754,1230,721"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#a7a7c8585c07b3a900b4874f5f3c7f5d7" title=" " alt="" coords="848,956,1081,999"/>
+<area shape="poly" title=" " alt="" coords="1240,720,1219,771,1186,831,1141,893,1114,922,1085,946,1065,958,1063,953,1082,942,1111,918,1137,890,1181,829,1214,769,1236,723"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a0191a3e83c4cff1955688d108b24b2b6" title=" " alt="" coords="846,1023,1083,1065"/>
+<area shape="poly" title=" " alt="" coords="1244,720,1227,783,1195,862,1174,903,1149,943,1119,980,1085,1013,1067,1025,1065,1020,1082,1009,1115,977,1144,940,1169,900,1190,859,1222,782,1240,724"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#acaf20de87f9765deab17f5064cbc9ab1" title=" " alt="" coords="270,5,472,48"/>
+<area shape="poly" title=" " alt="" coords="532,47,474,41,471,36,536,44"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a66f15d26ccd8d18a9c9bca469431f3b0" title=" " alt="" coords="256,72,486,115"/>
+<area shape="poly" title=" " alt="" coords="532,76,488,83,485,78,536,73"/>
+<area shape="poly" title=" " alt="" coords="941,375,894,310,843,225,830,189,825,159,817,131,795,103,782,92,782,87,799,99,821,129,830,158,835,188,848,223,898,307,946,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#ab84e48e07850852c10ad8c719eaa4658" title=" " alt="" coords="564,113,767,156"/>
+<area shape="poly" title=" " alt="" coords="943,375,863,257,822,200,796,170,768,155,767,150,799,166,826,197,867,254,949,375"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_block_behavior.html#af4f48c24242efc678e9ac4a9caa545e9" title=" " alt="" coords="569,180,762,223"/>
+<area shape="poly" title=" " alt="" coords="942,375,883,307,842,269,796,237,763,222,762,217,799,232,845,265,887,303,947,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_bottom_sucker_block_behavior.html#ab1e977e27670b31a239ce335d7ff7e84" title=" " alt="" coords="534,247,797,289"/>
+<area shape="poly" title=" " alt="" coords="929,379,870,342,796,304,766,293,765,287,798,299,873,337,935,379"/>
+<area shape="rect" href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e" title=" " alt="" coords="550,313,781,356"/>
+<area shape="poly" title=" " alt="" coords="884,385,765,359,764,354,889,383"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#ace3f0b73c16a6b5c16b4d478dc77cd8e" title=" " alt="" coords="550,380,781,423"/>
+<area shape="poly" title=" " alt="" coords="827,402,782,404,780,399,832,400"/>
+<area shape="rect" href="class_game_1_1_subsystem_fallen_leaves_block_behavior.html#a97d5e9a4e8880956274fcc8ea2b5ecf4" title=" " alt="" coords="534,447,797,489"/>
+<area shape="poly" title=" " alt="" coords="881,420,846,429,762,448,759,444,845,424,885,417"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#afaae64c6eebd42339912f2b0d7f6c67f" title=" " alt="" coords="550,513,782,556"/>
+<area shape="poly" title=" " alt="" coords="851,423,847,429,831,446,824,465,816,484,799,503,779,515,776,511,796,499,811,482,819,463,826,443,844,425,855,420"/>
+<area shape="rect" href="class_game_1_1_subsystem_plant_block_behavior.html#a17c18428b3a658156fff8eff5d4d75f2" title="该方法进行封装，不再允许覆盖 添加新的放置植物的逻辑： 如果是添加新植物，则建议自己添加新的ModPlantBlockBehavior，只负责属于自己模组的植物的生长 如果是添加新的能种植植物的土质（如..." alt="" coords="550,580,781,623"/>
+<area shape="poly" title=" " alt="" coords="852,421,847,429,833,445,826,462,824,497,821,534,814,552,799,570,782,582,779,578,795,566,809,549,816,533,818,497,821,460,829,442,843,425,848,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_plant_block_behavior.html#ac5b9d44b87f903116831fbe854030052" title=" " alt="" coords="560,647,771,705"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,829,453,821,478,820,503,823,529,826,556,825,583,818,610,799,636,773,656,770,652,795,633,813,607,820,582,820,556,817,530,815,503,816,477,824,451,843,425,846,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#af638bada10ac8ae36df1a2989d8a0b96" title=" " alt="" coords="566,729,765,772"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,823,463,815,499,816,535,823,571,830,608,832,645,824,682,799,719,784,732,766,741,764,737,781,728,795,716,819,680,827,644,825,608,818,572,811,535,810,498,819,461,843,425,846,426"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#a298ecf1b9ea2cff52c416e258c01daed" title=" " alt="" coords="564,796,767,839"/>
+<area shape="poly" title=" " alt="" coords="863,797,768,809,767,804,868,795"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#aea5916e87edb88355776d4299e52cc7a" title=" " alt="" coords="270,796,472,839"/>
+<area shape="poly" title=" " alt="" coords="546,818,473,820,472,815,552,817"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#abf90a199409a8dab9f9649997fdf2fc8" title=" " alt="" coords="5,796,208,839"/>
+<area shape="poly" title=" " alt="" coords="252,819,209,820,207,815,256,816"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac4262491adf4a984d12f6175df146cbc" name="ac4262491adf4a984d12f6175df146cbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4262491adf4a984d12f6175df146cbc">&#9670;&#160;</a></span>OnBlockRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnBlockRemoved </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html#aa26487cbb6c9c15ae6125289aa077031">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_door_block_behavior.html#a1662a5f32d7a27ecab3b71d137adcd87">Game.SubsystemDoorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_editable_item_behavior-1-g.html#a71c87414e2d1cc32ce498091f71fd730">Game.SubsystemEditableItemBehavior&lt; T &gt;</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#ad84e71c815c59a883451ab7cf5e3c092">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html#aad340fd5fd8c39acbdfc25ebd671af38">Game.SubsystemEntityBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_explosives_block_behavior.html#a8ca14387d8011609bd8947366f30c0fc">Game.SubsystemExplosivesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fire_block_behavior.html#a20c773f9f84dfcacfd8fc8146a39fcdd">Game.SubsystemFireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furnace_block_behavior.html#aa8f29e0187526182c4c990a1281081c4">Game.SubsystemFurnaceBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furniture_block_behavior.html#a642dc52d447e6a1571091be83e3622a5">Game.SubsystemFurnitureBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_magnet_block_behavior.html#ae0bf67d08a9ce852198a6d895b481ebb">Game.SubsystemMagnetBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_meters_block_behavior.html#a2d1c9a524cd94c5efbc4b92c04741803">Game.SubsystemMetersBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_piston_block_behavior.html#aa26ff123549763ba067e02e7d349a592">Game.SubsystemPistonBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sapling_block_behavior.html#a999e47fd94d8313a27e49b69660abaaa">Game.SubsystemSaplingBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sign_block_behavior.html#aa53e46878839e1b2a5bf3797b5a96e3b">Game.SubsystemSignBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_torch_block_behavior.html#ac8ac5adfacc4fd1e3eeed0eab0137a24">Game.SubsystemTorchBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_wood_block_behavior.html#a71238272ca8f0c9f4a18bea08c4f4513">Game.SubsystemWoodBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00019">19</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_ac4262491adf4a984d12f6175df146cbc_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_ac4262491adf4a984d12f6175df146cbc_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_ac4262491adf4a984d12f6175df146cbc_icgraph" id="aclass_game_1_1_subsystem_block_behavior_ac4262491adf4a984d12f6175df146cbc_icgraph">
+<area shape="rect" title=" " alt="" coords="1942,672,2156,715"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#acb46c8891dfb0cd698eea535a663359a" title=" " alt="" coords="1417,672,1631,715"/>
+<area shape="poly" title=" " alt="" coords="1924,690,1894,692,1679,692,1632,693,1632,688,1679,687,1894,687,1929,690"/>
+<area shape="rect" href="class_game_1_1_subsystem_block_behavior.html#aec47bf39914261b71659fcc73e4cdd72" title=" " alt="" coords="1679,701,1894,744"/>
+<area shape="poly" title=" " alt="" coords="1923,707,1894,713,1894,708,1929,707"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a37c89537a0769424261c50445ad62477" title=" " alt="" coords="1132,680,1369,707"/>
+<area shape="poly" title=" " alt="" coords="1398,694,1370,696,1369,691,1404,693"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a0fd8b4427597c7136a8c4e7a0e9507f9" title=" " alt="" coords="550,31,782,89"/>
+<area shape="poly" title=" " alt="" coords="1236,665,1177,537,1133,456,1081,378,1014,288,956,221,890,165,796,104,776,93,775,87,799,99,893,160,960,218,1018,285,1086,374,1138,453,1182,535,1241,667"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589" title=" " alt="" coords="845,388,1084,415"/>
+<area shape="poly" title=" " alt="" coords="1238,664,1217,614,1185,550,1140,484,1113,454,1082,429,1063,418,1062,413,1085,424,1116,450,1144,480,1189,547,1222,612,1242,666"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a082a8398cd992386baafdfeeca166dfb" title=" " alt="" coords="867,439,1062,481"/>
+<area shape="poly" title=" " alt="" coords="1232,666,1208,630,1174,583,1131,536,1082,496,1062,484,1062,479,1085,491,1135,532,1178,579,1212,627,1237,668"/>
+<area shape="rect" href="class_game_1_1_switch_electric_element.html#a260cd1354e76bbc10626b3b2d57e89da" title=" " alt="" coords="866,505,1063,548"/>
+<area shape="poly" title=" " alt="" coords="1222,668,1162,616,1124,587,1082,562,1057,551,1057,546,1085,558,1127,583,1166,612,1228,669"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a6318ecf1dc7a3ec6db248a8df965ed97" title=" " alt="" coords="849,572,1080,615"/>
+<area shape="poly" title=" " alt="" coords="1201,674,1083,629,1047,618,1047,612,1085,624,1207,674"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a4b1d2f0c03bb6b1cb6833d2c414fdec2" title=" " alt="" coords="846,639,1083,681"/>
+<area shape="poly" title=" " alt="" coords="1114,678,1083,676,1083,671,1119,677"/>
+<area shape="rect" href="class_game_1_1_subsystem_rot_block_behavior.html#ad69cd5e6e01c300f56881647d1b0be7a" title=" " alt="" coords="847,705,1082,748"/>
+<area shape="poly" title=" " alt="" coords="1114,710,1083,716,1082,710,1119,708"/>
+<area shape="rect" href="class_game_1_1_terrain_brush.html#a0b0cd7bb9f33050510e2ccb4b9a921ce" title=" " alt="" coords="881,772,1048,799"/>
+<area shape="poly" title=" " alt="" coords="1208,712,1149,740,1084,763,1041,774,1039,769,1083,757,1147,735,1203,714"/>
+<area shape="rect" href="class_game_1_1_light_bulb_electric_element.html#af1045bc931cb0ff70fa2333271c68849" title=" " alt="" coords="859,823,1070,865"/>
+<area shape="poly" title=" " alt="" coords="1225,716,1163,766,1125,791,1085,813,1057,825,1055,819,1083,808,1122,787,1160,762,1220,718"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a37cb84d9e81804c9e4f7f457cbd003bc" title=" " alt="" coords="867,889,1062,932"/>
+<area shape="poly" title=" " alt="" coords="1235,718,1209,757,1175,800,1133,843,1085,880,1062,891,1060,886,1082,875,1129,839,1171,796,1205,754,1230,721"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#a7a7c8585c07b3a900b4874f5f3c7f5d7" title=" " alt="" coords="848,956,1081,999"/>
+<area shape="poly" title=" " alt="" coords="1240,720,1219,771,1186,831,1141,893,1114,922,1085,946,1065,958,1063,953,1082,942,1111,918,1137,890,1181,829,1214,769,1236,723"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a0191a3e83c4cff1955688d108b24b2b6" title=" " alt="" coords="846,1023,1083,1065"/>
+<area shape="poly" title=" " alt="" coords="1244,720,1227,783,1195,862,1174,903,1149,943,1119,980,1085,1013,1067,1025,1065,1020,1082,1009,1115,977,1144,940,1169,900,1190,859,1222,782,1240,724"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#acaf20de87f9765deab17f5064cbc9ab1" title=" " alt="" coords="270,5,472,48"/>
+<area shape="poly" title=" " alt="" coords="532,47,474,41,471,36,536,44"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a66f15d26ccd8d18a9c9bca469431f3b0" title=" " alt="" coords="256,72,486,115"/>
+<area shape="poly" title=" " alt="" coords="532,76,488,83,485,78,536,73"/>
+<area shape="poly" title=" " alt="" coords="941,375,894,310,843,225,830,189,825,159,817,131,795,103,782,92,782,87,799,99,821,129,830,158,835,188,848,223,898,307,946,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#ab84e48e07850852c10ad8c719eaa4658" title=" " alt="" coords="564,113,767,156"/>
+<area shape="poly" title=" " alt="" coords="943,375,863,257,822,200,796,170,768,155,767,150,799,166,826,197,867,254,949,375"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_block_behavior.html#af4f48c24242efc678e9ac4a9caa545e9" title=" " alt="" coords="569,180,762,223"/>
+<area shape="poly" title=" " alt="" coords="942,375,883,307,842,269,796,237,763,222,762,217,799,232,845,265,887,303,947,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_bottom_sucker_block_behavior.html#ab1e977e27670b31a239ce335d7ff7e84" title=" " alt="" coords="534,247,797,289"/>
+<area shape="poly" title=" " alt="" coords="929,379,870,342,796,304,766,293,765,287,798,299,873,337,935,379"/>
+<area shape="rect" href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e" title=" " alt="" coords="550,313,781,356"/>
+<area shape="poly" title=" " alt="" coords="884,385,765,359,764,354,889,383"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#ace3f0b73c16a6b5c16b4d478dc77cd8e" title=" " alt="" coords="550,380,781,423"/>
+<area shape="poly" title=" " alt="" coords="827,402,782,404,780,399,832,400"/>
+<area shape="rect" href="class_game_1_1_subsystem_fallen_leaves_block_behavior.html#a97d5e9a4e8880956274fcc8ea2b5ecf4" title=" " alt="" coords="534,447,797,489"/>
+<area shape="poly" title=" " alt="" coords="881,420,846,429,762,448,759,444,845,424,885,417"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#afaae64c6eebd42339912f2b0d7f6c67f" title=" " alt="" coords="550,513,782,556"/>
+<area shape="poly" title=" " alt="" coords="851,423,847,429,831,446,824,465,816,484,799,503,779,515,776,511,796,499,811,482,819,463,826,443,844,425,855,420"/>
+<area shape="rect" href="class_game_1_1_subsystem_plant_block_behavior.html#a17c18428b3a658156fff8eff5d4d75f2" title="该方法进行封装，不再允许覆盖 添加新的放置植物的逻辑： 如果是添加新植物，则建议自己添加新的ModPlantBlockBehavior，只负责属于自己模组的植物的生长 如果是添加新的能种植植物的土质（如..." alt="" coords="550,580,781,623"/>
+<area shape="poly" title=" " alt="" coords="852,421,847,429,833,445,826,462,824,497,821,534,814,552,799,570,782,582,779,578,795,566,809,549,816,533,818,497,821,460,829,442,843,425,848,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_plant_block_behavior.html#ac5b9d44b87f903116831fbe854030052" title=" " alt="" coords="560,647,771,705"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,829,453,821,478,820,503,823,529,826,556,825,583,818,610,799,636,773,656,770,652,795,633,813,607,820,582,820,556,817,530,815,503,816,477,824,451,843,425,846,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#af638bada10ac8ae36df1a2989d8a0b96" title=" " alt="" coords="566,729,765,772"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,823,463,815,499,816,535,823,571,830,608,832,645,824,682,799,719,784,732,766,741,764,737,781,728,795,716,819,680,827,644,825,608,818,572,811,535,810,498,819,461,843,425,846,426"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#a298ecf1b9ea2cff52c416e258c01daed" title=" " alt="" coords="564,796,767,839"/>
+<area shape="poly" title=" " alt="" coords="863,797,768,809,767,804,868,795"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#aea5916e87edb88355776d4299e52cc7a" title=" " alt="" coords="270,796,472,839"/>
+<area shape="poly" title=" " alt="" coords="546,818,473,820,472,815,552,817"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#abf90a199409a8dab9f9649997fdf2fc8" title=" " alt="" coords="5,796,208,839"/>
+<area shape="poly" title=" " alt="" coords="252,819,209,820,207,815,256,816"/>
+<area shape="poly" title=" " alt="" coords="1661,709,1632,708,1632,703,1666,709"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec47bf39914261b71659fcc73e4cdd72" name="aec47bf39914261b71659fcc73e4cdd72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec47bf39914261b71659fcc73e4cdd72">&#9670;&#160;</a></span>OnBlockStartMoving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnBlockStartMoving </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_moving_block.html">MovingBlock</a></td>          <td class="paramname"><span class="paramname"><em>movingBlock</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_editable_item_behavior-1-g.html#a0199a7e58250eeb5d830b89c8b6530dd">Game.SubsystemEditableItemBehavior&lt; T &gt;</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#a6fd2fd775f7e31ed49ea7d6c3606cb4a">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html#a2fe8ae48030122670b151d457c661ab9">Game.SubsystemEntityBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_sign_block_behavior.html#aa83e75aae581b4c0868bd8562fb8d38a">Game.SubsystemSignBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00023">23</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_aec47bf39914261b71659fcc73e4cdd72_cgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_aec47bf39914261b71659fcc73e4cdd72_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_aec47bf39914261b71659fcc73e4cdd72_cgraph" id="aclass_game_1_1_subsystem_block_behavior_aec47bf39914261b71659fcc73e4cdd72_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,220,48"/>
+<area shape="rect" href="class_game_1_1_subsystem_block_behavior.html#ac4262491adf4a984d12f6175df146cbc" title=" " alt="" coords="268,5,482,48"/>
+<area shape="poly" title=" " alt="" coords="220,24,255,27,250,27,220,29"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_aec47bf39914261b71659fcc73e4cdd72_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_aec47bf39914261b71659fcc73e4cdd72_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_aec47bf39914261b71659fcc73e4cdd72_icgraph" id="aclass_game_1_1_subsystem_block_behavior_aec47bf39914261b71659fcc73e4cdd72_icgraph">
+<area shape="rect" title=" " alt="" coords="1679,672,1894,715"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#acb46c8891dfb0cd698eea535a663359a" title=" " alt="" coords="1417,672,1631,715"/>
+<area shape="poly" title=" " alt="" coords="1661,694,1632,696,1631,691,1666,693"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a37c89537a0769424261c50445ad62477" title=" " alt="" coords="1132,680,1369,707"/>
+<area shape="poly" title=" " alt="" coords="1398,694,1370,696,1369,691,1404,693"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a0fd8b4427597c7136a8c4e7a0e9507f9" title=" " alt="" coords="550,31,782,89"/>
+<area shape="poly" title=" " alt="" coords="1236,665,1177,537,1133,456,1081,378,1014,288,956,221,890,165,796,104,776,93,775,87,799,99,893,160,960,218,1018,285,1086,374,1138,453,1182,535,1241,667"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589" title=" " alt="" coords="845,388,1084,415"/>
+<area shape="poly" title=" " alt="" coords="1238,664,1217,614,1185,550,1140,484,1113,454,1082,429,1063,418,1062,413,1085,424,1116,450,1144,480,1189,547,1222,612,1242,666"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a082a8398cd992386baafdfeeca166dfb" title=" " alt="" coords="867,439,1062,481"/>
+<area shape="poly" title=" " alt="" coords="1232,666,1208,630,1174,583,1131,536,1082,496,1062,484,1062,479,1085,491,1135,532,1178,579,1212,627,1237,668"/>
+<area shape="rect" href="class_game_1_1_switch_electric_element.html#a260cd1354e76bbc10626b3b2d57e89da" title=" " alt="" coords="866,505,1063,548"/>
+<area shape="poly" title=" " alt="" coords="1222,668,1162,616,1124,587,1082,562,1057,551,1057,546,1085,558,1127,583,1166,612,1228,669"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a6318ecf1dc7a3ec6db248a8df965ed97" title=" " alt="" coords="849,572,1080,615"/>
+<area shape="poly" title=" " alt="" coords="1201,674,1083,629,1047,618,1047,612,1085,624,1207,674"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a4b1d2f0c03bb6b1cb6833d2c414fdec2" title=" " alt="" coords="846,639,1083,681"/>
+<area shape="poly" title=" " alt="" coords="1114,678,1083,676,1083,671,1119,677"/>
+<area shape="rect" href="class_game_1_1_subsystem_rot_block_behavior.html#ad69cd5e6e01c300f56881647d1b0be7a" title=" " alt="" coords="847,705,1082,748"/>
+<area shape="poly" title=" " alt="" coords="1114,710,1083,716,1082,710,1119,708"/>
+<area shape="rect" href="class_game_1_1_terrain_brush.html#a0b0cd7bb9f33050510e2ccb4b9a921ce" title=" " alt="" coords="881,772,1048,799"/>
+<area shape="poly" title=" " alt="" coords="1208,712,1149,740,1084,763,1041,774,1039,769,1083,757,1147,735,1203,714"/>
+<area shape="rect" href="class_game_1_1_light_bulb_electric_element.html#af1045bc931cb0ff70fa2333271c68849" title=" " alt="" coords="859,823,1070,865"/>
+<area shape="poly" title=" " alt="" coords="1225,716,1163,766,1125,791,1085,813,1057,825,1055,819,1083,808,1122,787,1160,762,1220,718"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a37cb84d9e81804c9e4f7f457cbd003bc" title=" " alt="" coords="867,889,1062,932"/>
+<area shape="poly" title=" " alt="" coords="1235,718,1209,757,1175,800,1133,843,1085,880,1062,891,1060,886,1082,875,1129,839,1171,796,1205,754,1230,721"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#a7a7c8585c07b3a900b4874f5f3c7f5d7" title=" " alt="" coords="848,956,1081,999"/>
+<area shape="poly" title=" " alt="" coords="1240,720,1219,771,1186,831,1141,893,1114,922,1085,946,1065,958,1063,953,1082,942,1111,918,1137,890,1181,829,1214,769,1236,723"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a0191a3e83c4cff1955688d108b24b2b6" title=" " alt="" coords="846,1023,1083,1065"/>
+<area shape="poly" title=" " alt="" coords="1244,720,1227,783,1195,862,1174,903,1149,943,1119,980,1085,1013,1067,1025,1065,1020,1082,1009,1115,977,1144,940,1169,900,1190,859,1222,782,1240,724"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#acaf20de87f9765deab17f5064cbc9ab1" title=" " alt="" coords="270,5,472,48"/>
+<area shape="poly" title=" " alt="" coords="532,47,474,41,471,36,536,44"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a66f15d26ccd8d18a9c9bca469431f3b0" title=" " alt="" coords="256,72,486,115"/>
+<area shape="poly" title=" " alt="" coords="532,76,488,83,485,78,536,73"/>
+<area shape="poly" title=" " alt="" coords="941,375,894,310,843,225,830,189,825,159,817,131,795,103,782,92,782,87,799,99,821,129,830,158,835,188,848,223,898,307,946,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#ab84e48e07850852c10ad8c719eaa4658" title=" " alt="" coords="564,113,767,156"/>
+<area shape="poly" title=" " alt="" coords="943,375,863,257,822,200,796,170,768,155,767,150,799,166,826,197,867,254,949,375"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_block_behavior.html#af4f48c24242efc678e9ac4a9caa545e9" title=" " alt="" coords="569,180,762,223"/>
+<area shape="poly" title=" " alt="" coords="942,375,883,307,842,269,796,237,763,222,762,217,799,232,845,265,887,303,947,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_bottom_sucker_block_behavior.html#ab1e977e27670b31a239ce335d7ff7e84" title=" " alt="" coords="534,247,797,289"/>
+<area shape="poly" title=" " alt="" coords="929,379,870,342,796,304,766,293,765,287,798,299,873,337,935,379"/>
+<area shape="rect" href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e" title=" " alt="" coords="550,313,781,356"/>
+<area shape="poly" title=" " alt="" coords="884,385,765,359,764,354,889,383"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#ace3f0b73c16a6b5c16b4d478dc77cd8e" title=" " alt="" coords="550,380,781,423"/>
+<area shape="poly" title=" " alt="" coords="827,402,782,404,780,399,832,400"/>
+<area shape="rect" href="class_game_1_1_subsystem_fallen_leaves_block_behavior.html#a97d5e9a4e8880956274fcc8ea2b5ecf4" title=" " alt="" coords="534,447,797,489"/>
+<area shape="poly" title=" " alt="" coords="881,420,846,429,762,448,759,444,845,424,885,417"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#afaae64c6eebd42339912f2b0d7f6c67f" title=" " alt="" coords="550,513,782,556"/>
+<area shape="poly" title=" " alt="" coords="851,423,847,429,831,446,824,465,816,484,799,503,779,515,776,511,796,499,811,482,819,463,826,443,844,425,855,420"/>
+<area shape="rect" href="class_game_1_1_subsystem_plant_block_behavior.html#a17c18428b3a658156fff8eff5d4d75f2" title="该方法进行封装，不再允许覆盖 添加新的放置植物的逻辑： 如果是添加新植物，则建议自己添加新的ModPlantBlockBehavior，只负责属于自己模组的植物的生长 如果是添加新的能种植植物的土质（如..." alt="" coords="550,580,781,623"/>
+<area shape="poly" title=" " alt="" coords="852,421,847,429,833,445,826,462,824,497,821,534,814,552,799,570,782,582,779,578,795,566,809,549,816,533,818,497,821,460,829,442,843,425,848,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_plant_block_behavior.html#ac5b9d44b87f903116831fbe854030052" title=" " alt="" coords="560,647,771,705"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,829,453,821,478,820,503,823,529,826,556,825,583,818,610,799,636,773,656,770,652,795,633,813,607,820,582,820,556,817,530,815,503,816,477,824,451,843,425,846,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#af638bada10ac8ae36df1a2989d8a0b96" title=" " alt="" coords="566,729,765,772"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,823,463,815,499,816,535,823,571,830,608,832,645,824,682,799,719,784,732,766,741,764,737,781,728,795,716,819,680,827,644,825,608,818,572,811,535,810,498,819,461,843,425,846,426"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#a298ecf1b9ea2cff52c416e258c01daed" title=" " alt="" coords="564,796,767,839"/>
+<area shape="poly" title=" " alt="" coords="863,797,768,809,767,804,868,795"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#aea5916e87edb88355776d4299e52cc7a" title=" " alt="" coords="270,796,472,839"/>
+<area shape="poly" title=" " alt="" coords="546,818,473,820,472,815,552,817"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#abf90a199409a8dab9f9649997fdf2fc8" title=" " alt="" coords="5,796,208,839"/>
+<area shape="poly" title=" " alt="" coords="252,819,209,820,207,815,256,816"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29f2caea74923858f38ae865aa0fe8e3" name="a29f2caea74923858f38ae865aa0fe8e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f2caea74923858f38ae865aa0fe8e3">&#9670;&#160;</a></span>OnBlockStopMoving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnBlockStopMoving </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>oldValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_moving_block.html">MovingBlock</a></td>          <td class="paramname"><span class="paramname"><em>movingBlock</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_editable_item_behavior-1-g.html#ab55352b67740f33792c45a76ab49d1b7">Game.SubsystemEditableItemBehavior&lt; T &gt;</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#aa68966013c80385924afc7d2ef97bc76">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html#ae53cbc998365bf50781ce840c220d918">Game.SubsystemEntityBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_sign_block_behavior.html#a16d9d381a42278dd78acee737e71a291">Game.SubsystemSignBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00027">27</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a29f2caea74923858f38ae865aa0fe8e3_cgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a29f2caea74923858f38ae865aa0fe8e3_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a29f2caea74923858f38ae865aa0fe8e3_cgraph" id="aclass_game_1_1_subsystem_block_behavior_a29f2caea74923858f38ae865aa0fe8e3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,220,48"/>
+<area shape="rect" href="class_game_1_1_subsystem_block_behavior.html#a89f5f7bcf4373c999dc16c6f8eaba75a" title=" " alt="" coords="268,5,482,48"/>
+<area shape="poly" title=" " alt="" coords="220,24,255,27,250,27,220,29"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a29f2caea74923858f38ae865aa0fe8e3_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a29f2caea74923858f38ae865aa0fe8e3_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a29f2caea74923858f38ae865aa0fe8e3_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a29f2caea74923858f38ae865aa0fe8e3_icgraph">
+<area shape="rect" title=" " alt="" coords="1679,672,1894,715"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#acb46c8891dfb0cd698eea535a663359a" title=" " alt="" coords="1417,672,1631,715"/>
+<area shape="poly" title=" " alt="" coords="1661,694,1632,696,1631,691,1666,693"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a37c89537a0769424261c50445ad62477" title=" " alt="" coords="1132,680,1369,707"/>
+<area shape="poly" title=" " alt="" coords="1398,694,1370,696,1369,691,1404,693"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a0fd8b4427597c7136a8c4e7a0e9507f9" title=" " alt="" coords="550,31,782,89"/>
+<area shape="poly" title=" " alt="" coords="1236,665,1177,537,1133,456,1081,378,1014,288,956,221,890,165,796,104,776,93,775,87,799,99,893,160,960,218,1018,285,1086,374,1138,453,1182,535,1241,667"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589" title=" " alt="" coords="845,388,1084,415"/>
+<area shape="poly" title=" " alt="" coords="1238,664,1217,614,1185,550,1140,484,1113,454,1082,429,1063,418,1062,413,1085,424,1116,450,1144,480,1189,547,1222,612,1242,666"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a082a8398cd992386baafdfeeca166dfb" title=" " alt="" coords="867,439,1062,481"/>
+<area shape="poly" title=" " alt="" coords="1232,666,1208,630,1174,583,1131,536,1082,496,1062,484,1062,479,1085,491,1135,532,1178,579,1212,627,1237,668"/>
+<area shape="rect" href="class_game_1_1_switch_electric_element.html#a260cd1354e76bbc10626b3b2d57e89da" title=" " alt="" coords="866,505,1063,548"/>
+<area shape="poly" title=" " alt="" coords="1222,668,1162,616,1124,587,1082,562,1057,551,1057,546,1085,558,1127,583,1166,612,1228,669"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a6318ecf1dc7a3ec6db248a8df965ed97" title=" " alt="" coords="849,572,1080,615"/>
+<area shape="poly" title=" " alt="" coords="1201,674,1083,629,1047,618,1047,612,1085,624,1207,674"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a4b1d2f0c03bb6b1cb6833d2c414fdec2" title=" " alt="" coords="846,639,1083,681"/>
+<area shape="poly" title=" " alt="" coords="1114,678,1083,676,1083,671,1119,677"/>
+<area shape="rect" href="class_game_1_1_subsystem_rot_block_behavior.html#ad69cd5e6e01c300f56881647d1b0be7a" title=" " alt="" coords="847,705,1082,748"/>
+<area shape="poly" title=" " alt="" coords="1114,710,1083,716,1082,710,1119,708"/>
+<area shape="rect" href="class_game_1_1_terrain_brush.html#a0b0cd7bb9f33050510e2ccb4b9a921ce" title=" " alt="" coords="881,772,1048,799"/>
+<area shape="poly" title=" " alt="" coords="1208,712,1149,740,1084,763,1041,774,1039,769,1083,757,1147,735,1203,714"/>
+<area shape="rect" href="class_game_1_1_light_bulb_electric_element.html#af1045bc931cb0ff70fa2333271c68849" title=" " alt="" coords="859,823,1070,865"/>
+<area shape="poly" title=" " alt="" coords="1225,716,1163,766,1125,791,1085,813,1057,825,1055,819,1083,808,1122,787,1160,762,1220,718"/>
+<area shape="rect" href="class_game_1_1_subsystem_grass_block_behavior.html#a37cb84d9e81804c9e4f7f457cbd003bc" title=" " alt="" coords="867,889,1062,932"/>
+<area shape="poly" title=" " alt="" coords="1235,718,1209,757,1175,800,1133,843,1085,880,1062,891,1060,886,1082,875,1129,839,1171,796,1205,754,1230,721"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#a7a7c8585c07b3a900b4874f5f3c7f5d7" title=" " alt="" coords="848,956,1081,999"/>
+<area shape="poly" title=" " alt="" coords="1240,720,1219,771,1186,831,1141,893,1114,922,1085,946,1065,958,1063,953,1082,942,1111,918,1137,890,1181,829,1214,769,1236,723"/>
+<area shape="rect" href="class_game_1_1_subsystem_soil_block_behavior.html#a0191a3e83c4cff1955688d108b24b2b6" title=" " alt="" coords="846,1023,1083,1065"/>
+<area shape="poly" title=" " alt="" coords="1244,720,1227,783,1195,862,1174,903,1149,943,1119,980,1085,1013,1067,1025,1065,1020,1082,1009,1115,977,1144,940,1169,900,1190,859,1222,782,1240,724"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#acaf20de87f9765deab17f5064cbc9ab1" title=" " alt="" coords="270,5,472,48"/>
+<area shape="poly" title=" " alt="" coords="532,47,474,41,471,36,536,44"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a66f15d26ccd8d18a9c9bca469431f3b0" title=" " alt="" coords="256,72,486,115"/>
+<area shape="poly" title=" " alt="" coords="532,76,488,83,485,78,536,73"/>
+<area shape="poly" title=" " alt="" coords="941,375,894,310,843,225,830,189,825,159,817,131,795,103,782,92,782,87,799,99,821,129,830,158,835,188,848,223,898,307,946,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#ab84e48e07850852c10ad8c719eaa4658" title=" " alt="" coords="564,113,767,156"/>
+<area shape="poly" title=" " alt="" coords="943,375,863,257,822,200,796,170,768,155,767,150,799,166,826,197,867,254,949,375"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_block_behavior.html#af4f48c24242efc678e9ac4a9caa545e9" title=" " alt="" coords="569,180,762,223"/>
+<area shape="poly" title=" " alt="" coords="942,375,883,307,842,269,796,237,763,222,762,217,799,232,845,265,887,303,947,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_bottom_sucker_block_behavior.html#ab1e977e27670b31a239ce335d7ff7e84" title=" " alt="" coords="534,247,797,289"/>
+<area shape="poly" title=" " alt="" coords="929,379,870,342,796,304,766,293,765,287,798,299,873,337,935,379"/>
+<area shape="rect" href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e" title=" " alt="" coords="550,313,781,356"/>
+<area shape="poly" title=" " alt="" coords="884,385,765,359,764,354,889,383"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#ace3f0b73c16a6b5c16b4d478dc77cd8e" title=" " alt="" coords="550,380,781,423"/>
+<area shape="poly" title=" " alt="" coords="827,402,782,404,780,399,832,400"/>
+<area shape="rect" href="class_game_1_1_subsystem_fallen_leaves_block_behavior.html#a97d5e9a4e8880956274fcc8ea2b5ecf4" title=" " alt="" coords="534,447,797,489"/>
+<area shape="poly" title=" " alt="" coords="881,420,846,429,762,448,759,444,845,424,885,417"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#afaae64c6eebd42339912f2b0d7f6c67f" title=" " alt="" coords="550,513,782,556"/>
+<area shape="poly" title=" " alt="" coords="851,423,847,429,831,446,824,465,816,484,799,503,779,515,776,511,796,499,811,482,819,463,826,443,844,425,855,420"/>
+<area shape="rect" href="class_game_1_1_subsystem_plant_block_behavior.html#a17c18428b3a658156fff8eff5d4d75f2" title="该方法进行封装，不再允许覆盖 添加新的放置植物的逻辑： 如果是添加新植物，则建议自己添加新的ModPlantBlockBehavior，只负责属于自己模组的植物的生长 如果是添加新的能种植植物的土质（如..." alt="" coords="550,580,781,623"/>
+<area shape="poly" title=" " alt="" coords="852,421,847,429,833,445,826,462,824,497,821,534,814,552,799,570,782,582,779,578,795,566,809,549,816,533,818,497,821,460,829,442,843,425,848,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_plant_block_behavior.html#ac5b9d44b87f903116831fbe854030052" title=" " alt="" coords="560,647,771,705"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,829,453,821,478,820,503,823,529,826,556,825,583,818,610,799,636,773,656,770,652,795,633,813,607,820,582,820,556,817,530,815,503,816,477,824,451,843,425,846,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#af638bada10ac8ae36df1a2989d8a0b96" title=" " alt="" coords="566,729,765,772"/>
+<area shape="poly" title=" " alt="" coords="850,422,847,428,823,463,815,499,816,535,823,571,830,608,832,645,824,682,799,719,784,732,766,741,764,737,781,728,795,716,819,680,827,644,825,608,818,572,811,535,810,498,819,461,843,425,846,426"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#a298ecf1b9ea2cff52c416e258c01daed" title=" " alt="" coords="564,796,767,839"/>
+<area shape="poly" title=" " alt="" coords="863,797,768,809,767,804,868,795"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#aea5916e87edb88355776d4299e52cc7a" title=" " alt="" coords="270,796,472,839"/>
+<area shape="poly" title=" " alt="" coords="546,818,473,820,472,815,552,817"/>
+<area shape="rect" href="class_game_1_1_subsystem_sapling_block_behavior.html#abf90a199409a8dab9f9649997fdf2fc8" title=" " alt="" coords="5,796,208,839"/>
+<area shape="poly" title=" " alt="" coords="252,819,209,820,207,815,256,816"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac3a709d5a6c93edf31d77251fa243d27" name="ac3a709d5a6c93edf31d77251fa243d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a709d5a6c93edf31d77251fa243d27">&#9670;&#160;</a></span>OnChunkDiscarding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnChunkDiscarding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_terrain_chunk.html">TerrainChunk</a></td>          <td class="paramname"><span class="paramname"><em>chunk</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html#a7e0e3f1d4b1814d97d522b6921664452">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#a85e739561041e1679641a71f2c70eb91">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_explosives_block_behavior.html#af724b78e6a98e81b1d7cc0b92dd24938">Game.SubsystemExplosivesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fire_block_behavior.html#a0e1056133403e26d851a96e39fcbdda2">Game.SubsystemFireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furnace_block_behavior.html#abe4c7d2106d4f022104610fabb9cce38">Game.SubsystemFurnaceBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furniture_block_behavior.html#a58343a16f004b35c16d0ea14ae28c841">Game.SubsystemFurnitureBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_meters_block_behavior.html#a1f34b5f5e345a2015b308748f9b83910">Game.SubsystemMetersBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_piston_block_behavior.html#a8add274a01022df03d52fa2217c68567">Game.SubsystemPistonBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_torch_block_behavior.html#a21061f4358415f4c564ef43dce65fc4f">Game.SubsystemTorchBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_wood_block_behavior.html#a6e8cd3ba633489cd0d1069f5d59fb1b1">Game.SubsystemWoodBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00013">13</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_ac3a709d5a6c93edf31d77251fa243d27_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_ac3a709d5a6c93edf31d77251fa243d27_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_ac3a709d5a6c93edf31d77251fa243d27_icgraph" id="aclass_game_1_1_subsystem_block_behavior_ac3a709d5a6c93edf31d77251fa243d27_icgraph">
+<area shape="rect" title=" " alt="" coords="489,5,703,48"/>
+<area shape="rect" href="class_game_1_1_terrain_updater.html#afebc9f968da7e953edc9342b64dbfef1" title=" " alt="" coords="245,5,441,48"/>
+<area shape="poly" title=" " alt="" coords="471,27,442,29,441,24,476,27"/>
+<area shape="rect" href="class_game_1_1_terrain_updater.html#a6e86c6d3ab0988d386bcd267d53cb4dc" title=" " alt="" coords="5,13,197,40"/>
+<area shape="poly" title=" " alt="" coords="227,27,197,29,197,24,232,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3e861682c043bc04cca9bede3e45c8b1" name="a3e861682c043bc04cca9bede3e45c8b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e861682c043bc04cca9bede3e45c8b1">&#9670;&#160;</a></span>OnChunkInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnChunkInitialized </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_terrain_chunk.html">TerrainChunk</a></td>          <td class="paramname"><span class="paramname"><em>chunk</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00011">11</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a3e861682c043bc04cca9bede3e45c8b1_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a3e861682c043bc04cca9bede3e45c8b1_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a3e861682c043bc04cca9bede3e45c8b1_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a3e861682c043bc04cca9bede3e45c8b1_icgraph">
+<area shape="rect" title=" " alt="" coords="477,5,691,48"/>
+<area shape="rect" href="class_game_1_1_terrain_updater.html#a67751eb407114da2e1caa0e4b8530eaa" title=" " alt="" coords="245,5,429,48"/>
+<area shape="poly" title=" " alt="" coords="459,27,429,29,429,24,464,27"/>
+<area shape="rect" href="class_game_1_1_terrain_updater.html#a6e86c6d3ab0988d386bcd267d53cb4dc" title=" " alt="" coords="5,13,197,40"/>
+<area shape="poly" title=" " alt="" coords="226,27,197,29,197,24,232,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a36b235e0a1379bb4b573005df98bc7c2" name="a36b235e0a1379bb4b573005df98bc7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b235e0a1379bb4b573005df98bc7c2">&#9670;&#160;</a></span>OnCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnCollide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_1_1_cell_face.html">CellFace</a></td>          <td class="paramname"><span class="paramname"><em>cellFace</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_component_body.html">ComponentBody</a></td>          <td class="paramname"><span class="paramname"><em>componentBody</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_bottom_sucker_block_behavior.html#a5e6a8410269a08095da5d939bb34d4c2">Game.SubsystemBottomSuckerBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_cactus_block_behavior.html#ad1f8c70d733d711e24f1ac07442ccc79">Game.SubsystemCactusBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#aa75fd082e9cb34c77b495b4f8922d42c">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_grass_trap_block_behavior.html#a4b514028c1c4aa6080231dcedfa942ed">Game.SubsystemGrassTrapBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_soil_block_behavior.html#a321a3df0816f6cff05dcbc31909eac0a">Game.SubsystemSoilBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_spikes_block_behavior.html#a0371fc55ac4595306daa2acaff786cb2">Game.SubsystemSpikesBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00049">49</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a36b235e0a1379bb4b573005df98bc7c2_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a36b235e0a1379bb4b573005df98bc7c2_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a36b235e0a1379bb4b573005df98bc7c2_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a36b235e0a1379bb4b573005df98bc7c2_icgraph">
+<area shape="rect" title=" " alt="" coords="772,5,987,48"/>
+<area shape="rect" href="class_game_1_1_component_body.html#a06105bce49514eb2e80d50f7757b615c" title=" " alt="" coords="523,5,724,48"/>
+<area shape="poly" title=" " alt="" coords="754,27,725,29,725,24,760,27"/>
+<area shape="rect" href="class_game_1_1_component_body.html#ab2fb29c81b555f638fcdf6ba49b76bb1" title=" " alt="" coords="256,5,475,48"/>
+<area shape="poly" title=" " alt="" coords="504,27,475,29,475,24,510,27"/>
+<area shape="rect" href="class_game_1_1_component_body.html#a0df8ecc5e0518529a9038ef618540b83" title=" " alt="" coords="5,13,208,40"/>
+<area shape="poly" title=" " alt="" coords="238,27,208,29,208,24,243,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08de8902fb4c873d8f28c6e2cd86f3ba" name="a08de8902fb4c873d8f28c6e2cd86f3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08de8902fb4c873d8f28c6e2cd86f3ba">&#9670;&#160;</a></span>OnEditBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Game.SubsystemBlockBehavior.OnEditBlock </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_component_player.html">ComponentPlayer</a></td>          <td class="paramname"><span class="paramname"><em>componentPlayer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_adjustable_delay_gate_block_behavior.html#acf97a4e74f1e316b3b13f3b5d644e222">Game.SubsystemAdjustableDelayGateBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_battery_block_behavior.html#a8100730d4d0076d8bfad5cbc0c1989f8">Game.SubsystemBatteryBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_button_block_behavior.html#a9bc7a972e8903786dbd910c1131644fe">Game.SubsystemButtonBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_memory_bank_block_behavior.html#a839183b350391f984aaa54860551685f">Game.SubsystemMemoryBankBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_piston_block_behavior.html#a861d404affb8f6e9ca9b0ee3fc90d9f9">Game.SubsystemPistonBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_switch_block_behavior.html#a398f6061d76451ac8a2aaabbd6195b74">Game.SubsystemSwitchBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_truth_table_circuit_block_behavior.html#ad53fe5c9495250f00e061c023360e661">Game.SubsystemTruthTableCircuitBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00041">41</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a08de8902fb4c873d8f28c6e2cd86f3ba_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a08de8902fb4c873d8f28c6e2cd86f3ba_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a08de8902fb4c873d8f28c6e2cd86f3ba_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a08de8902fb4c873d8f28c6e2cd86f3ba_icgraph">
+<area shape="rect" title=" " alt="" coords="487,5,701,48"/>
+<area shape="rect" href="class_game_1_1_component_gui.html#add940b42dcfa220577aa8d6fdf9fd30c" title=" " alt="" coords="247,5,439,48"/>
+<area shape="poly" title=" " alt="" coords="469,27,439,29,439,24,474,27"/>
+<area shape="rect" href="class_game_1_1_component_gui.html#a3ae12747241cbc2548ae03fc99415ba8" title=" " alt="" coords="5,13,199,40"/>
+<area shape="poly" title=" " alt="" coords="228,27,199,29,199,24,233,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab6cf3039be5bf2e9bd46b36e0d32510e" name="ab6cf3039be5bf2e9bd46b36e0d32510e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6cf3039be5bf2e9bd46b36e0d32510e">&#9670;&#160;</a></span>OnEditInventoryItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Game.SubsystemBlockBehavior.OnEditInventoryItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_game_1_1_i_inventory.html">IInventory</a></td>          <td class="paramname"><span class="paramname"><em>inventory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>slotIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_component_player.html">ComponentPlayer</a></td>          <td class="paramname"><span class="paramname"><em>componentPlayer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_adjustable_delay_gate_block_behavior.html#a52163a9fd54075b330718a3099775369">Game.SubsystemAdjustableDelayGateBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_battery_block_behavior.html#a90e799467990953f892307baf5a56c52">Game.SubsystemBatteryBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bow_block_behavior.html#a7b76042385229aacfd66de76445bf45d">Game.SubsystemBowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_button_block_behavior.html#a89b788454082bdbc75a159274fa32e54">Game.SubsystemButtonBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_crossbow_block_behavior.html#a6c851423382e53316f478a42b603c018">Game.SubsystemCrossbowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_memory_bank_block_behavior.html#a72398e2759262ce47b20aacad3dbc858">Game.SubsystemMemoryBankBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_musket_block_behavior.html#a3597977f92bfd820e1fa1e8657f574a0">Game.SubsystemMusketBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_piston_block_behavior.html#a7ea49489745887f2f1b31e9bc9a24ee5">Game.SubsystemPistonBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_switch_block_behavior.html#a64e0fbb1ef4c43dc47be8167fd66ccbd">Game.SubsystemSwitchBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_truth_table_circuit_block_behavior.html#a58e922e092c9db97942a2dd63f56d3af">Game.SubsystemTruthTableCircuitBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00043">43</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_ab6cf3039be5bf2e9bd46b36e0d32510e_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_ab6cf3039be5bf2e9bd46b36e0d32510e_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_ab6cf3039be5bf2e9bd46b36e0d32510e_icgraph" id="aclass_game_1_1_subsystem_block_behavior_ab6cf3039be5bf2e9bd46b36e0d32510e_icgraph">
+<area shape="rect" title=" " alt="" coords="487,5,701,48"/>
+<area shape="rect" href="class_game_1_1_component_gui.html#add940b42dcfa220577aa8d6fdf9fd30c" title=" " alt="" coords="247,5,439,48"/>
+<area shape="poly" title=" " alt="" coords="469,27,439,29,439,24,474,27"/>
+<area shape="rect" href="class_game_1_1_component_gui.html#a3ae12747241cbc2548ae03fc99415ba8" title=" " alt="" coords="5,13,199,40"/>
+<area shape="poly" title=" " alt="" coords="228,27,199,29,199,24,233,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a884cf8878074ae031734805aab0048b6" name="a884cf8878074ae031734805aab0048b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a884cf8878074ae031734805aab0048b6">&#9670;&#160;</a></span>OnExplosion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnExplosion </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>damage</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_explosives_block_behavior.html#ac7659d7d5ed33d45c3bb9ed33f2567ee">Game.SubsystemExplosivesBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_grass_block_behavior.html#a082a8398cd992386baafdfeeca166dfb">Game.SubsystemGrassBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00051">51</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a884cf8878074ae031734805aab0048b6_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a884cf8878074ae031734805aab0048b6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a884cf8878074ae031734805aab0048b6_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a884cf8878074ae031734805aab0048b6_icgraph">
+<area shape="rect" title=" " alt="" coords="490,5,704,48"/>
+<area shape="rect" href="class_game_1_1_subsystem_explosions.html#adccc52f181ce84f0c44b1a0a7ac63248" title=" " alt="" coords="248,5,442,48"/>
+<area shape="poly" title=" " alt="" coords="472,27,442,29,442,24,477,27"/>
+<area shape="rect" href="class_game_1_1_subsystem_explosions.html#ae4e8520cbc47ed3cf7bc148208a01b7e" title=" " alt="" coords="5,5,200,48"/>
+<area shape="poly" title=" " alt="" coords="229,27,200,29,200,24,235,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab9d2f23ee8e6ac6520df0c8d3a768543" name="ab9d2f23ee8e6ac6520df0c8d3a768543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d2f23ee8e6ac6520df0c8d3a768543">&#9670;&#160;</a></span>OnFiredAsProjectile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnFiredAsProjectile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_projectile.html">Projectile</a></td>          <td class="paramname"><span class="paramname"><em>projectile</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_arrow_block_behavior.html#ac5868101fce6cf62af5405a895918942">Game.SubsystemArrowBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_fireworks_block_behavior.html#a118cbbd4ab9b5ced2a79aafae2d7f064">Game.SubsystemFireworksBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00053">53</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_ab9d2f23ee8e6ac6520df0c8d3a768543_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_ab9d2f23ee8e6ac6520df0c8d3a768543_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_ab9d2f23ee8e6ac6520df0c8d3a768543_icgraph" id="aclass_game_1_1_subsystem_block_behavior_ab9d2f23ee8e6ac6520df0c8d3a768543_icgraph">
+<area shape="rect" title=" " alt="" coords="484,5,698,48"/>
+<area shape="rect" href="class_game_1_1_subsystem_projectiles.html#ab2f13de32a351a17b03bced7f3eb7553" title=" " alt="" coords="245,5,436,48"/>
+<area shape="poly" title=" " alt="" coords="466,27,436,29,436,24,471,27"/>
+<area shape="rect" href="class_game_1_1_subsystem_projectiles.html#a3f430aff587e33b1f707c50657074c91" title=" " alt="" coords="5,5,197,48"/>
+<area shape="poly" title=" " alt="" coords="226,27,197,29,197,24,231,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5eff44ee3e7bf233b4dd76f605242407" name="a5eff44ee3e7bf233b4dd76f605242407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eff44ee3e7bf233b4dd76f605242407">&#9670;&#160;</a></span>OnHitAsProjectile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Game.SubsystemBlockBehavior.OnHitAsProjectile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_1_1_cell_face.html">CellFace</a>?</td>          <td class="paramname"><span class="paramname"><em>cellFace</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_component_body.html">ComponentBody</a></td>          <td class="paramname"><span class="paramname"><em>componentBody</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_world_item.html">WorldItem</a></td>          <td class="paramname"><span class="paramname"><em>worldItem</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_arrow_block_behavior.html#a325d96deb0dc785822e24767f1595bc1">Game.SubsystemArrowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bullet_block_behavior.html#a03cef3995463479570b658d165d30338">Game.SubsystemBulletBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_egg_block_behavior.html#acae1f05f18fecf4567c47c481a55fa55">Game.SubsystemEggBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fireworks_block_behavior.html#a417b7f258ec735411f989fefe003c71e">Game.SubsystemFireworksBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_impact_explosives_block_behavior.html#a5edf1205c4a1609d7cc0022828954d61">Game.SubsystemImpactExplosivesBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00055">55</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a5eff44ee3e7bf233b4dd76f605242407_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a5eff44ee3e7bf233b4dd76f605242407_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a5eff44ee3e7bf233b4dd76f605242407_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a5eff44ee3e7bf233b4dd76f605242407_icgraph">
+<area shape="rect" title=" " alt="" coords="913,5,1127,48"/>
+<area shape="rect" href="class_game_1_1_projectile.html#ad4011797ee85a7f3b400ab4fd39d4856" title=" " alt="" coords="672,5,865,48"/>
+<area shape="poly" title=" " alt="" coords="894,27,865,29,865,24,900,27"/>
+<area shape="rect" href="class_game_1_1_projectile.html#add996bbbd40a85d06ba13293031122c6" title=" " alt="" coords="453,5,624,48"/>
+<area shape="poly" title=" " alt="" coords="654,27,625,29,625,24,660,27"/>
+<area shape="rect" href="class_game_1_1_projectile.html#aa6509ef80f0c340bcc9a1417c650f4ff" title=" " alt="" coords="245,13,405,40"/>
+<area shape="poly" title=" " alt="" coords="435,27,405,29,405,24,440,27"/>
+<area shape="rect" href="class_game_1_1_subsystem_projectiles.html#a952b75a03b46c4a7fcc31f18e4a914af" title=" " alt="" coords="5,5,197,48"/>
+<area shape="poly" title=" " alt="" coords="226,27,197,29,197,24,232,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a923814a003e5ed47b068a8b82a5453ca" name="a923814a003e5ed47b068a8b82a5453ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a923814a003e5ed47b068a8b82a5453ca">&#9670;&#160;</a></span>OnHitByProjectile() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnHitByProjectile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_1_1_cell_face.html">CellFace</a></td>          <td class="paramname"><span class="paramname"><em>cellFace</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_world_item.html">WorldItem</a></td>          <td class="paramname"><span class="paramname"><em>worldItem</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html#a87758c8311f53129b818c341df4a0b50">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_dispenser_block_behavior.html#aedb1265c412cb845d41dad9427bb3514">Game.SubsystemDispenserBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#a2f6cd84c9d132843d40f58bb639b1657">Game.SubsystemElectricBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html#a52e713a1bc15ead38264f56fef7ce4d5">Game.SubsystemEntityBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00057">57</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a923814a003e5ed47b068a8b82a5453ca_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a923814a003e5ed47b068a8b82a5453ca_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a923814a003e5ed47b068a8b82a5453ca_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a923814a003e5ed47b068a8b82a5453ca_icgraph">
+<area shape="rect" title=" " alt="" coords="965,35,1179,77"/>
+<area shape="rect" href="class_game_1_1_projectile.html#acef5ba8123815baaa2e1c5ba36808e78" title=" " alt="" coords="721,16,895,43"/>
+<area shape="poly" title=" " alt="" coords="946,44,895,41,896,35,952,44"/>
+<area shape="rect" href="class_game_1_1_pickable.html#a00a68e7fb1c101215a85273c8c1347a3" title=" " alt="" coords="699,68,917,95"/>
+<area shape="poly" title=" " alt="" coords="952,68,917,74,917,68,947,68"/>
+<area shape="rect" href="class_game_1_1_projectile.html#add996bbbd40a85d06ba13293031122c6" title=" " alt="" coords="480,5,651,48"/>
+<area shape="poly" title=" " alt="" coords="703,28,652,30,651,25,708,28"/>
+<area shape="rect" href="class_game_1_1_projectile.html#aa6509ef80f0c340bcc9a1417c650f4ff" title=" " alt="" coords="258,13,418,40"/>
+<area shape="poly" title=" " alt="" coords="462,27,419,29,419,24,467,26"/>
+<area shape="rect" href="class_game_1_1_subsystem_projectiles.html#a952b75a03b46c4a7fcc31f18e4a914af" title=" " alt="" coords="5,5,197,48"/>
+<area shape="poly" title=" " alt="" coords="240,27,197,29,197,24,245,26"/>
+<area shape="rect" href="class_game_1_1_pickable.html#a1d53c23c9d5dc1345186f2847376b836" title=" " alt="" coords="488,72,644,99"/>
+<area shape="poly" title=" " alt="" coords="681,83,644,87,644,81,686,83"/>
+<area shape="rect" href="class_game_1_1_subsystem_pickables.html#a1b01e80f11f90a07af65932ae0e33575" title=" " alt="" coords="245,64,432,107"/>
+<area shape="poly" title=" " alt="" coords="469,85,433,88,433,83,475,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae99e9a92ac4c72df0cc66e38a8a32f81" name="ae99e9a92ac4c72df0cc66e38a8a32f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99e9a92ac4c72df0cc66e38a8a32f81">&#9670;&#160;</a></span>OnHitByProjectile() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnHitByProjectile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_moving_block.html">MovingBlock</a></td>          <td class="paramname"><span class="paramname"><em>movingBlock</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_world_item.html">WorldItem</a></td>          <td class="paramname"><span class="paramname"><em>worldItem</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_dispenser_block_behavior.html#a01137670cf2e5be05d40cb2c7f8e6cd6">Game.SubsystemDispenserBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html#ae52e9b898e53512a48ef821b2eb2e333">Game.SubsystemEntityBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab8a7ab140484f6c20703336b15089a73" name="ab8a7ab140484f6c20703336b15089a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8a7ab140484f6c20703336b15089a73">&#9670;&#160;</a></span>OnInteract() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Game.SubsystemBlockBehavior.OnInteract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_1_1_moving_blocks_raycast_result.html">MovingBlocksRaycastResult</a></td>          <td class="paramname"><span class="paramname"><em>movingBlocksRaycastResult</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_component_miner.html">ComponentMiner</a></td>          <td class="paramname"><span class="paramname"><em>componentMiner</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html#aeae7a37301891969d6376b8b299f8e3f">Game.SubsystemEntityBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4cfb3cc5e9d312d77d1c3c3842b8e89c" name="a4cfb3cc5e9d312d77d1c3c3842b8e89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfb3cc5e9d312d77d1c3c3842b8e89c">&#9670;&#160;</a></span>OnInteract() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Game.SubsystemBlockBehavior.OnInteract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_1_1_terrain_raycast_result.html">TerrainRaycastResult</a></td>          <td class="paramname"><span class="paramname"><em>raycastResult</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_component_miner.html">ComponentMiner</a></td>          <td class="paramname"><span class="paramname"><em>componentMiner</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html#a32e8cbf93bdb5233d8aa57c5044812e3">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_door_block_behavior.html#a956504de0148098f6b43bba60776917d">Game.SubsystemDoorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#a48d25ff949c217e94b73bd9d15a49ef1">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_entity_block_behavior.html#a729c38459d3ea809027271db9f6550e9">Game.SubsystemEntityBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fence_gate_block_behavior.html#ab0f910c11c09e80e7de3486d79eadebb">Game.SubsystemFenceGateBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_furniture_block_behavior.html#af9b43cf4928b13982d803d5c7443f4da">Game.SubsystemFurnitureBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sign_block_behavior.html#abcbe634c5db86838cbf1fac8a8d14677">Game.SubsystemSignBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_trapdoor_block_behavior.html#ac9a5adbfe4483137f4aaf4b326fadc62">Game.SubsystemTrapdoorBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1672049ba80ea9bf91ab321cda6eb451" name="a1672049ba80ea9bf91ab321cda6eb451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1672049ba80ea9bf91ab321cda6eb451">&#9670;&#160;</a></span>OnItemHarvested()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnItemHarvested </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>blockValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref <a class="el" href="struct_game_1_1_block_drop_value.html">BlockDropValue</a></td>          <td class="paramname"><span class="paramname"><em>dropValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref int</td>          <td class="paramname"><span class="paramname"><em>newBlockValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_editable_item_behavior-1-g.html#a52bde83da38790e73d3f37c454fb9782">Game.SubsystemEditableItemBehavior&lt; T &gt;</a>, <a class="el" href="class_game_1_1_subsystem_fluid_block_behavior.html#a8bfceb596cef0e3e5342478169c978ef">Game.SubsystemFluidBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_in_water_block_behavior.html#aced703d07851f1e95143c30a9d3ab72e">Game.SubsystemInWaterBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_water_block_behavior.html#af6c398670bd8c4108c603d347e8a644e">Game.SubsystemWaterBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00047">47</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a1672049ba80ea9bf91ab321cda6eb451_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a1672049ba80ea9bf91ab321cda6eb451_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a1672049ba80ea9bf91ab321cda6eb451_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a1672049ba80ea9bf91ab321cda6eb451_icgraph">
+<area shape="rect" title=" " alt="" coords="881,380,1096,423"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589" title=" " alt="" coords="595,388,833,415"/>
+<area shape="poly" title=" " alt="" coords="863,402,834,404,833,399,869,401"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a0fd8b4427597c7136a8c4e7a0e9507f9" title=" " alt="" coords="299,31,532,89"/>
+<area shape="poly" title=" " alt="" coords="702,372,683,317,651,244,605,168,577,134,545,103,531,93,530,87,549,99,581,130,610,165,656,242,688,315,708,374"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#ab84e48e07850852c10ad8c719eaa4658" title=" " alt="" coords="314,113,516,156"/>
+<area shape="poly" title=" " alt="" coords="699,373,676,330,643,274,599,218,573,192,546,170,517,155,517,150,548,166,577,188,603,214,647,271,681,327,704,374"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_block_behavior.html#af4f48c24242efc678e9ac4a9caa545e9" title=" " alt="" coords="319,180,512,223"/>
+<area shape="poly" title=" " alt="" coords="692,375,632,307,591,269,546,237,513,222,512,217,548,232,595,265,636,303,697,376"/>
+<area shape="rect" href="class_game_1_1_subsystem_bottom_sucker_block_behavior.html#ab1e977e27670b31a239ce335d7ff7e84" title=" " alt="" coords="284,247,547,289"/>
+<area shape="poly" title=" " alt="" coords="679,379,620,342,546,304,516,293,515,287,548,299,622,337,684,379"/>
+<area shape="rect" href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e" title=" " alt="" coords="300,313,530,356"/>
+<area shape="poly" title=" " alt="" coords="633,385,515,359,514,354,638,383"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#ace3f0b73c16a6b5c16b4d478dc77cd8e" title=" " alt="" coords="300,380,530,423"/>
+<area shape="poly" title=" " alt="" coords="577,402,532,404,530,399,582,400"/>
+<area shape="rect" href="class_game_1_1_subsystem_fallen_leaves_block_behavior.html#a97d5e9a4e8880956274fcc8ea2b5ecf4" title=" " alt="" coords="284,447,547,489"/>
+<area shape="poly" title=" " alt="" coords="633,420,515,449,513,444,638,418"/>
+<area shape="rect" href="class_game_1_1_subsystem_ivy_block_behavior.html#afaae64c6eebd42339912f2b0d7f6c67f" title=" " alt="" coords="299,513,532,556"/>
+<area shape="poly" title=" " alt="" coords="684,423,622,466,548,504,516,515,514,510,546,499,620,461,679,425"/>
+<area shape="rect" href="class_game_1_1_subsystem_plant_block_behavior.html#a17c18428b3a658156fff8eff5d4d75f2" title="该方法进行封装，不再允许覆盖 添加新的放置植物的逻辑： 如果是添加新植物，则建议自己添加新的ModPlantBlockBehavior，只负责属于自己模组的植物的生长 如果是添加新的能种植植物的土质（如..." alt="" coords="300,580,530,623"/>
+<area shape="poly" title=" " alt="" coords="697,426,636,500,595,538,548,570,524,582,522,577,546,566,591,534,632,496,692,429"/>
+<area shape="rect" href="class_game_1_1_subsystem_water_plant_block_behavior.html#ac5b9d44b87f903116831fbe854030052" title=" " alt="" coords="310,647,521,705"/>
+<area shape="poly" title=" " alt="" coords="702,427,680,475,646,531,602,588,576,614,549,637,522,652,520,647,545,632,573,610,598,584,641,528,675,473,698,431"/>
+<area shape="rect" href="class_game_1_1_subsystem_carpet_block_behavior.html#af638bada10ac8ae36df1a2989d8a0b96" title=" " alt="" coords="316,729,514,772"/>
+<area shape="poly" title=" " alt="" coords="708,428,691,492,659,570,638,611,613,651,583,687,549,719,516,738,514,733,545,715,579,684,608,647,633,608,654,567,686,490,704,432"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#acaf20de87f9765deab17f5064cbc9ab1" title=" " alt="" coords="19,5,222,48"/>
+<area shape="poly" title=" " alt="" coords="281,47,224,40,221,36,286,44"/>
+<area shape="rect" href="class_game_1_1_subsystem_magma_block_behavior.html#a66f15d26ccd8d18a9c9bca469431f3b0" title=" " alt="" coords="5,72,236,115"/>
+<area shape="poly" title=" " alt="" coords="281,77,238,82,234,78,285,73"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="affc5db53c7039284922ab4d90da12c9d" name="affc5db53c7039284922ab4d90da12c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc5db53c7039284922ab4d90da12c9d">&#9670;&#160;</a></span>OnItemPlaced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnItemPlaced </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref <a class="el" href="struct_game_1_1_block_placement_data.html">BlockPlacementData</a></td>          <td class="paramname"><span class="paramname"><em>placementData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>itemValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_editable_item_behavior-1-g.html#a5f38f0d55a6b66299ae232ad74263bde">Game.SubsystemEditableItemBehavior&lt; T &gt;</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00045">45</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_affc5db53c7039284922ab4d90da12c9d_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_affc5db53c7039284922ab4d90da12c9d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_affc5db53c7039284922ab4d90da12c9d_icgraph" id="aclass_game_1_1_subsystem_block_behavior_affc5db53c7039284922ab4d90da12c9d_icgraph">
+<area shape="rect" title=" " alt="" coords="250,5,464,48"/>
+<area shape="rect" href="class_game_1_1_component_miner.html#ac073a4456354172ef77046550bf65eca" title=" " alt="" coords="5,13,202,40"/>
+<area shape="poly" title=" " alt="" coords="231,27,202,29,202,24,237,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7080a063fc1f24651522a84687f9bf0e" name="a7080a063fc1f24651522a84687f9bf0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7080a063fc1f24651522a84687f9bf0e">&#9670;&#160;</a></span>OnNeighborBlockChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnNeighborBlockChanged </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>neighborX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>neighborY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>neighborZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_bottom_sucker_block_behavior.html#ab1e977e27670b31a239ce335d7ff7e84">Game.SubsystemBottomSuckerBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e">Game.SubsystemCactusBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_campfire_block_behavior.html#a1fd2d56ffb5525f59f742540db0cb0be">Game.SubsystemCampfireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_carpet_block_behavior.html#ace3f0b73c16a6b5c16b4d478dc77cd8e">Game.SubsystemCarpetBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_collapsing_block_behavior.html#a6c27302c9763a8b11cfd6dafd8335852">Game.SubsystemCollapsingBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_door_block_behavior.html#a5d64f60216beb6d92976150d36cb3766">Game.SubsystemDoorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_electric_block_behavior.html#a617090188e42a7d568b0f61c5e1abdbe">Game.SubsystemElectricBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_explosives_block_behavior.html#a3d441ed5641a8d9a1151ff1f5e819d1e">Game.SubsystemExplosivesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fallen_leaves_block_behavior.html#a97d5e9a4e8880956274fcc8ea2b5ecf4">Game.SubsystemFallenLeavesBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fence_block_behavior.html#adbec2c7fff25f7a7ebdf66dc6b2f8567">Game.SubsystemFenceBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fire_block_behavior.html#a350ec8394f68f435d0ead8ffabe6fc6e">Game.SubsystemFireBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fluid_block_behavior.html#a91fdfc494ceadead5b5c25843871dc6a">Game.SubsystemFluidBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_grass_block_behavior.html#a6318ecf1dc7a3ec6db248a8df965ed97">Game.SubsystemGrassBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_gravestone_block_behavior.html#ab0cbb57c06ceaa841190b04be7889bd2">Game.SubsystemGravestoneBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_ivy_block_behavior.html#afaae64c6eebd42339912f2b0d7f6c67f">Game.SubsystemIvyBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_ladder_block_behavior.html#a9fcd97d4e840d7ffcba2ddfed22affbc">Game.SubsystemLadderBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_magma_block_behavior.html#a66f15d26ccd8d18a9c9bca469431f3b0">Game.SubsystemMagmaBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_magnet_block_behavior.html#a8097127b07b5daf11389e39914f722c5">Game.SubsystemMagnetBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_meters_block_behavior.html#a30742d88dccb896cfd92d68caf586aeb">Game.SubsystemMetersBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_plant_block_behavior.html#a17c18428b3a658156fff8eff5d4d75f2">Game.SubsystemPlantBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sapling_block_behavior.html#a1625f10351850e9eabc4f672d439d1f2">Game.SubsystemSaplingBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_sign_block_behavior.html#aba8b3c22e086ba52bef08ebd537ee4f3">Game.SubsystemSignBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_snow_block_behavior.html#af19bbe674fe57e856ad1d5cc312ac0e8">Game.SubsystemSnowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_soil_block_behavior.html#a4b1d2f0c03bb6b1cb6833d2c414fdec2">Game.SubsystemSoilBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_stairs_block_behavior.html#a41046514962a325a40d439c1f209a899">Game.SubsystemStairsBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_torch_block_behavior.html#a50f1e4a9c3f0cfd8a8dcea183c2f6bca">Game.SubsystemTorchBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_trapdoor_block_behavior.html#abc183f0392d25427d577badc01be6e9d">Game.SubsystemTrapdoorBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_treasure_generator_block_behavior.html#a4dd13ee5460b6619ea14711e24a79bd4">Game.SubsystemTreasureGeneratorBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_water_plant_block_behavior.html#ac5b9d44b87f903116831fbe854030052">Game.SubsystemWaterPlantBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00031">31</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a7080a063fc1f24651522a84687f9bf0e_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a7080a063fc1f24651522a84687f9bf0e_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a7080a063fc1f24651522a84687f9bf0e_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a7080a063fc1f24651522a84687f9bf0e_icgraph">
+<area shape="rect" title=" " alt="" coords="530,5,744,48"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#af6fa4a660ab85f7e376c4d9b007cb72b" title=" " alt="" coords="265,5,482,48"/>
+<area shape="poly" title=" " alt="" coords="512,27,483,29,482,24,517,27"/>
+<area shape="rect" href="class_game_1_1_subsystem_terrain.html#a50dcf6cb3f99b07c301279268f763117" title=" " alt="" coords="5,13,217,40"/>
+<area shape="poly" title=" " alt="" coords="246,27,217,29,217,24,252,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac825726f23a80d7dd6266c59a69470ee" name="ac825726f23a80d7dd6266c59a69470ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac825726f23a80d7dd6266c59a69470ee">&#9670;&#160;</a></span>OnPickableGathered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.OnPickableGathered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_pickable.html">Pickable</a></td>          <td class="paramname"><span class="paramname"><em>pickable</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_component_pickable_gatherer.html">ComponentPickableGatherer</a></td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a></td>          <td class="paramname"><span class="paramname"><em>distanceToTarget</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_experience_block_behavior.html#a5bd1b8976a87d4b01bd86281481a24fa">Game.SubsystemExperienceBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00076">76</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_ac825726f23a80d7dd6266c59a69470ee_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_ac825726f23a80d7dd6266c59a69470ee_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_ac825726f23a80d7dd6266c59a69470ee_icgraph" id="aclass_game_1_1_subsystem_block_behavior_ac825726f23a80d7dd6266c59a69470ee_icgraph">
+<area shape="rect" title=" " alt="" coords="281,5,495,48"/>
+<area shape="rect" href="class_game_1_1_component_pickable_gatherer_player.html#adbf6e7f6d848f30fb80618c9ce4e384b" title=" " alt="" coords="5,5,233,48"/>
+<area shape="poly" title=" " alt="" coords="262,27,233,29,233,24,268,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaa59d2daf75f1cd8e6e692e9d5867e02" name="aaa59d2daf75f1cd8e6e692e9d5867e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa59d2daf75f1cd8e6e692e9d5867e02">&#9670;&#160;</a></span>OnUse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Game.SubsystemBlockBehavior.OnUse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_ray3.html">Ray3</a></td>          <td class="paramname"><span class="paramname"><em>ray</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_component_miner.html">ComponentMiner</a></td>          <td class="paramname"><span class="paramname"><em>componentMiner</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_boat_block_behavior.html#a7c3c0ff9c30a3b7b7bf586faf942c890">Game.SubsystemBoatBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_bucket_block_behavior.html#aa52c4a5722e2bac0390728aef5bf4e0b">Game.SubsystemBucketBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_fertilizer_block_behavior.html#a47d4b36dbcad10b7017441a856f9a2f4">Game.SubsystemFertilizerBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_hammer_block_behavior.html#a31c59e91f503e9a0b3816366ef163bef">Game.SubsystemHammerBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_match_block_behavior.html#a1f17077dba787af1a248ae0a3067915a">Game.SubsystemMatchBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_rake_block_behavior.html#ae41fd0368ac985a3d9e2f7d201ab8c36">Game.SubsystemRakeBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_saddle_block_behavior.html#a9ea88dfd21db226204ef738414240379">Game.SubsystemSaddleBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_whistle_block_behavior.html#aba3230422b8507b3e936fefabd6923e2">Game.SubsystemWhistleBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a95e32b366d677fd402554d97219879e2" name="a95e32b366d677fd402554d97219879e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e32b366d677fd402554d97219879e2">&#9670;&#160;</a></span>ProcessInventoryItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game.SubsystemBlockBehavior.ProcessInventoryItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_game_1_1_i_inventory.html">IInventory</a></td>          <td class="paramname"><span class="paramname"><em>inventory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>slotIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>processCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int</td>          <td class="paramname"><span class="paramname"><em>processedValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int</td>          <td class="paramname"><span class="paramname"><em>processedCount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_game_1_1_subsystem_bow_block_behavior.html#a472fa49388801dfacb9bd967e2bbf9c4">Game.SubsystemBowBlockBehavior</a>, <a class="el" href="class_game_1_1_subsystem_crossbow_block_behavior.html#ac0a71928957bafcf215532c047f3a61d">Game.SubsystemCrossbowBlockBehavior</a> , 以及 <a class="el" href="class_game_1_1_subsystem_musket_block_behavior.html#ae733d79c7c5f45075d25fd66ebf4bded">Game.SubsystemMusketBlockBehavior</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00062">62</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_subsystem_block_behavior_a95e32b366d677fd402554d97219879e2_icgraph.png" border="0" usemap="#aclass_game_1_1_subsystem_block_behavior_a95e32b366d677fd402554d97219879e2_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_subsystem_block_behavior_a95e32b366d677fd402554d97219879e2_icgraph" id="aclass_game_1_1_subsystem_block_behavior_a95e32b366d677fd402554d97219879e2_icgraph">
+<area shape="rect" title=" " alt="" coords="289,72,503,115"/>
+<area shape="rect" href="class_game_1_1_component_creative_inventory.html#a674c62b2bdeb43754fe484d9da001484" title=" " alt="" coords="6,5,240,48"/>
+<area shape="poly" title=" " alt="" coords="288,69,213,51,213,46,293,67"/>
+<area shape="rect" href="class_game_1_1_component_furniture_inventory.html#a47772e474d91162cf67a301c683c887f" title=" " alt="" coords="5,72,241,115"/>
+<area shape="poly" title=" " alt="" coords="270,94,242,96,241,91,275,93"/>
+<area shape="rect" href="class_game_1_1_component_inventory_base.html#af59bdee00525b33572810da2b3f57dd4" title=" " alt="" coords="15,139,231,181"/>
+<area shape="poly" title=" " alt="" coords="293,118,214,141,213,135,288,119"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="a2a45ea2614dfb1188747fce04bb89d5a" name="a2a45ea2614dfb1188747fce04bb89d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a45ea2614dfb1188747fce04bb89d5a">&#9670;&#160;</a></span>HandledBlocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int [] Game.SubsystemBlockBehavior.HandledBlocks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa5d990a2c3e869337c27e92fff363bf8" name="aa5d990a2c3e869337c27e92fff363bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d990a2c3e869337c27e92fff363bf8">&#9670;&#160;</a></span>SubsystemTerrain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SubsystemTerrain Game.SubsystemBlockBehavior.SubsystemTerrain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a> 第 <a class="el" href="_subsystem_block_behavior_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/<a class="el" href="_subsystem_block_behavior_8cs_source.html">SubsystemBlockBehavior.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game.html">Game</a></li><li class="navelem"><a href="class_game_1_1_subsystem_block_behavior.html">SubsystemBlockBehavior</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemCactusBlockBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_cactus_block_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemCactusBlockBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_cactus_block_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_cactus_block_behavior.html">SubsystemCactusBlockBehavior</a> : <a class="code hl_class" href="class_game_1_1_subsystem_pollable_block_behavior.html">SubsystemPollableBlockBehavior</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#aaaed5c9a1a6d936dd05bccd49819425c">    5</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a> <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#aaaed5c9a1a6d936dd05bccd49819425c">m_subsystemTime</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#ab73a956b641c9a04f9823e528d4e912d">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_cell_change_queue.html">SubsystemCellChangeQueue</a> <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#ab73a956b641c9a04f9823e528d4e912d">m_subsystemCellChangeQueue</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#af06e62c9e6f68a8a537d002d74510829">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a> <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#af06e62c9e6f68a8a537d002d74510829">m_subsystemGameInfo</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#a76fd96fb129644f2896dbc71ebd4bfd1">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a76fd96fb129644f2896dbc71ebd4bfd1">m_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#a83ec73d3c8e992dd5cade092d8cba383">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a83ec73d3c8e992dd5cade092d8cba383">m_sandBlockIndex</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#a965daf5e43d8c8f00c909b8e4da0c92c">   15</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a965daf5e43d8c8f00c909b8e4da0c92c">m_cactusBlockIndex</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#a9118eb1b8e634ff0be305574a0d5e91d">   16</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span>[] <a class="code hl_property" href="class_game_1_1_subsystem_cactus_block_behavior.html#a9118eb1b8e634ff0be305574a0d5e91d">HandledBlocks</a> =&gt; [<a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#a90ce10e430495f116a0ac63639539c2a">GetBlockIndex</a>&lt;<a class="code hl_class" href="class_game_1_1_cactus_block.html">CactusBlock</a>&gt;()];</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e">   18</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e">OnNeighborBlockChanged</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z, <span class="keywordtype">int</span> neighborX, <span class="keywordtype">int</span> neighborY, <span class="keywordtype">int</span> neighborZ) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordtype">int</span> cellContents = <a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a>.<a class="code hl_property" href="class_game_1_1_subsystem_terrain.html#ad54b44f7935f57de97494a007f2d5fcb">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a941d9b09863fe0f48e2d66f9fe26eb13">GetCellContents</a>(x, y - 1, z);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordflow">if</span> (cellContents != <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a83ec73d3c8e992dd5cade092d8cba383">m_sandBlockIndex</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                &amp;&amp; cellContents != <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a965daf5e43d8c8f00c909b8e4da0c92c">m_cactusBlockIndex</a>) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a>.<a class="code hl_function" href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589">DestroyCell</a>(</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    0,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    x,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    y,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    z,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    0,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    <span class="keyword">false</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                );</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#a7b4d4598b41e9c025c76eb61a1e9cf50">   34</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_cactus_block_behavior.html#a7b4d4598b41e9c025c76eb61a1e9cf50">OnPoll</a>(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z, <span class="keywordtype">int</span> pollPass) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#af06e62c9e6f68a8a537d002d74510829">m_subsystemGameInfo</a>.WorldSettings.EnvironmentBehaviorMode != 0) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordtype">int</span> cellValue = <a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a>.<a class="code hl_property" href="class_game_1_1_subsystem_terrain.html#ad54b44f7935f57de97494a007f2d5fcb">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a6758901ae5c25a6b31e892081b08ef99">GetCellValue</a>(x, y + 1, z);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">ExtractContents</a>(cellValue) == 0</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                &amp;&amp; <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a9539fe1c53d3379422a451f6af8694c0">ExtractLight</a>(cellValue) &gt;= 12) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordtype">int</span> cellContents = <a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a>.<a class="code hl_property" href="class_game_1_1_subsystem_terrain.html#ad54b44f7935f57de97494a007f2d5fcb">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a941d9b09863fe0f48e2d66f9fe26eb13">GetCellContents</a>(x, y - 1, z);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keywordtype">int</span> cellContents2 = <a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a>.<a class="code hl_property" href="class_game_1_1_subsystem_terrain.html#ad54b44f7935f57de97494a007f2d5fcb">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a941d9b09863fe0f48e2d66f9fe26eb13">GetCellContents</a>(x, y - 2, z);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keywordflow">if</span> ((cellContents != <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a965daf5e43d8c8f00c909b8e4da0c92c">m_cactusBlockIndex</a> || cellContents2 != <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a965daf5e43d8c8f00c909b8e4da0c92c">m_cactusBlockIndex</a>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    &amp;&amp; <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a76fd96fb129644f2896dbc71ebd4bfd1">m_random</a>.Float(0f, 1f) &lt; 0.25f) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#ab73a956b641c9a04f9823e528d4e912d">m_subsystemCellChangeQueue</a>.QueueCellChange(x, y + 1, z, <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(<a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a965daf5e43d8c8f00c909b8e4da0c92c">m_cactusBlockIndex</a>, 0, 0));</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#ad1f8c70d733d711e24f1ac07442ccc79">   50</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_cactus_block_behavior.html#ad1f8c70d733d711e24f1ac07442ccc79">OnCollide</a>(<a class="code hl_struct" href="struct_game_1_1_cell_face.html">CellFace</a> cellFace, <span class="keywordtype">float</span> velocity, <a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_class" href="class_game_1_1_component_health.html">ComponentHealth</a> componentHealth = componentBody.<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_health.html">ComponentHealth</a>&gt;();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">if</span> (componentHealth != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                componentHealth.<a class="code hl_function" href="class_game_1_1_component_health.html#aabde5c3a2dd7b05c577c6849f155a9c0">OnSpiked</a>(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    <span class="keyword">this</span>,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    0.1f / componentHealth.<a class="code hl_property" href="class_game_1_1_component_health.html#abf29e2370b05c9cc4547a9b6e2cd26ad">SpikeResilience</a> * MathF.Abs(velocity),</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    cellFace,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    velocity,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    componentBody,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    <span class="stringliteral">&quot;Spiked by cactus&quot;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                );</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_cactus_block_behavior.html#abcf62b650f2374a3bec21c6053db428a">   64</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_cactus_block_behavior.html#abcf62b650f2374a3bec21c6053db428a">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#aaaed5c9a1a6d936dd05bccd49819425c">m_subsystemTime</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#ab73a956b641c9a04f9823e528d4e912d">m_subsystemCellChangeQueue</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_cell_change_queue.html">SubsystemCellChangeQueue</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#af06e62c9e6f68a8a537d002d74510829">m_subsystemGameInfo</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a83ec73d3c8e992dd5cade092d8cba383">m_sandBlockIndex</a> = <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#a90ce10e430495f116a0ac63639539c2a">GetBlockIndex</a>&lt;<a class="code hl_class" href="class_game_1_1_sand_block.html">SandBlock</a>&gt;();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_cactus_block_behavior.html#a965daf5e43d8c8f00c909b8e4da0c92c">m_cactusBlockIndex</a> = <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#a90ce10e430495f116a0ac63639539c2a">GetBlockIndex</a>&lt;<a class="code hl_class" href="class_game_1_1_cactus_block.html">CactusBlock</a>&gt;();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            base.Load(valuesDictionary);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_a90ce10e430495f116a0ac63639539c2a"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#a90ce10e430495f116a0ac63639539c2a">Game.BlocksManager.GetBlockIndex</a></div><div class="ttdeci">static int GetBlockIndex(string BlockName, bool throwIfNotFound=false)</div><div class="ttdoc">通过方块名称来获取方块的Index</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00165">BlocksManager.cs:165</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cactus_block_html"><div class="ttname"><a href="class_game_1_1_cactus_block.html">Game.CactusBlock</a></div><div class="ttdef"><b>定义</b> <a href="_cactus_block_8cs_source.html#l00005">CactusBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_body_html"><div class="ttname"><a href="class_game_1_1_component_body.html">Game.ComponentBody</a></div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00007">ComponentBody.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_health_html"><div class="ttname"><a href="class_game_1_1_component_health.html">Game.ComponentHealth</a></div><div class="ttdef"><b>定义</b> <a href="_component_health_8cs_source.html#l00006">ComponentHealth.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_health_html_aabde5c3a2dd7b05c577c6849f155a9c0"><div class="ttname"><a href="class_game_1_1_component_health.html#aabde5c3a2dd7b05c577c6849f155a9c0">Game.ComponentHealth.OnSpiked</a></div><div class="ttdeci">virtual void OnSpiked(SubsystemBlockBehavior spikeBlockBehavior, float damage, CellFace cellFace, float velocity, ComponentBody componentBody, string causeOfDeath)</div><div class="ttdef"><b>定义</b> <a href="_component_health_8cs_source.html#l00035">ComponentHealth.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_health_html_abf29e2370b05c9cc4547a9b6e2cd26ad"><div class="ttname"><a href="class_game_1_1_component_health.html#abf29e2370b05c9cc4547a9b6e2cd26ad">Game.ComponentHealth.SpikeResilience</a></div><div class="ttdeci">virtual float SpikeResilience</div><div class="ttdef"><b>定义</b> <a href="_component_health_8cs_source.html#l00032">ComponentHealth.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_sand_block_html"><div class="ttname"><a href="class_game_1_1_sand_block.html">Game.SandBlock</a></div><div class="ttdef"><b>定义</b> <a href="_sand_block_8cs_source.html#l00002">SandBlock.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html">Game.SubsystemCactusBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="#l00004">SubsystemCactusBlockBehavior.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_a62a7a648ef1ad97e21c2cbd939a6592e"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#a62a7a648ef1ad97e21c2cbd939a6592e">Game.SubsystemCactusBlockBehavior.OnNeighborBlockChanged</a></div><div class="ttdeci">override void OnNeighborBlockChanged(int x, int y, int z, int neighborX, int neighborY, int neighborZ)</div><div class="ttdef"><b>定义</b> <a href="#l00018">SubsystemCactusBlockBehavior.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_a76fd96fb129644f2896dbc71ebd4bfd1"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#a76fd96fb129644f2896dbc71ebd4bfd1">Game.SubsystemCactusBlockBehavior.m_random</a></div><div class="ttdeci">Random m_random</div><div class="ttdef"><b>定义</b> <a href="#l00011">SubsystemCactusBlockBehavior.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_a7b4d4598b41e9c025c76eb61a1e9cf50"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#a7b4d4598b41e9c025c76eb61a1e9cf50">Game.SubsystemCactusBlockBehavior.OnPoll</a></div><div class="ttdeci">override void OnPoll(int value, int x, int y, int z, int pollPass)</div><div class="ttdef"><b>定义</b> <a href="#l00034">SubsystemCactusBlockBehavior.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_a83ec73d3c8e992dd5cade092d8cba383"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#a83ec73d3c8e992dd5cade092d8cba383">Game.SubsystemCactusBlockBehavior.m_sandBlockIndex</a></div><div class="ttdeci">int m_sandBlockIndex</div><div class="ttdef"><b>定义</b> <a href="#l00013">SubsystemCactusBlockBehavior.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_a9118eb1b8e634ff0be305574a0d5e91d"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#a9118eb1b8e634ff0be305574a0d5e91d">Game.SubsystemCactusBlockBehavior.HandledBlocks</a></div><div class="ttdeci">override int[] HandledBlocks</div><div class="ttdef"><b>定义</b> <a href="#l00016">SubsystemCactusBlockBehavior.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_a965daf5e43d8c8f00c909b8e4da0c92c"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#a965daf5e43d8c8f00c909b8e4da0c92c">Game.SubsystemCactusBlockBehavior.m_cactusBlockIndex</a></div><div class="ttdeci">int m_cactusBlockIndex</div><div class="ttdef"><b>定义</b> <a href="#l00015">SubsystemCactusBlockBehavior.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_aaaed5c9a1a6d936dd05bccd49819425c"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#aaaed5c9a1a6d936dd05bccd49819425c">Game.SubsystemCactusBlockBehavior.m_subsystemTime</a></div><div class="ttdeci">SubsystemTime m_subsystemTime</div><div class="ttdef"><b>定义</b> <a href="#l00005">SubsystemCactusBlockBehavior.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_ab73a956b641c9a04f9823e528d4e912d"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#ab73a956b641c9a04f9823e528d4e912d">Game.SubsystemCactusBlockBehavior.m_subsystemCellChangeQueue</a></div><div class="ttdeci">SubsystemCellChangeQueue m_subsystemCellChangeQueue</div><div class="ttdef"><b>定义</b> <a href="#l00007">SubsystemCactusBlockBehavior.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_abcf62b650f2374a3bec21c6053db428a"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#abcf62b650f2374a3bec21c6053db428a">Game.SubsystemCactusBlockBehavior.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00064">SubsystemCactusBlockBehavior.cs:64</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_ad1f8c70d733d711e24f1ac07442ccc79"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#ad1f8c70d733d711e24f1ac07442ccc79">Game.SubsystemCactusBlockBehavior.OnCollide</a></div><div class="ttdeci">override void OnCollide(CellFace cellFace, float velocity, ComponentBody componentBody)</div><div class="ttdef"><b>定义</b> <a href="#l00050">SubsystemCactusBlockBehavior.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cactus_block_behavior_html_af06e62c9e6f68a8a537d002d74510829"><div class="ttname"><a href="class_game_1_1_subsystem_cactus_block_behavior.html#af06e62c9e6f68a8a537d002d74510829">Game.SubsystemCactusBlockBehavior.m_subsystemGameInfo</a></div><div class="ttdeci">SubsystemGameInfo m_subsystemGameInfo</div><div class="ttdef"><b>定义</b> <a href="#l00009">SubsystemCactusBlockBehavior.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_cell_change_queue_html"><div class="ttname"><a href="class_game_1_1_subsystem_cell_change_queue.html">Game.SubsystemCellChangeQueue</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_cell_change_queue_8cs_source.html#l00006">SubsystemCellChangeQueue.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html">Game.SubsystemGameInfo</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00005">SubsystemGameInfo.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_pollable_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_pollable_block_behavior.html">Game.SubsystemPollableBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_pollable_block_behavior_8cs_source.html#l00002">SubsystemPollableBlockBehavior.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html">Game.SubsystemTerrain</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00006">SubsystemTerrain.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html_a98561e3887a06100ada64369ae43f589"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html#a98561e3887a06100ada64369ae43f589">Game.SubsystemTerrain.DestroyCell</a></div><div class="ttdeci">virtual void DestroyCell(int toolLevel, int x, int y, int z, int newValue, bool noDrop, bool noParticleSystem, MovingBlock movingBlock=null)</div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00429">SubsystemTerrain.cs:429</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html_ad54b44f7935f57de97494a007f2d5fcb"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html#ad54b44f7935f57de97494a007f2d5fcb">Game.SubsystemTerrain.Terrain</a></div><div class="ttdeci">virtual Terrain Terrain</div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00050">SubsystemTerrain.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_time_html"><div class="ttname"><a href="class_game_1_1_subsystem_time.html">Game.SubsystemTime</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_time_8cs_source.html#l00006">SubsystemTime.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a221de37baa4a0f91e934920030005677"><div class="ttname"><a href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">Game.Terrain.ExtractContents</a></div><div class="ttdeci">static int ExtractContents(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00303">Terrain.cs:303</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a6758901ae5c25a6b31e892081b08ef99"><div class="ttname"><a href="class_game_1_1_terrain.html#a6758901ae5c25a6b31e892081b08ef99">Game.Terrain.GetCellValue</a></div><div class="ttdeci">virtual int GetCellValue(int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00224">Terrain.cs:224</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a941d9b09863fe0f48e2d66f9fe26eb13"><div class="ttname"><a href="class_game_1_1_terrain.html#a941d9b09863fe0f48e2d66f9fe26eb13">Game.Terrain.GetCellContents</a></div><div class="ttdeci">virtual int GetCellContents(int x, int y, int z)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00228">Terrain.cs:228</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a9539fe1c53d3379422a451f6af8694c0"><div class="ttname"><a href="class_game_1_1_terrain.html#a9539fe1c53d3379422a451f6af8694c0">Game.Terrain.ExtractLight</a></div><div class="ttdeci">static int ExtractLight(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00305">Terrain.cs:305</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aea9a8c0114bc872225f02ebc8b7b8b9f"><div class="ttname"><a href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">Game.Terrain.MakeBlockValue</a></div><div class="ttdeci">static int MakeBlockValue(int contents)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00298">Terrain.cs:298</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_afbe091d90718bd24bc5b528daa3245cf"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">GameEntitySystem.Entity.FindComponent</a></div><div class="ttdeci">Component FindComponent(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00132">Entity.cs:132</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_game_1_1_cell_face_html"><div class="ttname"><a href="struct_game_1_1_cell_face.html">Game.CellFace</a></div><div class="ttdef"><b>定义</b> <a href="_cell_face_8cs_source.html#l00004">CellFace.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_cactus_block_behavior_8cs.html">SubsystemCactusBlockBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

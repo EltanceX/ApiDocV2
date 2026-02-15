@@ -1,0 +1,776 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Engine.Serialization.EngineBinaryWriter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_engine_1_1_serialization_1_1_engine_binary_writer.html','','class_engine_1_1_serialization_1_1_engine_binary_writer-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Engine.Serialization.EngineBinaryWriter</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Engine.Serialization.EngineBinaryWriter 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer__inherit__graph.png" border="0" usemap="#a_engine_8_serialization_8_engine_binary_writer_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_engine_8_serialization_8_engine_binary_writer_inherit__map" id="a_engine_8_serialization_8_engine_binary_writer_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,186,123"/>
+<area shape="rect" title=" " alt="" coords="49,5,142,32"/>
+<area shape="poly" title=" " alt="" coords="97,46,98,81,93,79,94,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Engine.Serialization.EngineBinaryWriter 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer__coll__graph.png" border="0" usemap="#a_engine_8_serialization_8_engine_binary_writer_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_engine_8_serialization_8_engine_binary_writer_coll__map" id="a_engine_8_serialization_8_engine_binary_writer_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,186,123"/>
+<area shape="rect" title=" " alt="" coords="49,5,142,32"/>
+<area shape="poly" title=" " alt="" coords="97,46,98,81,93,79,94,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a01917fd32e872e1dc937f723a4bafa8c" id="r_a01917fd32e872e1dc937f723a4bafa8c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a01917fd32e872e1dc937f723a4bafa8c">EngineBinaryWriter</a> (Stream stream, bool leaveOpen=false)</td></tr>
+<tr class="memitem:ae1b0468087b80e8b788901db7a6f1a18" id="r_ae1b0468087b80e8b788901db7a6f1a18"><td class="memItemLeft">new void&#160;</td><td class="memItemRight"><a class="el" href="#ae1b0468087b80e8b788901db7a6f1a18">Write7BitEncodedInt</a> (int value)</td></tr>
+<tr class="memitem:ac7396f4fafedd6f433e721c465b5feb2" id="r_ac7396f4fafedd6f433e721c465b5feb2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac7396f4fafedd6f433e721c465b5feb2">Write</a> (<a class="el" href="struct_engine_1_1_color.html">Color</a> value)</td></tr>
+<tr class="memitem:af06d662ac7bdd1ce103af263742e4357" id="r_af06d662ac7bdd1ce103af263742e4357"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#af06d662ac7bdd1ce103af263742e4357">Write</a> (<a class="el" href="struct_engine_1_1_point2.html">Point2</a> value)</td></tr>
+<tr class="memitem:af92d66b20774aa09357b05a1ecadbd18" id="r_af92d66b20774aa09357b05a1ecadbd18"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#af92d66b20774aa09357b05a1ecadbd18">Write</a> (<a class="el" href="struct_engine_1_1_point3.html">Point3</a> value)</td></tr>
+<tr class="memitem:a26a11a28e64fff62aef85a38691a1c60" id="r_a26a11a28e64fff62aef85a38691a1c60"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a26a11a28e64fff62aef85a38691a1c60">Write</a> (<a class="el" href="struct_engine_1_1_rectangle.html">Rectangle</a> value)</td></tr>
+<tr class="memitem:ad86dd019614206d6802e92b31119fd98" id="r_ad86dd019614206d6802e92b31119fd98"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ad86dd019614206d6802e92b31119fd98">Write</a> (<a class="el" href="struct_engine_1_1_box.html">Box</a> value)</td></tr>
+<tr class="memitem:af05045f32692fed4584eb35bbf997bd9" id="r_af05045f32692fed4584eb35bbf997bd9"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#af05045f32692fed4584eb35bbf997bd9">Write</a> (<a class="el" href="struct_engine_1_1_vector2.html">Vector2</a> value)</td></tr>
+<tr class="memitem:ad5de732c9755981bcb8385ba90dbee2d" id="r_ad5de732c9755981bcb8385ba90dbee2d"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ad5de732c9755981bcb8385ba90dbee2d">Write</a> (<a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> value)</td></tr>
+<tr class="memitem:a2dec45ec07f79d1ce3dbbafc1b55bf2c" id="r_a2dec45ec07f79d1ce3dbbafc1b55bf2c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2dec45ec07f79d1ce3dbbafc1b55bf2c">Write</a> (<a class="el" href="struct_engine_1_1_vector4.html">Vector4</a> value)</td></tr>
+<tr class="memitem:a8ad229db0f6516b1341952713bba1e1a" id="r_a8ad229db0f6516b1341952713bba1e1a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a8ad229db0f6516b1341952713bba1e1a">Write</a> (<a class="el" href="struct_engine_1_1_bounding_rectangle.html">BoundingRectangle</a> value)</td></tr>
+<tr class="memitem:ab2f7fb56d5c50ce1077bed888219edba" id="r_ab2f7fb56d5c50ce1077bed888219edba"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab2f7fb56d5c50ce1077bed888219edba">Write</a> (<a class="el" href="struct_engine_1_1_bounding_box.html">BoundingBox</a> value)</td></tr>
+<tr class="memitem:a9afac4bbf8418009dcc942cff4c13e6b" id="r_a9afac4bbf8418009dcc942cff4c13e6b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9afac4bbf8418009dcc942cff4c13e6b">Write</a> (<a class="el" href="struct_engine_1_1_plane.html">Plane</a> value)</td></tr>
+<tr class="memitem:ac169f23787308fc312b263a0f25c5bef" id="r_ac169f23787308fc312b263a0f25c5bef"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac169f23787308fc312b263a0f25c5bef">Write</a> (<a class="el" href="struct_engine_1_1_quaternion.html">Quaternion</a> value)</td></tr>
+<tr class="memitem:ab2c60f81c3ceea6522f43659e9057c3c" id="r_ab2c60f81c3ceea6522f43659e9057c3c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab2c60f81c3ceea6522f43659e9057c3c">Write</a> (<a class="el" href="struct_engine_1_1_matrix.html">Matrix</a> value)</td></tr>
+<tr class="memitem:a6ef31e6c9b8c29094b64802e1c072c1e" id="r_a6ef31e6c9b8c29094b64802e1c072c1e"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a6ef31e6c9b8c29094b64802e1c072c1e">WriteStruct&lt; T &gt;</a> (T structure)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00004">4</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="a01917fd32e872e1dc937f723a4bafa8c" name="a01917fd32e872e1dc937f723a4bafa8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01917fd32e872e1dc937f723a4bafa8c">&#9670;&#160;</a></span>EngineBinaryWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Engine.Serialization.EngineBinaryWriter.EngineBinaryWriter </td>
+          <td>(</td>
+          <td class="paramtype">Stream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>leaveOpen</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="ab2f7fb56d5c50ce1077bed888219edba" name="ab2f7fb56d5c50ce1077bed888219edba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f7fb56d5c50ce1077bed888219edba">&#9670;&#160;</a></span>Write() <span class="overload">[1/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_bounding_box.html">BoundingBox</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00065">65</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_ab2f7fb56d5c50ce1077bed888219edba_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_ab2f7fb56d5c50ce1077bed888219edba_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ab2f7fb56d5c50ce1077bed888219edba_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ab2f7fb56d5c50ce1077bed888219edba_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8ad229db0f6516b1341952713bba1e1a" name="a8ad229db0f6516b1341952713bba1e1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad229db0f6516b1341952713bba1e1a">&#9670;&#160;</a></span>Write() <span class="overload">[2/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_bounding_rectangle.html">BoundingRectangle</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00060">60</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_a8ad229db0f6516b1341952713bba1e1a_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_a8ad229db0f6516b1341952713bba1e1a_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a8ad229db0f6516b1341952713bba1e1a_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a8ad229db0f6516b1341952713bba1e1a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad86dd019614206d6802e92b31119fd98" name="ad86dd019614206d6802e92b31119fd98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86dd019614206d6802e92b31119fd98">&#9670;&#160;</a></span>Write() <span class="overload">[3/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_box.html">Box</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00033">33</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_ad86dd019614206d6802e92b31119fd98_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_ad86dd019614206d6802e92b31119fd98_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ad86dd019614206d6802e92b31119fd98_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ad86dd019614206d6802e92b31119fd98_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac7396f4fafedd6f433e721c465b5feb2" name="ac7396f4fafedd6f433e721c465b5feb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7396f4fafedd6f433e721c465b5feb2">&#9670;&#160;</a></span>Write() <span class="overload">[4/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_color.html">Color</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00011">11</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_ac7396f4fafedd6f433e721c465b5feb2_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_ac7396f4fafedd6f433e721c465b5feb2_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ac7396f4fafedd6f433e721c465b5feb2_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ac7396f4fafedd6f433e721c465b5feb2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="poly" title=" " alt="" coords="61,28,59,19,65,10,77,5,96,3,115,5,128,14,123,14,113,10,95,8,79,10,69,14,65,21,66,30"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_ac7396f4fafedd6f433e721c465b5feb2_icgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_ac7396f4fafedd6f433e721c465b5feb2_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ac7396f4fafedd6f433e721c465b5feb2_icgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ac7396f4fafedd6f433e721c465b5feb2_icgraph">
+<area shape="rect" title=" " alt="" coords="246,405,426,448"/>
+<area shape="poly" title=" " alt="" coords="372,390,360,386,336,384,314,386,300,391,295,397,297,405,291,404,290,395,297,386,313,381,336,379,361,381,377,389"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ab2f7fb56d5c50ce1077bed888219edba" title=" " alt="" coords="11,5,192,48"/>
+<area shape="poly" title=" " alt="" coords="328,390,317,321,294,233,277,187,255,142,228,99,196,62,183,51,182,46,199,58,232,96,260,139,282,185,299,232,322,320,334,391"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#a8ad229db0f6516b1341952713bba1e1a" title=" " alt="" coords="11,72,192,115"/>
+<area shape="poly" title=" " alt="" coords="325,390,310,333,285,263,247,191,223,158,196,129,183,118,181,113,199,125,228,155,252,188,290,261,315,332,330,390"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ad86dd019614206d6802e92b31119fd98" title=" " alt="" coords="11,139,192,181"/>
+<area shape="poly" title=" " alt="" coords="320,390,302,347,275,294,240,241,196,195,181,184,180,179,199,191,244,238,280,292,307,345,325,391"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ab2c60f81c3ceea6522f43659e9057c3c" title=" " alt="" coords="11,205,192,248"/>
+<area shape="poly" title=" " alt="" coords="312,393,264,327,232,292,196,262,179,251,177,246,199,258,236,288,268,324,317,392"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#a9afac4bbf8418009dcc942cff4c13e6b" title=" " alt="" coords="11,272,192,315"/>
+<area shape="poly" title=" " alt="" coords="295,396,250,362,196,329,174,318,172,313,199,324,253,358,300,394"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#af06d662ac7bdd1ce103af263742e4357" title=" " alt="" coords="11,339,192,381"/>
+<area shape="poly" title=" " alt="" coords="242,402,180,385,178,379,246,399"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#af92d66b20774aa09357b05a1ecadbd18" title=" " alt="" coords="11,405,192,448"/>
+<area shape="poly" title=" " alt="" coords="228,428,194,429,191,424,232,425"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac169f23787308fc312b263a0f25c5bef" title=" " alt="" coords="11,472,192,515"/>
+<area shape="poly" title=" " alt="" coords="242,455,181,474,178,469,246,451"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#a26a11a28e64fff62aef85a38691a1c60" title=" " alt="" coords="11,539,192,581"/>
+<area shape="poly" title=" " alt="" coords="296,460,253,496,199,529,174,540,171,536,196,524,250,491,299,456"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#af05045f32692fed4584eb35bbf997bd9" title=" " alt="" coords="11,605,192,648"/>
+<area shape="poly" title=" " alt="" coords="316,459,268,530,236,565,199,596,180,607,176,603,196,591,232,561,264,526,313,463"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ad5de732c9755981bcb8385ba90dbee2d" title=" " alt="" coords="11,672,192,715"/>
+<area shape="poly" title=" " alt="" coords="324,461,307,509,280,562,244,615,199,662,182,674,179,669,196,658,240,612,275,559,302,506,321,465"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#a2dec45ec07f79d1ce3dbbafc1b55bf2c" title=" " alt="" coords="11,739,192,781"/>
+<area shape="poly" title=" " alt="" coords="329,461,315,522,290,592,252,665,228,699,199,729,183,740,180,736,196,725,223,695,247,662,285,590,310,520,326,466"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#a6ef31e6c9b8c29094b64802e1c072c1e" title=" " alt="" coords="5,805,198,848"/>
+<area shape="poly" title=" " alt="" coords="332,461,322,533,299,622,282,668,260,714,232,757,199,795,184,807,181,803,196,791,228,754,255,711,277,666,294,620,317,532,330,465"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab2c60f81c3ceea6522f43659e9057c3c" name="ab2c60f81c3ceea6522f43659e9057c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c60f81c3ceea6522f43659e9057c3c">&#9670;&#160;</a></span>Write() <span class="overload">[5/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_matrix.html">Matrix</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00082">82</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_ab2c60f81c3ceea6522f43659e9057c3c_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_ab2c60f81c3ceea6522f43659e9057c3c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ab2c60f81c3ceea6522f43659e9057c3c_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ab2c60f81c3ceea6522f43659e9057c3c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9afac4bbf8418009dcc942cff4c13e6b" name="a9afac4bbf8418009dcc942cff4c13e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afac4bbf8418009dcc942cff4c13e6b">&#9670;&#160;</a></span>Write() <span class="overload">[6/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_plane.html">Plane</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00070">70</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_a9afac4bbf8418009dcc942cff4c13e6b_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_a9afac4bbf8418009dcc942cff4c13e6b_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a9afac4bbf8418009dcc942cff4c13e6b_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a9afac4bbf8418009dcc942cff4c13e6b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af06d662ac7bdd1ce103af263742e4357" name="af06d662ac7bdd1ce103af263742e4357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af06d662ac7bdd1ce103af263742e4357">&#9670;&#160;</a></span>Write() <span class="overload">[7/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_point2.html">Point2</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00015">15</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_af06d662ac7bdd1ce103af263742e4357_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_af06d662ac7bdd1ce103af263742e4357_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_af06d662ac7bdd1ce103af263742e4357_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_af06d662ac7bdd1ce103af263742e4357_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af92d66b20774aa09357b05a1ecadbd18" name="af92d66b20774aa09357b05a1ecadbd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92d66b20774aa09357b05a1ecadbd18">&#9670;&#160;</a></span>Write() <span class="overload">[8/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_point3.html">Point3</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00020">20</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_af92d66b20774aa09357b05a1ecadbd18_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_af92d66b20774aa09357b05a1ecadbd18_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_af92d66b20774aa09357b05a1ecadbd18_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_af92d66b20774aa09357b05a1ecadbd18_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac169f23787308fc312b263a0f25c5bef" name="ac169f23787308fc312b263a0f25c5bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac169f23787308fc312b263a0f25c5bef">&#9670;&#160;</a></span>Write() <span class="overload">[9/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_quaternion.html">Quaternion</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00075">75</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_ac169f23787308fc312b263a0f25c5bef_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_ac169f23787308fc312b263a0f25c5bef_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ac169f23787308fc312b263a0f25c5bef_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ac169f23787308fc312b263a0f25c5bef_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a26a11a28e64fff62aef85a38691a1c60" name="a26a11a28e64fff62aef85a38691a1c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a11a28e64fff62aef85a38691a1c60">&#9670;&#160;</a></span>Write() <span class="overload">[10/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_rectangle.html">Rectangle</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00026">26</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_a26a11a28e64fff62aef85a38691a1c60_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_a26a11a28e64fff62aef85a38691a1c60_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a26a11a28e64fff62aef85a38691a1c60_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a26a11a28e64fff62aef85a38691a1c60_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af05045f32692fed4584eb35bbf997bd9" name="af05045f32692fed4584eb35bbf997bd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af05045f32692fed4584eb35bbf997bd9">&#9670;&#160;</a></span>Write() <span class="overload">[11/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_vector2.html">Vector2</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00042">42</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_af05045f32692fed4584eb35bbf997bd9_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_af05045f32692fed4584eb35bbf997bd9_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_af05045f32692fed4584eb35bbf997bd9_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_af05045f32692fed4584eb35bbf997bd9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad5de732c9755981bcb8385ba90dbee2d" name="ad5de732c9755981bcb8385ba90dbee2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5de732c9755981bcb8385ba90dbee2d">&#9670;&#160;</a></span>Write() <span class="overload">[12/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00047">47</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_ad5de732c9755981bcb8385ba90dbee2d_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_ad5de732c9755981bcb8385ba90dbee2d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ad5de732c9755981bcb8385ba90dbee2d_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_ad5de732c9755981bcb8385ba90dbee2d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2dec45ec07f79d1ce3dbbafc1b55bf2c" name="a2dec45ec07f79d1ce3dbbafc1b55bf2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dec45ec07f79d1ce3dbbafc1b55bf2c">&#9670;&#160;</a></span>Write() <span class="overload">[13/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_vector4.html">Vector4</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00053">53</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_a2dec45ec07f79d1ce3dbbafc1b55bf2c_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_a2dec45ec07f79d1ce3dbbafc1b55bf2c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a2dec45ec07f79d1ce3dbbafc1b55bf2c_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a2dec45ec07f79d1ce3dbbafc1b55bf2c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,186,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="234,29,414,72"/>
+<area shape="poly" title=" " alt="" coords="186,48,221,50,215,51,186,53"/>
+<area shape="poly" title=" " alt="" coords="281,27,279,19,286,10,301,5,324,3,348,5,365,14,359,13,347,10,324,8,302,10,289,15,284,21,285,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae1b0468087b80e8b788901db7a6f1a18" name="ae1b0468087b80e8b788901db7a6f1a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b0468087b80e8b788901db7a6f1a18">&#9670;&#160;</a></span>Write7BitEncodedInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">new void Engine.Serialization.EngineBinaryWriter.Write7BitEncodedInt </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6ef31e6c9b8c29094b64802e1c072c1e" name="a6ef31e6c9b8c29094b64802e1c072c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef31e6c9b8c29094b64802e1c072c1e">&#9670;&#160;</a></span>WriteStruct&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Engine.Serialization.EngineBinaryWriter.WriteStruct&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>structure</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="typeconstraint">
+<dl><dt><b>类型限制</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>unmanaged</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">在文件 <a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a> 第 <a class="el" href="_engine_binary_writer_8cs_source.html#l00101">101</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_serialization_1_1_engine_binary_writer_a6ef31e6c9b8c29094b64802e1c072c1e_cgraph.png" border="0" usemap="#aclass_engine_1_1_serialization_1_1_engine_binary_writer_a6ef31e6c9b8c29094b64802e1c072c1e_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a6ef31e6c9b8c29094b64802e1c072c1e_cgraph" id="aclass_engine_1_1_serialization_1_1_engine_binary_writer_a6ef31e6c9b8c29094b64802e1c072c1e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,198,72"/>
+<area shape="rect" href="class_engine_1_1_serialization_1_1_engine_binary_writer.html#ac7396f4fafedd6f433e721c465b5feb2" title=" " alt="" coords="246,29,426,72"/>
+<area shape="poly" title=" " alt="" coords="198,48,233,50,228,51,198,53"/>
+<area shape="poly" title=" " alt="" coords="292,27,290,19,297,10,313,5,336,3,361,5,378,14,372,13,360,10,336,8,314,10,300,15,295,21,296,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Serialization/<a class="el" href="_engine_binary_writer_8cs_source.html">EngineBinaryWriter.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_engine.html">Engine</a></li><li class="navelem"><a href="namespace_engine_1_1_serialization.html">Serialization</a></li><li class="navelem"><a href="class_engine_1_1_serialization_1_1_engine_binary_writer.html">EngineBinaryWriter</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

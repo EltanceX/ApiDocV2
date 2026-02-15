@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine/Random.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_engine_2_engine_2_random_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Random.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_engine_2_engine_2_random_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Diagnostics;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_engine_1_1_random.html#a9de9445eba1f981c4008197bfbe590f5">Random</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a331c172b9d2a1e3d268fb2b6346c66d0">    5</a></span>        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_random.html#a331c172b9d2a1e3d268fb2b6346c66d0">m_counter</a> = (int)(Stopwatch.GetTimestamp() + DateTime.Now.Ticks);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a2f5bf13b978348947b7414155d6ca06f">    7</a></span>        uint <a class="code hl_variable" href="class_engine_1_1_random.html#a2f5bf13b978348947b7414155d6ca06f">m_s0</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a2f348f265eaf4ca7406bcfe512b8c453">    9</a></span>        uint <a class="code hl_variable" href="class_engine_1_1_random.html#a2f348f265eaf4ca7406bcfe512b8c453">m_s1</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#aaf1f1e129154ce526d9878bbb28ec776">   11</a></span>        <span class="keyword">public</span> ulong <a class="code hl_property" href="class_engine_1_1_random.html#aaf1f1e129154ce526d9878bbb28ec776">State</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_engine_1_1_random.html#a2f5bf13b978348947b7414155d6ca06f">m_s0</a> + ((ulong)<a class="code hl_variable" href="class_engine_1_1_random.html#a2f348f265eaf4ca7406bcfe512b8c453">m_s1</a> &lt;&lt; 32);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                <a class="code hl_variable" href="class_engine_1_1_random.html#a2f5bf13b978348947b7414155d6ca06f">m_s0</a> = (uint)value;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                <a class="code hl_variable" href="class_engine_1_1_random.html#a2f348f265eaf4ca7406bcfe512b8c453">m_s1</a> = (uint)(value &gt;&gt; 32);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        }</div>
+</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a9de9445eba1f981c4008197bfbe590f5">   19</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_random.html#a9de9445eba1f981c4008197bfbe590f5">Random</a>() {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_function" href="class_engine_1_1_random.html#a210a18dd53a01c80dc8785d86f2b5965">Seed</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a85b41120d2aea98d59a1d4820fcf4b65">   23</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_random.html#a85b41120d2aea98d59a1d4820fcf4b65">Random</a>(<span class="keywordtype">int</span> seed) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_function" href="class_engine_1_1_random.html#a210a18dd53a01c80dc8785d86f2b5965">Seed</a>(seed);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a210a18dd53a01c80dc8785d86f2b5965">   27</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_random.html#a210a18dd53a01c80dc8785d86f2b5965">Seed</a>() {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_function" href="class_engine_1_1_random.html#a210a18dd53a01c80dc8785d86f2b5965">Seed</a>(<a class="code hl_variable" href="class_engine_1_1_random.html#a331c172b9d2a1e3d268fb2b6346c66d0">m_counter</a>++);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a9f4296c835c3089b751e37d7c6db41b8">   31</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_random.html#a9f4296c835c3089b751e37d7c6db41b8">Seed</a>(<span class="keywordtype">int</span> seed) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_variable" href="class_engine_1_1_random.html#a2f5bf13b978348947b7414155d6ca06f">m_s0</a> = (uint)(seed + 42817);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_variable" href="class_engine_1_1_random.html#a2f348f265eaf4ca7406bcfe512b8c453">m_s1</a> = (uint)(seed + 324508639);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#af89f568cbfd58fc858fdd8f9d09fedfd">   36</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_random.html#af89f568cbfd58fc858fdd8f9d09fedfd">Sign</a>() =&gt; (int)((<a class="code hl_function" href="class_engine_1_1_random.html#a42c2d23420bd344152338bfe365cada4">UInt</a>() &amp; 1) * 2 - 1);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a0406bfe99a6a7d7c6cd45612c2171182">   38</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_random.html#a0406bfe99a6a7d7c6cd45612c2171182">Bool</a>() =&gt; (<a class="code hl_function" href="class_engine_1_1_random.html#a42c2d23420bd344152338bfe365cada4">UInt</a>() &amp; 1) != 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#ae84a0abd8199439030746575a041879c">   40</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_random.html#ae84a0abd8199439030746575a041879c">Bool</a>(<span class="keywordtype">float</span> probability) =&gt; <a class="code hl_function" href="class_engine_1_1_random.html#aa4e0b6448a55649c4b5ee328d4a7fcaa">Int</a>() / 2.147484E+09f &lt; probability;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a42c2d23420bd344152338bfe365cada4">   42</a></span>        <span class="keyword">public</span> uint <a class="code hl_function" href="class_engine_1_1_random.html#a42c2d23420bd344152338bfe365cada4">UInt</a>() {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            uint s = <a class="code hl_variable" href="class_engine_1_1_random.html#a2f5bf13b978348947b7414155d6ca06f">m_s0</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            uint s2 = <a class="code hl_variable" href="class_engine_1_1_random.html#a2f348f265eaf4ca7406bcfe512b8c453">m_s1</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            s2 ^= s;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_variable" href="class_engine_1_1_random.html#a2f5bf13b978348947b7414155d6ca06f">m_s0</a> = <a class="code hl_function" href="class_engine_1_1_random.html#a4c2e8ccfc88377bd713d4579333d298e">RotateLeft</a>(s, 26) ^ s2 ^ (s2 &lt;&lt; 9);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_variable" href="class_engine_1_1_random.html#a2f348f265eaf4ca7406bcfe512b8c453">m_s1</a> = <a class="code hl_function" href="class_engine_1_1_random.html#a4c2e8ccfc88377bd713d4579333d298e">RotateLeft</a>(s2, 13);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_engine_1_1_random.html#a4c2e8ccfc88377bd713d4579333d298e">RotateLeft</a>(s * 2654435771u, 5) * 5;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#aa4e0b6448a55649c4b5ee328d4a7fcaa">   51</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_random.html#aa4e0b6448a55649c4b5ee328d4a7fcaa">Int</a>() =&gt; (int)(<a class="code hl_function" href="class_engine_1_1_random.html#a42c2d23420bd344152338bfe365cada4">UInt</a>() &amp; 0x7FFFFFFF);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a66d7376082956f73fcad840ccd4fd1fa">   53</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_random.html#a66d7376082956f73fcad840ccd4fd1fa">Int</a>(<span class="keywordtype">int</span> bound) =&gt; (int)(<a class="code hl_function" href="class_engine_1_1_random.html#a66d7376082956f73fcad840ccd4fd1fa">Int</a>() * (<span class="keywordtype">long</span>)bound / 2147483648u);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#ae45149b1f7d1f6bd512d8ca6a144d469">   55</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_random.html#ae45149b1f7d1f6bd512d8ca6a144d469">Int</a>(<span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max) =&gt; (int)(min + <a class="code hl_function" href="class_engine_1_1_random.html#ae45149b1f7d1f6bd512d8ca6a144d469">Int</a>() * (<span class="keywordtype">long</span>)(max - min + 1) / 2147483648u);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">   57</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">Float</a>() =&gt; <a class="code hl_function" href="class_engine_1_1_random.html#aa4e0b6448a55649c4b5ee328d4a7fcaa">Int</a>() / 2.147484E+09f;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a72f94ac502b67a27889eede208e89e82">   59</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_engine_1_1_random.html#a72f94ac502b67a27889eede208e89e82">Float</a>(<span class="keywordtype">float</span> min, <span class="keywordtype">float</span> max) =&gt; min + <a class="code hl_function" href="class_engine_1_1_random.html#a72f94ac502b67a27889eede208e89e82">Float</a>() * (max - min);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a37ab7de117d7a416e1c40b0f93df3bb3">   61</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_engine_1_1_random.html#a37ab7de117d7a416e1c40b0f93df3bb3">NormalFloat</a>(<span class="keywordtype">float</span> mean, <span class="keywordtype">float</span> stddev) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordtype">float</span> num = <a class="code hl_function" href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">Float</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">if</span> (num &lt; 0.5) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordtype">float</span> num2 = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a227d7f92668d1e5220f05a3279601214">Sqrt</a>(-2f * <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a653f7a3287d6fa9086895b3083136e94">Log</a>(num));</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordtype">float</span> num3 = 0.32223243f + num2 * (1f + num2 * (0.3422421f + num2 * (0.020423122f + num2 * 4.536422E-05f)));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordtype">float</span> num4 = 0.09934846f + num2 * (0.58858156f + num2 * (0.5311035f + num2 * (0.10353775f + num2 * 0.00385607f)));</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">return</span> mean + stddev * (num3 / num4 - num2);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordtype">float</span> num5 = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a227d7f92668d1e5220f05a3279601214">Sqrt</a>(-2f * <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a653f7a3287d6fa9086895b3083136e94">Log</a>(1f - num));</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordtype">float</span> num6 = 0.32223243f + num5 * (1f + num5 * (0.3422421f + num5 * (0.020423122f + num5 * 4.536422E-05f)));</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordtype">float</span> num7 = 0.09934846f + num5 * (0.58858156f + num5 * (0.5311035f + num5 * (0.10353775f + num5 * 0.00385607f)));</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">return</span> mean - stddev * (num6 / num7 - num5);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#abd23d05d8c212071e179c5ce39b63eb8">   75</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_random.html#abd23d05d8c212071e179c5ce39b63eb8">Vector2</a> <a class="code hl_function" href="class_engine_1_1_random.html#abd23d05d8c212071e179c5ce39b63eb8">Vector2</a>() {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordtype">float</span> num;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordtype">float</span> num2;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordtype">float</span> num3;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordtype">float</span> num4;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordtype">float</span> num5;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                num = 2f * <a class="code hl_function" href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">Float</a>() - 1f;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                num2 = 2f * <a class="code hl_function" href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">Float</a>() - 1f;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                num3 = num * num;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                num4 = num2 * num2;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                num5 = num3 + num4;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">while</span> (!(num5 &lt; 1f)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                || !(num5 &gt; 0f));</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordtype">float</span> num6 = 1f / num5;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_function" href="class_engine_1_1_random.html#abd23d05d8c212071e179c5ce39b63eb8">Vector2</a>((num3 - num4) * num6, 2f * num * num2 * num6);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a74afa5b60b71acdfc93efa53b4fadc05">   94</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_random.html#abd23d05d8c212071e179c5ce39b63eb8">Vector2</a> <a class="code hl_function" href="class_engine_1_1_random.html#a74afa5b60b71acdfc93efa53b4fadc05">Vector2</a>(<span class="keywordtype">float</span> length) =&gt; <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#ac0af53a62b806ca6dfa22f76fdad6060">Normalize</a>(<a class="code hl_function" href="class_engine_1_1_random.html#a74afa5b60b71acdfc93efa53b4fadc05">Vector2</a>()) * length;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#aa71a29879a657fdba37e57ba60155d1d">   96</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_random.html#abd23d05d8c212071e179c5ce39b63eb8">Vector2</a> <a class="code hl_function" href="class_engine_1_1_random.html#aa71a29879a657fdba37e57ba60155d1d">Vector2</a>(<span class="keywordtype">float</span> minLength, <span class="keywordtype">float</span> maxLength) =&gt; <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#ac0af53a62b806ca6dfa22f76fdad6060">Normalize</a>(<a class="code hl_function" href="class_engine_1_1_random.html#aa71a29879a657fdba37e57ba60155d1d">Vector2</a>()) * <a class="code hl_function" href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">Float</a>(minLength, maxLength);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#ae0816d0b324fa88a351b6de8a3aa2df4">   98</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_random.html#ae0816d0b324fa88a351b6de8a3aa2df4">Vector3</a> <a class="code hl_function" href="class_engine_1_1_random.html#ae0816d0b324fa88a351b6de8a3aa2df4">Vector3</a>() {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordtype">float</span> num;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordtype">float</span> num2;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordtype">float</span> num3;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                num = 2f * <a class="code hl_function" href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">Float</a>() - 1f;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                num2 = 2f * <a class="code hl_function" href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">Float</a>() - 1f;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                num3 = num * num + num2 * num2;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordflow">while</span> (!(num3 &lt; 1f)</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                || !(num3 &gt; 0f));</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordtype">float</span> num4 = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a227d7f92668d1e5220f05a3279601214">Sqrt</a>(1f - num3);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_function" href="class_engine_1_1_random.html#ae0816d0b324fa88a351b6de8a3aa2df4">Vector3</a>(2f * num * num4, 2f * num2 * num4, 1f - 2f * num3);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
+</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#af1a3d0b39890cc2183cc58b825a58f09">  113</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_random.html#ae0816d0b324fa88a351b6de8a3aa2df4">Vector3</a> <a class="code hl_function" href="class_engine_1_1_random.html#af1a3d0b39890cc2183cc58b825a58f09">Vector3</a>(<span class="keywordtype">float</span> length) =&gt; <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#a90dcd03eb7ca9d55d111171a5e497fcd">Normalize</a>(<a class="code hl_function" href="class_engine_1_1_random.html#af1a3d0b39890cc2183cc58b825a58f09">Vector3</a>()) * length;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a8bf34b6c49fbaec43c8bf905b95d3973">  115</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_random.html#ae0816d0b324fa88a351b6de8a3aa2df4">Vector3</a> <a class="code hl_function" href="class_engine_1_1_random.html#a8bf34b6c49fbaec43c8bf905b95d3973">Vector3</a>(<span class="keywordtype">float</span> minLength, <span class="keywordtype">float</span> maxLength) =&gt; <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#a90dcd03eb7ca9d55d111171a5e497fcd">Normalize</a>(<a class="code hl_function" href="class_engine_1_1_random.html#a8bf34b6c49fbaec43c8bf905b95d3973">Vector3</a>()) * <a class="code hl_function" href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">Float</a>(minLength, maxLength);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_engine_1_1_random.html#a4c2e8ccfc88377bd713d4579333d298e">  117</a></span>        <span class="keyword">static</span> uint <a class="code hl_function" href="class_engine_1_1_random.html#a4c2e8ccfc88377bd713d4579333d298e">RotateLeft</a>(uint x, <span class="keywordtype">int</span> k) =&gt; (x &lt;&lt; k) | (x &gt;&gt; (32 - k));</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a227d7f92668d1e5220f05a3279601214"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a227d7f92668d1e5220f05a3279601214">Engine.MathUtils.Sqrt</a></div><div class="ttdeci">static float Sqrt(float x)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00187">MathUtils.cs:187</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a653f7a3287d6fa9086895b3083136e94"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a653f7a3287d6fa9086895b3083136e94">Engine.MathUtils.Log</a></div><div class="ttdeci">static float Log(float x)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00205">MathUtils.cs:205</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a0406bfe99a6a7d7c6cd45612c2171182"><div class="ttname"><a href="class_engine_1_1_random.html#a0406bfe99a6a7d7c6cd45612c2171182">Engine.Random.Bool</a></div><div class="ttdeci">bool Bool()</div><div class="ttdef"><b>定义</b> <a href="#l00038">Random.cs:38</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a04653d16211ebd0f7acd26ee58b649f3"><div class="ttname"><a href="class_engine_1_1_random.html#a04653d16211ebd0f7acd26ee58b649f3">Engine.Random.Float</a></div><div class="ttdeci">float Float()</div><div class="ttdef"><b>定义</b> <a href="#l00057">Random.cs:57</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a210a18dd53a01c80dc8785d86f2b5965"><div class="ttname"><a href="class_engine_1_1_random.html#a210a18dd53a01c80dc8785d86f2b5965">Engine.Random.Seed</a></div><div class="ttdeci">void Seed()</div><div class="ttdef"><b>定义</b> <a href="#l00027">Random.cs:27</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a2f348f265eaf4ca7406bcfe512b8c453"><div class="ttname"><a href="class_engine_1_1_random.html#a2f348f265eaf4ca7406bcfe512b8c453">Engine.Random.m_s1</a></div><div class="ttdeci">uint m_s1</div><div class="ttdef"><b>定义</b> <a href="#l00009">Random.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a2f5bf13b978348947b7414155d6ca06f"><div class="ttname"><a href="class_engine_1_1_random.html#a2f5bf13b978348947b7414155d6ca06f">Engine.Random.m_s0</a></div><div class="ttdeci">uint m_s0</div><div class="ttdef"><b>定义</b> <a href="#l00007">Random.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a331c172b9d2a1e3d268fb2b6346c66d0"><div class="ttname"><a href="class_engine_1_1_random.html#a331c172b9d2a1e3d268fb2b6346c66d0">Engine.Random.m_counter</a></div><div class="ttdeci">static int m_counter</div><div class="ttdef"><b>定义</b> <a href="#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a37ab7de117d7a416e1c40b0f93df3bb3"><div class="ttname"><a href="class_engine_1_1_random.html#a37ab7de117d7a416e1c40b0f93df3bb3">Engine.Random.NormalFloat</a></div><div class="ttdeci">float NormalFloat(float mean, float stddev)</div><div class="ttdef"><b>定义</b> <a href="#l00061">Random.cs:61</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a42c2d23420bd344152338bfe365cada4"><div class="ttname"><a href="class_engine_1_1_random.html#a42c2d23420bd344152338bfe365cada4">Engine.Random.UInt</a></div><div class="ttdeci">uint UInt()</div><div class="ttdef"><b>定义</b> <a href="#l00042">Random.cs:42</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a4c2e8ccfc88377bd713d4579333d298e"><div class="ttname"><a href="class_engine_1_1_random.html#a4c2e8ccfc88377bd713d4579333d298e">Engine.Random.RotateLeft</a></div><div class="ttdeci">static uint RotateLeft(uint x, int k)</div><div class="ttdef"><b>定义</b> <a href="#l00117">Random.cs:117</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a66d7376082956f73fcad840ccd4fd1fa"><div class="ttname"><a href="class_engine_1_1_random.html#a66d7376082956f73fcad840ccd4fd1fa">Engine.Random.Int</a></div><div class="ttdeci">int Int(int bound)</div><div class="ttdef"><b>定义</b> <a href="#l00053">Random.cs:53</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a72f94ac502b67a27889eede208e89e82"><div class="ttname"><a href="class_engine_1_1_random.html#a72f94ac502b67a27889eede208e89e82">Engine.Random.Float</a></div><div class="ttdeci">float Float(float min, float max)</div><div class="ttdef"><b>定义</b> <a href="#l00059">Random.cs:59</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a74afa5b60b71acdfc93efa53b4fadc05"><div class="ttname"><a href="class_engine_1_1_random.html#a74afa5b60b71acdfc93efa53b4fadc05">Engine.Random.Vector2</a></div><div class="ttdeci">Vector2 Vector2(float length)</div><div class="ttdef"><b>定义</b> <a href="#l00094">Random.cs:94</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a85b41120d2aea98d59a1d4820fcf4b65"><div class="ttname"><a href="class_engine_1_1_random.html#a85b41120d2aea98d59a1d4820fcf4b65">Engine.Random.Random</a></div><div class="ttdeci">Random(int seed)</div><div class="ttdef"><b>定义</b> <a href="#l00023">Random.cs:23</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a8bf34b6c49fbaec43c8bf905b95d3973"><div class="ttname"><a href="class_engine_1_1_random.html#a8bf34b6c49fbaec43c8bf905b95d3973">Engine.Random.Vector3</a></div><div class="ttdeci">Vector3 Vector3(float minLength, float maxLength)</div><div class="ttdef"><b>定义</b> <a href="#l00115">Random.cs:115</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a9de9445eba1f981c4008197bfbe590f5"><div class="ttname"><a href="class_engine_1_1_random.html#a9de9445eba1f981c4008197bfbe590f5">Engine.Random.Random</a></div><div class="ttdeci">Random()</div><div class="ttdef"><b>定义</b> <a href="#l00019">Random.cs:19</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_a9f4296c835c3089b751e37d7c6db41b8"><div class="ttname"><a href="class_engine_1_1_random.html#a9f4296c835c3089b751e37d7c6db41b8">Engine.Random.Seed</a></div><div class="ttdeci">void Seed(int seed)</div><div class="ttdef"><b>定义</b> <a href="#l00031">Random.cs:31</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_aa4e0b6448a55649c4b5ee328d4a7fcaa"><div class="ttname"><a href="class_engine_1_1_random.html#aa4e0b6448a55649c4b5ee328d4a7fcaa">Engine.Random.Int</a></div><div class="ttdeci">int Int()</div><div class="ttdef"><b>定义</b> <a href="#l00051">Random.cs:51</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_aa71a29879a657fdba37e57ba60155d1d"><div class="ttname"><a href="class_engine_1_1_random.html#aa71a29879a657fdba37e57ba60155d1d">Engine.Random.Vector2</a></div><div class="ttdeci">Vector2 Vector2(float minLength, float maxLength)</div><div class="ttdef"><b>定义</b> <a href="#l00096">Random.cs:96</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_aaf1f1e129154ce526d9878bbb28ec776"><div class="ttname"><a href="class_engine_1_1_random.html#aaf1f1e129154ce526d9878bbb28ec776">Engine.Random.State</a></div><div class="ttdeci">ulong State</div><div class="ttdef"><b>定义</b> <a href="#l00011">Random.cs:11</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_abd23d05d8c212071e179c5ce39b63eb8"><div class="ttname"><a href="class_engine_1_1_random.html#abd23d05d8c212071e179c5ce39b63eb8">Engine.Random.Vector2</a></div><div class="ttdeci">Vector2 Vector2()</div><div class="ttdef"><b>定义</b> <a href="#l00075">Random.cs:75</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_ae0816d0b324fa88a351b6de8a3aa2df4"><div class="ttname"><a href="class_engine_1_1_random.html#ae0816d0b324fa88a351b6de8a3aa2df4">Engine.Random.Vector3</a></div><div class="ttdeci">Vector3 Vector3()</div><div class="ttdef"><b>定义</b> <a href="#l00098">Random.cs:98</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_ae45149b1f7d1f6bd512d8ca6a144d469"><div class="ttname"><a href="class_engine_1_1_random.html#ae45149b1f7d1f6bd512d8ca6a144d469">Engine.Random.Int</a></div><div class="ttdeci">int Int(int min, int max)</div><div class="ttdef"><b>定义</b> <a href="#l00055">Random.cs:55</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_ae84a0abd8199439030746575a041879c"><div class="ttname"><a href="class_engine_1_1_random.html#ae84a0abd8199439030746575a041879c">Engine.Random.Bool</a></div><div class="ttdeci">bool Bool(float probability)</div><div class="ttdef"><b>定义</b> <a href="#l00040">Random.cs:40</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_af1a3d0b39890cc2183cc58b825a58f09"><div class="ttname"><a href="class_engine_1_1_random.html#af1a3d0b39890cc2183cc58b825a58f09">Engine.Random.Vector3</a></div><div class="ttdeci">Vector3 Vector3(float length)</div><div class="ttdef"><b>定义</b> <a href="#l00113">Random.cs:113</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_random_html_af89f568cbfd58fc858fdd8f9d09fedfd"><div class="ttname"><a href="class_engine_1_1_random.html#af89f568cbfd58fc858fdd8f9d09fedfd">Engine.Random.Sign</a></div><div class="ttdeci">int Sign()</div><div class="ttdef"><b>定义</b> <a href="#l00036">Random.cs:36</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_ac0af53a62b806ca6dfa22f76fdad6060"><div class="ttname"><a href="struct_engine_1_1_vector2.html#ac0af53a62b806ca6dfa22f76fdad6060">Engine.Vector2.Normalize</a></div><div class="ttdeci">static Vector2 Normalize(Vector2 v)</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00098">Vector2.cs:98</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a90dcd03eb7ca9d55d111171a5e497fcd"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a90dcd03eb7ca9d55d111171a5e497fcd">Engine.Vector3.Normalize</a></div><div class="ttdeci">static Vector3 Normalize(Vector3 v)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00154">Vector3.cs:154</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_449d29b21d204a5ee92421b755e01672.html">Engine</a></li><li class="navelem"><a href="_engine_2_engine_2_random_8cs.html">Random.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

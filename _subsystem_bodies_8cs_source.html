@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemBodies.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_bodies_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemBodies.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_bodies_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_bodies.html">SubsystemBodies</a> : <a class="code hl_class" href="class_game_entity_system_1_1_subsystem.html">Subsystem</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a66ba29c351fd8c928faafffd4589e00b">    6</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a66ba29c351fd8c928faafffd4589e00b">m_areaSize</a> = 8f;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a2534cf03805b96f3bbce4e10859ed0fa">    8</a></span>        <span class="keyword">public</span> DynamicArray&lt;ComponentBody&gt; <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a2534cf03805b96f3bbce4e10859ed0fa">m_componentBodies</a> = [];</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a7ec12fa8f0e9c95fcb43b217aa91ddc4">   10</a></span>        <span class="keyword">public</span> Dictionary&lt;ComponentBody, Point2&gt; <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a7ec12fa8f0e9c95fcb43b217aa91ddc4">m_areaByComponentBody</a> = [];</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">   12</a></span>        <span class="keyword">public</span> Dictionary&lt;Point2, DynamicArray&lt;ComponentBody&gt;&gt; <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">m_componentBodiesByArea</a> = [];</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#ad1b7a62355d1a2c8669b9af8d070cd35">   14</a></span>        <span class="keyword">public</span> Dictionary&lt;ComponentBody, Point2&gt;.KeyCollection <a class="code hl_property" href="class_game_1_1_subsystem_bodies.html#ad1b7a62355d1a2c8669b9af8d070cd35">Bodies</a> =&gt; <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a7ec12fa8f0e9c95fcb43b217aa91ddc4">m_areaByComponentBody</a>.Keys;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#addd2f67f8f3579bb25556ccf4fd2d6b1">   16</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_subsystem_bodies.html#addd2f67f8f3579bb25556ccf4fd2d6b1">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_subsystem_bodies.html#addd2f67f8f3579bb25556ccf4fd2d6b1">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_subsystem_bodies.html#addd2f67f8f3579bb25556ccf4fd2d6b1">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a83cd62e640354fc1fa6a8cb6cb3dee4f">   18</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a83cd62e640354fc1fa6a8cb6cb3dee4f">FindBodiesAroundPoint</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> point, <span class="keywordtype">float</span> radius, DynamicArray&lt;ComponentBody&gt; result) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordtype">int</span> num = (int)MathF.Floor((point.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a> - radius) / 8f);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordtype">int</span> num2 = (int)MathF.Floor((point.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a> - radius) / 8f);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordtype">int</span> num3 = (int)MathF.Floor((point.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a> + radius) / 8f);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordtype">int</span> num4 = (int)MathF.Floor((point.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a> + radius) / 8f);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = num; i &lt;= num3; i++) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = num2; j &lt;= num4; j++) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">m_componentBodiesByArea</a>.TryGetValue(<span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a>(i, j), out DynamicArray&lt;ComponentBody&gt; value)) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; value.Count; k++) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                            result.<a class="code hl_function" href="class_engine_1_1_dynamic_array-1-g.html#a68eb0286ac2f5fd9051b532e89f97adf">Add</a>(value.Array[k]);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#af09dfbcfac8b1cdf74b8cbf05d7745db">   34</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#af09dfbcfac8b1cdf74b8cbf05d7745db">FindBodiesInArea</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> corner1, <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> corner2, DynamicArray&lt;ComponentBody&gt; result) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> point = <span class="keyword">new</span>((int)MathF.Floor(corner1.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a> / 8f), (<span class="keywordtype">int</span>)MathF.Floor(corner1.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a> / 8f));</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> point2 = <span class="keyword">new</span>((int)MathF.Floor(corner2.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a> / 8f), (<span class="keywordtype">int</span>)MathF.Floor(corner2.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a> / 8f));</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordtype">int</span> num = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(point.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a>, point2.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a>) - 1;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordtype">int</span> num2 = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(point.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a>, point2.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a>) - 1;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordtype">int</span> num3 = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(point.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a>, point2.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a>) + 1;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordtype">int</span> num4 = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(point.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a>, point2.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a>) + 1;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = num; i &lt;= num3; i++) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = num2; j &lt;= num4; j++) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">m_componentBodiesByArea</a>.TryGetValue(<span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a>(i, j), out DynamicArray&lt;ComponentBody&gt; value)) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; value.Count; k++) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                            result.<a class="code hl_function" href="class_engine_1_1_dynamic_array-1-g.html#a68eb0286ac2f5fd9051b532e89f97adf">Add</a>(value.Array[k]);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a97101f6b328a94075eb150d6ab7258d6">   52</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_game_1_1_body_raycast_result.html">BodyRaycastResult</a>? <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a97101f6b328a94075eb150d6ab7258d6">Raycast</a>(<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> start, <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> end, <span class="keywordtype">float</span> inflateAmount, Func&lt;ComponentBody, float, bool&gt; action) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordtype">float</span> num = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#aa4ac368cce1c0b5c4b2659da5da98774">Distance</a>(start, end);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <a class="code hl_struct" href="struct_engine_1_1_ray3.html">Ray3</a> ray = <span class="keyword">new</span>(start, num &gt; 0f ? (end - start) / num : <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac1a1ef176cb38576a2fd0ba9f3905ab3">UnitX</a>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> corner = <span class="keyword">new</span>(start.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a>, start.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> corner2 = <span class="keyword">new</span>(end.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a>, end.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_struct" href="struct_game_1_1_body_raycast_result.html">BodyRaycastResult</a> bodyRaycastResult = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            bodyRaycastResult.Ray = ray;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            bodyRaycastResult.Distance = <span class="keywordtype">float</span>.MaxValue;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_struct" href="struct_game_1_1_body_raycast_result.html">BodyRaycastResult</a> value = bodyRaycastResult;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a2534cf03805b96f3bbce4e10859ed0fa">m_componentBodies</a>.Clear();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#af09dfbcfac8b1cdf74b8cbf05d7745db">FindBodiesInArea</a>(corner, corner2, <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a2534cf03805b96f3bbce4e10859ed0fa">m_componentBodies</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a2534cf03805b96f3bbce4e10859ed0fa">m_componentBodies</a>.Count; i++) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody = <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a2534cf03805b96f3bbce4e10859ed0fa">m_componentBodies</a>.Array[i];</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordflow">if</span> (componentBody == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="keywordflow">if</span> (componentBody.<a class="code hl_variable" href="class_game_1_1_component_body.html#a0030f834f88a4ad8b97a56977b738867">IsRaycastTransparent</a>) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordtype">float</span>? num2 = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordtype">bool</span> skipVanilla_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_function" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f">HookAction</a>(</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    <span class="stringliteral">&quot;BodyCountInRaycast&quot;</span>,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    loader =&gt; {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                        num2 = loader.BodyCountInRaycast(componentBody, ray, out <span class="keywordtype">bool</span> skip);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                        skipVanilla_ |= skip;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                );</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">if</span> (!skipVanilla_) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    <span class="keywordflow">if</span> (inflateAmount &gt; 0f) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        <a class="code hl_struct" href="struct_engine_1_1_bounding_box.html">BoundingBox</a> boundingBox = componentBody.<a class="code hl_property" href="class_game_1_1_component_body.html#a5fe1c93a92581b107b8a03613d6d4933">BoundingBox</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                        boundingBox.Min -= <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(inflateAmount);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                        boundingBox.Max += <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(inflateAmount);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                        num2 = ray.<a class="code hl_function" href="struct_engine_1_1_ray3.html#afdf67531c6e362a1108aa76f415ff842">Intersection</a>(boundingBox);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        num2 = ray.<a class="code hl_function" href="struct_engine_1_1_ray3.html#afdf67531c6e362a1108aa76f415ff842">Intersection</a>(componentBody.<a class="code hl_property" href="class_game_1_1_component_body.html#a5fe1c93a92581b107b8a03613d6d4933">BoundingBox</a>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <span class="keywordflow">if</span> (num2.HasValue</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                    &amp;&amp; num2.Value &lt;= num</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    &amp;&amp; num2.Value &lt; value.<a class="code hl_variable" href="struct_game_1_1_body_raycast_result.html#aa52da7179ca56baef419779a02ba2b34">Distance</a></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                    &amp;&amp; action(componentBody, num2.Value)) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    value.Distance = num2.Value;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    value.ComponentBody = componentBody;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">if</span> (value.<a class="code hl_variable" href="struct_game_1_1_body_raycast_result.html#a534af37260ffd37461e0cc27bcde58b2">ComponentBody</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a5a88773883fe99e9e0b589aab275f1db">  106</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a5a88773883fe99e9e0b589aab275f1db">OnEntityAdded</a>(<a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> item <span class="keywordflow">in</span> entity.FindComponents&lt;<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a>&gt;()) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a989e83eda2e923a28965df8b1b71a26b">AddBody</a>(item);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a2fcdc586b3697cade6a0bcb27b93ba9e">  112</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a2fcdc586b3697cade6a0bcb27b93ba9e">OnEntityRemoved</a>(<a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> item <span class="keywordflow">in</span> entity.FindComponents&lt;<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a>&gt;()) {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a0c4fbd7cb948f6f1ebf323b3ce831512">RemoveBody</a>(item);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        }</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a53f262136fd050b9c59a61d98678bba2">  118</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a53f262136fd050b9c59a61d98678bba2">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> body <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_1_1_subsystem_bodies.html#ad1b7a62355d1a2c8669b9af8d070cd35">Bodies</a>) {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a888c72a7a10ef65839512b49965bda5e">UpdateBody</a>(body);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a989e83eda2e923a28965df8b1b71a26b">  124</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a989e83eda2e923a28965df8b1b71a26b">AddBody</a>(<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody) {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> position = componentBody.<a class="code hl_property" href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Position</a>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> point = <span class="keyword">new</span>((int)MathF.Floor(position.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a> / 8f), (<span class="keywordtype">int</span>)MathF.Floor(position.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a> / 8f));</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a7ec12fa8f0e9c95fcb43b217aa91ddc4">m_areaByComponentBody</a>.Add(componentBody, point);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">m_componentBodiesByArea</a>.TryGetValue(point, out DynamicArray&lt;ComponentBody&gt; value)) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                value = [];</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">m_componentBodiesByArea</a>.Add(point, value);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            value.Add(componentBody);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            componentBody.PositionChanged += <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#ae490540beae65b6c3675d406cd999b92">ComponentBody_PositionChanged</a>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="foldopen" id="foldopen00136" data-start="{" data-end="}">
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a0c4fbd7cb948f6f1ebf323b3ce831512">  136</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a0c4fbd7cb948f6f1ebf323b3ce831512">RemoveBody</a>(<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody) {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> key = <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a7ec12fa8f0e9c95fcb43b217aa91ddc4">m_areaByComponentBody</a>[componentBody];</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a7ec12fa8f0e9c95fcb43b217aa91ddc4">m_areaByComponentBody</a>.Remove(componentBody);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">m_componentBodiesByArea</a>[key].Remove(componentBody);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            componentBody.PositionChanged -= <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#ae490540beae65b6c3675d406cd999b92">ComponentBody_PositionChanged</a>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        }</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#a888c72a7a10ef65839512b49965bda5e">  143</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a888c72a7a10ef65839512b49965bda5e">UpdateBody</a>(<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody) {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> position = componentBody.<a class="code hl_property" href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Position</a>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> point = <span class="keyword">new</span>((int)MathF.Floor(position.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a> / 8f), (<span class="keywordtype">int</span>)MathF.Floor(position.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a> / 8f));</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> point2 = <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a7ec12fa8f0e9c95fcb43b217aa91ddc4">m_areaByComponentBody</a>[componentBody];</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">if</span> (point != point2) {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a7ec12fa8f0e9c95fcb43b217aa91ddc4">m_areaByComponentBody</a>[componentBody] = point;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">m_componentBodiesByArea</a>[point2].Remove(componentBody);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">m_componentBodiesByArea</a>.TryGetValue(point, out DynamicArray&lt;ComponentBody&gt; value)) {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    value = [];</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                    <a class="code hl_variable" href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">m_componentBodiesByArea</a>.Add(point, value);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                value.Add(componentBody);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
+</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="}">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_bodies.html#ae490540beae65b6c3675d406cd999b92">  158</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#ae490540beae65b6c3675d406cd999b92">ComponentBody_PositionChanged</a>(<a class="code hl_class" href="class_game_1_1_component_frame.html">ComponentFrame</a> componentFrame) {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <a class="code hl_function" href="class_game_1_1_subsystem_bodies.html#a888c72a7a10ef65839512b49965bda5e">UpdateBody</a>((<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a>)componentFrame);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}</div>
+<div class="ttc" id="a_subsystem_audio_8cs_html_aa72bd5818d1fb1c95123ce286b96e775"><div class="ttname"><a href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a></div><div class="ttdeci">Engine.Vector3 Vector3</div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00005">SubsystemAudio.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_dynamic_array-1-g_html_a68eb0286ac2f5fd9051b532e89f97adf"><div class="ttname"><a href="class_engine_1_1_dynamic_array-1-g.html#a68eb0286ac2f5fd9051b532e89f97adf">Engine.DynamicArray-1-g.Add</a></div><div class="ttdeci">void Add(T item)</div><div class="ttdef"><b>定义</b> <a href="_dynamic_array_8cs_source.html#l00121">DynamicArray.cs:121</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a5f2b24627ca7cc5256edc10831fe295b"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Engine.MathUtils.Min</a></div><div class="ttdeci">static int Min(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00007">MathUtils.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_body_html"><div class="ttname"><a href="class_game_1_1_component_body.html">Game.ComponentBody</a></div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00007">ComponentBody.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_body_html_a0030f834f88a4ad8b97a56977b738867"><div class="ttname"><a href="class_game_1_1_component_body.html#a0030f834f88a4ad8b97a56977b738867">Game.ComponentBody.IsRaycastTransparent</a></div><div class="ttdeci">bool IsRaycastTransparent</div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00095">ComponentBody.cs:95</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_body_html_a5fe1c93a92581b107b8a03613d6d4933"><div class="ttname"><a href="class_game_1_1_component_body.html#a5fe1c93a92581b107b8a03613d6d4933">Game.ComponentBody.BoundingBox</a></div><div class="ttdeci">virtual BoundingBox BoundingBox</div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00190">ComponentBody.cs:190</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_frame_html"><div class="ttname"><a href="class_game_1_1_component_frame.html">Game.ComponentFrame</a></div><div class="ttdef"><b>定义</b> <a href="_component_frame_8cs_source.html#l00006">ComponentFrame.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_frame_html_a22743827a45e864ab98902cf65cdb54f"><div class="ttname"><a href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Game.ComponentFrame.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="_component_frame_8cs_source.html#l00015">ComponentFrame.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html">Game.SubsystemBodies</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">SubsystemBodies.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a0c4fbd7cb948f6f1ebf323b3ce831512"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a0c4fbd7cb948f6f1ebf323b3ce831512">Game.SubsystemBodies.RemoveBody</a></div><div class="ttdeci">void RemoveBody(ComponentBody componentBody)</div><div class="ttdef"><b>定义</b> <a href="#l00136">SubsystemBodies.cs:136</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a2534cf03805b96f3bbce4e10859ed0fa"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a2534cf03805b96f3bbce4e10859ed0fa">Game.SubsystemBodies.m_componentBodies</a></div><div class="ttdeci">DynamicArray&lt; ComponentBody &gt; m_componentBodies</div><div class="ttdef"><b>定义</b> <a href="#l00008">SubsystemBodies.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a2fcdc586b3697cade6a0bcb27b93ba9e"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a2fcdc586b3697cade6a0bcb27b93ba9e">Game.SubsystemBodies.OnEntityRemoved</a></div><div class="ttdeci">override void OnEntityRemoved(Entity entity)</div><div class="ttdef"><b>定义</b> <a href="#l00112">SubsystemBodies.cs:112</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a3e12f76056b52ba747e84bd6696e7407"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a3e12f76056b52ba747e84bd6696e7407">Game.SubsystemBodies.m_componentBodiesByArea</a></div><div class="ttdeci">Dictionary&lt; Point2, DynamicArray&lt; ComponentBody &gt; &gt; m_componentBodiesByArea</div><div class="ttdef"><b>定义</b> <a href="#l00012">SubsystemBodies.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a53f262136fd050b9c59a61d98678bba2"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a53f262136fd050b9c59a61d98678bba2">Game.SubsystemBodies.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00118">SubsystemBodies.cs:118</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a5a88773883fe99e9e0b589aab275f1db"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a5a88773883fe99e9e0b589aab275f1db">Game.SubsystemBodies.OnEntityAdded</a></div><div class="ttdeci">override void OnEntityAdded(Entity entity)</div><div class="ttdef"><b>定义</b> <a href="#l00106">SubsystemBodies.cs:106</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a66ba29c351fd8c928faafffd4589e00b"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a66ba29c351fd8c928faafffd4589e00b">Game.SubsystemBodies.m_areaSize</a></div><div class="ttdeci">const float m_areaSize</div><div class="ttdef"><b>定义</b> <a href="#l00006">SubsystemBodies.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a7ec12fa8f0e9c95fcb43b217aa91ddc4"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a7ec12fa8f0e9c95fcb43b217aa91ddc4">Game.SubsystemBodies.m_areaByComponentBody</a></div><div class="ttdeci">Dictionary&lt; ComponentBody, Point2 &gt; m_areaByComponentBody</div><div class="ttdef"><b>定义</b> <a href="#l00010">SubsystemBodies.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a83cd62e640354fc1fa6a8cb6cb3dee4f"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a83cd62e640354fc1fa6a8cb6cb3dee4f">Game.SubsystemBodies.FindBodiesAroundPoint</a></div><div class="ttdeci">void FindBodiesAroundPoint(Vector2 point, float radius, DynamicArray&lt; ComponentBody &gt; result)</div><div class="ttdef"><b>定义</b> <a href="#l00018">SubsystemBodies.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a888c72a7a10ef65839512b49965bda5e"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a888c72a7a10ef65839512b49965bda5e">Game.SubsystemBodies.UpdateBody</a></div><div class="ttdeci">virtual void UpdateBody(ComponentBody componentBody)</div><div class="ttdef"><b>定义</b> <a href="#l00143">SubsystemBodies.cs:143</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a97101f6b328a94075eb150d6ab7258d6"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a97101f6b328a94075eb150d6ab7258d6">Game.SubsystemBodies.Raycast</a></div><div class="ttdeci">BodyRaycastResult? Raycast(Vector3 start, Vector3 end, float inflateAmount, Func&lt; ComponentBody, float, bool &gt; action)</div><div class="ttdef"><b>定义</b> <a href="#l00052">SubsystemBodies.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_a989e83eda2e923a28965df8b1b71a26b"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#a989e83eda2e923a28965df8b1b71a26b">Game.SubsystemBodies.AddBody</a></div><div class="ttdeci">void AddBody(ComponentBody componentBody)</div><div class="ttdef"><b>定义</b> <a href="#l00124">SubsystemBodies.cs:124</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_ad1b7a62355d1a2c8669b9af8d070cd35"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#ad1b7a62355d1a2c8669b9af8d070cd35">Game.SubsystemBodies.Bodies</a></div><div class="ttdeci">Dictionary&lt; ComponentBody, Point2 &gt;.KeyCollection Bodies</div><div class="ttdef"><b>定义</b> <a href="#l00014">SubsystemBodies.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_addd2f67f8f3579bb25556ccf4fd2d6b1"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#addd2f67f8f3579bb25556ccf4fd2d6b1">Game.SubsystemBodies.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00016">SubsystemBodies.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_ae490540beae65b6c3675d406cd999b92"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#ae490540beae65b6c3675d406cd999b92">Game.SubsystemBodies.ComponentBody_PositionChanged</a></div><div class="ttdeci">void ComponentBody_PositionChanged(ComponentFrame componentFrame)</div><div class="ttdef"><b>定义</b> <a href="#l00158">SubsystemBodies.cs:158</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html_af09dfbcfac8b1cdf74b8cbf05d7745db"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html#af09dfbcfac8b1cdf74b8cbf05d7745db">Game.SubsystemBodies.FindBodiesInArea</a></div><div class="ttdeci">void FindBodiesInArea(Vector2 corner1, Vector2 corner2, DynamicArray&lt; ComponentBody &gt; result)</div><div class="ttdef"><b>定义</b> <a href="#l00034">SubsystemBodies.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html">GameEntitySystem.Entity</a></div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00010">Entity.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00005">Subsystem.cs:5</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html"><div class="ttname"><a href="class_mods_manager.html">ModsManager</a></div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00019">ModsManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a03dcd23af0dfd253948e6d2e5469a31f"><div class="ttname"><a href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f">ModsManager.HookAction</a></div><div class="ttdeci">static void HookAction(string HookName, Func&lt; ModLoader, bool &gt; action)</div><div class="ttdoc">执行Hook</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00146">ModsManager.cs:146</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_box_html"><div class="ttname"><a href="struct_engine_1_1_bounding_box.html">Engine.BoundingBox</a></div><div class="ttdef"><b>定义</b> <a href="_bounding_box_8cs_source.html#l00002">BoundingBox.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html"><div class="ttname"><a href="struct_engine_1_1_point2.html">Engine.Point2</a></div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00002">Point2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html_a5a5df9b9665d68a1edf96fb1f45e1232"><div class="ttname"><a href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Engine.Point2.Y</a></div><div class="ttdeci">int Y</div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00005">Point2.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html_a893555bab03b75cc94952451edecc8d8"><div class="ttname"><a href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">Engine.Point2.X</a></div><div class="ttdeci">int X</div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00003">Point2.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html"><div class="ttname"><a href="struct_engine_1_1_ray3.html">Engine.Ray3</a></div><div class="ttdef"><b>定义</b> <a href="_ray3_8cs_source.html#l00002">Ray3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_afdf67531c6e362a1108aa76f415ff842"><div class="ttname"><a href="struct_engine_1_1_ray3.html#afdf67531c6e362a1108aa76f415ff842">Engine.Ray3.Intersection</a></div><div class="ttdeci">float? Intersection(BoundingBox box)</div><div class="ttdef"><b>定义</b> <a href="_ray3_8cs_source.html#l00020">Ray3.cs:20</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a67f66d5979ef9f5af376995b5cd52af7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Engine.Vector2.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00005">Vector2.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_aa5d1d8f581bf3e0ef8fc57692f600fee"><div class="ttname"><a href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">Engine.Vector2.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00003">Vector2.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_aa4ac368cce1c0b5c4b2659da5da98774"><div class="ttname"><a href="struct_engine_1_1_vector3.html#aa4ac368cce1c0b5c4b2659da5da98774">Engine.Vector3.Distance</a></div><div class="ttdeci">static float Distance(Vector3 v1, Vector3 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00107">Vector3.cs:107</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ac1a1ef176cb38576a2fd0ba9f3905ab3"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ac1a1ef176cb38576a2fd0ba9f3905ab3">Engine.Vector3.UnitX</a></div><div class="ttdeci">static readonly Vector3 UnitX</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00013">Vector3.cs:13</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ac42c72f356e9dd9d691b1aa8a07a64a9"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Engine.Vector3.Z</a></div><div class="ttdeci">float Z</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00007">Vector3.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ae5605507fc62897e712e939bacbf1738"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">Engine.Vector3.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00003">Vector3.cs:3</a></div></div>
+<div class="ttc" id="astruct_game_1_1_body_raycast_result_html"><div class="ttname"><a href="struct_game_1_1_body_raycast_result.html">Game.BodyRaycastResult</a></div><div class="ttdef"><b>定义</b> <a href="_body_raycast_result_8cs_source.html#l00005">BodyRaycastResult.cs:5</a></div></div>
+<div class="ttc" id="astruct_game_1_1_body_raycast_result_html_a534af37260ffd37461e0cc27bcde58b2"><div class="ttname"><a href="struct_game_1_1_body_raycast_result.html#a534af37260ffd37461e0cc27bcde58b2">Game.BodyRaycastResult.ComponentBody</a></div><div class="ttdeci">ComponentBody ComponentBody</div><div class="ttdef"><b>定义</b> <a href="_body_raycast_result_8cs_source.html#l00009">BodyRaycastResult.cs:9</a></div></div>
+<div class="ttc" id="astruct_game_1_1_body_raycast_result_html_aa52da7179ca56baef419779a02ba2b34"><div class="ttname"><a href="struct_game_1_1_body_raycast_result.html#aa52da7179ca56baef419779a02ba2b34">Game.BodyRaycastResult.Distance</a></div><div class="ttdeci">float Distance</div><div class="ttdef"><b>定义</b> <a href="_body_raycast_result_8cs_source.html#l00011">BodyRaycastResult.cs:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_bodies_8cs.html">SubsystemBodies.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/WidgetsList.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_widgets_list_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">WidgetsList.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_widgets_list_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Reflection;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_widgets_list.html#aba3ce5980b14fc2bc0818209d0dc5c5a">WidgetsList</a> : IEnumerable&lt;Widget&gt; {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html">    5</a></span>        <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_function" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a827fd72a88d3737ef234859240899086">Enumerator</a> : IEnumerator&lt;Widget&gt; {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#abaad54f6da2d2f2a2a39d36cc3685c66">    6</a></span>            <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#aba3ce5980b14fc2bc0818209d0dc5c5a">WidgetsList</a> <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#abaad54f6da2d2f2a2a39d36cc3685c66">m_collection</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a4b07b411349c44ca209a2021cf140ee1">    8</a></span>            <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a4b07b411349c44ca209a2021cf140ee1">m_current</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a47bd877c64c29d19f7ae0d822b94cdf8">   10</a></span>            <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a47bd877c64c29d19f7ae0d822b94cdf8">m_index</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a6e66cb3b4d0c01ee0c7cb30c9e32920b">   12</a></span>            <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a6e66cb3b4d0c01ee0c7cb30c9e32920b">m_version</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#ae48ba7a5bbc15c6c0851c9b81c6d25ef">   14</a></span>            <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> <a class="code hl_property" href="struct_game_1_1_widgets_list_1_1_enumerator.html#ae48ba7a5bbc15c6c0851c9b81c6d25ef">Current</a> =&gt; <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a4b07b411349c44ca209a2021cf140ee1">m_current</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#ab9f4e4fededef50ff07c5028aeedac09">   16</a></span>            <span class="keywordtype">object</span> IEnumerator.Current =&gt; <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a4b07b411349c44ca209a2021cf140ee1">m_current</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a827fd72a88d3737ef234859240899086">   18</a></span>            <span class="keyword">public</span> <a class="code hl_function" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a827fd72a88d3737ef234859240899086">Enumerator</a>(<a class="code hl_function" href="class_game_1_1_widgets_list.html#aba3ce5980b14fc2bc0818209d0dc5c5a">WidgetsList</a> collection) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#abaad54f6da2d2f2a2a39d36cc3685c66">m_collection</a> = collection;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a4b07b411349c44ca209a2021cf140ee1">m_current</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a47bd877c64c29d19f7ae0d822b94cdf8">m_index</a> = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a6e66cb3b4d0c01ee0c7cb30c9e32920b">m_version</a> = collection.<a class="code hl_variable" href="class_game_1_1_widgets_list.html#a3664e547144496a93ed00a3673b7ac66">m_version</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            }</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#af279359d3bd18cff7fbecd925a134429">   25</a></span>            <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_game_1_1_widgets_list_1_1_enumerator.html#af279359d3bd18cff7fbecd925a134429">Dispose</a>() { }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#af3eb7752cbe4aac58179367585262162">   27</a></span>            <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_game_1_1_widgets_list_1_1_enumerator.html#af3eb7752cbe4aac58179367585262162">MoveNext</a>() {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a47bd877c64c29d19f7ae0d822b94cdf8">m_index</a> &lt; <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#abaad54f6da2d2f2a2a39d36cc3685c66">m_collection</a>.m_widgets.Count) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a4b07b411349c44ca209a2021cf140ee1">m_current</a> = <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#abaad54f6da2d2f2a2a39d36cc3685c66">m_collection</a>.m_widgets[<a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a47bd877c64c29d19f7ae0d822b94cdf8">m_index</a>];</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a47bd877c64c29d19f7ae0d822b94cdf8">m_index</a>++;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a4b07b411349c44ca209a2021cf140ee1">m_current</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_game_1_1_widgets_list_1_1_enumerator.html#ac5d74ae4c710d8bb00e9c8ea6d361cb0">   37</a></span>            <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_game_1_1_widgets_list_1_1_enumerator.html#ac5d74ae4c710d8bb00e9c8ea6d361cb0">Reset</a>() {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a47bd877c64c29d19f7ae0d822b94cdf8">m_index</a> = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <a class="code hl_variable" href="struct_game_1_1_widgets_list_1_1_enumerator.html#a4b07b411349c44ca209a2021cf140ee1">m_current</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#abf6b6427015ee7f7ce7a9d2cf9ced259">   43</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a> <a class="code hl_variable" href="class_game_1_1_widgets_list.html#abf6b6427015ee7f7ce7a9d2cf9ced259">m_containerWidget</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">   45</a></span>        <span class="keyword">public</span> List&lt;Widget&gt; <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a> = [];</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a3664e547144496a93ed00a3673b7ac66">   47</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a3664e547144496a93ed00a3673b7ac66">m_version</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a2be88c2f8a07237517b7717152e0f6e4">   49</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_game_1_1_widgets_list.html#a2be88c2f8a07237517b7717152e0f6e4">Count</a> =&gt; <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.Count;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#ac1d9ef8773fb870b4dfc06882a8dfdb2">   51</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> <span class="keyword">this</span>[<span class="keywordtype">int</span> index] =&gt; <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>[index];</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#aba3ce5980b14fc2bc0818209d0dc5c5a">   53</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#aba3ce5980b14fc2bc0818209d0dc5c5a">WidgetsList</a>(<a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a> containerWidget) =&gt; <a class="code hl_variable" href="class_game_1_1_widgets_list.html#abf6b6427015ee7f7ce7a9d2cf9ced259">m_containerWidget</a> = containerWidget;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">   55</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Add</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_function" href="class_game_1_1_widgets_list.html#a3765804503cbd832715ea140b972ba85">Insert</a>(<a class="code hl_property" href="class_game_1_1_widgets_list.html#a2be88c2f8a07237517b7717152e0f6e4">Count</a>, widget);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a7a083cdfbf9314c4486c7bc01f3fcf62">   59</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a7a083cdfbf9314c4486c7bc01f3fcf62">Add</a>(params <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a>[] widgets) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_function" href="class_game_1_1_widgets_list.html#a9b1ad8c4b517b684c582fa9b5da90c4a">AddRange</a>(widgets);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a9b1ad8c4b517b684c582fa9b5da90c4a">   63</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a9b1ad8c4b517b684c582fa9b5da90c4a">AddRange</a>(IEnumerable&lt;Widget&gt; widgets) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget <span class="keywordflow">in</span> widgets) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <a class="code hl_function" href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Add</a>(widget);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a3765804503cbd832715ea140b972ba85">   69</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a3765804503cbd832715ea140b972ba85">Insert</a>(<span class="keywordtype">int</span> index, <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.Contains(widget)) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">if</span> (index &lt; 0</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                || index &gt; <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.Count) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Widget index out of range.&quot;</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            widget.<a class="code hl_function" href="class_game_1_1_widget.html#a4a18a022fabdccb55ad52cfa0b34dd36">ChangeParent</a>(<a class="code hl_variable" href="class_game_1_1_widgets_list.html#abf6b6427015ee7f7ce7a9d2cf9ced259">m_containerWidget</a>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.Insert(index, widget);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <a class="code hl_variable" href="class_game_1_1_widgets_list.html#abf6b6427015ee7f7ce7a9d2cf9ced259">m_containerWidget</a>.WidgetAdded(widget);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a3664e547144496a93ed00a3673b7ac66">m_version</a>++;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a315a4458dd68a18245af2995d18a2c21">   83</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a315a4458dd68a18245af2995d18a2c21">InsertBefore</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> beforeWidget, <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordtype">int</span> num = <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.IndexOf(beforeWidget);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">if</span> (num &lt; 0) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Widget not present in container.&quot;</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_function" href="class_game_1_1_widgets_list.html#a3765804503cbd832715ea140b972ba85">Insert</a>(num, widget);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a039bbb5f7c17570f668e048c3b477800">   91</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a039bbb5f7c17570f668e048c3b477800">InsertAfter</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> afterWidget, <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordtype">int</span> num = <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.IndexOf(afterWidget);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">if</span> (num &lt; 0) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Widget not present in container.&quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <a class="code hl_function" href="class_game_1_1_widgets_list.html#a3765804503cbd832715ea140b972ba85">Insert</a>(num + 1, widget);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a95875fa8bdc61588da9c516ce9e1badd">   99</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a95875fa8bdc61588da9c516ce9e1badd">Remove</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordtype">int</span> num = <a class="code hl_function" href="class_game_1_1_widgets_list.html#a979dc7fde1ab717daa6b176e55575f55">IndexOf</a>(widget);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">if</span> (num &gt;= 0) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <a class="code hl_function" href="class_game_1_1_widgets_list.html#aee0cab3704d04958df7502a11c924899">RemoveAt</a>(num);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#aee0cab3704d04958df7502a11c924899">  106</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#aee0cab3704d04958df7502a11c924899">RemoveAt</a>(<span class="keywordtype">int</span> index) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordflow">if</span> (index &lt; 0</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                || index &gt;= <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.Count) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Widget index out of range.&quot;</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget = <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>[index];</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            widget.<a class="code hl_function" href="class_game_1_1_widget.html#a4a18a022fabdccb55ad52cfa0b34dd36">ChangeParent</a>(<span class="keyword">null</span>);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.RemoveAt(index);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <a class="code hl_variable" href="class_game_1_1_widgets_list.html#abf6b6427015ee7f7ce7a9d2cf9ced259">m_containerWidget</a>.WidgetRemoved(widget);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a3664e547144496a93ed00a3673b7ac66">m_version</a>--;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        }</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a4c19799cbb93536ed1e43516c42a3976">  118</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a4c19799cbb93536ed1e43516c42a3976">Clear</a>() {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">while</span> (<a class="code hl_property" href="class_game_1_1_widgets_list.html#a2be88c2f8a07237517b7717152e0f6e4">Count</a> &gt; 0) {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <a class="code hl_function" href="class_game_1_1_widgets_list.html#aee0cab3704d04958df7502a11c924899">RemoveAt</a>(<a class="code hl_property" href="class_game_1_1_widgets_list.html#a2be88c2f8a07237517b7717152e0f6e4">Count</a> - 1);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a979dc7fde1ab717daa6b176e55575f55">  124</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a979dc7fde1ab717daa6b176e55575f55">IndexOf</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget) =&gt; <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.IndexOf(widget);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a3070e031715120520c9fc3b8717dec0d">  126</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a3070e031715120520c9fc3b8717dec0d">Contains</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget) =&gt; <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>.Contains(widget);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a14cd4ecbe45f4c479ef448f5845e26c2">  128</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a14cd4ecbe45f4c479ef448f5845e26c2">Find</a>(<span class="keywordtype">string</span> name, Type type, <span class="keywordtype">bool</span> throwIfNotFound = <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget2 <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">m_widgets</a>) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                <span class="keywordflow">if</span> ((name == <span class="keyword">null</span> || (widget2.<a class="code hl_property" href="class_game_1_1_widget.html#a052639c7469bd431088b0aad830f6a69">Name</a> != <span class="keyword">null</span> &amp;&amp; widget2.<a class="code hl_property" href="class_game_1_1_widget.html#a052639c7469bd431088b0aad830f6a69">Name</a> == name))</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                    &amp;&amp; (type == <span class="keyword">null</span> || type == widget2.GetType() || widget2.GetType().GetTypeInfo().IsSubclassOf(type))) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                    <span class="keywordflow">return</span> widget2;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                <span class="keywordflow">if</span> (widget2 is <a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a> containerWidget) {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                    <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget = containerWidget.Children.Find(name, type, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                    <span class="keywordflow">if</span> (widget != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                        <span class="keywordflow">return</span> widget;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                    }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordflow">if</span> (throwIfNotFound) {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Required widget \&quot;{name}\&quot; of type \&quot;{type}\&quot; not found.&quot;</span>);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        }</div>
+</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#aa77099f808c776bb7a33db8cf90f7521">  147</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> <a class="code hl_function" href="class_game_1_1_widgets_list.html#aa77099f808c776bb7a33db8cf90f7521">Find</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">bool</span> throwIfNotFound = <span class="keyword">true</span>) =&gt; <a class="code hl_function" href="class_game_1_1_widgets_list.html#aa77099f808c776bb7a33db8cf90f7521">Find</a>(name, <span class="keyword">null</span>, throwIfNotFound);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a3d59196858da4b2d5343addbe11e8184">  149</a></span>        <span class="keyword">public</span> T <a class="code hl_function" href="class_game_1_1_widgets_list.html#a3d59196858da4b2d5343addbe11e8184">Find&lt;T&gt;</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">bool</span> throwIfNotFound = <span class="keyword">true</span>) where T : class =&gt; <a class="code hl_function" href="class_game_1_1_widgets_list.html#a14cd4ecbe45f4c479ef448f5845e26c2">Find</a>(name, typeof(T), throwIfNotFound) as T;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a3b614cbe54f5a7722c7953b37245fc78">  151</a></span>        public T <a class="code hl_function" href="class_game_1_1_widgets_list.html#a14cd4ecbe45f4c479ef448f5845e26c2">Find</a>&lt;T&gt;(<span class="keywordtype">bool</span> throwIfNotFound = true) where T : class =&gt; <a class="code hl_function" href="class_game_1_1_widgets_list.html#a14cd4ecbe45f4c479ef448f5845e26c2">Find</a>(null, typeof(T), throwIfNotFound) as T;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a99002cb175093b2affd3d3bbd2fc5166">  153</a></span>        public <a class="code hl_struct" href="struct_game_1_1_widgets_list_1_1_enumerator.html">Enumerator</a> <a class="code hl_function" href="class_game_1_1_widgets_list.html#a99002cb175093b2affd3d3bbd2fc5166">GetEnumerator</a>() =&gt; new(this);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a7803703e360c04958ba0da40c8c5da75">  155</a></span>        IEnumerator&lt;<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a>&gt; IEnumerable&lt;<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a>&gt;.<a class="code hl_function" href="class_game_1_1_widgets_list.html#a99002cb175093b2affd3d3bbd2fc5166">GetEnumerator</a>() =&gt; new <a class="code hl_struct" href="struct_game_1_1_widgets_list_1_1_enumerator.html">Enumerator</a>(this);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="class_game_1_1_widgets_list.html#a1dde88e871e4eb1afe3e9ca22c44b127">  157</a></span>        IEnumerator IEnumerable.<a class="code hl_function" href="class_game_1_1_widgets_list.html#a99002cb175093b2affd3d3bbd2fc5166">GetEnumerator</a>() =&gt; new <a class="code hl_struct" href="struct_game_1_1_widgets_list_1_1_enumerator.html">Enumerator</a>(this);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    }</div>
+</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>}</div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html"><div class="ttname"><a href="class_game_1_1_container_widget.html">Game.ContainerWidget</a></div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00004">ContainerWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html"><div class="ttname"><a href="class_game_1_1_widget.html">Game.Widget</a></div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00010">Widget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a052639c7469bd431088b0aad830f6a69"><div class="ttname"><a href="class_game_1_1_widget.html#a052639c7469bd431088b0aad830f6a69">Game.Widget.Name</a></div><div class="ttdeci">virtual string Name</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00351">Widget.cs:351</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a4a18a022fabdccb55ad52cfa0b34dd36"><div class="ttname"><a href="class_game_1_1_widget.html#a4a18a022fabdccb55ad52cfa0b34dd36">Game.Widget.ChangeParent</a></div><div class="ttdeci">virtual void ChangeParent(ContainerWidget parentWidget)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00619">Widget.cs:619</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a039bbb5f7c17570f668e048c3b477800"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a039bbb5f7c17570f668e048c3b477800">Game.WidgetsList.InsertAfter</a></div><div class="ttdeci">void InsertAfter(Widget afterWidget, Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00091">WidgetsList.cs:91</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a14cd4ecbe45f4c479ef448f5845e26c2"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a14cd4ecbe45f4c479ef448f5845e26c2">Game.WidgetsList.Find</a></div><div class="ttdeci">Widget Find(string name, Type type, bool throwIfNotFound=true)</div><div class="ttdef"><b>定义</b> <a href="#l00128">WidgetsList.cs:128</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a2001c10c53c0f29e3b8d9dafb1c0c2d9"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a2001c10c53c0f29e3b8d9dafb1c0c2d9">Game.WidgetsList.m_widgets</a></div><div class="ttdeci">List&lt; Widget &gt; m_widgets</div><div class="ttdef"><b>定义</b> <a href="#l00045">WidgetsList.cs:45</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a2be88c2f8a07237517b7717152e0f6e4"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a2be88c2f8a07237517b7717152e0f6e4">Game.WidgetsList.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>定义</b> <a href="#l00049">WidgetsList.cs:49</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a3070e031715120520c9fc3b8717dec0d"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a3070e031715120520c9fc3b8717dec0d">Game.WidgetsList.Contains</a></div><div class="ttdeci">bool Contains(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00126">WidgetsList.cs:126</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a315a4458dd68a18245af2995d18a2c21"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a315a4458dd68a18245af2995d18a2c21">Game.WidgetsList.InsertBefore</a></div><div class="ttdeci">void InsertBefore(Widget beforeWidget, Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00083">WidgetsList.cs:83</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a3664e547144496a93ed00a3673b7ac66"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a3664e547144496a93ed00a3673b7ac66">Game.WidgetsList.m_version</a></div><div class="ttdeci">int m_version</div><div class="ttdef"><b>定义</b> <a href="#l00047">WidgetsList.cs:47</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a36a2e8eb0d08f6a7697e3690e591f974"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Game.WidgetsList.Add</a></div><div class="ttdeci">void Add(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00055">WidgetsList.cs:55</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a3765804503cbd832715ea140b972ba85"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a3765804503cbd832715ea140b972ba85">Game.WidgetsList.Insert</a></div><div class="ttdeci">void Insert(int index, Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00069">WidgetsList.cs:69</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a3d59196858da4b2d5343addbe11e8184"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a3d59196858da4b2d5343addbe11e8184">Game.WidgetsList.Find&lt; T &gt;</a></div><div class="ttdeci">T Find&lt; T &gt;(string name, bool throwIfNotFound=true)</div><div class="ttdef"><b>定义</b> <a href="#l00149">WidgetsList.cs:149</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a4c19799cbb93536ed1e43516c42a3976"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a4c19799cbb93536ed1e43516c42a3976">Game.WidgetsList.Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>定义</b> <a href="#l00118">WidgetsList.cs:118</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a7a083cdfbf9314c4486c7bc01f3fcf62"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a7a083cdfbf9314c4486c7bc01f3fcf62">Game.WidgetsList.Add</a></div><div class="ttdeci">void Add(params Widget[] widgets)</div><div class="ttdef"><b>定义</b> <a href="#l00059">WidgetsList.cs:59</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a95875fa8bdc61588da9c516ce9e1badd"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a95875fa8bdc61588da9c516ce9e1badd">Game.WidgetsList.Remove</a></div><div class="ttdeci">void Remove(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00099">WidgetsList.cs:99</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a979dc7fde1ab717daa6b176e55575f55"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a979dc7fde1ab717daa6b176e55575f55">Game.WidgetsList.IndexOf</a></div><div class="ttdeci">int IndexOf(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00124">WidgetsList.cs:124</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a99002cb175093b2affd3d3bbd2fc5166"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a99002cb175093b2affd3d3bbd2fc5166">Game.WidgetsList.GetEnumerator</a></div><div class="ttdeci">Enumerator GetEnumerator()</div><div class="ttdef"><b>定义</b> <a href="#l00153">WidgetsList.cs:153</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a9b1ad8c4b517b684c582fa9b5da90c4a"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a9b1ad8c4b517b684c582fa9b5da90c4a">Game.WidgetsList.AddRange</a></div><div class="ttdeci">void AddRange(IEnumerable&lt; Widget &gt; widgets)</div><div class="ttdef"><b>定义</b> <a href="#l00063">WidgetsList.cs:63</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_aa77099f808c776bb7a33db8cf90f7521"><div class="ttname"><a href="class_game_1_1_widgets_list.html#aa77099f808c776bb7a33db8cf90f7521">Game.WidgetsList.Find</a></div><div class="ttdeci">Widget Find(string name, bool throwIfNotFound=true)</div><div class="ttdef"><b>定义</b> <a href="#l00147">WidgetsList.cs:147</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_aba3ce5980b14fc2bc0818209d0dc5c5a"><div class="ttname"><a href="class_game_1_1_widgets_list.html#aba3ce5980b14fc2bc0818209d0dc5c5a">Game.WidgetsList.WidgetsList</a></div><div class="ttdeci">WidgetsList(ContainerWidget containerWidget)</div><div class="ttdef"><b>定义</b> <a href="#l00053">WidgetsList.cs:53</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_abf6b6427015ee7f7ce7a9d2cf9ced259"><div class="ttname"><a href="class_game_1_1_widgets_list.html#abf6b6427015ee7f7ce7a9d2cf9ced259">Game.WidgetsList.m_containerWidget</a></div><div class="ttdeci">ContainerWidget m_containerWidget</div><div class="ttdef"><b>定义</b> <a href="#l00043">WidgetsList.cs:43</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_aee0cab3704d04958df7502a11c924899"><div class="ttname"><a href="class_game_1_1_widgets_list.html#aee0cab3704d04958df7502a11c924899">Game.WidgetsList.RemoveAt</a></div><div class="ttdeci">void RemoveAt(int index)</div><div class="ttdef"><b>定义</b> <a href="#l00106">WidgetsList.cs:106</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html">Game.WidgetsList.Enumerator</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">WidgetsList.cs:5</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html_a47bd877c64c29d19f7ae0d822b94cdf8"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html#a47bd877c64c29d19f7ae0d822b94cdf8">Game.WidgetsList.Enumerator.m_index</a></div><div class="ttdeci">int m_index</div><div class="ttdef"><b>定义</b> <a href="#l00010">WidgetsList.cs:10</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html_a4b07b411349c44ca209a2021cf140ee1"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html#a4b07b411349c44ca209a2021cf140ee1">Game.WidgetsList.Enumerator.m_current</a></div><div class="ttdeci">Widget m_current</div><div class="ttdef"><b>定义</b> <a href="#l00008">WidgetsList.cs:8</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html_a6e66cb3b4d0c01ee0c7cb30c9e32920b"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html#a6e66cb3b4d0c01ee0c7cb30c9e32920b">Game.WidgetsList.Enumerator.m_version</a></div><div class="ttdeci">int m_version</div><div class="ttdef"><b>定义</b> <a href="#l00012">WidgetsList.cs:12</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html_a827fd72a88d3737ef234859240899086"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html#a827fd72a88d3737ef234859240899086">Game.WidgetsList.Enumerator.Enumerator</a></div><div class="ttdeci">Enumerator(WidgetsList collection)</div><div class="ttdef"><b>定义</b> <a href="#l00018">WidgetsList.cs:18</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html_abaad54f6da2d2f2a2a39d36cc3685c66"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html#abaad54f6da2d2f2a2a39d36cc3685c66">Game.WidgetsList.Enumerator.m_collection</a></div><div class="ttdeci">WidgetsList m_collection</div><div class="ttdef"><b>定义</b> <a href="#l00006">WidgetsList.cs:6</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html_ac5d74ae4c710d8bb00e9c8ea6d361cb0"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html#ac5d74ae4c710d8bb00e9c8ea6d361cb0">Game.WidgetsList.Enumerator.Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>定义</b> <a href="#l00037">WidgetsList.cs:37</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html_ae48ba7a5bbc15c6c0851c9b81c6d25ef"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html#ae48ba7a5bbc15c6c0851c9b81c6d25ef">Game.WidgetsList.Enumerator.Current</a></div><div class="ttdeci">Widget Current</div><div class="ttdef"><b>定义</b> <a href="#l00014">WidgetsList.cs:14</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html_af279359d3bd18cff7fbecd925a134429"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html#af279359d3bd18cff7fbecd925a134429">Game.WidgetsList.Enumerator.Dispose</a></div><div class="ttdeci">void Dispose()</div><div class="ttdef"><b>定义</b> <a href="#l00025">WidgetsList.cs:25</a></div></div>
+<div class="ttc" id="astruct_game_1_1_widgets_list_1_1_enumerator_html_af3eb7752cbe4aac58179367585262162"><div class="ttname"><a href="struct_game_1_1_widgets_list_1_1_enumerator.html#af3eb7752cbe4aac58179367585262162">Game.WidgetsList.Enumerator.MoveNext</a></div><div class="ttdeci">bool MoveNext()</div><div class="ttdef"><b>定义</b> <a href="#l00027">WidgetsList.cs:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_widgets_list_8cs.html">WidgetsList.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

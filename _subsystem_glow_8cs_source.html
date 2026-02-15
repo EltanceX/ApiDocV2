@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemGlow.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_glow_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemGlow.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_glow_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html">    7</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_glow.html">SubsystemGlow</a> : <a class="code hl_class" href="class_game_entity_system_1_1_subsystem.html">Subsystem</a>, <a class="code hl_interface" href="interface_game_1_1_i_drawable.html">IDrawable</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#ac5e6d6c5f22fe5ada10a83a11ef1b5c6">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_sky.html">SubsystemSky</a> <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#ac5e6d6c5f22fe5ada10a83a11ef1b5c6">m_subsystemSky</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#a73fa346d43c0f41d10158708093cc0a6">   10</a></span>        <span class="keyword">public</span> Dictionary&lt;GlowPoint, bool&gt; <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a73fa346d43c0f41d10158708093cc0a6">m_glowPoints</a> = [];</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#a60785786adba633c87ed5e5890001cca">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">PrimitivesRenderer3D</a> <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a60785786adba633c87ed5e5890001cca">m_primitivesRenderer</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#aeba68b07bc0ff1c8d752d655830e3d04">   14</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_engine_1_1_graphics_1_1_textured_batch3_d.html">TexturedBatch3D</a>[] <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#aeba68b07bc0ff1c8d752d655830e3d04">m_batchesByType</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_engine_1_1_graphics_1_1_textured_batch3_d.html">TexturedBatch3D</a>[4];</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#a153f62bf5af5dbacadafad0443d02434">   16</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span>[] <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a153f62bf5af5dbacadafad0443d02434">m_drawOrders</a> = [110];</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#add8008c22f8205de7d9c8dfaf4739cc6">   18</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span>[] <a class="code hl_property" href="class_game_1_1_subsystem_glow.html#add8008c22f8205de7d9c8dfaf4739cc6">DrawOrders</a> =&gt; <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a153f62bf5af5dbacadafad0443d02434">m_drawOrders</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#a8044111eae49bd09409fff49bd31a49f">   20</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_glow_point.html">GlowPoint</a> <a class="code hl_function" href="class_game_1_1_subsystem_glow.html#a8044111eae49bd09409fff49bd31a49f">AddGlowPoint</a>() {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_class" href="class_game_1_1_glow_point.html">GlowPoint</a> glowPoint = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a73fa346d43c0f41d10158708093cc0a6">m_glowPoints</a>.Add(glowPoint, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">return</span> glowPoint;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#ab795f8994d670460c5ef5bf53cfd3839">   26</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_glow.html#ab795f8994d670460c5ef5bf53cfd3839">RemoveGlowPoint</a>(<a class="code hl_class" href="class_game_1_1_glow_point.html">GlowPoint</a> glowPoint) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a73fa346d43c0f41d10158708093cc0a6">m_glowPoints</a>.Remove(glowPoint);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#a54c4eca855d3ecd9888e598d3d86f418">   30</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_glow.html#a54c4eca855d3ecd9888e598d3d86f418">Draw</a>(<a class="code hl_class" href="class_game_1_1_camera.html">Camera</a> camera, <span class="keywordtype">int</span> drawOrder) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_glow_point.html">GlowPoint</a> key <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a73fa346d43c0f41d10158708093cc0a6">m_glowPoints</a>.Keys) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keywordflow">if</span> (key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#a251d4920f9b160f47f56851583d38b4f">Color</a>.<a class="code hl_property" href="struct_engine_1_1_color.html#adfce5c3126a3eab8dbc93e795525a944">A</a> &gt; 0) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> vector = key.Position - camera.ViewPosition;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    <span class="keywordtype">float</span> num = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(vector, camera.ViewDirection);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    <span class="keywordflow">if</span> (num &gt; 0.01f) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                        <span class="keywordtype">float</span> num2 = vector.<a class="code hl_function" href="struct_engine_1_1_vector3.html#ac23619307c7a520950d3bf50444f9cb7">Length</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                        <span class="keywordflow">if</span> (num2 &lt; <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#ac5e6d6c5f22fe5ada10a83a11ef1b5c6">m_subsystemSky</a>.VisibilityRange) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                            <span class="keywordtype">float</span> num3 = key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#a6cf64b202ebf6d3ef2ba85969a9237ff">Size</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                            <span class="keywordflow">if</span> (key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#a30e1006153c2bc384397e36c497f7533">FarDistance</a> &gt; 0f) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                num3 += (key.FarSize - key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#a6cf64b202ebf6d3ef2ba85969a9237ff">Size</a>) * <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#aba76343a94db3db4ced19eae368c79e7">Saturate</a>(num2 / key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#a30e1006153c2bc384397e36c497f7533">FarDistance</a>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                            }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> v = (0f - (0.01f + 0.02f * num)) / num2 * vector;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                            <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> color = <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_function" href="struct_engine_1_1_color.html#ae05f41ba95a77218f0f1200a15d25168">LerpNotSaturated</a>(</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#a251d4920f9b160f47f56851583d38b4f">Color</a>,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                                <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#ac5e6d6c5f22fe5ada10a83a11ef1b5c6">m_subsystemSky</a>.ViewFogColor,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#ac5e6d6c5f22fe5ada10a83a11ef1b5c6">m_subsystemSky</a>.CalculateFog(camera.ViewPosition, key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#aba75f25d239905eadf35e02b5fa8061e">Position</a>)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                            );</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> p = key.Position + num3 * (-key.Right - key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#aabb1903055e092b5a768409403e071a4">Up</a>) + v;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> p2 = key.Position + num3 * (key.Right - key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#aabb1903055e092b5a768409403e071a4">Up</a>) + v;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> p3 = key.Position + num3 * (key.Right + key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#aabb1903055e092b5a768409403e071a4">Up</a>) + v;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> p4 = key.Position + num3 * (-key.Right + key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#aabb1903055e092b5a768409403e071a4">Up</a>) + v;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                            <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#aeba68b07bc0ff1c8d752d655830e3d04">m_batchesByType</a>[(int)key.<a class="code hl_variable" href="class_game_1_1_glow_point.html#aae233cbb64e482888e2c0f76b2ed2a82">Type</a>]</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                            .QueueQuad(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                                p,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                                p2,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                p3,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                                p4,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                                <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(0f, 0f),</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                <span class="keyword">new</span> <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Vector2</a>(1f, 0f),</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                <span class="keyword">new</span> <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Vector2</a>(1f, 1f),</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                <span class="keyword">new</span> <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Vector2</a>(0f, 1f),</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                                color</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                            );</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                        }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a60785786adba633c87ed5e5890001cca">m_primitivesRenderer</a>.Flush(camera.ViewProjectionMatrix);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_glow.html#a0eb5a6614569c5f397dc4bb5f25b2e1e">   71</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_glow.html#a0eb5a6614569c5f397dc4bb5f25b2e1e">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#ac5e6d6c5f22fe5ada10a83a11ef1b5c6">m_subsystemSky</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_sky.html">SubsystemSky</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#aeba68b07bc0ff1c8d752d655830e3d04">m_batchesByType</a>[0] = <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a60785786adba633c87ed5e5890001cca">m_primitivesRenderer</a>.TexturedBatch(</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;<a class="code hl_class" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a>&gt;(<span class="stringliteral">&quot;Textures/RoundGlow&quot;</span>),</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                0,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html">DepthStencilState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html#aa08b140980e36fd4a1ba2174a17c39e5">DepthRead</a>,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_rasterizer_state.html">RasterizerState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_rasterizer_state.html#adb99c1c42749fd35b25e3418f1659a52">CullCounterClockwiseScissor</a>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_blend_state.html">BlendState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_blend_state.html#a639bf83d607c23f9d83edfca15f9e48b">AlphaBlend</a>,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_sampler_state.html">SamplerState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_sampler_state.html#aa85a55ef717b44501dff9ff2230ed54a">LinearClamp</a></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            );</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#aeba68b07bc0ff1c8d752d655830e3d04">m_batchesByType</a>[1] = <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a60785786adba633c87ed5e5890001cca">m_primitivesRenderer</a>.TexturedBatch(</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;<a class="code hl_class" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a>&gt;(<span class="stringliteral">&quot;Textures/SquareGlow&quot;</span>),</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                0,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html">DepthStencilState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html#aa08b140980e36fd4a1ba2174a17c39e5">DepthRead</a>,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_rasterizer_state.html">RasterizerState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_rasterizer_state.html#adb99c1c42749fd35b25e3418f1659a52">CullCounterClockwiseScissor</a>,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_blend_state.html">BlendState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_blend_state.html#a639bf83d607c23f9d83edfca15f9e48b">AlphaBlend</a>,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_sampler_state.html">SamplerState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_sampler_state.html#aa85a55ef717b44501dff9ff2230ed54a">LinearClamp</a></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            );</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#aeba68b07bc0ff1c8d752d655830e3d04">m_batchesByType</a>[2] = <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a60785786adba633c87ed5e5890001cca">m_primitivesRenderer</a>.TexturedBatch(</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;<a class="code hl_class" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a>&gt;(<span class="stringliteral">&quot;Textures/HorizontalRectGlow&quot;</span>),</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                0,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html">DepthStencilState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html#aa08b140980e36fd4a1ba2174a17c39e5">DepthRead</a>,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_rasterizer_state.html">RasterizerState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_rasterizer_state.html#adb99c1c42749fd35b25e3418f1659a52">CullCounterClockwiseScissor</a>,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_blend_state.html">BlendState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_blend_state.html#a639bf83d607c23f9d83edfca15f9e48b">AlphaBlend</a>,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_sampler_state.html">SamplerState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_sampler_state.html#aa85a55ef717b44501dff9ff2230ed54a">LinearClamp</a></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            );</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#aeba68b07bc0ff1c8d752d655830e3d04">m_batchesByType</a>[3] = <a class="code hl_variable" href="class_game_1_1_subsystem_glow.html#a60785786adba633c87ed5e5890001cca">m_primitivesRenderer</a>.TexturedBatch(</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;<a class="code hl_class" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a>&gt;(<span class="stringliteral">&quot;Textures/VerticalRectGlow&quot;</span>),</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                0,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html">DepthStencilState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_depth_stencil_state.html#aa08b140980e36fd4a1ba2174a17c39e5">DepthRead</a>,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_rasterizer_state.html">RasterizerState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_rasterizer_state.html#adb99c1c42749fd35b25e3418f1659a52">CullCounterClockwiseScissor</a>,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_blend_state.html">BlendState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_blend_state.html#a639bf83d607c23f9d83edfca15f9e48b">AlphaBlend</a>,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_sampler_state.html">SamplerState</a>.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_sampler_state.html#aa85a55ef717b44501dff9ff2230ed54a">LinearClamp</a></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            );</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_blend_state_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_blend_state.html">Engine.Graphics.BlendState</a></div><div class="ttdef"><b>定义</b> <a href="_blend_state_8cs_source.html#l00002">BlendState.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_blend_state_html_a639bf83d607c23f9d83edfca15f9e48b"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_blend_state.html#a639bf83d607c23f9d83edfca15f9e48b">Engine.Graphics.BlendState.AlphaBlend</a></div><div class="ttdeci">static readonly BlendState AlphaBlend</div><div class="ttdef"><b>定义</b> <a href="_blend_state_8cs_source.html#l00027">BlendState.cs:27</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_depth_stencil_state_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_depth_stencil_state.html">Engine.Graphics.DepthStencilState</a></div><div class="ttdef"><b>定义</b> <a href="_depth_stencil_state_8cs_source.html#l00002">DepthStencilState.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_depth_stencil_state_html_aa08b140980e36fd4a1ba2174a17c39e5"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_depth_stencil_state.html#aa08b140980e36fd4a1ba2174a17c39e5">Engine.Graphics.DepthStencilState.DepthRead</a></div><div class="ttdeci">static readonly DepthStencilState DepthRead</div><div class="ttdef"><b>定义</b> <a href="_depth_stencil_state_8cs_source.html#l00011">DepthStencilState.cs:11</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_primitives_renderer3_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_primitives_renderer3_d.html">Engine.Graphics.PrimitivesRenderer3D</a></div><div class="ttdef"><b>定义</b> <a href="_primitives_renderer3_d_8cs_source.html#l00004">PrimitivesRenderer3D.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_rasterizer_state_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_rasterizer_state.html">Engine.Graphics.RasterizerState</a></div><div class="ttdef"><b>定义</b> <a href="_rasterizer_state_8cs_source.html#l00002">RasterizerState.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_rasterizer_state_html_adb99c1c42749fd35b25e3418f1659a52"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_rasterizer_state.html#adb99c1c42749fd35b25e3418f1659a52">Engine.Graphics.RasterizerState.CullCounterClockwiseScissor</a></div><div class="ttdeci">static readonly RasterizerState CullCounterClockwiseScissor</div><div class="ttdef"><b>定义</b> <a href="_rasterizer_state_8cs_source.html#l00023">RasterizerState.cs:23</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_sampler_state_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_sampler_state.html">Engine.Graphics.SamplerState</a></div><div class="ttdef"><b>定义</b> <a href="_sampler_state_8cs_source.html#l00002">SamplerState.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_sampler_state_html_aa85a55ef717b44501dff9ff2230ed54a"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_sampler_state.html#aa85a55ef717b44501dff9ff2230ed54a">Engine.Graphics.SamplerState.LinearClamp</a></div><div class="ttdeci">static SamplerState LinearClamp</div><div class="ttdef"><b>定义</b> <a href="_sampler_state_8cs_source.html#l00025">SamplerState.cs:25</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_texture2_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_texture2_d.html">Engine.Graphics.Texture2D</a></div><div class="ttdef"><b>定义</b> <a href="_texture2_d_8cs_source.html#l00015">Texture2D.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_textured_batch3_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_textured_batch3_d.html">Engine.Graphics.TexturedBatch3D</a></div><div class="ttdef"><b>定义</b> <a href="_textured_batch3_d_8cs_source.html#l00002">TexturedBatch3D.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_aba76343a94db3db4ced19eae368c79e7"><div class="ttname"><a href="class_engine_1_1_math_utils.html#aba76343a94db3db4ced19eae368c79e7">Engine.MathUtils.Saturate</a></div><div class="ttdeci">static float Saturate(float x)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00163">MathUtils.cs:163</a></div></div>
+<div class="ttc" id="aclass_game_1_1_camera_html"><div class="ttname"><a href="class_game_1_1_camera.html">Game.Camera</a></div><div class="ttdef"><b>定义</b> <a href="_camera_8cs_source.html#l00005">Camera.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_glow_point_html"><div class="ttname"><a href="class_game_1_1_glow_point.html">Game.GlowPoint</a></div><div class="ttdef"><b>定义</b> <a href="_glow_point_8cs_source.html#l00004">GlowPoint.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_glow_point_html_a251d4920f9b160f47f56851583d38b4f"><div class="ttname"><a href="class_game_1_1_glow_point.html#a251d4920f9b160f47f56851583d38b4f">Game.GlowPoint.Color</a></div><div class="ttdeci">Color Color</div><div class="ttdef"><b>定义</b> <a href="_glow_point_8cs_source.html#l00013">GlowPoint.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_glow_point_html_a30e1006153c2bc384397e36c497f7533"><div class="ttname"><a href="class_game_1_1_glow_point.html#a30e1006153c2bc384397e36c497f7533">Game.GlowPoint.FarDistance</a></div><div class="ttdeci">float FarDistance</div><div class="ttdef"><b>定义</b> <a href="_glow_point_8cs_source.html#l00019">GlowPoint.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_glow_point_html_a6cf64b202ebf6d3ef2ba85969a9237ff"><div class="ttname"><a href="class_game_1_1_glow_point.html#a6cf64b202ebf6d3ef2ba85969a9237ff">Game.GlowPoint.Size</a></div><div class="ttdeci">float Size</div><div class="ttdef"><b>定义</b> <a href="_glow_point_8cs_source.html#l00015">GlowPoint.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_glow_point_html_aabb1903055e092b5a768409403e071a4"><div class="ttname"><a href="class_game_1_1_glow_point.html#aabb1903055e092b5a768409403e071a4">Game.GlowPoint.Up</a></div><div class="ttdeci">Vector3 Up</div><div class="ttdef"><b>定义</b> <a href="_glow_point_8cs_source.html#l00009">GlowPoint.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_glow_point_html_aae233cbb64e482888e2c0f76b2ed2a82"><div class="ttname"><a href="class_game_1_1_glow_point.html#aae233cbb64e482888e2c0f76b2ed2a82">Game.GlowPoint.Type</a></div><div class="ttdeci">GlowPointType Type</div><div class="ttdef"><b>定义</b> <a href="_glow_point_8cs_source.html#l00021">GlowPoint.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_1_1_glow_point_html_aba75f25d239905eadf35e02b5fa8061e"><div class="ttname"><a href="class_game_1_1_glow_point.html#aba75f25d239905eadf35e02b5fa8061e">Game.GlowPoint.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="_glow_point_8cs_source.html#l00005">GlowPoint.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html">Game.SubsystemGlow</a></div><div class="ttdef"><b>定义</b> <a href="#l00007">SubsystemGlow.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_a0eb5a6614569c5f397dc4bb5f25b2e1e"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#a0eb5a6614569c5f397dc4bb5f25b2e1e">Game.SubsystemGlow.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00071">SubsystemGlow.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_a153f62bf5af5dbacadafad0443d02434"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#a153f62bf5af5dbacadafad0443d02434">Game.SubsystemGlow.m_drawOrders</a></div><div class="ttdeci">static int[] m_drawOrders</div><div class="ttdef"><b>定义</b> <a href="#l00016">SubsystemGlow.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_a54c4eca855d3ecd9888e598d3d86f418"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#a54c4eca855d3ecd9888e598d3d86f418">Game.SubsystemGlow.Draw</a></div><div class="ttdeci">virtual void Draw(Camera camera, int drawOrder)</div><div class="ttdef"><b>定义</b> <a href="#l00030">SubsystemGlow.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_a60785786adba633c87ed5e5890001cca"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#a60785786adba633c87ed5e5890001cca">Game.SubsystemGlow.m_primitivesRenderer</a></div><div class="ttdeci">PrimitivesRenderer3D m_primitivesRenderer</div><div class="ttdef"><b>定义</b> <a href="#l00012">SubsystemGlow.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_a73fa346d43c0f41d10158708093cc0a6"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#a73fa346d43c0f41d10158708093cc0a6">Game.SubsystemGlow.m_glowPoints</a></div><div class="ttdeci">Dictionary&lt; GlowPoint, bool &gt; m_glowPoints</div><div class="ttdef"><b>定义</b> <a href="#l00010">SubsystemGlow.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_a8044111eae49bd09409fff49bd31a49f"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#a8044111eae49bd09409fff49bd31a49f">Game.SubsystemGlow.AddGlowPoint</a></div><div class="ttdeci">GlowPoint AddGlowPoint()</div><div class="ttdef"><b>定义</b> <a href="#l00020">SubsystemGlow.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_ab795f8994d670460c5ef5bf53cfd3839"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#ab795f8994d670460c5ef5bf53cfd3839">Game.SubsystemGlow.RemoveGlowPoint</a></div><div class="ttdeci">void RemoveGlowPoint(GlowPoint glowPoint)</div><div class="ttdef"><b>定义</b> <a href="#l00026">SubsystemGlow.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_ac5e6d6c5f22fe5ada10a83a11ef1b5c6"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#ac5e6d6c5f22fe5ada10a83a11ef1b5c6">Game.SubsystemGlow.m_subsystemSky</a></div><div class="ttdeci">SubsystemSky m_subsystemSky</div><div class="ttdef"><b>定义</b> <a href="#l00008">SubsystemGlow.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_add8008c22f8205de7d9c8dfaf4739cc6"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#add8008c22f8205de7d9c8dfaf4739cc6">Game.SubsystemGlow.DrawOrders</a></div><div class="ttdeci">int[] DrawOrders</div><div class="ttdef"><b>定义</b> <a href="#l00018">SubsystemGlow.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_glow_html_aeba68b07bc0ff1c8d752d655830e3d04"><div class="ttname"><a href="class_game_1_1_subsystem_glow.html#aeba68b07bc0ff1c8d752d655830e3d04">Game.SubsystemGlow.m_batchesByType</a></div><div class="ttdeci">TexturedBatch3D[] m_batchesByType</div><div class="ttdef"><b>定义</b> <a href="#l00014">SubsystemGlow.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_sky_html"><div class="ttname"><a href="class_game_1_1_subsystem_sky.html">Game.SubsystemSky</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_sky_8cs_source.html#l00008">SubsystemSky.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00005">Subsystem.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_drawable_html"><div class="ttname"><a href="interface_game_1_1_i_drawable.html">Game.IDrawable</a></div><div class="ttdef"><b>定义</b> <a href="_i_drawable_8cs_source.html#l00002">IDrawable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Engine.Graphics.ShaderParameterType.Vector2</a></div><div class="ttdeci">@ Vector2</div><div class="ttdef"><b>定义</b> <a href="_shader_parameter_type_8cs_source.html#l00004">ShaderParameterType.cs:4</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_adfce5c3126a3eab8dbc93e795525a944"><div class="ttname"><a href="struct_engine_1_1_color.html#adfce5c3126a3eab8dbc93e795525a944">Engine.Color.A</a></div><div class="ttdeci">byte A</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00092">Color.cs:92</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_ae05f41ba95a77218f0f1200a15d25168"><div class="ttname"><a href="struct_engine_1_1_color.html#ae05f41ba95a77218f0f1200a15d25168">Engine.Color.LerpNotSaturated</a></div><div class="ttdeci">static Color LerpNotSaturated(Color c1, Color c2, float f)</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00169">Color.cs:169</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ac23619307c7a520950d3bf50444f9cb7"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ac23619307c7a520950d3bf50444f9cb7">Engine.Vector3.Length</a></div><div class="ttdeci">float Length()</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00116">Vector3.cs:116</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_afb241ba10f85725de8e143a303ae4275"><div class="ttname"><a href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Engine.Vector3.Dot</a></div><div class="ttdeci">static float Dot(Vector3 v1, Vector3 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00112">Vector3.cs:112</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_glow_8cs.html">SubsystemGlow.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

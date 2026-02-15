@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Game.LightingManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_game_1_1_lighting_manager.html','','class_game_1_1_lighting_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game.LightingManager</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Game.LightingManager 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_lighting_manager__coll__graph.png" border="0" usemap="#a_game_8_lighting_manager_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_8_lighting_manager_coll__map" id="a_game_8_lighting_manager_coll__map">
+<area shape="rect" title=" " alt="" coords="5,284,161,311"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html" title=" " alt="" coords="28,123,138,149"/>
+<area shape="poly" title=" " alt="" coords="86,164,86,284,80,283,80,166"/>
+<area shape="poly" title=" " alt="" coords="134,119,155,123,162,128,164,136,160,146,149,151,120,152,118,147,148,146,156,142,159,136,157,131,153,128,136,124"/>
+<area shape="rect" title=" " alt="" coords="41,5,125,32"/>
+<area shape="poly" title=" " alt="" coords="84,45,86,122,80,122,82,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a750449f7796a36617c52aa3ff3a63d3a" id="r_a750449f7796a36617c52aa3ff3a63d3a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a750449f7796a36617c52aa3ff3a63d3a">Initialize</a> ()</td></tr>
+<tr class="memitem:a62569dd17eca8aeed6ac0075239edd1b" id="r_a62569dd17eca8aeed6ac0075239edd1b"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a62569dd17eca8aeed6ac0075239edd1b">CalculateLighting</a> (<a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> normal)</td></tr>
+<tr class="memitem:aa110e4332aa3faade22db6a28fd2e154" id="r_aa110e4332aa3faade22db6a28fd2e154"><td class="memItemLeft">static ? float&#160;</td><td class="memItemRight"><a class="el" href="#aa110e4332aa3faade22db6a28fd2e154">CalculateSmoothLight</a> (<a class="el" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> subsystemTerrain, <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> p)</td></tr>
+<tr class="memitem:a3ec2bca348375f220a305390df426eba" id="r_a3ec2bca348375f220a305390df426eba"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a3ec2bca348375f220a305390df426eba">CalculateLightingTables</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a4a5ef7b54a6bb5af6ab11203636aae48" id="r_a4a5ef7b54a6bb5af6ab11203636aae48"><td class="memItemLeft">static readonly float&#160;</td><td class="memItemRight"><a class="el" href="#a4a5ef7b54a6bb5af6ab11203636aae48">LightAmbient</a> = 0.5f</td></tr>
+<tr class="memitem:aa94ca6ee51c76dbafac4a0ac888fa48a" id="r_aa94ca6ee51c76dbafac4a0ac888fa48a"><td class="memItemLeft">static readonly <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa94ca6ee51c76dbafac4a0ac888fa48a">DirectionToLight1</a> = new(0.12f, 0.25f, 0.34f)</td></tr>
+<tr class="memitem:a20a9e9a0c30855a42ba23bd1c24bc9d4" id="r_a20a9e9a0c30855a42ba23bd1c24bc9d4"><td class="memItemLeft">static readonly <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a20a9e9a0c30855a42ba23bd1c24bc9d4">DirectionToLight2</a> = new(-0.12f, 0.25f, -0.34f)</td></tr>
+<tr class="memitem:a0c95a90262b0bacb28fdc8d206a5e9c7" id="r_a0c95a90262b0bacb28fdc8d206a5e9c7"><td class="memItemLeft">static readonly float[]&#160;</td><td class="memItemRight"><a class="el" href="#a0c95a90262b0bacb28fdc8d206a5e9c7">LightIntensityByLightValue</a> = new float[16]</td></tr>
+<tr class="memitem:a9101ca09668e70cee5c168b6cadcf6a6" id="r_a9101ca09668e70cee5c168b6cadcf6a6"><td class="memItemLeft">static readonly float[]&#160;</td><td class="memItemRight"><a class="el" href="#a9101ca09668e70cee5c168b6cadcf6a6">LightIntensityByLightValueAndFace</a> = new float[96]</td></tr>
+<tr class="memitem:aa79f468e312f89f7c2f7a79c1deff48d" id="r_aa79f468e312f89f7c2f7a79c1deff48d"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa79f468e312f89f7c2f7a79c1deff48d">Loaded</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00004">4</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a62569dd17eca8aeed6ac0075239edd1b" name="a62569dd17eca8aeed6ac0075239edd1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62569dd17eca8aeed6ac0075239edd1b">&#9670;&#160;</a></span>CalculateLighting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.LightingManager.CalculateLighting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00030">30</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_lighting_manager_a62569dd17eca8aeed6ac0075239edd1b_icgraph.png" border="0" usemap="#aclass_game_1_1_lighting_manager_a62569dd17eca8aeed6ac0075239edd1b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_lighting_manager_a62569dd17eca8aeed6ac0075239edd1b_icgraph" id="aclass_game_1_1_lighting_manager_a62569dd17eca8aeed6ac0075239edd1b_icgraph">
+<area shape="rect" title=" " alt="" coords="815,908,1030,951"/>
+<area shape="rect" href="class_game_1_1_block_mesh.html#ab49421a48182779278f2b9b22533d553" title=" " alt="" coords="554,268,764,311"/>
+<area shape="poly" title=" " alt="" coords="904,894,669,314,670,309,909,893"/>
+<area shape="rect" href="class_game_1_1_block_mesh.html#afef4015b1e16efec43badc0336482f4a" title=" " alt="" coords="555,596,763,639"/>
+<area shape="poly" title=" " alt="" coords="891,897,679,642,679,637,896,895"/>
+<area shape="rect" href="class_game_1_1_lighting_manager.html#a3ec2bca348375f220a305390df426eba" title=" " alt="" coords="552,908,766,951"/>
+<area shape="poly" title=" " alt="" coords="797,931,768,932,766,927,802,928"/>
+<area shape="rect" href="class_game_1_1_blocks_manager.html#af3eec91060d72ac63382aad5684b635b" title=" " alt="" coords="551,975,767,1017"/>
+<area shape="poly" title=" " alt="" coords="819,957,748,976,745,972,823,953"/>
+<area shape="rect" href="class_game_1_1_block_geometry_generator.html#a5d57903e142be7db751de00463659f08" title=" " alt="" coords="554,1820,765,1863"/>
+<area shape="poly" title=" " alt="" coords="913,964,669,1820,664,1819,909,967"/>
+<area shape="rect" href="class_game_1_1_block_mesh.html#a2ce1b6870488e16c40e7740699973862" title=" " alt="" coords="276,5,485,48"/>
+<area shape="poly" title=" " alt="" coords="639,254,618,212,587,162,548,112,501,69,472,51,469,46,505,65,552,108,591,159,622,209,645,253"/>
+<area shape="rect" href="class_game_1_1_arrow_block.html#a4fcd0ba16d8fcd7ab321f2ae0354c8e2" title=" " alt="" coords="291,123,470,149"/>
+<area shape="poly" title=" " alt="" coords="642,582,548,323,538,277,535,239,527,205,517,188,501,170,486,159,471,150,469,145,489,154,505,166,521,185,532,203,541,238,544,276,554,322,647,581"/>
+<area shape="rect" href="class_game_1_1_bow_block.html#a4a99f03f53f7b2981fa239668de35e57" title=" " alt="" coords="22,97,193,124"/>
+<area shape="poly" title=" " alt="" coords="641,582,597,468,548,323,542,290,540,259,542,205,542,180,536,157,523,135,501,113,460,87,413,72,364,65,315,65,266,71,221,79,149,98,145,95,220,74,265,65,314,60,365,60,415,67,462,83,505,109,528,132,541,155,547,179,548,205,545,259,547,289,554,322,602,466,646,581"/>
+<area shape="rect" href="class_game_1_1_crossbow_block.html#a89c209bbf5e56586e761ffdee74594dc" title=" " alt="" coords="5,148,210,175"/>
+<area shape="poly" title=" " alt="" coords="642,581,561,363,501,214,481,202,452,193,378,178,292,170,212,165,208,161,293,164,378,173,454,188,483,198,505,210,566,361,647,581"/>
+<area shape="rect" href="class_game_1_1_attached_sign_block.html#a41c8a5ac425a048c2424c64f63a50c3f" title=" " alt="" coords="269,224,492,251"/>
+<area shape="poly" title=" " alt="" coords="644,581,618,504,582,408,542,320,521,287,501,265,486,254,484,249,505,261,525,284,546,318,587,406,623,502,649,581"/>
+<area shape="rect" href="class_game_1_1_axe_block.html#a2bb13858877f917c58622bcb0becf1d8" title=" " alt="" coords="296,275,464,301"/>
+<area shape="poly" title=" " alt="" coords="647,581,630,522,602,449,582,412,559,376,532,344,501,315,484,305,466,297,464,293,486,300,505,311,536,340,564,373,587,410,607,447,636,520,653,581"/>
+<area shape="rect" href="class_game_1_1_cairn_block.html#a39d9f77814363ec6838ff77e45d174b6" title=" " alt="" coords="292,325,468,352"/>
+<area shape="poly" title=" " alt="" coords="644,581,624,532,594,473,553,415,529,389,502,366,470,350,468,345,504,362,532,385,557,411,599,471,629,530,649,581"/>
+<area shape="rect" href="class_game_1_1_egg_block.html#a9f2dddfc97398c8d38938463030e537e" title=" " alt="" coords="296,376,464,403"/>
+<area shape="poly" title=" " alt="" coords="639,583,616,544,586,498,547,454,502,417,466,401,464,396,504,412,551,450,590,495,621,541,644,582"/>
+<area shape="rect" href="class_game_1_1_fence_block.html#a4919cc2b52e3469a8f5546b57fc0e09e" title=" " alt="" coords="290,427,471,453"/>
+<area shape="poly" title=" " alt="" coords="631,584,576,524,541,493,502,468,472,455,470,450,504,463,544,489,580,520,636,583"/>
+<area shape="rect" href="class_game_1_1_gunpowder_keg_block.html#a556e9cd4dafb3a10b69f97db571eaded" title=" " alt="" coords="263,477,498,504"/>
+<area shape="poly" title=" " alt="" coords="617,587,565,552,502,518,470,507,467,502,504,514,568,547,622,586"/>
+<area shape="rect" href="class_game_1_1_hammer_block.html#a3eff5c27c16508e65c2e20bdff6f8e15" title=" " alt="" coords="283,528,478,555"/>
+<area shape="poly" title=" " alt="" coords="580,592,502,569,456,558,454,553,504,564,584,589"/>
+<area shape="rect" href="class_game_1_1_jack_o_lantern_block.html#ad7ea191ed925114caf0eab87ef4f7420" title=" " alt="" coords="267,579,494,605"/>
+<area shape="poly" title=" " alt="" coords="537,608,496,605,493,600,542,605"/>
+<area shape="rect" href="class_game_1_1_machete_block.html#a020e6bf7a7dde745084b0d6e23a8f77a" title=" " alt="" coords="283,629,478,656"/>
+<area shape="poly" title=" " alt="" coords="538,630,480,636,477,632,542,626"/>
+<area shape="rect" href="class_game_1_1_pickaxe_block.html#a638f8f33e2e502f22258d46c1ad063de" title=" " alt="" coords="284,680,476,707"/>
+<area shape="poly" title=" " alt="" coords="580,646,504,671,457,681,453,677,502,665,584,642"/>
+<area shape="rect" href="class_game_1_1_posted_sign_block.html#a46fd7f44719c452040910647b3697f63" title=" " alt="" coords="274,731,486,757"/>
+<area shape="poly" title=" " alt="" coords="618,650,568,688,504,721,470,732,466,728,502,716,565,683,621,646"/>
+<area shape="rect" href="class_game_1_1_rake_block.html#aee89203f49ce0b96651c8211ac7c7d84" title=" " alt="" coords="292,781,468,808"/>
+<area shape="poly" title=" " alt="" coords="632,653,580,714,544,746,504,772,471,785,467,781,502,767,541,741,576,711,635,649"/>
+<area shape="rect" href="class_game_1_1_shovel_block.html#a753469081a128f4030091a1166e30a9b" title=" " alt="" coords="288,832,473,859"/>
+<area shape="poly" title=" " alt="" coords="640,655,621,694,590,740,551,785,504,822,475,835,471,832,502,818,547,781,586,736,616,691,642,650"/>
+<area shape="rect" href="class_game_1_1_spear_block.html#a6a3871f015e2df06ee0d2592e5fc3660" title=" " alt="" coords="291,883,470,909"/>
+<area shape="poly" title=" " alt="" coords="645,656,629,704,599,764,557,823,532,850,504,873,472,888,468,885,502,868,529,846,553,820,594,761,624,702,647,651"/>
+<area shape="rect" href="class_game_1_1_stairs_block.html#ac269435db72a7131ff58b773214779d4" title=" " alt="" coords="291,933,470,960"/>
+<area shape="poly" title=" " alt="" coords="651,651,636,714,607,787,587,825,564,861,536,895,505,924,473,940,469,936,501,919,532,891,559,858,582,822,602,785,630,713,649,657"/>
+<area shape="rect" href="class_game_1_1_stone_axe_block.html#ab8dc167f5217836219a5c5baa87b9706" title=" " alt="" coords="279,984,482,1011"/>
+<area shape="poly" title=" " alt="" coords="644,655,574,837,534,926,518,957,505,974,484,986,480,983,501,970,513,954,529,924,569,835,645,650"/>
+<area shape="rect" href="class_game_1_1_stone_club_block.html#a03823122146c072d7ef0e0e07c561b85" title=" " alt="" coords="277,1035,484,1061"/>
+<area shape="poly" title=" " alt="" coords="643,656,554,897,544,935,539,966,529,996,505,1025,486,1037,482,1033,501,1021,524,993,534,965,538,933,548,895,645,651"/>
+<area shape="rect" href="class_game_1_1_wooden_club_block.html#a51a096369da1a29916d1265bc03f23ab" title=" " alt="" coords="271,1085,490,1112"/>
+<area shape="poly" title=" " alt="" coords="642,656,602,762,554,897,544,949,542,993,540,1014,534,1034,523,1054,505,1075,489,1087,485,1083,501,1071,519,1051,530,1032,535,1013,537,993,539,948,548,895,597,760,644,651"/>
+<area shape="poly" title=" " alt="" coords="273,128,195,121,192,117,277,124"/>
+<area shape="poly" title=" " alt="" coords="274,148,212,154,208,150,277,144"/>
+<area shape="rect" href="class_game_1_1_lighting_manager.html#a750449f7796a36617c52aa3ff3a63d3a" title=" " alt="" coords="277,1136,484,1163"/>
+<area shape="poly" title=" " alt="" coords="552,962,553,964,538,984,532,1004,531,1044,529,1085,521,1106,505,1126,487,1138,482,1135,501,1122,516,1103,524,1084,525,1044,526,1003,534,982,549,961,555,958"/>
+<area shape="rect" href="class_game_1_1_attached_sign_block.html#aa22c6efd451c82d70d98740c54d22f42" title=" " alt="" coords="266,1187,494,1229"/>
+<area shape="poly" title=" " alt="" coords="651,1804,632,1679,600,1510,579,1425,556,1348,530,1286,501,1243,489,1232,488,1227,505,1240,534,1283,561,1347,584,1424,605,1509,637,1678,656,1805"/>
+<area shape="rect" href="class_game_1_1_battery_block.html#a1c2d82a9a30f28b1b3a651e5d45d9c7c" title=" " alt="" coords="284,1253,476,1296"/>
+<area shape="poly" title=" " alt="" coords="656,1804,652,1707,644,1643,631,1574,612,1502,585,1432,548,1367,501,1310,478,1293,476,1288,505,1306,553,1364,590,1430,617,1501,637,1572,649,1642,657,1706,661,1806"/>
+<area shape="rect" href="class_game_1_1_button_block.html#ac528cf5e35fc174c85a21af150d2f458" title=" " alt="" coords="286,1320,474,1363"/>
+<area shape="poly" title=" " alt="" coords="654,1804,646,1717,637,1662,623,1602,603,1541,577,1481,543,1425,501,1377,476,1359,474,1354,505,1373,548,1422,582,1478,608,1539,628,1600,642,1661,651,1716,659,1805"/>
+<area shape="rect" href="class_game_1_1_christmas_tree_block.html#ae3ce13abea00dbd8486935a7ae45313c" title=" " alt="" coords="289,1387,472,1429"/>
+<area shape="poly" title=" " alt="" coords="652,1804,640,1729,614,1632,594,1580,569,1530,539,1484,501,1443,473,1425,471,1420,505,1439,543,1481,574,1528,599,1578,619,1630,645,1728,657,1805"/>
+<area shape="rect" href="class_game_1_1_detonator_block.html#a8d69bc913969aeabd45f164b25984d4d" title=" " alt="" coords="277,1453,484,1496"/>
+<area shape="poly" title=" " alt="" coords="649,1804,633,1741,605,1661,585,1620,562,1580,534,1542,501,1510,485,1498,484,1493,505,1506,538,1539,566,1577,590,1617,609,1659,638,1740,654,1805"/>
+<area shape="rect" href="class_game_1_1_door_block.html#ae9f81f20192bd5ceeb47c704d20a397b" title=" " alt="" coords="272,1520,489,1563"/>
+<area shape="poly" title=" " alt="" coords="644,1805,625,1754,595,1692,554,1630,529,1601,501,1577,485,1566,484,1561,505,1573,533,1598,558,1626,599,1690,630,1752,649,1805"/>
+<area shape="rect" href="class_game_1_1_fence_gate_block.html#a71900571590c018fd0feb829a6392f90" title=" " alt="" coords="273,1587,488,1629"/>
+<area shape="poly" title=" " alt="" coords="637,1806,615,1769,584,1724,546,1681,501,1644,483,1632,481,1627,505,1639,550,1677,588,1721,619,1766,643,1806"/>
+<area shape="rect" href="class_game_1_1_four_led_block.html#a9541750f2c9e1d7a2c7fd72e830c0cab" title=" " alt="" coords="282,1653,479,1696"/>
+<area shape="poly" title=" " alt="" coords="626,1809,571,1759,538,1733,502,1710,478,1699,477,1694,504,1706,541,1728,575,1755,631,1808"/>
+<area shape="rect" href="class_game_1_1_furniture_block.html#ab57a68728d7cba1ef132ff510570748b" title=" " alt="" coords="280,1720,481,1763"/>
+<area shape="poly" title=" " alt="" coords="595,1814,502,1777,468,1766,466,1761,504,1772,600,1812"/>
+<area shape="rect" href="class_game_1_1_gunpowder_keg_block.html#acfce894a6d83c57023e515ac65bc07b1" title=" " alt="" coords="261,1787,500,1829"/>
+<area shape="poly" title=" " alt="" coords="536,1828,501,1825,499,1820,540,1826"/>
+<area shape="rect" href="class_game_1_1_hygrometer_block.html#a535cab2b7a281c4c1cd1a48a2bbafa75" title=" " alt="" coords="271,1853,490,1896"/>
+<area shape="poly" title=" " alt="" coords="536,1857,491,1864,489,1859,540,1854"/>
+<area shape="rect" href="class_game_1_1_led_block.html#a7533d1f8cb462861ad65af532b3eac3f" title=" " alt="" coords="275,1920,486,1963"/>
+<area shape="poly" title=" " alt="" coords="596,1871,504,1911,468,1922,465,1917,502,1905,600,1868"/>
+<area shape="rect" href="class_game_1_1_lightbulb_block.html#a079996f5e532b3262f9796a298d86efa" title=" " alt="" coords="279,1987,482,2029"/>
+<area shape="poly" title=" " alt="" coords="626,1876,575,1928,541,1954,504,1977,479,1988,476,1984,502,1972,538,1950,571,1924,630,1872"/>
+<area shape="rect" href="class_game_1_1_motion_detector_block.html#a65bb27c052456dbcfd4faaea4b7e350c" title=" " alt="" coords="287,2053,474,2096"/>
+<area shape="poly" title=" " alt="" coords="642,1874,619,1917,588,1962,550,2006,504,2044,475,2058,472,2054,502,2039,546,2002,584,1958,615,1914,638,1879"/>
+<area shape="rect" href="class_game_1_1_multicolored_led_block.html#a73e6f5799f4ba41b077e8f46c194021c" title=" " alt="" coords="286,2120,474,2163"/>
+<area shape="poly" title=" " alt="" coords="648,1875,630,1930,599,1993,558,2056,533,2085,505,2110,476,2126,473,2122,501,2106,529,2081,554,2053,595,1990,625,1928,645,1880"/>
+<area shape="rect" href="class_game_1_1_one_led_block.html#a0477dc76b5a621600bbe087e65ee8a70" title=" " alt="" coords="283,2187,478,2229"/>
+<area shape="poly" title=" " alt="" coords="653,1876,638,1943,609,2023,590,2065,566,2106,538,2144,505,2177,480,2192,477,2188,501,2173,534,2140,562,2103,585,2063,605,2021,633,1941,650,1880"/>
+<area shape="rect" href="class_game_1_1_photodiode_block.html#a85097d2575220c882e6a39dc3e9ac63e" title=" " alt="" coords="273,2253,488,2296"/>
+<area shape="poly" title=" " alt="" coords="656,1876,645,1955,619,2053,599,2105,574,2155,543,2202,505,2243,489,2255,486,2251,501,2239,539,2199,569,2152,594,2102,614,2051,640,1953,653,1880"/>
+<area shape="rect" href="class_game_1_1_posted_sign_block.html#ae13633f9b0fcd1aefb94307f139f1e7f" title=" " alt="" coords="272,2320,489,2363"/>
+<area shape="poly" title=" " alt="" coords="658,1876,651,1966,642,2022,628,2082,608,2144,582,2204,548,2261,505,2310,489,2322,486,2317,501,2306,543,2257,577,2202,603,2142,623,2081,637,2021,646,1966,656,1881"/>
+<area shape="rect" href="class_game_1_1_pressure_plate_block.html#a9ccaa98a1b863cbd87c9aa29c4d6f21c" title=" " alt="" coords="291,2387,470,2429"/>
+<area shape="poly" title=" " alt="" coords="660,1875,657,1976,649,2041,637,2110,617,2182,590,2253,553,2319,505,2377,489,2389,471,2398,469,2393,486,2384,501,2373,548,2316,585,2250,612,2180,631,2109,644,2040,652,1976,657,1880"/>
+<area shape="rect" href="class_game_1_1_rotateable_mounted_electric_element_block.html#a92d9cc3478f26d1ec7aaf99abc5aa0fe" title=" " alt="" coords="258,2453,503,2496"/>
+<area shape="poly" title=" " alt="" coords="655,1876,637,2004,605,2173,584,2259,561,2336,534,2400,505,2443,490,2455,488,2450,501,2440,530,2397,556,2334,579,2257,600,2172,632,2004,652,1880"/>
+<area shape="rect" href="class_game_1_1_seven_segment_display_block.html#a5786335dbfc0b19b98593bc0bca8eaf3" title=" " alt="" coords="282,2520,479,2563"/>
+<area shape="poly" title=" " alt="" coords="656,1876,640,2017,610,2206,589,2302,565,2389,537,2461,521,2489,505,2510,480,2528,478,2523,501,2506,517,2486,532,2458,560,2387,584,2301,604,2205,635,2016,653,1880"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3ec2bca348375f220a305390df426eba" name="a3ec2bca348375f220a305390df426eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec2bca348375f220a305390df426eba">&#9670;&#160;</a></span>CalculateLightingTables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.LightingManager.CalculateLightingTables </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00091">91</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_lighting_manager_a3ec2bca348375f220a305390df426eba_cgraph.png" border="0" usemap="#aclass_game_1_1_lighting_manager_a3ec2bca348375f220a305390df426eba_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_lighting_manager_a3ec2bca348375f220a305390df426eba_cgraph" id="aclass_game_1_1_lighting_manager_a3ec2bca348375f220a305390df426eba_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,220,157"/>
+<area shape="rect" href="class_game_1_1_lighting_manager.html#a62569dd17eca8aeed6ac0075239edd1b" title=" " alt="" coords="268,5,482,48"/>
+<area shape="poly" title=" " alt="" coords="152,112,267,58,287,52,282,55,269,62,155,117"/>
+<area shape="rect" href="struct_game_1_1_cell_face.html#abbcfcd2a56f15469574c7981ad13fcd1" title=" " alt="" coords="273,72,476,99"/>
+<area shape="poly" title=" " alt="" coords="219,113,290,101,285,103,221,118"/>
+<area shape="rect" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f" title="执行Hook" alt="" coords="287,123,462,149"/>
+<area shape="poly" title=" " alt="" coords="220,133,274,135,269,137,221,139"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#af9d5d8cad8ec923e209d90d34e150808" title=" " alt="" coords="300,173,450,200"/>
+<area shape="poly" title=" " alt="" coords="220,154,290,169,285,170,220,159"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#aba76343a94db3db4ced19eae368c79e7" title=" " alt="" coords="288,224,462,251"/>
+<area shape="poly" title=" " alt="" coords="152,155,207,183,269,210,294,220,288,219,267,214,205,188,152,160"/>
+<area shape="rect" href="class_mods_manager.html#a0cc2c850b5c5363331d1bb670c963b9b" title=" " alt="" coords="530,123,695,149"/>
+<area shape="poly" title=" " alt="" coords="463,133,517,136,511,136,463,139"/>
+<area shape="rect" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0" title=" " alt="" coords="743,123,862,149"/>
+<area shape="poly" title=" " alt="" coords="695,133,730,136,725,136,696,139"/>
+<area shape="rect" href="class_engine_1_1_log.html#aeec71e1f21824c2398a876ff9b1cf589" title=" " alt="" coords="910,123,1030,149"/>
+<area shape="poly" title=" " alt="" coords="862,133,897,136,892,136,862,139"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html#a7428b3c7c6cc5b17701ad73d606de84e" title=" " alt="" coords="1078,123,1219,149"/>
+<area shape="poly" title=" " alt="" coords="1030,133,1065,136,1060,136,1030,139"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_lighting_manager_a3ec2bca348375f220a305390df426eba_icgraph.png" border="0" usemap="#aclass_game_1_1_lighting_manager_a3ec2bca348375f220a305390df426eba_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_lighting_manager_a3ec2bca348375f220a305390df426eba_icgraph" id="aclass_game_1_1_lighting_manager_a3ec2bca348375f220a305390df426eba_icgraph">
+<area shape="rect" title=" " alt="" coords="750,5,965,48"/>
+<area shape="rect" href="class_game_1_1_lighting_manager.html#a750449f7796a36617c52aa3ff3a63d3a" title=" " alt="" coords="495,13,702,40"/>
+<area shape="poly" title=" " alt="" coords="732,27,703,29,703,24,737,27"/>
+<area shape="rect" href="class_game_1_1_loading_screen.html#adc21dc9521543b084e0ec739d965f1c3" title=" " alt="" coords="235,13,447,40"/>
+<area shape="poly" title=" " alt="" coords="477,27,448,29,447,24,482,27"/>
+<area shape="rect" href="class_game_1_1_loading_screen.html#a3fa9431900a72c088ce71ac017c59473" title=" " alt="" coords="5,13,187,40"/>
+<area shape="poly" title=" " alt="" coords="217,27,187,29,187,24,222,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa110e4332aa3faade22db6a28fd2e154" name="aa110e4332aa3faade22db6a28fd2e154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa110e4332aa3faade22db6a28fd2e154">&#9670;&#160;</a></span>CalculateSmoothLight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? float Game.LightingManager.CalculateSmoothLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a></td>          <td class="paramname"><span class="paramname"><em>subsystemTerrain</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00034">34</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_lighting_manager_aa110e4332aa3faade22db6a28fd2e154_cgraph.png" border="0" usemap="#aclass_game_1_1_lighting_manager_aa110e4332aa3faade22db6a28fd2e154_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_lighting_manager_aa110e4332aa3faade22db6a28fd2e154_cgraph" id="aclass_game_1_1_lighting_manager_aa110e4332aa3faade22db6a28fd2e154_cgraph">
+<area shape="rect" title=" " alt="" coords="5,73,220,116"/>
+<area shape="rect" href="class_game_1_1_terrain.html#a6b0a1eacf77f8720226182e594c16dd4" title=" " alt="" coords="268,5,469,32"/>
+<area shape="poly" title=" " alt="" coords="176,70,267,41,298,35,293,37,268,47,178,75"/>
+<area shape="rect" href="class_game_1_1_terrain.html#aab8412968d594ab872bd35a8933d93c7" title=" " alt="" coords="269,56,468,83"/>
+<area shape="poly" title=" " alt="" coords="219,81,256,80,251,81,221,87"/>
+<area shape="rect" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f" title="执行Hook" alt="" coords="281,107,456,133"/>
+<area shape="poly" title=" " alt="" coords="220,103,268,109,262,110,220,108"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#af9d5d8cad8ec923e209d90d34e150808" title=" " alt="" coords="293,157,444,184"/>
+<area shape="poly" title=" " alt="" coords="178,114,268,143,298,153,292,153,267,148,177,119"/>
+<area shape="rect" href="class_mods_manager.html#a0cc2c850b5c5363331d1bb670c963b9b" title=" " alt="" coords="517,107,682,133"/>
+<area shape="poly" title=" " alt="" coords="456,117,504,120,499,120,456,123"/>
+<area shape="rect" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0" title=" " alt="" coords="730,107,849,133"/>
+<area shape="poly" title=" " alt="" coords="682,117,717,120,712,120,683,123"/>
+<area shape="rect" href="class_engine_1_1_log.html#aeec71e1f21824c2398a876ff9b1cf589" title=" " alt="" coords="897,107,1017,133"/>
+<area shape="poly" title=" " alt="" coords="849,117,884,120,879,120,849,123"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html#a7428b3c7c6cc5b17701ad73d606de84e" title=" " alt="" coords="1065,107,1206,133"/>
+<area shape="poly" title=" " alt="" coords="1017,117,1052,120,1047,120,1017,123"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_lighting_manager_aa110e4332aa3faade22db6a28fd2e154_icgraph.png" border="0" usemap="#aclass_game_1_1_lighting_manager_aa110e4332aa3faade22db6a28fd2e154_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_lighting_manager_aa110e4332aa3faade22db6a28fd2e154_icgraph" id="aclass_game_1_1_lighting_manager_aa110e4332aa3faade22db6a28fd2e154_icgraph">
+<area shape="rect" title=" " alt="" coords="908,101,1123,144"/>
+<area shape="rect" href="class_game_1_1_subsystem_models_renderer.html#a4cabd119d92b42486d99dc621c3f60fd" title=" " alt="" coords="624,5,849,48"/>
+<area shape="poly" title=" " alt="" coords="948,95,859,63,823,51,823,46,861,57,954,95"/>
+<area shape="rect" href="class_game_1_1_component_first_person_model.html#a0d52e35dfee6f795ba7283c84f832750" title=" " alt="" coords="640,72,834,115"/>
+<area shape="poly" title=" " alt="" coords="890,110,834,106,834,101,896,110"/>
+<area shape="rect" href="class_game_1_1_component_vr_hands_model.html#a5c988ed4d83838233a6fe534d02de55e" title=" " alt="" coords="613,139,860,165"/>
+<area shape="poly" title=" " alt="" coords="890,136,861,142,861,136,895,135"/>
+<area shape="rect" href="class_game_1_1_component_screen_overlays.html#ab8425f069ac9403d2b3fac1d3c430b2e" title=" " alt="" coords="624,189,849,232"/>
+<area shape="poly" title=" " alt="" coords="944,149,861,180,822,191,821,186,860,175,939,150"/>
+<area shape="rect" href="class_game_1_1_subsystem_models_renderer.html#a0e8e75ed21ef9523a90be8f50476fa8b" title=" " alt="" coords="325,5,550,48"/>
+<area shape="poly" title=" " alt="" coords="606,27,551,29,550,24,611,26"/>
+<area shape="rect" href="class_game_1_1_subsystem_models_renderer.html#a836069a32a86a656bf4d7f4e46dba7d6" title=" " alt="" coords="5,13,262,40"/>
+<area shape="poly" title=" " alt="" coords="307,28,263,29,261,24,312,26"/>
+<area shape="rect" href="class_game_1_1_component_screen_overlays.html#adc0108c01a5a692b43c03cfe00206065" title=" " alt="" coords="310,197,565,224"/>
+<area shape="poly" title=" " alt="" coords="606,211,566,213,566,208,612,211"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a750449f7796a36617c52aa3ff3a63d3a" name="a750449f7796a36617c52aa3ff3a63d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a750449f7796a36617c52aa3ff3a63d3a">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.LightingManager.Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00017">17</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_lighting_manager_a750449f7796a36617c52aa3ff3a63d3a_cgraph.png" border="0" usemap="#aclass_game_1_1_lighting_manager_a750449f7796a36617c52aa3ff3a63d3a_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_lighting_manager_a750449f7796a36617c52aa3ff3a63d3a_cgraph" id="aclass_game_1_1_lighting_manager_a750449f7796a36617c52aa3ff3a63d3a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,123,213,149"/>
+<area shape="rect" href="class_game_1_1_lighting_manager.html#a3ec2bca348375f220a305390df426eba" title=" " alt="" coords="261,115,475,157"/>
+<area shape="poly" title=" " alt="" coords="213,133,248,135,243,137,214,139"/>
+<area shape="rect" href="class_game_1_1_lighting_manager.html#a62569dd17eca8aeed6ac0075239edd1b" title=" " alt="" coords="523,5,737,48"/>
+<area shape="poly" title=" " alt="" coords="408,112,522,58,537,55,542,53,524,62,410,117"/>
+<area shape="rect" href="struct_game_1_1_cell_face.html#abbcfcd2a56f15469574c7981ad13fcd1" title=" " alt="" coords="528,72,732,99"/>
+<area shape="poly" title=" " alt="" coords="475,113,545,102,540,103,476,118"/>
+<area shape="rect" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f" title="执行Hook" alt="" coords="542,123,718,149"/>
+<area shape="poly" title=" " alt="" coords="475,133,529,136,524,136,476,139"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#af9d5d8cad8ec923e209d90d34e150808" title=" " alt="" coords="555,173,705,200"/>
+<area shape="poly" title=" " alt="" coords="476,154,545,170,540,170,475,159"/>
+<area shape="rect" href="class_engine_1_1_math_utils.html#aba76343a94db3db4ced19eae368c79e7" title=" " alt="" coords="543,224,717,251"/>
+<area shape="poly" title=" " alt="" coords="408,155,462,183,524,210,549,220,544,219,522,214,460,188,407,160"/>
+<area shape="rect" href="class_mods_manager.html#a0cc2c850b5c5363331d1bb670c963b9b" title=" " alt="" coords="785,123,951,149"/>
+<area shape="poly" title=" " alt="" coords="718,133,772,136,767,136,719,139"/>
+<area shape="rect" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0" title=" " alt="" coords="999,123,1117,149"/>
+<area shape="poly" title=" " alt="" coords="951,133,986,136,980,136,951,139"/>
+<area shape="rect" href="class_engine_1_1_log.html#aeec71e1f21824c2398a876ff9b1cf589" title=" " alt="" coords="1165,123,1285,149"/>
+<area shape="poly" title=" " alt="" coords="1117,133,1152,136,1147,136,1117,139"/>
+<area shape="rect" href="interface_engine_1_1_i_log_sink.html#a7428b3c7c6cc5b17701ad73d606de84e" title=" " alt="" coords="1333,123,1475,149"/>
+<area shape="poly" title=" " alt="" coords="1286,133,1320,136,1315,136,1286,139"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_1_1_lighting_manager_a750449f7796a36617c52aa3ff3a63d3a_icgraph.png" border="0" usemap="#aclass_game_1_1_lighting_manager_a750449f7796a36617c52aa3ff3a63d3a_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_game_1_1_lighting_manager_a750449f7796a36617c52aa3ff3a63d3a_icgraph" id="aclass_game_1_1_lighting_manager_a750449f7796a36617c52aa3ff3a63d3a_icgraph">
+<area shape="rect" title=" " alt="" coords="495,5,702,32"/>
+<area shape="rect" href="class_game_1_1_loading_screen.html#adc21dc9521543b084e0ec739d965f1c3" title=" " alt="" coords="235,5,447,32"/>
+<area shape="poly" title=" " alt="" coords="477,19,448,21,448,16,482,19"/>
+<area shape="rect" href="class_game_1_1_loading_screen.html#a3fa9431900a72c088ce71ac017c59473" title=" " alt="" coords="5,5,187,32"/>
+<area shape="poly" title=" " alt="" coords="217,19,187,21,187,16,222,19"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="aa94ca6ee51c76dbafac4a0ac888fa48a" name="aa94ca6ee51c76dbafac4a0ac888fa48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94ca6ee51c76dbafac4a0ac888fa48a">&#9670;&#160;</a></span>DirectionToLight1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Game.LightingManager.DirectionToLight1 = new(0.12f, 0.25f, 0.34f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a20a9e9a0c30855a42ba23bd1c24bc9d4" name="a20a9e9a0c30855a42ba23bd1c24bc9d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a9e9a0c30855a42ba23bd1c24bc9d4">&#9670;&#160;</a></span>DirectionToLight2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Game.LightingManager.DirectionToLight2 = new(-0.12f, 0.25f, -0.34f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4a5ef7b54a6bb5af6ab11203636aae48" name="a4a5ef7b54a6bb5af6ab11203636aae48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5ef7b54a6bb5af6ab11203636aae48">&#9670;&#160;</a></span>LightAmbient</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly float Game.LightingManager.LightAmbient = 0.5f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0c95a90262b0bacb28fdc8d206a5e9c7" name="a0c95a90262b0bacb28fdc8d206a5e9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c95a90262b0bacb28fdc8d206a5e9c7">&#9670;&#160;</a></span>LightIntensityByLightValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly float [] Game.LightingManager.LightIntensityByLightValue = new float[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9101ca09668e70cee5c168b6cadcf6a6" name="a9101ca09668e70cee5c168b6cadcf6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9101ca09668e70cee5c168b6cadcf6a6">&#9670;&#160;</a></span>LightIntensityByLightValueAndFace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly float [] Game.LightingManager.LightIntensityByLightValueAndFace = new float[96]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa79f468e312f89f7c2f7a79c1deff48d" name="aa79f468e312f89f7c2f7a79c1deff48d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79f468e312f89f7c2f7a79c1deff48d">&#9670;&#160;</a></span>Loaded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.LightingManager.Loaded</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a> 第 <a class="el" href="_lighting_manager_8cs_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Managers/<a class="el" href="_lighting_manager_8cs_source.html">LightingManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game.html">Game</a></li><li class="navelem"><a href="class_game_1_1_lighting_manager.html">LightingManager</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

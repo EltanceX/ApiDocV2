@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Dialog/EditPaletteDialog.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_edit_palette_dialog_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">EditPaletteDialog.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_edit_palette_dialog_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_edit_palette_dialog.html#abbdb8f02c77e10982b2fa4f47c0209f0">EditPaletteDialog</a> : <a class="code hl_function" href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Dialog</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#a02d45b48644013f0d6134d1566e74aef">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a> <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a02d45b48644013f0d6134d1566e74aef">m_listPanel</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#a8c02c956f6b56328c24d8771d820a102">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a8c02c956f6b56328c24d8771d820a102">m_okButton</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#a204f786005f130ce35acafe0407510b7">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a204f786005f130ce35acafe0407510b7">m_cancelButton</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#a46d63b5b37a01b1893b0febbfa9aadcd">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_link_widget.html">LinkWidget</a>[] <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a46d63b5b37a01b1893b0febbfa9aadcd">m_labels</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_link_widget.html">LinkWidget</a>[16];</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#a51a8e7bafeced31a82c0535df176bb22">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_bevelled_button_widget.html">BevelledButtonWidget</a>[] <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a51a8e7bafeced31a82c0535df176bb22">m_rectangles</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_bevelled_button_widget.html">BevelledButtonWidget</a>[16];</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#a2ccd1a0e80813a7e1f0ae38a14c4c579">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>[] <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a2ccd1a0e80813a7e1f0ae38a14c4c579">m_resetButtons</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>[16];</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#a46b52e85358f4832f7e0c216df0cceb5">   13</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_world_palette.html">WorldPalette</a> <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a46b52e85358f4832f7e0c216df0cceb5">m_palette</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">   14</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_world_palette.html">WorldPalette</a> <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#a48f09d79dd70dd6bd8af8ab903da5f44">   15</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a48f09d79dd70dd6bd8af8ab903da5f44">fName</a> = <span class="stringliteral">&quot;EditPaletteDialog&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#abbdb8f02c77e10982b2fa4f47c0209f0">   17</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_edit_palette_dialog.html#abbdb8f02c77e10982b2fa4f47c0209f0">EditPaletteDialog</a>(<a class="code hl_class" href="class_game_1_1_world_palette.html">WorldPalette</a> palette) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Dialogs/EditPaletteDialog&quot;</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a02d45b48644013f0d6134d1566e74aef">m_listPanel</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a>&gt;(<span class="stringliteral">&quot;EditPaletteDialog.ListPanel&quot;</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a8c02c956f6b56328c24d8771d820a102">m_okButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;EditPaletteDialog.OK&quot;</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a204f786005f130ce35acafe0407510b7">m_cancelButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;EditPaletteDialog.Cancel&quot;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 16; i++) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <a class="code hl_class" href="class_game_1_1_stack_panel_widget.html">StackPanelWidget</a> obj = <span class="keyword">new</span>() {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    Direction = <a class="code hl_enumeration" href="namespace_game.html#a6f50c8477f92f158c65e3207683ff8b9">LayoutDirection</a>.Horizontal,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a> = {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                        <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                            <a class="code hl_property" href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Size</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(32f, 60f),</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                            <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a> = {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                                    Text = $<span class="stringliteral">&quot;{i + 1}.&quot;</span>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                                    <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> = <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#adc81530c076cef4bea6feb4b776c960c">Gray</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                                    <a class="code hl_property" href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">HorizontalAlignment</a> = <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Far,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                                    <a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> = <a class="code hl_enumvalue" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd">WidgetAlignment.Center</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                                }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                            }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                        },</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a> { <a class="code hl_property" href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Size</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(10f, 0f) }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                };</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                obj.<a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.<a class="code hl_function" href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Add</a>(<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a46d63b5b37a01b1893b0febbfa9aadcd">m_labels</a>[i] = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_link_widget.html">LinkWidget</a> { <a class="code hl_property" href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Size</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(300f, -1f), <a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> = <a class="code hl_enumvalue" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd">WidgetAlignment.Center</a> });</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                obj.<a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.<a class="code hl_function" href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Add</a>(<span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a> { <a class="code hl_property" href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Size</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(10f, 0f) });</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                obj.<a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.<a class="code hl_function" href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Add</a>(</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a51a8e7bafeced31a82c0535df176bb22">m_rectangles</a>[i] = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_bevelled_button_widget.html">BevelledButtonWidget</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                        <a class="code hl_property" href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Size</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(1f / 0f, 60f),</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        BevelSize = 1f,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        AmbientLight = 1f,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                        DirectionalLight = 0.4f,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        <a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> = <a class="code hl_enumvalue" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd">WidgetAlignment.Center</a></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                );</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                obj.<a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.<a class="code hl_function" href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Add</a>(<span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a> { <a class="code hl_property" href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Size</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(10f, 0f) });</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                obj.<a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.<a class="code hl_function" href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Add</a>(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a2ccd1a0e80813a7e1f0ae38a14c4c579">m_resetButtons</a>[i] = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_bevelled_button_widget.html">BevelledButtonWidget</a> {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        <a class="code hl_property" href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Size</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(160f, 60f), <a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> = <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Center, Text = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a48f09d79dd70dd6bd8af8ab903da5f44">fName</a>, 1)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                );</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                obj.<a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.<a class="code hl_function" href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Add</a>(<span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a> { <a class="code hl_property" href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Size</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(10f, 0f) });</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <a class="code hl_class" href="class_game_1_1_stack_panel_widget.html">StackPanelWidget</a> widget = obj;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a02d45b48644013f0d6134d1566e74aef">m_listPanel</a>.Children.Add(widget);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a46b52e85358f4832f7e0c216df0cceb5">m_palette</a> = palette;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_world_palette.html">WorldPalette</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a46b52e85358f4832f7e0c216df0cceb5">m_palette</a>.CopyTo(<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#ab854342be0bdfa4c0e37e41f78a07e4c">   67</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_edit_palette_dialog.html#ab854342be0bdfa4c0e37e41f78a07e4c">Update</a>() {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 16; j++) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a46d63b5b37a01b1893b0febbfa9aadcd">m_labels</a>[j].Text = <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.Names[j];</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a51a8e7bafeced31a82c0535df176bb22">m_rectangles</a>[j].CenterColor = <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.Colors[j];</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a2ccd1a0e80813a7e1f0ae38a14c4c579">m_resetButtons</a>[j].IsEnabled = <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.Colors[j] != <a class="code hl_class" href="class_game_1_1_world_palette.html">WorldPalette</a>.<a class="code hl_variable" href="class_game_1_1_world_palette.html#aee518329866cdcfda8eda8b959c760b5">DefaultColors</a>[j]</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    || <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.Names[j] != <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#a1b9e8ce71d9b8524c9370bd8616d49f8">GetWorldPalette</a>(j);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; 16; k++) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordtype">int</span> i = k;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a46d63b5b37a01b1893b0febbfa9aadcd">m_labels</a>[k].IsClicked) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                        <span class="keyword">this</span>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                        <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_text_box_dialog.html">TextBoxDialog</a>(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                            <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a48f09d79dd70dd6bd8af8ab903da5f44">fName</a>, 2),</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                            <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a46d63b5b37a01b1893b0febbfa9aadcd">m_labels</a>[k].Text,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                            16,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                            delegate(<span class="keywordtype">string</span> s) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                                <span class="keywordflow">if</span> (s != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                    <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_world_palette.html">WorldPalette</a>.<a class="code hl_function" href="class_game_1_1_world_palette.html#a1438850948d0cd517ebeafcea47b8140">VerifyColorName</a>(s)) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                        <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.Names[i] = s;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                                    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                                    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                                        <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                            <span class="keyword">this</span>,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                                            <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_message_dialog.html">MessageDialog</a>(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a48f09d79dd70dd6bd8af8ab903da5f44">fName</a>, 3), <span class="keyword">null</span>, <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_variable" href="class_game_1_1_language_control.html#a0c201430f81dfbb70b53f8446feb6d6b">Ok</a>, <span class="keyword">null</span>, <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                                        );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                                    }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                                }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                            }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                        )</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    );</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a51a8e7bafeced31a82c0535df176bb22">m_rectangles</a>[k].IsClicked) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                        <span class="keyword">this</span>,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                        <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_edit_color_dialog.html">EditColorDialog</a>(</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                            <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.Colors[k],</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                            delegate(<a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>? color) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                                <span class="keywordflow">if</span> (color.HasValue) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                                    <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.Colors[i] = color.Value;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                                }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                            }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                        )</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    );</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a2ccd1a0e80813a7e1f0ae38a14c4c579">m_resetButtons</a>[k].IsClicked) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.Colors[k] = <a class="code hl_class" href="class_game_1_1_world_palette.html">WorldPalette</a>.<a class="code hl_variable" href="class_game_1_1_world_palette.html#aee518329866cdcfda8eda8b959c760b5">DefaultColors</a>[k];</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.Names[k] = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#a1b9e8ce71d9b8524c9370bd8616d49f8">GetWorldPalette</a>(k);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a8c02c956f6b56328c24d8771d820a102">m_okButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">m_tmpPalette</a>.CopyTo(<a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a46b52e85358f4832f7e0c216df0cceb5">m_palette</a>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                <a class="code hl_function" href="class_game_1_1_edit_palette_dialog.html#a35cf596665b3366cc9f15a1a9e7a9bed">Dismiss</a>();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.Cancel</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                || <a class="code hl_variable" href="class_game_1_1_edit_palette_dialog.html#a204f786005f130ce35acafe0407510b7">m_cancelButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                <a class="code hl_function" href="class_game_1_1_edit_palette_dialog.html#a35cf596665b3366cc9f15a1a9e7a9bed">Dismiss</a>();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        }</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_game_1_1_edit_palette_dialog.html#a35cf596665b3366cc9f15a1a9e7a9bed">  127</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_edit_palette_dialog.html#a35cf596665b3366cc9f15a1a9e7a9bed">Dismiss</a>() {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
+</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html">Game.BevelledButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_bevelled_button_widget_8cs_source.html#l00006">BevelledButtonWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_canvas_widget_html"><div class="ttname"><a href="class_game_1_1_canvas_widget.html">Game.CanvasWidget</a></div><div class="ttdef"><b>定义</b> <a href="_canvas_widget_8cs_source.html#l00004">CanvasWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_canvas_widget_html_ac6c2f0576c6356a01378b1e1445bdadb"><div class="ttname"><a href="class_game_1_1_canvas_widget.html#ac6c2f0576c6356a01378b1e1445bdadb">Game.CanvasWidget.Size</a></div><div class="ttdeci">Vector2 Size</div><div class="ttdef"><b>定义</b> <a href="_canvas_widget_8cs_source.html#l00007">CanvasWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html"><div class="ttname"><a href="class_game_1_1_container_widget.html">Game.ContainerWidget</a></div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00004">ContainerWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialog_html_a6b78fd0c524e930298bbfe02c896866f"><div class="ttname"><a href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Game.Dialog.Dialog</a></div><div class="ttdeci">Dialog()</div><div class="ttdef"><b>定义</b> <a href="_dialog_8cs_source.html#l00005">Dialog.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html">Game.DialogsManager</a></div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00004">DialogsManager.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_a1924cf0e777145d7e36ec311d686c7e4"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">Game.DialogsManager.HideDialog</a></div><div class="ttdeci">static void HideDialog(Dialog dialog)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00058">DialogsManager.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_affe2cf99704932f650a2bffa6eefa833"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">Game.DialogsManager.ShowDialog</a></div><div class="ttdeci">static void ShowDialog(ContainerWidget parentWidget, Dialog dialog)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00035">DialogsManager.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_color_dialog_html"><div class="ttname"><a href="class_game_1_1_edit_color_dialog.html">Game.EditColorDialog</a></div><div class="ttdef"><b>定义</b> <a href="_edit_color_dialog_8cs_source.html#l00006">EditColorDialog.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_a02d45b48644013f0d6134d1566e74aef"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#a02d45b48644013f0d6134d1566e74aef">Game.EditPaletteDialog.m_listPanel</a></div><div class="ttdeci">ContainerWidget m_listPanel</div><div class="ttdef"><b>定义</b> <a href="#l00006">EditPaletteDialog.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_a204f786005f130ce35acafe0407510b7"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#a204f786005f130ce35acafe0407510b7">Game.EditPaletteDialog.m_cancelButton</a></div><div class="ttdeci">ButtonWidget m_cancelButton</div><div class="ttdef"><b>定义</b> <a href="#l00008">EditPaletteDialog.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_a2ccd1a0e80813a7e1f0ae38a14c4c579"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#a2ccd1a0e80813a7e1f0ae38a14c4c579">Game.EditPaletteDialog.m_resetButtons</a></div><div class="ttdeci">ButtonWidget[] m_resetButtons</div><div class="ttdef"><b>定义</b> <a href="#l00011">EditPaletteDialog.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_a35cf596665b3366cc9f15a1a9e7a9bed"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#a35cf596665b3366cc9f15a1a9e7a9bed">Game.EditPaletteDialog.Dismiss</a></div><div class="ttdeci">void Dismiss()</div><div class="ttdef"><b>定义</b> <a href="#l00127">EditPaletteDialog.cs:127</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_a46b52e85358f4832f7e0c216df0cceb5"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#a46b52e85358f4832f7e0c216df0cceb5">Game.EditPaletteDialog.m_palette</a></div><div class="ttdeci">WorldPalette m_palette</div><div class="ttdef"><b>定义</b> <a href="#l00013">EditPaletteDialog.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_a46d63b5b37a01b1893b0febbfa9aadcd"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#a46d63b5b37a01b1893b0febbfa9aadcd">Game.EditPaletteDialog.m_labels</a></div><div class="ttdeci">LinkWidget[] m_labels</div><div class="ttdef"><b>定义</b> <a href="#l00009">EditPaletteDialog.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_a48f09d79dd70dd6bd8af8ab903da5f44"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#a48f09d79dd70dd6bd8af8ab903da5f44">Game.EditPaletteDialog.fName</a></div><div class="ttdeci">const string fName</div><div class="ttdef"><b>定义</b> <a href="#l00015">EditPaletteDialog.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_a51a8e7bafeced31a82c0535df176bb22"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#a51a8e7bafeced31a82c0535df176bb22">Game.EditPaletteDialog.m_rectangles</a></div><div class="ttdeci">BevelledButtonWidget[] m_rectangles</div><div class="ttdef"><b>定义</b> <a href="#l00010">EditPaletteDialog.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_a8c02c956f6b56328c24d8771d820a102"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#a8c02c956f6b56328c24d8771d820a102">Game.EditPaletteDialog.m_okButton</a></div><div class="ttdeci">ButtonWidget m_okButton</div><div class="ttdef"><b>定义</b> <a href="#l00007">EditPaletteDialog.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_ab854342be0bdfa4c0e37e41f78a07e4c"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#ab854342be0bdfa4c0e37e41f78a07e4c">Game.EditPaletteDialog.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00067">EditPaletteDialog.cs:67</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_abbdb8f02c77e10982b2fa4f47c0209f0"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#abbdb8f02c77e10982b2fa4f47c0209f0">Game.EditPaletteDialog.EditPaletteDialog</a></div><div class="ttdeci">EditPaletteDialog(WorldPalette palette)</div><div class="ttdef"><b>定义</b> <a href="#l00017">EditPaletteDialog.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_palette_dialog_html_ae91b599fbc8bdb4646e49b20ce4eef7f"><div class="ttname"><a href="class_game_1_1_edit_palette_dialog.html#ae91b599fbc8bdb4646e49b20ce4eef7f">Game.EditPaletteDialog.m_tmpPalette</a></div><div class="ttdeci">WorldPalette m_tmpPalette</div><div class="ttdef"><b>定义</b> <a href="#l00014">EditPaletteDialog.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_a0c201430f81dfbb70b53f8446feb6d6b"><div class="ttname"><a href="class_game_1_1_language_control.html#a0c201430f81dfbb70b53f8446feb6d6b">Game.LanguageControl.Ok</a></div><div class="ttdeci">static string Ok</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00011">LanguageControl.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_a1b9e8ce71d9b8524c9370bd8616d49f8"><div class="ttname"><a href="class_game_1_1_language_control.html#a1b9e8ce71d9b8524c9370bd8616d49f8">Game.LanguageControl.GetWorldPalette</a></div><div class="ttdeci">static string GetWorldPalette(int index)</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00251">LanguageControl.cs:251</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_link_widget_html"><div class="ttname"><a href="class_game_1_1_link_widget.html">Game.LinkWidget</a></div><div class="ttdef"><b>定义</b> <a href="_link_widget_8cs_source.html#l00007">LinkWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_message_dialog_html"><div class="ttname"><a href="class_game_1_1_message_dialog.html">Game.MessageDialog</a></div><div class="ttdef"><b>定义</b> <a href="_message_dialog_8cs_source.html#l00005">MessageDialog.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_stack_panel_widget_html"><div class="ttname"><a href="class_game_1_1_stack_panel_widget.html">Game.StackPanelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_stack_panel_widget_8cs_source.html#l00004">StackPanelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_text_box_dialog_html"><div class="ttname"><a href="class_game_1_1_text_box_dialog.html">Game.TextBoxDialog</a></div><div class="ttdef"><b>定义</b> <a href="_text_box_dialog_8cs_source.html#l00004">TextBoxDialog.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a605213e7e1ce146f1b191a24ccd09fbb"><div class="ttname"><a href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">Game.Widget.VerticalAlignment</a></div><div class="ttdeci">virtual WidgetAlignment VerticalAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00445">Widget.cs:445</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a7f6aa568376ef5e1c5acdd1d879e860a"><div class="ttname"><a href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">Game.Widget.HorizontalAlignment</a></div><div class="ttdeci">virtual WidgetAlignment HorizontalAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00443">Widget.cs:443</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widgets_list_html_a36a2e8eb0d08f6a7697e3690e591f974"><div class="ttname"><a href="class_game_1_1_widgets_list.html#a36a2e8eb0d08f6a7697e3690e591f974">Game.WidgetsList.Add</a></div><div class="ttdeci">void Add(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="_widgets_list_8cs_source.html#l00055">WidgetsList.cs:55</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_palette_html"><div class="ttname"><a href="class_game_1_1_world_palette.html">Game.WorldPalette</a></div><div class="ttdef"><b>定义</b> <a href="_world_palette_8cs_source.html#l00006">WorldPalette.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_palette_html_a1438850948d0cd517ebeafcea47b8140"><div class="ttname"><a href="class_game_1_1_world_palette.html#a1438850948d0cd517ebeafcea47b8140">Game.WorldPalette.VerifyColorName</a></div><div class="ttdeci">static bool VerifyColorName(string name)</div><div class="ttdef"><b>定义</b> <a href="_world_palette_8cs_source.html#l00082">WorldPalette.cs:82</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_palette_html_aee518329866cdcfda8eda8b959c760b5"><div class="ttname"><a href="class_game_1_1_world_palette.html#aee518329866cdcfda8eda8b959c760b5">Game.WorldPalette.DefaultColors</a></div><div class="ttdeci">static readonly Color[] DefaultColors</div><div class="ttdef"><b>定义</b> <a href="_world_palette_8cs_source.html#l00010">WorldPalette.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_input_html"><div class="ttname"><a href="namespace_engine_1_1_input.html">Engine.Input</a></div><div class="ttdef"><b>定义</b> <a href="_cursor_type_8cs_source.html#l00001">CursorType.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a6f50c8477f92f158c65e3207683ff8b9"><div class="ttname"><a href="namespace_game.html#a6f50c8477f92f158c65e3207683ff8b9">Game.LayoutDirection</a></div><div class="ttdeci">LayoutDirection</div><div class="ttdef"><b>定义</b> <a href="_layout_direction_8cs_source.html#l00002">LayoutDirection.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html_ab4e40cd76f07a77bf33d7a814c4126eb"><div class="ttname"><a href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">Game.WidgetAlignment</a></div><div class="ttdeci">WidgetAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_alignment_8cs_source.html#l00002">WidgetAlignment.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html_ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd"><div class="ttname"><a href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd">Game.WidgetAlignment.Center</a></div><div class="ttdeci">@ Center</div><div class="ttdef"><b>定义</b> <a href="_widget_alignment_8cs_source.html#l00004">WidgetAlignment.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_adc81530c076cef4bea6feb4b776c960c"><div class="ttname"><a href="struct_engine_1_1_color.html#adc81530c076cef4bea6feb4b776c960c">Engine.Color.Gray</a></div><div class="ttdeci">static Color Gray</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00011">Color.cs:11</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_b6205966024a0faf73eb78e73558e78e.html">Dialog</a></li><li class="navelem"><a href="_edit_palette_dialog_8cs.html">EditPaletteDialog.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemWhistleBlockBehavior.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_whistle_block_behavior_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemWhistleBlockBehavior.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_whistle_block_behavior_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_whistle_block_behavior.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_whistle_block_behavior.html">SubsystemWhistleBlockBehavior</a> : <a class="code hl_class" href="class_game_1_1_subsystem_block_behavior.html">SubsystemBlockBehavior</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_whistle_block_behavior.html#a27f0278aae2439d3cf214d304ccb5b78">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_bodies.html">SubsystemBodies</a> <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#a27f0278aae2439d3cf214d304ccb5b78">m_subsystemBodies</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_whistle_block_behavior.html#af9cb8a59b1092177a10911685e8fcff5">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a> <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#af9cb8a59b1092177a10911685e8fcff5">m_subsystemAudio</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_whistle_block_behavior.html#a598c427fcc3679ff6876265798a61ec9">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_noise.html">SubsystemNoise</a> <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#a598c427fcc3679ff6876265798a61ec9">m_subsystemNoise</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_whistle_block_behavior.html#a9fc5abb04a1b3adc6118bfc5be4fff6e">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#a9fc5abb04a1b3adc6118bfc5be4fff6e">m_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_whistle_block_behavior.html#a65857e56469f201e86edd37e0f9f2987">   14</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span>[] <a class="code hl_property" href="class_game_1_1_subsystem_whistle_block_behavior.html#a65857e56469f201e86edd37e0f9f2987">HandledBlocks</a> =&gt; [160];</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_whistle_block_behavior.html#aba3230422b8507b3e936fefabd6923e2">   16</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_subsystem_whistle_block_behavior.html#aba3230422b8507b3e936fefabd6923e2">OnUse</a>(<a class="code hl_struct" href="struct_engine_1_1_ray3.html">Ray3</a> ray, <a class="code hl_class" href="class_game_1_1_component_miner.html">ComponentMiner</a> componentMiner) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#af9cb8a59b1092177a10911685e8fcff5">m_subsystemAudio</a>.PlayRandomSound(<span class="stringliteral">&quot;Audio/Whistle&quot;</span>, 1f, <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#a9fc5abb04a1b3adc6118bfc5be4fff6e">m_random</a>.Float(-0.2f, 0f), ray.<a class="code hl_variable" href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Position</a>, 4f, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#a598c427fcc3679ff6876265798a61ec9">m_subsystemNoise</a>.MakeNoise(componentMiner.<a class="code hl_property" href="class_game_1_1_component_miner.html#a1209a3c65fc317bfc6ef366c2e1882f7">ComponentCreature</a>.<a class="code hl_property" href="class_game_1_1_component_creature.html#a58d24b1531111a0f15c10297aaae79b7">ComponentBody</a>, 0.5f, 30f);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            DynamicArray&lt;ComponentBody&gt; dynamicArray = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#a27f0278aae2439d3cf214d304ccb5b78">m_subsystemBodies</a>.FindBodiesAroundPoint(</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(componentMiner.<a class="code hl_property" href="class_game_1_1_component_miner.html#a1209a3c65fc317bfc6ef366c2e1882f7">ComponentCreature</a>.<a class="code hl_property" href="class_game_1_1_component_creature.html#a58d24b1531111a0f15c10297aaae79b7">ComponentBody</a>.<a class="code hl_property" href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Position</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">X</a>, componentMiner.<a class="code hl_property" href="class_game_1_1_component_miner.html#a1209a3c65fc317bfc6ef366c2e1882f7">ComponentCreature</a>.<a class="code hl_property" href="class_game_1_1_component_creature.html#a58d24b1531111a0f15c10297aaae79b7">ComponentBody</a>.<a class="code hl_property" href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Position</a>.<a class="code hl_variable" href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Z</a>),</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                64f,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                dynamicArray</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            );</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordtype">float</span> num = <span class="keywordtype">float</span>.PositiveInfinity;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            List&lt;ComponentBody&gt; list = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> item <span class="keywordflow">in</span> dynamicArray) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <a class="code hl_class" href="class_game_1_1_component_summon_behavior.html">ComponentSummonBehavior</a> componentSummonBehavior = item.<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_summon_behavior.html">ComponentSummonBehavior</a>&gt;();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keywordflow">if</span> (componentSummonBehavior != <span class="keyword">null</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    &amp;&amp; componentSummonBehavior.<a class="code hl_property" href="class_game_1_1_component_summon_behavior.html#a23146c5fd95d1dede62c49bf3b83cf5f">IsEnabled</a>) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    <span class="keywordtype">float</span> num2 = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#aa4ac368cce1c0b5c4b2659da5da98774">Distance</a>(item.<a class="code hl_property" href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Position</a>, componentMiner.ComponentCreature.ComponentBody.Position);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    <span class="keywordflow">if</span> (num2 &gt; 4f</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                        &amp;&amp; componentSummonBehavior.<a class="code hl_property" href="class_game_1_1_component_summon_behavior.html#a617efca3c0eb16986fbd53fcbfa1f519">SummonTarget</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                        list.Add(item);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                        num = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(num, num2);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        componentSummonBehavior.SummonTarget = componentMiner.ComponentCreature.ComponentBody;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> item2 <span class="keywordflow">in</span> list) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <a class="code hl_class" href="class_game_1_1_component_summon_behavior.html">ComponentSummonBehavior</a> componentSummonBehavior2 = item2.<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_summon_behavior.html">ComponentSummonBehavior</a>&gt;();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordflow">if</span> (componentSummonBehavior2 != <span class="keyword">null</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    &amp;&amp; <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#aa4ac368cce1c0b5c4b2659da5da98774">Distance</a>(item2.<a class="code hl_property" href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Position</a>, componentMiner.ComponentCreature.ComponentBody.Position) &lt; num + 4f) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    componentSummonBehavior2.SummonTarget = componentMiner.ComponentCreature.ComponentBody;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            componentMiner.DamageActiveTool(1);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_whistle_block_behavior.html#a0346d9cb4564745f31d6f107b21ce433">   53</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_whistle_block_behavior.html#a0346d9cb4564745f31d6f107b21ce433">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            base.Load(valuesDictionary);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#a27f0278aae2439d3cf214d304ccb5b78">m_subsystemBodies</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_bodies.html">SubsystemBodies</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#af9cb8a59b1092177a10911685e8fcff5">m_subsystemAudio</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_whistle_block_behavior.html#a598c427fcc3679ff6876265798a61ec9">m_subsystemNoise</a> = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_noise.html">SubsystemNoise</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a5f2b24627ca7cc5256edc10831fe295b"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Engine.MathUtils.Min</a></div><div class="ttdeci">static int Min(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00007">MathUtils.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_body_html"><div class="ttname"><a href="class_game_1_1_component_body.html">Game.ComponentBody</a></div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00007">ComponentBody.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_creature_html_a58d24b1531111a0f15c10297aaae79b7"><div class="ttname"><a href="class_game_1_1_component_creature.html#a58d24b1531111a0f15c10297aaae79b7">Game.ComponentCreature.ComponentBody</a></div><div class="ttdeci">ComponentBody ComponentBody</div><div class="ttdef"><b>定义</b> <a href="_component_creature_8cs_source.html#l00012">ComponentCreature.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_frame_html_a22743827a45e864ab98902cf65cdb54f"><div class="ttname"><a href="class_game_1_1_component_frame.html#a22743827a45e864ab98902cf65cdb54f">Game.ComponentFrame.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="_component_frame_8cs_source.html#l00015">ComponentFrame.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html"><div class="ttname"><a href="class_game_1_1_component_miner.html">Game.ComponentMiner</a></div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00007">ComponentMiner.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_miner_html_a1209a3c65fc317bfc6ef366c2e1882f7"><div class="ttname"><a href="class_game_1_1_component_miner.html#a1209a3c65fc317bfc6ef366c2e1882f7">Game.ComponentMiner.ComponentCreature</a></div><div class="ttdeci">ComponentCreature ComponentCreature</div><div class="ttdef"><b>定义</b> <a href="_component_miner_8cs_source.html#l00055">ComponentMiner.cs:55</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_summon_behavior_html"><div class="ttname"><a href="class_game_1_1_component_summon_behavior.html">Game.ComponentSummonBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_component_summon_behavior_8cs_source.html#l00006">ComponentSummonBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_summon_behavior_html_a23146c5fd95d1dede62c49bf3b83cf5f"><div class="ttname"><a href="class_game_1_1_component_summon_behavior.html#a23146c5fd95d1dede62c49bf3b83cf5f">Game.ComponentSummonBehavior.IsEnabled</a></div><div class="ttdeci">bool IsEnabled</div><div class="ttdef"><b>定义</b> <a href="_component_summon_behavior_8cs_source.html#l00027">ComponentSummonBehavior.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_summon_behavior_html_a617efca3c0eb16986fbd53fcbfa1f519"><div class="ttname"><a href="class_game_1_1_component_summon_behavior.html#a617efca3c0eb16986fbd53fcbfa1f519">Game.ComponentSummonBehavior.SummonTarget</a></div><div class="ttdeci">ComponentBody SummonTarget</div><div class="ttdef"><b>定义</b> <a href="_component_summon_behavior_8cs_source.html#l00025">ComponentSummonBehavior.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_audio_html"><div class="ttname"><a href="class_game_1_1_subsystem_audio.html">Game.SubsystemAudio</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00008">SubsystemAudio.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html">Game.SubsystemBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00006">SubsystemBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_bodies_html"><div class="ttname"><a href="class_game_1_1_subsystem_bodies.html">Game.SubsystemBodies</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_bodies_8cs_source.html#l00005">SubsystemBodies.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_noise_html"><div class="ttname"><a href="class_game_1_1_subsystem_noise.html">Game.SubsystemNoise</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_noise_8cs_source.html#l00006">SubsystemNoise.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_whistle_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_whistle_block_behavior.html">Game.SubsystemWhistleBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">SubsystemWhistleBlockBehavior.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_whistle_block_behavior_html_a0346d9cb4564745f31d6f107b21ce433"><div class="ttname"><a href="class_game_1_1_subsystem_whistle_block_behavior.html#a0346d9cb4564745f31d6f107b21ce433">Game.SubsystemWhistleBlockBehavior.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00053">SubsystemWhistleBlockBehavior.cs:53</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_whistle_block_behavior_html_a27f0278aae2439d3cf214d304ccb5b78"><div class="ttname"><a href="class_game_1_1_subsystem_whistle_block_behavior.html#a27f0278aae2439d3cf214d304ccb5b78">Game.SubsystemWhistleBlockBehavior.m_subsystemBodies</a></div><div class="ttdeci">SubsystemBodies m_subsystemBodies</div><div class="ttdef"><b>定义</b> <a href="#l00006">SubsystemWhistleBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_whistle_block_behavior_html_a598c427fcc3679ff6876265798a61ec9"><div class="ttname"><a href="class_game_1_1_subsystem_whistle_block_behavior.html#a598c427fcc3679ff6876265798a61ec9">Game.SubsystemWhistleBlockBehavior.m_subsystemNoise</a></div><div class="ttdeci">SubsystemNoise m_subsystemNoise</div><div class="ttdef"><b>定义</b> <a href="#l00010">SubsystemWhistleBlockBehavior.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_whistle_block_behavior_html_a65857e56469f201e86edd37e0f9f2987"><div class="ttname"><a href="class_game_1_1_subsystem_whistle_block_behavior.html#a65857e56469f201e86edd37e0f9f2987">Game.SubsystemWhistleBlockBehavior.HandledBlocks</a></div><div class="ttdeci">override int[] HandledBlocks</div><div class="ttdef"><b>定义</b> <a href="#l00014">SubsystemWhistleBlockBehavior.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_whistle_block_behavior_html_a9fc5abb04a1b3adc6118bfc5be4fff6e"><div class="ttname"><a href="class_game_1_1_subsystem_whistle_block_behavior.html#a9fc5abb04a1b3adc6118bfc5be4fff6e">Game.SubsystemWhistleBlockBehavior.m_random</a></div><div class="ttdeci">Random m_random</div><div class="ttdef"><b>定义</b> <a href="#l00012">SubsystemWhistleBlockBehavior.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_whistle_block_behavior_html_aba3230422b8507b3e936fefabd6923e2"><div class="ttname"><a href="class_game_1_1_subsystem_whistle_block_behavior.html#aba3230422b8507b3e936fefabd6923e2">Game.SubsystemWhistleBlockBehavior.OnUse</a></div><div class="ttdeci">override bool OnUse(Ray3 ray, ComponentMiner componentMiner)</div><div class="ttdef"><b>定义</b> <a href="#l00016">SubsystemWhistleBlockBehavior.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_whistle_block_behavior_html_af9cb8a59b1092177a10911685e8fcff5"><div class="ttname"><a href="class_game_1_1_subsystem_whistle_block_behavior.html#af9cb8a59b1092177a10911685e8fcff5">Game.SubsystemWhistleBlockBehavior.m_subsystemAudio</a></div><div class="ttdeci">SubsystemAudio m_subsystemAudio</div><div class="ttdef"><b>定义</b> <a href="#l00008">SubsystemWhistleBlockBehavior.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_afbe091d90718bd24bc5b528daa3245cf"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">GameEntitySystem.Entity.FindComponent</a></div><div class="ttdeci">Component FindComponent(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00132">Entity.cs:132</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html"><div class="ttname"><a href="struct_engine_1_1_ray3.html">Engine.Ray3</a></div><div class="ttdef"><b>定义</b> <a href="_ray3_8cs_source.html#l00002">Ray3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_ray3_html_ac46a0dc2481a6e1f4c513fcddbb579ff"><div class="ttname"><a href="struct_engine_1_1_ray3.html#ac46a0dc2481a6e1f4c513fcddbb579ff">Engine.Ray3.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="_ray3_8cs_source.html#l00003">Ray3.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_aa4ac368cce1c0b5c4b2659da5da98774"><div class="ttname"><a href="struct_engine_1_1_vector3.html#aa4ac368cce1c0b5c4b2659da5da98774">Engine.Vector3.Distance</a></div><div class="ttdeci">static float Distance(Vector3 v1, Vector3 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00107">Vector3.cs:107</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ac42c72f356e9dd9d691b1aa8a07a64a9"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ac42c72f356e9dd9d691b1aa8a07a64a9">Engine.Vector3.Z</a></div><div class="ttdeci">float Z</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00007">Vector3.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_ae5605507fc62897e712e939bacbf1738"><div class="ttname"><a href="struct_engine_1_1_vector3.html#ae5605507fc62897e712e939bacbf1738">Engine.Vector3.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00003">Vector3.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_whistle_block_behavior_8cs.html">SubsystemWhistleBlockBehavior.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Component/ComponentFactors.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_component_factors_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ComponentFactors.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_factors_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>static <a class="code hl_namespace" href="namespace_game.html">Game</a>.<a class="code hl_class" href="class_game_1_1_component_level.html">ComponentLevel</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_component_factors.html">ComponentFactors</a> : <a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a6cbd061d049302a3adea9dcbc8f05c52">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_component_factors.html#a6cbd061d049302a3adea9dcbc8f05c52">m_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a88477ad7a0c1e67d22046e3d878cd901">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a> <a class="code hl_variable" href="class_game_1_1_component_factors.html#a88477ad7a0c1e67d22046e3d878cd901">m_subsystemGameInfo</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a65f4d271b0d2b28c4374192001f8eca5">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a> <a class="code hl_variable" href="class_game_1_1_component_factors.html#a65f4d271b0d2b28c4374192001f8eca5">m_subsystemAudio</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#ace2ca1d45d1a0666f5105c1a507b6fec">   13</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a> <a class="code hl_variable" href="class_game_1_1_component_factors.html#ace2ca1d45d1a0666f5105c1a507b6fec">m_subsystemTime</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">   18</a></span>        <span class="keyword">public</span> Dictionary&lt;string, List&lt;Factor&gt;&gt; <a class="code hl_variable" href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">OtherFactors</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#ae97d85923e686076c8abeae933773169">   20</a></span>        <span class="keyword">public</span> Dictionary&lt;string, float&gt; <a class="code hl_variable" href="class_game_1_1_component_factors.html#ae97d85923e686076c8abeae933773169">OtherFactorsResults</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a9fda1e37969a2af3282146c4694528a8">   25</a></span>        <span class="keyword">public</span> List&lt;Factor&gt; <a class="code hl_variable" href="class_game_1_1_component_factors.html#a9fda1e37969a2af3282146c4694528a8">m_strengthFactors</a> = [];</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a412cf78a5ea2435c2af23a877d652cac">   27</a></span>        <span class="keyword">public</span> List&lt;Factor&gt; <a class="code hl_variable" href="class_game_1_1_component_factors.html#a412cf78a5ea2435c2af23a877d652cac">m_speedFactors</a> = [];</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#ad7c1f802822312300b51cee023bf2cae">   28</a></span>        <span class="keyword">public</span> List&lt;Factor&gt; <a class="code hl_variable" href="class_game_1_1_component_factors.html#ad7c1f802822312300b51cee023bf2cae">m_hungerFactors</a> = [];</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a91d6b90294f8ec51485078d19332c6e1">   29</a></span>        <span class="keyword">public</span> List&lt;Factor&gt; <a class="code hl_variable" href="class_game_1_1_component_factors.html#a91d6b90294f8ec51485078d19332c6e1">m_resilienceFactors</a> = [];</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a3870b7c6f705f52f6c28e59e4f9b62dd">   30</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_component_factors.html#a3870b7c6f705f52f6c28e59e4f9b62dd">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_component_factors.html#a3870b7c6f705f52f6c28e59e4f9b62dd">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_component_factors.html#a3870b7c6f705f52f6c28e59e4f9b62dd">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a7fe3007f4bd3c827618e82cd5b85dd7d">   32</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_component_factors.html#a7fe3007f4bd3c827618e82cd5b85dd7d">fName</a> = <span class="stringliteral">&quot;ComponentFactors&quot;</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a6d84c27d48192e5ea3df108c560397f1">   34</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a6d84c27d48192e5ea3df108c560397f1">GetOtherFactorResult</a>(<span class="keywordtype">string</span> factorName, <span class="keywordtype">bool</span> recalculate = <span class="keyword">false</span>, <span class="keywordtype">bool</span> throwIfNotFound = <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">if</span> (!recalculate</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                &amp;&amp; <a class="code hl_variable" href="class_game_1_1_component_factors.html#ae97d85923e686076c8abeae933773169">OtherFactorsResults</a>.TryGetValue(factorName, out <span class="keywordtype">float</span> result)) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">if</span> (!recalculate &amp;&amp; throwIfNotFound) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> KeyNotFoundException($<span class="stringliteral">&quot;Required factor result with name {factorName} is not found.&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordtype">bool</span> factorsGotten = <a class="code hl_variable" href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">OtherFactors</a>.TryGetValue(factorName, out List&lt;Factor&gt; factors);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">if</span> (!factorsGotten) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordflow">if</span> (throwIfNotFound) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> KeyNotFoundException($<span class="stringliteral">&quot;Required factor key with name {factorName} is not found.&quot;</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <span class="keywordflow">return</span> 1f;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(factors);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="};">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a463cf85cd03b858a6896b19fcb278d13">   52</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_factors.html#a463cf85cd03b858a6896b19fcb278d13">StrengthFactor</a> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">get</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            [Obsolete(<span class="stringliteral">&quot;模组调整StrengthFactor的具体数值，需要通过m_strengthFactors里面增删改里面的Factor&quot;</span>)]</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keyword">set</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        } = 1f;</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="};">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#ab0bc637d9142b8d0257e885cb47d1a05">   58</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_factors.html#ab0bc637d9142b8d0257e885cb47d1a05">ResilienceFactor</a> {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keyword">get</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            [Obsolete(<span class="stringliteral">&quot;模组调整ResilienceFactor的具体数值，需要通过m_resilienceFactors里面增删改里面的Factor&quot;</span>)]</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keyword">set</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        } = 1f;</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="};">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a094b33b98e262dfc83cf81fedc5368fe">   64</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_factors.html#a094b33b98e262dfc83cf81fedc5368fe">SpeedFactor</a> {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keyword">get</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            [Obsolete(<span class="stringliteral">&quot;模组调整SpeedFactor的具体数值，需要通过m_speedFactors里面增删改里面的Factor&quot;</span>)]</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keyword">set</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        } = 1f;</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="};">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a6bfef64df42a2cf3b9870cd1101c33a7">   70</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_property" href="class_game_1_1_component_factors.html#a6bfef64df42a2cf3b9870cd1101c33a7">HungerFactor</a> {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keyword">get</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            [Obsolete(<span class="stringliteral">&quot;模组调整HungerFactor的具体数值，需要通过m_hungerFactors里面增删改里面的Factor&quot;</span>)]</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keyword">set</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        } = 1f;</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a150cc80e8a02e7bc9f7544a904ae15c1">   83</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a150cc80e8a02e7bc9f7544a904ae15c1">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#a88477ad7a0c1e67d22046e3d878cd901">m_subsystemGameInfo</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#ace2ca1d45d1a0666f5105c1a507b6fec">m_subsystemTime</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_time.html">SubsystemTime</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#a65f4d271b0d2b28c4374192001f8eca5">m_subsystemAudio</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">OtherFactors</a>[<span class="stringliteral">&quot;AttackSpeed&quot;</span>] = <span class="keyword">new</span> List&lt;Factor&gt;();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">OtherFactors</a>[<span class="stringliteral">&quot;DigSpeed&quot;</span>] = <span class="keyword">new</span> List&lt;Factor&gt;();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">OtherFactors</a>[<span class="stringliteral">&quot;ChaseRange&quot;</span>] = <span class="keyword">new</span> List&lt;Factor&gt;();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <a class="code hl_function" href="class_game_1_1_component_factors.html#a3aa3c0a90c487e7b26766f87272fab04">CalculateOtherFactorsResult</a>();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">   93</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(ICollection&lt;Factor&gt; factors) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordtype">float</span> ans = 1f;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">foreach</span> (var factor <span class="keywordflow">in</span> factors) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">if</span> (<span class="keywordtype">float</span>.IsNaN(factor.Value) || <span class="keywordtype">float</span>.IsInfinity(factor.Value)) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keywordflow">switch</span> (factor.FactorAdditionType) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_game.html#a09615bf340807cc6a7cc9602617df32d">FactorAdditionType</a>.Multiply: {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                            ans *= factor.Value;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                        }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                    <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_game.html#a09615bf340807cc6a7cc9602617df32d">FactorAdditionType</a>.Add: {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                            ans += factor.Value;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                        }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">if</span> (<span class="keywordtype">float</span>.IsNaN(ans) || <span class="keywordtype">float</span>.IsInfinity(ans)) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                ans = 1f;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">return</span> ans;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a3aa3c0a90c487e7b26766f87272fab04">  116</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a3aa3c0a90c487e7b26766f87272fab04">CalculateOtherFactorsResult</a>() {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">foreach</span> ((<span class="keywordtype">string</span> key, List&lt;Factor&gt; factors) in <a class="code hl_variable" href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">OtherFactors</a>) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <a class="code hl_variable" href="class_game_1_1_component_factors.html#ae97d85923e686076c8abeae933773169">OtherFactorsResults</a>[key] = <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(factors);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#ac7d1f756faac131d68062c78937aa997">  122</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#ac7d1f756faac131d68062c78937aa997">GenerateStrengthFactors</a>() {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#a9fda1e37969a2af3282146c4694528a8">m_strengthFactors</a>.Clear();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
+</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a562bb0f14ebc7dc7e63b82dbc547e9c4">  126</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a562bb0f14ebc7dc7e63b82dbc547e9c4">GenerateResilienceFactors</a>() {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#a91d6b90294f8ec51485078d19332c6e1">m_resilienceFactors</a>.Clear();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
+</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#a87e483b9939e805eac5612b9e186161f">  130</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a87e483b9939e805eac5612b9e186161f">GenerateSpeedFactors</a>() {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#a412cf78a5ea2435c2af23a877d652cac">m_speedFactors</a>.Clear();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        }</div>
+</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#af5db216d7d25a8600474941c32e6e107">  134</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#af5db216d7d25a8600474941c32e6e107">GenerateHungerFactors</a>() {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <a class="code hl_variable" href="class_game_1_1_component_factors.html#ad7c1f802822312300b51cee023bf2cae">m_hungerFactors</a>.Clear();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        }</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#aff36fbbf3535dddc4202e7fab197bab5">  138</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#aff36fbbf3535dddc4202e7fab197bab5">GenerateOtherFactors</a>() {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">foreach</span> (<span class="keywordtype">string</span> key <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">OtherFactors</a>.Keys) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                <a class="code hl_variable" href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">OtherFactors</a>[key].Clear();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        }</div>
+</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">        #region Obsolete CalculateFactor</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        [Obsolete(<span class="stringliteral">&quot;Get m_strengthFactors and StrengthFactor instead.&quot;</span>)]</div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="}">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#ab3838c9843b268c285c530ca8e325a8c">  147</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#ab3838c9843b268c285c530ca8e325a8c">CalculateStrengthFactor</a>(ICollection&lt;Factor&gt; factors) {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="keywordflow">if</span> (factors is List&lt;Factor&gt; factorsList) {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                factorsList.AddRange(<a class="code hl_variable" href="class_game_1_1_component_factors.html#a9fda1e37969a2af3282146c4694528a8">m_strengthFactors</a>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(<a class="code hl_variable" href="class_game_1_1_component_factors.html#a9fda1e37969a2af3282146c4694528a8">m_strengthFactors</a>);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        }</div>
+</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        [Obsolete(<span class="stringliteral">&quot;Get m_resilienceFactors and ResilienceFactor instead.&quot;</span>)]</div>
+<div class="foldopen" id="foldopen00155" data-start="{" data-end="}">
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#afb89461f0c31e7c10267349221addc84">  155</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#afb89461f0c31e7c10267349221addc84">CalculateResilienceFactor</a>(ICollection&lt;Factor&gt; factors) {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">if</span> (factors is List&lt;Factor&gt; factorsList) {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                factorsList.AddRange(<a class="code hl_variable" href="class_game_1_1_component_factors.html#a91d6b90294f8ec51485078d19332c6e1">m_resilienceFactors</a>);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(<a class="code hl_variable" href="class_game_1_1_component_factors.html#a91d6b90294f8ec51485078d19332c6e1">m_resilienceFactors</a>);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        [Obsolete(<span class="stringliteral">&quot;Get m_speedFactors and SpeedFactor instead.&quot;</span>)]</div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#aa7e120fde75c49bf0d979cc8cf337dcb">  163</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#aa7e120fde75c49bf0d979cc8cf337dcb">CalculateSpeedFactor</a>(ICollection&lt;Factor&gt; factors) {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">if</span> (factors is List&lt;Factor&gt; factorsList) {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                factorsList.AddRange(<a class="code hl_variable" href="class_game_1_1_component_factors.html#a412cf78a5ea2435c2af23a877d652cac">m_speedFactors</a>);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(<a class="code hl_variable" href="class_game_1_1_component_factors.html#a412cf78a5ea2435c2af23a877d652cac">m_speedFactors</a>);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        }</div>
+</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        [Obsolete(<span class="stringliteral">&quot;Get m_hungerFactors and HungerFactor instead.&quot;</span>)]</div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#ad0c62de1a71b9d003859f37505d3dbba">  171</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#ad0c62de1a71b9d003859f37505d3dbba">CalculateHungerFactor</a>(ICollection&lt;Factor&gt; factors) {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">if</span> (factors is List&lt;Factor&gt; factorsList) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                factorsList.AddRange(<a class="code hl_variable" href="class_game_1_1_component_factors.html#ad7c1f802822312300b51cee023bf2cae">m_hungerFactors</a>);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(<a class="code hl_variable" href="class_game_1_1_component_factors.html#ad7c1f802822312300b51cee023bf2cae">m_hungerFactors</a>);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        }</div>
+</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span></div>
+<div class="foldopen" id="foldopen00187" data-start="{" data-end="}">
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="class_game_1_1_component_factors.html#acf3497a5f780d72c37b4896343c2bc8d">  187</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_factors.html#acf3497a5f780d72c37b4896343c2bc8d">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#pragma warning disable CS0618</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            <a class="code hl_property" href="class_game_1_1_component_factors.html#a463cf85cd03b858a6896b19fcb278d13">StrengthFactor</a> = <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(<a class="code hl_variable" href="class_game_1_1_component_factors.html#a9fda1e37969a2af3282146c4694528a8">m_strengthFactors</a>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            <a class="code hl_property" href="class_game_1_1_component_factors.html#a094b33b98e262dfc83cf81fedc5368fe">SpeedFactor</a> = <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(<a class="code hl_variable" href="class_game_1_1_component_factors.html#a412cf78a5ea2435c2af23a877d652cac">m_speedFactors</a>);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <a class="code hl_property" href="class_game_1_1_component_factors.html#a6bfef64df42a2cf3b9870cd1101c33a7">HungerFactor</a> = <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(<a class="code hl_variable" href="class_game_1_1_component_factors.html#ad7c1f802822312300b51cee023bf2cae">m_hungerFactors</a>);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <a class="code hl_property" href="class_game_1_1_component_factors.html#ab0bc637d9142b8d0257e885cb47d1a05">ResilienceFactor</a> = <a class="code hl_function" href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">CalculateFactorsResult</a>(<a class="code hl_variable" href="class_game_1_1_component_factors.html#a91d6b90294f8ec51485078d19332c6e1">m_resilienceFactors</a>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#pragma warning restore CS0618</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <a class="code hl_function" href="class_game_1_1_component_factors.html#a3aa3c0a90c487e7b26766f87272fab04">CalculateOtherFactorsResult</a>();</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <a class="code hl_function" href="class_game_1_1_component_factors.html#ac7d1f756faac131d68062c78937aa997">GenerateStrengthFactors</a>();</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <a class="code hl_function" href="class_game_1_1_component_factors.html#a562bb0f14ebc7dc7e63b82dbc547e9c4">GenerateResilienceFactors</a>();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <a class="code hl_function" href="class_game_1_1_component_factors.html#a87e483b9939e805eac5612b9e186161f">GenerateSpeedFactors</a>();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            <a class="code hl_function" href="class_game_1_1_component_factors.html#af5db216d7d25a8600474941c32e6e107">GenerateHungerFactors</a>();</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <a class="code hl_function" href="class_game_1_1_component_factors.html#aff36fbbf3535dddc4202e7fab197bab5">GenerateOtherFactors</a>();</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_function" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f">HookAction</a>(</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                <span class="stringliteral">&quot;OnFactorsUpdate&quot;</span>,</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                Loader =&gt; {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#pragma warning disable CS0618</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                    Loader.OnFactorsUpdate(<span class="keyword">this</span>, dt);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#pragma warning restore CS0618</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            );</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
+</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    }</div>
+</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>}</div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html"><div class="ttname"><a href="class_game_1_1_component_factors.html">Game.ComponentFactors</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">ComponentFactors.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a094b33b98e262dfc83cf81fedc5368fe"><div class="ttname"><a href="class_game_1_1_component_factors.html#a094b33b98e262dfc83cf81fedc5368fe">Game.ComponentFactors.SpeedFactor</a></div><div class="ttdeci">float SpeedFactor</div><div class="ttdef"><b>定义</b> <a href="#l00064">ComponentFactors.cs:64</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a150cc80e8a02e7bc9f7544a904ae15c1"><div class="ttname"><a href="class_game_1_1_component_factors.html#a150cc80e8a02e7bc9f7544a904ae15c1">Game.ComponentFactors.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary, IdToEntityMap idToEntityMap)</div><div class="ttdoc">AttackSpeed: 生物攻速 DigSpeed: 挖掘速度 ChaseRange: 非玩家生物的仇恨距离</div><div class="ttdef"><b>定义</b> <a href="#l00083">ComponentFactors.cs:83</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a2553faa8e6628efcb904ca7da1c12423"><div class="ttname"><a href="class_game_1_1_component_factors.html#a2553faa8e6628efcb904ca7da1c12423">Game.ComponentFactors.CalculateFactorsResult</a></div><div class="ttdeci">static float CalculateFactorsResult(ICollection&lt; Factor &gt; factors)</div><div class="ttdef"><b>定义</b> <a href="#l00093">ComponentFactors.cs:93</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a3870b7c6f705f52f6c28e59e4f9b62dd"><div class="ttname"><a href="class_game_1_1_component_factors.html#a3870b7c6f705f52f6c28e59e4f9b62dd">Game.ComponentFactors.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00030">ComponentFactors.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a3aa3c0a90c487e7b26766f87272fab04"><div class="ttname"><a href="class_game_1_1_component_factors.html#a3aa3c0a90c487e7b26766f87272fab04">Game.ComponentFactors.CalculateOtherFactorsResult</a></div><div class="ttdeci">virtual void CalculateOtherFactorsResult()</div><div class="ttdef"><b>定义</b> <a href="#l00116">ComponentFactors.cs:116</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a412cf78a5ea2435c2af23a877d652cac"><div class="ttname"><a href="class_game_1_1_component_factors.html#a412cf78a5ea2435c2af23a877d652cac">Game.ComponentFactors.m_speedFactors</a></div><div class="ttdeci">List&lt; Factor &gt; m_speedFactors</div><div class="ttdef"><b>定义</b> <a href="#l00027">ComponentFactors.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a463cf85cd03b858a6896b19fcb278d13"><div class="ttname"><a href="class_game_1_1_component_factors.html#a463cf85cd03b858a6896b19fcb278d13">Game.ComponentFactors.StrengthFactor</a></div><div class="ttdeci">float StrengthFactor</div><div class="ttdef"><b>定义</b> <a href="#l00052">ComponentFactors.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a562bb0f14ebc7dc7e63b82dbc547e9c4"><div class="ttname"><a href="class_game_1_1_component_factors.html#a562bb0f14ebc7dc7e63b82dbc547e9c4">Game.ComponentFactors.GenerateResilienceFactors</a></div><div class="ttdeci">virtual void GenerateResilienceFactors()</div><div class="ttdef"><b>定义</b> <a href="#l00126">ComponentFactors.cs:126</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a65f4d271b0d2b28c4374192001f8eca5"><div class="ttname"><a href="class_game_1_1_component_factors.html#a65f4d271b0d2b28c4374192001f8eca5">Game.ComponentFactors.m_subsystemAudio</a></div><div class="ttdeci">SubsystemAudio m_subsystemAudio</div><div class="ttdef"><b>定义</b> <a href="#l00011">ComponentFactors.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a6bfef64df42a2cf3b9870cd1101c33a7"><div class="ttname"><a href="class_game_1_1_component_factors.html#a6bfef64df42a2cf3b9870cd1101c33a7">Game.ComponentFactors.HungerFactor</a></div><div class="ttdeci">float HungerFactor</div><div class="ttdef"><b>定义</b> <a href="#l00070">ComponentFactors.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a6cbd061d049302a3adea9dcbc8f05c52"><div class="ttname"><a href="class_game_1_1_component_factors.html#a6cbd061d049302a3adea9dcbc8f05c52">Game.ComponentFactors.m_random</a></div><div class="ttdeci">Random m_random</div><div class="ttdef"><b>定义</b> <a href="#l00007">ComponentFactors.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a6d84c27d48192e5ea3df108c560397f1"><div class="ttname"><a href="class_game_1_1_component_factors.html#a6d84c27d48192e5ea3df108c560397f1">Game.ComponentFactors.GetOtherFactorResult</a></div><div class="ttdeci">virtual float GetOtherFactorResult(string factorName, bool recalculate=false, bool throwIfNotFound=false)</div><div class="ttdef"><b>定义</b> <a href="#l00034">ComponentFactors.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a7fe3007f4bd3c827618e82cd5b85dd7d"><div class="ttname"><a href="class_game_1_1_component_factors.html#a7fe3007f4bd3c827618e82cd5b85dd7d">Game.ComponentFactors.fName</a></div><div class="ttdeci">static string fName</div><div class="ttdef"><b>定义</b> <a href="#l00032">ComponentFactors.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a803a29393d7ec48ec2c22c2c174730e2"><div class="ttname"><a href="class_game_1_1_component_factors.html#a803a29393d7ec48ec2c22c2c174730e2">Game.ComponentFactors.OtherFactors</a></div><div class="ttdeci">Dictionary&lt; string, List&lt; Factor &gt; &gt; OtherFactors</div><div class="ttdoc">模组如果有自定义的Factors，可以使用这个OtherFactors。例如使用OtherFactors[&quot;AttackRate&quot;]来定义攻击频率。</div><div class="ttdef"><b>定义</b> <a href="#l00018">ComponentFactors.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a87e483b9939e805eac5612b9e186161f"><div class="ttname"><a href="class_game_1_1_component_factors.html#a87e483b9939e805eac5612b9e186161f">Game.ComponentFactors.GenerateSpeedFactors</a></div><div class="ttdeci">virtual void GenerateSpeedFactors()</div><div class="ttdef"><b>定义</b> <a href="#l00130">ComponentFactors.cs:130</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a88477ad7a0c1e67d22046e3d878cd901"><div class="ttname"><a href="class_game_1_1_component_factors.html#a88477ad7a0c1e67d22046e3d878cd901">Game.ComponentFactors.m_subsystemGameInfo</a></div><div class="ttdeci">SubsystemGameInfo m_subsystemGameInfo</div><div class="ttdef"><b>定义</b> <a href="#l00009">ComponentFactors.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a91d6b90294f8ec51485078d19332c6e1"><div class="ttname"><a href="class_game_1_1_component_factors.html#a91d6b90294f8ec51485078d19332c6e1">Game.ComponentFactors.m_resilienceFactors</a></div><div class="ttdeci">List&lt; Factor &gt; m_resilienceFactors</div><div class="ttdef"><b>定义</b> <a href="#l00029">ComponentFactors.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_a9fda1e37969a2af3282146c4694528a8"><div class="ttname"><a href="class_game_1_1_component_factors.html#a9fda1e37969a2af3282146c4694528a8">Game.ComponentFactors.m_strengthFactors</a></div><div class="ttdeci">List&lt; Factor &gt; m_strengthFactors</div><div class="ttdoc">这四个Factors是可以调整的影响因素</div><div class="ttdef"><b>定义</b> <a href="#l00025">ComponentFactors.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_aa7e120fde75c49bf0d979cc8cf337dcb"><div class="ttname"><a href="class_game_1_1_component_factors.html#aa7e120fde75c49bf0d979cc8cf337dcb">Game.ComponentFactors.CalculateSpeedFactor</a></div><div class="ttdeci">virtual float CalculateSpeedFactor(ICollection&lt; Factor &gt; factors)</div><div class="ttdef"><b>定义</b> <a href="#l00163">ComponentFactors.cs:163</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_ab0bc637d9142b8d0257e885cb47d1a05"><div class="ttname"><a href="class_game_1_1_component_factors.html#ab0bc637d9142b8d0257e885cb47d1a05">Game.ComponentFactors.ResilienceFactor</a></div><div class="ttdeci">float ResilienceFactor</div><div class="ttdef"><b>定义</b> <a href="#l00058">ComponentFactors.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_ab3838c9843b268c285c530ca8e325a8c"><div class="ttname"><a href="class_game_1_1_component_factors.html#ab3838c9843b268c285c530ca8e325a8c">Game.ComponentFactors.CalculateStrengthFactor</a></div><div class="ttdeci">virtual float CalculateStrengthFactor(ICollection&lt; Factor &gt; factors)</div><div class="ttdef"><b>定义</b> <a href="#l00147">ComponentFactors.cs:147</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_ac7d1f756faac131d68062c78937aa997"><div class="ttname"><a href="class_game_1_1_component_factors.html#ac7d1f756faac131d68062c78937aa997">Game.ComponentFactors.GenerateStrengthFactors</a></div><div class="ttdeci">virtual void GenerateStrengthFactors()</div><div class="ttdef"><b>定义</b> <a href="#l00122">ComponentFactors.cs:122</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_ace2ca1d45d1a0666f5105c1a507b6fec"><div class="ttname"><a href="class_game_1_1_component_factors.html#ace2ca1d45d1a0666f5105c1a507b6fec">Game.ComponentFactors.m_subsystemTime</a></div><div class="ttdeci">SubsystemTime m_subsystemTime</div><div class="ttdef"><b>定义</b> <a href="#l00013">ComponentFactors.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_acf3497a5f780d72c37b4896343c2bc8d"><div class="ttname"><a href="class_game_1_1_component_factors.html#acf3497a5f780d72c37b4896343c2bc8d">Game.ComponentFactors.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdoc">对等级系统的更新进行了调整。 第一步是计算上一帧Factors的最终结果，并进行赋值。此时已经经过了所有模组的修改。 第二步是GenerateFactors对四个属性进行生成，此时四个m_xxxFact...</div><div class="ttdef"><b>定义</b> <a href="#l00187">ComponentFactors.cs:187</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_ad0c62de1a71b9d003859f37505d3dbba"><div class="ttname"><a href="class_game_1_1_component_factors.html#ad0c62de1a71b9d003859f37505d3dbba">Game.ComponentFactors.CalculateHungerFactor</a></div><div class="ttdeci">virtual float CalculateHungerFactor(ICollection&lt; Factor &gt; factors)</div><div class="ttdef"><b>定义</b> <a href="#l00171">ComponentFactors.cs:171</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_ad7c1f802822312300b51cee023bf2cae"><div class="ttname"><a href="class_game_1_1_component_factors.html#ad7c1f802822312300b51cee023bf2cae">Game.ComponentFactors.m_hungerFactors</a></div><div class="ttdeci">List&lt; Factor &gt; m_hungerFactors</div><div class="ttdef"><b>定义</b> <a href="#l00028">ComponentFactors.cs:28</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_ae97d85923e686076c8abeae933773169"><div class="ttname"><a href="class_game_1_1_component_factors.html#ae97d85923e686076c8abeae933773169">Game.ComponentFactors.OtherFactorsResults</a></div><div class="ttdeci">Dictionary&lt; string, float &gt; OtherFactorsResults</div><div class="ttdef"><b>定义</b> <a href="#l00020">ComponentFactors.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_af5db216d7d25a8600474941c32e6e107"><div class="ttname"><a href="class_game_1_1_component_factors.html#af5db216d7d25a8600474941c32e6e107">Game.ComponentFactors.GenerateHungerFactors</a></div><div class="ttdeci">virtual void GenerateHungerFactors()</div><div class="ttdef"><b>定义</b> <a href="#l00134">ComponentFactors.cs:134</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_afb89461f0c31e7c10267349221addc84"><div class="ttname"><a href="class_game_1_1_component_factors.html#afb89461f0c31e7c10267349221addc84">Game.ComponentFactors.CalculateResilienceFactor</a></div><div class="ttdeci">virtual float CalculateResilienceFactor(ICollection&lt; Factor &gt; factors)</div><div class="ttdef"><b>定义</b> <a href="#l00155">ComponentFactors.cs:155</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_factors_html_aff36fbbf3535dddc4202e7fab197bab5"><div class="ttname"><a href="class_game_1_1_component_factors.html#aff36fbbf3535dddc4202e7fab197bab5">Game.ComponentFactors.GenerateOtherFactors</a></div><div class="ttdeci">virtual void GenerateOtherFactors()</div><div class="ttdef"><b>定义</b> <a href="#l00138">ComponentFactors.cs:138</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_level_html"><div class="ttname"><a href="class_game_1_1_component_level.html">Game.ComponentLevel</a></div><div class="ttdef"><b>定义</b> <a href="_component_level_8cs_source.html#l00012">ComponentLevel.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_audio_html"><div class="ttname"><a href="class_game_1_1_subsystem_audio.html">Game.SubsystemAudio</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00008">SubsystemAudio.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html">Game.SubsystemGameInfo</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00005">SubsystemGameInfo.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_time_html"><div class="ttname"><a href="class_game_1_1_subsystem_time.html">Game.SubsystemTime</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_time_8cs_source.html#l00006">SubsystemTime.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html"><div class="ttname"><a href="class_game_entity_system_1_1_component.html">GameEntitySystem.Component</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00007">Component.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a4b812f6825600e5419612a580d3094ff"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">GameEntitySystem.Component.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00012">Component.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a771baadae7a12358301d000d2e127421"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">GameEntitySystem.Component.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00016">Component.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html">GameEntitySystem.IdToEntityMap</a></div><div class="ttdef"><b>定义</b> <a href="_id_to_entity_map_8cs_source.html#l00005">IdToEntityMap.cs:5</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html"><div class="ttname"><a href="class_mods_manager.html">ModsManager</a></div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00019">ModsManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a03dcd23af0dfd253948e6d2e5469a31f"><div class="ttname"><a href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f">ModsManager.HookAction</a></div><div class="ttdeci">static void HookAction(string HookName, Func&lt; ModLoader, bool &gt; action)</div><div class="ttdoc">执行Hook</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00146">ModsManager.cs:146</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a09615bf340807cc6a7cc9602617df32d"><div class="ttname"><a href="namespace_game.html#a09615bf340807cc6a7cc9602617df32d">Game.FactorAdditionType</a></div><div class="ttdeci">FactorAdditionType</div><div class="ttdef"><b>定义</b> <a href="_component_level_8cs_source.html#l00007">ComponentLevel.cs:7</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_0ae50620953341a2d59f4b8faa145d4c.html">Component</a></li><li class="navelem"><a href="_component_factors_8cs.html">ComponentFactors.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

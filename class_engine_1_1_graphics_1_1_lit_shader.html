@@ -1,0 +1,1391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Engine.Graphics.LitShader</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_engine_1_1_graphics_1_1_lit_shader.html','','class_engine_1_1_graphics_1_1_lit_shader-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Engine.Graphics.LitShader</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Engine.Graphics.LitShader 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_graphics_1_1_lit_shader__inherit__graph.png" border="0" usemap="#a_engine_8_graphics_8_lit_shader_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_engine_8_graphics_8_lit_shader_inherit__map" id="a_engine_8_graphics_8_lit_shader_inherit__map">
+<area shape="rect" title=" " alt="" coords="14,336,191,363"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_transformed_shader.html" title=" " alt="" coords="5,245,200,288"/>
+<area shape="poly" title=" " alt="" coords="104,302,105,337,100,334,101,306"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_shader.html" title=" " alt="" coords="21,171,184,197"/>
+<area shape="poly" title=" " alt="" coords="104,210,105,246,100,244,101,215"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_graphics_resource.html" title=" " alt="" coords="16,80,189,123"/>
+<area shape="poly" title=" " alt="" coords="103,136,105,171,100,170,102,141"/>
+<area shape="rect" title=" " alt="" coords="57,5,148,32"/>
+<area shape="poly" title=" " alt="" coords="103,45,105,80,100,79,102,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Engine.Graphics.LitShader 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_graphics_1_1_lit_shader__coll__graph.png" border="0" usemap="#a_engine_8_graphics_8_lit_shader_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_engine_8_graphics_8_lit_shader_coll__map" id="a_engine_8_graphics_8_lit_shader_coll__map">
+<area shape="rect" title=" " alt="" coords="248,753,424,780"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_transformed_shader.html" title=" " alt="" coords="355,425,549,468"/>
+<area shape="poly" title=" " alt="" coords="461,481,469,536,470,601,466,635,459,669,447,701,429,731,414,745,396,755,394,750,411,741,425,728,442,699,454,668,461,634,465,601,464,536,458,486"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_shader.html" title=" " alt="" coords="196,305,358,332"/>
+<area shape="poly" title=" " alt="" coords="366,335,400,354,416,370,430,388,448,425,442,425,425,391,412,373,397,358,366,340"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_shader_parameter.html" title=" " alt="" coords="109,433,331,460"/>
+<area shape="poly" title=" " alt="" coords="214,342,201,357,195,376,198,396,214,433,209,433,193,397,190,375,197,355,217,338"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_graphics_resource.html" title=" " alt="" coords="5,83,179,125"/>
+<area shape="poly" title=" " alt="" coords="120,134,269,304,264,306,119,139"/>
+<area shape="rect" title=" " alt="" coords="47,5,137,32"/>
+<area shape="poly" title=" " alt="" coords="92,45,95,82,89,82,92,50"/>
+<area shape="poly" title=" " alt="" coords="213,473,203,527,197,594,198,629,204,664,215,698,232,728,246,741,264,753,259,752,243,745,228,731,210,700,199,666,193,630,192,594,198,526,211,477"/>
+<area shape="poly" title=" " alt="" coords="239,420,251,400,265,364,274,335,276,330,270,365,256,403,243,423"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_shader_macro.html" title=" " alt="" coords="202,91,400,117"/>
+<area shape="poly" title=" " alt="" coords="299,130,281,306,276,304,297,135"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_shader_transforms.html" title=" " alt="" coords="383,305,612,332"/>
+<area shape="poly" title=" " alt="" coords="489,345,462,427,457,424,486,349"/>
+<area shape="rect" href="struct_engine_1_1_matrix.html" title=" " alt="" coords="447,91,548,117"/>
+<area shape="poly" title=" " alt="" coords="499,130,500,306,495,304,496,135"/>
+<area shape="poly" title=" " alt="" coords="563,95,575,104,566,113,550,115,547,110,564,108,569,104,564,100"/>
+<area shape="rect" title=" " alt="" coords="456,5,539,32"/>
+<area shape="poly" title=" " alt="" coords="498,45,500,91,495,90,496,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af091108142068f5c60cf452c339604fd" id="r_af091108142068f5c60cf452c339604fd"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af091108142068f5c60cf452c339604fd">LitShader</a> (string vsc, string psc, int lightsCount, bool useEmissionColor, bool useVertexColor, bool useTexture, bool useFog, bool useAlphaThreshold, int maxInstancesCount=1)</td></tr>
+<tr class="memitem:a140231f3e815e991019f39047721bbc9" id="r_a140231f3e815e991019f39047721bbc9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a140231f3e815e991019f39047721bbc9">LitShader</a> (int lightsCount, bool useEmissionColor, bool useVertexColor, bool useTexture, bool useFog, bool useAlphaThreshold, int maxInstancesCount=1)</td></tr>
+<tr class="memitem:af6ec83f265a4c201d208bb33512adc46" id="r_af6ec83f265a4c201d208bb33512adc46"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#af6ec83f265a4c201d208bb33512adc46">PrepareForDrawingOverride</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_engine_1_1_graphics_1_1_shader"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_engine_1_1_graphics_1_1_shader')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="class_engine_1_1_graphics_1_1_shader.html">Engine.Graphics.Shader</a></td></tr>
+<tr class="memitem:a6edc1c9236c9162c5a7bea961ff79aa9 inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_a6edc1c9236c9162c5a7bea961ff79aa9"><td class="memItemLeft">virtual <a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a6edc1c9236c9162c5a7bea961ff79aa9">GetParameter</a> (string name, bool allowNull=false)</td></tr>
+<tr class="memitem:a24cd2d1c61da037a8cba933c797ecd77 inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_a24cd2d1c61da037a8cba933c797ecd77"><td class="memItemLeft">override int&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a24cd2d1c61da037a8cba933c797ecd77">GetGpuMemoryUsage</a> ()</td></tr>
+<tr class="memitem:a96ca7ad488ac0af9435e77753d25517d inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_a96ca7ad488ac0af9435e77753d25517d"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a96ca7ad488ac0af9435e77753d25517d">InitializeShader</a> (string vertexShaderCode, string pixelShaderCode, <a class="el" href="class_engine_1_1_graphics_1_1_shader_macro.html">ShaderMacro</a>[] shaderMacros)</td></tr>
+<tr class="memitem:ac4cb2e737ea634dd4e7a3b77cfb9960b inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_ac4cb2e737ea634dd4e7a3b77cfb9960b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#ac4cb2e737ea634dd4e7a3b77cfb9960b">Construct</a> (string vertexShaderCode, string pixelShaderCode, params <a class="el" href="class_engine_1_1_graphics_1_1_shader_macro.html">ShaderMacro</a>[] shaderMacros)</td></tr>
+<tr class="memitem:ab79b720ccfc1eb74168223417e13ddff inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_ab79b720ccfc1eb74168223417e13ddff"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#ab79b720ccfc1eb74168223417e13ddff">Shader</a> (string vertexShaderCode, string pixelShaderCode, params <a class="el" href="class_engine_1_1_graphics_1_1_shader_macro.html">ShaderMacro</a>[] shaderMacros)</td></tr>
+<tr class="memitem:afbf8fef0d1ee0833ebf4d8d4c5f212bd inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_afbf8fef0d1ee0833ebf4d8d4c5f212bd"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#afbf8fef0d1ee0833ebf4d8d4c5f212bd">Dispose</a> ()</td></tr>
+<tr class="memitem:ac5d063691f43d6c9ee077dbfe52a0377 inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_ac5d063691f43d6c9ee077dbfe52a0377"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#ac5d063691f43d6c9ee077dbfe52a0377">PrepareForDrawing</a> ()</td></tr>
+<tr class="memitem:a2db8f2fe05e8b9c7f25ee768f1805f2f inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_a2db8f2fe05e8b9c7f25ee768f1805f2f"><td class="memItemLeft">virtual <a class="el" href="struct_engine_1_1_graphics_1_1_shader_1_1_vertex_attribute_data.html">VertexAttributeData</a>[]&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a2db8f2fe05e8b9c7f25ee768f1805f2f">GetVertexAttribData</a> (<a class="el" href="class_engine_1_1_graphics_1_1_vertex_declaration.html">VertexDeclaration</a> vertexDeclaration)</td></tr>
+<tr class="memitem:a379afbde23cb90b587fd3d04cf1d7102 inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_a379afbde23cb90b587fd3d04cf1d7102"><td class="memItemLeft">virtual string&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a379afbde23cb90b587fd3d04cf1d7102">PrependShaderMacros</a> (string shaderCode, <a class="el" href="class_engine_1_1_graphics_1_1_shader_macro.html">ShaderMacro</a>[] shaderMacros, bool isVertexShader)</td></tr>
+<tr class="memitem:a4a091de8717e3d9c6d98ad6c6f8b68e5 inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_a4a091de8717e3d9c6d98ad6c6f8b68e5"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a4a091de8717e3d9c6d98ad6c6f8b68e5">HandleDeviceLost</a> ()</td></tr>
+<tr class="memitem:a0087a3d461e131ff53d5b69889677271 inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_a0087a3d461e131ff53d5b69889677271"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a0087a3d461e131ff53d5b69889677271">HandleDeviceReset</a> ()</td></tr>
+<tr class="memitem:ac1fe1f42475f7a944fee659859ff50ac inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_ac1fe1f42475f7a944fee659859ff50ac"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#ac1fe1f42475f7a944fee659859ff50ac">CompileShaders</a> ()</td></tr>
+<tr class="memitem:a57f08f35225eae059c70fc964c3daf64 inherit pub_methods_class_engine_1_1_graphics_1_1_shader" id="r_a57f08f35225eae059c70fc964c3daf64"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a57f08f35225eae059c70fc964c3daf64">DeleteShaders</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_engine_1_1_graphics_1_1_graphics_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_engine_1_1_graphics_1_1_graphics_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 成员函数 继承自 <a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html">Engine.Graphics.GraphicsResource</a></td></tr>
+<tr class="memitem:a7c3ea226f6bdcbf6b355395bbebcc688 inherit pub_methods_class_engine_1_1_graphics_1_1_graphics_resource" id="r_a7c3ea226f6bdcbf6b355395bbebcc688"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html#a7c3ea226f6bdcbf6b355395bbebcc688">GraphicsResource</a> ()</td></tr>
+<tr class="memitem:a5546ce6e1cf172b6c70fd41dee96f4c3 inherit pub_methods_class_engine_1_1_graphics_1_1_graphics_resource" id="r_a5546ce6e1cf172b6c70fd41dee96f4c3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html#a5546ce6e1cf172b6c70fd41dee96f4c3">GetGpuMemoryUsage</a> ()</td></tr>
+<tr class="memitem:a9a0ebcf53163ba37cb1783d85754ac32 inherit pub_methods_class_engine_1_1_graphics_1_1_graphics_resource" id="r_a9a0ebcf53163ba37cb1783d85754ac32"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html#a9a0ebcf53163ba37cb1783d85754ac32">HandleDeviceLost</a> ()</td></tr>
+<tr class="memitem:a03a663113cfeaff30528f28ccbe1b591 inherit pub_methods_class_engine_1_1_graphics_1_1_graphics_resource" id="r_a03a663113cfeaff30528f28ccbe1b591"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html#a03a663113cfeaff30528f28ccbe1b591">HandleDeviceReset</a> ()</td></tr>
+<tr class="memitem:a9c012e7b6af5b942c14f4df4090dbf15 inherit pub_methods_class_engine_1_1_graphics_1_1_graphics_resource" id="r_a9c012e7b6af5b942c14f4df4090dbf15"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html#a9c012e7b6af5b942c14f4df4090dbf15">VerifyNotDisposed</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a04e4062946beb5a7101ba541feded0cd" id="r_a04e4062946beb5a7101ba541feded0cd"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a04e4062946beb5a7101ba541feded0cd">GetLitVshString</a> ()</td></tr>
+<tr class="memitem:ae2f607822b02649e5434df5618683959" id="r_ae2f607822b02649e5434df5618683959"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#ae2f607822b02649e5434df5618683959">GetLitPshString</a> ()</td></tr>
+<tr class="memitem:a8242bc5c23ed57bcccf56545ca6a2bf1" id="r_a8242bc5c23ed57bcccf56545ca6a2bf1"><td class="memItemLeft">static <a class="el" href="class_engine_1_1_graphics_1_1_shader_macro.html">ShaderMacro</a>[]&#160;</td><td class="memItemRight"><a class="el" href="#a8242bc5c23ed57bcccf56545ca6a2bf1">PrepareShaderMacros</a> (int lightsCount, bool useEmissionColor, bool useVertexColor, bool useTexture, bool useFog, bool useAlphaThreshold, int maxInstancesCount)</td></tr>
+<tr class="inherit_header pub_static_methods_class_engine_1_1_graphics_1_1_shader"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_engine_1_1_graphics_1_1_shader')"><span class="dynarrow"><span class="arrowhead closed"></span></span>静态 Public 成员函数 继承自 <a class="el" href="class_engine_1_1_graphics_1_1_shader.html">Engine.Graphics.Shader</a></td></tr>
+<tr class="memitem:a303e30d6b44a813b54824a2c0ea74bab inherit pub_static_methods_class_engine_1_1_graphics_1_1_shader" id="r_a303e30d6b44a813b54824a2c0ea74bab"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a303e30d6b44a813b54824a2c0ea74bab">ParseShaderMetadata</a> (string shaderCode, Dictionary&lt; string, string &gt; semanticsByAttribute, Dictionary&lt; string, string &gt; samplersByTexture)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ad3e01b101089993ce194fb5c39199e4a" id="r_ad3e01b101089993ce194fb5c39199e4a"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad3e01b101089993ce194fb5c39199e4a">m_worldMatrixParameter</a></td></tr>
+<tr class="memitem:a21a99b846bfccd13b6e9dbc41fae642a" id="r_a21a99b846bfccd13b6e9dbc41fae642a"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a21a99b846bfccd13b6e9dbc41fae642a">m_worldViewMatrixParameter</a></td></tr>
+<tr class="memitem:ada5f19cf83537d2be4ba53b724e5f030" id="r_ada5f19cf83537d2be4ba53b724e5f030"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#ada5f19cf83537d2be4ba53b724e5f030">m_worldViewProjectionMatrixParameter</a></td></tr>
+<tr class="memitem:a650529b9302d4b6c0c7f4e731dec3679" id="r_a650529b9302d4b6c0c7f4e731dec3679"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a650529b9302d4b6c0c7f4e731dec3679">m_textureParameter</a></td></tr>
+<tr class="memitem:a3d1de130eed1487ff4506c8cb0bede8b" id="r_a3d1de130eed1487ff4506c8cb0bede8b"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3d1de130eed1487ff4506c8cb0bede8b">m_samplerStateParameter</a></td></tr>
+<tr class="memitem:a502fcfc799f545468e841038dfff3f13" id="r_a502fcfc799f545468e841038dfff3f13"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a502fcfc799f545468e841038dfff3f13">m_materialColorParameter</a></td></tr>
+<tr class="memitem:aeb771363bef9828a6c8b913151c5524f" id="r_aeb771363bef9828a6c8b913151c5524f"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#aeb771363bef9828a6c8b913151c5524f">m_emissionColorParameter</a></td></tr>
+<tr class="memitem:aa02437b3e129833fa49cfbd3a8e7604a" id="r_aa02437b3e129833fa49cfbd3a8e7604a"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa02437b3e129833fa49cfbd3a8e7604a">m_alphaThresholdParameter</a></td></tr>
+<tr class="memitem:a1b338fe55d42d1d9c93a98aa46aafa61" id="r_a1b338fe55d42d1d9c93a98aa46aafa61"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1b338fe55d42d1d9c93a98aa46aafa61">m_ambientLightColorParameter</a></td></tr>
+<tr class="memitem:a617bcc579e8af1652772d99d1200a8b9" id="r_a617bcc579e8af1652772d99d1200a8b9"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a617bcc579e8af1652772d99d1200a8b9">m_diffuseLightColor1Parameter</a></td></tr>
+<tr class="memitem:aded5931c45a8758cea2b94e5df584e7e" id="r_aded5931c45a8758cea2b94e5df584e7e"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#aded5931c45a8758cea2b94e5df584e7e">m_directionToLight1Parameter</a></td></tr>
+<tr class="memitem:a2dac162834b9b03a55a47954c86a7822" id="r_a2dac162834b9b03a55a47954c86a7822"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2dac162834b9b03a55a47954c86a7822">m_diffuseLightColor2Parameter</a></td></tr>
+<tr class="memitem:a6a7af7b5e1d6901759fff52e0457fc13" id="r_a6a7af7b5e1d6901759fff52e0457fc13"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6a7af7b5e1d6901759fff52e0457fc13">m_directionToLight2Parameter</a></td></tr>
+<tr class="memitem:aee4ec4fea485b5ca962a299712e3a7ce" id="r_aee4ec4fea485b5ca962a299712e3a7ce"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#aee4ec4fea485b5ca962a299712e3a7ce">m_diffuseLightColor3Parameter</a></td></tr>
+<tr class="memitem:af0a25b85b25eca4c76bf3b37dbe33758" id="r_af0a25b85b25eca4c76bf3b37dbe33758"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#af0a25b85b25eca4c76bf3b37dbe33758">m_directionToLight3Parameter</a></td></tr>
+<tr class="memitem:ae429a5c5df649a54db85d6bf98e1711b" id="r_ae429a5c5df649a54db85d6bf98e1711b"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae429a5c5df649a54db85d6bf98e1711b">m_fogStartParameter</a></td></tr>
+<tr class="memitem:a97bbcfa378f52ab6b47db445a1fb77de" id="r_a97bbcfa378f52ab6b47db445a1fb77de"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a97bbcfa378f52ab6b47db445a1fb77de">m_fogLengthParameter</a></td></tr>
+<tr class="memitem:ac24854e361282937cf9829aa863d135b" id="r_ac24854e361282937cf9829aa863d135b"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac24854e361282937cf9829aa863d135b">m_fogColorParameter</a></td></tr>
+<tr class="memitem:a9e0883c8d66ee32879403f0de8a421d6" id="r_a9e0883c8d66ee32879403f0de8a421d6"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9e0883c8d66ee32879403f0de8a421d6">m_time</a></td></tr>
+<tr class="memitem:ad2f63668f4f13c675bf20b7d5ed2b7e7" id="r_ad2f63668f4f13c675bf20b7d5ed2b7e7"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad2f63668f4f13c675bf20b7d5ed2b7e7">m_instancesCount</a></td></tr>
+<tr class="memitem:a747276817be2be6905f90f37e8deb86f" id="r_a747276817be2be6905f90f37e8deb86f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a747276817be2be6905f90f37e8deb86f">m_lightsCount</a></td></tr>
+<tr class="memitem:abea534d29bbb18443f83c5cfd541847d" id="r_abea534d29bbb18443f83c5cfd541847d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#abea534d29bbb18443f83c5cfd541847d">m_useFog</a></td></tr>
+<tr class="inherit_header pub_attribs_class_engine_1_1_graphics_1_1_transformed_shader"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_engine_1_1_graphics_1_1_transformed_shader')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="class_engine_1_1_graphics_1_1_transformed_shader.html">Engine.Graphics.TransformedShader</a></td></tr>
+<tr class="memitem:a5ded8e22734aede38b36ea7a59174e9b inherit pub_attribs_class_engine_1_1_graphics_1_1_transformed_shader" id="r_a5ded8e22734aede38b36ea7a59174e9b"><td class="memItemLeft">readonly <a class="el" href="class_engine_1_1_graphics_1_1_shader_transforms.html">ShaderTransforms</a>&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_transformed_shader.html#a5ded8e22734aede38b36ea7a59174e9b">Transforms</a></td></tr>
+<tr class="inherit_header pub_attribs_class_engine_1_1_graphics_1_1_shader"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_engine_1_1_graphics_1_1_shader')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="class_engine_1_1_graphics_1_1_shader.html">Engine.Graphics.Shader</a></td></tr>
+<tr class="memitem:ad8cff9b6dd0eb4f71e1691dba738d7a3 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_ad8cff9b6dd0eb4f71e1691dba738d7a3"><td class="memItemLeft">Dictionary&lt; string, <a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#ad8cff9b6dd0eb4f71e1691dba738d7a3">m_parametersByName</a></td></tr>
+<tr class="memitem:ab1928bc4e52d20b6100315327ac564b4 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_ab1928bc4e52d20b6100315327ac564b4"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>[]&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#ab1928bc4e52d20b6100315327ac564b4">m_parameters</a></td></tr>
+<tr class="memitem:a8d2ce1dbdcdedad0a70ef806520bba03 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_a8d2ce1dbdcdedad0a70ef806520bba03"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a8d2ce1dbdcdedad0a70ef806520bba03">m_vertexShaderCode</a></td></tr>
+<tr class="memitem:ad986624d1d4c15f407bdb536db02cfd6 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_ad986624d1d4c15f407bdb536db02cfd6"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#ad986624d1d4c15f407bdb536db02cfd6">m_pixelShaderCode</a></td></tr>
+<tr class="memitem:afa5adc7c7f8b820023cf3983c6762306 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_afa5adc7c7f8b820023cf3983c6762306"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_macro.html">ShaderMacro</a>[]&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#afa5adc7c7f8b820023cf3983c6762306">m_shaderMacros</a></td></tr>
+<tr class="memitem:a58232a4692a4fd7405eca13c07ee4005 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_a58232a4692a4fd7405eca13c07ee4005"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a58232a4692a4fd7405eca13c07ee4005">m_program</a></td></tr>
+<tr class="memitem:a7edd3b84a47ee1de0f5a9f8553a939ea inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_a7edd3b84a47ee1de0f5a9f8553a939ea"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a7edd3b84a47ee1de0f5a9f8553a939ea">m_vertexShader</a></td></tr>
+<tr class="memitem:af31d0752b62af956b3a63c20b1756cf5 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_af31d0752b62af956b3a63c20b1756cf5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#af31d0752b62af956b3a63c20b1756cf5">m_pixelShader</a></td></tr>
+<tr class="memitem:ad8772e9e87c755585df6d219bf8b3b57 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_ad8772e9e87c755585df6d219bf8b3b57"><td class="memItemLeft">Dictionary&lt; <a class="el" href="class_engine_1_1_graphics_1_1_vertex_declaration.html">VertexDeclaration</a>, <a class="el" href="struct_engine_1_1_graphics_1_1_shader_1_1_vertex_attribute_data.html">VertexAttributeData</a>[]&gt;&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#ad8772e9e87c755585df6d219bf8b3b57">m_vertexAttributeDataByDeclaration</a> = []</td></tr>
+<tr class="memitem:a5666e37aa32971a46a007a86880dc549 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_a5666e37aa32971a46a007a86880dc549"><td class="memItemLeft">List&lt; <a class="el" href="struct_engine_1_1_graphics_1_1_shader_1_1_shader_attribute_data.html">ShaderAttributeData</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a5666e37aa32971a46a007a86880dc549">m_shaderAttributeData</a> = []</td></tr>
+<tr class="memitem:ac757910203dadfe6c902731575631f99 inherit pub_attribs_class_engine_1_1_graphics_1_1_shader" id="r_ac757910203dadfe6c902731575631f99"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a>&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#ac757910203dadfe6c902731575631f99">m_glymulParameter</a></td></tr>
+<tr class="inherit_header pub_attribs_class_engine_1_1_graphics_1_1_graphics_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_engine_1_1_graphics_1_1_graphics_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public 属性 继承自 <a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html">Engine.Graphics.GraphicsResource</a></td></tr>
+<tr class="memitem:aa824b5bd70e67f3a3749aa24616262b0 inherit pub_attribs_class_engine_1_1_graphics_1_1_graphics_resource" id="r_aa824b5bd70e67f3a3749aa24616262b0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html#aa824b5bd70e67f3a3749aa24616262b0">m_isDisposed</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a3b00977140b04ee5252b5ff0a6cba50a" id="r_a3b00977140b04ee5252b5ff0a6cba50a"><td class="memItemLeft"><a class="el" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3b00977140b04ee5252b5ff0a6cba50a">Texture</a><code> [set]</code></td></tr>
+<tr class="memitem:a875da54108d7fd96e395d6e4b0f687cd" id="r_a875da54108d7fd96e395d6e4b0f687cd"><td class="memItemLeft">SamplerState&#160;</td><td class="memItemRight"><a class="el" href="#a875da54108d7fd96e395d6e4b0f687cd">SamplerState</a><code> [set]</code></td></tr>
+<tr class="memitem:a6dcd74866116d1642da4a3238ae298f8" id="r_a6dcd74866116d1642da4a3238ae298f8"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector4.html">Vector4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6dcd74866116d1642da4a3238ae298f8">MaterialColor</a><code> [set]</code></td></tr>
+<tr class="memitem:a8ce76e6b566564a9909a084656174b17" id="r_a8ce76e6b566564a9909a084656174b17"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector4.html">Vector4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8ce76e6b566564a9909a084656174b17">EmissionColor</a><code> [set]</code></td></tr>
+<tr class="memitem:ad88cb7d75e5fdd2fb8f6b297e07798c8" id="r_ad88cb7d75e5fdd2fb8f6b297e07798c8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad88cb7d75e5fdd2fb8f6b297e07798c8">AlphaThreshold</a><code> [set]</code></td></tr>
+<tr class="memitem:a6784e0459ac75970c2ee3b43a51cf9cd" id="r_a6784e0459ac75970c2ee3b43a51cf9cd"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6784e0459ac75970c2ee3b43a51cf9cd">AmbientLightColor</a><code> [set]</code></td></tr>
+<tr class="memitem:a1780d2f4dd54c460e1884841ccc6a4a2" id="r_a1780d2f4dd54c460e1884841ccc6a4a2"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1780d2f4dd54c460e1884841ccc6a4a2">DiffuseLightColor1</a><code> [set]</code></td></tr>
+<tr class="memitem:a26da42a9c654fdd78926bb6e8646437a" id="r_a26da42a9c654fdd78926bb6e8646437a"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a26da42a9c654fdd78926bb6e8646437a">DiffuseLightColor2</a><code> [set]</code></td></tr>
+<tr class="memitem:a8907cba6cfbc4591be7fe9751d9fd6f6" id="r_a8907cba6cfbc4591be7fe9751d9fd6f6"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8907cba6cfbc4591be7fe9751d9fd6f6">DiffuseLightColor3</a><code> [set]</code></td></tr>
+<tr class="memitem:a91fd3cb39950aa23c2d8bc782597c674" id="r_a91fd3cb39950aa23c2d8bc782597c674"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a91fd3cb39950aa23c2d8bc782597c674">LightDirection1</a><code> [set]</code></td></tr>
+<tr class="memitem:a298c186300cbd501cdd09d54631c2c6d" id="r_a298c186300cbd501cdd09d54631c2c6d"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a298c186300cbd501cdd09d54631c2c6d">LightDirection2</a><code> [set]</code></td></tr>
+<tr class="memitem:ad27fbef5d3b79f4f5c99501474086411" id="r_ad27fbef5d3b79f4f5c99501474086411"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad27fbef5d3b79f4f5c99501474086411">LightDirection3</a><code> [set]</code></td></tr>
+<tr class="memitem:af74ea40690f49ee8b93c70eba19e1dbc" id="r_af74ea40690f49ee8b93c70eba19e1dbc"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#af74ea40690f49ee8b93c70eba19e1dbc">FogStart</a><code> [set]</code></td></tr>
+<tr class="memitem:a95990da45cf62509c0c367025378abb4" id="r_a95990da45cf62509c0c367025378abb4"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a95990da45cf62509c0c367025378abb4">FogLength</a><code> [set]</code></td></tr>
+<tr class="memitem:a49546f5b8234b9544fabd427df3a766c" id="r_a49546f5b8234b9544fabd427df3a766c"><td class="memItemLeft"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a49546f5b8234b9544fabd427df3a766c">FogColor</a><code> [set]</code></td></tr>
+<tr class="memitem:a6bfe983c38fab2973c152098d23e53ff" id="r_a6bfe983c38fab2973c152098d23e53ff"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6bfe983c38fab2973c152098d23e53ff">Time</a><code> [set]</code></td></tr>
+<tr class="memitem:aa52aa23aac2a1076bddeae1f8f26aa94" id="r_aa52aa23aac2a1076bddeae1f8f26aa94"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa52aa23aac2a1076bddeae1f8f26aa94">InstancesCount</a><code> [get, set]</code></td></tr>
+<tr class="inherit_header properties_class_engine_1_1_graphics_1_1_shader"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_engine_1_1_graphics_1_1_shader')"><span class="dynarrow"><span class="arrowhead closed"></span></span>属性 继承自 <a class="el" href="class_engine_1_1_graphics_1_1_shader.html">Engine.Graphics.Shader</a></td></tr>
+<tr class="memitem:a22d26c10bfbfd5c78b5fc629ade57ad1 inherit properties_class_engine_1_1_graphics_1_1_shader" id="r_a22d26c10bfbfd5c78b5fc629ade57ad1"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a22d26c10bfbfd5c78b5fc629ade57ad1">DebugName</a><code> [get, set]</code></td></tr>
+<tr class="memitem:aaa0bd3a12ac92dde4f10e829e186f927 inherit properties_class_engine_1_1_graphics_1_1_shader" id="r_aaa0bd3a12ac92dde4f10e829e186f927"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#aaa0bd3a12ac92dde4f10e829e186f927">Tag</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a4f81efd7b43828f3dd452f5b7aa35c46 inherit properties_class_engine_1_1_graphics_1_1_shader" id="r_a4f81efd7b43828f3dd452f5b7aa35c46"><td class="memItemLeft">ReadOnlyList&lt; <a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_shader.html#a4f81efd7b43828f3dd452f5b7aa35c46">Parameters</a><code> [get]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_class_engine_1_1_graphics_1_1_graphics_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_class_engine_1_1_graphics_1_1_graphics_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>静态 Public 属性 继承自 <a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html">Engine.Graphics.GraphicsResource</a></td></tr>
+<tr class="memitem:afc49b6111ae3a5c6732951c634078104 inherit pub_static_attribs_class_engine_1_1_graphics_1_1_graphics_resource" id="r_afc49b6111ae3a5c6732951c634078104"><td class="memItemLeft">static HashSet&lt; <a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html#a7c3ea226f6bdcbf6b355395bbebcc688">GraphicsResource</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_engine_1_1_graphics_1_1_graphics_resource.html#afc49b6111ae3a5c6732951c634078104">m_resources</a> = []</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00007">7</a> 行定义.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
+<a id="af091108142068f5c60cf452c339604fd" name="af091108142068f5c60cf452c339604fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af091108142068f5c60cf452c339604fd">&#9670;&#160;</a></span>LitShader() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Engine.Graphics.LitShader.LitShader </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>vsc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>psc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>lightsCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useEmissionColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useVertexColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useTexture</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useFog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useAlphaThreshold</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxInstancesCount</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00127">127</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_graphics_1_1_lit_shader_af091108142068f5c60cf452c339604fd_cgraph.png" border="0" usemap="#aclass_engine_1_1_graphics_1_1_lit_shader_af091108142068f5c60cf452c339604fd_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_graphics_1_1_lit_shader_af091108142068f5c60cf452c339604fd_cgraph" id="aclass_engine_1_1_graphics_1_1_lit_shader_af091108142068f5c60cf452c339604fd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,64,186,107"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_shader.html#a6edc1c9236c9162c5a7bea961ff79aa9" title=" " alt="" coords="234,5,421,48"/>
+<area shape="poly" title=" " alt="" coords="181,61,228,51,223,54,183,66"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a90dcd03eb7ca9d55d111171a5e497fcd" title=" " alt="" coords="241,72,414,99"/>
+<area shape="poly" title=" " alt="" coords="186,83,228,85,223,86,186,88"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_lit_shader.html#a8242bc5c23ed57bcccf56545ca6a2bf1" title=" " alt="" coords="237,123,418,165"/>
+<area shape="poly" title=" " alt="" coords="182,105,228,118,223,119,182,110"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#ac23619307c7a520950d3bf50444f9cb7" title=" " alt="" coords="472,47,624,73"/>
+<area shape="poly" title=" " alt="" coords="414,73,459,70,454,71,414,78"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a8fef12aa356a17385c518bd93477eb81" title=" " alt="" coords="469,97,626,124"/>
+<area shape="poly" title=" " alt="" coords="414,93,456,100,451,100,414,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a140231f3e815e991019f39047721bbc9" name="a140231f3e815e991019f39047721bbc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a140231f3e815e991019f39047721bbc9">&#9670;&#160;</a></span>LitShader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Engine.Graphics.LitShader.LitShader </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>lightsCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useEmissionColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useVertexColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useTexture</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useFog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useAlphaThreshold</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxInstancesCount</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00201">201</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_graphics_1_1_lit_shader_a140231f3e815e991019f39047721bbc9_cgraph.png" border="0" usemap="#aclass_engine_1_1_graphics_1_1_lit_shader_a140231f3e815e991019f39047721bbc9_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_graphics_1_1_lit_shader_a140231f3e815e991019f39047721bbc9_cgraph" id="aclass_engine_1_1_graphics_1_1_lit_shader_a140231f3e815e991019f39047721bbc9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,139,186,181"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_lit_shader.html#ae2f607822b02649e5434df5618683959" title=" " alt="" coords="237,5,418,48"/>
+<area shape="poly" title=" " alt="" coords="120,136,171,97,232,58,247,53,243,56,235,62,174,101,124,140"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_lit_shader.html#a04e4062946beb5a7101ba541feded0cd" title=" " alt="" coords="237,72,418,115"/>
+<area shape="poly" title=" " alt="" coords="171,136,238,118,234,121,173,141"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_shader.html#a6edc1c9236c9162c5a7bea961ff79aa9" title=" " alt="" coords="234,139,421,181"/>
+<area shape="poly" title=" " alt="" coords="185,157,221,159,216,161,187,163"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a90dcd03eb7ca9d55d111171a5e497fcd" title=" " alt="" coords="241,205,414,232"/>
+<area shape="poly" title=" " alt="" coords="182,179,259,200,254,202,182,185"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_lit_shader.html#a8242bc5c23ed57bcccf56545ca6a2bf1" title=" " alt="" coords="237,256,418,299"/>
+<area shape="poly" title=" " alt="" coords="129,179,178,211,235,242,249,250,244,250,232,246,176,215,128,185"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea" title=" " alt="" coords="469,47,635,73"/>
+<area shape="poly" title=" " alt="" coords="417,37,456,45,451,46,418,43"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a98b9838a25eb638c4d8d14f48e524eed" title=" " alt="" coords="683,47,873,73"/>
+<area shape="poly" title=" " alt="" coords="636,57,670,59,665,61,636,63"/>
+<area shape="rect" href="class_engine_1_1_storage.html#aa326df4b280247fc7de010be525b8033" title=" " alt="" coords="923,21,1134,48"/>
+<area shape="poly" title=" " alt="" coords="873,48,910,46,905,47,874,53"/>
+<area shape="rect" href="class_engine_1_1_storage.html#ab18cf85c64dab09f4a0687b3f445c87b" title=" " alt="" coords="921,72,1137,99"/>
+<area shape="poly" title=" " alt="" coords="873,67,908,73,902,73,873,72"/>
+<area shape="poly" title=" " alt="" coords="417,77,456,74,451,75,419,83"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#ac23619307c7a520950d3bf50444f9cb7" title=" " alt="" coords="476,180,628,207"/>
+<area shape="poly" title=" " alt="" coords="414,206,463,203,458,204,414,212"/>
+<area shape="rect" href="struct_engine_1_1_vector3.html#a8fef12aa356a17385c518bd93477eb81" title=" " alt="" coords="474,231,631,257"/>
+<area shape="poly" title=" " alt="" coords="414,226,461,233,455,234,414,231"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="ae2f607822b02649e5434df5618683959" name="ae2f607822b02649e5434df5618683959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f607822b02649e5434df5618683959">&#9670;&#160;</a></span>GetLitPshString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Engine.Graphics.LitShader.GetLitPshString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00282">282</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_graphics_1_1_lit_shader_ae2f607822b02649e5434df5618683959_cgraph.png" border="0" usemap="#aclass_engine_1_1_graphics_1_1_lit_shader_ae2f607822b02649e5434df5618683959_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_graphics_1_1_lit_shader_ae2f607822b02649e5434df5618683959_cgraph" id="aclass_engine_1_1_graphics_1_1_lit_shader_ae2f607822b02649e5434df5618683959_cgraph">
+<area shape="rect" title=" " alt="" coords="5,23,186,65"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea" title=" " alt="" coords="234,31,400,57"/>
+<area shape="poly" title=" " alt="" coords="186,41,221,44,216,44,186,47"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a98b9838a25eb638c4d8d14f48e524eed" title=" " alt="" coords="448,31,637,57"/>
+<area shape="poly" title=" " alt="" coords="401,41,435,44,430,44,401,47"/>
+<area shape="rect" href="class_engine_1_1_storage.html#aa326df4b280247fc7de010be525b8033" title=" " alt="" coords="688,5,899,32"/>
+<area shape="poly" title=" " alt="" coords="638,32,670,31,675,31,638,37"/>
+<area shape="rect" href="class_engine_1_1_storage.html#ab18cf85c64dab09f4a0687b3f445c87b" title=" " alt="" coords="685,56,902,83"/>
+<area shape="poly" title=" " alt="" coords="638,51,672,57,667,57,638,56"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_graphics_1_1_lit_shader_ae2f607822b02649e5434df5618683959_icgraph.png" border="0" usemap="#aclass_engine_1_1_graphics_1_1_lit_shader_ae2f607822b02649e5434df5618683959_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_graphics_1_1_lit_shader_ae2f607822b02649e5434df5618683959_icgraph" id="aclass_engine_1_1_graphics_1_1_lit_shader_ae2f607822b02649e5434df5618683959_icgraph">
+<area shape="rect" title=" " alt="" coords="234,5,414,48"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_lit_shader.html#a140231f3e815e991019f39047721bbc9" title=" " alt="" coords="5,5,186,48"/>
+<area shape="poly" title=" " alt="" coords="216,27,186,29,186,24,221,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a04e4062946beb5a7101ba541feded0cd" name="a04e4062946beb5a7101ba541feded0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e4062946beb5a7101ba541feded0cd">&#9670;&#160;</a></span>GetLitVshString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Engine.Graphics.LitShader.GetLitVshString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00272">272</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_graphics_1_1_lit_shader_a04e4062946beb5a7101ba541feded0cd_cgraph.png" border="0" usemap="#aclass_engine_1_1_graphics_1_1_lit_shader_a04e4062946beb5a7101ba541feded0cd_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_graphics_1_1_lit_shader_a04e4062946beb5a7101ba541feded0cd_cgraph" id="aclass_engine_1_1_graphics_1_1_lit_shader_a04e4062946beb5a7101ba541feded0cd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,23,186,65"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea" title=" " alt="" coords="234,31,400,57"/>
+<area shape="poly" title=" " alt="" coords="186,41,221,44,216,44,186,47"/>
+<area shape="rect" href="class_engine_1_1_storage.html#a98b9838a25eb638c4d8d14f48e524eed" title=" " alt="" coords="448,31,637,57"/>
+<area shape="poly" title=" " alt="" coords="401,41,435,44,430,44,401,47"/>
+<area shape="rect" href="class_engine_1_1_storage.html#aa326df4b280247fc7de010be525b8033" title=" " alt="" coords="688,5,899,32"/>
+<area shape="poly" title=" " alt="" coords="638,32,670,31,675,31,638,37"/>
+<area shape="rect" href="class_engine_1_1_storage.html#ab18cf85c64dab09f4a0687b3f445c87b" title=" " alt="" coords="685,56,902,83"/>
+<area shape="poly" title=" " alt="" coords="638,51,672,57,667,57,638,56"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_graphics_1_1_lit_shader_a04e4062946beb5a7101ba541feded0cd_icgraph.png" border="0" usemap="#aclass_engine_1_1_graphics_1_1_lit_shader_a04e4062946beb5a7101ba541feded0cd_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_graphics_1_1_lit_shader_a04e4062946beb5a7101ba541feded0cd_icgraph" id="aclass_engine_1_1_graphics_1_1_lit_shader_a04e4062946beb5a7101ba541feded0cd_icgraph">
+<area shape="rect" title=" " alt="" coords="234,5,414,48"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_lit_shader.html#a140231f3e815e991019f39047721bbc9" title=" " alt="" coords="5,5,186,48"/>
+<area shape="poly" title=" " alt="" coords="216,27,186,29,186,24,221,26"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af6ec83f265a4c201d208bb33512adc46" name="af6ec83f265a4c201d208bb33512adc46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6ec83f265a4c201d208bb33512adc46">&#9670;&#160;</a></span>PrepareForDrawingOverride()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Engine.Graphics.LitShader.PrepareForDrawingOverride </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_engine_1_1_graphics_1_1_shader.html#aec17f59f1187d279da61bc9d3e847c09">Engine.Graphics.Shader</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00292">292</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8242bc5c23ed57bcccf56545ca6a2bf1" name="a8242bc5c23ed57bcccf56545ca6a2bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8242bc5c23ed57bcccf56545ca6a2bf1">&#9670;&#160;</a></span>PrepareShaderMacros()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_macro.html">ShaderMacro</a>[] Engine.Graphics.LitShader.PrepareShaderMacros </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>lightsCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useEmissionColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useVertexColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useTexture</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useFog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useAlphaThreshold</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxInstancesCount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00303">303</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_graphics_1_1_lit_shader_a8242bc5c23ed57bcccf56545ca6a2bf1_icgraph.png" border="0" usemap="#aclass_engine_1_1_graphics_1_1_lit_shader_a8242bc5c23ed57bcccf56545ca6a2bf1_icgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_graphics_1_1_lit_shader_a8242bc5c23ed57bcccf56545ca6a2bf1_icgraph" id="aclass_engine_1_1_graphics_1_1_lit_shader_a8242bc5c23ed57bcccf56545ca6a2bf1_icgraph">
+<area shape="rect" title=" " alt="" coords="234,39,414,81"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_lit_shader.html#a140231f3e815e991019f39047721bbc9" title=" " alt="" coords="5,5,186,48"/>
+<area shape="poly" title=" " alt="" coords="216,45,186,43,186,37,221,44"/>
+<area shape="rect" href="class_engine_1_1_graphics_1_1_lit_shader.html#af091108142068f5c60cf452c339604fd" title=" " alt="" coords="5,72,186,115"/>
+<area shape="poly" title=" " alt="" coords="216,76,187,83,186,78,221,75"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">类成员变量说明</h2>
+<a id="aa02437b3e129833fa49cfbd3a8e7604a" name="aa02437b3e129833fa49cfbd3a8e7604a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02437b3e129833fa49cfbd3a8e7604a">&#9670;&#160;</a></span>m_alphaThresholdParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_alphaThresholdParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1b338fe55d42d1d9c93a98aa46aafa61" name="a1b338fe55d42d1d9c93a98aa46aafa61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b338fe55d42d1d9c93a98aa46aafa61">&#9670;&#160;</a></span>m_ambientLightColorParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_ambientLightColorParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a617bcc579e8af1652772d99d1200a8b9" name="a617bcc579e8af1652772d99d1200a8b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a617bcc579e8af1652772d99d1200a8b9">&#9670;&#160;</a></span>m_diffuseLightColor1Parameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_diffuseLightColor1Parameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00026">26</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2dac162834b9b03a55a47954c86a7822" name="a2dac162834b9b03a55a47954c86a7822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dac162834b9b03a55a47954c86a7822">&#9670;&#160;</a></span>m_diffuseLightColor2Parameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_diffuseLightColor2Parameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aee4ec4fea485b5ca962a299712e3a7ce" name="aee4ec4fea485b5ca962a299712e3a7ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee4ec4fea485b5ca962a299712e3a7ce">&#9670;&#160;</a></span>m_diffuseLightColor3Parameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_diffuseLightColor3Parameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aded5931c45a8758cea2b94e5df584e7e" name="aded5931c45a8758cea2b94e5df584e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded5931c45a8758cea2b94e5df584e7e">&#9670;&#160;</a></span>m_directionToLight1Parameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_directionToLight1Parameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6a7af7b5e1d6901759fff52e0457fc13" name="a6a7af7b5e1d6901759fff52e0457fc13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7af7b5e1d6901759fff52e0457fc13">&#9670;&#160;</a></span>m_directionToLight2Parameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_directionToLight2Parameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af0a25b85b25eca4c76bf3b37dbe33758" name="af0a25b85b25eca4c76bf3b37dbe33758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a25b85b25eca4c76bf3b37dbe33758">&#9670;&#160;</a></span>m_directionToLight3Parameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_directionToLight3Parameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aeb771363bef9828a6c8b913151c5524f" name="aeb771363bef9828a6c8b913151c5524f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb771363bef9828a6c8b913151c5524f">&#9670;&#160;</a></span>m_emissionColorParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_emissionColorParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac24854e361282937cf9829aa863d135b" name="ac24854e361282937cf9829aa863d135b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24854e361282937cf9829aa863d135b">&#9670;&#160;</a></span>m_fogColorParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_fogColorParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a97bbcfa378f52ab6b47db445a1fb77de" name="a97bbcfa378f52ab6b47db445a1fb77de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97bbcfa378f52ab6b47db445a1fb77de">&#9670;&#160;</a></span>m_fogLengthParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_fogLengthParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae429a5c5df649a54db85d6bf98e1711b" name="ae429a5c5df649a54db85d6bf98e1711b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae429a5c5df649a54db85d6bf98e1711b">&#9670;&#160;</a></span>m_fogStartParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_fogStartParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad2f63668f4f13c675bf20b7d5ed2b7e7" name="ad2f63668f4f13c675bf20b7d5ed2b7e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f63668f4f13c675bf20b7d5ed2b7e7">&#9670;&#160;</a></span>m_instancesCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Engine.Graphics.LitShader.m_instancesCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a747276817be2be6905f90f37e8deb86f" name="a747276817be2be6905f90f37e8deb86f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747276817be2be6905f90f37e8deb86f">&#9670;&#160;</a></span>m_lightsCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Engine.Graphics.LitShader.m_lightsCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a502fcfc799f545468e841038dfff3f13" name="a502fcfc799f545468e841038dfff3f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502fcfc799f545468e841038dfff3f13">&#9670;&#160;</a></span>m_materialColorParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_materialColorParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3d1de130eed1487ff4506c8cb0bede8b" name="a3d1de130eed1487ff4506c8cb0bede8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1de130eed1487ff4506c8cb0bede8b">&#9670;&#160;</a></span>m_samplerStateParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_samplerStateParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00016">16</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a650529b9302d4b6c0c7f4e731dec3679" name="a650529b9302d4b6c0c7f4e731dec3679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a650529b9302d4b6c0c7f4e731dec3679">&#9670;&#160;</a></span>m_textureParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_textureParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9e0883c8d66ee32879403f0de8a421d6" name="a9e0883c8d66ee32879403f0de8a421d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0883c8d66ee32879403f0de8a421d6">&#9670;&#160;</a></span>m_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abea534d29bbb18443f83c5cfd541847d" name="abea534d29bbb18443f83c5cfd541847d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea534d29bbb18443f83c5cfd541847d">&#9670;&#160;</a></span>m_useFog</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Engine.Graphics.LitShader.m_useFog</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad3e01b101089993ce194fb5c39199e4a" name="ad3e01b101089993ce194fb5c39199e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e01b101089993ce194fb5c39199e4a">&#9670;&#160;</a></span>m_worldMatrixParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_worldMatrixParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00008">8</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a21a99b846bfccd13b6e9dbc41fae642a" name="a21a99b846bfccd13b6e9dbc41fae642a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21a99b846bfccd13b6e9dbc41fae642a">&#9670;&#160;</a></span>m_worldViewMatrixParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_worldViewMatrixParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ada5f19cf83537d2be4ba53b724e5f030" name="ada5f19cf83537d2be4ba53b724e5f030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5f19cf83537d2be4ba53b724e5f030">&#9670;&#160;</a></span>m_worldViewProjectionMatrixParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_shader_parameter.html">ShaderParameter</a> Engine.Graphics.LitShader.m_worldViewProjectionMatrixParameter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00012">12</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="ad88cb7d75e5fdd2fb8f6b297e07798c8" name="ad88cb7d75e5fdd2fb8f6b297e07798c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad88cb7d75e5fdd2fb8f6b297e07798c8">&#9670;&#160;</a></span>AlphaThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Engine.Graphics.LitShader.AlphaThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00068">68</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6784e0459ac75970c2ee3b43a51cf9cd" name="a6784e0459ac75970c2ee3b43a51cf9cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6784e0459ac75970c2ee3b43a51cf9cd">&#9670;&#160;</a></span>AmbientLightColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Engine.Graphics.LitShader.AmbientLightColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1780d2f4dd54c460e1884841ccc6a4a2" name="a1780d2f4dd54c460e1884841ccc6a4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1780d2f4dd54c460e1884841ccc6a4a2">&#9670;&#160;</a></span>DiffuseLightColor1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Engine.Graphics.LitShader.DiffuseLightColor1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00076">76</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a26da42a9c654fdd78926bb6e8646437a" name="a26da42a9c654fdd78926bb6e8646437a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26da42a9c654fdd78926bb6e8646437a">&#9670;&#160;</a></span>DiffuseLightColor2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Engine.Graphics.LitShader.DiffuseLightColor2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8907cba6cfbc4591be7fe9751d9fd6f6" name="a8907cba6cfbc4591be7fe9751d9fd6f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8907cba6cfbc4591be7fe9751d9fd6f6">&#9670;&#160;</a></span>DiffuseLightColor3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Engine.Graphics.LitShader.DiffuseLightColor3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00084">84</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8ce76e6b566564a9909a084656174b17" name="a8ce76e6b566564a9909a084656174b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce76e6b566564a9909a084656174b17">&#9670;&#160;</a></span>EmissionColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector4.html">Vector4</a> Engine.Graphics.LitShader.EmissionColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a49546f5b8234b9544fabd427df3a766c" name="a49546f5b8234b9544fabd427df3a766c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49546f5b8234b9544fabd427df3a766c">&#9670;&#160;</a></span>FogColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Engine.Graphics.LitShader.FogColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a95990da45cf62509c0c367025378abb4" name="a95990da45cf62509c0c367025378abb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95990da45cf62509c0c367025378abb4">&#9670;&#160;</a></span>FogLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Engine.Graphics.LitShader.FogLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af74ea40690f49ee8b93c70eba19e1dbc" name="af74ea40690f49ee8b93c70eba19e1dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af74ea40690f49ee8b93c70eba19e1dbc">&#9670;&#160;</a></span>FogStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Engine.Graphics.LitShader.FogStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00100">100</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa52aa23aac2a1076bddeae1f8f26aa94" name="aa52aa23aac2a1076bddeae1f8f26aa94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52aa23aac2a1076bddeae1f8f26aa94">&#9670;&#160;</a></span>InstancesCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Engine.Graphics.LitShader.InstancesCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00116">116</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a91fd3cb39950aa23c2d8bc782597c674" name="a91fd3cb39950aa23c2d8bc782597c674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91fd3cb39950aa23c2d8bc782597c674">&#9670;&#160;</a></span>LightDirection1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Engine.Graphics.LitShader.LightDirection1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a298c186300cbd501cdd09d54631c2c6d" name="a298c186300cbd501cdd09d54631c2c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298c186300cbd501cdd09d54631c2c6d">&#9670;&#160;</a></span>LightDirection2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Engine.Graphics.LitShader.LightDirection2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00092">92</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad27fbef5d3b79f4f5c99501474086411" name="ad27fbef5d3b79f4f5c99501474086411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27fbef5d3b79f4f5c99501474086411">&#9670;&#160;</a></span>LightDirection3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector3.html">Vector3</a> Engine.Graphics.LitShader.LightDirection3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6dcd74866116d1642da4a3238ae298f8" name="a6dcd74866116d1642da4a3238ae298f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dcd74866116d1642da4a3238ae298f8">&#9670;&#160;</a></span>MaterialColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_engine_1_1_vector4.html">Vector4</a> Engine.Graphics.LitShader.MaterialColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a875da54108d7fd96e395d6e4b0f687cd" name="a875da54108d7fd96e395d6e4b0f687cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875da54108d7fd96e395d6e4b0f687cd">&#9670;&#160;</a></span>SamplerState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SamplerState Engine.Graphics.LitShader.SamplerState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3b00977140b04ee5252b5ff0a6cba50a" name="a3b00977140b04ee5252b5ff0a6cba50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b00977140b04ee5252b5ff0a6cba50a">&#9670;&#160;</a></span>Texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a> Engine.Graphics.LitShader.Texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6bfe983c38fab2973c152098d23e53ff" name="a6bfe983c38fab2973c152098d23e53ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bfe983c38fab2973c152098d23e53ff">&#9670;&#160;</a></span>Time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Engine.Graphics.LitShader.Time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a> 第 <a class="el" href="_lit_shader_8cs_source.html#l00112">112</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Graphics/<a class="el" href="_lit_shader_8cs_source.html">LitShader.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_engine.html">Engine</a></li><li class="navelem"><a href="namespace_engine_1_1_graphics.html">Graphics</a></li><li class="navelem"><a href="class_engine_1_1_graphics_1_1_lit_shader.html">LitShader</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

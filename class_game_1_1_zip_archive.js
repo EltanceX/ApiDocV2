@@ -1,0 +1,35 @@
+var class_game_1_1_zip_archive =
+[
+    [ "Compression", "class_game_1_1_zip_archive.html#ab8256cdfdb9f5aa4da3640bf0f193b69", [
+      [ "Store", "class_game_1_1_zip_archive.html#ab8256cdfdb9f5aa4da3640bf0f193b69afdb0c388de01d545017cdf9ccf00eb72", null ],
+      [ "Deflate", "class_game_1_1_zip_archive.html#ab8256cdfdb9f5aa4da3640bf0f193b69ae2430ff724c45c3d68893fb1a3584426", null ]
+    ] ],
+    [ "ZipArchive", "class_game_1_1_zip_archive.html#a37121671f61ac007017b8f6e211c586a", null ],
+    [ "AddStream", "class_game_1_1_zip_archive.html#a5a5131654fb94c423086d413cbbc5ef4", null ],
+    [ "Close", "class_game_1_1_zip_archive.html#ae699e2a3a99537410fe515db05ebdfa2", null ],
+    [ "Create", "class_game_1_1_zip_archive.html#a058aecb155b1a066b1d247923dab7834", null ],
+    [ "DateTimeToDosTime", "class_game_1_1_zip_archive.html#a0655f86c604c4ee74cc8a4e96caf2f64", null ],
+    [ "Dispose", "class_game_1_1_zip_archive.html#a3b24d2f4e9991e7e87ce75a00d44ef7a", null ],
+    [ "DosTimeToDateTime", "class_game_1_1_zip_archive.html#a22bc68e0a78b8798e32bafbb9fc10776", null ],
+    [ "ExtractFile", "class_game_1_1_zip_archive.html#a469b5d5f94b0de2e1b2db4b59ff5c62a", null ],
+    [ "GetFileOffset", "class_game_1_1_zip_archive.html#a3fd0c9f610d106d8e7bd3c46c4342850", null ],
+    [ "IsUTF8Bytes", "class_game_1_1_zip_archive.html#ae2e7d491ae8526a54f284e4215390e73", null ],
+    [ "NormalizedFilename", "class_game_1_1_zip_archive.html#a986d9312e37ca0ebb1d8ac31e3db6f6c", null ],
+    [ "Open", "class_game_1_1_zip_archive.html#affc849ac122cb7255956e1c61418c63f", null ],
+    [ "ReadCentralDir", "class_game_1_1_zip_archive.html#ab85af69435d5557af51f91ca9932f6d8", null ],
+    [ "ReadFileInfo", "class_game_1_1_zip_archive.html#a6d974fb7f3fe42856a7e1971f19eb23c", null ],
+    [ "Store", "class_game_1_1_zip_archive.html#a9597d6276d645a3d598e5a4faad3e59b", null ],
+    [ "UpdateCrcAndSizes", "class_game_1_1_zip_archive.html#ab36489803140c723d561e8e7d72ce495", null ],
+    [ "WriteCentralDirRecord", "class_game_1_1_zip_archive.html#aed8574918dbe7f7f09f21f2fa72c7cbf", null ],
+    [ "WriteEndRecord", "class_game_1_1_zip_archive.html#a601d12133721e7598d32349218f273df", null ],
+    [ "WriteLocalHeader", "class_game_1_1_zip_archive.html#ad49bcd6da618e9b69af39aeee5e8c497", null ],
+    [ "CentralDirImage", "class_game_1_1_zip_archive.html#a09e5a0a93f585c3ddce30898848844f2", null ],
+    [ "Comment", "class_game_1_1_zip_archive.html#a604954af19396d94f188501030be528a", null ],
+    [ "CrcTable", "class_game_1_1_zip_archive.html#a9ec25a95c7856433d6fa6a050c04fd65", null ],
+    [ "ExistingFiles", "class_game_1_1_zip_archive.html#a6952327a113d3f917f6ba94ced741993", null ],
+    [ "Files", "class_game_1_1_zip_archive.html#ab5ec09dd9a7932adc03d3ce52917339e", null ],
+    [ "ForceDeflating", "class_game_1_1_zip_archive.html#a7a8acea621e531e93ad982fac5903466", null ],
+    [ "KeepStreamOpen", "class_game_1_1_zip_archive.html#a5164ae7aee988aeb63e7023941d45a3a", null ],
+    [ "ReadOnly", "class_game_1_1_zip_archive.html#a5bb06a4efc970585791dd0755888b11f", null ],
+    [ "ZipFileStream", "class_game_1_1_zip_archive.html#a0149fa9753e0c8a126565fbe1a585738", null ]
+];

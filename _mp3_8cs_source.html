@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Media/Mp3.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_mp3_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Mp3.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_mp3_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>NAudio.Wave;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>NLayer.NAudioSupport;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_media.html">Engine.Media</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="class_engine_1_1_media_1_1_mp3.html">Mp3</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html">    6</a></span>        <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0519bdc6de62954c5c998afa3447188d">Mp3StreamingSource</a> : <a class="code hl_class" href="class_engine_1_1_media_1_1_streaming_source.html">StreamingSource</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a5c0cb8b42ad3b16e9fc311073b986fbb">    7</a></span>            <span class="keyword">public</span> Mp3FileReaderBase <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a5c0cb8b42ad3b16e9fc311073b986fbb">m_reader</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a61a65a47f5a161c65cb5b641eadc1d4a">    9</a></span>            <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3.html#a8dc0fff9f5303db2efc783a16780b178">Stream</a> <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a61a65a47f5a161c65cb5b641eadc1d4a">m_stream</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0a5ca9b63311577ee7749ef46681667f">   11</a></span>            <span class="keywordtype">long</span> <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0a5ca9b63311577ee7749ef46681667f">m_position</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a2858192f877251b20ab19db7d988f8af">   13</a></span>            <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a2858192f877251b20ab19db7d988f8af">ChannelsCount</a> =&gt; <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a5c0cb8b42ad3b16e9fc311073b986fbb">m_reader</a>.WaveFormat.Channels;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a1eecf0d81a4fc9fe257c6358700db56c">   15</a></span>            <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a1eecf0d81a4fc9fe257c6358700db56c">SamplingFrequency</a> =&gt; <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a5c0cb8b42ad3b16e9fc311073b986fbb">m_reader</a>.WaveFormat.SampleRate;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a56fd474b2c0ceace9b0479df2764e004">   17</a></span>            <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">long</span> <a class="code hl_property" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a56fd474b2c0ceace9b0479df2764e004">Position</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0a5ca9b63311577ee7749ef46681667f">m_position</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a5c0cb8b42ad3b16e9fc311073b986fbb">m_reader</a>.CanSeek) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                        <span class="keywordtype">long</span> num = value * <a class="code hl_property" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a2858192f877251b20ab19db7d988f8af">ChannelsCount</a> * 4; <span class="comment">//NLayer获取到的是32位float拆分成的8位byte数组</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                        <span class="keywordflow">if</span> (num &lt; 0</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                            || num &gt; <a class="code hl_property" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a93df93340884ea7a84d7fcbf952ebcd0">BytesCount</a>) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                            <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                        }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                        m_reader.Position = num;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                        <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0a5ca9b63311577ee7749ef46681667f">m_position</a> = value;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NotSupportedException(<span class="stringliteral">&quot;Underlying stream cannot be seeked.&quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a93df93340884ea7a84d7fcbf952ebcd0">   34</a></span>            <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">long</span> <a class="code hl_property" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a93df93340884ea7a84d7fcbf952ebcd0">BytesCount</a> =&gt; m_reader.Length / 2;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0519bdc6de62954c5c998afa3447188d">   36</a></span>            <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0519bdc6de62954c5c998afa3447188d">Mp3StreamingSource</a>(<a class="code hl_function" href="class_engine_1_1_media_1_1_mp3.html#a8dc0fff9f5303db2efc783a16780b178">Stream</a> stream) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a61a65a47f5a161c65cb5b641eadc1d4a">m_stream</a> = <span class="keyword">new</span> MemoryStream();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                stream.Position = 0L;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                stream.CopyTo(<a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a61a65a47f5a161c65cb5b641eadc1d4a">m_stream</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                m_stream.Position = 0L;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a5c0cb8b42ad3b16e9fc311073b986fbb">m_reader</a> = <span class="keyword">new</span> Mp3FileReaderBase(<a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a61a65a47f5a161c65cb5b641eadc1d4a">m_stream</a>, wf =&gt; <span class="keyword">new</span> Mp3FrameDecompressor(wf));</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a7e8c7b49855d44c55f316798e76c31cd">   44</a></span>            <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a7e8c7b49855d44c55f316798e76c31cd">Dispose</a>() {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a5c0cb8b42ad3b16e9fc311073b986fbb">m_reader</a>.Dispose();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a61a65a47f5a161c65cb5b641eadc1d4a">m_stream</a>.Dispose();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a8331b5eb7ed14f3e26e960c78aa2f711">   49</a></span>            <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a8331b5eb7ed14f3e26e960c78aa2f711">Read</a>(<span class="keywordtype">byte</span>[] buffer, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> count) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                ArgumentNullException.ThrowIfNull(buffer);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keywordflow">if</span> (offset &lt; 0</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    || count &lt; 0</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    || offset + count &gt; buffer.Length) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Invalid range.&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                count = (int)Math.Min(count, <a class="code hl_property" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a93df93340884ea7a84d7fcbf952ebcd0">BytesCount</a> - <a class="code hl_property" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a56fd474b2c0ceace9b0479df2764e004">Position</a>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <span class="keywordtype">byte</span>[] sample = <span class="keyword">new</span> <span class="keywordtype">byte</span>[count * 2];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="keywordtype">int</span> num = <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a5c0cb8b42ad3b16e9fc311073b986fbb">m_reader</a>.Read(sample, 0, count * 2);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num; i += 4) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    <span class="keywordtype">float</span> sample32Bit = BitConverter.ToSingle(sample, i);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    <span class="keywordtype">short</span> sample16Bit = (short)(sample32Bit * <span class="keywordtype">short</span>.MaxValue);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    <span class="keywordtype">byte</span>[] sampleBytes = BitConverter.GetBytes(sample16Bit);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    buffer[offset++] = sampleBytes[0];</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    buffer[offset++] = sampleBytes[1];</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0a5ca9b63311577ee7749ef46681667f">m_position</a> += num / 2 / <a class="code hl_property" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a2858192f877251b20ab19db7d988f8af">ChannelsCount</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">return</span> num / 2;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a80de69a78234c82ea50f10fc2a4ba376">   74</a></span>            <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_class" href="class_engine_1_1_media_1_1_streaming_source.html">StreamingSource</a> <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a80de69a78234c82ea50f10fc2a4ba376">Duplicate</a>() {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                MemoryStream memoryStream = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                m_stream.Position = 0L;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <a class="code hl_variable" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a61a65a47f5a161c65cb5b641eadc1d4a">m_stream</a>.CopyTo(memoryStream);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                memoryStream.Position = 0L;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0519bdc6de62954c5c998afa3447188d">Mp3StreamingSource</a>(memoryStream);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3.html#ac180f4a6c590f095c4499889ed21bf84">   83</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3.html#ac180f4a6c590f095c4499889ed21bf84">IsFlacStream</a>(<a class="code hl_function" href="class_engine_1_1_media_1_1_mp3.html#a8dc0fff9f5303db2efc783a16780b178">Stream</a> stream) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            ArgumentNullException.ThrowIfNull(stream);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordtype">long</span> position = stream.Position;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            stream.Position = 0;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordtype">bool</span> result = Id3v2Tag.ReadTag(stream) != <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            stream.Position = position;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3.html#a8dc0fff9f5303db2efc783a16780b178">   92</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_engine_1_1_media_1_1_streaming_source.html">StreamingSource</a> <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3.html#a8dc0fff9f5303db2efc783a16780b178">Stream</a>(<a class="code hl_function" href="class_engine_1_1_media_1_1_mp3.html#a8dc0fff9f5303db2efc783a16780b178">Stream</a> stream) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            ArgumentNullException.ThrowIfNull(stream);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html">Mp3StreamingSource</a>(stream);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_mp3.html#ab04abe96ae05262146be14f568b83874">   97</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_engine_1_1_media_1_1_sound_data.html">SoundData</a> <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3.html#ab04abe96ae05262146be14f568b83874">Load</a>(<a class="code hl_function" href="class_engine_1_1_media_1_1_mp3.html#a8dc0fff9f5303db2efc783a16780b178">Stream</a> stream) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keyword">using</span> (<a class="code hl_class" href="class_engine_1_1_media_1_1_streaming_source.html">StreamingSource</a> streamingSource = <a class="code hl_function" href="class_engine_1_1_media_1_1_mp3.html#a8dc0fff9f5303db2efc783a16780b178">Stream</a>(stream)) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keywordflow">if</span> (streamingSource.<a class="code hl_property" href="class_engine_1_1_media_1_1_streaming_source.html#ab43b05560f301018c0436408a537d764">BytesCount</a> &gt; <span class="keywordtype">int</span>.MaxValue) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Sound data too long.&quot;</span>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <span class="keywordtype">byte</span>[] array = <span class="keyword">new</span> <span class="keywordtype">byte</span>[(int)streamingSource.<a class="code hl_property" href="class_engine_1_1_media_1_1_streaming_source.html#ab43b05560f301018c0436408a537d764">BytesCount</a>];</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                streamingSource.<a class="code hl_function" href="class_engine_1_1_media_1_1_streaming_source.html#a1084a32228813e696d48c0109275fc48">Read</a>(array, 0, array.Length);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <a class="code hl_class" href="class_engine_1_1_media_1_1_sound_data.html">SoundData</a> soundData = <span class="keyword">new</span>(streamingSource.<a class="code hl_property" href="class_engine_1_1_media_1_1_streaming_source.html#a476b7e7caadfc9bf7ce6732260627b61">ChannelsCount</a>, streamingSource.<a class="code hl_property" href="class_engine_1_1_media_1_1_streaming_source.html#ae177c186ca95d0a1c4706b0c8762a028">SamplingFrequency</a>, array.Length);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                Buffer.BlockCopy(array, 0, soundData.<a class="code hl_property" href="class_engine_1_1_media_1_1_sound_data.html#ad496b12d0a5e549e44b8dd3f58d11361">Data</a>, 0, array.Length);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <span class="keywordflow">return</span> soundData;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html">Engine.Media.Mp3.Mp3StreamingSource</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">Mp3.cs:6</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a0519bdc6de62954c5c998afa3447188d"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0519bdc6de62954c5c998afa3447188d">Engine.Media.Mp3.Mp3StreamingSource.Mp3StreamingSource</a></div><div class="ttdeci">Mp3StreamingSource(Stream stream)</div><div class="ttdef"><b>定义</b> <a href="#l00036">Mp3.cs:36</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a0a5ca9b63311577ee7749ef46681667f"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a0a5ca9b63311577ee7749ef46681667f">Engine.Media.Mp3.Mp3StreamingSource.m_position</a></div><div class="ttdeci">long m_position</div><div class="ttdef"><b>定义</b> <a href="#l00011">Mp3.cs:11</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a1eecf0d81a4fc9fe257c6358700db56c"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a1eecf0d81a4fc9fe257c6358700db56c">Engine.Media.Mp3.Mp3StreamingSource.SamplingFrequency</a></div><div class="ttdeci">override int SamplingFrequency</div><div class="ttdef"><b>定义</b> <a href="#l00015">Mp3.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a2858192f877251b20ab19db7d988f8af"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a2858192f877251b20ab19db7d988f8af">Engine.Media.Mp3.Mp3StreamingSource.ChannelsCount</a></div><div class="ttdeci">override int ChannelsCount</div><div class="ttdef"><b>定义</b> <a href="#l00013">Mp3.cs:13</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a56fd474b2c0ceace9b0479df2764e004"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a56fd474b2c0ceace9b0479df2764e004">Engine.Media.Mp3.Mp3StreamingSource.Position</a></div><div class="ttdeci">override long Position</div><div class="ttdef"><b>定义</b> <a href="#l00017">Mp3.cs:17</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a5c0cb8b42ad3b16e9fc311073b986fbb"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a5c0cb8b42ad3b16e9fc311073b986fbb">Engine.Media.Mp3.Mp3StreamingSource.m_reader</a></div><div class="ttdeci">Mp3FileReaderBase m_reader</div><div class="ttdef"><b>定义</b> <a href="#l00007">Mp3.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a61a65a47f5a161c65cb5b641eadc1d4a"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a61a65a47f5a161c65cb5b641eadc1d4a">Engine.Media.Mp3.Mp3StreamingSource.m_stream</a></div><div class="ttdeci">Stream m_stream</div><div class="ttdef"><b>定义</b> <a href="#l00009">Mp3.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a7e8c7b49855d44c55f316798e76c31cd"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a7e8c7b49855d44c55f316798e76c31cd">Engine.Media.Mp3.Mp3StreamingSource.Dispose</a></div><div class="ttdeci">override void Dispose()</div><div class="ttdef"><b>定义</b> <a href="#l00044">Mp3.cs:44</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a80de69a78234c82ea50f10fc2a4ba376"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a80de69a78234c82ea50f10fc2a4ba376">Engine.Media.Mp3.Mp3StreamingSource.Duplicate</a></div><div class="ttdeci">override StreamingSource Duplicate()</div><div class="ttdoc">复制出一个新的流</div><div class="ttdef"><b>定义</b> <a href="#l00074">Mp3.cs:74</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a8331b5eb7ed14f3e26e960c78aa2f711"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a8331b5eb7ed14f3e26e960c78aa2f711">Engine.Media.Mp3.Mp3StreamingSource.Read</a></div><div class="ttdeci">override int Read(byte[] buffer, int offset, int count)</div><div class="ttdef"><b>定义</b> <a href="#l00049">Mp3.cs:49</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source_html_a93df93340884ea7a84d7fcbf952ebcd0"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3_1_1_mp3_streaming_source.html#a93df93340884ea7a84d7fcbf952ebcd0">Engine.Media.Mp3.Mp3StreamingSource.BytesCount</a></div><div class="ttdeci">override long BytesCount</div><div class="ttdef"><b>定义</b> <a href="#l00034">Mp3.cs:34</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_html"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3.html">Engine.Media.Mp3</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">Mp3.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_html_a8dc0fff9f5303db2efc783a16780b178"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3.html#a8dc0fff9f5303db2efc783a16780b178">Engine.Media.Mp3.Stream</a></div><div class="ttdeci">static StreamingSource Stream(Stream stream)</div><div class="ttdef"><b>定义</b> <a href="#l00092">Mp3.cs:92</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_html_ab04abe96ae05262146be14f568b83874"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3.html#ab04abe96ae05262146be14f568b83874">Engine.Media.Mp3.Load</a></div><div class="ttdeci">static SoundData Load(Stream stream)</div><div class="ttdef"><b>定义</b> <a href="#l00097">Mp3.cs:97</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_mp3_html_ac180f4a6c590f095c4499889ed21bf84"><div class="ttname"><a href="class_engine_1_1_media_1_1_mp3.html#ac180f4a6c590f095c4499889ed21bf84">Engine.Media.Mp3.IsFlacStream</a></div><div class="ttdeci">static bool IsFlacStream(Stream stream)</div><div class="ttdef"><b>定义</b> <a href="#l00083">Mp3.cs:83</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_sound_data_html"><div class="ttname"><a href="class_engine_1_1_media_1_1_sound_data.html">Engine.Media.SoundData</a></div><div class="ttdef"><b>定义</b> <a href="_sound_data_8cs_source.html#l00002">SoundData.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_sound_data_html_ad496b12d0a5e549e44b8dd3f58d11361"><div class="ttname"><a href="class_engine_1_1_media_1_1_sound_data.html#ad496b12d0a5e549e44b8dd3f58d11361">Engine.Media.SoundData.Data</a></div><div class="ttdeci">short[] Data</div><div class="ttdef"><b>定义</b> <a href="_sound_data_8cs_source.html#l00007">SoundData.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_streaming_source_html"><div class="ttname"><a href="class_engine_1_1_media_1_1_streaming_source.html">Engine.Media.StreamingSource</a></div><div class="ttdef"><b>定义</b> <a href="_streaming_source_8cs_source.html#l00002">StreamingSource.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_streaming_source_html_a1084a32228813e696d48c0109275fc48"><div class="ttname"><a href="class_engine_1_1_media_1_1_streaming_source.html#a1084a32228813e696d48c0109275fc48">Engine.Media.StreamingSource.Read</a></div><div class="ttdeci">int Read(byte[] buffer, int offset, int count)</div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_streaming_source_html_a476b7e7caadfc9bf7ce6732260627b61"><div class="ttname"><a href="class_engine_1_1_media_1_1_streaming_source.html#a476b7e7caadfc9bf7ce6732260627b61">Engine.Media.StreamingSource.ChannelsCount</a></div><div class="ttdeci">int ChannelsCount</div><div class="ttdef"><b>定义</b> <a href="_streaming_source_8cs_source.html#l00003">StreamingSource.cs:3</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_streaming_source_html_ab43b05560f301018c0436408a537d764"><div class="ttname"><a href="class_engine_1_1_media_1_1_streaming_source.html#ab43b05560f301018c0436408a537d764">Engine.Media.StreamingSource.BytesCount</a></div><div class="ttdeci">long BytesCount</div><div class="ttdef"><b>定义</b> <a href="_streaming_source_8cs_source.html#l00009">StreamingSource.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_streaming_source_html_ae177c186ca95d0a1c4706b0c8762a028"><div class="ttname"><a href="class_engine_1_1_media_1_1_streaming_source.html#ae177c186ca95d0a1c4706b0c8762a028">Engine.Media.StreamingSource.SamplingFrequency</a></div><div class="ttdeci">int SamplingFrequency</div><div class="ttdef"><b>定义</b> <a href="_streaming_source_8cs_source.html#l00005">StreamingSource.cs:5</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_media_html"><div class="ttname"><a href="namespace_engine_1_1_media.html">Engine.Media</a></div><div class="ttdef"><b>定义</b> <a href="_bitmap_font_8cs_source.html#l00005">BitmapFont.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_9d950001afce6ff05359da3e39ccf8ac.html">Engine.Media</a></li><li class="navelem"><a href="_mp3_8cs.html">Mp3.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

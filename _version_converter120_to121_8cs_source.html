@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Game/VersionConverter120To121.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_version_converter120_to121_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">VersionConverter120To121.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_version_converter120_to121_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_xml_utilities.html">XmlUtilities</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter120_to121.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter120_to121.html">VersionConverter120To121</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter120_to121.html#a7e31571795186db84be7a949f00c410a">    7</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter120_to121.html#a7e31571795186db84be7a949f00c410a">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.20&quot;</span>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter120_to121.html#a3ff848c8aa67e013c9f34a93ebd96d42">    9</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter120_to121.html#a3ff848c8aa67e013c9f34a93ebd96d42">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.21&quot;</span>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter120_to121.html#af831a203c256000891e6ed6a07c05c37">   11</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_version_converter120_to121.html#af831a203c256000891e6ed6a07c05c37">ConvertProjectXml</a>(XElement projectNode) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(projectNode, <span class="stringliteral">&quot;Version&quot;</span>, <a class="code hl_property" href="class_game_1_1_version_converter120_to121.html#a3ff848c8aa67e013c9f34a93ebd96d42">TargetVersion</a>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="keywordflow">foreach</span> (XElement item <span class="keywordflow">in</span> projectNode.Element(<span class="stringliteral">&quot;Entities&quot;</span>).Elements()) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                <span class="keywordflow">foreach</span> (XElement item2 <span class="keywordflow">in</span> from e <span class="keywordflow">in</span> item.Elements(<span class="stringliteral">&quot;Values&quot;</span>)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                    where <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>(e, <span class="stringliteral">&quot;Name&quot;</span>, <span class="keywordtype">string</span>.Empty) == <span class="stringliteral">&quot;Body&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                        || <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>(e, <span class="stringliteral">&quot;Name&quot;</span>, <span class="keywordtype">string</span>.Empty) == <span class="stringliteral">&quot;Frame&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                    select e) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                    <span class="keyword">using</span> (IEnumerator&lt;XElement&gt; enumerator3 = (from e in item2.Elements(<span class="stringliteral">&quot;Value&quot;</span>)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                            where <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>(e, <span class="stringliteral">&quot;Name&quot;</span>, <span class="keywordtype">string</span>.Empty) == <span class="stringliteral">&quot;LocalMatrix&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                            select e).GetEnumerator()) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                        <span class="keywordflow">if</span> (enumerator3.MoveNext()) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                            XElement current2 = enumerator3.Current;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>&lt;<a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a>&gt;(current2, <span class="stringliteral">&quot;Value&quot;</span>)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                                .Decompose(out <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> _, out <a class="code hl_struct" href="struct_engine_1_1_quaternion.html">Quaternion</a> rotation, out <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> translation);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                            XElement xElement = <span class="keyword">new</span>(<span class="stringliteral">&quot;Value&quot;</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                            XElement xElement2 = <span class="keyword">new</span>(<span class="stringliteral">&quot;Value&quot;</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(xElement, <span class="stringliteral">&quot;Name&quot;</span>, <span class="stringliteral">&quot;Position&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(xElement, <span class="stringliteral">&quot;Type&quot;</span>, <span class="stringliteral">&quot;Microsoft.Xna.Framework.Vector3&quot;</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(xElement, <span class="stringliteral">&quot;Value&quot;</span>, translation);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(xElement2, <span class="stringliteral">&quot;Name&quot;</span>, <span class="stringliteral">&quot;Rotation&quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(xElement2, <span class="stringliteral">&quot;Type&quot;</span>, <span class="stringliteral">&quot;Microsoft.Xna.Framework.Quaternion&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(xElement2, <span class="stringliteral">&quot;Value&quot;</span>, rotation);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                            item2.Add(xElement);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                            item2.Add(xElement2);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                            current2.Remove();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                        }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter120_to121.html#a7a738cbcc4bf1e8a1388ff40ac5afa21">   42</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_version_converter120_to121.html#a7a738cbcc4bf1e8a1388ff40ac5afa21">ConvertWorld</a>(<span class="keywordtype">string</span> directoryName) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordtype">string</span> path = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#ada4eee2385d71f7a9a359107511171e4">CombinePaths</a>(directoryName, <span class="stringliteral">&quot;Project.xml&quot;</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            XElement xElement;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">using</span> (Stream stream = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(path, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.Read)) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                xElement = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a8ccb324769f1be9a4f1ae6d4ec41f369">LoadXmlFromStream</a>(stream, <span class="keyword">null</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <a class="code hl_function" href="class_game_1_1_version_converter120_to121.html#af831a203c256000891e6ed6a07c05c37">ConvertProjectXml</a>(xElement);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keyword">using</span> (Stream stream2 = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(path, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.Create)) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#ad88716f073eb951e2062a83754959ede">SaveXmlToStream</a>(xElement, stream2, <span class="keyword">null</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_storage_html"><div class="ttname"><a href="class_engine_1_1_storage.html">Engine.Storage</a></div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00024">Storage.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a3a6586a9f70dd693b5c907a1b4a3dbea"><div class="ttname"><a href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">Engine.Storage.OpenFile</a></div><div class="ttdeci">static Stream OpenFile(string path, OpenFileMode openFileMode)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00093">Storage.cs:93</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_ada4eee2385d71f7a9a359107511171e4"><div class="ttname"><a href="class_engine_1_1_storage.html#ada4eee2385d71f7a9a359107511171e4">Engine.Storage.CombinePaths</a></div><div class="ttdeci">static string CombinePaths(params string[] paths)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00214">Storage.cs:214</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter120_to121_html"><div class="ttname"><a href="class_game_1_1_version_converter120_to121.html">Game.VersionConverter120To121</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">VersionConverter120To121.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter120_to121_html_a3ff848c8aa67e013c9f34a93ebd96d42"><div class="ttname"><a href="class_game_1_1_version_converter120_to121.html#a3ff848c8aa67e013c9f34a93ebd96d42">Game.VersionConverter120To121.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00009">VersionConverter120To121.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter120_to121_html_a7a738cbcc4bf1e8a1388ff40ac5afa21"><div class="ttname"><a href="class_game_1_1_version_converter120_to121.html#a7a738cbcc4bf1e8a1388ff40ac5afa21">Game.VersionConverter120To121.ConvertWorld</a></div><div class="ttdeci">override void ConvertWorld(string directoryName)</div><div class="ttdef"><b>定义</b> <a href="#l00042">VersionConverter120To121.cs:42</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter120_to121_html_a7e31571795186db84be7a949f00c410a"><div class="ttname"><a href="class_game_1_1_version_converter120_to121.html#a7e31571795186db84be7a949f00c410a">Game.VersionConverter120To121.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00007">VersionConverter120To121.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter120_to121_html_af831a203c256000891e6ed6a07c05c37"><div class="ttname"><a href="class_game_1_1_version_converter120_to121.html#af831a203c256000891e6ed6a07c05c37">Game.VersionConverter120To121.ConvertProjectXml</a></div><div class="ttdeci">override void ConvertProjectXml(XElement projectNode)</div><div class="ttdef"><b>定义</b> <a href="#l00011">VersionConverter120To121.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter_html"><div class="ttname"><a href="class_game_1_1_version_converter.html">Game.VersionConverter</a></div><div class="ttdef"><b>定义</b> <a href="_version_converter_8cs_source.html#l00006">VersionConverter.cs:6</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html">XmlUtilities.XmlUtils</a></div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00010">XmlUtils.cs:10</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a25d3e91fe37b8d97d8dc55e7aa141441"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">XmlUtilities.XmlUtils.SetAttributeValue</a></div><div class="ttdeci">static void SetAttributeValue(XElement node, string attributeName, object value)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00037">XmlUtils.cs:37</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a7247d2c34e2bbc55abc84aa86bdd6d23"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">XmlUtilities.XmlUtils.GetAttributeValue</a></div><div class="ttdeci">static object GetAttributeValue(XElement node, string attributeName, Type type)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00011">XmlUtils.cs:11</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a8ccb324769f1be9a4f1ae6d4ec41f369"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a8ccb324769f1be9a4f1ae6d4ec41f369">XmlUtilities.XmlUtils.LoadXmlFromStream</a></div><div class="ttdeci">static XElement LoadXmlFromStream(Stream stream, Encoding encoding, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00072">XmlUtils.cs:72</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_ad88716f073eb951e2062a83754959ede"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#ad88716f073eb951e2062a83754959ede">XmlUtilities.XmlUtils.SaveXmlToStream</a></div><div class="ttdeci">static void SaveXmlToStream(XElement node, Stream stream, Encoding encoding, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00092">XmlUtils.cs:92</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html_ae47610d75f8bb133c22ca5f9de906ae3"><div class="ttname"><a href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">Engine.OpenFileMode</a></div><div class="ttdeci">OpenFileMode</div><div class="ttdef"><b>定义</b> <a href="_open_file_mode_8cs_source.html#l00002">OpenFileMode.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_xml_utilities_html"><div class="ttname"><a href="namespace_xml_utilities.html">XmlUtilities</a></div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00009">XmlUtils.cs:9</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_quaternion_html"><div class="ttname"><a href="struct_engine_1_1_quaternion.html">Engine.Quaternion</a></div><div class="ttdef"><b>定义</b> <a href="_quaternion_8cs_source.html#l00004">Quaternion.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_afb822b09482a1c506ad46299f82cac5.html">Game</a></li><li class="navelem"><a href="_version_converter120_to121_8cs.html">VersionConverter120To121.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

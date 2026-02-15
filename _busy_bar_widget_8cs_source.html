@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/BusyBarWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_busy_bar_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BusyBarWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_busy_bar_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_busy_bar_widget.html#aa3049bc7abcd61d740d500ab5366fd4d">BusyBarWidget</a> : <a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#a5b6074951f75887196fca0e24ec7aef2">    6</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#a5b6074951f75887196fca0e24ec7aef2">m_barsCount</a> = 5;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#afdaaf99e9f5b02da0bf3387cd764031f">    8</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#afdaaf99e9f5b02da0bf3387cd764031f">m_barSize</a> = 8f;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#a12d99e69d7cc761e1651840f062b9b9d">   10</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#a12d99e69d7cc761e1651840f062b9b9d">m_barsSpacing</a> = 24f;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#aaf5e44a575f1d1705e8d64bffcf1f035">   12</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#aaf5e44a575f1d1705e8d64bffcf1f035">m_boxIndex</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#a1b057b07f061382afc853b263cf110a6">   14</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#a1b057b07f061382afc853b263cf110a6">m_lastBoxesStepTime</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#a8e3d27502fdecfa7fbddfaa37a2644a6">   16</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> <a class="code hl_property" href="class_game_1_1_busy_bar_widget.html#a8e3d27502fdecfa7fbddfaa37a2644a6">LitBarColor</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#ae01aa6279d90f53ddd1dcaa6aeddaba2">   18</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> <a class="code hl_property" href="class_game_1_1_busy_bar_widget.html#ae01aa6279d90f53ddd1dcaa6aeddaba2">UnlitBarColor</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#aa3049bc7abcd61d740d500ab5366fd4d">   20</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_busy_bar_widget.html#aa3049bc7abcd61d740d500ab5366fd4d">BusyBarWidget</a>() {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_property" href="class_game_1_1_widget.html#abb2bfb50316059fbb331871524c739bd">IsHitTestVisible</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_property" href="class_game_1_1_busy_bar_widget.html#a8e3d27502fdecfa7fbddfaa37a2644a6">LitBarColor</a> = <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(16, 140, 0);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_property" href="class_game_1_1_busy_bar_widget.html#ae01aa6279d90f53ddd1dcaa6aeddaba2">UnlitBarColor</a> = <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(48, 48, 48);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#a584e7997fbfc3ab37788a2fafec83fc4">   26</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_busy_bar_widget.html#a584e7997fbfc3ab37788a2fafec83fc4">MeasureOverride</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> parentAvailableSize) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_property" href="class_game_1_1_widget.html#ab7453bbe06dbc7188b1d2a6d95e7663e">IsDrawRequired</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_property" href="class_game_1_1_widget.html#a4fcf3eb07446501ee363931839ce003a">DesiredSize</a> = <span class="keyword">new</span> <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Vector2</a>(120f, 12f);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_game_1_1_busy_bar_widget.html#aba9fa303adb7452352b5557bf693244e">   31</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_busy_bar_widget.html#aba9fa303adb7452352b5557bf693244e">Draw</a>(<a class="code hl_class" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a> dc) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_engine_1_1_time.html">Time</a>.<a class="code hl_property" href="class_engine_1_1_time.html#a63eb19822fad10dd51bcb578f7f2f66c">RealTime</a> - <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#a1b057b07f061382afc853b263cf110a6">m_lastBoxesStepTime</a> &gt; 0.25) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#aaf5e44a575f1d1705e8d64bffcf1f035">m_boxIndex</a>++;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#a1b057b07f061382afc853b263cf110a6">m_lastBoxesStepTime</a> = <a class="code hl_class" href="class_engine_1_1_time.html">Time</a>.<a class="code hl_property" href="class_engine_1_1_time.html#a63eb19822fad10dd51bcb578f7f2f66c">RealTime</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_class" href="class_engine_1_1_graphics_1_1_flat_batch2_d.html">FlatBatch2D</a> flatBatch2D = dc.<a class="code hl_variable" href="class_game_1_1_widget_1_1_draw_context.html#aaf406a8eb9c9394f43e0261ad1bf5b3c">PrimitivesRenderer2D</a>.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a72d77263ced51f82786e005127e2f1ba">FlatBatch</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordtype">int</span> count = flatBatch2D.<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_base_flat_batch.html#a5dd6c83c3d19fa532e97ccb31d9f438f">TriangleVertices</a>.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Count</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> v = <span class="keyword">new</span>((i + 0.5f) * 24f, 6f);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> c = i == <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#aaf5e44a575f1d1705e8d64bffcf1f035">m_boxIndex</a> % 5 ? <a class="code hl_property" href="class_game_1_1_busy_bar_widget.html#a8e3d27502fdecfa7fbddfaa37a2644a6">LitBarColor</a> : <a class="code hl_property" href="class_game_1_1_busy_bar_widget.html#ae01aa6279d90f53ddd1dcaa6aeddaba2">UnlitBarColor</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordtype">float</span> v2 = i == <a class="code hl_variable" href="class_game_1_1_busy_bar_widget.html#aaf5e44a575f1d1705e8d64bffcf1f035">m_boxIndex</a> % 5 ? 12f : 8f;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                flatBatch2D.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_flat_batch2_d.html#a0a5ac42a7c93aeabb46efbb7e74245ca">QueueQuad</a>(v - <span class="keyword">new</span> <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Vector2</a>(v2) / 2f, v + <span class="keyword">new</span> <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Vector2</a>(v2) / 2f, 0f, c * <a class="code hl_property" href="class_game_1_1_widget.html#a37faca8be205fde652377203138b74c1">GlobalColorTransform</a>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            flatBatch2D.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_base_flat_batch.html#abb7d47899c727f3fa532fa582ed68dd2">TransformTriangles</a>(<a class="code hl_property" href="class_game_1_1_widget.html#adbf55b13c5ef4ecd8cc21c4fc38e8e49">GlobalTransform</a>, count);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="ttc" id="a_community_content_screen_8cs_html_ab9f09ac3214ff6f75ad9e8c823688d4a"><div class="ttname"><a href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a></div><div class="ttdeci">Engine.Color Color</div><div class="ttdef"><b>定义</b> <a href="_community_content_screen_8cs_source.html#l00009">CommunityContentScreen.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_dynamic_array-1-g_html_a20becafe5aa7ed6b772ba44dea80f1ab"><div class="ttname"><a href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Engine.DynamicArray-1-g.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>定义</b> <a href="_dynamic_array_8cs_source.html#l00064">DynamicArray.cs:64</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_base_flat_batch_html_a5dd6c83c3d19fa532e97ccb31d9f438f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_base_flat_batch.html#a5dd6c83c3d19fa532e97ccb31d9f438f">Engine.Graphics.BaseFlatBatch.TriangleVertices</a></div><div class="ttdeci">readonly DynamicArray&lt; VertexPositionColor &gt; TriangleVertices</div><div class="ttdef"><b>定义</b> <a href="_base_flat_batch_8cs_source.html#l00009">BaseFlatBatch.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_base_flat_batch_html_abb7d47899c727f3fa532fa582ed68dd2"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_base_flat_batch.html#abb7d47899c727f3fa532fa582ed68dd2">Engine.Graphics.BaseFlatBatch.TransformTriangles</a></div><div class="ttdeci">void TransformTriangles(Matrix matrix, int start=0, int end=-1)</div><div class="ttdef"><b>定义</b> <a href="_base_flat_batch_8cs_source.html#l00107">BaseFlatBatch.cs:107</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_flat_batch2_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_flat_batch2_d.html">Engine.Graphics.FlatBatch2D</a></div><div class="ttdef"><b>定义</b> <a href="_flat_batch2_d_8cs_source.html#l00002">FlatBatch2D.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_flat_batch2_d_html_a0a5ac42a7c93aeabb46efbb7e74245ca"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_flat_batch2_d.html#a0a5ac42a7c93aeabb46efbb7e74245ca">Engine.Graphics.FlatBatch2D.QueueQuad</a></div><div class="ttdeci">void QueueQuad(Vector2 corner1, Vector2 corner2, float depth, Color color)</div><div class="ttdef"><b>定义</b> <a href="_flat_batch2_d_8cs_source.html#l00260">FlatBatch2D.cs:260</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_primitives_renderer2_d_html_a72d77263ced51f82786e005127e2f1ba"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_primitives_renderer2_d.html#a72d77263ced51f82786e005127e2f1ba">Engine.Graphics.PrimitivesRenderer2D.FlatBatch</a></div><div class="ttdeci">FlatBatch2D FlatBatch(int layer=0, DepthStencilState depthStencilState=null, RasterizerState rasterizerState=null, BlendState blendState=null)</div><div class="ttdef"><b>定义</b> <a href="_primitives_renderer2_d_8cs_source.html#l00029">PrimitivesRenderer2D.cs:29</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_time_html"><div class="ttname"><a href="class_engine_1_1_time.html">Engine.Time</a></div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00004">Time.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_time_html_a63eb19822fad10dd51bcb578f7f2f66c"><div class="ttname"><a href="class_engine_1_1_time.html#a63eb19822fad10dd51bcb578f7f2f66c">Engine.Time.RealTime</a></div><div class="ttdeci">static double RealTime</div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00038">Time.cs:38</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_a12d99e69d7cc761e1651840f062b9b9d"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#a12d99e69d7cc761e1651840f062b9b9d">Game.BusyBarWidget.m_barsSpacing</a></div><div class="ttdeci">const float m_barsSpacing</div><div class="ttdef"><b>定义</b> <a href="#l00010">BusyBarWidget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_a1b057b07f061382afc853b263cf110a6"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#a1b057b07f061382afc853b263cf110a6">Game.BusyBarWidget.m_lastBoxesStepTime</a></div><div class="ttdeci">double m_lastBoxesStepTime</div><div class="ttdef"><b>定义</b> <a href="#l00014">BusyBarWidget.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_a584e7997fbfc3ab37788a2fafec83fc4"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#a584e7997fbfc3ab37788a2fafec83fc4">Game.BusyBarWidget.MeasureOverride</a></div><div class="ttdeci">override void MeasureOverride(Vector2 parentAvailableSize)</div><div class="ttdef"><b>定义</b> <a href="#l00026">BusyBarWidget.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_a5b6074951f75887196fca0e24ec7aef2"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#a5b6074951f75887196fca0e24ec7aef2">Game.BusyBarWidget.m_barsCount</a></div><div class="ttdeci">const int m_barsCount</div><div class="ttdef"><b>定义</b> <a href="#l00006">BusyBarWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_a8e3d27502fdecfa7fbddfaa37a2644a6"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#a8e3d27502fdecfa7fbddfaa37a2644a6">Game.BusyBarWidget.LitBarColor</a></div><div class="ttdeci">Color LitBarColor</div><div class="ttdef"><b>定义</b> <a href="#l00016">BusyBarWidget.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_aa3049bc7abcd61d740d500ab5366fd4d"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#aa3049bc7abcd61d740d500ab5366fd4d">Game.BusyBarWidget.BusyBarWidget</a></div><div class="ttdeci">BusyBarWidget()</div><div class="ttdef"><b>定义</b> <a href="#l00020">BusyBarWidget.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_aaf5e44a575f1d1705e8d64bffcf1f035"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#aaf5e44a575f1d1705e8d64bffcf1f035">Game.BusyBarWidget.m_boxIndex</a></div><div class="ttdeci">int m_boxIndex</div><div class="ttdef"><b>定义</b> <a href="#l00012">BusyBarWidget.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_aba9fa303adb7452352b5557bf693244e"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#aba9fa303adb7452352b5557bf693244e">Game.BusyBarWidget.Draw</a></div><div class="ttdeci">override void Draw(DrawContext dc)</div><div class="ttdef"><b>定义</b> <a href="#l00031">BusyBarWidget.cs:31</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_ae01aa6279d90f53ddd1dcaa6aeddaba2"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#ae01aa6279d90f53ddd1dcaa6aeddaba2">Game.BusyBarWidget.UnlitBarColor</a></div><div class="ttdeci">Color UnlitBarColor</div><div class="ttdef"><b>定义</b> <a href="#l00018">BusyBarWidget.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_busy_bar_widget_html_afdaaf99e9f5b02da0bf3387cd764031f"><div class="ttname"><a href="class_game_1_1_busy_bar_widget.html#afdaaf99e9f5b02da0bf3387cd764031f">Game.BusyBarWidget.m_barSize</a></div><div class="ttdeci">const float m_barSize</div><div class="ttdef"><b>定义</b> <a href="#l00008">BusyBarWidget.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_1_1_draw_context_html"><div class="ttname"><a href="class_game_1_1_widget_1_1_draw_context.html">Game.Widget.DrawContext</a></div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00011">Widget.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_1_1_draw_context_html_aaf406a8eb9c9394f43e0261ad1bf5b3c"><div class="ttname"><a href="class_game_1_1_widget_1_1_draw_context.html#aaf406a8eb9c9394f43e0261ad1bf5b3c">Game.Widget.DrawContext.PrimitivesRenderer2D</a></div><div class="ttdeci">readonly PrimitivesRenderer2D PrimitivesRenderer2D</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00016">Widget.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a2e6ce445c2f889d95ef1328d72e25dcb"><div class="ttname"><a href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Game.Widget.Widget</a></div><div class="ttdeci">Widget()</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00479">Widget.cs:479</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a37faca8be205fde652377203138b74c1"><div class="ttname"><a href="class_game_1_1_widget.html#a37faca8be205fde652377203138b74c1">Game.Widget.GlobalColorTransform</a></div><div class="ttdeci">Color GlobalColorTransform</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00349">Widget.cs:349</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a4fcf3eb07446501ee363931839ce003a"><div class="ttname"><a href="class_game_1_1_widget.html#a4fcf3eb07446501ee363931839ce003a">Game.Widget.DesiredSize</a></div><div class="ttdeci">Vector2 DesiredSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00449">Widget.cs:449</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ab7453bbe06dbc7188b1d2a6d95e7663e"><div class="ttname"><a href="class_game_1_1_widget.html#ab7453bbe06dbc7188b1d2a6d95e7663e">Game.Widget.IsDrawRequired</a></div><div class="ttdeci">bool IsDrawRequired</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00460">Widget.cs:460</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_abb2bfb50316059fbb331871524c739bd"><div class="ttname"><a href="class_game_1_1_widget.html#abb2bfb50316059fbb331871524c739bd">Game.Widget.IsHitTestVisible</a></div><div class="ttdeci">virtual bool IsHitTestVisible</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00380">Widget.cs:380</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_adbf55b13c5ef4ecd8cc21c4fc38e8e49"><div class="ttname"><a href="class_game_1_1_widget.html#adbf55b13c5ef4ecd8cc21c4fc38e8e49">Game.Widget.GlobalTransform</a></div><div class="ttdeci">Matrix GlobalTransform</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00326">Widget.cs:326</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Engine.Graphics.ShaderParameterType.Vector2</a></div><div class="ttdeci">@ Vector2</div><div class="ttdef"><b>定义</b> <a href="_shader_parameter_type_8cs_source.html#l00004">ShaderParameterType.cs:4</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_busy_bar_widget_8cs.html">BusyBarWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

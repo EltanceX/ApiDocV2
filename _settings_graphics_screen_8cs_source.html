@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Screen/SettingsGraphicsScreen.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_settings_graphics_screen_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SettingsGraphicsScreen.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_settings_graphics_screen_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_settings_graphics_screen.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_settings_graphics_screen.html#a993e73987655fa1195e5e77deb0c2f29">SettingsGraphicsScreen</a> : <a class="code hl_class" href="class_game_1_1_screen.html">Screen</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_settings_graphics_screen.html#a973c817442fb1df4c884c69f77922b8e">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_bevelled_button_widget.html">BevelledButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a973c817442fb1df4c884c69f77922b8e">m_virtualRealityButton</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_settings_graphics_screen.html#a1279570603aaa4a4f693077d4aef348b">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_slider_widget.html">SliderWidget</a> <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a1279570603aaa4a4f693077d4aef348b">m_brightnessSlider</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_settings_graphics_screen.html#a36294cb2090defb2875e2666e6d0a763">   10</a></span>        <a class="code hl_class" href="class_game_1_1_slider_widget.html">SliderWidget</a> <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a36294cb2090defb2875e2666e6d0a763">m_viewAngleSlider</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_settings_graphics_screen.html#a87b9d6bb86a5be954878b44cfd01cd38">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a> <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a87b9d6bb86a5be954878b44cfd01cd38">m_vrPanel</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_settings_graphics_screen.html#a993e73987655fa1195e5e77deb0c2f29">   14</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_settings_graphics_screen.html#a993e73987655fa1195e5e77deb0c2f29">SettingsGraphicsScreen</a>() {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Screens/SettingsGraphicsScreen&quot;</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a973c817442fb1df4c884c69f77922b8e">m_virtualRealityButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_bevelled_button_widget.html">BevelledButtonWidget</a>&gt;(<span class="stringliteral">&quot;VirtualRealityButton&quot;</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a1279570603aaa4a4f693077d4aef348b">m_brightnessSlider</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_slider_widget.html">SliderWidget</a>&gt;(<span class="stringliteral">&quot;BrightnessSlider&quot;</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a36294cb2090defb2875e2666e6d0a763">m_viewAngleSlider</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_slider_widget.html">SliderWidget</a>&gt;(<span class="stringliteral">&quot;ViewAngleSlider&quot;</span>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a87b9d6bb86a5be954878b44cfd01cd38">m_vrPanel</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a>&gt;(<span class="stringliteral">&quot;VrPanel&quot;</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            m_vrPanel.IsVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_settings_graphics_screen.html#a3d733ca94ae2d556d5ce9475eea355ee">   24</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_settings_graphics_screen.html#a3d733ca94ae2d556d5ce9475eea355ee">Update</a>() {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a1279570603aaa4a4f693077d4aef348b">m_brightnessSlider</a>.IsSliding) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <a class="code hl_property" href="class_game_1_1_settings_manager.html#aac682c7cc06c40563190eb4164c5e3cb">SettingsManager.Brightness</a> = <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a1279570603aaa4a4f693077d4aef348b">m_brightnessSlider</a>.Value;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a36294cb2090defb2875e2666e6d0a763">m_viewAngleSlider</a>.IsSliding) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <a class="code hl_property" href="class_game_1_1_settings_manager.html#a1f6dbf3cd58866ed6d5d1315d54b791e">SettingsManager.ViewAngle</a> = <a class="code hl_variable" href="class_game_1_1_settings_graphics_screen.html#a36294cb2090defb2875e2666e6d0a763">m_viewAngleSlider</a>.Value;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            m_virtualRealityButton.IsEnabled = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            m_virtualRealityButton.Text = <a class="code hl_property" href="class_game_1_1_settings_manager.html#a2cc62f79419552f32e3b1ade8725e344">SettingsManager.UseVr</a> ? <span class="stringliteral">&quot;Enabled&quot;</span> : <span class="stringliteral">&quot;Disabled&quot;</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            m_brightnessSlider.Value = <a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_property" href="class_game_1_1_settings_manager.html#aac682c7cc06c40563190eb4164c5e3cb">Brightness</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            m_brightnessSlider.Text = MathF.Round(<a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_property" href="class_game_1_1_settings_manager.html#aac682c7cc06c40563190eb4164c5e3cb">Brightness</a> * 10f).ToString(CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            m_viewAngleSlider.Value = <a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_property" href="class_game_1_1_settings_manager.html#a1f6dbf3cd58866ed6d5d1315d54b791e">ViewAngle</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            m_viewAngleSlider.Text = $<span class="stringliteral">&quot;{MathF.Round(SettingsManager.ViewAngle * 100f)}% ({MathF.Round(SettingsManager.ViewAngle * 80f)}°)&quot;</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordflow">if</span> (Input.Back</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                || Input.Cancel</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                || <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;TopBar.Back&quot;</span>).<a class="code hl_property" href="class_game_1_1_button_widget.html#a4d1f2cd5217dfbf29d7dc6cf30acf789">IsClicked</a>) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_property" href="class_game_1_1_screens_manager.html#a23c145b294d9ea3f3ac0fdcd246e02b5">PreviousScreen</a>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="ttc" id="aclass_game_1_1_bevelled_button_widget_html"><div class="ttname"><a href="class_game_1_1_bevelled_button_widget.html">Game.BevelledButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_bevelled_button_widget_8cs_source.html#l00006">BevelledButtonWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html_a4d1f2cd5217dfbf29d7dc6cf30acf789"><div class="ttname"><a href="class_game_1_1_button_widget.html#a4d1f2cd5217dfbf29d7dc6cf30acf789">Game.ButtonWidget.IsClicked</a></div><div class="ttdeci">bool IsClicked</div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00006">ButtonWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html"><div class="ttname"><a href="class_game_1_1_container_widget.html">Game.ContainerWidget</a></div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00004">ContainerWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screen_html"><div class="ttname"><a href="class_game_1_1_screen.html">Game.Screen</a></div><div class="ttdef"><b>定义</b> <a href="_screen_8cs_source.html#l00002">Screen.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html"><div class="ttname"><a href="class_game_1_1_screens_manager.html">Game.ScreensManager</a></div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00005">ScreensManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a23c145b294d9ea3f3ac0fdcd246e02b5"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a23c145b294d9ea3f3ac0fdcd246e02b5">Game.ScreensManager.PreviousScreen</a></div><div class="ttdeci">static Screen PreviousScreen</div><div class="ttdoc">上一个Screen</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00045">ScreensManager.cs:45</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a90614198a66aec078d9d00cfcbcd49a1"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">Game.ScreensManager.SwitchScreen</a></div><div class="ttdeci">static void SwitchScreen(string name, params object[] parameters)</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00065">ScreensManager.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_graphics_screen_html_a1279570603aaa4a4f693077d4aef348b"><div class="ttname"><a href="class_game_1_1_settings_graphics_screen.html#a1279570603aaa4a4f693077d4aef348b">Game.SettingsGraphicsScreen.m_brightnessSlider</a></div><div class="ttdeci">SliderWidget m_brightnessSlider</div><div class="ttdef"><b>定义</b> <a href="#l00008">SettingsGraphicsScreen.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_graphics_screen_html_a36294cb2090defb2875e2666e6d0a763"><div class="ttname"><a href="class_game_1_1_settings_graphics_screen.html#a36294cb2090defb2875e2666e6d0a763">Game.SettingsGraphicsScreen.m_viewAngleSlider</a></div><div class="ttdeci">SliderWidget m_viewAngleSlider</div><div class="ttdef"><b>定义</b> <a href="#l00010">SettingsGraphicsScreen.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_graphics_screen_html_a3d733ca94ae2d556d5ce9475eea355ee"><div class="ttname"><a href="class_game_1_1_settings_graphics_screen.html#a3d733ca94ae2d556d5ce9475eea355ee">Game.SettingsGraphicsScreen.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00024">SettingsGraphicsScreen.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_graphics_screen_html_a87b9d6bb86a5be954878b44cfd01cd38"><div class="ttname"><a href="class_game_1_1_settings_graphics_screen.html#a87b9d6bb86a5be954878b44cfd01cd38">Game.SettingsGraphicsScreen.m_vrPanel</a></div><div class="ttdeci">ContainerWidget m_vrPanel</div><div class="ttdef"><b>定义</b> <a href="#l00012">SettingsGraphicsScreen.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_graphics_screen_html_a973c817442fb1df4c884c69f77922b8e"><div class="ttname"><a href="class_game_1_1_settings_graphics_screen.html#a973c817442fb1df4c884c69f77922b8e">Game.SettingsGraphicsScreen.m_virtualRealityButton</a></div><div class="ttdeci">BevelledButtonWidget m_virtualRealityButton</div><div class="ttdef"><b>定义</b> <a href="#l00006">SettingsGraphicsScreen.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_graphics_screen_html_a993e73987655fa1195e5e77deb0c2f29"><div class="ttname"><a href="class_game_1_1_settings_graphics_screen.html#a993e73987655fa1195e5e77deb0c2f29">Game.SettingsGraphicsScreen.SettingsGraphicsScreen</a></div><div class="ttdeci">SettingsGraphicsScreen()</div><div class="ttdef"><b>定义</b> <a href="#l00014">SettingsGraphicsScreen.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html"><div class="ttname"><a href="class_game_1_1_settings_manager.html">Game.SettingsManager</a></div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00011">SettingsManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_a1f6dbf3cd58866ed6d5d1315d54b791e"><div class="ttname"><a href="class_game_1_1_settings_manager.html#a1f6dbf3cd58866ed6d5d1315d54b791e">Game.SettingsManager.ViewAngle</a></div><div class="ttdeci">static float ViewAngle</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00063">SettingsManager.cs:63</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_a2cc62f79419552f32e3b1ade8725e344"><div class="ttname"><a href="class_game_1_1_settings_manager.html#a2cc62f79419552f32e3b1ade8725e344">Game.SettingsManager.UseVr</a></div><div class="ttdeci">static bool UseVr</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00049">SettingsManager.cs:49</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_aac682c7cc06c40563190eb4164c5e3cb"><div class="ttname"><a href="class_game_1_1_settings_manager.html#aac682c7cc06c40563190eb4164c5e3cb">Game.SettingsManager.Brightness</a></div><div class="ttdeci">static float Brightness</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00071">SettingsManager.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_1_1_slider_widget_html"><div class="ttname"><a href="class_game_1_1_slider_widget.html">Game.SliderWidget</a></div><div class="ttdef"><b>定义</b> <a href="_slider_widget_8cs_source.html#l00006">SliderWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_819697851f82aaa78e1e98801cc3f64c.html">Screen</a></li><li class="navelem"><a href="_settings_graphics_screen_8cs.html">SettingsGraphicsScreen.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

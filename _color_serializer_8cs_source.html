@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Serialization/ColorSerializer.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_color_serializer_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ColorSerializer.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_color_serializer_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_serialization.html">Engine.Serialization</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_color_serializer.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_engine_1_1_serialization_1_1_color_serializer.html">ColorSerializer</a> : ISerializer&lt;Color&gt; {</div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_color_serializer.html#aece13ea62f49eb0f457237cbacbb71fd">    3</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_color_serializer.html#aece13ea62f49eb0f457237cbacbb71fd">Serialize</a>(<a class="code hl_class" href="class_engine_1_1_serialization_1_1_input_archive.html">InputArchive</a> archive, ref <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> value) {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>            <span class="keywordtype">byte</span> value2 = 0;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>            <span class="keywordtype">byte</span> value3 = 0;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>            <span class="keywordtype">byte</span> value4 = 0;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>            <span class="keywordtype">byte</span> value5 = 0;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            archive.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a867b6aee690c14fc4279b3336a369b66">Serialize</a>(<span class="stringliteral">&quot;R&quot;</span>, ref value2);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            archive.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a867b6aee690c14fc4279b3336a369b66">Serialize</a>(<span class="stringliteral">&quot;G&quot;</span>, ref value3);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            archive.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a867b6aee690c14fc4279b3336a369b66">Serialize</a>(<span class="stringliteral">&quot;B&quot;</span>, ref value4);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            archive.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_input_archive.html#a867b6aee690c14fc4279b3336a369b66">Serialize</a>(<span class="stringliteral">&quot;A&quot;</span>, ref value5);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            value = <span class="keyword">new</span> <a class="code hl_typedef" href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a>(value2, value3, value4, value5);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        }</div>
+</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_engine_1_1_serialization_1_1_color_serializer.html#abe4505e82dfca46ebbf9a6fe7ad93103">   15</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_serialization_1_1_color_serializer.html#abe4505e82dfca46ebbf9a6fe7ad93103">Serialize</a>(<a class="code hl_class" href="class_engine_1_1_serialization_1_1_output_archive.html">OutputArchive</a> archive, <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a> value) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            archive.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_output_archive.html#a102d5e8cc85c39927b3f57cfdfc35bad">Serialize</a>(<span class="stringliteral">&quot;R&quot;</span>, value.<a class="code hl_property" href="struct_engine_1_1_color.html#a7f35c8e57b43e46407922c25fe9321b6">R</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            archive.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_output_archive.html#a102d5e8cc85c39927b3f57cfdfc35bad">Serialize</a>(<span class="stringliteral">&quot;G&quot;</span>, value.<a class="code hl_property" href="struct_engine_1_1_color.html#a58de7dd8be08bc95a11d2003e7421bd6">G</a>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            archive.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_output_archive.html#a102d5e8cc85c39927b3f57cfdfc35bad">Serialize</a>(<span class="stringliteral">&quot;B&quot;</span>, value.<a class="code hl_property" href="struct_engine_1_1_color.html#ad363374d84b340de25a8ad3f7bf58b8c">B</a>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            archive.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_output_archive.html#a102d5e8cc85c39927b3f57cfdfc35bad">Serialize</a>(<span class="stringliteral">&quot;A&quot;</span>, value.<a class="code hl_property" href="struct_engine_1_1_color.html#adfce5c3126a3eab8dbc93e795525a944">A</a>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="ttc" id="a_community_content_screen_8cs_html_ab9f09ac3214ff6f75ad9e8c823688d4a"><div class="ttname"><a href="_community_content_screen_8cs.html#ab9f09ac3214ff6f75ad9e8c823688d4a">Color</a></div><div class="ttdeci">Engine.Color Color</div><div class="ttdef"><b>定义</b> <a href="_community_content_screen_8cs_source.html#l00009">CommunityContentScreen.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_color_serializer_html"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_color_serializer.html">Engine.Serialization.ColorSerializer</a></div><div class="ttdef"><b>定义</b> <a href="#l00002">ColorSerializer.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_color_serializer_html_abe4505e82dfca46ebbf9a6fe7ad93103"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_color_serializer.html#abe4505e82dfca46ebbf9a6fe7ad93103">Engine.Serialization.ColorSerializer.Serialize</a></div><div class="ttdeci">void Serialize(OutputArchive archive, Color value)</div><div class="ttdef"><b>定义</b> <a href="#l00015">ColorSerializer.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_color_serializer_html_aece13ea62f49eb0f457237cbacbb71fd"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_color_serializer.html#aece13ea62f49eb0f457237cbacbb71fd">Engine.Serialization.ColorSerializer.Serialize</a></div><div class="ttdeci">void Serialize(InputArchive archive, ref Color value)</div><div class="ttdef"><b>定义</b> <a href="#l00003">ColorSerializer.cs:3</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_input_archive_html"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_input_archive.html">Engine.Serialization.InputArchive</a></div><div class="ttdef"><b>定义</b> <a href="_input_archive_8cs_source.html#l00002">InputArchive.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_input_archive_html_a867b6aee690c14fc4279b3336a369b66"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_input_archive.html#a867b6aee690c14fc4279b3336a369b66">Engine.Serialization.InputArchive.Serialize</a></div><div class="ttdeci">void Serialize(string name, ref sbyte value)</div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_output_archive_html"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_output_archive.html">Engine.Serialization.OutputArchive</a></div><div class="ttdef"><b>定义</b> <a href="_output_archive_8cs_source.html#l00002">OutputArchive.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_output_archive_html_a102d5e8cc85c39927b3f57cfdfc35bad"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_output_archive.html#a102d5e8cc85c39927b3f57cfdfc35bad">Engine.Serialization.OutputArchive.Serialize</a></div><div class="ttdeci">void Serialize(string name, sbyte value)</div></div>
+<div class="ttc" id="anamespace_engine_1_1_serialization_html"><div class="ttname"><a href="namespace_engine_1_1_serialization.html">Engine.Serialization</a></div><div class="ttdef"><b>定义</b> <a href="_archive_8cs_source.html#l00004">Archive.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_a58de7dd8be08bc95a11d2003e7421bd6"><div class="ttname"><a href="struct_engine_1_1_color.html#a58de7dd8be08bc95a11d2003e7421bd6">Engine.Color.G</a></div><div class="ttdeci">byte G</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00082">Color.cs:82</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_a7f35c8e57b43e46407922c25fe9321b6"><div class="ttname"><a href="struct_engine_1_1_color.html#a7f35c8e57b43e46407922c25fe9321b6">Engine.Color.R</a></div><div class="ttdeci">byte R</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00077">Color.cs:77</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_ad363374d84b340de25a8ad3f7bf58b8c"><div class="ttname"><a href="struct_engine_1_1_color.html#ad363374d84b340de25a8ad3f7bf58b8c">Engine.Color.B</a></div><div class="ttdeci">byte B</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00087">Color.cs:87</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_adfce5c3126a3eab8dbc93e795525a944"><div class="ttname"><a href="struct_engine_1_1_color.html#adfce5c3126a3eab8dbc93e795525a944">Engine.Color.A</a></div><div class="ttdeci">byte A</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00092">Color.cs:92</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_9e0ae2170a7078bc790002cf3ddea284.html">Engine.Serialization</a></li><li class="navelem"><a href="_color_serializer_8cs.html">ColorSerializer.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

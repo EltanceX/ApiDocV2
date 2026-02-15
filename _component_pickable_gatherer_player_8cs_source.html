@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Component/ComponentPickableGathererPlayer.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_component_pickable_gatherer_player_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ComponentPickableGathererPlayer.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_pickable_gatherer_player_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_component_pickable_gatherer_player.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_component_pickable_gatherer_player.html">ComponentPickableGathererPlayer</a> : <a class="code hl_class" href="class_game_1_1_component_pickable_gatherer.html">ComponentPickableGatherer</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_component_pickable_gatherer_player.html#a07242a7390cd7f04addde05e559d5191">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_player.html">ComponentPlayer</a> <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#a07242a7390cd7f04addde05e559d5191">m_componentPlayer</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_component_pickable_gatherer_player.html#ab1c74b4dc5a8b0e3a9ef11f4b8a32f43">    8</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a> <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#ab1c74b4dc5a8b0e3a9ef11f4b8a32f43">m_inventory</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_component_pickable_gatherer_player.html#ab1baa84058b1d2e50ca5a830b134b058">   10</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#ab1baa84058b1d2e50ca5a830b134b058">m_experienceBlockIndex</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_component_pickable_gatherer_player.html#a5ffeea2554de50dd35f7a5e670906efd">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_health.html">ComponentHealth</a> <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#a5ffeea2554de50dd35f7a5e670906efd">m_componentHealth</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_component_pickable_gatherer_player.html#a338762e8cd6563e65ba7e8848d278c4a">   14</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_component_pickable_gatherer_player.html#a338762e8cd6563e65ba7e8848d278c4a">CanGatherPickable</a>(<a class="code hl_class" href="class_game_1_1_pickable.html">Pickable</a> pickable) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#a5ffeea2554de50dd35f7a5e670906efd">m_componentHealth</a>.Health &lt;= 0) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">if</span> (pickable.<a class="code hl_variable" href="class_game_1_1_pickable.html#aa5f89e7057aeddbbde8e48d3779bfce2">FlyToPosition</a>.HasValue) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">if</span> (pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#aa2a01e759aac1e83a0b93a0cea893bf6">ToRemove</a>) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordtype">double</span> pickableTimeExisted = m_subsystemGameInfo.TotalElapsedGameTime - pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#a675c3cff0f32da724dffc3c9e31f3985">CreationTime</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">if</span> (pickableTimeExisted &lt; pickable.<a class="code hl_property" href="class_game_1_1_pickable.html#acc95342509d7f77abf1c2b483315ccb1">TimeWaitToAutoPick</a>) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordflow">if</span> (pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Value</a> == <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#ab1baa84058b1d2e50ca5a830b134b058">m_experienceBlockIndex</a>) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="class_game_1_1_component_inventory_base.html">ComponentInventoryBase</a>.<a class="code hl_function" href="class_game_1_1_component_inventory_base.html#a98741c480c9e70acbb1cb2e375921e72">FindAcquireSlotForItem</a>(<a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#ab1c74b4dc5a8b0e3a9ef11f4b8a32f43">m_inventory</a>, pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Value</a>) &gt;= 0;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_component_pickable_gatherer_player.html#adbf6e7f6d848f30fb80618c9ce4e384b">   34</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_pickable_gatherer_player.html#adbf6e7f6d848f30fb80618c9ce4e384b">GatherPickable</a>(<a class="code hl_class" href="class_game_1_1_pickable.html">Pickable</a> pickable) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_class" href="class_game_1_1_subsystem_block_behavior.html">SubsystemBlockBehavior</a>[] blockBehaviors = <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer.html#aa884732302a42124c579d469ea0bb0de">m_subsystemBlockBehaviors</a>.GetBlockBehaviors(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">ExtractContents</a>(pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Value</a>));</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; blockBehaviors.Length; i++) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">if</span> (pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#aa2a01e759aac1e83a0b93a0cea893bf6">ToRemove</a>) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                blockBehaviors[i].<a class="code hl_function" href="class_game_1_1_subsystem_block_behavior.html#ac825726f23a80d7dd6266c59a69470ee">OnPickableGathered</a>(pickable, <span class="keyword">this</span>, pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#a7e38e757cf4cea001d1a6e00dfe98f18">Position</a> - <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer.html#a47665a77778726af539f692ab89aed25">Position</a>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">if</span> (!pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#aa2a01e759aac1e83a0b93a0cea893bf6">ToRemove</a>) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                pickable.Count = <a class="code hl_class" href="class_game_1_1_component_inventory_base.html">ComponentInventoryBase</a>.<a class="code hl_function" href="class_game_1_1_component_inventory_base.html#abb5a2c8a3b341a8c0defb9bd03c6be87">AcquireItems</a>(<a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#ab1c74b4dc5a8b0e3a9ef11f4b8a32f43">m_inventory</a>, pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Value</a>, pickable.<a class="code hl_variable" href="class_game_1_1_pickable.html#ae6710d6f36f294a1b3390b225b8eebe0">Count</a>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordflow">if</span> (pickable.<a class="code hl_variable" href="class_game_1_1_pickable.html#ae6710d6f36f294a1b3390b225b8eebe0">Count</a> == 0) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    pickable.ToRemove = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer.html#a2f98c48dd03d122e7015f3cf5ded6e77">m_subsystemAudio</a>.PlaySound(<span class="stringliteral">&quot;Audio/PickableCollected&quot;</span>, 0.7f, -0.4f, <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer.html#a47665a77778726af539f692ab89aed25">Position</a>, 2f, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_game_1_1_component_pickable_gatherer_player.html#ac629a50c8671a759a04e669f940e4768">   51</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_pickable_gatherer_player.html#ac629a50c8671a759a04e669f940e4768">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#ab1c74b4dc5a8b0e3a9ef11f4b8a32f43">m_inventory</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#ab1c74b4dc5a8b0e3a9ef11f4b8a32f43">m_inventory</a> = <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#a07242a7390cd7f04addde05e559d5191">m_componentPlayer</a>.ComponentMiner.Inventory;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            base.Update(dt);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_game_1_1_component_pickable_gatherer_player.html#a2045303963f68d3611d3be952de30fb3">   58</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_pickable_gatherer_player.html#a2045303963f68d3611d3be952de30fb3">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            base.Load(valuesDictionary, idToEntityMap);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#a07242a7390cd7f04addde05e559d5191">m_componentPlayer</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_player.html">ComponentPlayer</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#ab1baa84058b1d2e50ca5a830b134b058">m_experienceBlockIndex</a> = <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#a90ce10e430495f116a0ac63639539c2a">GetBlockIndex</a>&lt;<a class="code hl_class" href="class_game_1_1_experience_block.html">ExperienceBlock</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_variable" href="class_game_1_1_component_pickable_gatherer_player.html#a5ffeea2554de50dd35f7a5e670906efd">m_componentHealth</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_health.html">ComponentHealth</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_a90ce10e430495f116a0ac63639539c2a"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#a90ce10e430495f116a0ac63639539c2a">Game.BlocksManager.GetBlockIndex</a></div><div class="ttdeci">static int GetBlockIndex(string BlockName, bool throwIfNotFound=false)</div><div class="ttdoc">通过方块名称来获取方块的Index</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00165">BlocksManager.cs:165</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_health_html"><div class="ttname"><a href="class_game_1_1_component_health.html">Game.ComponentHealth</a></div><div class="ttdef"><b>定义</b> <a href="_component_health_8cs_source.html#l00006">ComponentHealth.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_inventory_base_html"><div class="ttname"><a href="class_game_1_1_component_inventory_base.html">Game.ComponentInventoryBase</a></div><div class="ttdef"><b>定义</b> <a href="_component_inventory_base_8cs_source.html#l00007">ComponentInventoryBase.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_inventory_base_html_a98741c480c9e70acbb1cb2e375921e72"><div class="ttname"><a href="class_game_1_1_component_inventory_base.html#a98741c480c9e70acbb1cb2e375921e72">Game.ComponentInventoryBase.FindAcquireSlotForItem</a></div><div class="ttdeci">static int FindAcquireSlotForItem(IInventory inventory, int value)</div><div class="ttdef"><b>定义</b> <a href="_component_inventory_base_8cs_source.html#l00032">ComponentInventoryBase.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_inventory_base_html_abb5a2c8a3b341a8c0defb9bd03c6be87"><div class="ttname"><a href="class_game_1_1_component_inventory_base.html#abb5a2c8a3b341a8c0defb9bd03c6be87">Game.ComponentInventoryBase.AcquireItems</a></div><div class="ttdeci">static int AcquireItems(IInventory inventory, int value, int count)</div><div class="ttdef"><b>定义</b> <a href="_component_inventory_base_8cs_source.html#l00049">ComponentInventoryBase.cs:49</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_html"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer.html">Game.ComponentPickableGatherer</a></div><div class="ttdef"><b>定义</b> <a href="_component_pickable_gatherer_8cs_source.html#l00006">ComponentPickableGatherer.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_html_a2f98c48dd03d122e7015f3cf5ded6e77"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer.html#a2f98c48dd03d122e7015f3cf5ded6e77">Game.ComponentPickableGatherer.m_subsystemAudio</a></div><div class="ttdeci">SubsystemAudio m_subsystemAudio</div><div class="ttdef"><b>定义</b> <a href="_component_pickable_gatherer_8cs_source.html#l00016">ComponentPickableGatherer.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_html_a47665a77778726af539f692ab89aed25"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer.html#a47665a77778726af539f692ab89aed25">Game.ComponentPickableGatherer.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="_component_pickable_gatherer_8cs_source.html#l00007">ComponentPickableGatherer.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_html_aa884732302a42124c579d469ea0bb0de"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer.html#aa884732302a42124c579d469ea0bb0de">Game.ComponentPickableGatherer.m_subsystemBlockBehaviors</a></div><div class="ttdeci">SubsystemBlockBehaviors m_subsystemBlockBehaviors</div><div class="ttdef"><b>定义</b> <a href="_component_pickable_gatherer_8cs_source.html#l00014">ComponentPickableGatherer.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_player_html"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer_player.html">Game.ComponentPickableGathererPlayer</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">ComponentPickableGathererPlayer.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_player_html_a07242a7390cd7f04addde05e559d5191"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer_player.html#a07242a7390cd7f04addde05e559d5191">Game.ComponentPickableGathererPlayer.m_componentPlayer</a></div><div class="ttdeci">ComponentPlayer m_componentPlayer</div><div class="ttdef"><b>定义</b> <a href="#l00006">ComponentPickableGathererPlayer.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_player_html_a2045303963f68d3611d3be952de30fb3"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer_player.html#a2045303963f68d3611d3be952de30fb3">Game.ComponentPickableGathererPlayer.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary, IdToEntityMap idToEntityMap)</div><div class="ttdef"><b>定义</b> <a href="#l00058">ComponentPickableGathererPlayer.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_player_html_a338762e8cd6563e65ba7e8848d278c4a"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer_player.html#a338762e8cd6563e65ba7e8848d278c4a">Game.ComponentPickableGathererPlayer.CanGatherPickable</a></div><div class="ttdeci">override bool CanGatherPickable(Pickable pickable)</div><div class="ttdef"><b>定义</b> <a href="#l00014">ComponentPickableGathererPlayer.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_player_html_a5ffeea2554de50dd35f7a5e670906efd"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer_player.html#a5ffeea2554de50dd35f7a5e670906efd">Game.ComponentPickableGathererPlayer.m_componentHealth</a></div><div class="ttdeci">ComponentHealth m_componentHealth</div><div class="ttdef"><b>定义</b> <a href="#l00012">ComponentPickableGathererPlayer.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_player_html_ab1baa84058b1d2e50ca5a830b134b058"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer_player.html#ab1baa84058b1d2e50ca5a830b134b058">Game.ComponentPickableGathererPlayer.m_experienceBlockIndex</a></div><div class="ttdeci">int m_experienceBlockIndex</div><div class="ttdef"><b>定义</b> <a href="#l00010">ComponentPickableGathererPlayer.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_player_html_ab1c74b4dc5a8b0e3a9ef11f4b8a32f43"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer_player.html#ab1c74b4dc5a8b0e3a9ef11f4b8a32f43">Game.ComponentPickableGathererPlayer.m_inventory</a></div><div class="ttdeci">IInventory m_inventory</div><div class="ttdef"><b>定义</b> <a href="#l00008">ComponentPickableGathererPlayer.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_player_html_ac629a50c8671a759a04e669f940e4768"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer_player.html#ac629a50c8671a759a04e669f940e4768">Game.ComponentPickableGathererPlayer.Update</a></div><div class="ttdeci">override void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00051">ComponentPickableGathererPlayer.cs:51</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_pickable_gatherer_player_html_adbf6e7f6d848f30fb80618c9ce4e384b"><div class="ttname"><a href="class_game_1_1_component_pickable_gatherer_player.html#adbf6e7f6d848f30fb80618c9ce4e384b">Game.ComponentPickableGathererPlayer.GatherPickable</a></div><div class="ttdeci">override void GatherPickable(Pickable pickable)</div><div class="ttdef"><b>定义</b> <a href="#l00034">ComponentPickableGathererPlayer.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_player_html"><div class="ttname"><a href="class_game_1_1_component_player.html">Game.ComponentPlayer</a></div><div class="ttdef"><b>定义</b> <a href="_component_player_8cs_source.html#l00006">ComponentPlayer.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_experience_block_html"><div class="ttname"><a href="class_game_1_1_experience_block.html">Game.ExperienceBlock</a></div><div class="ttdef"><b>定义</b> <a href="_experience_block_8cs_source.html#l00005">ExperienceBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_pickable_html"><div class="ttname"><a href="class_game_1_1_pickable.html">Game.Pickable</a></div><div class="ttdef"><b>定义</b> <a href="_pickable_8cs_source.html#l00007">Pickable.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_pickable_html_aa5f89e7057aeddbbde8e48d3779bfce2"><div class="ttname"><a href="class_game_1_1_pickable.html#aa5f89e7057aeddbbde8e48d3779bfce2">Game.Pickable.FlyToPosition</a></div><div class="ttdeci">Vector3? FlyToPosition</div><div class="ttdef"><b>定义</b> <a href="_pickable_8cs_source.html#l00010">Pickable.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_pickable_html_acc95342509d7f77abf1c2b483315ccb1"><div class="ttname"><a href="class_game_1_1_pickable.html#acc95342509d7f77abf1c2b483315ccb1">Game.Pickable.TimeWaitToAutoPick</a></div><div class="ttdeci">virtual double TimeWaitToAutoPick</div><div class="ttdef"><b>定义</b> <a href="_pickable_8cs_source.html#l00023">Pickable.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_pickable_html_ae6710d6f36f294a1b3390b225b8eebe0"><div class="ttname"><a href="class_game_1_1_pickable.html#ae6710d6f36f294a1b3390b225b8eebe0">Game.Pickable.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>定义</b> <a href="_pickable_8cs_source.html#l00008">Pickable.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html">Game.SubsystemBlockBehavior</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00006">SubsystemBlockBehavior.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_block_behavior_html_ac825726f23a80d7dd6266c59a69470ee"><div class="ttname"><a href="class_game_1_1_subsystem_block_behavior.html#ac825726f23a80d7dd6266c59a69470ee">Game.SubsystemBlockBehavior.OnPickableGathered</a></div><div class="ttdeci">virtual void OnPickableGathered(Pickable pickable, ComponentPickableGatherer target, Vector3 distanceToTarget)</div><div class="ttdef"><b>定义</b> <a href="_subsystem_block_behavior_8cs_source.html#l00076">SubsystemBlockBehavior.cs:76</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a221de37baa4a0f91e934920030005677"><div class="ttname"><a href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">Game.Terrain.ExtractContents</a></div><div class="ttdeci">static int ExtractContents(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00303">Terrain.cs:303</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html_a675c3cff0f32da724dffc3c9e31f3985"><div class="ttname"><a href="class_game_1_1_world_item.html#a675c3cff0f32da724dffc3c9e31f3985">Game.WorldItem.CreationTime</a></div><div class="ttdeci">double CreationTime</div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00012">WorldItem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html_a7e38e757cf4cea001d1a6e00dfe98f18"><div class="ttname"><a href="class_game_1_1_world_item.html#a7e38e757cf4cea001d1a6e00dfe98f18">Game.WorldItem.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00008">WorldItem.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html_aa2a01e759aac1e83a0b93a0cea893bf6"><div class="ttname"><a href="class_game_1_1_world_item.html#aa2a01e759aac1e83a0b93a0cea893bf6">Game.WorldItem.ToRemove</a></div><div class="ttdeci">bool ToRemove</div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00016">WorldItem.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html_af0ede2c07cebb2fac063328e8aaa9694"><div class="ttname"><a href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Game.WorldItem.Value</a></div><div class="ttdeci">int Value</div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00006">WorldItem.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a4b812f6825600e5419612a580d3094ff"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">GameEntitySystem.Component.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00012">Component.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html">GameEntitySystem.IdToEntityMap</a></div><div class="ttdef"><b>定义</b> <a href="_id_to_entity_map_8cs_source.html#l00005">IdToEntityMap.cs:5</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html"><div class="ttname"><a href="interface_game_1_1_i_inventory.html">Game.IInventory</a></div><div class="ttdef"><b>定义</b> <a href="_i_inventory_8cs_source.html#l00005">IInventory.cs:5</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_0ae50620953341a2d59f4b8faa145d4c.html">Component</a></li><li class="navelem"><a href="_component_pickable_gatherer_player_8cs.html">ComponentPickableGathererPlayer.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

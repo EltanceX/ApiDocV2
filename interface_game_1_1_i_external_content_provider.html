@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Game.IExternalContentProvider</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('interface_game_1_1_i_external_content_provider.html','','interface_game_1_1_i_external_content_provider-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game.IExternalContentProvider</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Game.IExternalContentProvider 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_game_1_1_i_external_content_provider__inherit__graph.png" border="0" usemap="#a_game_8_i_external_content_provider_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_game_8_i_external_content_provider_inherit__map" id="a_game_8_i_external_content_provider_inherit__map">
+<area shape="rect" title=" " alt="" coords="144,80,350,107"/>
+<area shape="rect" href="class_game_1_1_disk_external_content_provider.html" title=" " alt="" coords="409,5,590,48"/>
+<area shape="poly" title=" " alt="" coords="315,73,418,48,413,49,316,78"/>
+<area shape="rect" href="class_game_1_1_dropbox_external_content_provider.html" title=" " alt="" coords="398,72,601,115"/>
+<area shape="poly" title=" " alt="" coords="365,91,400,93,395,94,366,96"/>
+<area shape="rect" href="class_game_1_1_schub_external_content_provider.html" title=" " alt="" coords="404,139,595,181"/>
+<area shape="poly" title=" " alt="" coords="316,109,419,138,413,138,315,114"/>
+<area shape="rect" title=" " alt="" coords="5,80,96,107"/>
+<area shape="poly" title=" " alt="" coords="111,91,146,92,141,94,112,96"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Game.IExternalContentProvider 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_game_1_1_i_external_content_provider__coll__graph.png" border="0" usemap="#a_game_8_i_external_content_provider_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_game_8_i_external_content_provider_coll__map" id="a_game_8_i_external_content_provider_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,212,107"/>
+<area shape="rect" title=" " alt="" coords="63,5,154,32"/>
+<area shape="poly" title=" " alt="" coords="110,46,111,81,106,79,107,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae626576b075e6db58ed37d88da5039b5" id="r_ae626576b075e6db58ed37d88da5039b5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae626576b075e6db58ed37d88da5039b5">Login</a> (<a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress, Action success, Action&lt; Exception &gt; failure)</td></tr>
+<tr class="memitem:aed347204c901f22ad0244d1dcaf9fe23" id="r_aed347204c901f22ad0244d1dcaf9fe23"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aed347204c901f22ad0244d1dcaf9fe23">Logout</a> ()</td></tr>
+<tr class="memitem:a64d4bbe95c072739b02057ce81add3fd" id="r_a64d4bbe95c072739b02057ce81add3fd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a64d4bbe95c072739b02057ce81add3fd">List</a> (string path, <a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress, Action&lt; <a class="el" href="class_game_1_1_external_content_entry.html">ExternalContentEntry</a> &gt; success, Action&lt; Exception &gt; failure)</td></tr>
+<tr class="memitem:a00b19fbf71eb680868ed7ac0b324b338" id="r_a00b19fbf71eb680868ed7ac0b324b338"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a00b19fbf71eb680868ed7ac0b324b338">Download</a> (string path, <a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress, Action&lt; Stream &gt; success, Action&lt; Exception &gt; failure)</td></tr>
+<tr class="memitem:a4121bb89f3f5d0da32f4bfab46f59f69" id="r_a4121bb89f3f5d0da32f4bfab46f59f69"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4121bb89f3f5d0da32f4bfab46f59f69">Upload</a> (string path, Stream stream, <a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress, Action&lt; string &gt; success, Action&lt; Exception &gt; failure)</td></tr>
+<tr class="memitem:a9b8cf25a3cde9078b057308f66574579" id="r_a9b8cf25a3cde9078b057308f66574579"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b8cf25a3cde9078b057308f66574579">Link</a> (string path, <a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a> progress, Action&lt; string &gt; success, Action&lt; Exception &gt; failure)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ad7707adddba8490a9c11f09d33fc32fa" id="r_ad7707adddba8490a9c11f09d33fc32fa"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#ad7707adddba8490a9c11f09d33fc32fa">DisplayName</a><code> [get]</code></td></tr>
+<tr class="memitem:a2dea52ff3b7cf8feb9146f116c719653" id="r_a2dea52ff3b7cf8feb9146f116c719653"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2dea52ff3b7cf8feb9146f116c719653">SupportsLinks</a><code> [get]</code></td></tr>
+<tr class="memitem:a7d57420e2b06c682d518439b206cceca" id="r_a7d57420e2b06c682d518439b206cceca"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7d57420e2b06c682d518439b206cceca">SupportsListing</a><code> [get]</code></td></tr>
+<tr class="memitem:ab2da7beca2dba023fe4699cb851682a1" id="r_ab2da7beca2dba023fe4699cb851682a1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab2da7beca2dba023fe4699cb851682a1">RequiresLogin</a><code> [get]</code></td></tr>
+<tr class="memitem:a7ad6bbecbd9bfedeb43191958c65f535" id="r_a7ad6bbecbd9bfedeb43191958c65f535"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7ad6bbecbd9bfedeb43191958c65f535">IsLoggedIn</a><code> [get]</code></td></tr>
+<tr class="memitem:a72199b3450d7ee98cbd71e1de9b85527" id="r_a72199b3450d7ee98cbd71e1de9b85527"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a72199b3450d7ee98cbd71e1de9b85527">Description</a><code> [get]</code></td></tr>
+<tr class="memitem:ac785111c20e7cdf084039c5a19e1425f" id="r_ac785111c20e7cdf084039c5a19e1425f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac785111c20e7cdf084039c5a19e1425f">IsLocalProvider</a><code> [get]</code></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_i_external_content_provider_8cs_source.html">IExternalContentProvider.cs</a> 第 <a class="el" href="_i_external_content_provider_8cs_source.html#l00002">2</a> 行定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a00b19fbf71eb680868ed7ac0b324b338" name="a00b19fbf71eb680868ed7ac0b324b338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b19fbf71eb680868ed7ac0b324b338">&#9670;&#160;</a></span>Download()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.IExternalContentProvider.Download </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a></td>          <td class="paramname"><span class="paramname"><em>progress</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; Stream &gt;</td>          <td class="paramname"><span class="paramname"><em>success</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; Exception &gt;</td>          <td class="paramname"><span class="paramname"><em>failure</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#ac0f94f97db958e84fdf74bf662440142">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#ac3c45ddb616835d8ff7a9e149988eaec">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#abc508480207de489cefdfc4a2318d9bb">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a9b8cf25a3cde9078b057308f66574579" name="a9b8cf25a3cde9078b057308f66574579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8cf25a3cde9078b057308f66574579">&#9670;&#160;</a></span>Link()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.IExternalContentProvider.Link </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a></td>          <td class="paramname"><span class="paramname"><em>progress</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; string &gt;</td>          <td class="paramname"><span class="paramname"><em>success</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; Exception &gt;</td>          <td class="paramname"><span class="paramname"><em>failure</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#a464f6914a7d951f0b3abe4852d15834f">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#a493cb41d20e617aeed0286e1b1e64d08">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#a54323e93fbbe4357c44913e1eb471ef2">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a64d4bbe95c072739b02057ce81add3fd" name="a64d4bbe95c072739b02057ce81add3fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d4bbe95c072739b02057ce81add3fd">&#9670;&#160;</a></span>List()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.IExternalContentProvider.List </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a></td>          <td class="paramname"><span class="paramname"><em>progress</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; <a class="el" href="class_game_1_1_external_content_entry.html">ExternalContentEntry</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>success</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; Exception &gt;</td>          <td class="paramname"><span class="paramname"><em>failure</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#a5b8ef235103af540fb1eb84b090193c4">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#ac35a9feea332fe225d9d386c497453d6">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#a9facdfef1049b71a49908ec839846eb7">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ae626576b075e6db58ed37d88da5039b5" name="ae626576b075e6db58ed37d88da5039b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae626576b075e6db58ed37d88da5039b5">&#9670;&#160;</a></span>Login()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.IExternalContentProvider.Login </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a></td>          <td class="paramname"><span class="paramname"><em>progress</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action</td>          <td class="paramname"><span class="paramname"><em>success</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; Exception &gt;</td>          <td class="paramname"><span class="paramname"><em>failure</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#a0b31ac6e2d6c850793b8438e051b4909">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#a9dfa18c0d1ce73b128c94e999e96ad96">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#ac7e1912182dfa8c1ccf46c12e9a90abf">Game.SchubExternalContentProvider</a> 内被实现.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_game_1_1_i_external_content_provider_ae626576b075e6db58ed37d88da5039b5_icgraph.png" border="0" usemap="#ainterface_game_1_1_i_external_content_provider_ae626576b075e6db58ed37d88da5039b5_icgraph" loading="lazy" alt=""/></div>
+<map name="ainterface_game_1_1_i_external_content_provider_ae626576b075e6db58ed37d88da5039b5_icgraph" id="ainterface_game_1_1_i_external_content_provider_ae626576b075e6db58ed37d88da5039b5_icgraph">
+<area shape="rect" title=" " alt="" coords="795,89,1006,132"/>
+<area shape="rect" href="class_game_1_1_external_content_manager.html#a94f34841949bc0a96fd637cf06fafe49" title=" " alt="" coords="539,89,747,132"/>
+<area shape="poly" title=" " alt="" coords="777,111,748,113,748,108,782,111"/>
+<area shape="rect" href="class_game_1_1_external_content_manager.html#a237bf7e47e1bb432d6e1b6ae49e250f1" title=" " alt="" coords="278,23,486,65"/>
+<area shape="poly" title=" " alt="" coords="540,85,468,69,468,63,545,85"/>
+<area shape="rect" href="class_game_1_1_community_content_screen.html#af78d01522b7542267a9ac88bab8b32c1" title=" " alt="" coords="273,89,491,132"/>
+<area shape="poly" title=" " alt="" coords="521,111,492,113,491,108,526,110"/>
+<area shape="rect" href="class_game_1_1_external_content_screen.html#a07f21689bfcc953610e5e7bfc715a35c" title=" " alt="" coords="282,156,482,199"/>
+<area shape="poly" title=" " alt="" coords="545,136,469,158,468,153,540,137"/>
+<area shape="rect" href="class_game_1_1_modify_world_screen.html#a197cc749c84ceb9c4053b47cf8dac5d9" title=" " alt="" coords="5,5,225,32"/>
+<area shape="poly" title=" " alt="" coords="260,34,226,32,225,26,265,32"/>
+<area shape="rect" href="class_manage_content_screen.html#aa4005a31a4dd67487a0eb94525c973d0" title=" " alt="" coords="15,56,215,83"/>
+<area shape="poly" title=" " alt="" coords="260,56,216,62,215,57,265,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed347204c901f22ad0244d1dcaf9fe23" name="aed347204c901f22ad0244d1dcaf9fe23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed347204c901f22ad0244d1dcaf9fe23">&#9670;&#160;</a></span>Logout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.IExternalContentProvider.Logout </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#af79354bea4d537e2324bcd024ed3e24a">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#a7fd7b3d976bc074393c2a77c904574b8">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#ab12ca4384fa8d0f62f9cc6dd4d803e70">Game.SchubExternalContentProvider</a> 内被实现.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_game_1_1_i_external_content_provider_aed347204c901f22ad0244d1dcaf9fe23_icgraph.png" border="0" usemap="#ainterface_game_1_1_i_external_content_provider_aed347204c901f22ad0244d1dcaf9fe23_icgraph" loading="lazy" alt=""/></div>
+<map name="ainterface_game_1_1_i_external_content_provider_aed347204c901f22ad0244d1dcaf9fe23_icgraph" id="ainterface_game_1_1_i_external_content_provider_aed347204c901f22ad0244d1dcaf9fe23_icgraph">
+<area shape="rect" title=" " alt="" coords="812,39,1023,81"/>
+<area shape="rect" href="class_game_1_1_community_server_manager.html#a61a03ec844807ae5edccf7408beace35" title=" " alt="" coords="545,39,764,81"/>
+<area shape="poly" title=" " alt="" coords="794,60,765,63,765,57,799,60"/>
+<area shape="rect" href="class_game_1_1_select_community_server_dialog.html#a8a98c8802e906db44da92a7fe05d85a4" title=" " alt="" coords="295,39,497,81"/>
+<area shape="poly" title=" " alt="" coords="527,60,498,63,497,57,532,60"/>
+<area shape="rect" href="class_game_1_1_select_community_server_dialog.html#a9a9c86a9b3681bdcd59aec1c25979b32" title=" " alt="" coords="5,5,247,48"/>
+<area shape="poly" title=" " alt="" coords="277,46,247,44,247,39,282,45"/>
+<area shape="rect" href="class_game_1_1_select_community_server_dialog.html#a9b764b4fd60e8110a2fb70b1e67fff59" title=" " alt="" coords="25,72,227,115"/>
+<area shape="poly" title=" " alt="" coords="277,75,228,83,227,78,282,74"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4121bb89f3f5d0da32f4bfab46f59f69" name="a4121bb89f3f5d0da32f4bfab46f59f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4121bb89f3f5d0da32f4bfab46f59f69">&#9670;&#160;</a></span>Upload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.IExternalContentProvider.Upload </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Stream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_1_1_cancellable_progress.html">CancellableProgress</a></td>          <td class="paramname"><span class="paramname"><em>progress</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; string &gt;</td>          <td class="paramname"><span class="paramname"><em>success</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; Exception &gt;</td>          <td class="paramname"><span class="paramname"><em>failure</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#a28186f73c4c008b1ec3d0665169fbcae">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#a01b7486683b2916b41235cdd455894d9">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#a377f6ea21a1cd4dbb92a92f37da25637">Game.SchubExternalContentProvider</a> 内被实现.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_game_1_1_i_external_content_provider_a4121bb89f3f5d0da32f4bfab46f59f69_icgraph.png" border="0" usemap="#ainterface_game_1_1_i_external_content_provider_a4121bb89f3f5d0da32f4bfab46f59f69_icgraph" loading="lazy" alt=""/></div>
+<map name="ainterface_game_1_1_i_external_content_provider_a4121bb89f3f5d0da32f4bfab46f59f69_icgraph" id="ainterface_game_1_1_i_external_content_provider_a4121bb89f3f5d0da32f4bfab46f59f69_icgraph">
+<area shape="rect" title=" " alt="" coords="529,23,739,65"/>
+<area shape="rect" href="class_game_1_1_external_content_manager.html#a237bf7e47e1bb432d6e1b6ae49e250f1" title=" " alt="" coords="273,23,481,65"/>
+<area shape="poly" title=" " alt="" coords="511,44,482,47,481,41,516,44"/>
+<area shape="rect" href="class_game_1_1_modify_world_screen.html#a197cc749c84ceb9c4053b47cf8dac5d9" title=" " alt="" coords="5,5,225,32"/>
+<area shape="poly" title=" " alt="" coords="255,33,225,32,225,27,260,32"/>
+<area shape="rect" href="class_manage_content_screen.html#aa4005a31a4dd67487a0eb94525c973d0" title=" " alt="" coords="15,56,215,83"/>
+<area shape="poly" title=" " alt="" coords="255,56,216,62,216,57,260,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">属性说明</h2>
+<a id="a72199b3450d7ee98cbd71e1de9b85527" name="a72199b3450d7ee98cbd71e1de9b85527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72199b3450d7ee98cbd71e1de9b85527">&#9670;&#160;</a></span>Description</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Game.IExternalContentProvider.Description</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#a33fd6ac979ccb355aaddbabaaeaf80af">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#a2914d5775c9b368dfdc51652c03e4ac5">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#afb83293e28fd61f7a0a5339627791be4">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+<p class="definition">在文件 <a class="el" href="_i_external_content_provider_8cs_source.html">IExternalContentProvider.cs</a> 第 <a class="el" href="_i_external_content_provider_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad7707adddba8490a9c11f09d33fc32fa" name="ad7707adddba8490a9c11f09d33fc32fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7707adddba8490a9c11f09d33fc32fa">&#9670;&#160;</a></span>DisplayName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Game.IExternalContentProvider.DisplayName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#a1ea811fc26419b2faa22c82288cc0eb3">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#a67887b30310058f3e56a6a850baadbb6">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#a25cd509fa4ea31f27d28a9e74fc640ee">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+<p class="definition">在文件 <a class="el" href="_i_external_content_provider_8cs_source.html">IExternalContentProvider.cs</a> 第 <a class="el" href="_i_external_content_provider_8cs_source.html#l00003">3</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac785111c20e7cdf084039c5a19e1425f" name="ac785111c20e7cdf084039c5a19e1425f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac785111c20e7cdf084039c5a19e1425f">&#9670;&#160;</a></span>IsLocalProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.IExternalContentProvider.IsLocalProvider</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#a85ace5cb74ef55c4f4238035d343bff4">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#ade7e275aa782f490a2321bc1eee689dc">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#af82168efa3ee2517a91806577dc1537c">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+<p class="definition">在文件 <a class="el" href="_i_external_content_provider_8cs_source.html">IExternalContentProvider.cs</a> 第 <a class="el" href="_i_external_content_provider_8cs_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7ad6bbecbd9bfedeb43191958c65f535" name="a7ad6bbecbd9bfedeb43191958c65f535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad6bbecbd9bfedeb43191958c65f535">&#9670;&#160;</a></span>IsLoggedIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.IExternalContentProvider.IsLoggedIn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#ac92ee93d28052033edc74e1034ca6508">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#a4cd64ac2fc9e6ead55289ee56fa1a7d8">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#a22bd71b8d325917d466f919c5932f9fc">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+<p class="definition">在文件 <a class="el" href="_i_external_content_provider_8cs_source.html">IExternalContentProvider.cs</a> 第 <a class="el" href="_i_external_content_provider_8cs_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab2da7beca2dba023fe4699cb851682a1" name="ab2da7beca2dba023fe4699cb851682a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2da7beca2dba023fe4699cb851682a1">&#9670;&#160;</a></span>RequiresLogin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.IExternalContentProvider.RequiresLogin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#adca33438f4ba300dc1c62b073753b341">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#a7ded3c041284a8b798fb5ca737619c48">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#a011ca2e4d373bedf43199e00137e4958">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+<p class="definition">在文件 <a class="el" href="_i_external_content_provider_8cs_source.html">IExternalContentProvider.cs</a> 第 <a class="el" href="_i_external_content_provider_8cs_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2dea52ff3b7cf8feb9146f116c719653" name="a2dea52ff3b7cf8feb9146f116c719653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dea52ff3b7cf8feb9146f116c719653">&#9670;&#160;</a></span>SupportsLinks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.IExternalContentProvider.SupportsLinks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#aeed9b9a1b1a87a0692e1f044aaf23178">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#ac7906e3d728d8568461f65955514a0ce">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#ac4ce86e891281fcffca362fc9dc30f7a">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+<p class="definition">在文件 <a class="el" href="_i_external_content_provider_8cs_source.html">IExternalContentProvider.cs</a> 第 <a class="el" href="_i_external_content_provider_8cs_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7d57420e2b06c682d518439b206cceca" name="a7d57420e2b06c682d518439b206cceca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d57420e2b06c682d518439b206cceca">&#9670;&#160;</a></span>SupportsListing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game.IExternalContentProvider.SupportsListing</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_game_1_1_disk_external_content_provider.html#ae023149e8585cb3df3f9c9a6fc791355">Game.DiskExternalContentProvider</a>, <a class="el" href="class_game_1_1_dropbox_external_content_provider.html#a25d4f2d79e3c4a184eff866eab7dcf5f">Game.DropboxExternalContentProvider</a> , 以及 <a class="el" href="class_game_1_1_schub_external_content_provider.html#a8b10e18c61dc6275ccca496168e2207b">Game.SchubExternalContentProvider</a> 内被实现.</p>
+
+<p class="definition">在文件 <a class="el" href="_i_external_content_provider_8cs_source.html">IExternalContentProvider.cs</a> 第 <a class="el" href="_i_external_content_provider_8cs_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/ContentProvider/<a class="el" href="_i_external_content_provider_8cs_source.html">IExternalContentProvider.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_game.html">Game</a></li><li class="navelem"><a href="interface_game_1_1_i_external_content_provider.html">IExternalContentProvider</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

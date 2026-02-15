@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Browser/ALContext.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_a_l_context_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ALContext.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_a_l_context_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_browser.html">Engine.Browser</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_a_l_context.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_engine_1_1_browser_1_1_a_l_context.html#a311d64e52251615485277be0281cbed4">ALContext</a> : IDisposable {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_a_l_context.html#a3a83159e9a067f001b8d85994e3726de">    3</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> IntPtr <a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a3a83159e9a067f001b8d85994e3726de">m_device</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_a_l_context.html#a13230a8470cae67d3acdb0b7c52d1ce2">    4</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> IntPtr <a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a13230a8470cae67d3acdb0b7c52d1ce2">m_context</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_a_l_context.html#a311d64e52251615485277be0281cbed4">    6</a></span>        <span class="keyword">public</span> <a class="code hl_variable" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> <a class="code hl_function" href="class_engine_1_1_browser_1_1_a_l_context.html#a311d64e52251615485277be0281cbed4">ALContext</a>() {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>            <a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a3a83159e9a067f001b8d85994e3726de">m_device</a> = <a class="code hl_class" href="class_engine_1_1_browser_1_1_o_a_l.html">OAL</a>.<a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#ada0b601a960176377c5c7ee1813afab6">alcOpenDevice</a>(<span class="keyword">null</span>);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a3a83159e9a067f001b8d85994e3726de">m_device</a> == IntPtr.Zero) {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0">Error</a>(<span class="stringliteral">&quot;Could not create audio device&quot;</span>);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a13230a8470cae67d3acdb0b7c52d1ce2">m_context</a> = <a class="code hl_class" href="class_engine_1_1_browser_1_1_o_a_l.html">OAL</a>.<a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#aad66a5a298af3dd072f26ef11e14ba13">alcCreateContext</a>(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a3a83159e9a067f001b8d85994e3726de">m_device</a>, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <a class="code hl_class" href="class_engine_1_1_browser_1_1_o_a_l.html">OAL</a>.<a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a52a25d346bd934900a2ab0fe43d70188">alcMakeContextCurrent</a>(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a13230a8470cae67d3acdb0b7c52d1ce2">m_context</a>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        }</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_engine_1_1_browser_1_1_a_l_context.html#a41a310b8250191979f30eeb91069d2da">   16</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_browser_1_1_a_l_context.html#a41a310b8250191979f30eeb91069d2da">Dispose</a>() {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a13230a8470cae67d3acdb0b7c52d1ce2">m_context</a> != IntPtr.Zero) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                <a class="code hl_class" href="class_engine_1_1_browser_1_1_o_a_l.html">OAL</a>.<a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a52a25d346bd934900a2ab0fe43d70188">alcMakeContextCurrent</a>(IntPtr.Zero);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <a class="code hl_class" href="class_engine_1_1_browser_1_1_o_a_l.html">OAL</a>.<a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#ad8cc476317bd54f7f7c3f96d8976b002">alcDestroyContext</a>(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a13230a8470cae67d3acdb0b7c52d1ce2">m_context</a>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a13230a8470cae67d3acdb0b7c52d1ce2">m_context</a> = IntPtr.Zero;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a3a83159e9a067f001b8d85994e3726de">m_device</a> != IntPtr.Zero) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <a class="code hl_class" href="class_engine_1_1_browser_1_1_o_a_l.html">OAL</a>.<a class="code hl_function" href="class_engine_1_1_browser_1_1_o_a_l.html#a7ef724a14f23a743e35f2e3f8da01b91">alcCloseDevice</a>(<a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a3a83159e9a067f001b8d85994e3726de">m_device</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <a class="code hl_variable" href="class_engine_1_1_browser_1_1_a_l_context.html#a3a83159e9a067f001b8d85994e3726de">m_device</a> = IntPtr.Zero;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="ttc" id="a_main_8cs_html_aadc1913660b4a97759fcca7299050250"><div class="ttname"><a href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a></div><div class="ttdeci">unsafe</div><div class="ttdef"><b>定义</b> <a href="_main_8cs_source.html#l00015">Main.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_a_l_context_html_a13230a8470cae67d3acdb0b7c52d1ce2"><div class="ttname"><a href="class_engine_1_1_browser_1_1_a_l_context.html#a13230a8470cae67d3acdb0b7c52d1ce2">Engine.Browser.ALContext.m_context</a></div><div class="ttdeci">static IntPtr m_context</div><div class="ttdef"><b>定义</b> <a href="#l00004">ALContext.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_a_l_context_html_a311d64e52251615485277be0281cbed4"><div class="ttname"><a href="class_engine_1_1_browser_1_1_a_l_context.html#a311d64e52251615485277be0281cbed4">Engine.Browser.ALContext.ALContext</a></div><div class="ttdeci">unsafe ALContext()</div><div class="ttdef"><b>定义</b> <a href="#l00006">ALContext.cs:6</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_a_l_context_html_a3a83159e9a067f001b8d85994e3726de"><div class="ttname"><a href="class_engine_1_1_browser_1_1_a_l_context.html#a3a83159e9a067f001b8d85994e3726de">Engine.Browser.ALContext.m_device</a></div><div class="ttdeci">static IntPtr m_device</div><div class="ttdef"><b>定义</b> <a href="#l00003">ALContext.cs:3</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_a_l_context_html_a41a310b8250191979f30eeb91069d2da"><div class="ttname"><a href="class_engine_1_1_browser_1_1_a_l_context.html#a41a310b8250191979f30eeb91069d2da">Engine.Browser.ALContext.Dispose</a></div><div class="ttdeci">void Dispose()</div><div class="ttdef"><b>定义</b> <a href="#l00016">ALContext.cs:16</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html">Engine.Browser.OAL</a></div><div class="ttdef"><b>定义</b> <a href="_o_a_l_8cs_source.html#l00005">OAL.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a52a25d346bd934900a2ab0fe43d70188"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a52a25d346bd934900a2ab0fe43d70188">Engine.Browser.OAL.alcMakeContextCurrent</a></div><div class="ttdeci">static bool alcMakeContextCurrent(IntPtr context)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_a7ef724a14f23a743e35f2e3f8da01b91"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#a7ef724a14f23a743e35f2e3f8da01b91">Engine.Browser.OAL.alcCloseDevice</a></div><div class="ttdeci">static bool alcCloseDevice(IntPtr device)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_aad66a5a298af3dd072f26ef11e14ba13"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#aad66a5a298af3dd072f26ef11e14ba13">Engine.Browser.OAL.alcCreateContext</a></div><div class="ttdeci">static unsafe IntPtr alcCreateContext(IntPtr device, int *attrlist)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_ad8cc476317bd54f7f7c3f96d8976b002"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#ad8cc476317bd54f7f7c3f96d8976b002">Engine.Browser.OAL.alcDestroyContext</a></div><div class="ttdeci">static void alcDestroyContext(IntPtr context)</div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_o_a_l_html_ada0b601a960176377c5c7ee1813afab6"><div class="ttname"><a href="class_engine_1_1_browser_1_1_o_a_l.html#ada0b601a960176377c5c7ee1813afab6">Engine.Browser.OAL.alcOpenDevice</a></div><div class="ttdeci">static unsafe IntPtr alcOpenDevice(byte *devicename)</div></div>
+<div class="ttc" id="aclass_engine_1_1_log_html"><div class="ttname"><a href="class_engine_1_1_log.html">Engine.Log</a></div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00002">Log.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_log_html_a29175d191a29bc87f88772458dec2ef0"><div class="ttname"><a href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0">Engine.Log.Error</a></div><div class="ttdeci">static void Error(object message)</div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00080">Log.cs:80</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_browser_html"><div class="ttname"><a href="namespace_engine_1_1_browser.html">Engine.Browser</a></div><div class="ttdef"><b>定义</b> <a href="_a_l_8cs_source.html#l00001">AL.cs:1</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_c6c50322a9ab7d2601d9ec77b46bec8c.html">Engine.Browser</a></li><li class="navelem"><a href="_a_l_context_8cs.html">ALContext.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

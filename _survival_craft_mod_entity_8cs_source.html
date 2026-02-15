@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/ModsManager/SurvivalCraftModEntity.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_survival_craft_mod_entity_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SurvivalCraftModEntity.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_survival_craft_mod_entity_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Reflection;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_1_1_i_content_reader.html">Game.IContentReader</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="_survival_craft_mod_entity_8cs.html#a9795703013764619063997eeacbc3dd5">    4</a></span><span class="keyword">using </span><a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_string_reader.html">StringReader</a> = <a class="code hl_namespace" href="namespace_game.html">Game</a>.<a class="code hl_namespace" href="namespace_game_1_1_i_content_reader.html">IContentReader</a>.<a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_string_reader.html">StringReader</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#if !BROWSER</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a6c8a1aac361b1b57d846d4290905adf8">SurvivalCraftModEntity</a> : <a class="code hl_function" href="class_game_1_1_mod_entity.html#aa201535b6fd7338243b2f31b2c1f02c7">ModEntity</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a270fc9f7f0fa858ff6ed48657fe5e541">   11</a></span>        <span class="keyword">public</span> <span class="keyword">new</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_survival_craft_mod_entity.html#a270fc9f7f0fa858ff6ed48657fe5e541">fName</a> = <span class="stringliteral">&quot;SurvivalCraftModEntity&quot;</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a6c8a1aac361b1b57d846d4290905adf8">   13</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a6c8a1aac361b1b57d846d4290905adf8">SurvivalCraftModEntity</a>() {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            List&lt;<a class="code hl_namespace" href="namespace_game_1_1_i_content_reader.html">IContentReader</a>.<a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_i_content_reader.html">IContentReader</a>&gt; readers = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            readers.AddRange(</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                [</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_assembly_reader.html">AssemblyReader</a>(),</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html">BitmapFontReader</a>(),</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_dae_model_reader.html">DaeModelReader</a>(),</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_image_reader.html">ImageReader</a>(),</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_array_reader.html">JsonArrayReader</a>(),</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_object_reader.html">JsonObjectReader</a>(),</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_document_reader.html">JsonDocumentReader</a>(),</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    <span class="keyword">new</span> <a class="code hl_namespace" href="namespace_game_1_1_i_content_reader.html">IContentReader</a>.<a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_json_model_reader.html">JsonModelReader</a>(),</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_mtllib_struct_reader.html">MtllibStructReader</a>(),</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    <span class="keyword">new</span> <a class="code hl_namespace" href="namespace_game_1_1_i_content_reader.html">IContentReader</a>.<a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_obj_model_reader.html">ObjModelReader</a>(),</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_shader_reader.html">ShaderReader</a>(),</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_sound_buffer_reader.html">SoundBufferReader</a>(),</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_streaming_source_reader.html">StreamingSourceReader</a>(),</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    <span class="keyword">new</span> <a class="code hl_typedef" href="_survival_craft_mod_entity_8cs.html#a9795703013764619063997eeacbc3dd5">StringReader</a>(),</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_subtexture_reader.html">SubtextureReader</a>(),</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_texture2_d_reader.html">Texture2DReader</a>(),</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_xml_reader.html">XmlReader</a>(),</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_content_stream_reader.html">ContentStreamReader</a>()</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                ]</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; readers.Count; i++) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_variable" href="class_game_1_1_content_manager.html#a9b3121995ad3307db730fea963fe75ad">ReaderList</a>.Add(readers[i].Type, readers[i]);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#if BROWSER</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_namespace" href="namespace_engine_1_1_browser.html">Browser</a>.<a class="code hl_class" href="class_engine_1_1_browser_1_1_browser_interop.html">BrowserInterop</a>.<a class="code hl_function" href="class_engine_1_1_browser_1_1_browser_interop.html#a71b92e4f90381f9d650b063c7fbaa329">SetContentPtr</a>(<a class="code hl_class" href="class_game_1_1_content_file_bridge.html">ContentFileBridge</a>.<a class="code hl_function" href="class_game_1_1_content_file_bridge.html#ab1b217aa7ec8ac2f870474691e6d0b83">Initialize</a>());</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">while</span> (!<a class="code hl_class" href="class_game_1_1_content_file_bridge.html">ContentFileBridge</a>.<a class="code hl_function" href="class_game_1_1_content_file_bridge.html#af92b78c22e1fbe9847a0a2cffc65d2c9">GetIsDownloaded</a>()) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                Thread.Sleep(100);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            UnmanagedMemoryStream memoryStream = <a class="code hl_class" href="class_game_1_1_content_file_bridge.html">ContentFileBridge</a>.<a class="code hl_function" href="class_game_1_1_content_file_bridge.html#a49b63904020458636cb022e27b640d9e">GetStream</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_variable" href="class_game_1_1_mod_entity.html#ac1068e9838c298d8824466958f607ea5">Size</a> = memoryStream.Length;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_variable" href="class_game_1_1_mod_entity.html#ae219c3ecdfd796ff9e6137ff6e06e3e2">ModArchive</a> = <a class="code hl_class" href="class_game_1_1_zip_archive.html">ZipArchive</a>.<a class="code hl_function" href="class_game_1_1_zip_archive.html#affc849ac122cb7255956e1c61418c63f">Open</a>(memoryStream);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            MemoryStream memoryStream = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">const</span> <span class="keywordtype">string</span> ContentPath = <span class="stringliteral">&quot;app:/Content.zip&quot;</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a99d6c83e1e607a8037faa718810f9321">FileExists</a>(ContentPath)) <span class="comment">//检测外置资源是否存在，如果不存在就使用内置资源</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(ContentPath, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.Read).CopyTo(memoryStream);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                Assembly.GetExecutingAssembly().GetManifestResourceStream(<span class="stringliteral">&quot;Game.Content.zip&quot;</span>)?.CopyTo(memoryStream);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">if</span> (memoryStream == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;Unable to load Content.zip file.&quot;</span>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_variable" href="class_game_1_1_mod_entity.html#ac1068e9838c298d8824466958f607ea5">Size</a> = memoryStream.Length;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            memoryStream.Position = 0L;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_variable" href="class_game_1_1_mod_entity.html#ae219c3ecdfd796ff9e6137ff6e06e3e2">ModArchive</a> = <a class="code hl_class" href="class_game_1_1_zip_archive.html">ZipArchive</a>.<a class="code hl_function" href="class_game_1_1_zip_archive.html#affc849ac122cb7255956e1c61418c63f">Open</a>(memoryStream);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <a class="code hl_function" href="class_game_1_1_mod_entity.html#a3b987223c4407e495c2e6ec099dbfcbc">InitResources</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_mod_entity.html#acb6b055f0f3df9d48632949010886328">modInfo</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                modInfo.LoadOrder = <span class="keywordtype">int</span>.MinValue;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a15ce6b637b099f1415b94f86704569ba">   71</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a15ce6b637b099f1415b94f86704569ba">LoadBlocksData</a>() {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_class" href="class_game_1_1_loading_screen.html">LoadingScreen</a>.<a class="code hl_function" href="class_game_1_1_loading_screen.html#a4e2bf5d440e774ef6c9854ba6966493c">Info</a>($<span class="stringliteral">&quot;[{modInfo?.Name}] {LanguageControl.Get(fName, &quot;</span>1<span class="stringliteral">&quot;)}&quot;</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#a21e1bac0b805f676e9580e8a6eb693e3">LoadBlocksData</a>(<a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;BlocksData&quot;</span>));</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#ad404f0f50a1132dd84f50a2b99a7ca65">Dispose</a>(<span class="stringliteral">&quot;BlocksData&quot;</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a5e8dcf9421cfbe9f2a40de7a3ed8446c">   77</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> Assembly[] <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a5e8dcf9421cfbe9f2a40de7a3ed8446c">GetAssemblies</a>() =&gt; [typeof(<a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>).Assembly];</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a36a34bd0969e8fe0d4a655e64d73116f">   79</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a36a34bd0969e8fe0d4a655e64d73116f">HandleAssembly</a>(Assembly assembly) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#pragma warning disable IL2026</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            Type[] types = assembly.GetTypes();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#pragma warning restore IL2026</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">foreach</span> (Type type <span class="keywordflow">in</span> types) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordflow">if</span> (type.IsSubclassOf(typeof(<a class="code hl_class" href="class_game_1_1_mod_loader.html">ModLoader</a>))</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    &amp;&amp; !type.IsAbstract) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#pragma warning disable IL2072</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    <span class="keywordflow">if</span> (Activator.CreateInstance(type) is not <a class="code hl_class" href="class_game_1_1_mod_loader.html">ModLoader</a> modLoader) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#pragma warning restore IL2072</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    modLoader.Entity = <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                    modLoader.__ModInitialize();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                    <a class="code hl_property" href="class_game_1_1_mod_entity.html#afacabe437615151084e5909f571d0d62">Loader</a> = modLoader;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_variable" href="class_mods_manager.html#a06909f0d7f2af1735958ba15116949f9">ModLoaders</a>.Add(modLoader);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type.IsSubclassOf(typeof(<a class="code hl_class" href="class_game_1_1_block.html">Block</a>))</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    &amp;&amp; !type.IsAbstract) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#pragma warning disable IL2072</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    FieldInfo fieldInfo = type.GetRuntimeFields().FirstOrDefault(p =&gt; p.Name == <span class="stringliteral">&quot;Index&quot;</span> &amp;&amp; p.IsPublic &amp;&amp; p.IsStatic);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#pragma warning restore IL2072</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    <span class="keywordflow">if</span> (fieldInfo == <span class="keyword">null</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                        || fieldInfo.FieldType != typeof(<span class="keywordtype">int</span>)) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                        <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_function" href="class_mods_manager.html#a254fba3e79402d6d93079fd6b40e8559">AddException</a>(</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                            <span class="keyword">new</span> InvalidOperationException($<span class="stringliteral">&quot;Block type \&quot;{type.FullName}\&quot; does not have static field Index of type int.&quot;</span>)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                        );</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                        <span class="comment">/*var index = (int)fieldInfo.GetValue(null);</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">                        var block = (Block)Activator.CreateInstance(type.GetTypeInfo().AsType());</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">                        block.BlockIndex = index;*/</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                        <a class="code hl_variable" href="class_game_1_1_mod_entity.html#a0c70077b7aa01007ee40be48bf0dca47">BlockTypes</a>.Add(type);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                    }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a7b53896991b263a40009f9ed9228187c">  117</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a7b53896991b263a40009f9ed9228187c">LoadXdb</a>(ref XElement xElement) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <a class="code hl_class" href="class_game_1_1_loading_screen.html">LoadingScreen</a>.<a class="code hl_function" href="class_game_1_1_loading_screen.html#a4e2bf5d440e774ef6c9854ba6966493c">Info</a>($<span class="stringliteral">&quot;[{modInfo?.Name}] {LanguageControl.Get(fName, &quot;</span>2<span class="stringliteral">&quot;)}&quot;</span>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            xElement = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Database&quot;</span>);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#ad404f0f50a1132dd84f50a2b99a7ca65">Dispose</a>(<span class="stringliteral">&quot;Database&quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="foldopen" id="foldopen00123" data-start="{" data-end="}">
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a5c1b49c1a91ea8cd8d876f92e040042b">  123</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a5c1b49c1a91ea8cd8d876f92e040042b">LoadCr</a>(ref XElement xElement) {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <a class="code hl_class" href="class_game_1_1_loading_screen.html">LoadingScreen</a>.<a class="code hl_function" href="class_game_1_1_loading_screen.html#a4e2bf5d440e774ef6c9854ba6966493c">Info</a>($<span class="stringliteral">&quot;[{modInfo?.Name}] {LanguageControl.Get(fName, &quot;</span>3<span class="stringliteral">&quot;)}&quot;</span>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            xElement = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;CraftingRecipes&quot;</span>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#ad404f0f50a1132dd84f50a2b99a7ca65">Dispose</a>(<span class="stringliteral">&quot;CraftingRecipes&quot;</span>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }</div>
+</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a71abfeb1e08dfb80d8c1a49c5dc865e6">  129</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a71abfeb1e08dfb80d8c1a49c5dc865e6">LoadClo</a>(<a class="code hl_class" href="class_game_1_1_clothing_block.html">ClothingBlock</a> block, ref XElement xElement) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <a class="code hl_class" href="class_game_1_1_loading_screen.html">LoadingScreen</a>.<a class="code hl_function" href="class_game_1_1_loading_screen.html#a4e2bf5d440e774ef6c9854ba6966493c">Info</a>($<span class="stringliteral">&quot;[{modInfo?.Name}] {LanguageControl.Get(fName, &quot;</span>4<span class="stringliteral">&quot;)}&quot;</span>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            xElement = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Clothes&quot;</span>);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#ad404f0f50a1132dd84f50a2b99a7ca65">Dispose</a>(<span class="stringliteral">&quot;Clothes&quot;</span>);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        }</div>
+</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a72301986f2e93e4bc232725cf1122b89">  135</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a72301986f2e93e4bc232725cf1122b89">SaveSettings</a>(XElement xElement) { }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#a8923e2e507fb7688cbdefb3c2082b3f2">  136</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#a8923e2e507fb7688cbdefb3c2082b3f2">LoadSettings</a>(XElement xElement) { }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="class_game_1_1_survival_craft_mod_entity.html#ae48805c75b95bcd8541bb82e127dabb7">  138</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_survival_craft_mod_entity.html#ae48805c75b95bcd8541bb82e127dabb7">OnBlocksInitalized</a>() {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Terrain&quot;</span>);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Minerals&quot;</span>);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Plants&quot;</span>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Construction&quot;</span>);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Items&quot;</span>);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Tools&quot;</span>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Weapons&quot;</span>);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Clothes&quot;</span>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Electrics&quot;</span>);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Food&quot;</span>);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Spawner Eggs&quot;</span>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Painted&quot;</span>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Dyed&quot;</span>);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <a class="code hl_class" href="class_game_1_1_blocks_manager.html">BlocksManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">AddCategory</a>(<span class="stringliteral">&quot;Fireworks&quot;</span>);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        }</div>
+</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
+</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
+<div class="ttc" id="a_survival_craft_mod_entity_8cs_html_a9795703013764619063997eeacbc3dd5"><div class="ttname"><a href="_survival_craft_mod_entity_8cs.html#a9795703013764619063997eeacbc3dd5">StringReader</a></div><div class="ttdeci">Game.IContentReader.StringReader StringReader</div><div class="ttdef"><b>定义</b> <a href="#l00004">SurvivalCraftModEntity.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_browser_interop_html"><div class="ttname"><a href="class_engine_1_1_browser_1_1_browser_interop.html">Engine.Browser.BrowserInterop</a></div><div class="ttdef"><b>定义</b> <a href="_browser_interop_8cs_source.html#l00006">BrowserInterop.cs:6</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_browser_1_1_browser_interop_html_a71b92e4f90381f9d650b063c7fbaa329"><div class="ttname"><a href="class_engine_1_1_browser_1_1_browser_interop.html#a71b92e4f90381f9d650b063c7fbaa329">Engine.Browser.BrowserInterop.SetContentPtr</a></div><div class="ttdeci">static partial void SetContentPtr(IntPtr ptr)</div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html"><div class="ttname"><a href="class_engine_1_1_storage.html">Engine.Storage</a></div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00024">Storage.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a3a6586a9f70dd693b5c907a1b4a3dbea"><div class="ttname"><a href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">Engine.Storage.OpenFile</a></div><div class="ttdeci">static Stream OpenFile(string path, OpenFileMode openFileMode)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00093">Storage.cs:93</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a99d6c83e1e607a8037faa718810f9321"><div class="ttname"><a href="class_engine_1_1_storage.html#a99d6c83e1e607a8037faa718810f9321">Engine.Storage.FileExists</a></div><div class="ttdeci">static bool FileExists(string path)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00077">Storage.cs:77</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_html"><div class="ttname"><a href="class_game_1_1_block.html">Game.Block</a></div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00005">Block.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_manager.html">Game.BlocksManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00010">BlocksManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_a21e1bac0b805f676e9580e8a6eb693e3"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#a21e1bac0b805f676e9580e8a6eb693e3">Game.BlocksManager.LoadBlocksData</a></div><div class="ttdeci">static void LoadBlocksData(string blocksDataString)</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00973">BlocksManager.cs:973</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_manager_html_af900935c82c80fee30a02e986662f092"><div class="ttname"><a href="class_game_1_1_blocks_manager.html#af900935c82c80fee30a02e986662f092">Game.BlocksManager.AddCategory</a></div><div class="ttdeci">static void AddCategory(string category)</div><div class="ttdef"><b>定义</b> <a href="_blocks_manager_8cs_source.html#l00428">BlocksManager.cs:428</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clothing_block_html"><div class="ttname"><a href="class_game_1_1_clothing_block.html">Game.ClothingBlock</a></div><div class="ttdef"><b>定义</b> <a href="_clothing_block_8cs_source.html#l00007">ClothingBlock.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_file_bridge_html"><div class="ttname"><a href="class_game_1_1_content_file_bridge.html">Game.ContentFileBridge</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00005">ContentFileBridge.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_file_bridge_html_a49b63904020458636cb022e27b640d9e"><div class="ttname"><a href="class_game_1_1_content_file_bridge.html#a49b63904020458636cb022e27b640d9e">Game.ContentFileBridge.GetStream</a></div><div class="ttdeci">static UnmanagedMemoryStream GetStream()</div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00016">ContentFileBridge.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_file_bridge_html_ab1b217aa7ec8ac2f870474691e6d0b83"><div class="ttname"><a href="class_game_1_1_content_file_bridge.html#ab1b217aa7ec8ac2f870474691e6d0b83">Game.ContentFileBridge.Initialize</a></div><div class="ttdeci">static IntPtr Initialize()</div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00008">ContentFileBridge.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_file_bridge_html_af92b78c22e1fbe9847a0a2cffc65d2c9"><div class="ttname"><a href="class_game_1_1_content_file_bridge.html#af92b78c22e1fbe9847a0a2cffc65d2c9">Game.ContentFileBridge.GetIsDownloaded</a></div><div class="ttdeci">static bool GetIsDownloaded()</div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00018">ContentFileBridge.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a9b3121995ad3307db730fea963fe75ad"><div class="ttname"><a href="class_game_1_1_content_manager.html#a9b3121995ad3307db730fea963fe75ad">Game.ContentManager.ReaderList</a></div><div class="ttdeci">static Dictionary&lt; string, IContentReader.IContentReader &gt; ReaderList</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00052">ContentManager.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_ad404f0f50a1132dd84f50a2b99a7ca65"><div class="ttname"><a href="class_game_1_1_content_manager.html#ad404f0f50a1132dd84f50a2b99a7ca65">Game.ContentManager.Dispose</a></div><div class="ttdeci">static void Dispose(string name)</div><div class="ttdoc">可能需要带上文件后缀，即获取名字+获取的后缀</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00137">ContentManager.cs:137</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_assembly_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_assembly_reader.html">Game.IContentReader.AssemblyReader</a></div><div class="ttdef"><b>定义</b> <a href="_assembly_reader_8cs_source.html#l00004">AssemblyReader.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_bitmap_font_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html">Game.IContentReader.BitmapFontReader</a></div><div class="ttdef"><b>定义</b> <a href="_bitmap_font_reader_8cs_source.html#l00006">BitmapFontReader.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_content_stream_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_content_stream_reader.html">Game.IContentReader.ContentStreamReader</a></div><div class="ttdef"><b>定义</b> <a href="_content_stream_reader_8cs_source.html#l00002">ContentStreamReader.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_dae_model_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_dae_model_reader.html">Game.IContentReader.DaeModelReader</a></div><div class="ttdef"><b>定义</b> <a href="_dae_model_reader_8cs_source.html#l00004">DaeModelReader.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_i_content_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_i_content_reader.html">Game.IContentReader.IContentReader</a></div><div class="ttdef"><b>定义</b> <a href="_i_content_reader_8cs_source.html#l00002">IContentReader.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_image_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_image_reader.html">Game.IContentReader.ImageReader</a></div><div class="ttdef"><b>定义</b> <a href="_image_reader_8cs_source.html#l00005">ImageReader.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_array_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_array_reader.html">Game.IContentReader.JsonArrayReader</a></div><div class="ttdef"><b>定义</b> <a href="_json_reader_8cs_source.html#l00004">JsonReader.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_document_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_document_reader.html">Game.IContentReader.JsonDocumentReader</a></div><div class="ttdef"><b>定义</b> <a href="_json_reader_8cs_source.html#l00030">JsonReader.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_model_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_model_reader.html">Game.IContentReader.JsonModelReader</a></div><div class="ttdef"><b>定义</b> <a href="_json_reader_8cs_source.html#l00014">JsonReader.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_json_object_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_json_object_reader.html">Game.IContentReader.JsonObjectReader</a></div><div class="ttdef"><b>定义</b> <a href="_json_reader_8cs_source.html#l00020">JsonReader.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_mtllib_struct_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_mtllib_struct_reader.html">Game.IContentReader.MtllibStructReader</a></div><div class="ttdef"><b>定义</b> <a href="_mtllib_struct_reader_8cs_source.html#l00002">MtllibStructReader.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_obj_model_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_obj_model_reader.html">Game.IContentReader.ObjModelReader</a></div><div class="ttdef"><b>定义</b> <a href="_i_content_reader_2_obj_model_reader_8cs_source.html#l00002">ObjModelReader.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_shader_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_shader_reader.html">Game.IContentReader.ShaderReader</a></div><div class="ttdef"><b>定义</b> <a href="_shader_reader_8cs_source.html#l00004">ShaderReader.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_sound_buffer_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_sound_buffer_reader.html">Game.IContentReader.SoundBufferReader</a></div><div class="ttdef"><b>定义</b> <a href="_sound_buffer_reader_8cs_source.html#l00004">SoundBufferReader.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_streaming_source_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_streaming_source_reader.html">Game.IContentReader.StreamingSourceReader</a></div><div class="ttdef"><b>定义</b> <a href="_streaming_source_reader_8cs_source.html#l00004">StreamingSourceReader.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_string_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_string_reader.html">Game.IContentReader.StringReader</a></div><div class="ttdef"><b>定义</b> <a href="_string_reader_8cs_source.html#l00002">StringReader.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_subtexture_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_subtexture_reader.html">Game.IContentReader.SubtextureReader</a></div><div class="ttdef"><b>定义</b> <a href="_subtexture_reader_8cs_source.html#l00005">SubtextureReader.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_texture2_d_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_texture2_d_reader.html">Game.IContentReader.Texture2DReader</a></div><div class="ttdef"><b>定义</b> <a href="_texture2_d_reader_8cs_source.html#l00005">Texture2DReader.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_xml_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_xml_reader.html">Game.IContentReader.XmlReader</a></div><div class="ttdef"><b>定义</b> <a href="_xml_reader_8cs_source.html#l00004">XmlReader.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_loading_screen_html"><div class="ttname"><a href="class_game_1_1_loading_screen.html">Game.LoadingScreen</a></div><div class="ttdef"><b>定义</b> <a href="_loading_screen_8cs_source.html#l00014">LoadingScreen.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_loading_screen_html_a4e2bf5d440e774ef6c9854ba6966493c"><div class="ttname"><a href="class_game_1_1_loading_screen.html#a4e2bf5d440e774ef6c9854ba6966493c">Game.LoadingScreen.Info</a></div><div class="ttdeci">static void Info(string mesg)</div><div class="ttdef"><b>定义</b> <a href="_loading_screen_8cs_source.html#l00123">LoadingScreen.cs:123</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_a0c70077b7aa01007ee40be48bf0dca47"><div class="ttname"><a href="class_game_1_1_mod_entity.html#a0c70077b7aa01007ee40be48bf0dca47">Game.ModEntity.BlockTypes</a></div><div class="ttdeci">List&lt; Type &gt; BlockTypes</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00013">ModEntity.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_a3b987223c4407e495c2e6ec099dbfcbc"><div class="ttname"><a href="class_game_1_1_mod_entity.html#a3b987223c4407e495c2e6ec099dbfcbc">Game.ModEntity.InitResources</a></div><div class="ttdeci">virtual void InitResources()</div><div class="ttdoc">初始化Content资源</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00155">ModEntity.cs:155</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_aa201535b6fd7338243b2f31b2c1f02c7"><div class="ttname"><a href="class_game_1_1_mod_entity.html#aa201535b6fd7338243b2f31b2c1f02c7">Game.ModEntity.ModEntity</a></div><div class="ttdeci">ModEntity()</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00029">ModEntity.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_ac1068e9838c298d8824466958f607ea5"><div class="ttname"><a href="class_game_1_1_mod_entity.html#ac1068e9838c298d8824466958f607ea5">Game.ModEntity.Size</a></div><div class="ttdeci">long Size</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00017">ModEntity.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_acb6b055f0f3df9d48632949010886328"><div class="ttname"><a href="class_game_1_1_mod_entity.html#acb6b055f0f3df9d48632949010886328">Game.ModEntity.modInfo</a></div><div class="ttdeci">ModInfo modInfo</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00009">ModEntity.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_ae219c3ecdfd796ff9e6137ff6e06e3e2"><div class="ttname"><a href="class_game_1_1_mod_entity.html#ae219c3ecdfd796ff9e6137ff6e06e3e2">Game.ModEntity.ModArchive</a></div><div class="ttdeci">ZipArchive ModArchive</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00011">ModEntity.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_afacabe437615151084e5909f571d0d62"><div class="ttname"><a href="class_game_1_1_mod_entity.html#afacabe437615151084e5909f571d0d62">Game.ModEntity.Loader</a></div><div class="ttdeci">ModLoader Loader</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00022">ModEntity.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_loader_html"><div class="ttname"><a href="class_game_1_1_mod_loader.html">Game.ModLoader</a></div><div class="ttdef"><b>定义</b> <a href="_mod_loader_8cs_source.html#l00008">ModLoader.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a15ce6b637b099f1415b94f86704569ba"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a15ce6b637b099f1415b94f86704569ba">Game.SurvivalCraftModEntity.LoadBlocksData</a></div><div class="ttdeci">override void LoadBlocksData()</div><div class="ttdoc">初始化BlocksData资源</div><div class="ttdef"><b>定义</b> <a href="#l00071">SurvivalCraftModEntity.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a270fc9f7f0fa858ff6ed48657fe5e541"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a270fc9f7f0fa858ff6ed48657fe5e541">Game.SurvivalCraftModEntity.fName</a></div><div class="ttdeci">const new string fName</div><div class="ttdef"><b>定义</b> <a href="#l00011">SurvivalCraftModEntity.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a36a34bd0969e8fe0d4a655e64d73116f"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a36a34bd0969e8fe0d4a655e64d73116f">Game.SurvivalCraftModEntity.HandleAssembly</a></div><div class="ttdeci">override void HandleAssembly(Assembly assembly)</div><div class="ttdef"><b>定义</b> <a href="#l00079">SurvivalCraftModEntity.cs:79</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a5c1b49c1a91ea8cd8d876f92e040042b"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a5c1b49c1a91ea8cd8d876f92e040042b">Game.SurvivalCraftModEntity.LoadCr</a></div><div class="ttdeci">override void LoadCr(ref XElement xElement)</div><div class="ttdoc">初始化CraftingRecipe</div><div class="ttdef"><b>定义</b> <a href="#l00123">SurvivalCraftModEntity.cs:123</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a5e8dcf9421cfbe9f2a40de7a3ed8446c"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a5e8dcf9421cfbe9f2a40de7a3ed8446c">Game.SurvivalCraftModEntity.GetAssemblies</a></div><div class="ttdeci">override Assembly[] GetAssemblies()</div><div class="ttdoc">加载mod程序集</div><div class="ttdef"><b>定义</b> <a href="#l00077">SurvivalCraftModEntity.cs:77</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a6c8a1aac361b1b57d846d4290905adf8"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a6c8a1aac361b1b57d846d4290905adf8">Game.SurvivalCraftModEntity.SurvivalCraftModEntity</a></div><div class="ttdeci">SurvivalCraftModEntity()</div><div class="ttdef"><b>定义</b> <a href="#l00013">SurvivalCraftModEntity.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a71abfeb1e08dfb80d8c1a49c5dc865e6"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a71abfeb1e08dfb80d8c1a49c5dc865e6">Game.SurvivalCraftModEntity.LoadClo</a></div><div class="ttdeci">override void LoadClo(ClothingBlock block, ref XElement xElement)</div><div class="ttdoc">初始化Clothing数据</div><div class="ttdef"><b>定义</b> <a href="#l00129">SurvivalCraftModEntity.cs:129</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a72301986f2e93e4bc232725cf1122b89"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a72301986f2e93e4bc232725cf1122b89">Game.SurvivalCraftModEntity.SaveSettings</a></div><div class="ttdeci">override void SaveSettings(XElement xElement)</div><div class="ttdoc">保存设置</div><div class="ttdef"><b>定义</b> <a href="#l00135">SurvivalCraftModEntity.cs:135</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a7b53896991b263a40009f9ed9228187c"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a7b53896991b263a40009f9ed9228187c">Game.SurvivalCraftModEntity.LoadXdb</a></div><div class="ttdeci">override void LoadXdb(ref XElement xElement)</div><div class="ttdoc">初始化Database数据</div><div class="ttdef"><b>定义</b> <a href="#l00117">SurvivalCraftModEntity.cs:117</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_a8923e2e507fb7688cbdefb3c2082b3f2"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#a8923e2e507fb7688cbdefb3c2082b3f2">Game.SurvivalCraftModEntity.LoadSettings</a></div><div class="ttdeci">override void LoadSettings(XElement xElement)</div><div class="ttdoc">加载设置</div><div class="ttdef"><b>定义</b> <a href="#l00136">SurvivalCraftModEntity.cs:136</a></div></div>
+<div class="ttc" id="aclass_game_1_1_survival_craft_mod_entity_html_ae48805c75b95bcd8541bb82e127dabb7"><div class="ttname"><a href="class_game_1_1_survival_craft_mod_entity.html#ae48805c75b95bcd8541bb82e127dabb7">Game.SurvivalCraftModEntity.OnBlocksInitalized</a></div><div class="ttdeci">override void OnBlocksInitalized()</div><div class="ttdoc">BlocksManager初始化完毕</div><div class="ttdef"><b>定义</b> <a href="#l00138">SurvivalCraftModEntity.cs:138</a></div></div>
+<div class="ttc" id="aclass_game_1_1_zip_archive_html"><div class="ttname"><a href="class_game_1_1_zip_archive.html">Game.ZipArchive</a></div><div class="ttdef"><b>定义</b> <a href="_zip_archive_8cs_source.html#l00005">ZipArchive.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_zip_archive_html_affc849ac122cb7255956e1c61418c63f"><div class="ttname"><a href="class_game_1_1_zip_archive.html#affc849ac122cb7255956e1c61418c63f">Game.ZipArchive.Open</a></div><div class="ttdeci">static ZipArchive Open(Stream stream, bool keepStreamOpen=false)</div><div class="ttdef"><b>定义</b> <a href="_zip_archive_8cs_source.html#l00044">ZipArchive.cs:44</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html"><div class="ttname"><a href="class_mods_manager.html">ModsManager</a></div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00019">ModsManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a06909f0d7f2af1735958ba15116949f9"><div class="ttname"><a href="class_mods_manager.html#a06909f0d7f2af1735958ba15116949f9">ModsManager.ModLoaders</a></div><div class="ttdeci">static List&lt; ModLoader &gt; ModLoaders</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00117">ModsManager.cs:117</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a254fba3e79402d6d93079fd6b40e8559"><div class="ttname"><a href="class_mods_manager.html#a254fba3e79402d6d93079fd6b40e8559">ModsManager.AddException</a></div><div class="ttdeci">static void AddException(Exception e, bool AllowContinue_=false)</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00469">ModsManager.cs:469</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_browser_html"><div class="ttname"><a href="namespace_engine_1_1_browser.html">Engine.Browser</a></div><div class="ttdef"><b>定义</b> <a href="_a_l_8cs_source.html#l00001">AL.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html_ae47610d75f8bb133c22ca5f9de906ae3"><div class="ttname"><a href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">Engine.OpenFileMode</a></div><div class="ttdeci">OpenFileMode</div><div class="ttdef"><b>定义</b> <a href="_open_file_mode_8cs_source.html#l00002">OpenFileMode.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_1_1_i_content_reader_html"><div class="ttname"><a href="namespace_game_1_1_i_content_reader.html">Game.IContentReader</a></div><div class="ttdef"><b>定义</b> <a href="_assembly_reader_8cs_source.html#l00003">AssemblyReader.cs:3</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_76e7375bc96a75ae21201cc55869c5d4.html">ModsManager</a></li><li class="navelem"><a href="_survival_craft_mod_entity_8cs.html">SurvivalCraftModEntity.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

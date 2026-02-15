@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Game/GameLogSink.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_game_log_sink_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GameLogSink.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_log_sink_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Globalization;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#if WINDOWS</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System.Runtime.InteropServices;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_game_log_sink.html#ade04606ad811055da25a9b780f922325">GameLogSink</a> : <a class="code hl_interface" href="interface_engine_1_1_i_log_sink.html">ILogSink</a>, IDisposable {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">    9</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Stream <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">   11</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> StreamWriter <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html#a19df09b4bf105a0679e5d198b23810ee">   13</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#a19df09b4bf105a0679e5d198b23810ee">errorOfInstantiation</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html#af04063703bee628d6f043847a94aaed3">   15</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af04063703bee628d6f043847a94aaed3">fName</a> = <span class="stringliteral">&quot;GameLogSink&quot;</span>;</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html#ade04606ad811055da25a9b780f922325">   16</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_game_log_sink.html#ade04606ad811055da25a9b780f922325">GameLogSink</a>() {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;GameLogSink already created.&quot;</span>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a2b7cc231544f9d4b41993955d0c3c6ff">DirectoryExists</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a2a178bdf1bb8740b880353137f2c56ff">LogPath</a>)) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a1d731cbadc483958430619e69000394a">CreateDirectory</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a2a178bdf1bb8740b880353137f2c56ff">LogPath</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <span class="keywordtype">string</span> path = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#ada4eee2385d71f7a9a359107511171e4">CombinePaths</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a2a178bdf1bb8740b880353137f2c56ff">LogPath</a>, <span class="stringliteral">&quot;Game.log&quot;</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                FileInfo fileInfo = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a4c0d6d5f22194e452303345db65ece1f">GetFileInfo</a>(path);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keywordflow">if</span> (!fileInfo.Exists) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a> = fileInfo.Create();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    <span class="keywordflow">if</span> (fileInfo.Length &gt; 2097152) <span class="comment">//2MiB</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                        CultureInfo cultureInfo = <a class="code hl_property" href="class_game_1_1_program.html#ad330d5dcf18233b87a14aa2451a29756">Program.SystemLanguage</a> == <span class="keyword">null</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                            ? CultureInfo.CurrentCulture</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                            : <span class="keyword">new</span> CultureInfo(<a class="code hl_class" href="class_game_1_1_program.html">Program</a>.<a class="code hl_property" href="class_game_1_1_program.html#ad330d5dcf18233b87a14aa2451a29756">SystemLanguage</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                        <span class="keywordtype">string</span> destination = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a98b9838a25eb638c4d8d14f48e524eed">ProcessPath</a>(</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                            <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#ada4eee2385d71f7a9a359107511171e4">CombinePaths</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a2a178bdf1bb8740b880353137f2c56ff">LogPath</a>, <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a4acc9fdb18a4efbbfcb8e984d1879794">SanitizeFileName</a>($<span class="stringliteral">&quot;Game {DateTime.Now.ToString(cultureInfo)}.log&quot;</span>)),</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                            <span class="keyword">true</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                            <span class="keyword">false</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                        );</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                        fileInfo.MoveTo(destination, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                        <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a> = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(path, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.CreateOrOpen);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                        <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a> = fileInfo.Open(FileMode.Open, FileAccess.ReadWrite, FileShare.Read);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                m_stream.Position = <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>.Length;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a> = <span class="keyword">new</span> StreamWriter(<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">catch</span> (Exception ex) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#if !MOBILE &amp;&amp; !BROWSER</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#if WINDOWS</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                AllocConsole();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <a class="code hl_event" href="class_engine_1_1_window.html#a1ef7534450d47ff644d5bed19862589a">Window.Closed</a> += () =&gt; FreeConsole();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#pragma warning disable CA1416</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                Console.Title = <span class="stringliteral">&quot;Logs of Survivalcraft API&quot;</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#pragma warning restore CA1416</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#a19df09b4bf105a0679e5d198b23810ee">errorOfInstantiation</a> = $<span class="stringliteral">&quot;Error creating GameLogSink, and a console window for viewing logs is created. Reason: {ex.Message}&quot;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#aa6253fafb5f70f91507047f962fcbcba">Information</a>(<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#a19df09b4bf105a0679e5d198b23810ee">errorOfInstantiation</a>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#a19df09b4bf105a0679e5d198b23810ee">errorOfInstantiation</a> = $<span class="stringliteral">&quot;Error creating GameLogSink. Reason: {ex.Message}&quot;</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0">Error</a>(<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#a19df09b4bf105a0679e5d198b23810ee">errorOfInstantiation</a>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html#a1962167a9afcf0503f8ed6ebac19ab42">   68</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_game_log_sink.html#a1962167a9afcf0503f8ed6ebac19ab42">GetRecentLog</a>(<span class="keywordtype">int</span> bytesCount) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af04063703bee628d6f043847a94aaed3">fName</a>, <span class="stringliteral">&quot;1&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            lock (<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    m_stream.Position = Math.Max(<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>.Position - bytesCount, 0L);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> StreamReader(<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>).ReadToEnd();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">finally</span> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    m_stream.Position = <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>.Length;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html#a14a02bc0baf83f7d64f976cdb5ed4f2f">   83</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> List&lt;string&gt; <a class="code hl_function" href="class_game_1_1_game_log_sink.html#a14a02bc0baf83f7d64f976cdb5ed4f2f">GetRecentLogLines</a>(<span class="keywordtype">int</span> bytesCount) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="keywordflow">return</span> [<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#a19df09b4bf105a0679e5d198b23810ee">errorOfInstantiation</a>, <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af04063703bee628d6f043847a94aaed3">fName</a>, <span class="stringliteral">&quot;1&quot;</span>)];</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            lock (<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                    m_stream.Position = Math.Max(<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>.Position - bytesCount, 0L);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    StreamReader streamReader = <span class="keyword">new</span>(<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    List&lt;string&gt; list = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                        <span class="keywordtype">string</span> text = streamReader.ReadLine();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                        <span class="keywordflow">if</span> (text == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                        }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                        list.Add(text);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    <span class="keywordflow">return</span> list;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <span class="keywordflow">finally</span> {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    m_stream.Position = <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>.Length;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html#aec5dbc4a19e69770206f13b08ddc71e7">  107</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_game_log_sink.html#aec5dbc4a19e69770206f13b08ddc71e7">Log</a>(<a class="code hl_enumeration" href="namespace_engine.html#a76f65dd21e137e07d0839591f565cccd">LogType</a> type, <span class="keywordtype">string</span> message) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                lock (<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    <span class="keywordtype">string</span> value;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine.html#a76f65dd21e137e07d0839591f565cccd">LogType</a>.Debug: value = <span class="stringliteral">&quot;DEBUG: &quot;</span>; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine.html#a76f65dd21e137e07d0839591f565cccd">LogType</a>.Verbose: value = <span class="stringliteral">&quot;INFO: &quot;</span>; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine.html#a76f65dd21e137e07d0839591f565cccd">LogType</a>.Information: value = <span class="stringliteral">&quot;INFO: &quot;</span>; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine.html#a76f65dd21e137e07d0839591f565cccd">LogType</a>.Warning: value = <span class="stringliteral">&quot;WARNING: &quot;</span>; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                        <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine.html#a76f65dd21e137e07d0839591f565cccd">LogType</a>.Error: value = <span class="stringliteral">&quot;ERROR: &quot;</span>; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                        <span class="keywordflow">default</span>: value = <span class="keywordtype">string</span>.Empty; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                    }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                    <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a>.Write(DateTime.Now.ToString(<span class="stringliteral">&quot;HH:mm:ss.fff&quot;</span>));</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a>.Write(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                    <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a>.Write(value);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                    <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a>.WriteLine(message);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                    <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a>.Flush();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_game_1_1_game_log_sink.html#a40012c60591eb8ea20c87cb427486bd7">  128</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_game_log_sink.html#a40012c60591eb8ea20c87cb427486bd7">Dispose</a>() {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a>.Dispose();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">m_writer</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a>.Dispose();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                <a class="code hl_variable" href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">m_stream</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        }</div>
+</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">#if WINDOWS</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        [DllImport(<span class="stringliteral">&quot;kernel32.dll&quot;</span>, SetLastError = <span class="keyword">true</span>)]</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">bool</span> AllocConsole();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        [DllImport(<span class="stringliteral">&quot;kernel32.dll&quot;</span>, SetLastError = <span class="keyword">true</span>)]</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">bool</span> FreeConsole();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
+</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_log_html"><div class="ttname"><a href="class_engine_1_1_log.html">Engine.Log</a></div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00002">Log.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_log_html_a29175d191a29bc87f88772458dec2ef0"><div class="ttname"><a href="class_engine_1_1_log.html#a29175d191a29bc87f88772458dec2ef0">Engine.Log.Error</a></div><div class="ttdeci">static void Error(object message)</div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00080">Log.cs:80</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_log_html_aa6253fafb5f70f91507047f962fcbcba"><div class="ttname"><a href="class_engine_1_1_log.html#aa6253fafb5f70f91507047f962fcbcba">Engine.Log.Information</a></div><div class="ttdeci">static void Information(object message)</div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00056">Log.cs:56</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html"><div class="ttname"><a href="class_engine_1_1_storage.html">Engine.Storage</a></div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00024">Storage.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a1d731cbadc483958430619e69000394a"><div class="ttname"><a href="class_engine_1_1_storage.html#a1d731cbadc483958430619e69000394a">Engine.Storage.CreateDirectory</a></div><div class="ttdeci">static void CreateDirectory(string path)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00135">Storage.cs:135</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a2b7cc231544f9d4b41993955d0c3c6ff"><div class="ttname"><a href="class_engine_1_1_storage.html#a2b7cc231544f9d4b41993955d0c3c6ff">Engine.Storage.DirectoryExists</a></div><div class="ttdeci">static bool DirectoryExists(string path)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00087">Storage.cs:87</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a3a6586a9f70dd693b5c907a1b4a3dbea"><div class="ttname"><a href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">Engine.Storage.OpenFile</a></div><div class="ttdeci">static Stream OpenFile(string path, OpenFileMode openFileMode)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00093">Storage.cs:93</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a4acc9fdb18a4efbbfcb8e984d1879794"><div class="ttname"><a href="class_engine_1_1_storage.html#a4acc9fdb18a4efbbfcb8e984d1879794">Engine.Storage.SanitizeFileName</a></div><div class="ttdeci">static string SanitizeFileName(string filename, string replacement=&quot;-&quot;)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00371">Storage.cs:371</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a4c0d6d5f22194e452303345db65ece1f"><div class="ttname"><a href="class_engine_1_1_storage.html#a4c0d6d5f22194e452303345db65ece1f">Engine.Storage.GetFileInfo</a></div><div class="ttdeci">static FileInfo GetFileInfo(string path)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00356">Storage.cs:356</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a98b9838a25eb638c4d8d14f48e524eed"><div class="ttname"><a href="class_engine_1_1_storage.html#a98b9838a25eb638c4d8d14f48e524eed">Engine.Storage.ProcessPath</a></div><div class="ttdeci">static string ProcessPath(string path, bool writeAccess, bool failIfApp)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00314">Storage.cs:314</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_ada4eee2385d71f7a9a359107511171e4"><div class="ttname"><a href="class_engine_1_1_storage.html#ada4eee2385d71f7a9a359107511171e4">Engine.Storage.CombinePaths</a></div><div class="ttdeci">static string CombinePaths(params string[] paths)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00214">Storage.cs:214</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_window_html_a1ef7534450d47ff644d5bed19862589a"><div class="ttname"><a href="class_engine_1_1_window.html#a1ef7534450d47ff644d5bed19862589a">Engine.Window.Closed</a></div><div class="ttdeci">static Action Closed</div><div class="ttdef"><b>定义</b> <a href="_window_8cs_source.html#l00374">Window.cs:374</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_log_sink_html_a14a02bc0baf83f7d64f976cdb5ed4f2f"><div class="ttname"><a href="class_game_1_1_game_log_sink.html#a14a02bc0baf83f7d64f976cdb5ed4f2f">Game.GameLogSink.GetRecentLogLines</a></div><div class="ttdeci">static List&lt; string &gt; GetRecentLogLines(int bytesCount)</div><div class="ttdef"><b>定义</b> <a href="#l00083">GameLogSink.cs:83</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_log_sink_html_a1962167a9afcf0503f8ed6ebac19ab42"><div class="ttname"><a href="class_game_1_1_game_log_sink.html#a1962167a9afcf0503f8ed6ebac19ab42">Game.GameLogSink.GetRecentLog</a></div><div class="ttdeci">static string GetRecentLog(int bytesCount)</div><div class="ttdef"><b>定义</b> <a href="#l00068">GameLogSink.cs:68</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_log_sink_html_a19df09b4bf105a0679e5d198b23810ee"><div class="ttname"><a href="class_game_1_1_game_log_sink.html#a19df09b4bf105a0679e5d198b23810ee">Game.GameLogSink.errorOfInstantiation</a></div><div class="ttdeci">static string errorOfInstantiation</div><div class="ttdef"><b>定义</b> <a href="#l00013">GameLogSink.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_log_sink_html_a40012c60591eb8ea20c87cb427486bd7"><div class="ttname"><a href="class_game_1_1_game_log_sink.html#a40012c60591eb8ea20c87cb427486bd7">Game.GameLogSink.Dispose</a></div><div class="ttdeci">void Dispose()</div><div class="ttdef"><b>定义</b> <a href="#l00128">GameLogSink.cs:128</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_log_sink_html_aa42ed77f5c041258a9c163103b69aadc"><div class="ttname"><a href="class_game_1_1_game_log_sink.html#aa42ed77f5c041258a9c163103b69aadc">Game.GameLogSink.m_writer</a></div><div class="ttdeci">static StreamWriter m_writer</div><div class="ttdef"><b>定义</b> <a href="#l00011">GameLogSink.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_log_sink_html_ade04606ad811055da25a9b780f922325"><div class="ttname"><a href="class_game_1_1_game_log_sink.html#ade04606ad811055da25a9b780f922325">Game.GameLogSink.GameLogSink</a></div><div class="ttdeci">GameLogSink()</div><div class="ttdef"><b>定义</b> <a href="#l00016">GameLogSink.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_log_sink_html_aec5dbc4a19e69770206f13b08ddc71e7"><div class="ttname"><a href="class_game_1_1_game_log_sink.html#aec5dbc4a19e69770206f13b08ddc71e7">Game.GameLogSink.Log</a></div><div class="ttdeci">void Log(LogType type, string message)</div><div class="ttdef"><b>定义</b> <a href="#l00107">GameLogSink.cs:107</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_log_sink_html_af04063703bee628d6f043847a94aaed3"><div class="ttname"><a href="class_game_1_1_game_log_sink.html#af04063703bee628d6f043847a94aaed3">Game.GameLogSink.fName</a></div><div class="ttdeci">const string fName</div><div class="ttdef"><b>定义</b> <a href="#l00015">GameLogSink.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_log_sink_html_af609166c6c717ce46587bf07bdd284d1"><div class="ttname"><a href="class_game_1_1_game_log_sink.html#af609166c6c717ce46587bf07bdd284d1">Game.GameLogSink.m_stream</a></div><div class="ttdeci">static Stream m_stream</div><div class="ttdef"><b>定义</b> <a href="#l00009">GameLogSink.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_program_html"><div class="ttname"><a href="class_game_1_1_program.html">Game.Program</a></div><div class="ttdef"><b>定义</b> <a href="_program_8cs_source.html#l00024">Program.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_program_html_ad330d5dcf18233b87a14aa2451a29756"><div class="ttname"><a href="class_game_1_1_program.html#ad330d5dcf18233b87a14aa2451a29756">Game.Program.SystemLanguage</a></div><div class="ttdeci">static string SystemLanguage</div><div class="ttdef"><b>定义</b> <a href="_program_8cs_source.html#l00032">Program.cs:32</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html"><div class="ttname"><a href="class_mods_manager.html">ModsManager</a></div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00019">ModsManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a2a178bdf1bb8740b880353137f2c56ff"><div class="ttname"><a href="class_mods_manager.html#a2a178bdf1bb8740b880353137f2c56ff">ModsManager.LogPath</a></div><div class="ttdeci">static string LogPath</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00067">ModsManager.cs:67</a></div></div>
+<div class="ttc" id="ainterface_engine_1_1_i_log_sink_html"><div class="ttname"><a href="interface_engine_1_1_i_log_sink.html">Engine.ILogSink</a></div><div class="ttdef"><b>定义</b> <a href="_i_log_sink_8cs_source.html#l00002">ILogSink.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html_a76f65dd21e137e07d0839591f565cccd"><div class="ttname"><a href="namespace_engine.html#a76f65dd21e137e07d0839591f565cccd">Engine.LogType</a></div><div class="ttdeci">LogType</div><div class="ttdef"><b>定义</b> <a href="_log_type_8cs_source.html#l00002">LogType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html_ae47610d75f8bb133c22ca5f9de906ae3"><div class="ttname"><a href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">Engine.OpenFileMode</a></div><div class="ttdeci">OpenFileMode</div><div class="ttdef"><b>定义</b> <a href="_open_file_mode_8cs_source.html#l00002">OpenFileMode.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_afb822b09482a1c506ad46299f82cac5.html">Game</a></li><li class="navelem"><a href="_game_log_sink_8cs.html">GameLogSink.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

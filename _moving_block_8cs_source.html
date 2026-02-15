@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Block/MovingBlock.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_moving_block_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MovingBlock.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_moving_block_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_serialization.html">Engine.Serialization</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html">    7</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_moving_block.html">MovingBlock</a> {</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#a3472e94d6dd354a78c39eda1bbb7bcd8">    8</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_moving_block.html#a3472e94d6dd354a78c39eda1bbb7bcd8">IsNullOrStopped</a>(<a class="code hl_class" href="class_game_1_1_moving_block.html">MovingBlock</a> movingBlock) {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            <span class="keywordflow">if</span> (movingBlock == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <a class="code hl_interface" href="interface_game_1_1_i_moving_block_set.html">IMovingBlockSet</a> movingBlockSet = movingBlock.<a class="code hl_variable" href="class_game_1_1_moving_block.html#a9f220ffabcd58fd15d561f6f8175e3b8">MovingBlockSet</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="keywordflow">if</span> (movingBlockSet == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordflow">if</span> (movingBlockSet.<a class="code hl_property" href="interface_game_1_1_i_moving_block_set.html#a93fc7b6694a094807aa03dd4a3ea9c39">Stopped</a>) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#a9b09b923f824d96ffd8eb19495a9407b">   22</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> <a class="code hl_property" href="class_game_1_1_moving_block.html#a9b09b923f824d96ffd8eb19495a9407b">Position</a> =&gt; MovingBlockSet.Position + <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(<a class="code hl_variable" href="class_game_1_1_moving_block.html#ae0b1f3c39e1623082aad640c395e7335">Offset</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#ae6c75aa42806bc8cd9184a90e4ea5704">   24</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_game_1_1_moving_block.html">MovingBlock</a> <a class="code hl_function" href="class_game_1_1_moving_block.html#ae6c75aa42806bc8cd9184a90e4ea5704">LoadFromPositionAndOffset</a>(<a class="code hl_class" href="class_game_entity_system_1_1_project.html">Project</a> project, <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> movingBlocksPosition, <a class="code hl_struct" href="struct_engine_1_1_point3.html">Point3</a> offset, <span class="keywordtype">bool</span> throwOnError = <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_class" href="class_game_1_1_subsystem_moving_blocks.html">SubsystemMovingBlocks</a> subsystemMovingBlocks = project.<a class="code hl_function" href="class_game_entity_system_1_1_project.html#a53148ce255301ec218c2257fba4bf646">FindSubsystem</a>&lt;<a class="code hl_class" href="class_game_1_1_subsystem_moving_blocks.html">SubsystemMovingBlocks</a>&gt;();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_interface" href="interface_game_1_1_i_moving_block_set.html">IMovingBlockSet</a> movingBlockSet = subsystemMovingBlocks.<a class="code hl_property" href="class_game_1_1_subsystem_moving_blocks.html#ac1a01c2d55cf09679f6957dea4f56e4a">MovingBlockSets</a>.FirstOrDefault(</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <span class="keyword">set</span> =&gt; <span class="keyword">set</span>.<a class="code hl_property" href="class_game_1_1_moving_block.html#a9b09b923f824d96ffd8eb19495a9407b">Position</a>.ToString() == movingBlocksPosition.<a class="code hl_function" href="struct_engine_1_1_vector3.html#a647d8c54744dfcdd050bbd72f5db64d2">ToString</a>(),</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <span class="keyword">null</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            );</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (movingBlockSet != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <a class="code hl_class" href="class_game_1_1_moving_block.html">MovingBlock</a> movingBlock = movingBlockSet.Blocks.FirstOrDefault(block =&gt; block.Offset == offset, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_game_1_1_moving_block.html#a3472e94d6dd354a78c39eda1bbb7bcd8">IsNullOrStopped</a>(movingBlock)) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    <span class="keywordflow">return</span> movingBlock;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keywordflow">if</span> (throwOnError) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Required moving block offset {offset} is not found in MovingBlockSet {movingBlocksPosition}&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span> (throwOnError) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Required moving block set {movingBlocksPosition} is not found.&quot;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#a3be5f2979fc07cb7060ce549d7f941f1">   46</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_game_1_1_moving_block.html">MovingBlock</a> <a class="code hl_function" href="class_game_1_1_moving_block.html#a3be5f2979fc07cb7060ce549d7f941f1">LoadFromValuesDictionary</a>(<a class="code hl_class" href="class_game_entity_system_1_1_project.html">Project</a> project,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> valuesDictionary,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordtype">bool</span> throwOnError = <span class="keyword">true</span>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordtype">bool</span> throwIfNotFound = <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>? movingBlocksPosition = valuesDictionary.GetValue&lt;<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>?&gt;(<span class="stringliteral">&quot;MovingBlockSetPosition&quot;</span>, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_struct" href="struct_engine_1_1_point3.html">Point3</a>? point = valuesDictionary.GetValue&lt;<a class="code hl_struct" href="struct_engine_1_1_point3.html">Point3</a>?&gt;(<span class="stringliteral">&quot;MovingBlockOffset&quot;</span>, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">if</span> (movingBlocksPosition.HasValue</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                &amp;&amp; point.HasValue) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="class_game_1_1_moving_block.html#ae6c75aa42806bc8cd9184a90e4ea5704">LoadFromPositionAndOffset</a>(project, movingBlocksPosition.Value, point.Value);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">if</span> (throwIfNotFound) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;MovingBlockSetPosition is not contained in valuesDictionary.&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#a63de096147e629049f621dfd0cf9cde0">   62</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_game_1_1_moving_block.html">MovingBlock</a> <a class="code hl_function" href="class_game_1_1_moving_block.html#a63de096147e629049f621dfd0cf9cde0">LoadFromString</a>(<a class="code hl_class" href="class_game_entity_system_1_1_project.html">Project</a> project, <span class="keywordtype">string</span> movingBlockInfo, out Exception exception) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            exception = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordtype">string</span>[] str1 = movingBlockInfo.Split(<span class="charliteral">&#39;;&#39;</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">if</span> (str1.Length == 0</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    || !str1[0].Contains(<span class="stringliteral">&quot;MovingBlock&quot;</span>)) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                    exception = <span class="keyword">new</span> InvalidDataException($<span class="stringliteral">&quot;String \&quot;{movingBlockInfo}\&quot; is not valid for moving block load.&quot;</span>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> movingBlockSetPosition = <a class="code hl_class" href="class_engine_1_1_serialization_1_1_human_readable_converter.html">HumanReadableConverter</a>.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#ad14f32019814f1389d6a0d83c35b3c90">ConvertFromString</a>&lt;<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>&gt;(str1[1]);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <a class="code hl_struct" href="struct_engine_1_1_point3.html">Point3</a> movingBlockOffset = <a class="code hl_class" href="class_engine_1_1_serialization_1_1_human_readable_converter.html">HumanReadableConverter</a>.<a class="code hl_function" href="class_engine_1_1_serialization_1_1_human_readable_converter.html#ad14f32019814f1389d6a0d83c35b3c90">ConvertFromString</a>&lt;<a class="code hl_struct" href="struct_engine_1_1_point3.html">Point3</a>&gt;(str1[2]);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="class_game_1_1_moving_block.html#ae6c75aa42806bc8cd9184a90e4ea5704">LoadFromPositionAndOffset</a>(project, movingBlockSetPosition, movingBlockOffset);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                exception = e;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#a3b732d6faa2d2a0ca70446125355af6d">   81</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_moving_block.html#a3b732d6faa2d2a0ca70446125355af6d">SetValuesDicionary</a>(<a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> valuesDictionary, <span class="keywordtype">bool</span> saveWhenStopped = <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_game_1_1_moving_block.html#a3472e94d6dd354a78c39eda1bbb7bcd8">IsNullOrStopped</a>(<span class="keyword">this</span>) || saveWhenStopped) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                valuesDictionary.SetValue(<span class="stringliteral">&quot;MovingBlockSetPosition&quot;</span>, <a class="code hl_variable" href="class_game_1_1_moving_block.html#a9f220ffabcd58fd15d561f6f8175e3b8">MovingBlockSet</a>.Position);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                valuesDictionary.SetValue(<span class="stringliteral">&quot;MovingBlockOffset&quot;</span>, <a class="code hl_variable" href="class_game_1_1_moving_block.html#ae0b1f3c39e1623082aad640c395e7335">Offset</a>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#a42e2b3e8b9252845af8a343812c49e7c">   88</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_game_1_1_moving_block.html#a42e2b3e8b9252845af8a343812c49e7c">ToString</a>() =&gt;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            $<span class="stringliteral">&quot;MovingBlock;{HumanReadableConverter.ConvertToString(MovingBlockSet.Position)};{HumanReadableConverter.ConvertToString(Offset)}&quot;</span>;</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#ae0b1f3c39e1623082aad640c395e7335">   91</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_point3.html">Point3</a> <a class="code hl_variable" href="class_game_1_1_moving_block.html#ae0b1f3c39e1623082aad640c395e7335">Offset</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#ae908725ebe206f343451475be93a7f18">   93</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_game_1_1_moving_block.html#ae908725ebe206f343451475be93a7f18">Value</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_game_1_1_moving_block.html#a9f220ffabcd58fd15d561f6f8175e3b8">   95</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_game_1_1_i_moving_block_set.html">IMovingBlockSet</a> <a class="code hl_variable" href="class_game_1_1_moving_block.html#a9f220ffabcd58fd15d561f6f8175e3b8">MovingBlockSet</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="ttc" id="a_subsystem_audio_8cs_html_aa72bd5818d1fb1c95123ce286b96e775"><div class="ttname"><a href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a></div><div class="ttdeci">Engine.Vector3 Vector3</div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00005">SubsystemAudio.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_human_readable_converter_html"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_human_readable_converter.html">Engine.Serialization.HumanReadableConverter</a></div><div class="ttdef"><b>定义</b> <a href="_human_readable_converter_8cs_source.html#l00005">HumanReadableConverter.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_serialization_1_1_human_readable_converter_html_ad14f32019814f1389d6a0d83c35b3c90"><div class="ttname"><a href="class_engine_1_1_serialization_1_1_human_readable_converter.html#ad14f32019814f1389d6a0d83c35b3c90">Engine.Serialization.HumanReadableConverter.ConvertFromString</a></div><div class="ttdeci">static object ConvertFromString(Type type, string data)</div><div class="ttdef"><b>定义</b> <a href="_human_readable_converter_8cs_source.html#l00055">HumanReadableConverter.cs:55</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html"><div class="ttname"><a href="class_game_1_1_moving_block.html">Game.MovingBlock</a></div><div class="ttdef"><b>定义</b> <a href="#l00007">MovingBlock.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_a3472e94d6dd354a78c39eda1bbb7bcd8"><div class="ttname"><a href="class_game_1_1_moving_block.html#a3472e94d6dd354a78c39eda1bbb7bcd8">Game.MovingBlock.IsNullOrStopped</a></div><div class="ttdeci">static bool IsNullOrStopped(MovingBlock movingBlock)</div><div class="ttdef"><b>定义</b> <a href="#l00008">MovingBlock.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_a3b732d6faa2d2a0ca70446125355af6d"><div class="ttname"><a href="class_game_1_1_moving_block.html#a3b732d6faa2d2a0ca70446125355af6d">Game.MovingBlock.SetValuesDicionary</a></div><div class="ttdeci">void SetValuesDicionary(ValuesDictionary valuesDictionary, bool saveWhenStopped=false)</div><div class="ttdef"><b>定义</b> <a href="#l00081">MovingBlock.cs:81</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_a3be5f2979fc07cb7060ce549d7f941f1"><div class="ttname"><a href="class_game_1_1_moving_block.html#a3be5f2979fc07cb7060ce549d7f941f1">Game.MovingBlock.LoadFromValuesDictionary</a></div><div class="ttdeci">static MovingBlock LoadFromValuesDictionary(Project project, ValuesDictionary valuesDictionary, bool throwOnError=true, bool throwIfNotFound=false)</div><div class="ttdef"><b>定义</b> <a href="#l00046">MovingBlock.cs:46</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_a42e2b3e8b9252845af8a343812c49e7c"><div class="ttname"><a href="class_game_1_1_moving_block.html#a42e2b3e8b9252845af8a343812c49e7c">Game.MovingBlock.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>定义</b> <a href="#l00088">MovingBlock.cs:88</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_a63de096147e629049f621dfd0cf9cde0"><div class="ttname"><a href="class_game_1_1_moving_block.html#a63de096147e629049f621dfd0cf9cde0">Game.MovingBlock.LoadFromString</a></div><div class="ttdeci">static MovingBlock LoadFromString(Project project, string movingBlockInfo, out Exception exception)</div><div class="ttdef"><b>定义</b> <a href="#l00062">MovingBlock.cs:62</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_a9b09b923f824d96ffd8eb19495a9407b"><div class="ttname"><a href="class_game_1_1_moving_block.html#a9b09b923f824d96ffd8eb19495a9407b">Game.MovingBlock.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>定义</b> <a href="#l00022">MovingBlock.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_a9f220ffabcd58fd15d561f6f8175e3b8"><div class="ttname"><a href="class_game_1_1_moving_block.html#a9f220ffabcd58fd15d561f6f8175e3b8">Game.MovingBlock.MovingBlockSet</a></div><div class="ttdeci">IMovingBlockSet MovingBlockSet</div><div class="ttdef"><b>定义</b> <a href="#l00095">MovingBlock.cs:95</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_ae0b1f3c39e1623082aad640c395e7335"><div class="ttname"><a href="class_game_1_1_moving_block.html#ae0b1f3c39e1623082aad640c395e7335">Game.MovingBlock.Offset</a></div><div class="ttdeci">Point3 Offset</div><div class="ttdef"><b>定义</b> <a href="#l00091">MovingBlock.cs:91</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_ae6c75aa42806bc8cd9184a90e4ea5704"><div class="ttname"><a href="class_game_1_1_moving_block.html#ae6c75aa42806bc8cd9184a90e4ea5704">Game.MovingBlock.LoadFromPositionAndOffset</a></div><div class="ttdeci">static MovingBlock LoadFromPositionAndOffset(Project project, Vector3 movingBlocksPosition, Point3 offset, bool throwOnError=true)</div><div class="ttdef"><b>定义</b> <a href="#l00024">MovingBlock.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_ae908725ebe206f343451475be93a7f18"><div class="ttname"><a href="class_game_1_1_moving_block.html#ae908725ebe206f343451475be93a7f18">Game.MovingBlock.Value</a></div><div class="ttdeci">int Value</div><div class="ttdef"><b>定义</b> <a href="#l00093">MovingBlock.cs:93</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_moving_blocks_html"><div class="ttname"><a href="class_game_1_1_subsystem_moving_blocks.html">Game.SubsystemMovingBlocks</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_moving_blocks_8cs_source.html#l00010">SubsystemMovingBlocks.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_moving_blocks_html_ac1a01c2d55cf09679f6957dea4f56e4a"><div class="ttname"><a href="class_game_1_1_subsystem_moving_blocks.html#ac1a01c2d55cf09679f6957dea4f56e4a">Game.SubsystemMovingBlocks.MovingBlockSets</a></div><div class="ttdeci">List&lt; IMovingBlockSet &gt; MovingBlockSets</div><div class="ttdef"><b>定义</b> <a href="_subsystem_moving_blocks_8cs_source.html#l00137">SubsystemMovingBlocks.cs:137</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_project_html"><div class="ttname"><a href="class_game_entity_system_1_1_project.html">GameEntitySystem.Project</a></div><div class="ttdef"><b>定义</b> <a href="_project_8cs_source.html#l00010">Project.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_project_html_a53148ce255301ec218c2257fba4bf646"><div class="ttname"><a href="class_game_entity_system_1_1_project.html#a53148ce255301ec218c2257fba4bf646">GameEntitySystem.Project.FindSubsystem</a></div><div class="ttdeci">virtual Subsystem FindSubsystem(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_project_8cs_source.html#l00110">Project.cs:110</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_values_dictionary_html"><div class="ttname"><a href="class_templates_database_1_1_values_dictionary.html">TemplatesDatabase.ValuesDictionary</a></div><div class="ttdef"><b>定义</b> <a href="_values_dictionary_8cs_source.html#l00009">ValuesDictionary.cs:9</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_moving_block_set_html"><div class="ttname"><a href="interface_game_1_1_i_moving_block_set.html">Game.IMovingBlockSet</a></div><div class="ttdef"><b>定义</b> <a href="_i_moving_block_set_8cs_source.html#l00004">IMovingBlockSet.cs:4</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_moving_block_set_html_a93fc7b6694a094807aa03dd4a3ea9c39"><div class="ttname"><a href="interface_game_1_1_i_moving_block_set.html#a93fc7b6694a094807aa03dd4a3ea9c39">Game.IMovingBlockSet.Stopped</a></div><div class="ttdeci">bool Stopped</div><div class="ttdef"><b>定义</b> <a href="_i_moving_block_set_8cs_source.html#l00015">IMovingBlockSet.cs:15</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_serialization_html"><div class="ttname"><a href="namespace_engine_1_1_serialization.html">Engine.Serialization</a></div><div class="ttdef"><b>定义</b> <a href="_archive_8cs_source.html#l00004">Archive.cs:4</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point3_html"><div class="ttname"><a href="struct_engine_1_1_point3.html">Engine.Point3</a></div><div class="ttdef"><b>定义</b> <a href="_point3_8cs_source.html#l00002">Point3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a647d8c54744dfcdd050bbd72f5db64d2"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a647d8c54744dfcdd050bbd72f5db64d2">Engine.Vector3.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00103">Vector3.cs:103</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_407fceb6d650316801e32c7b7f8f0e13.html">Block</a></li><li class="navelem"><a href="_moving_block_8cs.html">MovingBlock.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

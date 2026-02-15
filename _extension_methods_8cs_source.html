@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Graphics/ExtensionMethods.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_extension_methods_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ExtensionMethods.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_extension_methods_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="class_engine_1_1_graphics_1_1_extension_methods.html">ExtensionMethods</a> {</div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html#a89b54257aeaef6b46c4e5496acc0b8ac">    3</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_extension_methods.html#a89b54257aeaef6b46c4e5496acc0b8ac">GetSize</a>(<span class="keyword">this</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a201abc89989cf8e317b620f68cf644ed">IndexFormat</a> format) {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>            <span class="keywordflow">switch</span> (format) {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a201abc89989cf8e317b620f68cf644ed">IndexFormat</a>.SixteenBits: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a201abc89989cf8e317b620f68cf644ed">IndexFormat</a>.ThirtyTwoBits: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported IndexFormat.&quot;</span>);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            }</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        }</div>
+</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html#aab7c5ee94063d4ecd73df48abf5a6b12">   11</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_extension_methods.html#aab7c5ee94063d4ecd73df48abf5a6b12">GetSemanticString</a>(<span class="keyword">this</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a> semantic) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordflow">switch</span> (semantic) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.Position: <span class="keywordflow">return</span> <span class="stringliteral">&quot;POSITION&quot;</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.Color: <span class="keywordflow">return</span> <span class="stringliteral">&quot;COLOR&quot;</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.Normal: <span class="keywordflow">return</span> <span class="stringliteral">&quot;NORMAL&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TEXCOORD&quot;</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate0: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TEXCOORD0&quot;</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate1: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TEXCOORD1&quot;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate2: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TEXCOORD2&quot;</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate3: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TEXCOORD3&quot;</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate4: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TEXCOORD4&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate5: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TEXCOORD5&quot;</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate6: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TEXCOORD6&quot;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate7: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TEXCOORD7&quot;</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.Instance: <span class="keywordflow">return</span> <span class="stringliteral">&quot;INSTANCE&quot;</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.BlendIndices: <span class="keywordflow">return</span> <span class="stringliteral">&quot;BLENDINDICES&quot;</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.BlendWeights: <span class="keywordflow">return</span> <span class="stringliteral">&quot;BLENDWEIGHTS&quot;</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unrecognized vertex semantic.&quot;</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html#a8304dc3f00d95d47f84135435e73360f">   32</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_extension_methods.html#a8304dc3f00d95d47f84135435e73360f">GetSize</a>(<span class="keyword">this</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026d">ColorFormat</a> format) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">return</span> format <span class="keywordflow">switch</span> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026da7a706affdb437828fc8a092924346cea">ColorFormat.Rgba8888</a> =&gt; 4,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026da75e25955ac85b490dfa6ddf3af0dd39a">ColorFormat.Rgb565</a> =&gt; 2,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026dada97b09b12c6df96391f37cff54714c4">ColorFormat.Rgba5551</a> =&gt; 2,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026dacfff813d86d447fa2a9c858650ebbb90">ColorFormat.R8</a> =&gt; 1,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026da8ef0547ee9e9bb39c2991bfb21f1f8d0">ColorFormat.R32f</a> =&gt; 4,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026da9bbedf5336fc462149af8282883c45df">ColorFormat.RG32f</a> =&gt; 8,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026dab59d035a6d4f7e3b6e3eadb9659c5b87">ColorFormat.RGBA32f</a> =&gt; 16,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                _ =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported ColorFormat.&quot;</span>)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            };</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html#af10e4d69c490feb353ddfd8a9aacbfa6">   45</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_extension_methods.html#af10e4d69c490feb353ddfd8a9aacbfa6">GetSize</a>(<span class="keyword">this</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a23b50a9824d5fe02d9c272c386bc795e">DepthFormat</a> format) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">switch</span> (format) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a23b50a9824d5fe02d9c272c386bc795e">DepthFormat</a>.None: <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a23b50a9824d5fe02d9c272c386bc795e">DepthFormat</a>.Depth16: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a23b50a9824d5fe02d9c272c386bc795e">DepthFormat</a>.Depth24Stencil8: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported DepthFormat.&quot;</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html#ae1f03d58388af560ff9f3791a1e4d1bc">   54</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_extension_methods.html#ae1f03d58388af560ff9f3791a1e4d1bc">GetPrimitivesCount</a>(<span class="keyword">this</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a82b6b34b393cdea6455c7f4934274d40">PrimitiveType</a> primitiveType, <span class="keywordtype">int</span> indicesCount) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">switch</span> (primitiveType) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a82b6b34b393cdea6455c7f4934274d40">PrimitiveType</a>.LineList: <span class="keywordflow">return</span> indicesCount / 2;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a82b6b34b393cdea6455c7f4934274d40">PrimitiveType</a>.LineStrip: <span class="keywordflow">return</span> <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(indicesCount - 1, 0);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a82b6b34b393cdea6455c7f4934274d40">PrimitiveType</a>.TriangleList: <span class="keywordflow">return</span> indicesCount / 3;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a82b6b34b393cdea6455c7f4934274d40">PrimitiveType</a>.TriangleStrip: <span class="keywordflow">return</span> <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(indicesCount - 2, 0);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported PrimitiveType.&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html#a6871351861a9fe37934cd746abddcb92">   64</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_extension_methods.html#a6871351861a9fe37934cd746abddcb92">GetSize</a>(<span class="keyword">this</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85f">ShaderParameterType</a> type) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85f">ShaderParameterType</a>.Float: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85f">ShaderParameterType</a>.Vector2: <span class="keywordflow">return</span> 8;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85f">ShaderParameterType</a>.Vector3: <span class="keywordflow">return</span> 12;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85f">ShaderParameterType</a>.Vector4: <span class="keywordflow">return</span> 16;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85f">ShaderParameterType</a>.Matrix: <span class="keywordflow">return</span> 64;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported ShaderParameterType.&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html#a7bfa88dd996092adce8fe5cf528a102c">   75</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_extension_methods.html#a7bfa88dd996092adce8fe5cf528a102c">GetElementsCount</a>(<span class="keyword">this</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a> format) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">switch</span> (format) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Single: <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Vector2: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Vector3: <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Vector4: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Byte4: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.NormalizedByte4: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Short2: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.NormalizedShort2: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Short4: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.NormalizedShort4: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported VertexElementFormat.&quot;</span>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html#a82aad7320e52d5c212d185e909f71063">   91</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_extension_methods.html#a82aad7320e52d5c212d185e909f71063">GetElementSize</a>(<span class="keyword">this</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a> format) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">switch</span> (format) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Single: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Vector2: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Vector3: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Vector4: <span class="keywordflow">return</span> 4;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Byte4: <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.NormalizedByte4: <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Short2: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.NormalizedShort2: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.Short4: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a>.NormalizedShort4: <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported VertexElementFormat.&quot;</span>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_extension_methods.html#a5cea8dda6ccbbdce453bd258f42fb8a8">  107</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_extension_methods.html#a5cea8dda6ccbbdce453bd258f42fb8a8">GetSize</a>(<span class="keyword">this</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a> format) =&gt; format.GetElementsCount() * format.GetElementSize();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html">Engine.Graphics.ExtensionMethods</a></div><div class="ttdef"><b>定义</b> <a href="#l00002">ExtensionMethods.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html_a5cea8dda6ccbbdce453bd258f42fb8a8"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html#a5cea8dda6ccbbdce453bd258f42fb8a8">Engine.Graphics.ExtensionMethods.GetSize</a></div><div class="ttdeci">static int GetSize(this VertexElementFormat format)</div><div class="ttdef"><b>定义</b> <a href="#l00107">ExtensionMethods.cs:107</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html_a6871351861a9fe37934cd746abddcb92"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html#a6871351861a9fe37934cd746abddcb92">Engine.Graphics.ExtensionMethods.GetSize</a></div><div class="ttdeci">static int GetSize(this ShaderParameterType type)</div><div class="ttdef"><b>定义</b> <a href="#l00064">ExtensionMethods.cs:64</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html_a7bfa88dd996092adce8fe5cf528a102c"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html#a7bfa88dd996092adce8fe5cf528a102c">Engine.Graphics.ExtensionMethods.GetElementsCount</a></div><div class="ttdeci">static int GetElementsCount(this VertexElementFormat format)</div><div class="ttdef"><b>定义</b> <a href="#l00075">ExtensionMethods.cs:75</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html_a82aad7320e52d5c212d185e909f71063"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html#a82aad7320e52d5c212d185e909f71063">Engine.Graphics.ExtensionMethods.GetElementSize</a></div><div class="ttdeci">static int GetElementSize(this VertexElementFormat format)</div><div class="ttdef"><b>定义</b> <a href="#l00091">ExtensionMethods.cs:91</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html_a8304dc3f00d95d47f84135435e73360f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html#a8304dc3f00d95d47f84135435e73360f">Engine.Graphics.ExtensionMethods.GetSize</a></div><div class="ttdeci">static int GetSize(this ColorFormat format)</div><div class="ttdef"><b>定义</b> <a href="#l00032">ExtensionMethods.cs:32</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html_a89b54257aeaef6b46c4e5496acc0b8ac"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html#a89b54257aeaef6b46c4e5496acc0b8ac">Engine.Graphics.ExtensionMethods.GetSize</a></div><div class="ttdeci">static int GetSize(this IndexFormat format)</div><div class="ttdef"><b>定义</b> <a href="#l00003">ExtensionMethods.cs:3</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html_aab7c5ee94063d4ecd73df48abf5a6b12"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html#aab7c5ee94063d4ecd73df48abf5a6b12">Engine.Graphics.ExtensionMethods.GetSemanticString</a></div><div class="ttdeci">static string GetSemanticString(this VertexElementSemantic semantic)</div><div class="ttdef"><b>定义</b> <a href="#l00011">ExtensionMethods.cs:11</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html_ae1f03d58388af560ff9f3791a1e4d1bc"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html#ae1f03d58388af560ff9f3791a1e4d1bc">Engine.Graphics.ExtensionMethods.GetPrimitivesCount</a></div><div class="ttdeci">static int GetPrimitivesCount(this PrimitiveType primitiveType, int indicesCount)</div><div class="ttdef"><b>定义</b> <a href="#l00054">ExtensionMethods.cs:54</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_extension_methods_html_af10e4d69c490feb353ddfd8a9aacbfa6"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_extension_methods.html#af10e4d69c490feb353ddfd8a9aacbfa6">Engine.Graphics.ExtensionMethods.GetSize</a></div><div class="ttdeci">static int GetSize(this DepthFormat format)</div><div class="ttdef"><b>定义</b> <a href="#l00045">ExtensionMethods.cs:45</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a201abc89989cf8e317b620f68cf644ed"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a201abc89989cf8e317b620f68cf644ed">Engine.Graphics.IndexFormat</a></div><div class="ttdeci">IndexFormat</div><div class="ttdef"><b>定义</b> <a href="_index_format_8cs_source.html#l00002">IndexFormat.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a23b50a9824d5fe02d9c272c386bc795e"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a23b50a9824d5fe02d9c272c386bc795e">Engine.Graphics.DepthFormat</a></div><div class="ttdeci">DepthFormat</div><div class="ttdef"><b>定义</b> <a href="_depth_format_8cs_source.html#l00002">DepthFormat.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a2cb466449756b8d4b70f1eaf5c27c611"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">Engine.Graphics.VertexElementSemantic</a></div><div class="ttdeci">VertexElementSemantic</div><div class="ttdef"><b>定义</b> <a href="_vertex_element_semantic_8cs_source.html#l00002">VertexElementSemantic.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a369f12ef9171720aaae72389601a026d"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026d">Engine.Graphics.ColorFormat</a></div><div class="ttdeci">ColorFormat</div><div class="ttdef"><b>定义</b> <a href="_color_format_8cs_source.html#l00002">ColorFormat.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a369f12ef9171720aaae72389601a026da75e25955ac85b490dfa6ddf3af0dd39a"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026da75e25955ac85b490dfa6ddf3af0dd39a">Engine.Graphics.ColorFormat.Rgb565</a></div><div class="ttdeci">@ Rgb565</div><div class="ttdef"><b>定义</b> <a href="_color_format_8cs_source.html#l00005">ColorFormat.cs:5</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a369f12ef9171720aaae72389601a026da7a706affdb437828fc8a092924346cea"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026da7a706affdb437828fc8a092924346cea">Engine.Graphics.ColorFormat.Rgba8888</a></div><div class="ttdeci">@ Rgba8888</div><div class="ttdef"><b>定义</b> <a href="_color_format_8cs_source.html#l00003">ColorFormat.cs:3</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a369f12ef9171720aaae72389601a026da8ef0547ee9e9bb39c2991bfb21f1f8d0"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026da8ef0547ee9e9bb39c2991bfb21f1f8d0">Engine.Graphics.ColorFormat.R32f</a></div><div class="ttdeci">@ R32f</div><div class="ttdef"><b>定义</b> <a href="_color_format_8cs_source.html#l00007">ColorFormat.cs:7</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a369f12ef9171720aaae72389601a026da9bbedf5336fc462149af8282883c45df"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026da9bbedf5336fc462149af8282883c45df">Engine.Graphics.ColorFormat.RG32f</a></div><div class="ttdeci">@ RG32f</div><div class="ttdef"><b>定义</b> <a href="_color_format_8cs_source.html#l00008">ColorFormat.cs:8</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a369f12ef9171720aaae72389601a026dab59d035a6d4f7e3b6e3eadb9659c5b87"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026dab59d035a6d4f7e3b6e3eadb9659c5b87">Engine.Graphics.ColorFormat.RGBA32f</a></div><div class="ttdeci">@ RGBA32f</div><div class="ttdef"><b>定义</b> <a href="_color_format_8cs_source.html#l00009">ColorFormat.cs:9</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a369f12ef9171720aaae72389601a026dacfff813d86d447fa2a9c858650ebbb90"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026dacfff813d86d447fa2a9c858650ebbb90">Engine.Graphics.ColorFormat.R8</a></div><div class="ttdeci">@ R8</div><div class="ttdef"><b>定义</b> <a href="_color_format_8cs_source.html#l00006">ColorFormat.cs:6</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a369f12ef9171720aaae72389601a026dada97b09b12c6df96391f37cff54714c4"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a369f12ef9171720aaae72389601a026dada97b09b12c6df96391f37cff54714c4">Engine.Graphics.ColorFormat.Rgba5551</a></div><div class="ttdeci">@ Rgba5551</div><div class="ttdef"><b>定义</b> <a href="_color_format_8cs_source.html#l00004">ColorFormat.cs:4</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a5396740de867234614e3c467bb78e85f"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85f">Engine.Graphics.ShaderParameterType</a></div><div class="ttdeci">ShaderParameterType</div><div class="ttdef"><b>定义</b> <a href="_shader_parameter_type_8cs_source.html#l00002">ShaderParameterType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a82b6b34b393cdea6455c7f4934274d40"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a82b6b34b393cdea6455c7f4934274d40">Engine.Graphics.PrimitiveType</a></div><div class="ttdeci">PrimitiveType</div><div class="ttdef"><b>定义</b> <a href="_primitive_type_8cs_source.html#l00002">PrimitiveType.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_abe4ada163c38a037539b4adb821f488a"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">Engine.Graphics.VertexElementFormat</a></div><div class="ttdeci">VertexElementFormat</div><div class="ttdef"><b>定义</b> <a href="_vertex_element_format_8cs_source.html#l00002">VertexElementFormat.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_45a969ac2810c86187bf086c7866e423.html">Engine.Graphics</a></li><li class="navelem"><a href="_extension_methods_8cs.html">ExtensionMethods.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

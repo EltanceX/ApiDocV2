@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine/BoundingSphere.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_bounding_sphere_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BoundingSphere.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_bounding_sphere_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">BoundingSphere</a> : IEquatable&lt;BoundingSphere&gt; {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html#a172812b99dd76792837807589ef7357e">    3</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> <a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a172812b99dd76792837807589ef7357e">Center</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html#a2d8e25565a4b7a076274bb93a231bbb8">    5</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a2d8e25565a4b7a076274bb93a231bbb8">Radius</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">    7</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">BoundingSphere</a>(<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> center, <span class="keywordtype">float</span> radius) {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            <a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a172812b99dd76792837807589ef7357e">Center</a> = center;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            <a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a2d8e25565a4b7a076274bb93a231bbb8">Radius</a> = radius;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        }</div>
+</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html#a76bdc4eb1b7f08056c1dac828e70dfcf">   12</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#a76bdc4eb1b7f08056c1dac828e70dfcf">Equals</a>(<span class="keywordtype">object</span> obj) =&gt; obj is <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">BoundingSphere</a> sphere &amp;&amp; <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#a76bdc4eb1b7f08056c1dac828e70dfcf">Equals</a>(sphere);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html#a1b4a95fbf66777cff5286bdc3c5803b4">   14</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#a1b4a95fbf66777cff5286bdc3c5803b4">GetHashCode</a>() =&gt; <a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a172812b99dd76792837807589ef7357e">Center</a>.GetHashCode() + <a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a2d8e25565a4b7a076274bb93a231bbb8">Radius</a>.GetHashCode();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html#a6b199477e7588eecec09234fe6cbee84">   16</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#a6b199477e7588eecec09234fe6cbee84">Equals</a>(<a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">BoundingSphere</a> other) =&gt; <a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a172812b99dd76792837807589ef7357e">Center</a> == other.Center &amp;&amp; <a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a2d8e25565a4b7a076274bb93a231bbb8">Radius</a> == other.<a class="code hl_variable" href="struct_engine_1_1_bounding_sphere.html#a2d8e25565a4b7a076274bb93a231bbb8">Radius</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html#a4af1a25b7d93067ba7abead7d68d89c8">   18</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#a4af1a25b7d93067ba7abead7d68d89c8">ToString</a>() =&gt; $<span class="stringliteral">&quot;{Center},{Radius}&quot;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html#aa515c1e21713ff8fdc870bb5b0a19e45">   20</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#aa515c1e21713ff8fdc870bb5b0a19e45">operator ==</a>(<a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">BoundingSphere</a> s1, <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">BoundingSphere</a> s2) =&gt; s1.<a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#a76bdc4eb1b7f08056c1dac828e70dfcf">Equals</a>(s2);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_engine_1_1_bounding_sphere.html#abdfcd00ebebb437d1e095da6d13f32b6">   22</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#abdfcd00ebebb437d1e095da6d13f32b6">operator !=</a>(<a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">BoundingSphere</a> s1, <a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">BoundingSphere</a> s2) =&gt; !s1.<a class="code hl_function" href="struct_engine_1_1_bounding_sphere.html#a76bdc4eb1b7f08056c1dac828e70dfcf">Equals</a>(s2);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_a172812b99dd76792837807589ef7357e"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#a172812b99dd76792837807589ef7357e">Engine.BoundingSphere.Center</a></div><div class="ttdeci">Vector3 Center</div><div class="ttdef"><b>定义</b> <a href="#l00003">BoundingSphere.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_a1b4a95fbf66777cff5286bdc3c5803b4"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#a1b4a95fbf66777cff5286bdc3c5803b4">Engine.BoundingSphere.GetHashCode</a></div><div class="ttdeci">override int GetHashCode()</div><div class="ttdef"><b>定义</b> <a href="#l00014">BoundingSphere.cs:14</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_a2d8e25565a4b7a076274bb93a231bbb8"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#a2d8e25565a4b7a076274bb93a231bbb8">Engine.BoundingSphere.Radius</a></div><div class="ttdeci">float Radius</div><div class="ttdef"><b>定义</b> <a href="#l00005">BoundingSphere.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_a4af1a25b7d93067ba7abead7d68d89c8"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#a4af1a25b7d93067ba7abead7d68d89c8">Engine.BoundingSphere.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>定义</b> <a href="#l00018">BoundingSphere.cs:18</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_a6b199477e7588eecec09234fe6cbee84"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#a6b199477e7588eecec09234fe6cbee84">Engine.BoundingSphere.Equals</a></div><div class="ttdeci">bool Equals(BoundingSphere other)</div><div class="ttdef"><b>定义</b> <a href="#l00016">BoundingSphere.cs:16</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_a76bdc4eb1b7f08056c1dac828e70dfcf"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#a76bdc4eb1b7f08056c1dac828e70dfcf">Engine.BoundingSphere.Equals</a></div><div class="ttdeci">override bool Equals(object obj)</div><div class="ttdef"><b>定义</b> <a href="#l00012">BoundingSphere.cs:12</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_aa515c1e21713ff8fdc870bb5b0a19e45"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#aa515c1e21713ff8fdc870bb5b0a19e45">Engine.BoundingSphere.operator==</a></div><div class="ttdeci">static bool operator==(BoundingSphere s1, BoundingSphere s2)</div><div class="ttdef"><b>定义</b> <a href="#l00020">BoundingSphere.cs:20</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_abdfcd00ebebb437d1e095da6d13f32b6"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#abdfcd00ebebb437d1e095da6d13f32b6">Engine.BoundingSphere.operator!=</a></div><div class="ttdeci">static bool operator!=(BoundingSphere s1, BoundingSphere s2)</div><div class="ttdef"><b>定义</b> <a href="#l00022">BoundingSphere.cs:22</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_bounding_sphere_html_ac16b8d8999bda254bab7a521bebf9366"><div class="ttname"><a href="struct_engine_1_1_bounding_sphere.html#ac16b8d8999bda254bab7a521bebf9366">Engine.BoundingSphere.BoundingSphere</a></div><div class="ttdeci">BoundingSphere(Vector3 center, float radius)</div><div class="ttdef"><b>定义</b> <a href="#l00007">BoundingSphere.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_449d29b21d204a5ee92421b755e01672.html">Engine</a></li><li class="navelem"><a href="_bounding_sphere_8cs.html">BoundingSphere.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

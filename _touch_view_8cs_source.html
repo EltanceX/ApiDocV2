@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/SurvivalCraft.IOS/TouchView.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_touch_view_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TouchView.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_touch_view_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>CoreGraphics;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>Foundation;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>UIKit;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_survival_craft_1_1_i_o_s.html">SurvivalCraft.IOS</a> {</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html">    7</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a8b8394c27dfef18bf5ff56d527068d59">TouchView</a> : UIView {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a2b895f2af6501b4ce108a71113c1406a">    8</a></span>        <span class="keyword">private</span> UIView <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a2b895f2af6501b4ce108a71113c1406a">parent</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">    9</a></span>        <span class="keyword">private</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">pixelScale</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#af939626abe84662763d85d74e69f8f1d">   10</a></span>        Dictionary&lt;UITouch, int&gt; <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#af939626abe84662763d85d74e69f8f1d">idMap</a> = [];</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#aa83b8603f11c44f0a6b417ef81ccd70f">   11</a></span>        <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#aa83b8603f11c44f0a6b417ef81ccd70f">globalId</a>;</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a8b8394c27dfef18bf5ff56d527068d59">   12</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a8b8394c27dfef18bf5ff56d527068d59">TouchView</a>(UIView parentView) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a2b895f2af6501b4ce108a71113c1406a">parent</a> = parentView;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            Bounds = <span class="keyword">new</span> CGRect(0, 0, <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_class" href="class_engine_1_1_window.html">Window</a>.<a class="code hl_property" href="class_engine_1_1_window.html#a5ab9eb6cfa9bf6307f07fd072c117404">Size</a>.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a>, <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_class" href="class_engine_1_1_window.html">Window</a>.<a class="code hl_property" href="class_engine_1_1_window.html#a5ab9eb6cfa9bf6307f07fd072c117404">Size</a>.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">pixelScale</a> = (float)Bounds.Width / (<span class="keywordtype">float</span>)<a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a2b895f2af6501b4ce108a71113c1406a">parent</a>.Bounds.Width;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            MultipleTouchEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            UserInteractionEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="comment">//禁止多个视图同时接收触摸</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            ExclusiveTouch = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#aa83b8603f11c44f0a6b417ef81ccd70f">globalId</a> = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5f0c053b4004da160e4883e307f13bea">   22</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5f0c053b4004da160e4883e307f13bea">TouchesBegan</a>(NSSet touches, UIEvent? evt) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">foreach</span> (UITouch cc <span class="keywordflow">in</span> touches.Cast&lt;UITouch&gt;()) {                </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                var point = cc.LocationInView(<a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a2b895f2af6501b4ce108a71113c1406a">parent</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                <span class="keywordtype">int</span> x = (int)(point.X * <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">pixelScale</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keywordtype">int</span> y = (int)(point.Y * <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">pixelScale</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> vector = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(x, y);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#af939626abe84662763d85d74e69f8f1d">idMap</a>.Add(cc,++<a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#aa83b8603f11c44f0a6b417ef81ccd70f">globalId</a>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.<a class="code hl_class" href="class_engine_1_1_input_1_1_touch.html">Touch</a>.<a class="code hl_function" href="class_engine_1_1_input_1_1_touch.html#af64ba365733b99747c9ebf130d767872">ProcessTouchPressed</a>(<a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#aa83b8603f11c44f0a6b417ef81ccd70f">globalId</a>, vector);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <span class="comment">//Console.WriteLine(&quot;[&quot; + touches.GetHashCode() + &quot;]touch start id:: &quot; + globalId);</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a04f9ef2164722db4ad01db3dff599d43">   33</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a04f9ef2164722db4ad01db3dff599d43">TouchesMoved</a>(NSSet touches, UIEvent? evt) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">foreach</span> (UITouch cc <span class="keywordflow">in</span> touches.Cast&lt;UITouch&gt;()) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                var point = cc.LocationInView(<a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a2b895f2af6501b4ce108a71113c1406a">parent</a>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keywordtype">int</span> x = (int)(point.X * <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">pixelScale</a>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordtype">int</span> y = (int)(point.Y * <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">pixelScale</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> vector = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(x, y);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#af939626abe84662763d85d74e69f8f1d">idMap</a>.TryGetValue(cc, out <span class="keywordtype">int</span> <span class="keywordtype">id</span>)) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.<a class="code hl_class" href="class_engine_1_1_input_1_1_touch.html">Touch</a>.<a class="code hl_function" href="class_engine_1_1_input_1_1_touch.html#a85a41d529e2d153796dcc6be0e7ce3dd">ProcessTouchMoved</a>(<span class="keywordtype">id</span>, vector);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    <span class="comment">//Console.WriteLine(&quot;[&quot; + touches.GetHashCode() + &quot;]touch move id:: &quot; + id);</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="comment">//else</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="comment">//    Console.WriteLine(&quot;Unknown touch move id::&quot;+cc.GetHashCode());</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a64166ee9db12ec5fcab2f01c888c6f7c">   47</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a64166ee9db12ec5fcab2f01c888c6f7c">TouchesEnded</a>(NSSet touches, UIEvent? evt) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">foreach</span> (UITouch cc <span class="keywordflow">in</span> touches.Cast&lt;UITouch&gt;()) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                var point = cc.LocationInView(<a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a2b895f2af6501b4ce108a71113c1406a">parent</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordtype">int</span> x = (int)(point.X * <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">pixelScale</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keywordtype">int</span> y = (int)(point.Y * <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">pixelScale</a>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                <span class="keywordtype">int</span> processId = cc.GetHashCode();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> vector = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(x, y);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#af939626abe84662763d85d74e69f8f1d">idMap</a>.TryGetValue(cc,out <span class="keywordtype">int</span> <span class="keywordtype">id</span>)) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.<a class="code hl_class" href="class_engine_1_1_input_1_1_touch.html">Touch</a>.<a class="code hl_function" href="class_engine_1_1_input_1_1_touch.html#a995fff052e1af73d4da69696fa7a780b">ProcessTouchReleased</a>(<span class="keywordtype">id</span>, vector);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    <span class="comment">//Console.WriteLine(&quot;[&quot; + touches.GetHashCode() + &quot;]touch end id:: &quot; + id);</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    <a class="code hl_variable" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#af939626abe84662763d85d74e69f8f1d">idMap</a>.Remove(cc);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="comment">//else</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="comment">//    Console.WriteLine(&quot;Unknown touch move id::&quot; + cc.GetHashCode());</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a21d610e81c9ba252576af092d527d5a3">   64</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a21d610e81c9ba252576af092d527d5a3">TouchesCancelled</a>(NSSet touches, UIEvent? evt) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <a class="code hl_namespace" href="namespace_engine.html">Engine</a>.<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.<a class="code hl_class" href="class_engine_1_1_input_1_1_touch.html">Touch</a>.<a class="code hl_function" href="class_engine_1_1_input_1_1_touch.html#a090f13df8326270b55f10e1a6a4cdb19">Clear</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_input_1_1_touch_html"><div class="ttname"><a href="class_engine_1_1_input_1_1_touch.html">Engine.Input.Touch</a></div><div class="ttdef"><b>定义</b> <a href="_touch_8cs_source.html#l00009">Touch.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_input_1_1_touch_html_a090f13df8326270b55f10e1a6a4cdb19"><div class="ttname"><a href="class_engine_1_1_input_1_1_touch.html#a090f13df8326270b55f10e1a6a4cdb19">Engine.Input.Touch.Clear</a></div><div class="ttdeci">static void Clear()</div><div class="ttdef"><b>定义</b> <a href="_touch_8cs_source.html#l00068">Touch.cs:68</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_input_1_1_touch_html_a85a41d529e2d153796dcc6be0e7ce3dd"><div class="ttname"><a href="class_engine_1_1_input_1_1_touch.html#a85a41d529e2d153796dcc6be0e7ce3dd">Engine.Input.Touch.ProcessTouchMoved</a></div><div class="ttdeci">static void ProcessTouchMoved(int id, Vector2 position)</div><div class="ttdef"><b>定义</b> <a href="_touch_8cs_source.html#l00117">Touch.cs:117</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_input_1_1_touch_html_a995fff052e1af73d4da69696fa7a780b"><div class="ttname"><a href="class_engine_1_1_input_1_1_touch.html#a995fff052e1af73d4da69696fa7a780b">Engine.Input.Touch.ProcessTouchReleased</a></div><div class="ttdeci">static void ProcessTouchReleased(int id, Vector2 position)</div><div class="ttdef"><b>定义</b> <a href="_touch_8cs_source.html#l00136">Touch.cs:136</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_input_1_1_touch_html_af64ba365733b99747c9ebf130d767872"><div class="ttname"><a href="class_engine_1_1_input_1_1_touch.html#af64ba365733b99747c9ebf130d767872">Engine.Input.Touch.ProcessTouchPressed</a></div><div class="ttdeci">static void ProcessTouchPressed(int id, Vector2 position)</div><div class="ttdef"><b>定义</b> <a href="_touch_8cs_source.html#l00115">Touch.cs:115</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_window_html"><div class="ttname"><a href="class_engine_1_1_window.html">Engine.Window</a></div><div class="ttdef"><b>定义</b> <a href="_window_8cs_source.html#l00036">Window.cs:36</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_window_html_a5ab9eb6cfa9bf6307f07fd072c117404"><div class="ttname"><a href="class_engine_1_1_window.html#a5ab9eb6cfa9bf6307f07fd072c117404">Engine.Window.Size</a></div><div class="ttdeci">static Point2 Size</div><div class="ttdef"><b>定义</b> <a href="_window_8cs_source.html#l00203">Window.cs:203</a></div></div>
+<div class="ttc" id="aclass_survival_craft_1_1_i_o_s_1_1_touch_view_html_a04f9ef2164722db4ad01db3dff599d43"><div class="ttname"><a href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a04f9ef2164722db4ad01db3dff599d43">SurvivalCraft.IOS.TouchView.TouchesMoved</a></div><div class="ttdeci">override void TouchesMoved(NSSet touches, UIEvent? evt)</div><div class="ttdef"><b>定义</b> <a href="#l00033">TouchView.cs:33</a></div></div>
+<div class="ttc" id="aclass_survival_craft_1_1_i_o_s_1_1_touch_view_html_a21d610e81c9ba252576af092d527d5a3"><div class="ttname"><a href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a21d610e81c9ba252576af092d527d5a3">SurvivalCraft.IOS.TouchView.TouchesCancelled</a></div><div class="ttdeci">override void TouchesCancelled(NSSet touches, UIEvent? evt)</div><div class="ttdef"><b>定义</b> <a href="#l00064">TouchView.cs:64</a></div></div>
+<div class="ttc" id="aclass_survival_craft_1_1_i_o_s_1_1_touch_view_html_a2b895f2af6501b4ce108a71113c1406a"><div class="ttname"><a href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a2b895f2af6501b4ce108a71113c1406a">SurvivalCraft.IOS.TouchView.parent</a></div><div class="ttdeci">UIView parent</div><div class="ttdef"><b>定义</b> <a href="#l00008">TouchView.cs:8</a></div></div>
+<div class="ttc" id="aclass_survival_craft_1_1_i_o_s_1_1_touch_view_html_a5f0c053b4004da160e4883e307f13bea"><div class="ttname"><a href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5f0c053b4004da160e4883e307f13bea">SurvivalCraft.IOS.TouchView.TouchesBegan</a></div><div class="ttdeci">override void TouchesBegan(NSSet touches, UIEvent? evt)</div><div class="ttdef"><b>定义</b> <a href="#l00022">TouchView.cs:22</a></div></div>
+<div class="ttc" id="aclass_survival_craft_1_1_i_o_s_1_1_touch_view_html_a5febaaaac1ca9ef240054c1d331a7bbf"><div class="ttname"><a href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a5febaaaac1ca9ef240054c1d331a7bbf">SurvivalCraft.IOS.TouchView.pixelScale</a></div><div class="ttdeci">float pixelScale</div><div class="ttdef"><b>定义</b> <a href="#l00009">TouchView.cs:9</a></div></div>
+<div class="ttc" id="aclass_survival_craft_1_1_i_o_s_1_1_touch_view_html_a64166ee9db12ec5fcab2f01c888c6f7c"><div class="ttname"><a href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a64166ee9db12ec5fcab2f01c888c6f7c">SurvivalCraft.IOS.TouchView.TouchesEnded</a></div><div class="ttdeci">override void TouchesEnded(NSSet touches, UIEvent? evt)</div><div class="ttdef"><b>定义</b> <a href="#l00047">TouchView.cs:47</a></div></div>
+<div class="ttc" id="aclass_survival_craft_1_1_i_o_s_1_1_touch_view_html_a8b8394c27dfef18bf5ff56d527068d59"><div class="ttname"><a href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#a8b8394c27dfef18bf5ff56d527068d59">SurvivalCraft.IOS.TouchView.TouchView</a></div><div class="ttdeci">TouchView(UIView parentView)</div><div class="ttdef"><b>定义</b> <a href="#l00012">TouchView.cs:12</a></div></div>
+<div class="ttc" id="aclass_survival_craft_1_1_i_o_s_1_1_touch_view_html_aa83b8603f11c44f0a6b417ef81ccd70f"><div class="ttname"><a href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#aa83b8603f11c44f0a6b417ef81ccd70f">SurvivalCraft.IOS.TouchView.globalId</a></div><div class="ttdeci">int globalId</div><div class="ttdef"><b>定义</b> <a href="#l00011">TouchView.cs:11</a></div></div>
+<div class="ttc" id="aclass_survival_craft_1_1_i_o_s_1_1_touch_view_html_af939626abe84662763d85d74e69f8f1d"><div class="ttname"><a href="class_survival_craft_1_1_i_o_s_1_1_touch_view.html#af939626abe84662763d85d74e69f8f1d">SurvivalCraft.IOS.TouchView.idMap</a></div><div class="ttdeci">Dictionary&lt; UITouch, int &gt; idMap</div><div class="ttdef"><b>定义</b> <a href="#l00010">TouchView.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_input_html"><div class="ttname"><a href="namespace_engine_1_1_input.html">Engine.Input</a></div><div class="ttdef"><b>定义</b> <a href="_cursor_type_8cs_source.html#l00001">CursorType.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_survival_craft_1_1_i_o_s_html"><div class="ttname"><a href="namespace_survival_craft_1_1_i_o_s.html">SurvivalCraft.IOS</a></div><div class="ttdef"><b>定义</b> <a href="_app_delegate_8cs_source.html#l00005">AppDelegate.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html_a5a5df9b9665d68a1edf96fb1f45e1232"><div class="ttname"><a href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Engine.Point2.Y</a></div><div class="ttdeci">int Y</div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00005">Point2.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html_a893555bab03b75cc94952451edecc8d8"><div class="ttname"><a href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">Engine.Point2.X</a></div><div class="ttdeci">int X</div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00003">Point2.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_b28ac23cecbbad7229e38cf08d833b20.html">SurvivalCraft.IOS</a></li><li class="navelem"><a href="_touch_view_8cs.html">TouchView.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

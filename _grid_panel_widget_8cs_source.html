@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/GridPanelWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_grid_panel_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GridPanelWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_grid_panel_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a55a7ec0bce417ab7564f6ec9fad45d48">GridPanelWidget</a> : <a class="code hl_function" href="class_game_1_1_container_widget.html#a354e896d39c1960ba7d82a6644b7347a">ContainerWidget</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget_1_1_column.html">    5</a></span>        <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_column.html">Column</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget_1_1_column.html#acc5d3cc059ac65e3a71cea9dab522ec1">    6</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_column.html#acc5d3cc059ac65e3a71cea9dab522ec1">Position</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget_1_1_column.html#a5998f9fdb83f966b1c4557bd319498a8">    8</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_column.html#a5998f9fdb83f966b1c4557bd319498a8">ActualWidth</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        }</div>
+</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget_1_1_row.html">   11</a></span>        <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_row.html">Row</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget_1_1_row.html#a646b70c7af3c696c52a020f947bc8f0e">   12</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_row.html#a646b70c7af3c696c52a020f947bc8f0e">Position</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget_1_1_row.html#a103bb6f6b11bab5f481687aa7e8ad97c">   14</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_row.html#a103bb6f6b11bab5f481687aa7e8ad97c">ActualHeight</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        }</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">   17</a></span>        <span class="keyword">public</span> List&lt;Column&gt; <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a> = [];</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">   19</a></span>        <span class="keyword">public</span> List&lt;Row&gt; <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a> = [];</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#af5276aba708671613fd114014a62ff21">   21</a></span>        <span class="keyword">public</span> Dictionary&lt;Widget, Point2&gt; <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#af5276aba708671613fd114014a62ff21">m_cells</a> = [];</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#a1a2a1ebf32fa618444fc5cfb24f165ae">   23</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_game_1_1_grid_panel_widget.html#a1a2a1ebf32fa618444fc5cfb24f165ae">ColumnsCount</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>.Count;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a> = <span class="keyword">new</span> List&lt;Column&gt;(<a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>.GetRange(0, <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(<a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>.Count, value)));</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <span class="keywordflow">while</span> (<a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>.Count &lt; value) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>.Add(<span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_column.html">Column</a>());</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#ae03b0397b703671a6cf16e756a2113f6">   33</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_game_1_1_grid_panel_widget.html#ae03b0397b703671a6cf16e756a2113f6">RowsCount</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>.Count;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a> = <span class="keyword">new</span> List&lt;Row&gt;(<a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>.GetRange(0, <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(<a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>.Count, value)));</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">while</span> (<a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>.Count &lt; value) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>.Add(<span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_row.html">Row</a>());</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#a55a7ec0bce417ab7564f6ec9fad45d48">   43</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a55a7ec0bce417ab7564f6ec9fad45d48">GridPanelWidget</a>() {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_property" href="class_game_1_1_grid_panel_widget.html#a1a2a1ebf32fa618444fc5cfb24f165ae">ColumnsCount</a> = 1;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <a class="code hl_property" href="class_game_1_1_grid_panel_widget.html#ae03b0397b703671a6cf16e756a2113f6">RowsCount</a> = 1;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#a577607496988c2a3915f66bbe1b55246">   48</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a577607496988c2a3915f66bbe1b55246">GetWidgetCell</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#af5276aba708671613fd114014a62ff21">m_cells</a>.TryGetValue(widget, out <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> value);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#a7fba5f8300749ac34135627e3546603b">   53</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a7fba5f8300749ac34135627e3546603b">SetWidgetCell</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget, <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> cell) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#af5276aba708671613fd114014a62ff21">m_cells</a>[widget] = cell;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#abbcc16fa0236e27a0c37f07778535774">   57</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#abbcc16fa0236e27a0c37f07778535774">SetCell</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget, <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> cell) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            (widget.ParentWidget as <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a55a7ec0bce417ab7564f6ec9fad45d48">GridPanelWidget</a>)?.<a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a7fba5f8300749ac34135627e3546603b">SetWidgetCell</a>(widget, cell);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#aa7b6da348cb7775d55dae4e85d0e87d3">   61</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#aa7b6da348cb7775d55dae4e85d0e87d3">WidgetRemoved</a>(<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> widget) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#af5276aba708671613fd114014a62ff21">m_cells</a>.Remove(widget);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#a78e48c1eb97c437b862a266519419ba2">   65</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a78e48c1eb97c437b862a266519419ba2">MeasureOverride</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> parentAvailableSize) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_column.html">Column</a> column2 <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                column2.ActualWidth = 0f;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_row.html">Row</a> row2 <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                row2.ActualHeight = 0f;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> child <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                child.<a class="code hl_function" href="class_game_1_1_widget.html#af2805d135ccb917d1b3f86bec67e8a88">Measure</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_function" href="struct_engine_1_1_vector2.html#a4ba3b4544cf4730e0b5175f335947b70">Max</a>(parentAvailableSize - child.<a class="code hl_property" href="class_game_1_1_widget.html#a62fcbc6e032f148994e01b988ffd9d8a">MarginHorizontalSumAndVerticalSum</a>, <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>));</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> widgetCell = <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a577607496988c2a3915f66bbe1b55246">GetWidgetCell</a>(child);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a32655148b2743a9a9c31b3e7b7efa597">IsCellValid</a>(widgetCell)) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    <a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_column.html">Column</a> column = <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>[widgetCell.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a>];</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    column.ActualWidth = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(column.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_column.html#a5998f9fdb83f966b1c4557bd319498a8">ActualWidth</a>, child.<a class="code hl_property" href="class_game_1_1_widget.html#a0702f54b746d8a8430922053fbf18771">ParentDesiredSize</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">X</a> + child.<a class="code hl_property" href="class_game_1_1_widget.html#a28109d97883ab6deea45af873a2f7ced">MarginHorizontalSum</a>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    <a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_row.html">Row</a> row = <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>[widgetCell.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a>];</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    row.ActualHeight = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(row.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_row.html#a103bb6f6b11bab5f481687aa7e8ad97c">ActualHeight</a>, child.<a class="code hl_property" href="class_game_1_1_widget.html#a0702f54b746d8a8430922053fbf18771">ParentDesiredSize</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Y</a> + child.<a class="code hl_property" href="class_game_1_1_widget.html#a00659890b15de37473ad9cf780951413">MarginVerticalSum</a>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> zero = <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_column.html">Column</a> column3 <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                column3.Position = zero.X;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                zero.X += column3.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_column.html#a5998f9fdb83f966b1c4557bd319498a8">ActualWidth</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_row.html">Row</a> row3 <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                row3.Position = zero.Y;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                zero.Y += row3.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_row.html#a103bb6f6b11bab5f481687aa7e8ad97c">ActualHeight</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <a class="code hl_property" href="class_game_1_1_widget.html#a4fcf3eb07446501ee363931839ce003a">DesiredSize</a> = zero;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#ab926b43d38f1af24ee5692c7a8c02f02">   94</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#ab926b43d38f1af24ee5692c7a8c02f02">ArrangeOverride</a>() {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_widget.html">Widget</a> child <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> widgetCell = <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a577607496988c2a3915f66bbe1b55246">GetWidgetCell</a>(child);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a32655148b2743a9a9c31b3e7b7efa597">IsCellValid</a>(widgetCell)) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    <a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_column.html">Column</a> column = <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>[widgetCell.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a>];</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    <a class="code hl_class" href="class_game_1_1_grid_panel_widget_1_1_row.html">Row</a> row = <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>[widgetCell.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a>];</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    <a class="code hl_function" href="class_game_1_1_container_widget.html#a567dc23d02f39c09daca2dd832b12138">ArrangeChildWidgetInCell</a>(</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                        <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(column.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_column.html#acc5d3cc059ac65e3a71cea9dab522ec1">Position</a>, row.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_row.html#a646b70c7af3c696c52a020f947bc8f0e">Position</a>),</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                        <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(column.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_column.html#acc5d3cc059ac65e3a71cea9dab522ec1">Position</a> + column.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_column.html#a5998f9fdb83f966b1c4557bd319498a8">ActualWidth</a>, row.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_row.html#a646b70c7af3c696c52a020f947bc8f0e">Position</a> + row.<a class="code hl_variable" href="class_game_1_1_grid_panel_widget_1_1_row.html#a103bb6f6b11bab5f481687aa7e8ad97c">ActualHeight</a>),</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                        child</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                    );</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    <a class="code hl_function" href="class_game_1_1_container_widget.html#a567dc23d02f39c09daca2dd832b12138">ArrangeChildWidgetInCell</a>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>, <a class="code hl_property" href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">ActualSize</a>, child);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_game_1_1_grid_panel_widget.html#a32655148b2743a9a9c31b3e7b7efa597">  112</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_grid_panel_widget.html#a32655148b2743a9a9c31b3e7b7efa597">IsCellValid</a>(<a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a> cell) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">if</span> (cell.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a> &gt;= 0</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                &amp;&amp; cell.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">X</a> &lt; <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">m_columns</a>.Count</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                &amp;&amp; cell.<a class="code hl_variable" href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Y</a> &gt;= 0) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                <span class="keywordflow">return</span> cell.Y &lt; <a class="code hl_variable" href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">m_rows</a>.Count;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
+</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a5f2b24627ca7cc5256edc10831fe295b"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Engine.MathUtils.Min</a></div><div class="ttdeci">static int Min(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00007">MathUtils.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a354e896d39c1960ba7d82a6644b7347a"><div class="ttname"><a href="class_game_1_1_container_widget.html#a354e896d39c1960ba7d82a6644b7347a">Game.ContainerWidget.ContainerWidget</a></div><div class="ttdeci">ContainerWidget()</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00020">ContainerWidget.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a567dc23d02f39c09daca2dd832b12138"><div class="ttname"><a href="class_game_1_1_container_widget.html#a567dc23d02f39c09daca2dd832b12138">Game.ContainerWidget.ArrangeChildWidgetInCell</a></div><div class="ttdeci">static void ArrangeChildWidgetInCell(Vector2 c1, Vector2 c2, Widget widget)</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00068">ContainerWidget.cs:68</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_1_1_column_html"><div class="ttname"><a href="class_game_1_1_grid_panel_widget_1_1_column.html">Game.GridPanelWidget.Column</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">GridPanelWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_1_1_column_html_a5998f9fdb83f966b1c4557bd319498a8"><div class="ttname"><a href="class_game_1_1_grid_panel_widget_1_1_column.html#a5998f9fdb83f966b1c4557bd319498a8">Game.GridPanelWidget.Column.ActualWidth</a></div><div class="ttdeci">float ActualWidth</div><div class="ttdef"><b>定义</b> <a href="#l00008">GridPanelWidget.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_1_1_column_html_acc5d3cc059ac65e3a71cea9dab522ec1"><div class="ttname"><a href="class_game_1_1_grid_panel_widget_1_1_column.html#acc5d3cc059ac65e3a71cea9dab522ec1">Game.GridPanelWidget.Column.Position</a></div><div class="ttdeci">float Position</div><div class="ttdef"><b>定义</b> <a href="#l00006">GridPanelWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_1_1_row_html"><div class="ttname"><a href="class_game_1_1_grid_panel_widget_1_1_row.html">Game.GridPanelWidget.Row</a></div><div class="ttdef"><b>定义</b> <a href="#l00011">GridPanelWidget.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_1_1_row_html_a103bb6f6b11bab5f481687aa7e8ad97c"><div class="ttname"><a href="class_game_1_1_grid_panel_widget_1_1_row.html#a103bb6f6b11bab5f481687aa7e8ad97c">Game.GridPanelWidget.Row.ActualHeight</a></div><div class="ttdeci">float ActualHeight</div><div class="ttdef"><b>定义</b> <a href="#l00014">GridPanelWidget.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_1_1_row_html_a646b70c7af3c696c52a020f947bc8f0e"><div class="ttname"><a href="class_game_1_1_grid_panel_widget_1_1_row.html#a646b70c7af3c696c52a020f947bc8f0e">Game.GridPanelWidget.Row.Position</a></div><div class="ttdeci">float Position</div><div class="ttdef"><b>定义</b> <a href="#l00012">GridPanelWidget.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_a1a2a1ebf32fa618444fc5cfb24f165ae"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#a1a2a1ebf32fa618444fc5cfb24f165ae">Game.GridPanelWidget.ColumnsCount</a></div><div class="ttdeci">int ColumnsCount</div><div class="ttdef"><b>定义</b> <a href="#l00023">GridPanelWidget.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_a32655148b2743a9a9c31b3e7b7efa597"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#a32655148b2743a9a9c31b3e7b7efa597">Game.GridPanelWidget.IsCellValid</a></div><div class="ttdeci">bool IsCellValid(Point2 cell)</div><div class="ttdef"><b>定义</b> <a href="#l00112">GridPanelWidget.cs:112</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_a37339b791bda88e7c60d141c6cd2a3c1"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#a37339b791bda88e7c60d141c6cd2a3c1">Game.GridPanelWidget.m_columns</a></div><div class="ttdeci">List&lt; Column &gt; m_columns</div><div class="ttdef"><b>定义</b> <a href="#l00017">GridPanelWidget.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_a50d83a6f89f795d8532ddb765f7f8a92"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#a50d83a6f89f795d8532ddb765f7f8a92">Game.GridPanelWidget.m_rows</a></div><div class="ttdeci">List&lt; Row &gt; m_rows</div><div class="ttdef"><b>定义</b> <a href="#l00019">GridPanelWidget.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_a55a7ec0bce417ab7564f6ec9fad45d48"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#a55a7ec0bce417ab7564f6ec9fad45d48">Game.GridPanelWidget.GridPanelWidget</a></div><div class="ttdeci">GridPanelWidget()</div><div class="ttdef"><b>定义</b> <a href="#l00043">GridPanelWidget.cs:43</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_a577607496988c2a3915f66bbe1b55246"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#a577607496988c2a3915f66bbe1b55246">Game.GridPanelWidget.GetWidgetCell</a></div><div class="ttdeci">Point2 GetWidgetCell(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00048">GridPanelWidget.cs:48</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_a78e48c1eb97c437b862a266519419ba2"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#a78e48c1eb97c437b862a266519419ba2">Game.GridPanelWidget.MeasureOverride</a></div><div class="ttdeci">override void MeasureOverride(Vector2 parentAvailableSize)</div><div class="ttdef"><b>定义</b> <a href="#l00065">GridPanelWidget.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_a7fba5f8300749ac34135627e3546603b"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#a7fba5f8300749ac34135627e3546603b">Game.GridPanelWidget.SetWidgetCell</a></div><div class="ttdeci">void SetWidgetCell(Widget widget, Point2 cell)</div><div class="ttdef"><b>定义</b> <a href="#l00053">GridPanelWidget.cs:53</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_aa7b6da348cb7775d55dae4e85d0e87d3"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#aa7b6da348cb7775d55dae4e85d0e87d3">Game.GridPanelWidget.WidgetRemoved</a></div><div class="ttdeci">override void WidgetRemoved(Widget widget)</div><div class="ttdef"><b>定义</b> <a href="#l00061">GridPanelWidget.cs:61</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_ab926b43d38f1af24ee5692c7a8c02f02"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#ab926b43d38f1af24ee5692c7a8c02f02">Game.GridPanelWidget.ArrangeOverride</a></div><div class="ttdeci">override void ArrangeOverride()</div><div class="ttdef"><b>定义</b> <a href="#l00094">GridPanelWidget.cs:94</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_abbcc16fa0236e27a0c37f07778535774"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#abbcc16fa0236e27a0c37f07778535774">Game.GridPanelWidget.SetCell</a></div><div class="ttdeci">static void SetCell(Widget widget, Point2 cell)</div><div class="ttdef"><b>定义</b> <a href="#l00057">GridPanelWidget.cs:57</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_ae03b0397b703671a6cf16e756a2113f6"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#ae03b0397b703671a6cf16e756a2113f6">Game.GridPanelWidget.RowsCount</a></div><div class="ttdeci">int RowsCount</div><div class="ttdef"><b>定义</b> <a href="#l00033">GridPanelWidget.cs:33</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html_af5276aba708671613fd114014a62ff21"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html#af5276aba708671613fd114014a62ff21">Game.GridPanelWidget.m_cells</a></div><div class="ttdeci">Dictionary&lt; Widget, Point2 &gt; m_cells</div><div class="ttdef"><b>定义</b> <a href="#l00021">GridPanelWidget.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html"><div class="ttname"><a href="class_game_1_1_widget.html">Game.Widget</a></div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00010">Widget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a00659890b15de37473ad9cf780951413"><div class="ttname"><a href="class_game_1_1_widget.html#a00659890b15de37473ad9cf780951413">Game.Widget.MarginVerticalSum</a></div><div class="ttdeci">virtual float MarginVerticalSum</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00439">Widget.cs:439</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a0702f54b746d8a8430922053fbf18771"><div class="ttname"><a href="class_game_1_1_widget.html#a0702f54b746d8a8430922053fbf18771">Game.Widget.ParentDesiredSize</a></div><div class="ttdeci">Vector2 ParentDesiredSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00454">Widget.cs:454</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a28109d97883ab6deea45af873a2f7ced"><div class="ttname"><a href="class_game_1_1_widget.html#a28109d97883ab6deea45af873a2f7ced">Game.Widget.MarginHorizontalSum</a></div><div class="ttdeci">virtual float MarginHorizontalSum</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00437">Widget.cs:437</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a4fcf3eb07446501ee363931839ce003a"><div class="ttname"><a href="class_game_1_1_widget.html#a4fcf3eb07446501ee363931839ce003a">Game.Widget.DesiredSize</a></div><div class="ttdeci">Vector2 DesiredSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00449">Widget.cs:449</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a62fcbc6e032f148994e01b988ffd9d8a"><div class="ttname"><a href="class_game_1_1_widget.html#a62fcbc6e032f148994e01b988ffd9d8a">Game.Widget.MarginHorizontalSumAndVerticalSum</a></div><div class="ttdeci">virtual Vector2 MarginHorizontalSumAndVerticalSum</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00441">Widget.cs:441</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ac9ff25efbe724241ec9d3678a1559527"><div class="ttname"><a href="class_game_1_1_widget.html#ac9ff25efbe724241ec9d3678a1559527">Game.Widget.ActualSize</a></div><div class="ttdeci">Vector2 ActualSize</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00447">Widget.cs:447</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_af2805d135ccb917d1b3f86bec67e8a88"><div class="ttname"><a href="class_game_1_1_widget.html#af2805d135ccb917d1b3f86bec67e8a88">Game.Widget.Measure</a></div><div class="ttdeci">virtual void Measure(Vector2 parentAvailableSize)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00628">Widget.cs:628</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html"><div class="ttname"><a href="struct_engine_1_1_point2.html">Engine.Point2</a></div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00002">Point2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html_a5a5df9b9665d68a1edf96fb1f45e1232"><div class="ttname"><a href="struct_engine_1_1_point2.html#a5a5df9b9665d68a1edf96fb1f45e1232">Engine.Point2.Y</a></div><div class="ttdeci">int Y</div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00005">Point2.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html_a893555bab03b75cc94952451edecc8d8"><div class="ttname"><a href="struct_engine_1_1_point2.html#a893555bab03b75cc94952451edecc8d8">Engine.Point2.X</a></div><div class="ttdeci">int X</div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00003">Point2.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a43b88325ddcd07f42e931b1a0d3281c7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Engine.Vector2.Zero</a></div><div class="ttdeci">static readonly Vector2 Zero</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00007">Vector2.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a4ba3b4544cf4730e0b5175f335947b70"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a4ba3b4544cf4730e0b5175f335947b70">Engine.Vector2.Max</a></div><div class="ttdeci">static Vector2 Max(Vector2 v, float f)</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00083">Vector2.cs:83</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a67f66d5979ef9f5af376995b5cd52af7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a67f66d5979ef9f5af376995b5cd52af7">Engine.Vector2.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00005">Vector2.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_aa5d1d8f581bf3e0ef8fc57692f600fee"><div class="ttname"><a href="struct_engine_1_1_vector2.html#aa5d1d8f581bf3e0ef8fc57692f600fee">Engine.Vector2.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00003">Vector2.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_grid_panel_widget_8cs.html">GridPanelWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

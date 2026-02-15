@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Media/Png.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_png_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Png.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_png_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>SixLabors.ImageSharp;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>SixLabors.ImageSharp.Formats.Png;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_media.html">Engine.Media</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="class_engine_1_1_media_1_1_png.html">Png</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">    6</a></span>        <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0ab4b279046a02077466fa26cabb00c642">    7</a></span>            <a class="code hl_enumvalue" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0ab4b279046a02077466fa26cabb00c642">RGBA8</a>,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0a165c6379d01617e12de274a3952efa63">    8</a></span>            <a class="code hl_enumvalue" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0a165c6379d01617e12de274a3952efa63">RGB8</a>,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0a9021e43c75e42c17a1aecd44562f7497">    9</a></span>            <a class="code hl_enumvalue" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0a9021e43c75e42c17a1aecd44562f7497">L8</a>,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0ad3a2650b33fe7bbb3281421325a6b347">   10</a></span>            <a class="code hl_enumvalue" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0ad3a2650b33fe7bbb3281421325a6b347">LA8</a>,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0acccd5fd8c8f59fe9373c56b1b951780c">   11</a></span>            <a class="code hl_enumvalue" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0acccd5fd8c8f59fe9373c56b1b951780c">Indexed</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        }</div>
+</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html">   14</a></span>        <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html">PngInfo</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#a05feada87e0e22c020e2df306d52ff3c">   15</a></span>            <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#a05feada87e0e22c020e2df306d52ff3c">Width</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#af8dab913407fd4c5ae409f8348db96fe">   17</a></span>            <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#af8dab913407fd4c5ae409f8348db96fe">Height</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#aa5adf6a4c544d53168466fca65a37002">   19</a></span>            <span class="keyword">public</span> <a class="code hl_variable" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#aa5adf6a4c544d53168466fca65a37002">Format</a> <a class="code hl_variable" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#aa5adf6a4c544d53168466fca65a37002">Format</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#aa8085b1fd95cdac37362ac8fceb00db8">   22</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_media_1_1_png.html#aa8085b1fd95cdac37362ac8fceb00db8">IsPngStream</a>(Stream stream) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            ArgumentNullException.ThrowIfNull(stream);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">return</span> SixLabors.ImageSharp.Image.DetectFormat(stream).Name == <span class="stringliteral">&quot;PNG&quot;</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#a9340bead9a03a41e40db06dd2c8c63bb">   27</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html">PngInfo</a> <a class="code hl_function" href="class_engine_1_1_media_1_1_png.html#a9340bead9a03a41e40db06dd2c8c63bb">GetInfo</a>(Stream stream) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            ArgumentNullException.ThrowIfNull(stream);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            ImageInfo info = SixLabors.ImageSharp.Image.Identify(stream);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (info.Metadata.DecodedImageFormat.Name != <span class="stringliteral">&quot;PNG&quot;</span>) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> FormatException($<span class="stringliteral">&quot;Image format({info.Metadata.DecodedImageFormat.Name}) is not Png&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_struct" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html">PngInfo</a> result = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            result.Width = info.<a class="code hl_variable" href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#a05feada87e0e22c020e2df306d52ff3c">Width</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            result.Height = info.Height;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            result.Format = info.Metadata.GetPngMetadata().ColorType <span class="keywordflow">switch</span> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                PngColorType.RgbWithAlpha =&gt; <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.RGBA8,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                PngColorType.Rgb =&gt; <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.RGB8,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                PngColorType.GrayscaleWithAlpha =&gt; <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.LA8,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                PngColorType.Grayscale =&gt; <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.L8,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                PngColorType.Palette =&gt; <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.Indexed,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                _ =&gt; <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported PNG pixel format.&quot;</span>)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            };</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#a0b1df7ee8d3d125b39e68e16ab935e71">   47</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_engine_1_1_media_1_1_image.html">Image</a> <a class="code hl_function" href="class_engine_1_1_media_1_1_png.html#a0b1df7ee8d3d125b39e68e16ab935e71">Load</a>(Stream stream) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            ArgumentNullException.ThrowIfNull(stream);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordtype">string</span> formatName = SixLabors.ImageSharp.<a class="code hl_function" href="class_engine_1_1_media_1_1_image.html#a204e4b0babcd2f44323384f901f52a23">Image</a>.DetectFormat(stream).Name;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">return</span> formatName != <span class="stringliteral">&quot;PNG&quot;</span> ? <span class="keywordflow">throw</span> <span class="keyword">new</span> FormatException($<span class="stringliteral">&quot;Image format({formatName}) is not Png&quot;</span>) : <a class="code hl_class" href="class_engine_1_1_media_1_1_image.html">Image</a>.<a class="code hl_function" href="class_engine_1_1_media_1_1_image.html#a591672df156f609e60675e9a89822bb4">Load</a>(stream);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_engine_1_1_media_1_1_png.html#a79ec8edb9fe1ba75c2076e1be12a6fab">   53</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_engine_1_1_media_1_1_png.html#a79ec8edb9fe1ba75c2076e1be12a6fab">Save</a>(<a class="code hl_class" href="class_engine_1_1_media_1_1_image.html">Image</a> image,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            Stream stream,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a> format,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            PngCompressionLevel compressionLevel = PngCompressionLevel.DefaultCompression,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordtype">bool</span> sync = <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            ArgumentNullException.ThrowIfNull(image);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            ArgumentNullException.ThrowIfNull(stream);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            PngColorType pngColorType;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">switch</span> (format) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.RGBA8: pngColorType = PngColorType.RgbWithAlpha; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.RGB8: pngColorType = PngColorType.Rgb; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.LA8: pngColorType = PngColorType.GrayscaleWithAlpha; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.L8: pngColorType = PngColorType.Grayscale; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Format</a>.Indexed: pngColorType = PngColorType.Palette; <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported PNG pixel format.&quot;</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            PngEncoder encoder = <span class="keyword">new</span>() {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                ColorType = pngColorType, CompressionLevel = compressionLevel, TransparentColorMode = PngTransparentColorMode.Clear</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            };</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">if</span> (sync) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                image.<a class="code hl_variable" href="class_engine_1_1_media_1_1_image.html#a673614cf3865b235a4345b3423bb7d5a">m_trueImage</a>.SaveAsPng(stream, encoder);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                image.<a class="code hl_variable" href="class_engine_1_1_media_1_1_image.html#a673614cf3865b235a4345b3423bb7d5a">m_trueImage</a>.SaveAsPngAsync(stream, encoder);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_image_html"><div class="ttname"><a href="class_engine_1_1_media_1_1_image.html">Engine.Media.Image</a></div><div class="ttdef"><b>定义</b> <a href="_image_8cs_source.html#l00016">Image.cs:16</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_image_html_a204e4b0babcd2f44323384f901f52a23"><div class="ttname"><a href="class_engine_1_1_media_1_1_image.html#a204e4b0babcd2f44323384f901f52a23">Engine.Media.Image.Image</a></div><div class="ttdeci">Image()</div><div class="ttdef"><b>定义</b> <a href="_image_8cs_source.html#l00063">Image.cs:63</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_image_html_a591672df156f609e60675e9a89822bb4"><div class="ttname"><a href="class_engine_1_1_media_1_1_image.html#a591672df156f609e60675e9a89822bb4">Engine.Media.Image.Load</a></div><div class="ttdeci">static Image Load(Stream stream, ImageFileFormat format)</div><div class="ttdef"><b>定义</b> <a href="_image_8cs_source.html#l00129">Image.cs:129</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_image_html_a673614cf3865b235a4345b3423bb7d5a"><div class="ttname"><a href="class_engine_1_1_media_1_1_image.html#a673614cf3865b235a4345b3423bb7d5a">Engine.Media.Image.m_trueImage</a></div><div class="ttdeci">readonly Image&lt; Rgba32 &gt; m_trueImage</div><div class="ttdef"><b>定义</b> <a href="_image_8cs_source.html#l00060">Image.cs:60</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html">Engine.Media.Png</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">Png.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_a0b1df7ee8d3d125b39e68e16ab935e71"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#a0b1df7ee8d3d125b39e68e16ab935e71">Engine.Media.Png.Load</a></div><div class="ttdeci">static Image Load(Stream stream)</div><div class="ttdef"><b>定义</b> <a href="#l00047">Png.cs:47</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_a300973fc36e3365335563a96c7ebcec0"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0">Engine.Media.Png.Format</a></div><div class="ttdeci">Format</div><div class="ttdef"><b>定义</b> <a href="#l00006">Png.cs:6</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_a300973fc36e3365335563a96c7ebcec0a165c6379d01617e12de274a3952efa63"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0a165c6379d01617e12de274a3952efa63">Engine.Media.Png.Format.RGB8</a></div><div class="ttdeci">@ RGB8</div><div class="ttdef"><b>定义</b> <a href="#l00008">Png.cs:8</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_a300973fc36e3365335563a96c7ebcec0a9021e43c75e42c17a1aecd44562f7497"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0a9021e43c75e42c17a1aecd44562f7497">Engine.Media.Png.Format.L8</a></div><div class="ttdeci">@ L8</div><div class="ttdef"><b>定义</b> <a href="#l00009">Png.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_a300973fc36e3365335563a96c7ebcec0ab4b279046a02077466fa26cabb00c642"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0ab4b279046a02077466fa26cabb00c642">Engine.Media.Png.Format.RGBA8</a></div><div class="ttdeci">@ RGBA8</div><div class="ttdef"><b>定义</b> <a href="#l00007">Png.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_a300973fc36e3365335563a96c7ebcec0acccd5fd8c8f59fe9373c56b1b951780c"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0acccd5fd8c8f59fe9373c56b1b951780c">Engine.Media.Png.Format.Indexed</a></div><div class="ttdeci">@ Indexed</div><div class="ttdef"><b>定义</b> <a href="#l00011">Png.cs:11</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_a300973fc36e3365335563a96c7ebcec0ad3a2650b33fe7bbb3281421325a6b347"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#a300973fc36e3365335563a96c7ebcec0ad3a2650b33fe7bbb3281421325a6b347">Engine.Media.Png.Format.LA8</a></div><div class="ttdeci">@ LA8</div><div class="ttdef"><b>定义</b> <a href="#l00010">Png.cs:10</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_a79ec8edb9fe1ba75c2076e1be12a6fab"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#a79ec8edb9fe1ba75c2076e1be12a6fab">Engine.Media.Png.Save</a></div><div class="ttdeci">static void Save(Image image, Stream stream, Format format, PngCompressionLevel compressionLevel=PngCompressionLevel.DefaultCompression, bool sync=false)</div><div class="ttdef"><b>定义</b> <a href="#l00053">Png.cs:53</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_a9340bead9a03a41e40db06dd2c8c63bb"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#a9340bead9a03a41e40db06dd2c8c63bb">Engine.Media.Png.GetInfo</a></div><div class="ttdeci">static PngInfo GetInfo(Stream stream)</div><div class="ttdef"><b>定义</b> <a href="#l00027">Png.cs:27</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_png_html_aa8085b1fd95cdac37362ac8fceb00db8"><div class="ttname"><a href="class_engine_1_1_media_1_1_png.html#aa8085b1fd95cdac37362ac8fceb00db8">Engine.Media.Png.IsPngStream</a></div><div class="ttdeci">static bool IsPngStream(Stream stream)</div><div class="ttdef"><b>定义</b> <a href="#l00022">Png.cs:22</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_media_html"><div class="ttname"><a href="namespace_engine_1_1_media.html">Engine.Media</a></div><div class="ttdef"><b>定义</b> <a href="_bitmap_font_8cs_source.html#l00005">BitmapFont.cs:5</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_media_1_1_png_1_1_png_info_html"><div class="ttname"><a href="struct_engine_1_1_media_1_1_png_1_1_png_info.html">Engine.Media.Png.PngInfo</a></div><div class="ttdef"><b>定义</b> <a href="#l00014">Png.cs:14</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_media_1_1_png_1_1_png_info_html_a05feada87e0e22c020e2df306d52ff3c"><div class="ttname"><a href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#a05feada87e0e22c020e2df306d52ff3c">Engine.Media.Png.PngInfo.Width</a></div><div class="ttdeci">int Width</div><div class="ttdef"><b>定义</b> <a href="#l00015">Png.cs:15</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_media_1_1_png_1_1_png_info_html_aa5adf6a4c544d53168466fca65a37002"><div class="ttname"><a href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#aa5adf6a4c544d53168466fca65a37002">Engine.Media.Png.PngInfo.Format</a></div><div class="ttdeci">Format Format</div><div class="ttdef"><b>定义</b> <a href="#l00019">Png.cs:19</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_media_1_1_png_1_1_png_info_html_af8dab913407fd4c5ae409f8348db96fe"><div class="ttname"><a href="struct_engine_1_1_media_1_1_png_1_1_png_info.html#af8dab913407fd4c5ae409f8348db96fe">Engine.Media.Png.PngInfo.Height</a></div><div class="ttdeci">int Height</div><div class="ttdef"><b>定义</b> <a href="#l00017">Png.cs:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_9d950001afce6ff05359da3e39ccf8ac.html">Engine.Media</a></li><li class="navelem"><a href="_png_8cs.html">Png.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

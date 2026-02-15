@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Managers/VrManager.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_vr_manager_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">VrManager.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_vr_manager_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_vr_manager.html">VrManager</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a8cf726fe2c7ae3772b5025c40b1e148a">    6</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_vr_manager.html#a8cf726fe2c7ae3772b5025c40b1e148a">IsVrAvailable</a> =&gt; <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a826e513d31daf5b112f4555f951ca434">    8</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_vr_manager.html#a826e513d31daf5b112f4555f951ca434">IsVrStarted</a> =&gt; <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a8a8d63b840b36da6643d54f8425b9205">   10</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_engine_1_1_graphics_1_1_render_target2_d.html">RenderTarget2D</a> <a class="code hl_property" href="class_game_1_1_vr_manager.html#a8a8d63b840b36da6643d54f8425b9205">VrRenderTarget</a> =&gt; <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#ac5c868ed42da25c65aeee5d165b4ee74">   12</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> <a class="code hl_property" href="class_game_1_1_vr_manager.html#ac5c868ed42da25c65aeee5d165b4ee74">HmdMatrix</a> =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a040927bf3499595794114c2c209cdf66">   14</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> <a class="code hl_property" href="class_game_1_1_vr_manager.html#a040927bf3499595794114c2c209cdf66">HmdMatrixInverted</a> =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a345f4c7ec41d119377e2e268c4f90586">   16</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> <a class="code hl_property" href="class_game_1_1_vr_manager.html#a345f4c7ec41d119377e2e268c4f90586">HmdMatrixYpr</a> =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#afa764efc90319d050f6ae0483c558ec0">   18</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> <a class="code hl_property" href="class_game_1_1_vr_manager.html#afa764efc90319d050f6ae0483c558ec0">HmdLastMatrix</a> =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#add2b24488947cf27f196b5dae8392df5">   20</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> <a class="code hl_property" href="class_game_1_1_vr_manager.html#add2b24488947cf27f196b5dae8392df5">HmdLastMatrixInverted</a> =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#ac52335fc771aef8ad8224c8823edc088">   22</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> <a class="code hl_property" href="class_game_1_1_vr_manager.html#ac52335fc771aef8ad8224c8823edc088">HmdLastMatrixYpr</a> =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#ac1b5a89a607eb0ec6ae1a2e51a941024">   24</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> <a class="code hl_property" href="class_game_1_1_vr_manager.html#ac1b5a89a607eb0ec6ae1a2e51a941024">HeadMove</a> =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a13f6045e54ea6b2593e9406cb29717eb">   26</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> <a class="code hl_property" href="class_game_1_1_vr_manager.html#a13f6045e54ea6b2593e9406cb29717eb">WalkingVelocity</a> =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#aed3149170c8d5dc5c600e185c929b78f">   28</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_vr_manager.html#aed3149170c8d5dc5c600e185c929b78f">Initialize</a>() { }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a05f1a294891bebad467812f106adaa7a">   30</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_vr_manager.html#a05f1a294891bebad467812f106adaa7a">StartVr</a>() { }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a562e7716af8cd799a6cc5d624ef5aed4">   32</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_vr_manager.html#a562e7716af8cd799a6cc5d624ef5aed4">StopVr</a>() { }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#aa389eeb7d3ad263add152cb222d465d0">   34</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_vr_manager.html#aa389eeb7d3ad263add152cb222d465d0">WaitGetPoses</a>() { }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#ab5879afd6c1674987fcedc5bd02217ed">   36</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_vr_manager.html#ab5879afd6c1674987fcedc5bd02217ed">SubmitEyeTexture</a>(<a class="code hl_enumeration" href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">VrEye</a> eye, <a class="code hl_class" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a> texture) { }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a44ac572a227b17ea75331f72d1c5149a">   38</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> <a class="code hl_function" href="class_game_1_1_vr_manager.html#a44ac572a227b17ea75331f72d1c5149a">GetEyeToHeadTransform</a>(<a class="code hl_enumeration" href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">VrEye</a> eye) =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#aa9105e240823036bbf4c00736ebbd3e7">   40</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> <a class="code hl_function" href="class_game_1_1_vr_manager.html#aa9105e240823036bbf4c00736ebbd3e7">GetProjectionMatrix</a>(<a class="code hl_enumeration" href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">VrEye</a> eye, <span class="keywordtype">float</span> near, <span class="keywordtype">float</span> far) =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#ae0e48504037fa575e09bdd70737d06e1">   42</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_vr_manager.html#ae0e48504037fa575e09bdd70737d06e1">IsControllerPresent</a>(<a class="code hl_enumeration" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller) =&gt; <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a1d9f3a6634e8a590c6a3c2e651ea4e14">   44</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_matrix.html">Matrix</a> <a class="code hl_function" href="class_game_1_1_vr_manager.html#a1d9f3a6634e8a590c6a3c2e651ea4e14">GetControllerMatrix</a>(<a class="code hl_enumeration" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller) =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#acafaaed0fe1c611f7eb81387823abce3">   46</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a> <a class="code hl_function" href="class_game_1_1_vr_manager.html#acafaaed0fe1c611f7eb81387823abce3">GetStickPosition</a>(<a class="code hl_enumeration" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, <span class="keywordtype">float</span> deadZone = 0f) =&gt; <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a5a2d749bc171ff88663308d0d45fe75c">   48</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>? <a class="code hl_function" href="class_game_1_1_vr_manager.html#a5a2d749bc171ff88663308d0d45fe75c">GetTouchpadPosition</a>(<a class="code hl_enumeration" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, <span class="keywordtype">float</span> deadZone = 0f) =&gt; <span class="keywordflow">default</span>(<a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a1686b8eb5fe3ba6b340825947f2c3773">   50</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_game_1_1_vr_manager.html#a1686b8eb5fe3ba6b340825947f2c3773">GetTriggerPosition</a>(<a class="code hl_enumeration" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, <span class="keywordtype">float</span> deadZone = 0f) =&gt; 0f;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a3c08ff2141eed60441f9ac325f0f478b">   52</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_vr_manager.html#a3c08ff2141eed60441f9ac325f0f478b">IsButtonDown</a>(<a class="code hl_enumeration" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, <a class="code hl_enumeration" href="namespace_game.html#a84d1cb766ffec53f0e7b83348e1185e1">VrControllerButton</a> button) =&gt; <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a8477e22f45832f5740d06864a7801b46">   54</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_vr_manager.html#a8477e22f45832f5740d06864a7801b46">IsButtonDownOnce</a>(<a class="code hl_enumeration" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller, <a class="code hl_enumeration" href="namespace_game.html#a84d1cb766ffec53f0e7b83348e1185e1">VrControllerButton</a> button) =&gt; <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_game_1_1_vr_manager.html#a80cbbfb4d4caf6191701134bde215906">   56</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_game_1_1_touch_input.html">TouchInput</a>? <a class="code hl_function" href="class_game_1_1_vr_manager.html#a80cbbfb4d4caf6191701134bde215906">GetTouchInput</a>(<a class="code hl_enumeration" href="namespace_game.html#a011c3bd72975e573343debea36616afb">VrController</a> controller) =&gt; <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_render_target2_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_render_target2_d.html">Engine.Graphics.RenderTarget2D</a></div><div class="ttdef"><b>定义</b> <a href="_render_target2_d_8cs_source.html#l00015">RenderTarget2D.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_texture2_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_texture2_d.html">Engine.Graphics.Texture2D</a></div><div class="ttdef"><b>定义</b> <a href="_texture2_d_8cs_source.html#l00015">Texture2D.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html"><div class="ttname"><a href="class_game_1_1_vr_manager.html">Game.VrManager</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">VrManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a040927bf3499595794114c2c209cdf66"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a040927bf3499595794114c2c209cdf66">Game.VrManager.HmdMatrixInverted</a></div><div class="ttdeci">static Matrix HmdMatrixInverted</div><div class="ttdef"><b>定义</b> <a href="#l00014">VrManager.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a05f1a294891bebad467812f106adaa7a"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a05f1a294891bebad467812f106adaa7a">Game.VrManager.StartVr</a></div><div class="ttdeci">static void StartVr()</div><div class="ttdef"><b>定义</b> <a href="#l00030">VrManager.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a13f6045e54ea6b2593e9406cb29717eb"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a13f6045e54ea6b2593e9406cb29717eb">Game.VrManager.WalkingVelocity</a></div><div class="ttdeci">static Vector2 WalkingVelocity</div><div class="ttdef"><b>定义</b> <a href="#l00026">VrManager.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a1686b8eb5fe3ba6b340825947f2c3773"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a1686b8eb5fe3ba6b340825947f2c3773">Game.VrManager.GetTriggerPosition</a></div><div class="ttdeci">static float GetTriggerPosition(VrController controller, float deadZone=0f)</div><div class="ttdef"><b>定义</b> <a href="#l00050">VrManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a1d9f3a6634e8a590c6a3c2e651ea4e14"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a1d9f3a6634e8a590c6a3c2e651ea4e14">Game.VrManager.GetControllerMatrix</a></div><div class="ttdeci">static Matrix GetControllerMatrix(VrController controller)</div><div class="ttdef"><b>定义</b> <a href="#l00044">VrManager.cs:44</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a345f4c7ec41d119377e2e268c4f90586"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a345f4c7ec41d119377e2e268c4f90586">Game.VrManager.HmdMatrixYpr</a></div><div class="ttdeci">static Vector3 HmdMatrixYpr</div><div class="ttdef"><b>定义</b> <a href="#l00016">VrManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a3c08ff2141eed60441f9ac325f0f478b"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a3c08ff2141eed60441f9ac325f0f478b">Game.VrManager.IsButtonDown</a></div><div class="ttdeci">static bool IsButtonDown(VrController controller, VrControllerButton button)</div><div class="ttdef"><b>定义</b> <a href="#l00052">VrManager.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a44ac572a227b17ea75331f72d1c5149a"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a44ac572a227b17ea75331f72d1c5149a">Game.VrManager.GetEyeToHeadTransform</a></div><div class="ttdeci">static Matrix GetEyeToHeadTransform(VrEye eye)</div><div class="ttdef"><b>定义</b> <a href="#l00038">VrManager.cs:38</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a562e7716af8cd799a6cc5d624ef5aed4"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a562e7716af8cd799a6cc5d624ef5aed4">Game.VrManager.StopVr</a></div><div class="ttdeci">static void StopVr()</div><div class="ttdef"><b>定义</b> <a href="#l00032">VrManager.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a5a2d749bc171ff88663308d0d45fe75c"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a5a2d749bc171ff88663308d0d45fe75c">Game.VrManager.GetTouchpadPosition</a></div><div class="ttdeci">static ? Vector2 GetTouchpadPosition(VrController controller, float deadZone=0f)</div><div class="ttdef"><b>定义</b> <a href="#l00048">VrManager.cs:48</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a80cbbfb4d4caf6191701134bde215906"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a80cbbfb4d4caf6191701134bde215906">Game.VrManager.GetTouchInput</a></div><div class="ttdeci">static ? TouchInput GetTouchInput(VrController controller)</div><div class="ttdef"><b>定义</b> <a href="#l00056">VrManager.cs:56</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a826e513d31daf5b112f4555f951ca434"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a826e513d31daf5b112f4555f951ca434">Game.VrManager.IsVrStarted</a></div><div class="ttdeci">static bool IsVrStarted</div><div class="ttdef"><b>定义</b> <a href="#l00008">VrManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a8477e22f45832f5740d06864a7801b46"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a8477e22f45832f5740d06864a7801b46">Game.VrManager.IsButtonDownOnce</a></div><div class="ttdeci">static bool IsButtonDownOnce(VrController controller, VrControllerButton button)</div><div class="ttdef"><b>定义</b> <a href="#l00054">VrManager.cs:54</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a8a8d63b840b36da6643d54f8425b9205"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a8a8d63b840b36da6643d54f8425b9205">Game.VrManager.VrRenderTarget</a></div><div class="ttdeci">static RenderTarget2D VrRenderTarget</div><div class="ttdef"><b>定义</b> <a href="#l00010">VrManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_a8cf726fe2c7ae3772b5025c40b1e148a"><div class="ttname"><a href="class_game_1_1_vr_manager.html#a8cf726fe2c7ae3772b5025c40b1e148a">Game.VrManager.IsVrAvailable</a></div><div class="ttdeci">static bool IsVrAvailable</div><div class="ttdef"><b>定义</b> <a href="#l00006">VrManager.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_aa389eeb7d3ad263add152cb222d465d0"><div class="ttname"><a href="class_game_1_1_vr_manager.html#aa389eeb7d3ad263add152cb222d465d0">Game.VrManager.WaitGetPoses</a></div><div class="ttdeci">static void WaitGetPoses()</div><div class="ttdef"><b>定义</b> <a href="#l00034">VrManager.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_aa9105e240823036bbf4c00736ebbd3e7"><div class="ttname"><a href="class_game_1_1_vr_manager.html#aa9105e240823036bbf4c00736ebbd3e7">Game.VrManager.GetProjectionMatrix</a></div><div class="ttdeci">static Matrix GetProjectionMatrix(VrEye eye, float near, float far)</div><div class="ttdef"><b>定义</b> <a href="#l00040">VrManager.cs:40</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_ab5879afd6c1674987fcedc5bd02217ed"><div class="ttname"><a href="class_game_1_1_vr_manager.html#ab5879afd6c1674987fcedc5bd02217ed">Game.VrManager.SubmitEyeTexture</a></div><div class="ttdeci">static void SubmitEyeTexture(VrEye eye, Texture2D texture)</div><div class="ttdef"><b>定义</b> <a href="#l00036">VrManager.cs:36</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_ac1b5a89a607eb0ec6ae1a2e51a941024"><div class="ttname"><a href="class_game_1_1_vr_manager.html#ac1b5a89a607eb0ec6ae1a2e51a941024">Game.VrManager.HeadMove</a></div><div class="ttdeci">static Vector2 HeadMove</div><div class="ttdef"><b>定义</b> <a href="#l00024">VrManager.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_ac52335fc771aef8ad8224c8823edc088"><div class="ttname"><a href="class_game_1_1_vr_manager.html#ac52335fc771aef8ad8224c8823edc088">Game.VrManager.HmdLastMatrixYpr</a></div><div class="ttdeci">static Vector3 HmdLastMatrixYpr</div><div class="ttdef"><b>定义</b> <a href="#l00022">VrManager.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_ac5c868ed42da25c65aeee5d165b4ee74"><div class="ttname"><a href="class_game_1_1_vr_manager.html#ac5c868ed42da25c65aeee5d165b4ee74">Game.VrManager.HmdMatrix</a></div><div class="ttdeci">static Matrix HmdMatrix</div><div class="ttdef"><b>定义</b> <a href="#l00012">VrManager.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_acafaaed0fe1c611f7eb81387823abce3"><div class="ttname"><a href="class_game_1_1_vr_manager.html#acafaaed0fe1c611f7eb81387823abce3">Game.VrManager.GetStickPosition</a></div><div class="ttdeci">static Vector2 GetStickPosition(VrController controller, float deadZone=0f)</div><div class="ttdef"><b>定义</b> <a href="#l00046">VrManager.cs:46</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_add2b24488947cf27f196b5dae8392df5"><div class="ttname"><a href="class_game_1_1_vr_manager.html#add2b24488947cf27f196b5dae8392df5">Game.VrManager.HmdLastMatrixInverted</a></div><div class="ttdeci">static Matrix HmdLastMatrixInverted</div><div class="ttdef"><b>定义</b> <a href="#l00020">VrManager.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_ae0e48504037fa575e09bdd70737d06e1"><div class="ttname"><a href="class_game_1_1_vr_manager.html#ae0e48504037fa575e09bdd70737d06e1">Game.VrManager.IsControllerPresent</a></div><div class="ttdeci">static bool IsControllerPresent(VrController controller)</div><div class="ttdef"><b>定义</b> <a href="#l00042">VrManager.cs:42</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_aed3149170c8d5dc5c600e185c929b78f"><div class="ttname"><a href="class_game_1_1_vr_manager.html#aed3149170c8d5dc5c600e185c929b78f">Game.VrManager.Initialize</a></div><div class="ttdeci">static void Initialize()</div><div class="ttdef"><b>定义</b> <a href="#l00028">VrManager.cs:28</a></div></div>
+<div class="ttc" id="aclass_game_1_1_vr_manager_html_afa764efc90319d050f6ae0483c558ec0"><div class="ttname"><a href="class_game_1_1_vr_manager.html#afa764efc90319d050f6ae0483c558ec0">Game.VrManager.HmdLastMatrix</a></div><div class="ttdeci">static Matrix HmdLastMatrix</div><div class="ttdef"><b>定义</b> <a href="#l00018">VrManager.cs:18</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a011c3bd72975e573343debea36616afb"><div class="ttname"><a href="namespace_game.html#a011c3bd72975e573343debea36616afb">Game.VrController</a></div><div class="ttdeci">VrController</div><div class="ttdef"><b>定义</b> <a href="_vr_controller_8cs_source.html#l00002">VrController.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html_a84d1cb766ffec53f0e7b83348e1185e1"><div class="ttname"><a href="namespace_game.html#a84d1cb766ffec53f0e7b83348e1185e1">Game.VrControllerButton</a></div><div class="ttdeci">VrControllerButton</div><div class="ttdef"><b>定义</b> <a href="_vr_controller_button_8cs_source.html#l00002">VrControllerButton.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html_afb66bc6feb1edf5ea5118f8a20d93f28"><div class="ttname"><a href="namespace_game.html#afb66bc6feb1edf5ea5118f8a20d93f28">Game.VrEye</a></div><div class="ttdeci">VrEye</div><div class="ttdef"><b>定义</b> <a href="_vr_eye_8cs_source.html#l00002">VrEye.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_matrix_html"><div class="ttname"><a href="struct_engine_1_1_matrix.html">Engine.Matrix</a></div><div class="ttdef"><b>定义</b> <a href="_matrix_8cs_source.html#l00002">Matrix.cs:17</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_game_1_1_touch_input_html"><div class="ttname"><a href="struct_game_1_1_touch_input.html">Game.TouchInput</a></div><div class="ttdef"><b>定义</b> <a href="_touch_input_8cs_source.html#l00005">TouchInput.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_1f8d5a022218767e6dfb00698735ed73.html">Managers</a></li><li class="navelem"><a href="_vr_manager_8cs.html">VrManager.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

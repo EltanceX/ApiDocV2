@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Game/FuseParticleSystem.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_fuse_particle_system_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">FuseParticleSystem.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_fuse_particle_system_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_fuse_particle_system.html#a1c9d4c03bc3e47197c389c2ad0318c4a">FuseParticleSystem</a> : <a class="code hl_function" href="class_game_1_1_particle_system-1-g.html#ab71d59dfe1d00d8925226dfefcf4daf3">ParticleSystem</a>&lt;FuseParticleSystem.Particle&gt; {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system_1_1_particle.html">    6</a></span>        <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_fuse_particle_system_1_1_particle.html">Particle</a> : <a class="code hl_namespace" href="namespace_game.html">Game</a>.<a class="code hl_class" href="class_game_1_1_fuse_particle_system_1_1_particle.html">Particle</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system_1_1_particle.html#ab86124735e8144f01feb71547f147f5d">    7</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_fuse_particle_system_1_1_particle.html#ab86124735e8144f01feb71547f147f5d">Time</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system_1_1_particle.html#a596a70b7078ecb5d59bf9a731f7bde5c">    9</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_fuse_particle_system_1_1_particle.html#a596a70b7078ecb5d59bf9a731f7bde5c">TimeToLive</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system_1_1_particle.html#a87c6b7838ddf068ebe8c69bf50fb08bd">   11</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_fuse_particle_system_1_1_particle.html#a87c6b7838ddf068ebe8c69bf50fb08bd">Speed</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system_1_1_particle.html#ae730901abc457d51152f260368fe6895">   13</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_fuse_particle_system_1_1_particle.html#ae730901abc457d51152f260368fe6895">TargetSpeed</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        }</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system.html#a5459eebe1dfa7dca0b780ee0812f4d64">   16</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a5459eebe1dfa7dca0b780ee0812f4d64">m_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system.html#af37b95f0185141a1074e5fac095b1ebe">   18</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#af37b95f0185141a1074e5fac095b1ebe">m_position</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system.html#a89ffdc4aa9d4a3c015255afb4d306736">   20</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a89ffdc4aa9d4a3c015255afb4d306736">m_toGenerate</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system.html#acd8c213273b2126dfddfeb264b20fd67">   22</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#acd8c213273b2126dfddfeb264b20fd67">m_visible</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system.html#a1c9d4c03bc3e47197c389c2ad0318c4a">   24</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_fuse_particle_system.html#a1c9d4c03bc3e47197c389c2ad0318c4a">FuseParticleSystem</a>(<a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a> position) : base(15) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#af37b95f0185141a1074e5fac095b1ebe">m_position</a> = position;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_property" href="class_game_1_1_particle_system-1-g.html#a87b23ed21ac265b1e17e12b9e3d78eed">Texture</a> = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;<a class="code hl_class" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a>&gt;(<span class="stringliteral">&quot;Textures/FireParticle&quot;</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_property" href="class_game_1_1_particle_system-1-g.html#a2d9b4fe7b3f450693ef9d16027932625">TextureSlotsCount</a> = 3;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system.html#a2c7f08dd8bede3bccfb273fa147aaf87">   30</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_fuse_particle_system.html#a2c7f08dd8bede3bccfb273fa147aaf87">Simulate</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#acd8c213273b2126dfddfeb264b20fd67">m_visible</a>) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a89ffdc4aa9d4a3c015255afb4d306736">m_toGenerate</a> += 15f * dt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_property" href="class_game_1_1_particle_system-1-g.html#af66cd36fd854c9af57ff8c58ce95dbb5">Particles</a>.Length; i++) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    <a class="code hl_class" href="class_game_1_1_fuse_particle_system_1_1_particle.html">Particle</a> particle = <a class="code hl_property" href="class_game_1_1_particle_system-1-g.html#af66cd36fd854c9af57ff8c58ce95dbb5">Particles</a>[i];</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    <span class="keywordflow">if</span> (particle.<a class="code hl_variable" href="class_game_1_1_particle.html#a5e93f4ad3e312f4c048dffed4fe48f61">IsActive</a>) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                        particle.Time += dt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                        particle.TimeToLive -= dt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        <span class="keywordflow">if</span> (particle.<a class="code hl_variable" href="class_game_1_1_fuse_particle_system_1_1_particle.html#a596a70b7078ecb5d59bf9a731f7bde5c">TimeToLive</a> &gt; 0f) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                            particle.Position.Y += particle.Speed * dt;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                            particle.Speed = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Max</a>(particle.<a class="code hl_variable" href="class_game_1_1_fuse_particle_system_1_1_particle.html#a87c6b7838ddf068ebe8c69bf50fb08bd">Speed</a> - 1.5f * dt, particle.<a class="code hl_variable" href="class_game_1_1_fuse_particle_system_1_1_particle.html#ae730901abc457d51152f260368fe6895">TargetSpeed</a>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                            particle.TextureSlot = (int)<a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Min</a>(9f * particle.<a class="code hl_variable" href="class_game_1_1_fuse_particle_system_1_1_particle.html#ab86124735e8144f01feb71547f147f5d">Time</a> / 0.75f, 8f);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                            particle.Size = <span class="keyword">new</span> <a class="code hl_enumvalue" href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Vector2</a>(0.07f * (1f + 2f * particle.<a class="code hl_variable" href="class_game_1_1_fuse_particle_system_1_1_particle.html#ab86124735e8144f01feb71547f147f5d">Time</a>));</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                            particle.IsActive = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a89ffdc4aa9d4a3c015255afb4d306736">m_toGenerate</a> &gt;= 1f) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        particle.IsActive = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                        particle.Position = <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#af37b95f0185141a1074e5fac095b1ebe">m_position</a> + 0.02f * <span class="keyword">new</span> <a class="code hl_typedef" href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a>(0f, <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a5459eebe1dfa7dca0b780ee0812f4d64">m_random</a>.Float(-1f, 1f), 0f);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        particle.Color = <a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">White</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        particle.TargetSpeed = <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a5459eebe1dfa7dca0b780ee0812f4d64">m_random</a>.Float(0.45f, 0.55f) * 0.4f;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                        particle.Speed = <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a5459eebe1dfa7dca0b780ee0812f4d64">m_random</a>.Float(0.45f, 0.55f) * 2.5f;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                        particle.Time = 0f;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        particle.Size = <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                        particle.TimeToLive = <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a5459eebe1dfa7dca0b780ee0812f4d64">m_random</a>.Float(0.3f, 1f);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                        particle.FlipX = <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a5459eebe1dfa7dca0b780ee0812f4d64">m_random</a>.Int(0, 1) == 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        particle.FlipY = <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a5459eebe1dfa7dca0b780ee0812f4d64">m_random</a>.Int(0, 1) == 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a89ffdc4aa9d4a3c015255afb4d306736">m_toGenerate</a> -= 1f;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a89ffdc4aa9d4a3c015255afb4d306736">m_toGenerate</a> = <a class="code hl_class" href="class_engine_1_1_math_utils.html">MathUtils</a>.<a class="code hl_function" href="class_engine_1_1_math_utils.html#a18c84306fb3c493a3cd4230f216c71be">Remainder</a>(<a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#a89ffdc4aa9d4a3c015255afb4d306736">m_toGenerate</a>, 1f);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#acd8c213273b2126dfddfeb264b20fd67">m_visible</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_game_1_1_fuse_particle_system.html#ac5bcaf9ddb1c39bca3d0f79d4f9cbaa3">   68</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_fuse_particle_system.html#ac5bcaf9ddb1c39bca3d0f79d4f9cbaa3">Draw</a>(<a class="code hl_class" href="class_game_1_1_camera.html">Camera</a> camera) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordtype">float</span> num = <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Dot</a>(<a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#af37b95f0185141a1074e5fac095b1ebe">m_position</a> - camera.<a class="code hl_property" href="class_game_1_1_camera.html#a26ea6f55cef3d2e89974e2e5c75fb383">ViewPosition</a>, camera.<a class="code hl_property" href="class_game_1_1_camera.html#aa5156da9fa5589f7fe50328b691fb54a">ViewDirection</a>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">if</span> (num &gt; -0.5f</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                &amp;&amp; num &lt;= 48f</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                &amp;&amp; <a class="code hl_struct" href="struct_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_function" href="struct_engine_1_1_vector3.html#a0c70229365ece541448397c98a2b7c05">DistanceSquared</a>(<a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#af37b95f0185141a1074e5fac095b1ebe">m_position</a>, camera.<a class="code hl_property" href="class_game_1_1_camera.html#a26ea6f55cef3d2e89974e2e5c75fb383">ViewPosition</a>) &lt;= 1024f) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <a class="code hl_variable" href="class_game_1_1_fuse_particle_system.html#acd8c213273b2126dfddfeb264b20fd67">m_visible</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                base.Draw(camera);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+<div class="ttc" id="a_subsystem_audio_8cs_html_aa72bd5818d1fb1c95123ce286b96e775"><div class="ttname"><a href="_subsystem_audio_8cs.html#aa72bd5818d1fb1c95123ce286b96e775">Vector3</a></div><div class="ttdeci">Engine.Vector3 Vector3</div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00005">SubsystemAudio.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_texture2_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_texture2_d.html">Engine.Graphics.Texture2D</a></div><div class="ttdef"><b>定义</b> <a href="_texture2_d_8cs_source.html#l00015">Texture2D.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html"><div class="ttname"><a href="class_engine_1_1_math_utils.html">Engine.MathUtils</a></div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00002">MathUtils.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a18c84306fb3c493a3cd4230f216c71be"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a18c84306fb3c493a3cd4230f216c71be">Engine.MathUtils.Remainder</a></div><div class="ttdeci">static float Remainder(float x, float y)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00183">MathUtils.cs:183</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_a5f2b24627ca7cc5256edc10831fe295b"><div class="ttname"><a href="class_engine_1_1_math_utils.html#a5f2b24627ca7cc5256edc10831fe295b">Engine.MathUtils.Min</a></div><div class="ttdeci">static int Min(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00007">MathUtils.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_math_utils_html_ad713afc33181110e5aa62c2467053afc"><div class="ttname"><a href="class_engine_1_1_math_utils.html#ad713afc33181110e5aa62c2467053afc">Engine.MathUtils.Max</a></div><div class="ttdeci">static int Max(int x1, int x2)</div><div class="ttdef"><b>定义</b> <a href="_math_utils_8cs_source.html#l00018">MathUtils.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_camera_html"><div class="ttname"><a href="class_game_1_1_camera.html">Game.Camera</a></div><div class="ttdef"><b>定义</b> <a href="_camera_8cs_source.html#l00005">Camera.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_camera_html_a26ea6f55cef3d2e89974e2e5c75fb383"><div class="ttname"><a href="class_game_1_1_camera.html#a26ea6f55cef3d2e89974e2e5c75fb383">Game.Camera.ViewPosition</a></div><div class="ttdeci">Vector3 ViewPosition</div><div class="ttdef"><b>定义</b> <a href="_camera_8cs_source.html#l00010">Camera.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_camera_html_aa5156da9fa5589f7fe50328b691fb54a"><div class="ttname"><a href="class_game_1_1_camera.html#aa5156da9fa5589f7fe50328b691fb54a">Game.Camera.ViewDirection</a></div><div class="ttdeci">Vector3 ViewDirection</div><div class="ttdef"><b>定义</b> <a href="_camera_8cs_source.html#l00012">Camera.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_1_1_particle_html"><div class="ttname"><a href="class_game_1_1_fuse_particle_system_1_1_particle.html">Game.FuseParticleSystem.Particle</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">FuseParticleSystem.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_1_1_particle_html_a596a70b7078ecb5d59bf9a731f7bde5c"><div class="ttname"><a href="class_game_1_1_fuse_particle_system_1_1_particle.html#a596a70b7078ecb5d59bf9a731f7bde5c">Game.FuseParticleSystem.Particle.TimeToLive</a></div><div class="ttdeci">float TimeToLive</div><div class="ttdef"><b>定义</b> <a href="#l00009">FuseParticleSystem.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_1_1_particle_html_a87c6b7838ddf068ebe8c69bf50fb08bd"><div class="ttname"><a href="class_game_1_1_fuse_particle_system_1_1_particle.html#a87c6b7838ddf068ebe8c69bf50fb08bd">Game.FuseParticleSystem.Particle.Speed</a></div><div class="ttdeci">float Speed</div><div class="ttdef"><b>定义</b> <a href="#l00011">FuseParticleSystem.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_1_1_particle_html_ab86124735e8144f01feb71547f147f5d"><div class="ttname"><a href="class_game_1_1_fuse_particle_system_1_1_particle.html#ab86124735e8144f01feb71547f147f5d">Game.FuseParticleSystem.Particle.Time</a></div><div class="ttdeci">float Time</div><div class="ttdef"><b>定义</b> <a href="#l00007">FuseParticleSystem.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_1_1_particle_html_ae730901abc457d51152f260368fe6895"><div class="ttname"><a href="class_game_1_1_fuse_particle_system_1_1_particle.html#ae730901abc457d51152f260368fe6895">Game.FuseParticleSystem.Particle.TargetSpeed</a></div><div class="ttdeci">float TargetSpeed</div><div class="ttdef"><b>定义</b> <a href="#l00013">FuseParticleSystem.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_html_a1c9d4c03bc3e47197c389c2ad0318c4a"><div class="ttname"><a href="class_game_1_1_fuse_particle_system.html#a1c9d4c03bc3e47197c389c2ad0318c4a">Game.FuseParticleSystem.FuseParticleSystem</a></div><div class="ttdeci">FuseParticleSystem(Vector3 position)</div><div class="ttdef"><b>定义</b> <a href="#l00024">FuseParticleSystem.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_html_a2c7f08dd8bede3bccfb273fa147aaf87"><div class="ttname"><a href="class_game_1_1_fuse_particle_system.html#a2c7f08dd8bede3bccfb273fa147aaf87">Game.FuseParticleSystem.Simulate</a></div><div class="ttdeci">override bool Simulate(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00030">FuseParticleSystem.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_html_a5459eebe1dfa7dca0b780ee0812f4d64"><div class="ttname"><a href="class_game_1_1_fuse_particle_system.html#a5459eebe1dfa7dca0b780ee0812f4d64">Game.FuseParticleSystem.m_random</a></div><div class="ttdeci">Random m_random</div><div class="ttdef"><b>定义</b> <a href="#l00016">FuseParticleSystem.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_html_a89ffdc4aa9d4a3c015255afb4d306736"><div class="ttname"><a href="class_game_1_1_fuse_particle_system.html#a89ffdc4aa9d4a3c015255afb4d306736">Game.FuseParticleSystem.m_toGenerate</a></div><div class="ttdeci">float m_toGenerate</div><div class="ttdef"><b>定义</b> <a href="#l00020">FuseParticleSystem.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_html_ac5bcaf9ddb1c39bca3d0f79d4f9cbaa3"><div class="ttname"><a href="class_game_1_1_fuse_particle_system.html#ac5bcaf9ddb1c39bca3d0f79d4f9cbaa3">Game.FuseParticleSystem.Draw</a></div><div class="ttdeci">override void Draw(Camera camera)</div><div class="ttdef"><b>定义</b> <a href="#l00068">FuseParticleSystem.cs:68</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_html_acd8c213273b2126dfddfeb264b20fd67"><div class="ttname"><a href="class_game_1_1_fuse_particle_system.html#acd8c213273b2126dfddfeb264b20fd67">Game.FuseParticleSystem.m_visible</a></div><div class="ttdeci">bool m_visible</div><div class="ttdef"><b>定义</b> <a href="#l00022">FuseParticleSystem.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_fuse_particle_system_html_af37b95f0185141a1074e5fac095b1ebe"><div class="ttname"><a href="class_game_1_1_fuse_particle_system.html#af37b95f0185141a1074e5fac095b1ebe">Game.FuseParticleSystem.m_position</a></div><div class="ttdeci">Vector3 m_position</div><div class="ttdef"><b>定义</b> <a href="#l00018">FuseParticleSystem.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_particle_html_a5e93f4ad3e312f4c048dffed4fe48f61"><div class="ttname"><a href="class_game_1_1_particle.html#a5e93f4ad3e312f4c048dffed4fe48f61">Game.Particle.IsActive</a></div><div class="ttdeci">bool IsActive</div><div class="ttdef"><b>定义</b> <a href="_particle_8cs_source.html#l00005">Particle.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_particle_system-1-g_html_a2d9b4fe7b3f450693ef9d16027932625"><div class="ttname"><a href="class_game_1_1_particle_system-1-g.html#a2d9b4fe7b3f450693ef9d16027932625">Game.ParticleSystem-1-g.TextureSlotsCount</a></div><div class="ttdeci">int TextureSlotsCount</div><div class="ttdef"><b>定义</b> <a href="_particle_system_8cs_source.html#l00033">ParticleSystem.cs:33</a></div></div>
+<div class="ttc" id="aclass_game_1_1_particle_system-1-g_html_a87b23ed21ac265b1e17e12b9e3d78eed"><div class="ttname"><a href="class_game_1_1_particle_system-1-g.html#a87b23ed21ac265b1e17e12b9e3d78eed">Game.ParticleSystem-1-g.Texture</a></div><div class="ttdeci">Texture2D Texture</div><div class="ttdef"><b>定义</b> <a href="_particle_system_8cs_source.html#l00022">ParticleSystem.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_particle_system-1-g_html_ab71d59dfe1d00d8925226dfefcf4daf3"><div class="ttname"><a href="class_game_1_1_particle_system-1-g.html#ab71d59dfe1d00d8925226dfefcf4daf3">Game.ParticleSystem-1-g.ParticleSystem</a></div><div class="ttdeci">ParticleSystem(int particlesCount)</div><div class="ttdef"><b>定义</b> <a href="_particle_system_8cs_source.html#l00035">ParticleSystem.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_particle_system-1-g_html_af66cd36fd854c9af57ff8c58ce95dbb5"><div class="ttname"><a href="class_game_1_1_particle_system-1-g.html#af66cd36fd854c9af57ff8c58ce95dbb5">Game.ParticleSystem-1-g.Particles</a></div><div class="ttdeci">T[] Particles</div><div class="ttdef"><b>定义</b> <a href="_particle_system_8cs_source.html#l00020">ParticleSystem.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a5396740de867234614e3c467bb78e85fa1bebc5ae2822f8e361fb0ce57b5e09e2">Engine.Graphics.ShaderParameterType.Vector2</a></div><div class="ttdeci">@ Vector2</div><div class="ttdef"><b>定义</b> <a href="_shader_parameter_type_8cs_source.html#l00004">ShaderParameterType.cs:4</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_a4e57f347f3c15133444b3f62f18a8221"><div class="ttname"><a href="struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221">Engine.Color.White</a></div><div class="ttdeci">static Color White</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00015">Color.cs:15</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a43b88325ddcd07f42e931b1a0d3281c7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Engine.Vector2.Zero</a></div><div class="ttdeci">static readonly Vector2 Zero</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00007">Vector2.cs:7</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html"><div class="ttname"><a href="struct_engine_1_1_vector3.html">Engine.Vector3</a></div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00002">Vector3.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_a0c70229365ece541448397c98a2b7c05"><div class="ttname"><a href="struct_engine_1_1_vector3.html#a0c70229365ece541448397c98a2b7c05">Engine.Vector3.DistanceSquared</a></div><div class="ttdeci">static float DistanceSquared(Vector3 v1, Vector3 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00109">Vector3.cs:109</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector3_html_afb241ba10f85725de8e143a303ae4275"><div class="ttname"><a href="struct_engine_1_1_vector3.html#afb241ba10f85725de8e143a303ae4275">Engine.Vector3.Dot</a></div><div class="ttdeci">static float Dot(Vector3 v1, Vector3 v2)</div><div class="ttdef"><b>定义</b> <a href="_vector3_8cs_source.html#l00112">Vector3.cs:112</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_afb822b09482a1c506ad46299f82cac5.html">Game</a></li><li class="navelem"><a href="_fuse_particle_system_8cs.html">FuseParticleSystem.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

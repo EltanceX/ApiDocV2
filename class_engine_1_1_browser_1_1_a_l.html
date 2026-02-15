@@ -1,0 +1,929 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: Engine.Browser.AL</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_engine_1_1_browser_1_1_a_l.html','','class_engine_1_1_browser_1_1_a_l-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Engine.Browser.AL</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a5cc7c10a93f18633c1dbda0a7cd0492a" id="r_a5cc7c10a93f18633c1dbda0a7cd0492a"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492a">GetSourceInteger</a> { <br />
+&#160;&#160;<a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492aa511cf6f133343126fd2e4d66ceb11697">ByteOffset</a> = 0x1026
+, <a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492aaf77505cd3681a499d34acfed3a6e049e">SampleOffset</a> = 0x1025
+, <a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492aa7e62bc342f41c946868f0ea6f0b712d8">Buffer</a> = 0x1009
+, <a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492aa5b59196cafd989487d57df34474121cc">SourceState</a> = 0x1010
+, <br />
+&#160;&#160;<a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492aa60b1be0b1693139949385cfe72581111">BuffersQueued</a> = 0x1015
+, <a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492aacb1ae2d18d0e4ebba248a761a1740a0e">BuffersProcessed</a> = 0x1016
+, <a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492aa846ec4a166054f871d360005066a2201">SourceType</a> = 0x1027
+<br />
+ }</td></tr>
+<tr class="memitem:aebfc784dcba2c939ad8f3ae0ef016fe0" id="r_aebfc784dcba2c939ad8f3ae0ef016fe0"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0">SourceFloat</a> { <br />
+&#160;&#160;<a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0a919d07be1b715d9d5971e1e3960cc4f3">ReferenceDistance</a> = 0x1020
+, <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0a26566fa367c162fcc3c6639f66c6b611">MaxDistance</a> = 0x1023
+, <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0a67346c12ba6a21f4bfd756703f77fbd7">RolloffFactor</a> = 0x1021
+, <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0a87f800274a7f46c50e17114f89171e2e">Pitch</a> = 0x1003
+, <br />
+&#160;&#160;<a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0a35d72fa7d84f4ae67d705373d1d44b88">Gain</a> = 0x100A
+, <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0ad7521e807a2e7fa485d13a710420b552">MinGain</a> = 0x100D
+, <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0a333c7f27786ea92a2a05518ccf4caa90">MaxGain</a> = 0x100E
+, <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0adb77bfe83e85a2c8b9fcc701d48dbe9a">ConeInnerAngle</a> = 0x1001
+, <br />
+&#160;&#160;<a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0a1e29896512ffbc4001df3bfa13751939">ConeOuterAngle</a> = 0x1002
+, <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0a5bb3f28ca3b529806fa45dbad3cdaa25">ConeOuterGain</a> = 0x1022
+, <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0a97bbb27bb36b9c6a7efacbbcbdbd68ac">SecOffset</a> = 0x1024
+<br />
+ }</td></tr>
+<tr class="memitem:ae869896f40af35c18705050b14f25c18" id="r_ae869896f40af35c18705050b14f25c18"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ae869896f40af35c18705050b14f25c18">SourceVector3</a> { <a class="el" href="#ae869896f40af35c18705050b14f25c18a52f5e0bc3859bc5f5e25130b6c7e8881">Position</a> = 0x1004
+, <a class="el" href="#ae869896f40af35c18705050b14f25c18a88156d46910a2d733443c339a9231d12">Velocity</a> = 0x1006
+, <a class="el" href="#ae869896f40af35c18705050b14f25c18a02674a4ef33e11c879283629996c8ff8">Direction</a> = 0x1005
+ }</td></tr>
+<tr class="memitem:a2e46ba994dd8623e8d6624e0d22e6f6c" id="r_a2e46ba994dd8623e8d6624e0d22e6f6c"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a2e46ba994dd8623e8d6624e0d22e6f6c">SourceInteger</a> { <a class="el" href="#a2e46ba994dd8623e8d6624e0d22e6f6ca511cf6f133343126fd2e4d66ceb11697">ByteOffset</a> = 0x1026
+, <a class="el" href="#a2e46ba994dd8623e8d6624e0d22e6f6caf77505cd3681a499d34acfed3a6e049e">SampleOffset</a> = 0x1025
+, <a class="el" href="#a2e46ba994dd8623e8d6624e0d22e6f6ca7e62bc342f41c946868f0ea6f0b712d8">Buffer</a> = 0x1009
+, <a class="el" href="#a2e46ba994dd8623e8d6624e0d22e6f6ca846ec4a166054f871d360005066a2201">SourceType</a> = 0x1027
+ }</td></tr>
+<tr class="memitem:a0f95a9d0a6a70d4415380e6f3ccfb65b" id="r_a0f95a9d0a6a70d4415380e6f3ccfb65b"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a0f95a9d0a6a70d4415380e6f3ccfb65b">SourceBoolean</a> { <a class="el" href="#a0f95a9d0a6a70d4415380e6f3ccfb65ba7a76eeabe697cda6ba8efe804d1cfdac">SourceRelative</a> = 0x202
+, <a class="el" href="#a0f95a9d0a6a70d4415380e6f3ccfb65baa56d66d7acdce18b9861f4c84bf8f777">Looping</a> = 0x1007
+ }</td></tr>
+<tr class="memitem:a70e867e17b62094874605bdc30e3eb69" id="r_a70e867e17b62094874605bdc30e3eb69"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a70e867e17b62094874605bdc30e3eb69">BufferFormat</a> { <a class="el" href="#a70e867e17b62094874605bdc30e3eb69abc5c44624758954f1a4af1e009f5cf6e">Mono8</a> = 0x1100
+, <a class="el" href="#a70e867e17b62094874605bdc30e3eb69aab2f4f7e4448e8c91c89774787a1cc2c">Mono16</a> = 0x1101
+, <a class="el" href="#a70e867e17b62094874605bdc30e3eb69ac6b222ce6dafa010da034571a80c21f3">Stereo8</a> = 0x1102
+, <a class="el" href="#a70e867e17b62094874605bdc30e3eb69a851cd6283aaf71edd18bb2fcda2505f4">Stereo16</a> = 0x1103
+ }</td></tr>
+<tr class="memitem:a6215bff74ab8adbdc10a654d91139ce1" id="r_a6215bff74ab8adbdc10a654d91139ce1"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a6215bff74ab8adbdc10a654d91139ce1">ListenerFloat</a> { <a class="el" href="#a6215bff74ab8adbdc10a654d91139ce1a35d72fa7d84f4ae67d705373d1d44b88">Gain</a> = 0x100A
+ }</td></tr>
+<tr class="memitem:a8b4dbeb806cc7730fb329b9cc87a9f1c" id="r_a8b4dbeb806cc7730fb329b9cc87a9f1c"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1c">DistanceModelEnum</a> { <br />
+&#160;&#160;<a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1ca6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
+, <a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1ca425b2bd99b7e5e7bb4d6bdb16061fefa">InverseDistance</a> = 0xD001
+, <a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1caa1995a4ec45da3b68199b98b3387e363">InverseDistanceClamped</a> = 0xD002
+, <a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1caf0269460db42aaeae937d33fa7584810">LinearDistance</a> = 0xD003
+, <br />
+&#160;&#160;<a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1ca6251affeb37ebdc4a61f7055d929d7b1">LinearDistanceClamped</a> = 0xD004
+, <a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1ca6f69922d830216f31901d27502565a0e">ExponentDistance</a> = 0xD005
+, <a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1ca789ffe8c94b253cb1712d2390665b483">ExponentDistanceClamped</a> = 0xD006
+<br />
+ }</td></tr>
+<tr class="memitem:ae9cbdedcbd3fdb6be12673d577b20f5e" id="r_ae9cbdedcbd3fdb6be12673d577b20f5e"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5e">AudioError</a> { <br />
+&#160;&#160;<a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5ea70a47cae4eb221930f2663fd244369ea">NoError</a> = 0
+, <a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5eaa798c6c805d93fedf99d9bdf443e7ffc">InvalidName</a> = 0xA001
+, <a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5ea2bb71971d3733e525d6966c293ef39fa">IllegalEnum</a> = 0xA002
+, <a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5eabaf0777e3144a52d6fd69816f4ac22c8">InvalidEnum</a> = 0xA002
+, <br />
+&#160;&#160;<a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5ea223e81e8afa42c41346a6696560ecc7b">InvalidValue</a> = 0xA003
+, <a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5ea47c1481731910df3950e1b093cbb8216">IllegalCommand</a> = 0xA004
+, <a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5ea1cd5ecce6fe138df5c3f7e8854a1a66d">InvalidOperation</a> = 0xA004
+, <a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5eab498327feeb51430af73e07deac268fd">OutOfMemory</a> = 0xA005
+<br />
+ }</td></tr>
+<tr class="memitem:a876f45e77eb861cfb1b2b1d9572a4326" id="r_a876f45e77eb861cfb1b2b1d9572a4326"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a876f45e77eb861cfb1b2b1d9572a4326">SourceState</a> { <a class="el" href="#a876f45e77eb861cfb1b2b1d9572a4326a4f2a91e15af2631ff9424564b8a45fb2">Initial</a> = 0x1011
+, <a class="el" href="#a876f45e77eb861cfb1b2b1d9572a4326ac9dbb2b7c84159b632d71e512eba8428">Playing</a> = 0x1012
+, <a class="el" href="#a876f45e77eb861cfb1b2b1d9572a4326ae99180abf47a8b3a856e0bcb2656990a">Paused</a> = 0x1013
+, <a class="el" href="#a876f45e77eb861cfb1b2b1d9572a4326ac23e2b09ebe6bf4cb5e2a9abe85c0be2">Stopped</a> = 0x1014
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a589fbe0a9cfaa8362a770eac77a06c5a" id="r_a589fbe0a9cfaa8362a770eac77a06c5a"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a589fbe0a9cfaa8362a770eac77a06c5a">GenSource</a> ()</td></tr>
+<tr class="memitem:a9b8fc2064633888ec33f4257c5320bac" id="r_a9b8fc2064633888ec33f4257c5320bac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b8fc2064633888ec33f4257c5320bac">DeleteSource</a> (uint source)</td></tr>
+<tr class="memitem:a9be3d08f7abbf270783b357bcf4ea58c" id="r_a9be3d08f7abbf270783b357bcf4ea58c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9be3d08f7abbf270783b357bcf4ea58c">GetSourceProperty</a> (uint source, <a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492a">GetSourceInteger</a> param, out int value)</td></tr>
+<tr class="memitem:a020c87784710d7c615fff47f0a7469b1" id="r_a020c87784710d7c615fff47f0a7469b1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a020c87784710d7c615fff47f0a7469b1">SetSourceProperty</a> (uint source, <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0">SourceFloat</a> param, float value)</td></tr>
+<tr class="memitem:a3aee21350024a88d2f8036c57661c974" id="r_a3aee21350024a88d2f8036c57661c974"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3aee21350024a88d2f8036c57661c974">SetSourceProperty</a> (uint source, <a class="el" href="#ae869896f40af35c18705050b14f25c18">SourceVector3</a> param, float value1, float value2, float value3)</td></tr>
+<tr class="memitem:a54d0822b5028b73d97d341a23e99031f" id="r_a54d0822b5028b73d97d341a23e99031f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a54d0822b5028b73d97d341a23e99031f">SetSourceProperty</a> (uint source, <a class="el" href="#a2e46ba994dd8623e8d6624e0d22e6f6c">SourceInteger</a> param, int value)</td></tr>
+<tr class="memitem:a5ec133c636766d2a9b491365ff627826" id="r_a5ec133c636766d2a9b491365ff627826"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5ec133c636766d2a9b491365ff627826">SetSourceProperty</a> (uint source, <a class="el" href="#a0f95a9d0a6a70d4415380e6f3ccfb65b">SourceBoolean</a> param, bool value)</td></tr>
+<tr class="memitem:acd8a180d5cd62e47fd3eb941442379e5" id="r_acd8a180d5cd62e47fd3eb941442379e5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acd8a180d5cd62e47fd3eb941442379e5">SourcePlay</a> (uint source)</td></tr>
+<tr class="memitem:ae66c15365727e07d7e7ab4ead1bec3c1" id="r_ae66c15365727e07d7e7ab4ead1bec3c1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae66c15365727e07d7e7ab4ead1bec3c1">SourcePause</a> (uint source)</td></tr>
+<tr class="memitem:a46247dfae6a9e21e92b10a22a6025dd0" id="r_a46247dfae6a9e21e92b10a22a6025dd0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a46247dfae6a9e21e92b10a22a6025dd0">SourceStop</a> (uint source)</td></tr>
+<tr class="memitem:ad08ba2b74a68639d35b4f10f6240c44a" id="r_ad08ba2b74a68639d35b4f10f6240c44a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad08ba2b74a68639d35b4f10f6240c44a">SourceRewind</a> (uint source)</td></tr>
+<tr class="memitem:a2a93216082ce2b82a2cb18744a4b3be3" id="r_a2a93216082ce2b82a2cb18744a4b3be3"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a2a93216082ce2b82a2cb18744a4b3be3">GenBuffer</a> ()</td></tr>
+<tr class="memitem:a9ad5a76547aefe396f2302f026c0d5fd" id="r_a9ad5a76547aefe396f2302f026c0d5fd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9ad5a76547aefe396f2302f026c0d5fd">DeleteBuffer</a> (uint buffer)</td></tr>
+<tr class="memitem:a226e4f700f8b6979154db805c817f357" id="r_a226e4f700f8b6979154db805c817f357"><td class="memItemLeft"><a class="el" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a226e4f700f8b6979154db805c817f357">BufferData</a> (uint buffer, <a class="el" href="#a70e867e17b62094874605bdc30e3eb69">BufferFormat</a> format, void *data, int size, int frequency)</td></tr>
+<tr class="memitem:a5dd41da245e4cc32db260068b9fcaf40" id="r_a5dd41da245e4cc32db260068b9fcaf40"><td class="memItemLeft"><a class="el" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a5dd41da245e4cc32db260068b9fcaf40">SourceUnqueueBuffers</a> (uint source, int count, uint *buffers)</td></tr>
+<tr class="memitem:aed31afe15c98758bdf2642cd13c6dcb7" id="r_aed31afe15c98758bdf2642cd13c6dcb7"><td class="memItemLeft"><a class="el" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> void&#160;</td><td class="memItemRight"><a class="el" href="#aed31afe15c98758bdf2642cd13c6dcb7">SourceQueueBuffers</a> (uint source, int count, uint *buffers)</td></tr>
+<tr class="memitem:a5d9e6da45f256bbb95d971c4317bd3c8" id="r_a5d9e6da45f256bbb95d971c4317bd3c8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5d9e6da45f256bbb95d971c4317bd3c8">SetListenerProperty</a> (<a class="el" href="#a6215bff74ab8adbdc10a654d91139ce1">ListenerFloat</a> param, float value)</td></tr>
+<tr class="memitem:a17478c25231d42db0c0bd522ac159af0" id="r_a17478c25231d42db0c0bd522ac159af0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a17478c25231d42db0c0bd522ac159af0">DistanceModel</a> (<a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1c">DistanceModelEnum</a> model)</td></tr>
+<tr class="memitem:aad55249fd8ae51da80aa8e6d6e22f3fd" id="r_aad55249fd8ae51da80aa8e6d6e22f3fd"><td class="memItemLeft"><a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5e">AudioError</a>&#160;</td><td class="memItemRight"><a class="el" href="#aad55249fd8ae51da80aa8e6d6e22f3fd">GetError</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00002">2</a> 行定义.</p>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">成员枚举类型说明</h2>
+<a id="ae9cbdedcbd3fdb6be12673d577b20f5e" name="ae9cbdedcbd3fdb6be12673d577b20f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9cbdedcbd3fdb6be12673d577b20f5e">&#9670;&#160;</a></span>AudioError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5e">Engine.Browser.AL.AudioError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ae9cbdedcbd3fdb6be12673d577b20f5ea70a47cae4eb221930f2663fd244369ea" name="ae9cbdedcbd3fdb6be12673d577b20f5ea70a47cae4eb221930f2663fd244369ea"></a>NoError&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae9cbdedcbd3fdb6be12673d577b20f5eaa798c6c805d93fedf99d9bdf443e7ffc" name="ae9cbdedcbd3fdb6be12673d577b20f5eaa798c6c805d93fedf99d9bdf443e7ffc"></a>InvalidName&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae9cbdedcbd3fdb6be12673d577b20f5ea2bb71971d3733e525d6966c293ef39fa" name="ae9cbdedcbd3fdb6be12673d577b20f5ea2bb71971d3733e525d6966c293ef39fa"></a>IllegalEnum&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae9cbdedcbd3fdb6be12673d577b20f5eabaf0777e3144a52d6fd69816f4ac22c8" name="ae9cbdedcbd3fdb6be12673d577b20f5eabaf0777e3144a52d6fd69816f4ac22c8"></a>InvalidEnum&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae9cbdedcbd3fdb6be12673d577b20f5ea223e81e8afa42c41346a6696560ecc7b" name="ae9cbdedcbd3fdb6be12673d577b20f5ea223e81e8afa42c41346a6696560ecc7b"></a>InvalidValue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae9cbdedcbd3fdb6be12673d577b20f5ea47c1481731910df3950e1b093cbb8216" name="ae9cbdedcbd3fdb6be12673d577b20f5ea47c1481731910df3950e1b093cbb8216"></a>IllegalCommand&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae9cbdedcbd3fdb6be12673d577b20f5ea1cd5ecce6fe138df5c3f7e8854a1a66d" name="ae9cbdedcbd3fdb6be12673d577b20f5ea1cd5ecce6fe138df5c3f7e8854a1a66d"></a>InvalidOperation&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae9cbdedcbd3fdb6be12673d577b20f5eab498327feeb51430af73e07deac268fd" name="ae9cbdedcbd3fdb6be12673d577b20f5eab498327feeb51430af73e07deac268fd"></a>OutOfMemory&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a70e867e17b62094874605bdc30e3eb69" name="a70e867e17b62094874605bdc30e3eb69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e867e17b62094874605bdc30e3eb69">&#9670;&#160;</a></span>BufferFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a70e867e17b62094874605bdc30e3eb69">Engine.Browser.AL.BufferFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a70e867e17b62094874605bdc30e3eb69abc5c44624758954f1a4af1e009f5cf6e" name="a70e867e17b62094874605bdc30e3eb69abc5c44624758954f1a4af1e009f5cf6e"></a>Mono8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a70e867e17b62094874605bdc30e3eb69aab2f4f7e4448e8c91c89774787a1cc2c" name="a70e867e17b62094874605bdc30e3eb69aab2f4f7e4448e8c91c89774787a1cc2c"></a>Mono16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a70e867e17b62094874605bdc30e3eb69ac6b222ce6dafa010da034571a80c21f3" name="a70e867e17b62094874605bdc30e3eb69ac6b222ce6dafa010da034571a80c21f3"></a>Stereo8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a70e867e17b62094874605bdc30e3eb69a851cd6283aaf71edd18bb2fcda2505f4" name="a70e867e17b62094874605bdc30e3eb69a851cd6283aaf71edd18bb2fcda2505f4"></a>Stereo16&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8b4dbeb806cc7730fb329b9cc87a9f1c" name="a8b4dbeb806cc7730fb329b9cc87a9f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4dbeb806cc7730fb329b9cc87a9f1c">&#9670;&#160;</a></span>DistanceModelEnum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1c">Engine.Browser.AL.DistanceModelEnum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a8b4dbeb806cc7730fb329b9cc87a9f1ca6adf97f83acf6453d4a6a4b1070f3754" name="a8b4dbeb806cc7730fb329b9cc87a9f1ca6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b4dbeb806cc7730fb329b9cc87a9f1ca425b2bd99b7e5e7bb4d6bdb16061fefa" name="a8b4dbeb806cc7730fb329b9cc87a9f1ca425b2bd99b7e5e7bb4d6bdb16061fefa"></a>InverseDistance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b4dbeb806cc7730fb329b9cc87a9f1caa1995a4ec45da3b68199b98b3387e363" name="a8b4dbeb806cc7730fb329b9cc87a9f1caa1995a4ec45da3b68199b98b3387e363"></a>InverseDistanceClamped&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b4dbeb806cc7730fb329b9cc87a9f1caf0269460db42aaeae937d33fa7584810" name="a8b4dbeb806cc7730fb329b9cc87a9f1caf0269460db42aaeae937d33fa7584810"></a>LinearDistance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b4dbeb806cc7730fb329b9cc87a9f1ca6251affeb37ebdc4a61f7055d929d7b1" name="a8b4dbeb806cc7730fb329b9cc87a9f1ca6251affeb37ebdc4a61f7055d929d7b1"></a>LinearDistanceClamped&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b4dbeb806cc7730fb329b9cc87a9f1ca6f69922d830216f31901d27502565a0e" name="a8b4dbeb806cc7730fb329b9cc87a9f1ca6f69922d830216f31901d27502565a0e"></a>ExponentDistance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b4dbeb806cc7730fb329b9cc87a9f1ca789ffe8c94b253cb1712d2390665b483" name="a8b4dbeb806cc7730fb329b9cc87a9f1ca789ffe8c94b253cb1712d2390665b483"></a>ExponentDistanceClamped&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5cc7c10a93f18633c1dbda0a7cd0492a" name="a5cc7c10a93f18633c1dbda0a7cd0492a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc7c10a93f18633c1dbda0a7cd0492a">&#9670;&#160;</a></span>GetSourceInteger</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492a">Engine.Browser.AL.GetSourceInteger</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a5cc7c10a93f18633c1dbda0a7cd0492aa511cf6f133343126fd2e4d66ceb11697" name="a5cc7c10a93f18633c1dbda0a7cd0492aa511cf6f133343126fd2e4d66ceb11697"></a>ByteOffset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cc7c10a93f18633c1dbda0a7cd0492aaf77505cd3681a499d34acfed3a6e049e" name="a5cc7c10a93f18633c1dbda0a7cd0492aaf77505cd3681a499d34acfed3a6e049e"></a>SampleOffset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cc7c10a93f18633c1dbda0a7cd0492aa7e62bc342f41c946868f0ea6f0b712d8" name="a5cc7c10a93f18633c1dbda0a7cd0492aa7e62bc342f41c946868f0ea6f0b712d8"></a>Buffer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cc7c10a93f18633c1dbda0a7cd0492aa5b59196cafd989487d57df34474121cc" name="a5cc7c10a93f18633c1dbda0a7cd0492aa5b59196cafd989487d57df34474121cc"></a>SourceState&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cc7c10a93f18633c1dbda0a7cd0492aa60b1be0b1693139949385cfe72581111" name="a5cc7c10a93f18633c1dbda0a7cd0492aa60b1be0b1693139949385cfe72581111"></a>BuffersQueued&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cc7c10a93f18633c1dbda0a7cd0492aacb1ae2d18d0e4ebba248a761a1740a0e" name="a5cc7c10a93f18633c1dbda0a7cd0492aacb1ae2d18d0e4ebba248a761a1740a0e"></a>BuffersProcessed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5cc7c10a93f18633c1dbda0a7cd0492aa846ec4a166054f871d360005066a2201" name="a5cc7c10a93f18633c1dbda0a7cd0492aa846ec4a166054f871d360005066a2201"></a>SourceType&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00003">3</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6215bff74ab8adbdc10a654d91139ce1" name="a6215bff74ab8adbdc10a654d91139ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6215bff74ab8adbdc10a654d91139ce1">&#9670;&#160;</a></span>ListenerFloat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a6215bff74ab8adbdc10a654d91139ce1">Engine.Browser.AL.ListenerFloat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6215bff74ab8adbdc10a654d91139ce1a35d72fa7d84f4ae67d705373d1d44b88" name="a6215bff74ab8adbdc10a654d91139ce1a35d72fa7d84f4ae67d705373d1d44b88"></a>Gain&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0f95a9d0a6a70d4415380e6f3ccfb65b" name="a0f95a9d0a6a70d4415380e6f3ccfb65b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f95a9d0a6a70d4415380e6f3ccfb65b">&#9670;&#160;</a></span>SourceBoolean</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a0f95a9d0a6a70d4415380e6f3ccfb65b">Engine.Browser.AL.SourceBoolean</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a0f95a9d0a6a70d4415380e6f3ccfb65ba7a76eeabe697cda6ba8efe804d1cfdac" name="a0f95a9d0a6a70d4415380e6f3ccfb65ba7a76eeabe697cda6ba8efe804d1cfdac"></a>SourceRelative&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0f95a9d0a6a70d4415380e6f3ccfb65baa56d66d7acdce18b9861f4c84bf8f777" name="a0f95a9d0a6a70d4415380e6f3ccfb65baa56d66d7acdce18b9861f4c84bf8f777"></a>Looping&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aebfc784dcba2c939ad8f3ae0ef016fe0" name="aebfc784dcba2c939ad8f3ae0ef016fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebfc784dcba2c939ad8f3ae0ef016fe0">&#9670;&#160;</a></span>SourceFloat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0">Engine.Browser.AL.SourceFloat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0a919d07be1b715d9d5971e1e3960cc4f3" name="aebfc784dcba2c939ad8f3ae0ef016fe0a919d07be1b715d9d5971e1e3960cc4f3"></a>ReferenceDistance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0a26566fa367c162fcc3c6639f66c6b611" name="aebfc784dcba2c939ad8f3ae0ef016fe0a26566fa367c162fcc3c6639f66c6b611"></a>MaxDistance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0a67346c12ba6a21f4bfd756703f77fbd7" name="aebfc784dcba2c939ad8f3ae0ef016fe0a67346c12ba6a21f4bfd756703f77fbd7"></a>RolloffFactor&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0a87f800274a7f46c50e17114f89171e2e" name="aebfc784dcba2c939ad8f3ae0ef016fe0a87f800274a7f46c50e17114f89171e2e"></a>Pitch&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0a35d72fa7d84f4ae67d705373d1d44b88" name="aebfc784dcba2c939ad8f3ae0ef016fe0a35d72fa7d84f4ae67d705373d1d44b88"></a>Gain&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0ad7521e807a2e7fa485d13a710420b552" name="aebfc784dcba2c939ad8f3ae0ef016fe0ad7521e807a2e7fa485d13a710420b552"></a>MinGain&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0a333c7f27786ea92a2a05518ccf4caa90" name="aebfc784dcba2c939ad8f3ae0ef016fe0a333c7f27786ea92a2a05518ccf4caa90"></a>MaxGain&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0adb77bfe83e85a2c8b9fcc701d48dbe9a" name="aebfc784dcba2c939ad8f3ae0ef016fe0adb77bfe83e85a2c8b9fcc701d48dbe9a"></a>ConeInnerAngle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0a1e29896512ffbc4001df3bfa13751939" name="aebfc784dcba2c939ad8f3ae0ef016fe0a1e29896512ffbc4001df3bfa13751939"></a>ConeOuterAngle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0a5bb3f28ca3b529806fa45dbad3cdaa25" name="aebfc784dcba2c939ad8f3ae0ef016fe0a5bb3f28ca3b529806fa45dbad3cdaa25"></a>ConeOuterGain&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebfc784dcba2c939ad8f3ae0ef016fe0a97bbb27bb36b9c6a7efacbbcbdbd68ac" name="aebfc784dcba2c939ad8f3ae0ef016fe0a97bbb27bb36b9c6a7efacbbcbdbd68ac"></a>SecOffset&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2e46ba994dd8623e8d6624e0d22e6f6c" name="a2e46ba994dd8623e8d6624e0d22e6f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e46ba994dd8623e8d6624e0d22e6f6c">&#9670;&#160;</a></span>SourceInteger</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a2e46ba994dd8623e8d6624e0d22e6f6c">Engine.Browser.AL.SourceInteger</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a2e46ba994dd8623e8d6624e0d22e6f6ca511cf6f133343126fd2e4d66ceb11697" name="a2e46ba994dd8623e8d6624e0d22e6f6ca511cf6f133343126fd2e4d66ceb11697"></a>ByteOffset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e46ba994dd8623e8d6624e0d22e6f6caf77505cd3681a499d34acfed3a6e049e" name="a2e46ba994dd8623e8d6624e0d22e6f6caf77505cd3681a499d34acfed3a6e049e"></a>SampleOffset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e46ba994dd8623e8d6624e0d22e6f6ca7e62bc342f41c946868f0ea6f0b712d8" name="a2e46ba994dd8623e8d6624e0d22e6f6ca7e62bc342f41c946868f0ea6f0b712d8"></a>Buffer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e46ba994dd8623e8d6624e0d22e6f6ca846ec4a166054f871d360005066a2201" name="a2e46ba994dd8623e8d6624e0d22e6f6ca846ec4a166054f871d360005066a2201"></a>SourceType&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a876f45e77eb861cfb1b2b1d9572a4326" name="a876f45e77eb861cfb1b2b1d9572a4326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876f45e77eb861cfb1b2b1d9572a4326">&#9670;&#160;</a></span>SourceState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a876f45e77eb861cfb1b2b1d9572a4326">Engine.Browser.AL.SourceState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a876f45e77eb861cfb1b2b1d9572a4326a4f2a91e15af2631ff9424564b8a45fb2" name="a876f45e77eb861cfb1b2b1d9572a4326a4f2a91e15af2631ff9424564b8a45fb2"></a>Initial&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a876f45e77eb861cfb1b2b1d9572a4326ac9dbb2b7c84159b632d71e512eba8428" name="a876f45e77eb861cfb1b2b1d9572a4326ac9dbb2b7c84159b632d71e512eba8428"></a>Playing&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a876f45e77eb861cfb1b2b1d9572a4326ae99180abf47a8b3a856e0bcb2656990a" name="a876f45e77eb861cfb1b2b1d9572a4326ae99180abf47a8b3a856e0bcb2656990a"></a>Paused&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a876f45e77eb861cfb1b2b1d9572a4326ac23e2b09ebe6bf4cb5e2a9abe85c0be2" name="a876f45e77eb861cfb1b2b1d9572a4326ac23e2b09ebe6bf4cb5e2a9abe85c0be2"></a>Stopped&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae869896f40af35c18705050b14f25c18" name="ae869896f40af35c18705050b14f25c18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae869896f40af35c18705050b14f25c18">&#9670;&#160;</a></span>SourceVector3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ae869896f40af35c18705050b14f25c18">Engine.Browser.AL.SourceVector3</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ae869896f40af35c18705050b14f25c18a52f5e0bc3859bc5f5e25130b6c7e8881" name="ae869896f40af35c18705050b14f25c18a52f5e0bc3859bc5f5e25130b6c7e8881"></a>Position&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae869896f40af35c18705050b14f25c18a88156d46910a2d733443c339a9231d12" name="ae869896f40af35c18705050b14f25c18a88156d46910a2d733443c339a9231d12"></a>Velocity&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae869896f40af35c18705050b14f25c18a02674a4ef33e11c879283629996c8ff8" name="ae869896f40af35c18705050b14f25c18a02674a4ef33e11c879283629996c8ff8"></a>Direction&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00027">27</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="a226e4f700f8b6979154db805c817f357" name="a226e4f700f8b6979154db805c817f357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a226e4f700f8b6979154db805c817f357">&#9670;&#160;</a></span>BufferData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> void Engine.Browser.AL.BufferData </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a70e867e17b62094874605bdc30e3eb69">BufferFormat</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>frequency</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00116">116</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9ad5a76547aefe396f2302f026c0d5fd" name="a9ad5a76547aefe396f2302f026c0d5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad5a76547aefe396f2302f026c0d5fd">&#9670;&#160;</a></span>DeleteBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.DeleteBuffer </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00114">114</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9b8fc2064633888ec33f4257c5320bac" name="a9b8fc2064633888ec33f4257c5320bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8fc2064633888ec33f4257c5320bac">&#9670;&#160;</a></span>DeleteSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.DeleteSource </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00089">89</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a17478c25231d42db0c0bd522ac159af0" name="a17478c25231d42db0c0bd522ac159af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17478c25231d42db0c0bd522ac159af0">&#9670;&#160;</a></span>DistanceModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.DistanceModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a8b4dbeb806cc7730fb329b9cc87a9f1c">DistanceModelEnum</a></td>          <td class="paramname"><span class="paramname"><em>model</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00124">124</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2a93216082ce2b82a2cb18744a4b3be3" name="a2a93216082ce2b82a2cb18744a4b3be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a93216082ce2b82a2cb18744a4b3be3">&#9670;&#160;</a></span>GenBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Engine.Browser.AL.GenBuffer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00109">109</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_browser_1_1_a_l_a2a93216082ce2b82a2cb18744a4b3be3_cgraph.png" border="0" usemap="#aclass_engine_1_1_browser_1_1_a_l_a2a93216082ce2b82a2cb18744a4b3be3_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_browser_1_1_a_l_a2a93216082ce2b82a2cb18744a4b3be3_cgraph" id="aclass_engine_1_1_browser_1_1_a_l_a2a93216082ce2b82a2cb18744a4b3be3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,201,40"/>
+<area shape="rect" href="class_engine_1_1_browser_1_1_o_a_l.html#a83b9d750d80b27add07fc43c5e9cef44" title=" " alt="" coords="249,5,430,48"/>
+<area shape="poly" title=" " alt="" coords="201,24,235,26,230,27,201,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a589fbe0a9cfaa8362a770eac77a06c5a" name="a589fbe0a9cfaa8362a770eac77a06c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589fbe0a9cfaa8362a770eac77a06c5a">&#9670;&#160;</a></span>GenSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Engine.Browser.AL.GenSource </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00084">84</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_engine_1_1_browser_1_1_a_l_a589fbe0a9cfaa8362a770eac77a06c5a_cgraph.png" border="0" usemap="#aclass_engine_1_1_browser_1_1_a_l_a589fbe0a9cfaa8362a770eac77a06c5a_cgraph" loading="lazy" alt=""/></div>
+<map name="aclass_engine_1_1_browser_1_1_a_l_a589fbe0a9cfaa8362a770eac77a06c5a_cgraph" id="aclass_engine_1_1_browser_1_1_a_l_a589fbe0a9cfaa8362a770eac77a06c5a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,208,40"/>
+<area shape="rect" href="class_engine_1_1_browser_1_1_o_a_l.html#a37264e1c8b652e446e521c2545e27ac3" title=" " alt="" coords="256,5,437,48"/>
+<area shape="poly" title=" " alt="" coords="208,24,243,27,238,27,208,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad55249fd8ae51da80aa8e6d6e22f3fd" name="aad55249fd8ae51da80aa8e6d6e22f3fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad55249fd8ae51da80aa8e6d6e22f3fd">&#9670;&#160;</a></span>GetError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae9cbdedcbd3fdb6be12673d577b20f5e">AudioError</a> Engine.Browser.AL.GetError </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00125">125</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9be3d08f7abbf270783b357bcf4ea58c" name="a9be3d08f7abbf270783b357bcf4ea58c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be3d08f7abbf270783b357bcf4ea58c">&#9670;&#160;</a></span>GetSourceProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.GetSourceProperty </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a5cc7c10a93f18633c1dbda0a7cd0492a">GetSourceInteger</a></td>          <td class="paramname"><span class="paramname"><em>param</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5d9e6da45f256bbb95d971c4317bd3c8" name="a5d9e6da45f256bbb95d971c4317bd3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9e6da45f256bbb95d971c4317bd3c8">&#9670;&#160;</a></span>SetListenerProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.SetListenerProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a6215bff74ab8adbdc10a654d91139ce1">ListenerFloat</a></td>          <td class="paramname"><span class="paramname"><em>param</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00122">122</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5ec133c636766d2a9b491365ff627826" name="a5ec133c636766d2a9b491365ff627826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec133c636766d2a9b491365ff627826">&#9670;&#160;</a></span>SetSourceProperty() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.SetSourceProperty </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a0f95a9d0a6a70d4415380e6f3ccfb65b">SourceBoolean</a></td>          <td class="paramname"><span class="paramname"><em>param</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00099">99</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a020c87784710d7c615fff47f0a7469b1" name="a020c87784710d7c615fff47f0a7469b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a020c87784710d7c615fff47f0a7469b1">&#9670;&#160;</a></span>SetSourceProperty() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.SetSourceProperty </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aebfc784dcba2c939ad8f3ae0ef016fe0">SourceFloat</a></td>          <td class="paramname"><span class="paramname"><em>param</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00092">92</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a54d0822b5028b73d97d341a23e99031f" name="a54d0822b5028b73d97d341a23e99031f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d0822b5028b73d97d341a23e99031f">&#9670;&#160;</a></span>SetSourceProperty() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.SetSourceProperty </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a2e46ba994dd8623e8d6624e0d22e6f6c">SourceInteger</a></td>          <td class="paramname"><span class="paramname"><em>param</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00097">97</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3aee21350024a88d2f8036c57661c974" name="a3aee21350024a88d2f8036c57661c974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aee21350024a88d2f8036c57661c974">&#9670;&#160;</a></span>SetSourceProperty() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.SetSourceProperty </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ae869896f40af35c18705050b14f25c18">SourceVector3</a></td>          <td class="paramname"><span class="paramname"><em>param</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value3</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae66c15365727e07d7e7ab4ead1bec3c1" name="ae66c15365727e07d7e7ab4ead1bec3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66c15365727e07d7e7ab4ead1bec3c1">&#9670;&#160;</a></span>SourcePause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.SourcePause </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00103">103</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acd8a180d5cd62e47fd3eb941442379e5" name="acd8a180d5cd62e47fd3eb941442379e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8a180d5cd62e47fd3eb941442379e5">&#9670;&#160;</a></span>SourcePlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.SourcePlay </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aed31afe15c98758bdf2642cd13c6dcb7" name="aed31afe15c98758bdf2642cd13c6dcb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed31afe15c98758bdf2642cd13c6dcb7">&#9670;&#160;</a></span>SourceQueueBuffers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> void Engine.Browser.AL.SourceQueueBuffers </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>buffers</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad08ba2b74a68639d35b4f10f6240c44a" name="ad08ba2b74a68639d35b4f10f6240c44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08ba2b74a68639d35b4f10f6240c44a">&#9670;&#160;</a></span>SourceRewind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.SourceRewind </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a46247dfae6a9e21e92b10a22a6025dd0" name="a46247dfae6a9e21e92b10a22a6025dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46247dfae6a9e21e92b10a22a6025dd0">&#9670;&#160;</a></span>SourceStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Engine.Browser.AL.SourceStop </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00105">105</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5dd41da245e4cc32db260068b9fcaf40" name="a5dd41da245e4cc32db260068b9fcaf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd41da245e4cc32db260068b9fcaf40">&#9670;&#160;</a></span>SourceUnqueueBuffers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_main_8cs.html#aadc1913660b4a97759fcca7299050250">unsafe</a> void Engine.Browser.AL.SourceUnqueueBuffers </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>buffers</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_a_l_8cs_source.html">AL.cs</a> 第 <a class="el" href="_a_l_8cs_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Browser/<a class="el" href="_a_l_8cs_source.html">AL.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_engine.html">Engine</a></li><li class="navelem"><a href="namespace_engine_1_1_browser.html">Browser</a></li><li class="navelem"><a href="class_engine_1_1_browser_1_1_a_l.html">AL</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

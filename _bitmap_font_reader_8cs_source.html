@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/IContentReader/BitmapFontReader.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_bitmap_font_reader_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BitmapFontReader.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_bitmap_font_reader_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_media.html">Engine.Media</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game_1_1_i_content_reader.html">Game.IContentReader</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html">BitmapFontReader</a> : <a class="code hl_class" href="class_game_1_1_i_content_reader_1_1_i_content_reader.html">IContentReader</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html#a6c3cefbb9cc255c174a68dda08899004">    7</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html#a6c3cefbb9cc255c174a68dda08899004">Type</a> =&gt; <span class="stringliteral">&quot;Engine.Media.BitmapFont&quot;</span>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html#a50d98a90eef3c680e8066090dd0422f7">    8</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span>[] <a class="code hl_property" href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html#a50d98a90eef3c680e8066090dd0422f7">DefaultSuffix</a> =&gt; [<span class="stringliteral">&quot;lst&quot;</span>, <span class="stringliteral">&quot;astc&quot;</span>, <span class="stringliteral">&quot;astcsrgb&quot;</span>, <span class="stringliteral">&quot;webp&quot;</span>, <span class="stringliteral">&quot;png&quot;</span>];</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html#ac7c493ffce5537212063fcc1c5f7c416">   10</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">object</span> <a class="code hl_function" href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html#ac7c493ffce5537212063fcc1c5f7c416">Get</a>(<a class="code hl_class" href="class_game_1_1_content_info.html">ContentInfo</a>[] contents) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="keywordflow">if</span> (contents.Length != 2) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;not matches content count&quot;</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_class" href="class_game_1_1_content_info.html">ContentInfo</a> contentInfo = contents[1];</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_class" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a> texture2D = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;<a class="code hl_class" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a>&gt;(contentInfo.<a class="code hl_variable" href="class_game_1_1_content_info.html#aebd486f89e64eeec138f9dc5f2b68d11">ContentPath</a>, contentInfo.<a class="code hl_variable" href="class_game_1_1_content_info.html#a6a0b37d7c1dd0453b2396eb06cdf0993">ContentSuffix</a>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="class_engine_1_1_media_1_1_bitmap_font.html">BitmapFont</a>.<a class="code hl_function" href="class_engine_1_1_media_1_1_bitmap_font.html#ac08ade406c08592913f58b60e05860cf">Initialize</a>(texture2D, contents[0].Duplicate(), <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Zero</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        }</div>
+</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_texture2_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_texture2_d.html">Engine.Graphics.Texture2D</a></div><div class="ttdef"><b>定义</b> <a href="_texture2_d_8cs_source.html#l00015">Texture2D.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_bitmap_font_html"><div class="ttname"><a href="class_engine_1_1_media_1_1_bitmap_font.html">Engine.Media.BitmapFont</a></div><div class="ttdef"><b>定义</b> <a href="_bitmap_font_8cs_source.html#l00006">BitmapFont.cs:6</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_media_1_1_bitmap_font_html_ac08ade406c08592913f58b60e05860cf"><div class="ttname"><a href="class_engine_1_1_media_1_1_bitmap_font.html#ac08ade406c08592913f58b60e05860cf">Engine.Media.BitmapFont.Initialize</a></div><div class="ttdeci">static BitmapFont Initialize(Stream TextureStream, Stream GlyphsStream, Vector2? customGlyphOffset=null)</div><div class="ttdoc">纹理图</div><div class="ttdef"><b>定义</b> <a href="_bitmap_font_8cs_source.html#l00108">BitmapFont.cs:108</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_info_html"><div class="ttname"><a href="class_game_1_1_content_info.html">Game.ContentInfo</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00008">ContentManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_info_html_a6a0b37d7c1dd0453b2396eb06cdf0993"><div class="ttname"><a href="class_game_1_1_content_info.html#a6a0b37d7c1dd0453b2396eb06cdf0993">Game.ContentInfo.ContentSuffix</a></div><div class="ttdeci">string ContentSuffix</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00012">ContentManager.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_info_html_aebd486f89e64eeec138f9dc5f2b68d11"><div class="ttname"><a href="class_game_1_1_content_info.html#aebd486f89e64eeec138f9dc5f2b68d11">Game.ContentInfo.ContentPath</a></div><div class="ttdeci">string ContentPath</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00011">ContentManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_bitmap_font_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html">Game.IContentReader.BitmapFontReader</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">BitmapFontReader.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_bitmap_font_reader_html_a50d98a90eef3c680e8066090dd0422f7"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html#a50d98a90eef3c680e8066090dd0422f7">Game.IContentReader.BitmapFontReader.DefaultSuffix</a></div><div class="ttdeci">override string[] DefaultSuffix</div><div class="ttdef"><b>定义</b> <a href="#l00008">BitmapFontReader.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_bitmap_font_reader_html_a6c3cefbb9cc255c174a68dda08899004"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html#a6c3cefbb9cc255c174a68dda08899004">Game.IContentReader.BitmapFontReader.Type</a></div><div class="ttdeci">override string Type</div><div class="ttdef"><b>定义</b> <a href="#l00007">BitmapFontReader.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_bitmap_font_reader_html_ac7c493ffce5537212063fcc1c5f7c416"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_bitmap_font_reader.html#ac7c493ffce5537212063fcc1c5f7c416">Game.IContentReader.BitmapFontReader.Get</a></div><div class="ttdeci">override object Get(ContentInfo[] contents)</div><div class="ttdef"><b>定义</b> <a href="#l00010">BitmapFontReader.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_i_content_reader_1_1_i_content_reader_html"><div class="ttname"><a href="class_game_1_1_i_content_reader_1_1_i_content_reader.html">Game.IContentReader.IContentReader</a></div><div class="ttdef"><b>定义</b> <a href="_i_content_reader_8cs_source.html#l00002">IContentReader.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_media_html"><div class="ttname"><a href="namespace_engine_1_1_media.html">Engine.Media</a></div><div class="ttdef"><b>定义</b> <a href="_bitmap_font_8cs_source.html#l00005">BitmapFont.cs:5</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_1_1_i_content_reader_html"><div class="ttname"><a href="namespace_game_1_1_i_content_reader.html">Game.IContentReader</a></div><div class="ttdef"><b>定义</b> <a href="_assembly_reader_8cs_source.html#l00003">AssemblyReader.cs:3</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html_a43b88325ddcd07f42e931b1a0d3281c7"><div class="ttname"><a href="struct_engine_1_1_vector2.html#a43b88325ddcd07f42e931b1a0d3281c7">Engine.Vector2.Zero</a></div><div class="ttdeci">static readonly Vector2 Zero</div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00007">Vector2.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_3d07399411a84b9de93867618487ea8a.html">IContentReader</a></li><li class="navelem"><a href="_bitmap_font_reader_8cs.html">BitmapFontReader.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

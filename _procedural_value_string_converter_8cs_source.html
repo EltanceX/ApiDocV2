@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/EntitySystem/TemplatesDatabase/ProceduralValueStringConverter.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_procedural_value_string_converter_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ProceduralValueStringConverter.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_procedural_value_string_converter_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_serialization.html">Engine.Serialization</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    [HumanReadableConverter(typeof(<a class="code hl_struct" href="struct_templates_database_1_1_procedural_value.html">ProceduralValue</a>))]</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_procedural_value_string_converter.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_templates_database_1_1_procedural_value_string_converter.html">ProceduralValueStringConverter</a> : <a class="code hl_interface" href="interface_engine_1_1_serialization_1_1_i_human_readable_converter.html">IHumanReadableConverter</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_procedural_value_string_converter.html#ae07a7a1232a3409da176ad35a020c861">    7</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_templates_database_1_1_procedural_value_string_converter.html#ae07a7a1232a3409da176ad35a020c861">ConvertToString</a>(<span class="keywordtype">object</span> value) =&gt; ((<a class="code hl_struct" href="struct_templates_database_1_1_procedural_value.html">ProceduralValue</a>)value).Procedure;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_templates_database_1_1_procedural_value_string_converter.html#a377253bb461ee6b54d8deec44c637fb9">    9</a></span>        <span class="keyword">public</span> <span class="keywordtype">object</span> <a class="code hl_function" href="class_templates_database_1_1_procedural_value_string_converter.html#a377253bb461ee6b54d8deec44c637fb9">ConvertFromString</a>(Type type, <span class="keywordtype">string</span> data) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            <a class="code hl_struct" href="struct_templates_database_1_1_procedural_value.html">ProceduralValue</a> proceduralValue = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            proceduralValue.Procedure = data;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordflow">return</span> proceduralValue;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        }</div>
+</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aclass_templates_database_1_1_procedural_value_string_converter_html"><div class="ttname"><a href="class_templates_database_1_1_procedural_value_string_converter.html">TemplatesDatabase.ProceduralValueStringConverter</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">ProceduralValueStringConverter.cs:6</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_procedural_value_string_converter_html_a377253bb461ee6b54d8deec44c637fb9"><div class="ttname"><a href="class_templates_database_1_1_procedural_value_string_converter.html#a377253bb461ee6b54d8deec44c637fb9">TemplatesDatabase.ProceduralValueStringConverter.ConvertFromString</a></div><div class="ttdeci">object ConvertFromString(Type type, string data)</div><div class="ttdef"><b>定义</b> <a href="#l00009">ProceduralValueStringConverter.cs:9</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_procedural_value_string_converter_html_ae07a7a1232a3409da176ad35a020c861"><div class="ttname"><a href="class_templates_database_1_1_procedural_value_string_converter.html#ae07a7a1232a3409da176ad35a020c861">TemplatesDatabase.ProceduralValueStringConverter.ConvertToString</a></div><div class="ttdeci">string ConvertToString(object value)</div><div class="ttdef"><b>定义</b> <a href="#l00007">ProceduralValueStringConverter.cs:7</a></div></div>
+<div class="ttc" id="ainterface_engine_1_1_serialization_1_1_i_human_readable_converter_html"><div class="ttname"><a href="interface_engine_1_1_serialization_1_1_i_human_readable_converter.html">Engine.Serialization.IHumanReadableConverter</a></div><div class="ttdef"><b>定义</b> <a href="_i_human_readable_converter_8cs_source.html#l00002">IHumanReadableConverter.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_serialization_html"><div class="ttname"><a href="namespace_engine_1_1_serialization.html">Engine.Serialization</a></div><div class="ttdef"><b>定义</b> <a href="_archive_8cs_source.html#l00004">Archive.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_templates_database_1_1_procedural_value_html"><div class="ttname"><a href="struct_templates_database_1_1_procedural_value.html">TemplatesDatabase.ProceduralValue</a></div><div class="ttdef"><b>定义</b> <a href="_procedural_value_8cs_source.html#l00006">ProceduralValue.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_292d907b3205a0225a4c31bdc9de5e31.html">EntitySystem</a></li><li class="navelem"><a href="dir_573980ea4295b93181ff47e4f106e4ed.html">TemplatesDatabase</a></li><li class="navelem"><a href="_procedural_value_string_converter_8cs.html">ProceduralValueStringConverter.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

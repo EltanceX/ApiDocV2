@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Graphics/EGL.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_e_g_l_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">EGL.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_e_g_l_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Runtime.InteropServices;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a> {</div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="class_engine_1_1_graphics_1_1_egl.html">Egl</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#if BROWSER</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a> = <span class="stringliteral">&quot;libEGL&quot;</span>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">    8</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a> = <span class="stringliteral">&quot;libEGL.dll&quot;</span>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a8bc2b2c5835998649424551bc982ee4f">   10</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a8bc2b2c5835998649424551bc982ee4f">None</a> = 0x3038;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#adbb00fa3026d5173045f9a3add11e33d">   11</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#adbb00fa3026d5173045f9a3add11e33d">RedSize</a> = 0x3024;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a48e031ea87025d8087ca9e5b3f6d6243">   12</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a48e031ea87025d8087ca9e5b3f6d6243">GreenSize</a> = 0x3023;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a96413b5a0518b54a0c743cf86aa6b817">   13</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a96413b5a0518b54a0c743cf86aa6b817">BlueSize</a> = 0x3022;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a693bd6d30c9c140fd316b0adef302d4f">   14</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a693bd6d30c9c140fd316b0adef302d4f">AlphaSize</a> = 0x3021;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a108729fe227728c4f337b6ca4eaa8c5c">   15</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a108729fe227728c4f337b6ca4eaa8c5c">DepthSize</a> = 0x3025;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#ad09693823bf94e9917ece31143496fb7">   16</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#ad09693823bf94e9917ece31143496fb7">StencilSize</a> = 0x3026;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a8a09b2fb00f6d6b6c58de4df50f8b003">   17</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a8a09b2fb00f6d6b6c58de4df50f8b003">SurfaceType</a> = 0x3033;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a770e3dc02e98e7f3a23fdc314ab56da9">   18</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a770e3dc02e98e7f3a23fdc314ab56da9">RenderableType</a> = 0x3040;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a7c640d58bcf6e19fda1419318eedeb02">   19</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a7c640d58bcf6e19fda1419318eedeb02">Samples</a> = 0x3031;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#aed812487854258a47eb1801c9ff5ddf4">   20</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#aed812487854258a47eb1801c9ff5ddf4">WindowBit</a> = 0x0004;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a679d383f19cde5dce46dd784512141d9">   21</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a679d383f19cde5dce46dd784512141d9">OpenglEs2Bit</a> = 0x0004;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a4f87f3f933794b78b4a120c919f5823f">   22</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a4f87f3f933794b78b4a120c919f5823f">OpenglEs3Bit</a> = 0x00000040;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#ae9e70041775d9d383f79df27204b3333">   23</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#ae9e70041775d9d383f79df27204b3333">ContextClientVersion</a> = 0x3098;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#aa5d7a4d834e7b81b0bfa4175be48dfc2">   24</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#aa5d7a4d834e7b81b0bfa4175be48dfc2">NoContext</a> = 0x0;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#afb9ff2caef7c93a89ca0fa6592089d53">   25</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#afb9ff2caef7c93a89ca0fa6592089d53">NativeVisualId</a> = 0x302E;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a6125df1943d1687b3487d9d91082f88a">   26</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a6125df1943d1687b3487d9d91082f88a">OpenglEsApi</a> = 0x30A0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglGetDisplay&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a9b63835f5b44ac1a46eb30f3a7d8a5c0">   30</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> IntPtr <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#a9b63835f5b44ac1a46eb30f3a7d8a5c0">GetDisplay</a>(IntPtr displayId);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglInitialize&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#af3cf360e88234b5ed29224fd9472b3e8">   34</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#af3cf360e88234b5ed29224fd9472b3e8">Initialize</a>(IntPtr dpy, out <span class="keywordtype">int</span> major, out <span class="keywordtype">int</span> minor);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglChooseConfig&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a3dbed43ecee1627336acb65e005c6b3d">   38</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#a3dbed43ecee1627336acb65e005c6b3d">ChooseConfig</a>(IntPtr dpy, <span class="keywordtype">int</span>[] attribList, IntPtr[] configs, <span class="keywordtype">int</span> configSize, out <span class="keywordtype">int</span> numConfig);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglCreateWindowSurface&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a728774cfa85626f77fc99fb55d9acaf5">   42</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> IntPtr <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#a728774cfa85626f77fc99fb55d9acaf5">CreateWindowSurface</a>(IntPtr dpy, IntPtr config, IntPtr nativeWindow, <span class="keywordtype">int</span>[] attribList);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglCreateContext&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a0fc6b3d98797e843c4ac20c8cd7fa672">   46</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> IntPtr <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#a0fc6b3d98797e843c4ac20c8cd7fa672">CreateContext</a>(IntPtr dpy, IntPtr config, IntPtr shareContext, <span class="keywordtype">int</span>[] attribList);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglMakeCurrent&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a1494055e6675c6bd8e697c05274fa6ca">   50</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#a1494055e6675c6bd8e697c05274fa6ca">MakeCurrent</a>(IntPtr dpy, IntPtr draw, IntPtr read, IntPtr ctx);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglSwapBuffers&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#ae8ff7d82df5eca4165a077308b61d951">   54</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#ae8ff7d82df5eca4165a077308b61d951">SwapBuffers</a>(IntPtr dpy, IntPtr surface);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglSwapInterval&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#ada6f2de5aae02b9851bdfe3ed8ae1b87">   58</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#ada6f2de5aae02b9851bdfe3ed8ae1b87">SwapInterval</a>(IntPtr dpy, <span class="keywordtype">int</span> interval);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglGetError&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a779403b72fc0e300acd0f7350fa0c0db">   62</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#a779403b72fc0e300acd0f7350fa0c0db">GetError</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">// wrapper to get proc addresses used by GL.GetApi</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        [DllImport(<a class="code hl_variable" href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">LibEgl</a>, EntryPoint = <span class="stringliteral">&quot;eglGetProcAddress&quot;</span>, CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        [DefaultDllImportSearchPaths(DllImportSearchPath.SafeDirectories)]</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_egl.html#a36e29b55817296f097f854c6582cf081">   67</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> IntPtr <a class="code hl_function" href="class_engine_1_1_graphics_1_1_egl.html#a36e29b55817296f097f854c6582cf081">GetProcAddress</a>(<span class="keywordtype">string</span> proc);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html">Engine.Graphics.Egl</a></div><div class="ttdef"><b>定义</b> <a href="#l00004">EGL.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a0fc6b3d98797e843c4ac20c8cd7fa672"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a0fc6b3d98797e843c4ac20c8cd7fa672">Engine.Graphics.Egl.CreateContext</a></div><div class="ttdeci">static IntPtr CreateContext(IntPtr dpy, IntPtr config, IntPtr shareContext, int[] attribList)</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a108729fe227728c4f337b6ca4eaa8c5c"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a108729fe227728c4f337b6ca4eaa8c5c">Engine.Graphics.Egl.DepthSize</a></div><div class="ttdeci">const int DepthSize</div><div class="ttdef"><b>定义</b> <a href="#l00015">EGL.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a1494055e6675c6bd8e697c05274fa6ca"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a1494055e6675c6bd8e697c05274fa6ca">Engine.Graphics.Egl.MakeCurrent</a></div><div class="ttdeci">static bool MakeCurrent(IntPtr dpy, IntPtr draw, IntPtr read, IntPtr ctx)</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a177b0f0885d6b70bf55c80b5dbc5c0f2"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a177b0f0885d6b70bf55c80b5dbc5c0f2">Engine.Graphics.Egl.LibEgl</a></div><div class="ttdeci">const string LibEgl</div><div class="ttdef"><b>定义</b> <a href="#l00008">EGL.cs:8</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a36e29b55817296f097f854c6582cf081"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a36e29b55817296f097f854c6582cf081">Engine.Graphics.Egl.GetProcAddress</a></div><div class="ttdeci">static IntPtr GetProcAddress(string proc)</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a3dbed43ecee1627336acb65e005c6b3d"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a3dbed43ecee1627336acb65e005c6b3d">Engine.Graphics.Egl.ChooseConfig</a></div><div class="ttdeci">static bool ChooseConfig(IntPtr dpy, int[] attribList, IntPtr[] configs, int configSize, out int numConfig)</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a48e031ea87025d8087ca9e5b3f6d6243"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a48e031ea87025d8087ca9e5b3f6d6243">Engine.Graphics.Egl.GreenSize</a></div><div class="ttdeci">const int GreenSize</div><div class="ttdef"><b>定义</b> <a href="#l00012">EGL.cs:12</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a4f87f3f933794b78b4a120c919f5823f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a4f87f3f933794b78b4a120c919f5823f">Engine.Graphics.Egl.OpenglEs3Bit</a></div><div class="ttdeci">const int OpenglEs3Bit</div><div class="ttdef"><b>定义</b> <a href="#l00022">EGL.cs:22</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a6125df1943d1687b3487d9d91082f88a"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a6125df1943d1687b3487d9d91082f88a">Engine.Graphics.Egl.OpenglEsApi</a></div><div class="ttdeci">const int OpenglEsApi</div><div class="ttdef"><b>定义</b> <a href="#l00026">EGL.cs:26</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a679d383f19cde5dce46dd784512141d9"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a679d383f19cde5dce46dd784512141d9">Engine.Graphics.Egl.OpenglEs2Bit</a></div><div class="ttdeci">const int OpenglEs2Bit</div><div class="ttdef"><b>定义</b> <a href="#l00021">EGL.cs:21</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a693bd6d30c9c140fd316b0adef302d4f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a693bd6d30c9c140fd316b0adef302d4f">Engine.Graphics.Egl.AlphaSize</a></div><div class="ttdeci">const int AlphaSize</div><div class="ttdef"><b>定义</b> <a href="#l00014">EGL.cs:14</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a728774cfa85626f77fc99fb55d9acaf5"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a728774cfa85626f77fc99fb55d9acaf5">Engine.Graphics.Egl.CreateWindowSurface</a></div><div class="ttdeci">static IntPtr CreateWindowSurface(IntPtr dpy, IntPtr config, IntPtr nativeWindow, int[] attribList)</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a770e3dc02e98e7f3a23fdc314ab56da9"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a770e3dc02e98e7f3a23fdc314ab56da9">Engine.Graphics.Egl.RenderableType</a></div><div class="ttdeci">const int RenderableType</div><div class="ttdef"><b>定义</b> <a href="#l00018">EGL.cs:18</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a779403b72fc0e300acd0f7350fa0c0db"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a779403b72fc0e300acd0f7350fa0c0db">Engine.Graphics.Egl.GetError</a></div><div class="ttdeci">static int GetError()</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a7c640d58bcf6e19fda1419318eedeb02"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a7c640d58bcf6e19fda1419318eedeb02">Engine.Graphics.Egl.Samples</a></div><div class="ttdeci">const int Samples</div><div class="ttdef"><b>定义</b> <a href="#l00019">EGL.cs:19</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a8a09b2fb00f6d6b6c58de4df50f8b003"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a8a09b2fb00f6d6b6c58de4df50f8b003">Engine.Graphics.Egl.SurfaceType</a></div><div class="ttdeci">const int SurfaceType</div><div class="ttdef"><b>定义</b> <a href="#l00017">EGL.cs:17</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a8bc2b2c5835998649424551bc982ee4f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a8bc2b2c5835998649424551bc982ee4f">Engine.Graphics.Egl.None</a></div><div class="ttdeci">const int None</div><div class="ttdef"><b>定义</b> <a href="#l00010">EGL.cs:10</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a96413b5a0518b54a0c743cf86aa6b817"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a96413b5a0518b54a0c743cf86aa6b817">Engine.Graphics.Egl.BlueSize</a></div><div class="ttdeci">const int BlueSize</div><div class="ttdef"><b>定义</b> <a href="#l00013">EGL.cs:13</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_a9b63835f5b44ac1a46eb30f3a7d8a5c0"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#a9b63835f5b44ac1a46eb30f3a7d8a5c0">Engine.Graphics.Egl.GetDisplay</a></div><div class="ttdeci">static IntPtr GetDisplay(IntPtr displayId)</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_aa5d7a4d834e7b81b0bfa4175be48dfc2"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#aa5d7a4d834e7b81b0bfa4175be48dfc2">Engine.Graphics.Egl.NoContext</a></div><div class="ttdeci">const int NoContext</div><div class="ttdef"><b>定义</b> <a href="#l00024">EGL.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_ad09693823bf94e9917ece31143496fb7"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#ad09693823bf94e9917ece31143496fb7">Engine.Graphics.Egl.StencilSize</a></div><div class="ttdeci">const int StencilSize</div><div class="ttdef"><b>定义</b> <a href="#l00016">EGL.cs:16</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_ada6f2de5aae02b9851bdfe3ed8ae1b87"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#ada6f2de5aae02b9851bdfe3ed8ae1b87">Engine.Graphics.Egl.SwapInterval</a></div><div class="ttdeci">static bool SwapInterval(IntPtr dpy, int interval)</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_adbb00fa3026d5173045f9a3add11e33d"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#adbb00fa3026d5173045f9a3add11e33d">Engine.Graphics.Egl.RedSize</a></div><div class="ttdeci">const int RedSize</div><div class="ttdef"><b>定义</b> <a href="#l00011">EGL.cs:11</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_ae8ff7d82df5eca4165a077308b61d951"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#ae8ff7d82df5eca4165a077308b61d951">Engine.Graphics.Egl.SwapBuffers</a></div><div class="ttdeci">static bool SwapBuffers(IntPtr dpy, IntPtr surface)</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_ae9e70041775d9d383f79df27204b3333"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#ae9e70041775d9d383f79df27204b3333">Engine.Graphics.Egl.ContextClientVersion</a></div><div class="ttdeci">const int ContextClientVersion</div><div class="ttdef"><b>定义</b> <a href="#l00023">EGL.cs:23</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_aed812487854258a47eb1801c9ff5ddf4"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#aed812487854258a47eb1801c9ff5ddf4">Engine.Graphics.Egl.WindowBit</a></div><div class="ttdeci">const int WindowBit</div><div class="ttdef"><b>定义</b> <a href="#l00020">EGL.cs:20</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_af3cf360e88234b5ed29224fd9472b3e8"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#af3cf360e88234b5ed29224fd9472b3e8">Engine.Graphics.Egl.Initialize</a></div><div class="ttdeci">static bool Initialize(IntPtr dpy, out int major, out int minor)</div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_egl_html_afb9ff2caef7c93a89ca0fa6592089d53"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_egl.html#afb9ff2caef7c93a89ca0fa6592089d53">Engine.Graphics.Egl.NativeVisualId</a></div><div class="ttdeci">const int NativeVisualId</div><div class="ttdef"><b>定义</b> <a href="#l00025">EGL.cs:25</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_45a969ac2810c86187bf086c7866e423.html">Engine.Graphics</a></li><li class="navelem"><a href="_e_g_l_8cs.html">EGL.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

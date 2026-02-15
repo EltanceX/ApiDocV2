@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Game/VersionConverter.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_version_converter_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">VersionConverter.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_version_converter_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_xml_utilities.html">XmlUtilities</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter.html#a3dde0558286dd67334df55d1028ba392">    7</a></span>        <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter.html#a3dde0558286dd67334df55d1028ba392">SourceVersion</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter.html#a4d1af18f16421ad3e8bbbef5c986b94a">    9</a></span>        <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter.html#a4d1af18f16421ad3e8bbbef5c986b94a">TargetVersion</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="comment">//如果没有重写就直接转换</span></div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter.html#a31b9b9c7fe6c0a1e31ea4da485122a18">   12</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_version_converter.html#a31b9b9c7fe6c0a1e31ea4da485122a18">ConvertProjectXml</a>(XElement projectNode) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(projectNode, <span class="stringliteral">&quot;Version&quot;</span>, <a class="code hl_property" href="class_game_1_1_version_converter.html#a4d1af18f16421ad3e8bbbef5c986b94a">TargetVersion</a>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        }</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter.html#ab5416dfc60e02e02ecb13bbfa5c1c6e4">   16</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_version_converter.html#ab5416dfc60e02e02ecb13bbfa5c1c6e4">ConvertWorld</a>(<span class="keywordtype">string</span> directoryName) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordtype">string</span> path = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#ada4eee2385d71f7a9a359107511171e4">CombinePaths</a>(directoryName, <span class="stringliteral">&quot;Project.xml&quot;</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            XElement xElement;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keyword">using</span> (Stream stream = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(path, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.Read)) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                xElement = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a8ccb324769f1be9a4f1ae6d4ec41f369">LoadXmlFromStream</a>(stream, <span class="keyword">null</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_function" href="class_game_1_1_version_converter.html#a31b9b9c7fe6c0a1e31ea4da485122a18">ConvertProjectXml</a>(xElement);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keyword">using</span> (Stream stream2 = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(path, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.Create)) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#ad88716f073eb951e2062a83754959ede">SaveXmlToStream</a>(xElement, stream2, <span class="keyword">null</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">    public class GenericVersionConverter(string sourceVersion,string targetVersion) : VersionConverter</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">    {</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">        private string _sourceVersion = sourceVersion;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">        private string _targetVersion = targetVersion;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"></span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">        public override string SourceVersion =&gt; _sourceVersion;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">        public override string TargetVersion =&gt; _targetVersion;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"></span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">        public override void ConvertProjectXml(XElement projectNode)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">        {</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">            XmlUtils.SetAttributeValue(projectNode,&quot;Version&quot;,TargetVersion);</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">        }</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">        public override void ConvertWorld(string directoryName)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">        {</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">            string path = Storage.CombinePaths(directoryName,&quot;Project.xml&quot;);</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">            XElement xElement;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">            using(Stream stream = Storage.OpenFile(path,OpenFileMode.Read))</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">            {</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">                xElement = XmlUtils.LoadXmlFromStream(stream,null,throwOnError: true);</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">            }</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">            ConvertProjectXml(xElement);</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">            using(Stream stream2 = Storage.OpenFile(path,OpenFileMode.Create))</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">            {</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">                XmlUtils.SaveXmlToStream(xElement,stream2,null,throwOnError: true);</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">            }</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">        }</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">    // Example usage:</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">    // var converter = new GenericVersionConverter(&quot;1.11&quot;, &quot;1.12&quot;);</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">    // converter.ConvertWorld(&quot;path_to_world_directory&quot;);</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">}*/</span></div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter14_to15.html">   62</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter14_to15.html">VersionConverter14To15</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter14_to15.html#ad43ab3b00d8f848a645690a6a7e27628">   63</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter14_to15.html#ad43ab3b00d8f848a645690a6a7e27628">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.4&quot;</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter14_to15.html#a2cc644b3d26096bb053a87a93519e319">   65</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter14_to15.html#a2cc644b3d26096bb053a87a93519e319">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.5&quot;</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="};">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter15_to16.html">   68</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter15_to16.html">VersionConverter15To16</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter15_to16.html#a006f8870166b0502fc2f1ffb102895bd">   69</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter15_to16.html#a006f8870166b0502fc2f1ffb102895bd">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.5&quot;</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter15_to16.html#a63cf4cb7bfe9a5a038d7f473d45fb05d">   71</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter15_to16.html#a63cf4cb7bfe9a5a038d7f473d45fb05d">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.6&quot;</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="};">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter16_to17.html">   74</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter16_to17.html">VersionConverter16To17</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter16_to17.html#aa164bc6691f5059846298307bcfe6bf4">   75</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter16_to17.html#aa164bc6691f5059846298307bcfe6bf4">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.6&quot;</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter16_to17.html#a06db72889c7f4c6034de54a12c62d335">   77</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter16_to17.html#a06db72889c7f4c6034de54a12c62d335">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.7&quot;</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter17_to18.html">   80</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter17_to18.html">VersionConverter17To18</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter17_to18.html#a8b781397591ec0dc23bf8e87707b071f">   81</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter17_to18.html#a8b781397591ec0dc23bf8e87707b071f">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.7&quot;</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter17_to18.html#a8de526d191774d7378d821161c61f2d0">   83</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter17_to18.html#a8de526d191774d7378d821161c61f2d0">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.8&quot;</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="};">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter18_to19.html">   86</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter18_to19.html">VersionConverter18To19</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter18_to19.html#a54f9e214b338d122bffcb2e8986cfc6e">   87</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter18_to19.html#a54f9e214b338d122bffcb2e8986cfc6e">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.8&quot;</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter18_to19.html#a99a4eb7d922c909969bea2176f3221f1">   89</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter18_to19.html#a99a4eb7d922c909969bea2176f3221f1">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.9&quot;</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="};">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter19_to110.html">   92</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter19_to110.html">VersionConverter19To110</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter19_to110.html#a1c1cdeca9c73d8e5bf48a704e370d9cf">   93</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter19_to110.html#a1c1cdeca9c73d8e5bf48a704e370d9cf">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.9&quot;</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter19_to110.html#a32b1a61457d842fc303892a1cf1b7bf6">   95</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter19_to110.html#a32b1a61457d842fc303892a1cf1b7bf6">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.10&quot;</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="};">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter110_to111.html">   98</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter110_to111.html">VersionConverter110To111</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter110_to111.html#aeb6c1bd1bbb18e0d96a0a7ba73f66bd9">   99</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter110_to111.html#aeb6c1bd1bbb18e0d96a0a7ba73f66bd9">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.10&quot;</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter110_to111.html#a7d67ab37f941a6d74382406ffef3f053">  101</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter110_to111.html#a7d67ab37f941a6d74382406ffef3f053">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.11&quot;</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="};">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter111_to112.html">  104</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter111_to112.html">VersionConverter111To112</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter111_to112.html#ae6e32e647dfd37b2c9a71b4657504a28">  105</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter111_to112.html#ae6e32e647dfd37b2c9a71b4657504a28">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.11&quot;</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter111_to112.html#a070adba813d32f0d43535741ba6199c0">  107</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter111_to112.html#a070adba813d32f0d43535741ba6199c0">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.12&quot;</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="};">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter114_to115.html">  110</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter114_to115.html">VersionConverter114To115</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter114_to115.html#a97f5d2949c92c07a261c905edae85db4">  111</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter114_to115.html#a97f5d2949c92c07a261c905edae85db4">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.14&quot;</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter114_to115.html#a1ca627e6ee0280c261ed1cbbf2d56221">  113</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter114_to115.html#a1ca627e6ee0280c261ed1cbbf2d56221">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.15&quot;</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="};">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter115_to116.html">  116</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter115_to116.html">VersionConverter115To116</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter115_to116.html#ac51f73b07d40df0c7c97d009a229b705">  117</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter115_to116.html#ac51f73b07d40df0c7c97d009a229b705">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.15&quot;</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter115_to116.html#a5911d303255078b40141ff374777fd7d">  119</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter115_to116.html#a5911d303255078b40141ff374777fd7d">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.16&quot;</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="};">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter116_to117.html">  122</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter116_to117.html">VersionConverter116To117</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter116_to117.html#aef83d4f290604496ecf61aac6bc96084">  123</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter116_to117.html#aef83d4f290604496ecf61aac6bc96084">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.16&quot;</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter116_to117.html#a5730a85c3f29e46bac6c3666014566dc">  125</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter116_to117.html#a5730a85c3f29e46bac6c3666014566dc">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.17&quot;</span>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="};">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter117_to118.html">  128</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter117_to118.html">VersionConverter117To118</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter117_to118.html#ab2c78f9452bfd44172c6d9a436f683c7">  129</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter117_to118.html#ab2c78f9452bfd44172c6d9a436f683c7">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.17&quot;</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter117_to118.html#a55120645f958c14d14b3126f65cc1201">  131</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter117_to118.html#a55120645f958c14d14b3126f65cc1201">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.18&quot;</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
+</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="};">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter118_to119.html">  134</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter118_to119.html">VersionConverter118To119</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter118_to119.html#a6303455d603c7a7eb5458b48089b052e">  135</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter118_to119.html#a6303455d603c7a7eb5458b48089b052e">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.18&quot;</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter118_to119.html#a8af54232d3358fe6234ac3ace40a504f">  137</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter118_to119.html#a8af54232d3358fe6234ac3ace40a504f">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.19&quot;</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="foldopen" id="foldopen00140" data-start="{" data-end="};">
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter119_to120.html">  140</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter119_to120.html">VersionConverter119To120</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter119_to120.html#a89c5c74409c252024149bf511ad9336b">  141</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter119_to120.html#a89c5c74409c252024149bf511ad9336b">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.19&quot;</span>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter119_to120.html#a117c6b82953e5712a4c1e7cdc4f7f224">  143</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter119_to120.html#a117c6b82953e5712a4c1e7cdc4f7f224">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.20&quot;</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="};">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter122_to123.html">  146</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter122_to123.html">VersionConverter122To123</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter122_to123.html#a920596386fbd3f4e761fbd712b9d6310">  147</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter122_to123.html#a920596386fbd3f4e761fbd712b9d6310">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.22&quot;</span>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter122_to123.html#a2bd97fb756986c5245fc255d5848b535">  149</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter122_to123.html#a2bd97fb756986c5245fc255d5848b535">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.23&quot;</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    }</div>
+</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="foldopen" id="foldopen00152" data-start="{" data-end="};">
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter123_to124.html">  152</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter123_to124.html">VersionConverter123To124</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter123_to124.html#a05bb84f22e664c46d4dab3793f0e3c61">  153</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter123_to124.html#a05bb84f22e664c46d4dab3793f0e3c61">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.23&quot;</span>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter123_to124.html#a96103256a585e7c074c04b6fd922d185">  155</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter123_to124.html#a96103256a585e7c074c04b6fd922d185">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.24&quot;</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    }</div>
+</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="};">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter124_to125.html">  158</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter124_to125.html">VersionConverter124To125</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter124_to125.html#a030f74764010cdeea54d8d4b73b45f27">  159</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter124_to125.html#a030f74764010cdeea54d8d4b73b45f27">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.24&quot;</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter124_to125.html#ac387e81213ab5997734a3acf2cfa6ca1">  161</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter124_to125.html#ac387e81213ab5997734a3acf2cfa6ca1">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.25&quot;</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="foldopen" id="foldopen00164" data-start="{" data-end="};">
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter125_to126.html">  164</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter125_to126.html">VersionConverter125To126</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter125_to126.html#ac1141e0c967c5f291b7cc1013d58cd9b">  165</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter125_to126.html#ac1141e0c967c5f291b7cc1013d58cd9b">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.25&quot;</span>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter125_to126.html#a11cb4e2b89f69db38760bd0b6bd7853a">  167</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter125_to126.html#a11cb4e2b89f69db38760bd0b6bd7853a">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.26&quot;</span>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
+</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="foldopen" id="foldopen00170" data-start="{" data-end="};">
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter127_to128.html">  170</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter127_to128.html">VersionConverter127To128</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter127_to128.html#a9e6a6d30a9fcfa2faa4a88ce79733294">  171</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter127_to128.html#a9e6a6d30a9fcfa2faa4a88ce79733294">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.27&quot;</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter127_to128.html#abaf4348b9a140676db07df78f5861524">  173</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter127_to128.html#abaf4348b9a140676db07df78f5861524">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.28&quot;</span>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
+</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="foldopen" id="foldopen00176" data-start="{" data-end="};">
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter129_to130.html">  176</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter129_to130.html">VersionConverter129To130</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter129_to130.html#a57c8c443f9de735a3e8acf17b0011c3a">  177</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter129_to130.html#a57c8c443f9de735a3e8acf17b0011c3a">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.29&quot;</span>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter129_to130.html#aa4fc8234da227bebdc20a15f5e3d3b76">  179</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter129_to130.html#aa4fc8234da227bebdc20a15f5e3d3b76">TargetVersion</a> =&gt; <span class="stringliteral">&quot;1.30&quot;</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
+</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="foldopen" id="foldopen00182" data-start="{" data-end="};">
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter130_to20.html">  182</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_version_converter130_to20.html">VersionConverter130To20</a> : <a class="code hl_class" href="class_game_1_1_version_converter.html">VersionConverter</a> {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter130_to20.html#a5a1e9bf42d01a441dfec951e2f857186">  183</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter130_to20.html#a5a1e9bf42d01a441dfec951e2f857186">SourceVersion</a> =&gt; <span class="stringliteral">&quot;1.30&quot;</span>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="class_game_1_1_version_converter130_to20.html#a5362c9dae8b0b3cc111541aa4655a626">  185</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_version_converter130_to20.html#a5362c9dae8b0b3cc111541aa4655a626">TargetVersion</a> =&gt; <span class="stringliteral">&quot;2.0&quot;</span>;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_storage_html"><div class="ttname"><a href="class_engine_1_1_storage.html">Engine.Storage</a></div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00024">Storage.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a3a6586a9f70dd693b5c907a1b4a3dbea"><div class="ttname"><a href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">Engine.Storage.OpenFile</a></div><div class="ttdeci">static Stream OpenFile(string path, OpenFileMode openFileMode)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00093">Storage.cs:93</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_ada4eee2385d71f7a9a359107511171e4"><div class="ttname"><a href="class_engine_1_1_storage.html#ada4eee2385d71f7a9a359107511171e4">Engine.Storage.CombinePaths</a></div><div class="ttdeci">static string CombinePaths(params string[] paths)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00214">Storage.cs:214</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter110_to111_html"><div class="ttname"><a href="class_game_1_1_version_converter110_to111.html">Game.VersionConverter110To111</a></div><div class="ttdef"><b>定义</b> <a href="#l00098">VersionConverter.cs:98</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter110_to111_html_a7d67ab37f941a6d74382406ffef3f053"><div class="ttname"><a href="class_game_1_1_version_converter110_to111.html#a7d67ab37f941a6d74382406ffef3f053">Game.VersionConverter110To111.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00101">VersionConverter.cs:101</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter110_to111_html_aeb6c1bd1bbb18e0d96a0a7ba73f66bd9"><div class="ttname"><a href="class_game_1_1_version_converter110_to111.html#aeb6c1bd1bbb18e0d96a0a7ba73f66bd9">Game.VersionConverter110To111.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00099">VersionConverter.cs:99</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter111_to112_html"><div class="ttname"><a href="class_game_1_1_version_converter111_to112.html">Game.VersionConverter111To112</a></div><div class="ttdef"><b>定义</b> <a href="#l00104">VersionConverter.cs:104</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter111_to112_html_a070adba813d32f0d43535741ba6199c0"><div class="ttname"><a href="class_game_1_1_version_converter111_to112.html#a070adba813d32f0d43535741ba6199c0">Game.VersionConverter111To112.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00107">VersionConverter.cs:107</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter111_to112_html_ae6e32e647dfd37b2c9a71b4657504a28"><div class="ttname"><a href="class_game_1_1_version_converter111_to112.html#ae6e32e647dfd37b2c9a71b4657504a28">Game.VersionConverter111To112.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00105">VersionConverter.cs:105</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter114_to115_html"><div class="ttname"><a href="class_game_1_1_version_converter114_to115.html">Game.VersionConverter114To115</a></div><div class="ttdef"><b>定义</b> <a href="#l00110">VersionConverter.cs:110</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter114_to115_html_a1ca627e6ee0280c261ed1cbbf2d56221"><div class="ttname"><a href="class_game_1_1_version_converter114_to115.html#a1ca627e6ee0280c261ed1cbbf2d56221">Game.VersionConverter114To115.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00113">VersionConverter.cs:113</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter114_to115_html_a97f5d2949c92c07a261c905edae85db4"><div class="ttname"><a href="class_game_1_1_version_converter114_to115.html#a97f5d2949c92c07a261c905edae85db4">Game.VersionConverter114To115.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00111">VersionConverter.cs:111</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter115_to116_html"><div class="ttname"><a href="class_game_1_1_version_converter115_to116.html">Game.VersionConverter115To116</a></div><div class="ttdef"><b>定义</b> <a href="#l00116">VersionConverter.cs:116</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter115_to116_html_a5911d303255078b40141ff374777fd7d"><div class="ttname"><a href="class_game_1_1_version_converter115_to116.html#a5911d303255078b40141ff374777fd7d">Game.VersionConverter115To116.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00119">VersionConverter.cs:119</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter115_to116_html_ac51f73b07d40df0c7c97d009a229b705"><div class="ttname"><a href="class_game_1_1_version_converter115_to116.html#ac51f73b07d40df0c7c97d009a229b705">Game.VersionConverter115To116.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00117">VersionConverter.cs:117</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter116_to117_html"><div class="ttname"><a href="class_game_1_1_version_converter116_to117.html">Game.VersionConverter116To117</a></div><div class="ttdef"><b>定义</b> <a href="#l00122">VersionConverter.cs:122</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter116_to117_html_a5730a85c3f29e46bac6c3666014566dc"><div class="ttname"><a href="class_game_1_1_version_converter116_to117.html#a5730a85c3f29e46bac6c3666014566dc">Game.VersionConverter116To117.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00125">VersionConverter.cs:125</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter116_to117_html_aef83d4f290604496ecf61aac6bc96084"><div class="ttname"><a href="class_game_1_1_version_converter116_to117.html#aef83d4f290604496ecf61aac6bc96084">Game.VersionConverter116To117.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00123">VersionConverter.cs:123</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter117_to118_html"><div class="ttname"><a href="class_game_1_1_version_converter117_to118.html">Game.VersionConverter117To118</a></div><div class="ttdef"><b>定义</b> <a href="#l00128">VersionConverter.cs:128</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter117_to118_html_a55120645f958c14d14b3126f65cc1201"><div class="ttname"><a href="class_game_1_1_version_converter117_to118.html#a55120645f958c14d14b3126f65cc1201">Game.VersionConverter117To118.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00131">VersionConverter.cs:131</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter117_to118_html_ab2c78f9452bfd44172c6d9a436f683c7"><div class="ttname"><a href="class_game_1_1_version_converter117_to118.html#ab2c78f9452bfd44172c6d9a436f683c7">Game.VersionConverter117To118.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00129">VersionConverter.cs:129</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter118_to119_html"><div class="ttname"><a href="class_game_1_1_version_converter118_to119.html">Game.VersionConverter118To119</a></div><div class="ttdef"><b>定义</b> <a href="#l00134">VersionConverter.cs:134</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter118_to119_html_a6303455d603c7a7eb5458b48089b052e"><div class="ttname"><a href="class_game_1_1_version_converter118_to119.html#a6303455d603c7a7eb5458b48089b052e">Game.VersionConverter118To119.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00135">VersionConverter.cs:135</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter118_to119_html_a8af54232d3358fe6234ac3ace40a504f"><div class="ttname"><a href="class_game_1_1_version_converter118_to119.html#a8af54232d3358fe6234ac3ace40a504f">Game.VersionConverter118To119.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00137">VersionConverter.cs:137</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter119_to120_html"><div class="ttname"><a href="class_game_1_1_version_converter119_to120.html">Game.VersionConverter119To120</a></div><div class="ttdef"><b>定义</b> <a href="#l00140">VersionConverter.cs:140</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter119_to120_html_a117c6b82953e5712a4c1e7cdc4f7f224"><div class="ttname"><a href="class_game_1_1_version_converter119_to120.html#a117c6b82953e5712a4c1e7cdc4f7f224">Game.VersionConverter119To120.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00143">VersionConverter.cs:143</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter119_to120_html_a89c5c74409c252024149bf511ad9336b"><div class="ttname"><a href="class_game_1_1_version_converter119_to120.html#a89c5c74409c252024149bf511ad9336b">Game.VersionConverter119To120.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00141">VersionConverter.cs:141</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter122_to123_html"><div class="ttname"><a href="class_game_1_1_version_converter122_to123.html">Game.VersionConverter122To123</a></div><div class="ttdef"><b>定义</b> <a href="#l00146">VersionConverter.cs:146</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter122_to123_html_a2bd97fb756986c5245fc255d5848b535"><div class="ttname"><a href="class_game_1_1_version_converter122_to123.html#a2bd97fb756986c5245fc255d5848b535">Game.VersionConverter122To123.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00149">VersionConverter.cs:149</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter122_to123_html_a920596386fbd3f4e761fbd712b9d6310"><div class="ttname"><a href="class_game_1_1_version_converter122_to123.html#a920596386fbd3f4e761fbd712b9d6310">Game.VersionConverter122To123.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00147">VersionConverter.cs:147</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter123_to124_html"><div class="ttname"><a href="class_game_1_1_version_converter123_to124.html">Game.VersionConverter123To124</a></div><div class="ttdef"><b>定义</b> <a href="#l00152">VersionConverter.cs:152</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter123_to124_html_a05bb84f22e664c46d4dab3793f0e3c61"><div class="ttname"><a href="class_game_1_1_version_converter123_to124.html#a05bb84f22e664c46d4dab3793f0e3c61">Game.VersionConverter123To124.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00153">VersionConverter.cs:153</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter123_to124_html_a96103256a585e7c074c04b6fd922d185"><div class="ttname"><a href="class_game_1_1_version_converter123_to124.html#a96103256a585e7c074c04b6fd922d185">Game.VersionConverter123To124.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00155">VersionConverter.cs:155</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter124_to125_html"><div class="ttname"><a href="class_game_1_1_version_converter124_to125.html">Game.VersionConverter124To125</a></div><div class="ttdef"><b>定义</b> <a href="#l00158">VersionConverter.cs:158</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter124_to125_html_a030f74764010cdeea54d8d4b73b45f27"><div class="ttname"><a href="class_game_1_1_version_converter124_to125.html#a030f74764010cdeea54d8d4b73b45f27">Game.VersionConverter124To125.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00159">VersionConverter.cs:159</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter124_to125_html_ac387e81213ab5997734a3acf2cfa6ca1"><div class="ttname"><a href="class_game_1_1_version_converter124_to125.html#ac387e81213ab5997734a3acf2cfa6ca1">Game.VersionConverter124To125.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00161">VersionConverter.cs:161</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter125_to126_html"><div class="ttname"><a href="class_game_1_1_version_converter125_to126.html">Game.VersionConverter125To126</a></div><div class="ttdef"><b>定义</b> <a href="#l00164">VersionConverter.cs:164</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter125_to126_html_a11cb4e2b89f69db38760bd0b6bd7853a"><div class="ttname"><a href="class_game_1_1_version_converter125_to126.html#a11cb4e2b89f69db38760bd0b6bd7853a">Game.VersionConverter125To126.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00167">VersionConverter.cs:167</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter125_to126_html_ac1141e0c967c5f291b7cc1013d58cd9b"><div class="ttname"><a href="class_game_1_1_version_converter125_to126.html#ac1141e0c967c5f291b7cc1013d58cd9b">Game.VersionConverter125To126.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00165">VersionConverter.cs:165</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter127_to128_html"><div class="ttname"><a href="class_game_1_1_version_converter127_to128.html">Game.VersionConverter127To128</a></div><div class="ttdef"><b>定义</b> <a href="#l00170">VersionConverter.cs:170</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter127_to128_html_a9e6a6d30a9fcfa2faa4a88ce79733294"><div class="ttname"><a href="class_game_1_1_version_converter127_to128.html#a9e6a6d30a9fcfa2faa4a88ce79733294">Game.VersionConverter127To128.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00171">VersionConverter.cs:171</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter127_to128_html_abaf4348b9a140676db07df78f5861524"><div class="ttname"><a href="class_game_1_1_version_converter127_to128.html#abaf4348b9a140676db07df78f5861524">Game.VersionConverter127To128.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00173">VersionConverter.cs:173</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter129_to130_html"><div class="ttname"><a href="class_game_1_1_version_converter129_to130.html">Game.VersionConverter129To130</a></div><div class="ttdef"><b>定义</b> <a href="#l00176">VersionConverter.cs:176</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter129_to130_html_a57c8c443f9de735a3e8acf17b0011c3a"><div class="ttname"><a href="class_game_1_1_version_converter129_to130.html#a57c8c443f9de735a3e8acf17b0011c3a">Game.VersionConverter129To130.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00177">VersionConverter.cs:177</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter129_to130_html_aa4fc8234da227bebdc20a15f5e3d3b76"><div class="ttname"><a href="class_game_1_1_version_converter129_to130.html#aa4fc8234da227bebdc20a15f5e3d3b76">Game.VersionConverter129To130.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00179">VersionConverter.cs:179</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter130_to20_html"><div class="ttname"><a href="class_game_1_1_version_converter130_to20.html">Game.VersionConverter130To20</a></div><div class="ttdef"><b>定义</b> <a href="#l00182">VersionConverter.cs:182</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter130_to20_html_a5362c9dae8b0b3cc111541aa4655a626"><div class="ttname"><a href="class_game_1_1_version_converter130_to20.html#a5362c9dae8b0b3cc111541aa4655a626">Game.VersionConverter130To20.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00185">VersionConverter.cs:185</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter130_to20_html_a5a1e9bf42d01a441dfec951e2f857186"><div class="ttname"><a href="class_game_1_1_version_converter130_to20.html#a5a1e9bf42d01a441dfec951e2f857186">Game.VersionConverter130To20.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00183">VersionConverter.cs:183</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter14_to15_html"><div class="ttname"><a href="class_game_1_1_version_converter14_to15.html">Game.VersionConverter14To15</a></div><div class="ttdef"><b>定义</b> <a href="#l00062">VersionConverter.cs:62</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter14_to15_html_a2cc644b3d26096bb053a87a93519e319"><div class="ttname"><a href="class_game_1_1_version_converter14_to15.html#a2cc644b3d26096bb053a87a93519e319">Game.VersionConverter14To15.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00065">VersionConverter.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter14_to15_html_ad43ab3b00d8f848a645690a6a7e27628"><div class="ttname"><a href="class_game_1_1_version_converter14_to15.html#ad43ab3b00d8f848a645690a6a7e27628">Game.VersionConverter14To15.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00063">VersionConverter.cs:63</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter15_to16_html"><div class="ttname"><a href="class_game_1_1_version_converter15_to16.html">Game.VersionConverter15To16</a></div><div class="ttdef"><b>定义</b> <a href="#l00068">VersionConverter.cs:68</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter15_to16_html_a006f8870166b0502fc2f1ffb102895bd"><div class="ttname"><a href="class_game_1_1_version_converter15_to16.html#a006f8870166b0502fc2f1ffb102895bd">Game.VersionConverter15To16.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00069">VersionConverter.cs:69</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter15_to16_html_a63cf4cb7bfe9a5a038d7f473d45fb05d"><div class="ttname"><a href="class_game_1_1_version_converter15_to16.html#a63cf4cb7bfe9a5a038d7f473d45fb05d">Game.VersionConverter15To16.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00071">VersionConverter.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter16_to17_html"><div class="ttname"><a href="class_game_1_1_version_converter16_to17.html">Game.VersionConverter16To17</a></div><div class="ttdef"><b>定义</b> <a href="#l00074">VersionConverter.cs:74</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter16_to17_html_a06db72889c7f4c6034de54a12c62d335"><div class="ttname"><a href="class_game_1_1_version_converter16_to17.html#a06db72889c7f4c6034de54a12c62d335">Game.VersionConverter16To17.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00077">VersionConverter.cs:77</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter16_to17_html_aa164bc6691f5059846298307bcfe6bf4"><div class="ttname"><a href="class_game_1_1_version_converter16_to17.html#aa164bc6691f5059846298307bcfe6bf4">Game.VersionConverter16To17.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00075">VersionConverter.cs:75</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter17_to18_html"><div class="ttname"><a href="class_game_1_1_version_converter17_to18.html">Game.VersionConverter17To18</a></div><div class="ttdef"><b>定义</b> <a href="#l00080">VersionConverter.cs:80</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter17_to18_html_a8b781397591ec0dc23bf8e87707b071f"><div class="ttname"><a href="class_game_1_1_version_converter17_to18.html#a8b781397591ec0dc23bf8e87707b071f">Game.VersionConverter17To18.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00081">VersionConverter.cs:81</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter17_to18_html_a8de526d191774d7378d821161c61f2d0"><div class="ttname"><a href="class_game_1_1_version_converter17_to18.html#a8de526d191774d7378d821161c61f2d0">Game.VersionConverter17To18.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00083">VersionConverter.cs:83</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter18_to19_html"><div class="ttname"><a href="class_game_1_1_version_converter18_to19.html">Game.VersionConverter18To19</a></div><div class="ttdef"><b>定义</b> <a href="#l00086">VersionConverter.cs:86</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter18_to19_html_a54f9e214b338d122bffcb2e8986cfc6e"><div class="ttname"><a href="class_game_1_1_version_converter18_to19.html#a54f9e214b338d122bffcb2e8986cfc6e">Game.VersionConverter18To19.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00087">VersionConverter.cs:87</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter18_to19_html_a99a4eb7d922c909969bea2176f3221f1"><div class="ttname"><a href="class_game_1_1_version_converter18_to19.html#a99a4eb7d922c909969bea2176f3221f1">Game.VersionConverter18To19.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00089">VersionConverter.cs:89</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter19_to110_html"><div class="ttname"><a href="class_game_1_1_version_converter19_to110.html">Game.VersionConverter19To110</a></div><div class="ttdef"><b>定义</b> <a href="#l00092">VersionConverter.cs:92</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter19_to110_html_a1c1cdeca9c73d8e5bf48a704e370d9cf"><div class="ttname"><a href="class_game_1_1_version_converter19_to110.html#a1c1cdeca9c73d8e5bf48a704e370d9cf">Game.VersionConverter19To110.SourceVersion</a></div><div class="ttdeci">override string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00093">VersionConverter.cs:93</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter19_to110_html_a32b1a61457d842fc303892a1cf1b7bf6"><div class="ttname"><a href="class_game_1_1_version_converter19_to110.html#a32b1a61457d842fc303892a1cf1b7bf6">Game.VersionConverter19To110.TargetVersion</a></div><div class="ttdeci">override string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00095">VersionConverter.cs:95</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter_html"><div class="ttname"><a href="class_game_1_1_version_converter.html">Game.VersionConverter</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">VersionConverter.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter_html_a31b9b9c7fe6c0a1e31ea4da485122a18"><div class="ttname"><a href="class_game_1_1_version_converter.html#a31b9b9c7fe6c0a1e31ea4da485122a18">Game.VersionConverter.ConvertProjectXml</a></div><div class="ttdeci">virtual void ConvertProjectXml(XElement projectNode)</div><div class="ttdef"><b>定义</b> <a href="#l00012">VersionConverter.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter_html_a3dde0558286dd67334df55d1028ba392"><div class="ttname"><a href="class_game_1_1_version_converter.html#a3dde0558286dd67334df55d1028ba392">Game.VersionConverter.SourceVersion</a></div><div class="ttdeci">string SourceVersion</div><div class="ttdef"><b>定义</b> <a href="#l00007">VersionConverter.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter_html_a4d1af18f16421ad3e8bbbef5c986b94a"><div class="ttname"><a href="class_game_1_1_version_converter.html#a4d1af18f16421ad3e8bbbef5c986b94a">Game.VersionConverter.TargetVersion</a></div><div class="ttdeci">string TargetVersion</div><div class="ttdef"><b>定义</b> <a href="#l00009">VersionConverter.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_version_converter_html_ab5416dfc60e02e02ecb13bbfa5c1c6e4"><div class="ttname"><a href="class_game_1_1_version_converter.html#ab5416dfc60e02e02ecb13bbfa5c1c6e4">Game.VersionConverter.ConvertWorld</a></div><div class="ttdeci">virtual void ConvertWorld(string directoryName)</div><div class="ttdef"><b>定义</b> <a href="#l00016">VersionConverter.cs:16</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html">XmlUtilities.XmlUtils</a></div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00010">XmlUtils.cs:10</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a25d3e91fe37b8d97d8dc55e7aa141441"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">XmlUtilities.XmlUtils.SetAttributeValue</a></div><div class="ttdeci">static void SetAttributeValue(XElement node, string attributeName, object value)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00037">XmlUtils.cs:37</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a8ccb324769f1be9a4f1ae6d4ec41f369"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a8ccb324769f1be9a4f1ae6d4ec41f369">XmlUtilities.XmlUtils.LoadXmlFromStream</a></div><div class="ttdeci">static XElement LoadXmlFromStream(Stream stream, Encoding encoding, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00072">XmlUtils.cs:72</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_ad88716f073eb951e2062a83754959ede"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#ad88716f073eb951e2062a83754959ede">XmlUtilities.XmlUtils.SaveXmlToStream</a></div><div class="ttdeci">static void SaveXmlToStream(XElement node, Stream stream, Encoding encoding, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00092">XmlUtils.cs:92</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html_ae47610d75f8bb133c22ca5f9de906ae3"><div class="ttname"><a href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">Engine.OpenFileMode</a></div><div class="ttdeci">OpenFileMode</div><div class="ttdef"><b>定义</b> <a href="_open_file_mode_8cs_source.html#l00002">OpenFileMode.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_xml_utilities_html"><div class="ttname"><a href="namespace_xml_utilities.html">XmlUtilities</a></div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00009">XmlUtils.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_afb822b09482a1c506ad46299f82cac5.html">Game</a></li><li class="navelem"><a href="_version_converter_8cs.html">VersionConverter.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

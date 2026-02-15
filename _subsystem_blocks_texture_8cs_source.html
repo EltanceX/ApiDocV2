@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemBlocksTexture.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_blocks_texture_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemBlocksTexture.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_blocks_texture_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_blocks_texture.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_blocks_texture.html">SubsystemBlocksTexture</a> : <a class="code hl_class" href="class_game_entity_system_1_1_subsystem.html">Subsystem</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_blocks_texture.html#a7770ed21e7d985f23a5869873678883e">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_engine_1_1_graphics_1_1_texture2_d.html">Texture2D</a> <a class="code hl_property" href="class_game_1_1_subsystem_blocks_texture.html#a7770ed21e7d985f23a5869873678883e">BlocksTexture</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_blocks_texture.html#a3043fc4516b2e2a9ec5b074ca4531961">    9</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#a3043fc4516b2e2a9ec5b074ca4531961">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            Display.DeviceReset += <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#afdec983d5164148984d105596aa6d75f">Display_DeviceReset</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#a79a7f9329d2abf944211fc46d6e3b44f">LoadBlocksTexture</a>();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        }</div>
+</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_blocks_texture.html#ae1d71a0400784ef9d235b550a640b598">   14</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#ae1d71a0400784ef9d235b550a640b598">Dispose</a>() {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            Display.DeviceReset -= <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#afdec983d5164148984d105596aa6d75f">Display_DeviceReset</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#a1922e50859d9cfd5dc347ee2bea08459">DisposeBlocksTexture</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        }</div>
+</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_blocks_texture.html#a79a7f9329d2abf944211fc46d6e3b44f">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#a79a7f9329d2abf944211fc46d6e3b44f">LoadBlocksTexture</a>() {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a> subsystemGameInfo = <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_property" href="class_game_1_1_subsystem_blocks_texture.html#a7770ed21e7d985f23a5869873678883e">BlocksTexture</a> = <a class="code hl_class" href="class_game_1_1_blocks_textures_manager.html">BlocksTexturesManager</a>.<a class="code hl_function" href="class_game_1_1_blocks_textures_manager.html#ad1002c57a6334b20fdbea4da7d584a0d">LoadTexture</a>(subsystemGameInfo.<a class="code hl_property" href="class_game_1_1_subsystem_game_info.html#ad1888e9368ae7219d5b67b9be20d8514">WorldSettings</a>.<a class="code hl_variable" href="class_game_1_1_world_settings.html#ae7d9f2118343ecb86c790effb3aa3af1">BlocksTextureName</a>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_blocks_texture.html#a1922e50859d9cfd5dc347ee2bea08459">   24</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#a1922e50859d9cfd5dc347ee2bea08459">DisposeBlocksTexture</a>() {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_subsystem_blocks_texture.html#a7770ed21e7d985f23a5869873678883e">BlocksTexture</a> != <span class="keyword">null</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                &amp;&amp; !<a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#ad76d3b1907f87df6765c266ae27345b7">IsContent</a>(<a class="code hl_property" href="class_game_1_1_subsystem_blocks_texture.html#a7770ed21e7d985f23a5869873678883e">BlocksTexture</a>)) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <a class="code hl_property" href="class_game_1_1_subsystem_blocks_texture.html#a7770ed21e7d985f23a5869873678883e">BlocksTexture</a>.Dispose();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <a class="code hl_property" href="class_game_1_1_subsystem_blocks_texture.html#a7770ed21e7d985f23a5869873678883e">BlocksTexture</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_blocks_texture.html#afdec983d5164148984d105596aa6d75f">   32</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#afdec983d5164148984d105596aa6d75f">Display_DeviceReset</a>() {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_function" href="class_game_1_1_subsystem_blocks_texture.html#a79a7f9329d2abf944211fc46d6e3b44f">LoadBlocksTexture</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_texture2_d_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_texture2_d.html">Engine.Graphics.Texture2D</a></div><div class="ttdef"><b>定义</b> <a href="_texture2_d_8cs_source.html#l00015">Texture2D.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_textures_manager_html"><div class="ttname"><a href="class_game_1_1_blocks_textures_manager.html">Game.BlocksTexturesManager</a></div><div class="ttdef"><b>定义</b> <a href="_blocks_textures_manager_8cs_source.html#l00007">BlocksTexturesManager.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_blocks_textures_manager_html_ad1002c57a6334b20fdbea4da7d584a0d"><div class="ttname"><a href="class_game_1_1_blocks_textures_manager.html#ad1002c57a6334b20fdbea4da7d584a0d">Game.BlocksTexturesManager.LoadTexture</a></div><div class="ttdeci">static Texture2D LoadTexture(string name)</div><div class="ttdef"><b>定义</b> <a href="_blocks_textures_manager_8cs_source.html#l00052">BlocksTexturesManager.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_ad76d3b1907f87df6765c266ae27345b7"><div class="ttname"><a href="class_game_1_1_content_manager.html#ad76d3b1907f87df6765c266ae27345b7">Game.ContentManager.IsContent</a></div><div class="ttdeci">static bool IsContent(object content)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00157">ContentManager.cs:157</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_blocks_texture_html"><div class="ttname"><a href="class_game_1_1_subsystem_blocks_texture.html">Game.SubsystemBlocksTexture</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">SubsystemBlocksTexture.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_blocks_texture_html_a1922e50859d9cfd5dc347ee2bea08459"><div class="ttname"><a href="class_game_1_1_subsystem_blocks_texture.html#a1922e50859d9cfd5dc347ee2bea08459">Game.SubsystemBlocksTexture.DisposeBlocksTexture</a></div><div class="ttdeci">void DisposeBlocksTexture()</div><div class="ttdef"><b>定义</b> <a href="#l00024">SubsystemBlocksTexture.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_blocks_texture_html_a3043fc4516b2e2a9ec5b074ca4531961"><div class="ttname"><a href="class_game_1_1_subsystem_blocks_texture.html#a3043fc4516b2e2a9ec5b074ca4531961">Game.SubsystemBlocksTexture.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00009">SubsystemBlocksTexture.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_blocks_texture_html_a7770ed21e7d985f23a5869873678883e"><div class="ttname"><a href="class_game_1_1_subsystem_blocks_texture.html#a7770ed21e7d985f23a5869873678883e">Game.SubsystemBlocksTexture.BlocksTexture</a></div><div class="ttdeci">Texture2D BlocksTexture</div><div class="ttdef"><b>定义</b> <a href="#l00007">SubsystemBlocksTexture.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_blocks_texture_html_a79a7f9329d2abf944211fc46d6e3b44f"><div class="ttname"><a href="class_game_1_1_subsystem_blocks_texture.html#a79a7f9329d2abf944211fc46d6e3b44f">Game.SubsystemBlocksTexture.LoadBlocksTexture</a></div><div class="ttdeci">void LoadBlocksTexture()</div><div class="ttdef"><b>定义</b> <a href="#l00019">SubsystemBlocksTexture.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_blocks_texture_html_ae1d71a0400784ef9d235b550a640b598"><div class="ttname"><a href="class_game_1_1_subsystem_blocks_texture.html#ae1d71a0400784ef9d235b550a640b598">Game.SubsystemBlocksTexture.Dispose</a></div><div class="ttdeci">override void Dispose()</div><div class="ttdef"><b>定义</b> <a href="#l00014">SubsystemBlocksTexture.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_blocks_texture_html_afdec983d5164148984d105596aa6d75f"><div class="ttname"><a href="class_game_1_1_subsystem_blocks_texture.html#afdec983d5164148984d105596aa6d75f">Game.SubsystemBlocksTexture.Display_DeviceReset</a></div><div class="ttdeci">void Display_DeviceReset()</div><div class="ttdef"><b>定义</b> <a href="#l00032">SubsystemBlocksTexture.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html">Game.SubsystemGameInfo</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00005">SubsystemGameInfo.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html_ad1888e9368ae7219d5b67b9be20d8514"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html#ad1888e9368ae7219d5b67b9be20d8514">Game.SubsystemGameInfo.WorldSettings</a></div><div class="ttdeci">WorldSettings WorldSettings</div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00011">SubsystemGameInfo.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_settings_html_ae7d9f2118343ecb86c790effb3aa3af1"><div class="ttname"><a href="class_game_1_1_world_settings.html#ae7d9f2118343ecb86c790effb3aa3af1">Game.WorldSettings.BlocksTextureName</a></div><div class="ttdeci">string BlocksTextureName</div><div class="ttdef"><b>定义</b> <a href="_world_settings_8cs_source.html#l00056">WorldSettings.cs:56</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00005">Subsystem.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_blocks_texture_8cs.html">SubsystemBlocksTexture.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

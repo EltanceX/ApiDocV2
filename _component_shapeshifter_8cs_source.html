@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Component/ComponentShapeshifter.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_component_shapeshifter_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ComponentShapeshifter.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_shapeshifter_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_component_shapeshifter.html">ComponentShapeshifter</a> : <a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#ae28a69b8ce047843d3e937d57f4d7601">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#ae28a69b8ce047843d3e937d57f4d7601">m_subsystemGameInfo</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#af7a8acd7f3735005bab5d4ab184082ce">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_sky.html">SubsystemSky</a> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#af7a8acd7f3735005bab5d4ab184082ce">m_subsystemSky</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a6d775ff6bd2d69bff60fe055b4b03e67">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_particles.html">SubsystemParticles</a> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6d775ff6bd2d69bff60fe055b4b03e67">m_subsystemParticles</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a2afc6ee62f3af456506137e2dfaa4d13">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a2afc6ee62f3af456506137e2dfaa4d13">m_subsystemAudio</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#adcfe0ecab4bdeab74d64487f7f04cf56">   14</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_spawn.html">ComponentSpawn</a> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#adcfe0ecab4bdeab74d64487f7f04cf56">m_componentSpawn</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a5f65985901bc866d217aea53fc7d8b34">   16</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a5f65985901bc866d217aea53fc7d8b34">m_componentBody</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a4c57acb7129405486ced8f40a17d9e8b">   18</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_health.html">ComponentHealth</a> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a4c57acb7129405486ced8f40a17d9e8b">m_componentHealth</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a6c62d20eb3826e858151bdd5a1763d35">   20</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_shapeshift_particle_system.html">ShapeshiftParticleSystem</a> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6c62d20eb3826e858151bdd5a1763d35">m_particleSystem</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a86ad2608ae6c9a7e3f6c50ba21e9bc35">   22</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a86ad2608ae6c9a7e3f6c50ba21e9bc35">m_nightEntityTemplateName</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">   24</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">m_dayEntityTemplateName</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#afa317de60ed95e6150b8290eefa1546a">   26</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#afa317de60ed95e6150b8290eefa1546a">m_timeToSwitch</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a52d22b7825e199174e15aaac338d89a8">   28</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a52d22b7825e199174e15aaac338d89a8">m_spawnEntityTemplateName</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a6578da4d355a437fc4175a432f369956">   30</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_game_1_1_random.html">Random</a> <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6578da4d355a437fc4175a432f369956">s_random</a> = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a823b37475e36e94fb1e35b1427e899ac">   32</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_component_shapeshifter.html#a823b37475e36e94fb1e35b1427e899ac">IsEnabled</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#af9488eaa7a7d0f0cc7db2880e30fa11c">   34</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_component_shapeshifter.html#af9488eaa7a7d0f0cc7db2880e30fa11c">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_component_shapeshifter.html#af9488eaa7a7d0f0cc7db2880e30fa11c">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_component_shapeshifter.html#af9488eaa7a7d0f0cc7db2880e30fa11c">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#af9ac0e0d52a78c8764fabeada62d4ef8">   36</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_shapeshifter.html#af9ac0e0d52a78c8764fabeada62d4ef8">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordtype">bool</span> areSupernaturalCreaturesEnabled = <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#ae28a69b8ce047843d3e937d57f4d7601">m_subsystemGameInfo</a>.WorldSettings.AreSupernaturalCreaturesEnabled;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_component_shapeshifter.html#a823b37475e36e94fb1e35b1427e899ac">IsEnabled</a></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                &amp;&amp; !<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#adcfe0ecab4bdeab74d64487f7f04cf56">m_componentSpawn</a>.IsDespawning</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                &amp;&amp; <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a4c57acb7129405486ced8f40a17d9e8b">m_componentHealth</a>.Health &gt; 0f) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">if</span> (!areSupernaturalCreaturesEnabled</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    &amp;&amp; !<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">m_dayEntityTemplateName</a>)) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <a class="code hl_function" href="class_game_1_1_component_shapeshifter.html#a0f21584b80b448c8799f5351e46e1bd1">ShapeshiftTo</a>(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">m_dayEntityTemplateName</a>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#af7a8acd7f3735005bab5d4ab184082ce">m_subsystemSky</a>.SkyLightIntensity &gt; 0.25f</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    &amp;&amp; !<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">m_dayEntityTemplateName</a>)) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#afa317de60ed95e6150b8290eefa1546a">m_timeToSwitch</a> -= 2f * dt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#afa317de60ed95e6150b8290eefa1546a">m_timeToSwitch</a> &lt;= 0f) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        <a class="code hl_function" href="class_game_1_1_component_shapeshifter.html#a0f21584b80b448c8799f5351e46e1bd1">ShapeshiftTo</a>(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">m_dayEntityTemplateName</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (areSupernaturalCreaturesEnabled</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    &amp;&amp; <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#af7a8acd7f3735005bab5d4ab184082ce">m_subsystemSky</a>.SkyLightIntensity &lt; 0.1f</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    &amp;&amp; (<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#af7a8acd7f3735005bab5d4ab184082ce">m_subsystemSky</a>.MoonPhase == 0 || <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#af7a8acd7f3735005bab5d4ab184082ce">m_subsystemSky</a>.MoonPhase == 4)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    &amp;&amp; !<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a86ad2608ae6c9a7e3f6c50ba21e9bc35">m_nightEntityTemplateName</a>)) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#afa317de60ed95e6150b8290eefa1546a">m_timeToSwitch</a> -= dt;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#afa317de60ed95e6150b8290eefa1546a">m_timeToSwitch</a> &lt;= 0f) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        <a class="code hl_function" href="class_game_1_1_component_shapeshifter.html#a0f21584b80b448c8799f5351e46e1bd1">ShapeshiftTo</a>(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a86ad2608ae6c9a7e3f6c50ba21e9bc35">m_nightEntityTemplateName</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a52d22b7825e199174e15aaac338d89a8">m_spawnEntityTemplateName</a>)) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6c62d20eb3826e858151bdd5a1763d35">m_particleSystem</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6c62d20eb3826e858151bdd5a1763d35">m_particleSystem</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_shapeshift_particle_system.html">ShapeshiftParticleSystem</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6d775ff6bd2d69bff60fe055b4b03e67">m_subsystemParticles</a>.AddParticleSystem(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6c62d20eb3826e858151bdd5a1763d35">m_particleSystem</a>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                m_particleSystem.BoundingBox = <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a5f65985901bc866d217aea53fc7d8b34">m_componentBody</a>.BoundingBox;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a05a94650d6d24f3c4f9eda286d4b499b">   71</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_shapeshifter.html#a05a94650d6d24f3c4f9eda286d4b499b">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">ValuesDictionary</a> valuesDictionary, <a class="code hl_class" href="class_game_entity_system_1_1_id_to_entity_map.html">IdToEntityMap</a> idToEntityMap) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#ae28a69b8ce047843d3e937d57f4d7601">m_subsystemGameInfo</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#af7a8acd7f3735005bab5d4ab184082ce">m_subsystemSky</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_sky.html">SubsystemSky</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6d775ff6bd2d69bff60fe055b4b03e67">m_subsystemParticles</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_particles.html">SubsystemParticles</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a2afc6ee62f3af456506137e2dfaa4d13">m_subsystemAudio</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#adcfe0ecab4bdeab74d64487f7f04cf56">m_componentSpawn</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_spawn.html">ComponentSpawn</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a5f65985901bc866d217aea53fc7d8b34">m_componentBody</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a4c57acb7129405486ced8f40a17d9e8b">m_componentHealth</a> = <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.FindComponent&lt;<a class="code hl_class" href="class_game_1_1_component_health.html">ComponentHealth</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">m_dayEntityTemplateName</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;DayEntityTemplateName&quot;</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a86ad2608ae6c9a7e3f6c50ba21e9bc35">m_nightEntityTemplateName</a> = valuesDictionary.GetValue&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;NightEntityTemplateName&quot;</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordtype">float</span> value = valuesDictionary.GetValue&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;Probability&quot;</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">m_dayEntityTemplateName</a>)) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <a class="code hl_class" href="class_game_1_1_database_manager.html">DatabaseManager</a>.<a class="code hl_function" href="class_game_1_1_database_manager.html#ae77466b8c0c644812412145db4ab992e">FindEntityValuesDictionary</a>(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">m_dayEntityTemplateName</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a86ad2608ae6c9a7e3f6c50ba21e9bc35">m_nightEntityTemplateName</a>)) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <a class="code hl_class" href="class_game_1_1_database_manager.html">DatabaseManager</a>.<a class="code hl_function" href="class_game_1_1_database_manager.html#ae77466b8c0c644812412145db4ab992e">FindEntityValuesDictionary</a>(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a86ad2608ae6c9a7e3f6c50ba21e9bc35">m_nightEntityTemplateName</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#afa317de60ed95e6150b8290eefa1546a">m_timeToSwitch</a> = <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6578da4d355a437fc4175a432f369956">s_random</a>.Float(3f, 15f);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <a class="code hl_property" href="class_game_1_1_component_shapeshifter.html#a823b37475e36e94fb1e35b1427e899ac">IsEnabled</a> = <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6578da4d355a437fc4175a432f369956">s_random</a>.Float(0f, 1f) &lt; value;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            m_componentSpawn.Despawned += <a class="code hl_function" href="class_game_1_1_component_shapeshifter.html#af767c9b5cfc765b16f5d3bba8dc4ab01">ComponentSpawn_Despawned</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#a0f21584b80b448c8799f5351e46e1bd1">   93</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_shapeshifter.html#a0f21584b80b448c8799f5351e46e1bd1">ShapeshiftTo</a>(<span class="keywordtype">string</span> entityTemplateName) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a52d22b7825e199174e15aaac338d89a8">m_spawnEntityTemplateName</a>)) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a52d22b7825e199174e15aaac338d89a8">m_spawnEntityTemplateName</a> = entityTemplateName;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                m_componentSpawn.DespawnDuration = 3f;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#adcfe0ecab4bdeab74d64487f7f04cf56">m_componentSpawn</a>.Despawn();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a2afc6ee62f3af456506137e2dfaa4d13">m_subsystemAudio</a>.PlaySound(<span class="stringliteral">&quot;Audio/Shapeshift&quot;</span>, 1f, 0f, <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a5f65985901bc866d217aea53fc7d8b34">m_componentBody</a>.Position, 3f, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_game_1_1_component_shapeshifter.html#af767c9b5cfc765b16f5d3bba8dc4ab01">  102</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_component_shapeshifter.html#af767c9b5cfc765b16f5d3bba8dc4ab01">ComponentSpawn_Despawned</a>(<a class="code hl_class" href="class_game_1_1_component_spawn.html">ComponentSpawn</a> componentSpawn) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a4c57acb7129405486ced8f40a17d9e8b">m_componentHealth</a>.Health &gt; 0f</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                &amp;&amp; !<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a52d22b7825e199174e15aaac338d89a8">m_spawnEntityTemplateName</a>)) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a> entity = <a class="code hl_class" href="class_game_1_1_database_manager.html">DatabaseManager</a>.<a class="code hl_function" href="class_game_1_1_database_manager.html#aa7ab7bdeceff749fc205063ee2ca3929">CreateEntity</a>(<a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>, <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a52d22b7825e199174e15aaac338d89a8">m_spawnEntityTemplateName</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a> componentBody = entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_body.html">ComponentBody</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                componentBody.Position = <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a5f65985901bc866d217aea53fc7d8b34">m_componentBody</a>.Position;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                componentBody.Rotation = <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a5f65985901bc866d217aea53fc7d8b34">m_componentBody</a>.Rotation;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                componentBody.Velocity = <a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a5f65985901bc866d217aea53fc7d8b34">m_componentBody</a>.Velocity;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_spawn.html">ComponentSpawn</a>&gt;(<span class="keyword">true</span>).SpawnDuration = 0.5f;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_function" href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f">HookAction</a>(</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                    <span class="stringliteral">&quot;OnDespawned&quot;</span>,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    modLoader =&gt; {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                        modLoader.OnDespawned(entity, componentSpawn);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                    }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                );</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <a class="code hl_property" href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">Project</a>.AddEntity(entity);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_component_shapeshifter.html#a6c62d20eb3826e858151bdd5a1763d35">m_particleSystem</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                m_particleSystem.Stopped = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
+</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+<div class="ttc" id="aclass_game_1_1_component_body_html"><div class="ttname"><a href="class_game_1_1_component_body.html">Game.ComponentBody</a></div><div class="ttdef"><b>定义</b> <a href="_component_body_8cs_source.html#l00007">ComponentBody.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_health_html"><div class="ttname"><a href="class_game_1_1_component_health.html">Game.ComponentHealth</a></div><div class="ttdef"><b>定义</b> <a href="_component_health_8cs_source.html#l00006">ComponentHealth.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html">Game.ComponentShapeshifter</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">ComponentShapeshifter.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a05a94650d6d24f3c4f9eda286d4b499b"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a05a94650d6d24f3c4f9eda286d4b499b">Game.ComponentShapeshifter.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary, IdToEntityMap idToEntityMap)</div><div class="ttdef"><b>定义</b> <a href="#l00071">ComponentShapeshifter.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a0f21584b80b448c8799f5351e46e1bd1"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a0f21584b80b448c8799f5351e46e1bd1">Game.ComponentShapeshifter.ShapeshiftTo</a></div><div class="ttdeci">virtual void ShapeshiftTo(string entityTemplateName)</div><div class="ttdef"><b>定义</b> <a href="#l00093">ComponentShapeshifter.cs:93</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a16d00a601f7e19ce33a3def982f59925"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a16d00a601f7e19ce33a3def982f59925">Game.ComponentShapeshifter.m_dayEntityTemplateName</a></div><div class="ttdeci">string m_dayEntityTemplateName</div><div class="ttdef"><b>定义</b> <a href="#l00024">ComponentShapeshifter.cs:24</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a2afc6ee62f3af456506137e2dfaa4d13"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a2afc6ee62f3af456506137e2dfaa4d13">Game.ComponentShapeshifter.m_subsystemAudio</a></div><div class="ttdeci">SubsystemAudio m_subsystemAudio</div><div class="ttdef"><b>定义</b> <a href="#l00012">ComponentShapeshifter.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a4c57acb7129405486ced8f40a17d9e8b"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a4c57acb7129405486ced8f40a17d9e8b">Game.ComponentShapeshifter.m_componentHealth</a></div><div class="ttdeci">ComponentHealth m_componentHealth</div><div class="ttdef"><b>定义</b> <a href="#l00018">ComponentShapeshifter.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a52d22b7825e199174e15aaac338d89a8"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a52d22b7825e199174e15aaac338d89a8">Game.ComponentShapeshifter.m_spawnEntityTemplateName</a></div><div class="ttdeci">string m_spawnEntityTemplateName</div><div class="ttdef"><b>定义</b> <a href="#l00028">ComponentShapeshifter.cs:28</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a5f65985901bc866d217aea53fc7d8b34"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a5f65985901bc866d217aea53fc7d8b34">Game.ComponentShapeshifter.m_componentBody</a></div><div class="ttdeci">ComponentBody m_componentBody</div><div class="ttdef"><b>定义</b> <a href="#l00016">ComponentShapeshifter.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a6578da4d355a437fc4175a432f369956"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a6578da4d355a437fc4175a432f369956">Game.ComponentShapeshifter.s_random</a></div><div class="ttdeci">static Random s_random</div><div class="ttdef"><b>定义</b> <a href="#l00030">ComponentShapeshifter.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a6c62d20eb3826e858151bdd5a1763d35"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a6c62d20eb3826e858151bdd5a1763d35">Game.ComponentShapeshifter.m_particleSystem</a></div><div class="ttdeci">ShapeshiftParticleSystem m_particleSystem</div><div class="ttdef"><b>定义</b> <a href="#l00020">ComponentShapeshifter.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a6d775ff6bd2d69bff60fe055b4b03e67"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a6d775ff6bd2d69bff60fe055b4b03e67">Game.ComponentShapeshifter.m_subsystemParticles</a></div><div class="ttdeci">SubsystemParticles m_subsystemParticles</div><div class="ttdef"><b>定义</b> <a href="#l00010">ComponentShapeshifter.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a823b37475e36e94fb1e35b1427e899ac"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a823b37475e36e94fb1e35b1427e899ac">Game.ComponentShapeshifter.IsEnabled</a></div><div class="ttdeci">bool IsEnabled</div><div class="ttdef"><b>定义</b> <a href="#l00032">ComponentShapeshifter.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_a86ad2608ae6c9a7e3f6c50ba21e9bc35"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#a86ad2608ae6c9a7e3f6c50ba21e9bc35">Game.ComponentShapeshifter.m_nightEntityTemplateName</a></div><div class="ttdeci">string m_nightEntityTemplateName</div><div class="ttdef"><b>定义</b> <a href="#l00022">ComponentShapeshifter.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_adcfe0ecab4bdeab74d64487f7f04cf56"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#adcfe0ecab4bdeab74d64487f7f04cf56">Game.ComponentShapeshifter.m_componentSpawn</a></div><div class="ttdeci">ComponentSpawn m_componentSpawn</div><div class="ttdef"><b>定义</b> <a href="#l00014">ComponentShapeshifter.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_ae28a69b8ce047843d3e937d57f4d7601"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#ae28a69b8ce047843d3e937d57f4d7601">Game.ComponentShapeshifter.m_subsystemGameInfo</a></div><div class="ttdeci">SubsystemGameInfo m_subsystemGameInfo</div><div class="ttdef"><b>定义</b> <a href="#l00006">ComponentShapeshifter.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_af767c9b5cfc765b16f5d3bba8dc4ab01"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#af767c9b5cfc765b16f5d3bba8dc4ab01">Game.ComponentShapeshifter.ComponentSpawn_Despawned</a></div><div class="ttdeci">virtual void ComponentSpawn_Despawned(ComponentSpawn componentSpawn)</div><div class="ttdef"><b>定义</b> <a href="#l00102">ComponentShapeshifter.cs:102</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_af7a8acd7f3735005bab5d4ab184082ce"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#af7a8acd7f3735005bab5d4ab184082ce">Game.ComponentShapeshifter.m_subsystemSky</a></div><div class="ttdeci">SubsystemSky m_subsystemSky</div><div class="ttdef"><b>定义</b> <a href="#l00008">ComponentShapeshifter.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_af9488eaa7a7d0f0cc7db2880e30fa11c"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#af9488eaa7a7d0f0cc7db2880e30fa11c">Game.ComponentShapeshifter.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00034">ComponentShapeshifter.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_af9ac0e0d52a78c8764fabeada62d4ef8"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#af9ac0e0d52a78c8764fabeada62d4ef8">Game.ComponentShapeshifter.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00036">ComponentShapeshifter.cs:36</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_shapeshifter_html_afa317de60ed95e6150b8290eefa1546a"><div class="ttname"><a href="class_game_1_1_component_shapeshifter.html#afa317de60ed95e6150b8290eefa1546a">Game.ComponentShapeshifter.m_timeToSwitch</a></div><div class="ttdeci">float m_timeToSwitch</div><div class="ttdef"><b>定义</b> <a href="#l00026">ComponentShapeshifter.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_spawn_html"><div class="ttname"><a href="class_game_1_1_component_spawn.html">Game.ComponentSpawn</a></div><div class="ttdef"><b>定义</b> <a href="_component_spawn_8cs_source.html#l00005">ComponentSpawn.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_database_manager_html"><div class="ttname"><a href="class_game_1_1_database_manager.html">Game.DatabaseManager</a></div><div class="ttdef"><b>定义</b> <a href="_database_manager_8cs_source.html#l00008">DatabaseManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_database_manager_html_aa7ab7bdeceff749fc205063ee2ca3929"><div class="ttname"><a href="class_game_1_1_database_manager.html#aa7ab7bdeceff749fc205063ee2ca3929">Game.DatabaseManager.CreateEntity</a></div><div class="ttdeci">static Entity CreateEntity(Project project, SpawnEntityData spawnEntityData, bool throwIfNotFound)</div><div class="ttdef"><b>定义</b> <a href="_database_manager_8cs_source.html#l00064">DatabaseManager.cs:64</a></div></div>
+<div class="ttc" id="aclass_game_1_1_database_manager_html_ae77466b8c0c644812412145db4ab992e"><div class="ttname"><a href="class_game_1_1_database_manager.html#ae77466b8c0c644812412145db4ab992e">Game.DatabaseManager.FindEntityValuesDictionary</a></div><div class="ttdeci">static ValuesDictionary FindEntityValuesDictionary(string entityTemplateName, bool throwIfNotFound)</div><div class="ttdef"><b>定义</b> <a href="_database_manager_8cs_source.html#l00044">DatabaseManager.cs:44</a></div></div>
+<div class="ttc" id="aclass_game_1_1_random_html"><div class="ttname"><a href="class_game_1_1_random.html">Game.Random</a></div><div class="ttdef"><b>定义</b> <a href="_survivalcraft_8_windows_2_game_2_random_8cs_source.html#l00005">Random.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_shapeshift_particle_system_html"><div class="ttname"><a href="class_game_1_1_shapeshift_particle_system.html">Game.ShapeshiftParticleSystem</a></div><div class="ttdef"><b>定义</b> <a href="_shapeshift_particle_system_8cs_source.html#l00005">ShapeshiftParticleSystem.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_audio_html"><div class="ttname"><a href="class_game_1_1_subsystem_audio.html">Game.SubsystemAudio</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00008">SubsystemAudio.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html">Game.SubsystemGameInfo</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00005">SubsystemGameInfo.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_particles_html"><div class="ttname"><a href="class_game_1_1_subsystem_particles.html">Game.SubsystemParticles</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_particles_8cs_source.html#l00007">SubsystemParticles.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_sky_html"><div class="ttname"><a href="class_game_1_1_subsystem_sky.html">Game.SubsystemSky</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_sky_8cs_source.html#l00008">SubsystemSky.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html"><div class="ttname"><a href="class_game_entity_system_1_1_component.html">GameEntitySystem.Component</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00007">Component.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a4b812f6825600e5419612a580d3094ff"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a4b812f6825600e5419612a580d3094ff">GameEntitySystem.Component.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00012">Component.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_a771baadae7a12358301d000d2e127421"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#a771baadae7a12358301d000d2e127421">GameEntitySystem.Component.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00016">Component.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_afbe091d90718bd24bc5b528daa3245cf"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">GameEntitySystem.Entity.FindComponent</a></div><div class="ttdeci">Component FindComponent(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00132">Entity.cs:132</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html">GameEntitySystem.IdToEntityMap</a></div><div class="ttdef"><b>定义</b> <a href="_id_to_entity_map_8cs_source.html#l00005">IdToEntityMap.cs:5</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html"><div class="ttname"><a href="class_mods_manager.html">ModsManager</a></div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00019">ModsManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a03dcd23af0dfd253948e6d2e5469a31f"><div class="ttname"><a href="class_mods_manager.html#a03dcd23af0dfd253948e6d2e5469a31f">ModsManager.HookAction</a></div><div class="ttdeci">static void HookAction(string HookName, Func&lt; ModLoader, bool &gt; action)</div><div class="ttdoc">执行Hook</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00146">ModsManager.cs:146</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_0ae50620953341a2d59f4b8faa145d4c.html">Component</a></li><li class="navelem"><a href="_component_shapeshifter_8cs.html">ComponentShapeshifter.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

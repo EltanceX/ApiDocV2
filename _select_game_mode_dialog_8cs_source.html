@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Dialog/SelectGameModeDialog.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_select_game_mode_dialog_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SelectGameModeDialog.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_select_game_mode_dialog_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_select_game_mode_dialog.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_select_game_mode_dialog.html">SelectGameModeDialog</a> : <a class="code hl_function" href="class_game_1_1_list_selection_dialog.html#a6e7c76e36ef6c0fa7a18f02e8ea98bab">ListSelectionDialog</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_select_game_mode_dialog.html">SelectGameModeDialog</a>(<span class="keywordtype">string</span> title, <span class="keywordtype">bool</span> allowAdventure, <span class="keywordtype">bool</span> allowCruel, Action&lt;GameMode&gt; selectionHandler) : base(</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>            title,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            <a class="code hl_function" href="class_game_1_1_select_game_mode_dialog.html#af27b4335b833107c77f8da8b3e51855f">GetAllowedGameModes</a>(allowAdventure, allowCruel),</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            140f,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            delegate(<span class="keywordtype">object</span> item) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                <a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a> gameMode = (<a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a>)item;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Widgets/SelectGameModeItem&quot;</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                <a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a> obj = (<a class="code hl_class" href="class_game_1_1_container_widget.html">ContainerWidget</a>)<a class="code hl_function" href="class_game_1_1_widget.html#a17c4236221d46002b6cf74bd503b5220">LoadWidget</a>(<span class="keyword">null</span>, node, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                obj.Children.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;SelectGameModeItem.Name&quot;</span>).Text = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<span class="stringliteral">&quot;GameMode&quot;</span>, gameMode.ToString());</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                obj.Children.Find&lt;<a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a>&gt;(<span class="stringliteral">&quot;SelectGameModeItem.Description&quot;</span>).Text =</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                    <a class="code hl_class" href="class_game_1_1_strings_manager.html">StringsManager</a>.<a class="code hl_function" href="class_game_1_1_strings_manager.html#a2d24f5d1f41f9856c360b08f7cb1bd0c">GetString</a>($<span class="stringliteral">&quot;GameMode.{gameMode}.Description&quot;</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            },</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            delegate(<span class="keywordtype">object</span> item) { selectionHandler((<a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a>)item); }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        ) =&gt; <a class="code hl_property" href="class_game_1_1_list_selection_dialog.html#aa81e4d5e2c4bd26ca706464975aefa64">ContentSize</a> = <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_vector2.html">Vector2</a>(750f, 420f);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_select_game_mode_dialog.html#af27b4335b833107c77f8da8b3e51855f">   22</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> IEnumerable&lt;GameMode&gt; <a class="code hl_function" href="class_game_1_1_select_game_mode_dialog.html#af27b4335b833107c77f8da8b3e51855f">GetAllowedGameModes</a>(<span class="keywordtype">bool</span> allowAdventure, <span class="keywordtype">bool</span> allowCruel) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            yield <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a>.Creative;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            yield <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a>.Survival;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            yield <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a>.Challenging;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            yield <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a>.Harmless;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">if</span> (allowAdventure) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                yield <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a>.Adventure;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (allowCruel) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                yield <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">GameMode</a>.Cruel;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html"><div class="ttname"><a href="class_game_1_1_container_widget.html">Game.ContainerWidget</a></div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00004">ContainerWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_list_selection_dialog_html_a6e7c76e36ef6c0fa7a18f02e8ea98bab"><div class="ttname"><a href="class_game_1_1_list_selection_dialog.html#a6e7c76e36ef6c0fa7a18f02e8ea98bab">Game.ListSelectionDialog.ListSelectionDialog</a></div><div class="ttdeci">ListSelectionDialog(string title, IEnumerable items, float itemSize, Func&lt; object, Widget &gt; itemWidgetFactory, Action&lt; object &gt; selectionHandler)</div><div class="ttdef"><b>定义</b> <a href="_list_selection_dialog_8cs_source.html#l00023">ListSelectionDialog.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_list_selection_dialog_html_aa81e4d5e2c4bd26ca706464975aefa64"><div class="ttname"><a href="class_game_1_1_list_selection_dialog.html#aa81e4d5e2c4bd26ca706464975aefa64">Game.ListSelectionDialog.ContentSize</a></div><div class="ttdeci">Vector2 ContentSize</div><div class="ttdef"><b>定义</b> <a href="_list_selection_dialog_8cs_source.html#l00018">ListSelectionDialog.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_game_mode_dialog_html"><div class="ttname"><a href="class_game_1_1_select_game_mode_dialog.html">Game.SelectGameModeDialog</a></div><div class="ttdef"><b>定义</b> <a href="#l00005">SelectGameModeDialog.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_game_mode_dialog_html_af27b4335b833107c77f8da8b3e51855f"><div class="ttname"><a href="class_game_1_1_select_game_mode_dialog.html#af27b4335b833107c77f8da8b3e51855f">Game.SelectGameModeDialog.GetAllowedGameModes</a></div><div class="ttdeci">SelectGameModeDialog(string title, bool allowAdventure, bool allowCruel, Action&lt; GameMode &gt; selectionHandler) static IEnumerable&lt; GameMode &gt; GetAllowedGameModes(bool allowAdventure, bool allowCruel)</div><div class="ttdef"><b>定义</b> <a href="#l00022">SelectGameModeDialog.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_strings_manager_html"><div class="ttname"><a href="class_game_1_1_strings_manager.html">Game.StringsManager</a></div><div class="ttdef"><b>定义</b> <a href="_strings_manager_8cs_source.html#l00002">StringsManager.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_strings_manager_html_a2d24f5d1f41f9856c360b08f7cb1bd0c"><div class="ttname"><a href="class_game_1_1_strings_manager.html#a2d24f5d1f41f9856c360b08f7cb1bd0c">Game.StringsManager.GetString</a></div><div class="ttdeci">static string GetString(string name)</div><div class="ttdef"><b>定义</b> <a href="_strings_manager_8cs_source.html#l00003">StringsManager.cs:3</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a17c4236221d46002b6cf74bd503b5220"><div class="ttname"><a href="class_game_1_1_widget.html#a17c4236221d46002b6cf74bd503b5220">Game.Widget.LoadWidget</a></div><div class="ttdeci">static Widget LoadWidget(object eventsTarget, XElement node, ContainerWidget parentWidget)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00486">Widget.cs:486</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_ac2b04dd85ce59ea4aa71a5779c97bfef"><div class="ttname"><a href="namespace_game.html#ac2b04dd85ce59ea4aa71a5779c97bfef">Game.GameMode</a></div><div class="ttdeci">GameMode</div><div class="ttdef"><b>定义</b> <a href="_game_mode_8cs_source.html#l00002">GameMode.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_vector2_html"><div class="ttname"><a href="struct_engine_1_1_vector2.html">Engine.Vector2</a></div><div class="ttdef"><b>定义</b> <a href="_vector2_8cs_source.html#l00002">Vector2.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_b6205966024a0faf73eb78e73558e78e.html">Dialog</a></li><li class="navelem"><a href="_select_game_mode_dialog_8cs.html">SelectGameModeDialog.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

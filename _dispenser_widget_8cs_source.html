@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/DispenserWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_dispenser_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DispenserWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_dispenser_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_dispenser_widget.html#a55445c5bcfc40dfd73bf6fb448134eac">DispenserWidget</a> : <a class="code hl_class" href="class_game_1_1_canvas_widget.html">CanvasWidget</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#a1e966da87e6916592b63c2489582bec0">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a1e966da87e6916592b63c2489582bec0">m_subsystemTerrain</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#a6e92f96125e4ec1962a4471d3ddd7f8e">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_dispenser.html">ComponentDispenser</a> <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a6e92f96125e4ec1962a4471d3ddd7f8e">m_componentDispenser</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#a2a844e7cb1de54a3ae0df9db032e1f6b">   10</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_component_block_entity.html">ComponentBlockEntity</a> <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a2a844e7cb1de54a3ae0df9db032e1f6b">m_componentBlockEntity</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#a583a92a3c48293e26a3afb63b9d4e12c">   12</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_grid_panel_widget.html">GridPanelWidget</a> <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a583a92a3c48293e26a3afb63b9d4e12c">m_inventoryGrid</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#a2d9e4ae9ccacd4cc7750d014465b8a54">   14</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_grid_panel_widget.html">GridPanelWidget</a> <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a2d9e4ae9ccacd4cc7750d014465b8a54">m_dispenserGrid</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#aa6f6dbf838acc88ea9a9e5944acfac48">   16</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#aa6f6dbf838acc88ea9a9e5944acfac48">m_dispenseButton</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#a5d25a24c4c3389784270b1bf2bfb0fe2">   18</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a5d25a24c4c3389784270b1bf2bfb0fe2">m_shootButton</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#a50249b1bd5b41c6f7beb4ed4bec38cbc">   20</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_checkbox_widget.html">CheckboxWidget</a> <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a50249b1bd5b41c6f7beb4ed4bec38cbc">m_acceptsDropsBox</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#a55445c5bcfc40dfd73bf6fb448134eac">   22</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_dispenser_widget.html#a55445c5bcfc40dfd73bf6fb448134eac">DispenserWidget</a>(<a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a> inventory, <a class="code hl_class" href="class_game_1_1_component_dispenser.html">ComponentDispenser</a> componentDispenser) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a6e92f96125e4ec1962a4471d3ddd7f8e">m_componentDispenser</a> = componentDispenser;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a2a844e7cb1de54a3ae0df9db032e1f6b">m_componentBlockEntity</a> = componentDispenser.<a class="code hl_property" href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">Entity</a>.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;<a class="code hl_class" href="class_game_1_1_component_block_entity.html">ComponentBlockEntity</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a1e966da87e6916592b63c2489582bec0">m_subsystemTerrain</a> = componentDispenser.<a class="code hl_property" href="class_game_1_1_component_inventory_base.html#a37c1acb561d4a4ef0c17cb50fa00cf00">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a>&gt;(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Widgets/DispenserWidget&quot;</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a583a92a3c48293e26a3afb63b9d4e12c">m_inventoryGrid</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_grid_panel_widget.html">GridPanelWidget</a>&gt;(<span class="stringliteral">&quot;InventoryGrid&quot;</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a2d9e4ae9ccacd4cc7750d014465b8a54">m_dispenserGrid</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_grid_panel_widget.html">GridPanelWidget</a>&gt;(<span class="stringliteral">&quot;DispenserGrid&quot;</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#aa6f6dbf838acc88ea9a9e5944acfac48">m_dispenseButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;DispenseButton&quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a5d25a24c4c3389784270b1bf2bfb0fe2">m_shootButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;ShootButton&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a50249b1bd5b41c6f7beb4ed4bec38cbc">m_acceptsDropsBox</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_checkbox_widget.html">CheckboxWidget</a>&gt;(<span class="stringliteral">&quot;AcceptsDropsBox&quot;</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordtype">int</span> num = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a2d9e4ae9ccacd4cc7750d014465b8a54">m_dispenserGrid</a>.RowsCount; i++) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a2d9e4ae9ccacd4cc7750d014465b8a54">m_dispenserGrid</a>.ColumnsCount; j++) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    <a class="code hl_class" href="class_game_1_1_inventory_slot_widget.html">InventorySlotWidget</a> inventorySlotWidget = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    inventorySlotWidget.<a class="code hl_function" href="class_game_1_1_inventory_slot_widget.html#a21744d9299eb0e0f047fea71895e296c">AssignInventorySlot</a>(componentDispenser, num++);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a2d9e4ae9ccacd4cc7750d014465b8a54">m_dispenserGrid</a>.Children.Add(inventorySlotWidget);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a2d9e4ae9ccacd4cc7750d014465b8a54">m_dispenserGrid</a>.SetWidgetCell(inventorySlotWidget, <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a>(j, i));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            num = 10;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a583a92a3c48293e26a3afb63b9d4e12c">m_inventoryGrid</a>.RowsCount; k++) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = 0; l &lt; <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a583a92a3c48293e26a3afb63b9d4e12c">m_inventoryGrid</a>.ColumnsCount; l++) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <a class="code hl_class" href="class_game_1_1_inventory_slot_widget.html">InventorySlotWidget</a> inventorySlotWidget2 = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    inventorySlotWidget2.<a class="code hl_function" href="class_game_1_1_inventory_slot_widget.html#a21744d9299eb0e0f047fea71895e296c">AssignInventorySlot</a>(inventory, num++);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a583a92a3c48293e26a3afb63b9d4e12c">m_inventoryGrid</a>.Children.Add(inventorySlotWidget2);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a583a92a3c48293e26a3afb63b9d4e12c">m_inventoryGrid</a>.SetWidgetCell(inventorySlotWidget2, <span class="keyword">new</span> <a class="code hl_struct" href="struct_engine_1_1_point2.html">Point2</a>(l, k));</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_game_1_1_dispenser_widget.html#a9f169ab3cf0b98a6d1d70c393fd633c8">   53</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_dispenser_widget.html#a9f169ab3cf0b98a6d1d70c393fd633c8">Update</a>() {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordtype">int</span> value = <a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a2a844e7cb1de54a3ae0df9db032e1f6b">m_componentBlockEntity</a>.BlockValue;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordtype">int</span> data = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#aa6f6dbf838acc88ea9a9e5944acfac48">m_dispenseButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                data = <a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_function" href="class_game_1_1_dispenser_block.html#a30f7e4913f0b9aea23885b5fc069daf0">SetMode</a>(data, <a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a>.Dispense);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a3e7fb31b9f0414ed4190c85b508cd21c">ReplaceData</a>(value, data);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                m_componentBlockEntity.BlockValue = value;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a5d25a24c4c3389784270b1bf2bfb0fe2">m_shootButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                data = <a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_function" href="class_game_1_1_dispenser_block.html#a30f7e4913f0b9aea23885b5fc069daf0">SetMode</a>(data, <a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a>.Shoot);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a3e7fb31b9f0414ed4190c85b508cd21c">ReplaceData</a>(value, data);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                m_componentBlockEntity.BlockValue = value;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a50249b1bd5b41c6f7beb4ed4bec38cbc">m_acceptsDropsBox</a>.IsClicked) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                data = <a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_function" href="class_game_1_1_dispenser_block.html#ae4723a92a32392f29649a22b11faf4a2">SetAcceptsDrops</a>(data, !<a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_function" href="class_game_1_1_dispenser_block.html#a7752ec16d93150047f5184aca6a19247">GetAcceptsDrops</a>(data));</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a3e7fb31b9f0414ed4190c85b508cd21c">ReplaceData</a>(value, data);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                m_componentBlockEntity.BlockValue = value;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">DispenserBlock.Mode</a> mode = <a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_function" href="class_game_1_1_dispenser_block.html#a86a951830ce7c3f50ff2847d68c17896">GetMode</a>(data);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            m_dispenseButton.IsChecked = mode == <a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a>.Dispense;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            m_shootButton.IsChecked = mode == <a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_enumeration" href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Mode</a>.Shoot;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            m_acceptsDropsBox.IsChecked = <a class="code hl_class" href="class_game_1_1_dispenser_block.html">DispenserBlock</a>.<a class="code hl_function" href="class_game_1_1_dispenser_block.html#a7752ec16d93150047f5184aca6a19247">GetAcceptsDrops</a>(data);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_game_1_1_dispenser_widget.html#a6e92f96125e4ec1962a4471d3ddd7f8e">m_componentDispenser</a>.IsAddedToProject) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <a class="code hl_property" href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">ParentWidget</a>.Children.Remove(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_canvas_widget_html"><div class="ttname"><a href="class_game_1_1_canvas_widget.html">Game.CanvasWidget</a></div><div class="ttdef"><b>定义</b> <a href="_canvas_widget_8cs_source.html#l00004">CanvasWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_checkbox_widget_html"><div class="ttname"><a href="class_game_1_1_checkbox_widget.html">Game.CheckboxWidget</a></div><div class="ttdef"><b>定义</b> <a href="_checkbox_widget_8cs_source.html#l00006">CheckboxWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_block_entity_html"><div class="ttname"><a href="class_game_1_1_component_block_entity.html">Game.ComponentBlockEntity</a></div><div class="ttdef"><b>定义</b> <a href="_component_block_entity_8cs_source.html#l00006">ComponentBlockEntity.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_dispenser_html"><div class="ttname"><a href="class_game_1_1_component_dispenser.html">Game.ComponentDispenser</a></div><div class="ttdef"><b>定义</b> <a href="_component_dispenser_8cs_source.html#l00006">ComponentDispenser.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_component_inventory_base_html_a37c1acb561d4a4ef0c17cb50fa00cf00"><div class="ttname"><a href="class_game_1_1_component_inventory_base.html#a37c1acb561d4a4ef0c17cb50fa00cf00">Game.ComponentInventoryBase.Project</a></div><div class="ttdeci">Project IInventory. Project</div><div class="ttdef"><b>定义</b> <a href="_component_inventory_base_8cs_source.html#l00018">ComponentInventoryBase.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html"><div class="ttname"><a href="class_game_1_1_dispenser_block.html">Game.DispenserBlock</a></div><div class="ttdef"><b>定义</b> <a href="_dispenser_block_8cs_source.html#l00004">DispenserBlock.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a30f7e4913f0b9aea23885b5fc069daf0"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a30f7e4913f0b9aea23885b5fc069daf0">Game.DispenserBlock.SetMode</a></div><div class="ttdeci">static int SetMode(int data, Mode mode)</div><div class="ttdef"><b>定义</b> <a href="_dispenser_block_8cs_source.html#l00068">DispenserBlock.cs:68</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a7752ec16d93150047f5184aca6a19247"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a7752ec16d93150047f5184aca6a19247">Game.DispenserBlock.GetAcceptsDrops</a></div><div class="ttdeci">static bool GetAcceptsDrops(int data)</div><div class="ttdef"><b>定义</b> <a href="_dispenser_block_8cs_source.html#l00070">DispenserBlock.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_a86a951830ce7c3f50ff2847d68c17896"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#a86a951830ce7c3f50ff2847d68c17896">Game.DispenserBlock.GetMode</a></div><div class="ttdeci">static Mode GetMode(int data)</div><div class="ttdef"><b>定义</b> <a href="_dispenser_block_8cs_source.html#l00061">DispenserBlock.cs:61</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_aaf0371b41e8f89039f47c4493bac2784"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#aaf0371b41e8f89039f47c4493bac2784">Game.DispenserBlock.Mode</a></div><div class="ttdeci">Mode</div><div class="ttdef"><b>定义</b> <a href="_dispenser_block_8cs_source.html#l00005">DispenserBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_block_html_ae4723a92a32392f29649a22b11faf4a2"><div class="ttname"><a href="class_game_1_1_dispenser_block.html#ae4723a92a32392f29649a22b11faf4a2">Game.DispenserBlock.SetAcceptsDrops</a></div><div class="ttdeci">static int SetAcceptsDrops(int data, bool acceptsDrops)</div><div class="ttdef"><b>定义</b> <a href="_dispenser_block_8cs_source.html#l00072">DispenserBlock.cs:72</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_a1e966da87e6916592b63c2489582bec0"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#a1e966da87e6916592b63c2489582bec0">Game.DispenserWidget.m_subsystemTerrain</a></div><div class="ttdeci">SubsystemTerrain m_subsystemTerrain</div><div class="ttdef"><b>定义</b> <a href="#l00006">DispenserWidget.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_a2a844e7cb1de54a3ae0df9db032e1f6b"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#a2a844e7cb1de54a3ae0df9db032e1f6b">Game.DispenserWidget.m_componentBlockEntity</a></div><div class="ttdeci">ComponentBlockEntity m_componentBlockEntity</div><div class="ttdef"><b>定义</b> <a href="#l00010">DispenserWidget.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_a2d9e4ae9ccacd4cc7750d014465b8a54"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#a2d9e4ae9ccacd4cc7750d014465b8a54">Game.DispenserWidget.m_dispenserGrid</a></div><div class="ttdeci">GridPanelWidget m_dispenserGrid</div><div class="ttdef"><b>定义</b> <a href="#l00014">DispenserWidget.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_a50249b1bd5b41c6f7beb4ed4bec38cbc"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#a50249b1bd5b41c6f7beb4ed4bec38cbc">Game.DispenserWidget.m_acceptsDropsBox</a></div><div class="ttdeci">CheckboxWidget m_acceptsDropsBox</div><div class="ttdef"><b>定义</b> <a href="#l00020">DispenserWidget.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_a55445c5bcfc40dfd73bf6fb448134eac"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#a55445c5bcfc40dfd73bf6fb448134eac">Game.DispenserWidget.DispenserWidget</a></div><div class="ttdeci">DispenserWidget(IInventory inventory, ComponentDispenser componentDispenser)</div><div class="ttdef"><b>定义</b> <a href="#l00022">DispenserWidget.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_a583a92a3c48293e26a3afb63b9d4e12c"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#a583a92a3c48293e26a3afb63b9d4e12c">Game.DispenserWidget.m_inventoryGrid</a></div><div class="ttdeci">GridPanelWidget m_inventoryGrid</div><div class="ttdef"><b>定义</b> <a href="#l00012">DispenserWidget.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_a5d25a24c4c3389784270b1bf2bfb0fe2"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#a5d25a24c4c3389784270b1bf2bfb0fe2">Game.DispenserWidget.m_shootButton</a></div><div class="ttdeci">ButtonWidget m_shootButton</div><div class="ttdef"><b>定义</b> <a href="#l00018">DispenserWidget.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_a6e92f96125e4ec1962a4471d3ddd7f8e"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#a6e92f96125e4ec1962a4471d3ddd7f8e">Game.DispenserWidget.m_componentDispenser</a></div><div class="ttdeci">ComponentDispenser m_componentDispenser</div><div class="ttdef"><b>定义</b> <a href="#l00008">DispenserWidget.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_a9f169ab3cf0b98a6d1d70c393fd633c8"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#a9f169ab3cf0b98a6d1d70c393fd633c8">Game.DispenserWidget.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00053">DispenserWidget.cs:53</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dispenser_widget_html_aa6f6dbf838acc88ea9a9e5944acfac48"><div class="ttname"><a href="class_game_1_1_dispenser_widget.html#aa6f6dbf838acc88ea9a9e5944acfac48">Game.DispenserWidget.m_dispenseButton</a></div><div class="ttdeci">ButtonWidget m_dispenseButton</div><div class="ttdef"><b>定义</b> <a href="#l00016">DispenserWidget.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_1_1_grid_panel_widget_html"><div class="ttname"><a href="class_game_1_1_grid_panel_widget.html">Game.GridPanelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_grid_panel_widget_8cs_source.html#l00004">GridPanelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_inventory_slot_widget_html"><div class="ttname"><a href="class_game_1_1_inventory_slot_widget.html">Game.InventorySlotWidget</a></div><div class="ttdef"><b>定义</b> <a href="_inventory_slot_widget_8cs_source.html#l00007">InventorySlotWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_inventory_slot_widget_html_a21744d9299eb0e0f047fea71895e296c"><div class="ttname"><a href="class_game_1_1_inventory_slot_widget.html#a21744d9299eb0e0f047fea71895e296c">Game.InventorySlotWidget.AssignInventorySlot</a></div><div class="ttdeci">virtual void AssignInventorySlot(IInventory inventory, int slotIndex)</div><div class="ttdef"><b>定义</b> <a href="_inventory_slot_widget_8cs_source.html#l00189">InventorySlotWidget.cs:189</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html">Game.SubsystemTerrain</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00006">SubsystemTerrain.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a3e7fb31b9f0414ed4190c85b508cd21c"><div class="ttname"><a href="class_game_1_1_terrain.html#a3e7fb31b9f0414ed4190c85b508cd21c">Game.Terrain.ReplaceData</a></div><div class="ttdeci">static int ReplaceData(int value, int data)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00331">Terrain.cs:331</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aec56ea916e034b2e4db00d1814fdadba"><div class="ttname"><a href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">Game.Terrain.ExtractData</a></div><div class="ttdeci">static int ExtractData(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00307">Terrain.cs:307</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a49a806f5e237559162c1632e8dbb9d41"><div class="ttname"><a href="class_game_1_1_widget.html#a49a806f5e237559162c1632e8dbb9d41">Game.Widget.ParentWidget</a></div><div class="ttdeci">ContainerWidget ParentWidget</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00468">Widget.cs:468</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html_aec24711f3e89ec7c119f038deebdcf95"><div class="ttname"><a href="class_game_entity_system_1_1_component.html#aec24711f3e89ec7c119f038deebdcf95">GameEntitySystem.Component.Entity</a></div><div class="ttdeci">Entity Entity</div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00014">Component.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_afbe091d90718bd24bc5b528daa3245cf"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">GameEntitySystem.Entity.FindComponent</a></div><div class="ttdeci">Component FindComponent(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00132">Entity.cs:132</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html"><div class="ttname"><a href="interface_game_1_1_i_inventory.html">Game.IInventory</a></div><div class="ttdef"><b>定义</b> <a href="_i_inventory_8cs_source.html#l00005">IInventory.cs:5</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_point2_html"><div class="ttname"><a href="struct_engine_1_1_point2.html">Engine.Point2</a></div><div class="ttdef"><b>定义</b> <a href="_point2_8cs_source.html#l00002">Point2.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_dispenser_widget_8cs.html">DispenserWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

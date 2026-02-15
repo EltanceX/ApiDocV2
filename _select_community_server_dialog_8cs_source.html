@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Dialog/SelectCommunityServerDialog.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_select_community_server_dialog_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SelectCommunityServerDialog.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_select_community_server_dialog_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#a9a9c86a9b3681bdcd59aec1c25979b32">SelectCommunityServerDialog</a>: <a class="code hl_function" href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Dialog</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">    6</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_list_panel_widget.html">ListPanelWidget</a> <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">m_listPanel</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#a6fc4985e376da6e909248139d8fb7823">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#a6fc4985e376da6e909248139d8fb7823">m_openButton</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#afa348f0b930399444b9e498b139573fb">    8</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#afa348f0b930399444b9e498b139573fb">m_addButton</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#a5edb079fda2c2328c61bd42c9ae0991a">    9</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a> <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#a5edb079fda2c2328c61bd42c9ae0991a">m_editButton</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#a9a9c86a9b3681bdcd59aec1c25979b32">   11</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#a9a9c86a9b3681bdcd59aec1c25979b32">SelectCommunityServerDialog</a>() {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Dialogs/SelectCommunityServerDialog&quot;</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">m_listPanel</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_list_panel_widget.html">ListPanelWidget</a>&gt;(<span class="stringliteral">&quot;SelectCommunityServerDialog.ListPanel&quot;</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#a6fc4985e376da6e909248139d8fb7823">m_openButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;SelectCommunityServerDialog.Open&quot;</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#afa348f0b930399444b9e498b139573fb">m_addButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;SelectCommunityServerDialog.Add&quot;</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#a5edb079fda2c2328c61bd42c9ae0991a">m_editButton</a> = <a class="code hl_variable" href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Children</a>.Find&lt;<a class="code hl_class" href="class_game_1_1_button_widget.html">ButtonWidget</a>&gt;(<span class="stringliteral">&quot;SelectCommunityServerDialog.Edit&quot;</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            m_listPanel.ItemWidgetFactory = o =&gt; {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <span class="keywordflow">if</span> (o is not <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_class" href="class_game_1_1_community_server_manager_1_1_info.html">Info</a> info) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <a class="code hl_class" href="class_game_1_1_label_widget.html">LabelWidget</a> labelWidget = <span class="keyword">new</span> () {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    <a class="code hl_property" href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">HorizontalAlignment</a> = <a class="code hl_enumeration" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">WidgetAlignment</a>.Center,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    <a class="code hl_property" href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">VerticalAlignment</a> = <a class="code hl_enumvalue" href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd">WidgetAlignment.Center</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                };</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keywordflow">if</span> (info == <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager.html#aa08c35cd65d05d8e5bcb94bb221481d2">DefaultOriginalInfo</a>) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    labelWidget.Text = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<span class="stringliteral">&quot;ContentScreen&quot;</span>, <span class="stringliteral">&quot;CommunityType&quot;</span>, <span class="stringliteral">&quot;OriginalCommunity&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (info == <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager.html#a3e0356f63e180baf63eb294eaabecbe9">DefaultChineseInfo</a>) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    labelWidget.Text = <a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<span class="stringliteral">&quot;ContentScreen&quot;</span>, <span class="stringliteral">&quot;CommunityType&quot;</span>, <span class="stringliteral">&quot;ChineseCommunity&quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    labelWidget.Text = info.Name;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keywordflow">return</span> labelWidget;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            m_listPanel.ItemClicked = o =&gt; {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <span class="keywordflow">if</span> (o == <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">m_listPanel</a>.SelectedItem</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    &amp;&amp; o is <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_class" href="class_game_1_1_community_server_manager_1_1_info.html">Info</a> info) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    <a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#a8a98c8802e906db44da92a7fe05d85a4">OpenServerScreen</a>(info);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            };</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#aa7bcfc12127b7f9d79cfb3d5c1e2780a">UpdateServerList</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#aa7bcfc12127b7f9d79cfb3d5c1e2780a">   47</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#aa7bcfc12127b7f9d79cfb3d5c1e2780a">UpdateServerList</a>() {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">m_listPanel</a>.ClearItems();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">m_listPanel</a>.AddItems(<a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_function" href="class_game_1_1_community_server_manager.html#a2b30ad34c2bb2a06f86d38c1e09961d3">GetAllInfos</a>());</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            m_listPanel.ScrollPosition = 0f;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#aa5608f5c81b5a38a3df001b80c65cdbf">   53</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#aa5608f5c81b5a38a3df001b80c65cdbf">AddServer</a>(<a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_class" href="class_game_1_1_community_server_manager_1_1_info.html">Info</a> info) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager.html#af0109809cfa95274bf6ae58d3d185ad1">UserInfos</a>.Add(info);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">m_listPanel</a>.AddItem(info);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            m_listPanel.SelectedItem = info;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#a9d3a13fb1cfca209e0a516ca1fe09dc9">   59</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#a9d3a13fb1cfca209e0a516ca1fe09dc9">RemoveServer</a>(<a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_class" href="class_game_1_1_community_server_manager_1_1_info.html">Info</a> info) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_variable" href="class_game_1_1_community_server_manager.html#af0109809cfa95274bf6ae58d3d185ad1">UserInfos</a>.Remove(info);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">m_listPanel</a>.RemoveItem(info);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#a8a98c8802e906db44da92a7fe05d85a4">   64</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#a8a98c8802e906db44da92a7fe05d85a4">OpenServerScreen</a>(<a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_class" href="class_game_1_1_community_server_manager_1_1_info.html">Info</a> info) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">if</span> (info == <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">switch</span> (info.Type) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">case</span> <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_enumeration" href="class_game_1_1_community_server_manager.html#a3ff2bdd817af5bf410deaf327f040e1a">Type</a>.Original:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_function" href="class_game_1_1_community_server_manager.html#a633ca65218df60e9f37bd92093c40084">ChangeOriginalInfo</a>(info);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<span class="stringliteral">&quot;OriginalCommunityContent&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">case</span> <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_enumeration" href="class_game_1_1_community_server_manager.html#a3ff2bdd817af5bf410deaf327f040e1a">Type</a>.Chinese:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_function" href="class_game_1_1_community_server_manager.html#a61a03ec844807ae5edccf7408beace35">ChangeChineseInfo</a>(info);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<span class="stringliteral">&quot;CommunityContent&quot;</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_game_1_1_select_community_server_dialog.html#a9b764b4fd60e8110a2fb70b1e67fff59">   80</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#a9b764b4fd60e8110a2fb70b1e67fff59">Update</a>() {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">m_listPanel</a>.SelectedItem is <a class="code hl_class" href="class_game_1_1_community_server_manager.html">CommunityServerManager</a>.<a class="code hl_class" href="class_game_1_1_community_server_manager_1_1_info.html">Info</a> selected) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#a6fc4985e376da6e909248139d8fb7823">m_openButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    <a class="code hl_function" href="class_game_1_1_select_community_server_dialog.html#a8a98c8802e906db44da92a7fe05d85a4">OpenServerScreen</a>(selected);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#a5edb079fda2c2328c61bd42c9ae0991a">m_editButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(<span class="keyword">null</span>, <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_edit_community_server_info_dialog.html">EditCommunityServerInfoDialog</a>(<span class="keyword">this</span>, selected));</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_1_1_select_community_server_dialog.html#afa348f0b930399444b9e498b139573fb">m_addButton</a>.IsClicked) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">ShowDialog</a>(<span class="keyword">null</span>, <span class="keyword">new</span> <a class="code hl_class" href="class_game_1_1_edit_community_server_info_dialog.html">EditCommunityServerInfoDialog</a>(<span class="keyword">this</span>));</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.Back</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                || <a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.Cancel</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                || (<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.Tap.HasValue &amp;&amp; !<a class="code hl_function" href="class_game_1_1_widget.html#a512a6f73479d2b32af4ba92f012b918b">HitTest</a>(<a class="code hl_namespace" href="namespace_engine_1_1_input.html">Input</a>.Tap.Value))) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">HideDialog</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+<div class="ttc" id="aclass_game_1_1_button_widget_html"><div class="ttname"><a href="class_game_1_1_button_widget.html">Game.ButtonWidget</a></div><div class="ttdef"><b>定义</b> <a href="_button_widget_8cs_source.html#l00005">ButtonWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_1_1_info_html"><div class="ttname"><a href="class_game_1_1_community_server_manager_1_1_info.html">Game.CommunityServerManager.Info</a></div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00008">CommunityServerManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html"><div class="ttname"><a href="class_game_1_1_community_server_manager.html">Game.CommunityServerManager</a></div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00002">CommunityServerManager.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html_a2b30ad34c2bb2a06f86d38c1e09961d3"><div class="ttname"><a href="class_game_1_1_community_server_manager.html#a2b30ad34c2bb2a06f86d38c1e09961d3">Game.CommunityServerManager.GetAllInfos</a></div><div class="ttdeci">static IEnumerable&lt; Info &gt; GetAllInfos()</div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00057">CommunityServerManager.cs:57</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html_a3e0356f63e180baf63eb294eaabecbe9"><div class="ttname"><a href="class_game_1_1_community_server_manager.html#a3e0356f63e180baf63eb294eaabecbe9">Game.CommunityServerManager.DefaultChineseInfo</a></div><div class="ttdeci">static Info DefaultChineseInfo</div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00050">CommunityServerManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html_a3ff2bdd817af5bf410deaf327f040e1a"><div class="ttname"><a href="class_game_1_1_community_server_manager.html#a3ff2bdd817af5bf410deaf327f040e1a">Game.CommunityServerManager.Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00003">CommunityServerManager.cs:3</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html_a61a03ec844807ae5edccf7408beace35"><div class="ttname"><a href="class_game_1_1_community_server_manager.html#a61a03ec844807ae5edccf7408beace35">Game.CommunityServerManager.ChangeChineseInfo</a></div><div class="ttdeci">static void ChangeChineseInfo(Info info)</div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00083">CommunityServerManager.cs:83</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html_a633ca65218df60e9f37bd92093c40084"><div class="ttname"><a href="class_game_1_1_community_server_manager.html#a633ca65218df60e9f37bd92093c40084">Game.CommunityServerManager.ChangeOriginalInfo</a></div><div class="ttdeci">static void ChangeOriginalInfo(Info info)</div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00075">CommunityServerManager.cs:75</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html_aa08c35cd65d05d8e5bcb94bb221481d2"><div class="ttname"><a href="class_game_1_1_community_server_manager.html#aa08c35cd65d05d8e5bcb94bb221481d2">Game.CommunityServerManager.DefaultOriginalInfo</a></div><div class="ttdeci">static Info DefaultOriginalInfo</div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00049">CommunityServerManager.cs:49</a></div></div>
+<div class="ttc" id="aclass_game_1_1_community_server_manager_html_af0109809cfa95274bf6ae58d3d185ad1"><div class="ttname"><a href="class_game_1_1_community_server_manager.html#af0109809cfa95274bf6ae58d3d185ad1">Game.CommunityServerManager.UserInfos</a></div><div class="ttdeci">static List&lt; Info &gt; UserInfos</div><div class="ttdef"><b>定义</b> <a href="_community_server_manager_8cs_source.html#l00053">CommunityServerManager.cs:53</a></div></div>
+<div class="ttc" id="aclass_game_1_1_container_widget_html_a420ceab79758eaed2d2de503f3347249"><div class="ttname"><a href="class_game_1_1_container_widget.html#a420ceab79758eaed2d2de503f3347249">Game.ContainerWidget.Children</a></div><div class="ttdeci">readonly WidgetsList Children</div><div class="ttdef"><b>定义</b> <a href="_container_widget_8cs_source.html#l00005">ContainerWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialog_html_a6b78fd0c524e930298bbfe02c896866f"><div class="ttname"><a href="class_game_1_1_dialog.html#a6b78fd0c524e930298bbfe02c896866f">Game.Dialog.Dialog</a></div><div class="ttdeci">Dialog()</div><div class="ttdef"><b>定义</b> <a href="_dialog_8cs_source.html#l00005">Dialog.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html">Game.DialogsManager</a></div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00004">DialogsManager.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_a1924cf0e777145d7e36ec311d686c7e4"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#a1924cf0e777145d7e36ec311d686c7e4">Game.DialogsManager.HideDialog</a></div><div class="ttdeci">static void HideDialog(Dialog dialog)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00058">DialogsManager.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_affe2cf99704932f650a2bffa6eefa833"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#affe2cf99704932f650a2bffa6eefa833">Game.DialogsManager.ShowDialog</a></div><div class="ttdeci">static void ShowDialog(ContainerWidget parentWidget, Dialog dialog)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00035">DialogsManager.cs:35</a></div></div>
+<div class="ttc" id="aclass_game_1_1_edit_community_server_info_dialog_html"><div class="ttname"><a href="class_game_1_1_edit_community_server_info_dialog.html">Game.EditCommunityServerInfoDialog</a></div><div class="ttdef"><b>定义</b> <a href="_edit_community_server_info_dialog_8cs_source.html#l00004">EditCommunityServerInfoDialog.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_label_widget_html"><div class="ttname"><a href="class_game_1_1_label_widget.html">Game.LabelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_label_widget_8cs_source.html#l00004">LabelWidget.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_list_panel_widget_html"><div class="ttname"><a href="class_game_1_1_list_panel_widget.html">Game.ListPanelWidget</a></div><div class="ttdef"><b>定义</b> <a href="_list_panel_widget_8cs_source.html#l00005">ListPanelWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html"><div class="ttname"><a href="class_game_1_1_screens_manager.html">Game.ScreensManager</a></div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00005">ScreensManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a90614198a66aec078d9d00cfcbcd49a1"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">Game.ScreensManager.SwitchScreen</a></div><div class="ttdeci">static void SwitchScreen(string name, params object[] parameters)</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00065">ScreensManager.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_a5edb079fda2c2328c61bd42c9ae0991a"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#a5edb079fda2c2328c61bd42c9ae0991a">Game.SelectCommunityServerDialog.m_editButton</a></div><div class="ttdeci">ButtonWidget m_editButton</div><div class="ttdef"><b>定义</b> <a href="#l00009">SelectCommunityServerDialog.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_a6fc4985e376da6e909248139d8fb7823"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#a6fc4985e376da6e909248139d8fb7823">Game.SelectCommunityServerDialog.m_openButton</a></div><div class="ttdeci">ButtonWidget m_openButton</div><div class="ttdef"><b>定义</b> <a href="#l00007">SelectCommunityServerDialog.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_a8a98c8802e906db44da92a7fe05d85a4"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#a8a98c8802e906db44da92a7fe05d85a4">Game.SelectCommunityServerDialog.OpenServerScreen</a></div><div class="ttdeci">void OpenServerScreen(CommunityServerManager.Info info)</div><div class="ttdef"><b>定义</b> <a href="#l00064">SelectCommunityServerDialog.cs:64</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_a9a9c86a9b3681bdcd59aec1c25979b32"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#a9a9c86a9b3681bdcd59aec1c25979b32">Game.SelectCommunityServerDialog.SelectCommunityServerDialog</a></div><div class="ttdeci">SelectCommunityServerDialog()</div><div class="ttdef"><b>定义</b> <a href="#l00011">SelectCommunityServerDialog.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_a9b764b4fd60e8110a2fb70b1e67fff59"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#a9b764b4fd60e8110a2fb70b1e67fff59">Game.SelectCommunityServerDialog.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00080">SelectCommunityServerDialog.cs:80</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_a9d3a13fb1cfca209e0a516ca1fe09dc9"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#a9d3a13fb1cfca209e0a516ca1fe09dc9">Game.SelectCommunityServerDialog.RemoveServer</a></div><div class="ttdeci">void RemoveServer(CommunityServerManager.Info info)</div><div class="ttdef"><b>定义</b> <a href="#l00059">SelectCommunityServerDialog.cs:59</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_aa5608f5c81b5a38a3df001b80c65cdbf"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#aa5608f5c81b5a38a3df001b80c65cdbf">Game.SelectCommunityServerDialog.AddServer</a></div><div class="ttdeci">void AddServer(CommunityServerManager.Info info)</div><div class="ttdef"><b>定义</b> <a href="#l00053">SelectCommunityServerDialog.cs:53</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_aa7bcfc12127b7f9d79cfb3d5c1e2780a"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#aa7bcfc12127b7f9d79cfb3d5c1e2780a">Game.SelectCommunityServerDialog.UpdateServerList</a></div><div class="ttdeci">void UpdateServerList()</div><div class="ttdef"><b>定义</b> <a href="#l00047">SelectCommunityServerDialog.cs:47</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_abfaa4afac06c4a21f6da38649931991a"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#abfaa4afac06c4a21f6da38649931991a">Game.SelectCommunityServerDialog.m_listPanel</a></div><div class="ttdeci">ListPanelWidget m_listPanel</div><div class="ttdef"><b>定义</b> <a href="#l00006">SelectCommunityServerDialog.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_select_community_server_dialog_html_afa348f0b930399444b9e498b139573fb"><div class="ttname"><a href="class_game_1_1_select_community_server_dialog.html#afa348f0b930399444b9e498b139573fb">Game.SelectCommunityServerDialog.m_addButton</a></div><div class="ttdeci">ButtonWidget m_addButton</div><div class="ttdef"><b>定义</b> <a href="#l00008">SelectCommunityServerDialog.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a512a6f73479d2b32af4ba92f012b918b"><div class="ttname"><a href="class_game_1_1_widget.html#a512a6f73479d2b32af4ba92f012b918b">Game.Widget.HitTest</a></div><div class="ttdeci">virtual bool HitTest(Vector2 point)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00686">Widget.cs:686</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a605213e7e1ce146f1b191a24ccd09fbb"><div class="ttname"><a href="class_game_1_1_widget.html#a605213e7e1ce146f1b191a24ccd09fbb">Game.Widget.VerticalAlignment</a></div><div class="ttdeci">virtual WidgetAlignment VerticalAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00445">Widget.cs:445</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a7f6aa568376ef5e1c5acdd1d879e860a"><div class="ttname"><a href="class_game_1_1_widget.html#a7f6aa568376ef5e1c5acdd1d879e860a">Game.Widget.HorizontalAlignment</a></div><div class="ttdeci">virtual WidgetAlignment HorizontalAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00443">Widget.cs:443</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_input_html"><div class="ttname"><a href="namespace_engine_1_1_input.html">Engine.Input</a></div><div class="ttdef"><b>定义</b> <a href="_cursor_type_8cs_source.html#l00001">CursorType.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_ab4e40cd76f07a77bf33d7a814c4126eb"><div class="ttname"><a href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eb">Game.WidgetAlignment</a></div><div class="ttdeci">WidgetAlignment</div><div class="ttdef"><b>定义</b> <a href="_widget_alignment_8cs_source.html#l00002">WidgetAlignment.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html_ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd"><div class="ttname"><a href="namespace_game.html#ab4e40cd76f07a77bf33d7a814c4126eba4f1f6016fc9f3f2353c0cc7c67b292bd">Game.WidgetAlignment.Center</a></div><div class="ttdeci">@ Center</div><div class="ttdef"><b>定义</b> <a href="_widget_alignment_8cs_source.html#l00004">WidgetAlignment.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_b6205966024a0faf73eb78e73558e78e.html">Dialog</a></li><li class="navelem"><a href="_select_community_server_dialog_8cs.html">SelectCommunityServerDialog.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

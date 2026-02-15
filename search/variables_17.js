@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['w_0',['W',['../struct_engine_1_1_quaternion.html#a79ba2d0e5e57aef29f21614269aae920',1,'Engine.Quaternion.W'],['../struct_engine_1_1_vector4.html#a610f7a18761a59e09986e2c678cb6bcd',1,'Engine.Vector4.W']]],
+  ['warning_1',['Warning',['../class_game_1_1_language_control.html#aee6dbe7f3ed66684c934047a32457d65',1,'Game::LanguageControl']]],
+  ['wasdowngraded_2',['WasDowngraded',['../class_game_1_1_terrain_chunk.html#a30f8a222e9fdcdb34ea79c7b43fef9ff',1,'Game::TerrainChunk']]],
+  ['wasupgraded_3',['WasUpgraded',['../class_game_1_1_terrain_chunk.html#acd9a734c4eaaf467890e3c9450ceebf6',1,'Game::TerrainChunk']]],
+  ['water_4',['Water',['../class_game_1_1_block_colors_map.html#ac9f98cd13d0f003de6b6a99f933e4237',1,'Game::BlockColorsMap']]],
+  ['watercreaturekills_5',['WaterCreatureKills',['../class_game_1_1_player_stats.html#ab5481bbf2aae94a644f6017a1629cc79',1,'Game::PlayerStats']]],
+  ['wave_6',['Wave',['../struct_engine_1_1_media_1_1_wav_1_1_wav_header.html#a7927b7b7c8648bd8bf8cb325a225680b',1,'Engine::Media::Wav::WavHeader']]],
+  ['websiteurl_7',['WebsiteUrl',['../class_game_1_1_community_server_manager_1_1_info.html#ab093322c23e555264f946c2c10200d16',1,'Game::CommunityServerManager::Info']]],
+  ['white_8',['White',['../struct_engine_1_1_color.html#a4e57f347f3c15133444b3f62f18a8221',1,'Engine::Color']]],
+  ['widget_9',['Widget',['../class_game_1_1_motd_widget_1_1_line_data.html#ad9ead8322c0557b30114fafc64d51bb5',1,'Game.MotdWidget.LineData.Widget'],['../class_game_1_1_widget_1_1_draw_item.html#a212387b0032adbfc03fa349b11ffdcd6',1,'Game.Widget.DrawItem.Widget']]],
+  ['width_10',['Width',['../struct_engine_1_1_graphics_1_1_viewport.html#aa5199980dc8b1b1ef428e4afff7312a9',1,'Engine.Graphics.Viewport.Width'],['../class_engine_1_1_media_1_1_bitmap_font_1_1_glyph.html#a39d0b29c229645a9637bb4c2c9ffaefc',1,'Engine.Media.BitmapFont.Glyph.Width'],['../struct_engine_1_1_media_1_1_bmp_1_1_bmp_info.html#a60c3d637cc12376d32861b532f0ff7fa',1,'Engine.Media.Bmp.BmpInfo.Width'],['../struct_engine_1_1_media_1_1_bmp_1_1_bitmap_header.html#aa141ce17af5fa4b195ea8c27fbc3501b',1,'Engine.Media.Bmp.BitmapHeader.Width'],['../class_engine_1_1_media_1_1_legacy_image.html#a5cfa2b2bc082ac9872a6fe278db1ce7e',1,'Engine.Media.LegacyImage.Width'],['../struct_engine_1_1_media_1_1_png_1_1_png_info.html#a05feada87e0e22c020e2df306d52ff3c',1,'Engine.Media.Png.PngInfo.Width'],['../struct_engine_1_1_box.html#aca5c689dbbec77d9c5779d87edce722e',1,'Engine.Box.Width'],['../struct_engine_1_1_rectangle.html#a505d87786aeba145edbd7b7769c4ac57',1,'Engine.Rectangle.Width']]],
+  ['windowbit_11',['WindowBit',['../class_engine_1_1_graphics_1_1_egl.html#aed812487854258a47eb1801c9ff5ddf4',1,'Engine::Graphics::Egl']]],
+  ['windowinglibrary_12',['WindowingLibrary',['../class_engine_1_1_window.html#a312b7c5d784f3fc4e3c409ccb5c02e43',1,'Engine::Window']]],
+  ['winterinterval_13',['WinterInterval',['../class_game_1_1_deciduous_leaves_block.html#a2544d4f7a3a180fb5ca8d3feb96a57aa',1,'Game::DeciduousLeavesBlock']]],
+  ['winterintervalinv_14',['WinterIntervalInv',['../class_game_1_1_deciduous_leaves_block.html#aebc4bd330462d884aa4d8b65e731e8c4',1,'Game::DeciduousLeavesBlock']]],
+  ['winterstart_15',['WinterStart',['../class_game_1_1_deciduous_leaves_block.html#ac4f108de286f7fa160cca7f1221fae84',1,'Game.DeciduousLeavesBlock.WinterStart'],['../class_game_1_1_subsystem_seasons.html#a6153107e37c4ad2d7028b2b30056c4b6',1,'Game.SubsystemSeasons.WinterStart']]],
+  ['wirecolor_16',['WireColor',['../class_game_1_1_wire_block.html#a5eb000524175d7b9c87b1c223f31068d',1,'Game::WireBlock']]],
+  ['worldsdirectoryname_17',['WorldsDirectoryName',['../class_game_1_1_worlds_manager.html#a63c839d4b2b63011e3c5974a667679aa',1,'Game.WorldsManager.WorldsDirectoryName'],['../class_mods_manager.html#a7876423a6c5f30baedb5252adb7d5571',1,'ModsManager.WorldsDirectoryName']]],
+  ['worldseed_18',['WorldSeed',['../class_game_1_1_world_settings.html#af6291dd9866b054acfe568800b82ee35',1,'Game::WorldSettings']]],
+  ['worldsettings_19',['WorldSettings',['../class_game_1_1_world_info.html#a1c77e89ff0a5d27e4382d9d51661d60e',1,'Game::WorldInfo']]],
+  ['worstcasechunkdatasize_20',['WorstCaseChunkDataSize',['../class_game_1_1_terrain_serializer23.html#a4c3f77fb49a3712d576ff1894ce71567',1,'Game::TerrainSerializer23']]],
+  ['write_21',['Write',['../class_engine_1_1_serialization_1_1_archive_1_1_serialize_data.html#a1e0f1856c2ea1852d2ab23d85f1e2269',1,'Engine::Serialization::Archive::SerializeData']]],
+  ['writegeneric_22',['WriteGeneric',['../class_engine_1_1_serialization_1_1_archive_1_1_serialize_data-1-g.html#a1fbb599a898cb84c92d5c17f3987576b',1,'Engine::Serialization::Archive::SerializeData-1-g']]],
+  ['writer_23',['Writer',['../class_game_1_1_terrain_serializer23_1_1_single_file_storage.html#accb940c6cbe7f799db695da9e4d94304',1,'Game::TerrainSerializer23::SingleFileStorage']]]
+];

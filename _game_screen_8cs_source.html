@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Screen/GameScreen.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_game_screen_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GameScreen.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_screen_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_game_screen.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_game_screen.html#a8d6fa8b80639daae43489ae9608b0bd6">GameScreen</a> : <a class="code hl_class" href="class_game_1_1_screen.html">Screen</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_game_screen.html#aae91cbdf8bf03935e9c894e4893fb094">    7</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_game_1_1_game_screen.html#aae91cbdf8bf03935e9c894e4893fb094">m_lastAutosaveTime</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_game_screen.html#a8d6fa8b80639daae43489ae9608b0bd6">    9</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_game_1_1_game_screen.html#a8d6fa8b80639daae43489ae9608b0bd6">GameScreen</a>() {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            XElement node = <a class="code hl_class" href="class_game_1_1_content_manager.html">ContentManager</a>.<a class="code hl_function" href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Get</a>&lt;XElement&gt;(<span class="stringliteral">&quot;Screens/GameScreen&quot;</span>);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <a class="code hl_function" href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">LoadContents</a>(<span class="keyword">this</span>, node);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <a class="code hl_property" href="class_game_1_1_widget.html#ab7453bbe06dbc7188b1d2a6d95e7663e">IsDrawRequired</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <a class="code hl_event" href="class_engine_1_1_window.html#a78b0e31756f20fe6b7752d3d3d2f4e12">Window.Deactivated</a> += delegate { <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#a9d44af0aa1e6d97ec3e99a3c50084369">SaveProject</a>(<span class="keyword">true</span>, <span class="keyword">false</span>); };</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_event" href="class_engine_1_1_window.html#a1ef7534450d47ff644d5bed19862589a">Window.Closed</a> += delegate { <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#ae9feebf60b1f66fb5475942b1e869d36">DisposeProject</a>(); };</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        }</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_game_screen.html#ae2b04db71d23da51e2fd8f7c8188cd01">   17</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_game_screen.html#ae2b04db71d23da51e2fd8f7c8188cd01">Enter</a>(<span class="keywordtype">object</span>[] parameters) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_property" href="class_game_1_1_game_manager.html#af5605c0cef4840a9f3a28db18f0ed70e">Project</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_property" href="class_game_1_1_game_manager.html#af5605c0cef4840a9f3a28db18f0ed70e">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a>&gt;(<span class="keyword">true</span>).Unmute();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_class" href="class_game_1_1_music_manager.html">MusicManager</a>.<a class="code hl_function" href="class_game_1_1_music_manager.html#a84066da1b640744a15c338b4a87566ce">StopMusic</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_property" href="class_game_1_1_music_manager.html#a83d423f9e53c2731ec8c7c7a2c8dcc38">MusicManager.CurrentMix</a> = <a class="code hl_class" href="class_game_1_1_music_manager.html">MusicManager</a>.<a class="code hl_enumeration" href="class_game_1_1_music_manager.html#a87aca6db2a87cef2e3eb1f82cd6bb0d0">Mix</a>.InGame;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        }</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_game_1_1_game_screen.html#aaab8b1a7451915dd74331ba69e50a110">   25</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_game_screen.html#aaab8b1a7451915dd74331ba69e50a110">Leave</a>() {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_property" href="class_game_1_1_game_manager.html#af5605c0cef4840a9f3a28db18f0ed70e">Project</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_property" href="class_game_1_1_game_manager.html#af5605c0cef4840a9f3a28db18f0ed70e">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_audio.html">SubsystemAudio</a>&gt;(<span class="keyword">true</span>).Mute();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#a9d44af0aa1e6d97ec3e99a3c50084369">SaveProject</a>(<span class="keyword">true</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_function" href="class_game_1_1_game_screen.html#ae0a3b0aa2f745f80332b3a967e5d4acb">ShowHideCursors</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_property" href="class_game_1_1_music_manager.html#a83d423f9e53c2731ec8c7c7a2c8dcc38">MusicManager.CurrentMix</a> = <a class="code hl_class" href="class_game_1_1_music_manager.html">MusicManager</a>.<a class="code hl_enumeration" href="class_game_1_1_music_manager.html#a87aca6db2a87cef2e3eb1f82cd6bb0d0">Mix</a>.Menu;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game_1_1_game_screen.html#a47b79f41c0ae7ae20127d2d1da40a809">   34</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_game_screen.html#a47b79f41c0ae7ae20127d2d1da40a809">Update</a>() {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_property" href="class_game_1_1_game_manager.html#af5605c0cef4840a9f3a28db18f0ed70e">Project</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keywordtype">double</span> realTime = <a class="code hl_class" href="class_engine_1_1_time.html">Time</a>.<a class="code hl_property" href="class_engine_1_1_time.html#a63eb19822fad10dd51bcb578f7f2f66c">RealTime</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">if</span> (realTime - <a class="code hl_variable" href="class_game_1_1_game_screen.html#aae91cbdf8bf03935e9c894e4893fb094">m_lastAutosaveTime</a> &gt; 300.0) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <a class="code hl_variable" href="class_game_1_1_game_screen.html#aae91cbdf8bf03935e9c894e4893fb094">m_lastAutosaveTime</a> = realTime;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#a9d44af0aa1e6d97ec3e99a3c50084369">SaveProject</a>(<span class="keyword">false</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    <a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_function" href="class_game_1_1_settings_manager.html#accb1f0d6fb9c27e4f3eaf1e1e6cbfa1c">SaveSettings</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="class_game_1_1_marketplace_manager.html">MarketplaceManager</a>.<a class="code hl_property" href="class_game_1_1_marketplace_manager.html#a51ea817b3fc226435c9d4b386e5a4bbf">IsTrialMode</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    &amp;&amp; <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_property" href="class_game_1_1_game_manager.html#af5605c0cef4840a9f3a28db18f0ed70e">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_game_info.html">SubsystemGameInfo</a>&gt;(<span class="keyword">true</span>).<a class="code hl_property" href="class_game_1_1_subsystem_game_info.html#ac7faea3a4a0dcb1d6bbab336b0bdb9b1">TotalElapsedGameTime</a> &gt; 1140.0) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#a9d44af0aa1e6d97ec3e99a3c50084369">SaveProject</a>(<span class="keyword">true</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#ae9feebf60b1f66fb5475942b1e869d36">DisposeProject</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_function" href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">SwitchScreen</a>(<span class="stringliteral">&quot;TrialEnded&quot;</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_function" href="class_game_1_1_game_manager.html#adde91a566818885ad216026875d3a35d">UpdateProject</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_function" href="class_game_1_1_game_screen.html#ae0a3b0aa2f745f80332b3a967e5d4acb">ShowHideCursors</a>(</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <a class="code hl_class" href="class_game_1_1_game_manager.html">GameManager</a>.<a class="code hl_property" href="class_game_1_1_game_manager.html#af5605c0cef4840a9f3a28db18f0ed70e">Project</a> == <span class="keyword">null</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                || <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a4d11f6de28ab09db818b6c7c61cc2aaf">HasDialogs</a>(<span class="keyword">this</span>)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                || <a class="code hl_class" href="class_game_1_1_dialogs_manager.html">DialogsManager</a>.<a class="code hl_function" href="class_game_1_1_dialogs_manager.html#a4d11f6de28ab09db818b6c7c61cc2aaf">HasDialogs</a>(<a class="code hl_property" href="class_game_1_1_widget.html#a156ee6b518c3155e86fe2bc06be6a295">RootWidget</a>)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                || <a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_property" href="class_game_1_1_screens_manager.html#ac7f8efcd9e6955759ccbffc1b627bb6a">CurrentScreen</a> != <span class="keyword">this</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            );</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_game_1_1_game_screen.html#a6c1463a34a9b8405e980e6c2597f4b06">   58</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_game_screen.html#a6c1463a34a9b8405e980e6c2597f4b06">Draw</a>(<a class="code hl_class" href="class_game_1_1_widget_1_1_draw_context.html">DrawContext</a> dc) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_screens_manager.html">ScreensManager</a>.<a class="code hl_property" href="class_game_1_1_screens_manager.html#a9098eec179c4f71074ea33409ba51575">IsAnimating</a></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                &amp;&amp; <a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_property" href="class_game_1_1_settings_manager.html#abfff2d3904ecae2b67f615c8b83fe986">ResolutionMode</a> == <a class="code hl_enumeration" href="namespace_game.html#a52a75f30e2f6c67dbf4a53de6e080c65">ResolutionMode</a>.High) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_display.html">Display</a>.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_display.html#a156730067b107ea7862728346defb9f1">Clear</a>(<a class="code hl_struct" href="struct_engine_1_1_color.html">Color</a>.<a class="code hl_variable" href="struct_engine_1_1_color.html#afad4ce37dd9c936a0d07086faede234f">Black</a>, 1f, 0);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_game_1_1_game_screen.html#ae0a3b0aa2f745f80332b3a967e5d4acb">   65</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_game_screen.html#ae0a3b0aa2f745f80332b3a967e5d4acb">ShowHideCursors</a>(<span class="keywordtype">bool</span> show) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            Input.IsMouseCursorVisible = show;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            Input.IsPadCursorVisible = show;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_display_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_display.html">Engine.Graphics.Display</a></div><div class="ttdef"><b>定义</b> <a href="_display_8cs_source.html#l00011">Display.cs:11</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_display_html_a156730067b107ea7862728346defb9f1"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_display.html#a156730067b107ea7862728346defb9f1">Engine.Graphics.Display.Clear</a></div><div class="ttdeci">static void Clear(Vector4? color, float? depth=null, int? stencil=null)</div><div class="ttdef"><b>定义</b> <a href="_display_8cs_source.html#l00255">Display.cs:255</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_time_html"><div class="ttname"><a href="class_engine_1_1_time.html">Engine.Time</a></div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00004">Time.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_time_html_a63eb19822fad10dd51bcb578f7f2f66c"><div class="ttname"><a href="class_engine_1_1_time.html#a63eb19822fad10dd51bcb578f7f2f66c">Engine.Time.RealTime</a></div><div class="ttdeci">static double RealTime</div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00038">Time.cs:38</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_window_html_a1ef7534450d47ff644d5bed19862589a"><div class="ttname"><a href="class_engine_1_1_window.html#a1ef7534450d47ff644d5bed19862589a">Engine.Window.Closed</a></div><div class="ttdeci">static Action Closed</div><div class="ttdef"><b>定义</b> <a href="_window_8cs_source.html#l00374">Window.cs:374</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_window_html_a78b0e31756f20fe6b7752d3d3d2f4e12"><div class="ttname"><a href="class_engine_1_1_window.html#a78b0e31756f20fe6b7752d3d3d2f4e12">Engine.Window.Deactivated</a></div><div class="ttdeci">static Action Deactivated</div><div class="ttdef"><b>定义</b> <a href="_window_8cs_source.html#l00372">Window.cs:372</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html"><div class="ttname"><a href="class_game_1_1_content_manager.html">Game.ContentManager</a></div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00050">ContentManager.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_1_1_content_manager_html_a51b81475f5bb3faeeee38b7285c0f2ff"><div class="ttname"><a href="class_game_1_1_content_manager.html#a51b81475f5bb3faeeee38b7285c0f2ff">Game.ContentManager.Get</a></div><div class="ttdeci">static object Get(Type type, string name)</div><div class="ttdef"><b>定义</b> <a href="_content_manager_8cs_source.html#l00070">ContentManager.cs:70</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html">Game.DialogsManager</a></div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00004">DialogsManager.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_dialogs_manager_html_a4d11f6de28ab09db818b6c7c61cc2aaf"><div class="ttname"><a href="class_game_1_1_dialogs_manager.html#a4d11f6de28ab09db818b6c7c61cc2aaf">Game.DialogsManager.HasDialogs</a></div><div class="ttdeci">static bool HasDialogs(Widget parentWidget)</div><div class="ttdef"><b>定义</b> <a href="_dialogs_manager_8cs_source.html#l00023">DialogsManager.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_manager_html"><div class="ttname"><a href="class_game_1_1_game_manager.html">Game.GameManager</a></div><div class="ttdef"><b>定义</b> <a href="_game_manager_8cs_source.html#l00008">GameManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_manager_html_a9d44af0aa1e6d97ec3e99a3c50084369"><div class="ttname"><a href="class_game_1_1_game_manager.html#a9d44af0aa1e6d97ec3e99a3c50084369">Game.GameManager.SaveProject</a></div><div class="ttdeci">static void SaveProject(bool waitForCompletion, bool showErrorDialog)</div><div class="ttdef"><b>定义</b> <a href="_game_manager_8cs_source.html#l00117">GameManager.cs:117</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_manager_html_adde91a566818885ad216026875d3a35d"><div class="ttname"><a href="class_game_1_1_game_manager.html#adde91a566818885ad216026875d3a35d">Game.GameManager.UpdateProject</a></div><div class="ttdeci">static void UpdateProject()</div><div class="ttdef"><b>定义</b> <a href="_game_manager_8cs_source.html#l00183">GameManager.cs:183</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_manager_html_ae9feebf60b1f66fb5475942b1e869d36"><div class="ttname"><a href="class_game_1_1_game_manager.html#ae9feebf60b1f66fb5475942b1e869d36">Game.GameManager.DisposeProject</a></div><div class="ttdeci">static void DisposeProject()</div><div class="ttdef"><b>定义</b> <a href="_game_manager_8cs_source.html#l00193">GameManager.cs:193</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_manager_html_af5605c0cef4840a9f3a28db18f0ed70e"><div class="ttname"><a href="class_game_1_1_game_manager.html#af5605c0cef4840a9f3a28db18f0ed70e">Game.GameManager.Project</a></div><div class="ttdeci">static Project Project</div><div class="ttdef"><b>定义</b> <a href="_game_manager_8cs_source.html#l00017">GameManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_screen_html_a47b79f41c0ae7ae20127d2d1da40a809"><div class="ttname"><a href="class_game_1_1_game_screen.html#a47b79f41c0ae7ae20127d2d1da40a809">Game.GameScreen.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00034">GameScreen.cs:34</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_screen_html_a6c1463a34a9b8405e980e6c2597f4b06"><div class="ttname"><a href="class_game_1_1_game_screen.html#a6c1463a34a9b8405e980e6c2597f4b06">Game.GameScreen.Draw</a></div><div class="ttdeci">override void Draw(DrawContext dc)</div><div class="ttdef"><b>定义</b> <a href="#l00058">GameScreen.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_screen_html_a8d6fa8b80639daae43489ae9608b0bd6"><div class="ttname"><a href="class_game_1_1_game_screen.html#a8d6fa8b80639daae43489ae9608b0bd6">Game.GameScreen.GameScreen</a></div><div class="ttdeci">GameScreen()</div><div class="ttdef"><b>定义</b> <a href="#l00009">GameScreen.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_screen_html_aaab8b1a7451915dd74331ba69e50a110"><div class="ttname"><a href="class_game_1_1_game_screen.html#aaab8b1a7451915dd74331ba69e50a110">Game.GameScreen.Leave</a></div><div class="ttdeci">override void Leave()</div><div class="ttdef"><b>定义</b> <a href="#l00025">GameScreen.cs:25</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_screen_html_aae91cbdf8bf03935e9c894e4893fb094"><div class="ttname"><a href="class_game_1_1_game_screen.html#aae91cbdf8bf03935e9c894e4893fb094">Game.GameScreen.m_lastAutosaveTime</a></div><div class="ttdeci">double m_lastAutosaveTime</div><div class="ttdef"><b>定义</b> <a href="#l00007">GameScreen.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_screen_html_ae0a3b0aa2f745f80332b3a967e5d4acb"><div class="ttname"><a href="class_game_1_1_game_screen.html#ae0a3b0aa2f745f80332b3a967e5d4acb">Game.GameScreen.ShowHideCursors</a></div><div class="ttdeci">void ShowHideCursors(bool show)</div><div class="ttdef"><b>定义</b> <a href="#l00065">GameScreen.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_game_screen_html_ae2b04db71d23da51e2fd8f7c8188cd01"><div class="ttname"><a href="class_game_1_1_game_screen.html#ae2b04db71d23da51e2fd8f7c8188cd01">Game.GameScreen.Enter</a></div><div class="ttdeci">override void Enter(object[] parameters)</div><div class="ttdef"><b>定义</b> <a href="#l00017">GameScreen.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_marketplace_manager_html"><div class="ttname"><a href="class_game_1_1_marketplace_manager.html">Game.MarketplaceManager</a></div><div class="ttdef"><b>定义</b> <a href="_marketplace_manager_8cs_source.html#l00002">MarketplaceManager.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_marketplace_manager_html_a51ea817b3fc226435c9d4b386e5a4bbf"><div class="ttname"><a href="class_game_1_1_marketplace_manager.html#a51ea817b3fc226435c9d4b386e5a4bbf">Game.MarketplaceManager.IsTrialMode</a></div><div class="ttdeci">static bool IsTrialMode</div><div class="ttdef"><b>定义</b> <a href="_marketplace_manager_8cs_source.html#l00007">MarketplaceManager.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_music_manager_html"><div class="ttname"><a href="class_game_1_1_music_manager.html">Game.MusicManager</a></div><div class="ttdef"><b>定义</b> <a href="_music_manager_8cs_source.html#l00006">MusicManager.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_music_manager_html_a83d423f9e53c2731ec8c7c7a2c8dcc38"><div class="ttname"><a href="class_game_1_1_music_manager.html#a83d423f9e53c2731ec8c7c7a2c8dcc38">Game.MusicManager.CurrentMix</a></div><div class="ttdeci">static Mix CurrentMix</div><div class="ttdef"><b>定义</b> <a href="_music_manager_8cs_source.html#l00032">MusicManager.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_music_manager_html_a84066da1b640744a15c338b4a87566ce"><div class="ttname"><a href="class_game_1_1_music_manager.html#a84066da1b640744a15c338b4a87566ce">Game.MusicManager.StopMusic</a></div><div class="ttdeci">static void StopMusic()</div><div class="ttdef"><b>定义</b> <a href="_music_manager_8cs_source.html#l00163">MusicManager.cs:163</a></div></div>
+<div class="ttc" id="aclass_game_1_1_music_manager_html_a87aca6db2a87cef2e3eb1f82cd6bb0d0"><div class="ttname"><a href="class_game_1_1_music_manager.html#a87aca6db2a87cef2e3eb1f82cd6bb0d0">Game.MusicManager.Mix</a></div><div class="ttdeci">Mix</div><div class="ttdef"><b>定义</b> <a href="_music_manager_8cs_source.html#l00007">MusicManager.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screen_html"><div class="ttname"><a href="class_game_1_1_screen.html">Game.Screen</a></div><div class="ttdef"><b>定义</b> <a href="_screen_8cs_source.html#l00002">Screen.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html"><div class="ttname"><a href="class_game_1_1_screens_manager.html">Game.ScreensManager</a></div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00005">ScreensManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a90614198a66aec078d9d00cfcbcd49a1"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a90614198a66aec078d9d00cfcbcd49a1">Game.ScreensManager.SwitchScreen</a></div><div class="ttdeci">static void SwitchScreen(string name, params object[] parameters)</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00065">ScreensManager.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_a9098eec179c4f71074ea33409ba51575"><div class="ttname"><a href="class_game_1_1_screens_manager.html#a9098eec179c4f71074ea33409ba51575">Game.ScreensManager.IsAnimating</a></div><div class="ttdeci">static bool IsAnimating</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00038">ScreensManager.cs:38</a></div></div>
+<div class="ttc" id="aclass_game_1_1_screens_manager_html_ac7f8efcd9e6955759ccbffc1b627bb6a"><div class="ttname"><a href="class_game_1_1_screens_manager.html#ac7f8efcd9e6955759ccbffc1b627bb6a">Game.ScreensManager.CurrentScreen</a></div><div class="ttdeci">static Screen CurrentScreen</div><div class="ttdef"><b>定义</b> <a href="_screens_manager_8cs_source.html#l00040">ScreensManager.cs:40</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html"><div class="ttname"><a href="class_game_1_1_settings_manager.html">Game.SettingsManager</a></div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00011">SettingsManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_abfff2d3904ecae2b67f615c8b83fe986"><div class="ttname"><a href="class_game_1_1_settings_manager.html#abfff2d3904ecae2b67f615c8b83fe986">Game.SettingsManager.ResolutionMode</a></div><div class="ttdeci">static ResolutionMode ResolutionMode</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00053">SettingsManager.cs:53</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_accb1f0d6fb9c27e4f3eaf1e1e6cbfa1c"><div class="ttname"><a href="class_game_1_1_settings_manager.html#accb1f0d6fb9c27e4f3eaf1e1e6cbfa1c">Game.SettingsManager.SaveSettings</a></div><div class="ttdeci">static void SaveSettings()</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00832">SettingsManager.cs:832</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_audio_html"><div class="ttname"><a href="class_game_1_1_subsystem_audio.html">Game.SubsystemAudio</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_audio_8cs_source.html#l00008">SubsystemAudio.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html">Game.SubsystemGameInfo</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00005">SubsystemGameInfo.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_game_info_html_ac7faea3a4a0dcb1d6bbab336b0bdb9b1"><div class="ttname"><a href="class_game_1_1_subsystem_game_info.html#ac7faea3a4a0dcb1d6bbab336b0bdb9b1">Game.SubsystemGameInfo.TotalElapsedGameTime</a></div><div class="ttdeci">double TotalElapsedGameTime</div><div class="ttdef"><b>定义</b> <a href="_subsystem_game_info_8cs_source.html#l00015">SubsystemGameInfo.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_1_1_draw_context_html"><div class="ttname"><a href="class_game_1_1_widget_1_1_draw_context.html">Game.Widget.DrawContext</a></div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00011">Widget.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a156ee6b518c3155e86fe2bc06be6a295"><div class="ttname"><a href="class_game_1_1_widget.html#a156ee6b518c3155e86fe2bc06be6a295">Game.Widget.RootWidget</a></div><div class="ttdeci">Widget RootWidget</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00470">Widget.cs:470</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_ab7453bbe06dbc7188b1d2a6d95e7663e"><div class="ttname"><a href="class_game_1_1_widget.html#ab7453bbe06dbc7188b1d2a6d95e7663e">Game.Widget.IsDrawRequired</a></div><div class="ttdeci">bool IsDrawRequired</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00460">Widget.cs:460</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_aca0d46d9703b9c3f62da685a048b598c"><div class="ttname"><a href="class_game_1_1_widget.html#aca0d46d9703b9c3f62da685a048b598c">Game.Widget.LoadContents</a></div><div class="ttdeci">virtual void LoadContents(object eventsTarget, XElement node)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00507">Widget.cs:507</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_game_html_a52a75f30e2f6c67dbf4a53de6e080c65"><div class="ttname"><a href="namespace_game.html#a52a75f30e2f6c67dbf4a53de6e080c65">Game.ResolutionMode</a></div><div class="ttdeci">ResolutionMode</div><div class="ttdef"><b>定义</b> <a href="_resolution_mode_8cs_source.html#l00002">ResolutionMode.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html"><div class="ttname"><a href="struct_engine_1_1_color.html">Engine.Color</a></div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00002">Color.cs:2</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_color_html_afad4ce37dd9c936a0d07086faede234f"><div class="ttname"><a href="struct_engine_1_1_color.html#afad4ce37dd9c936a0d07086faede234f">Engine.Color.Black</a></div><div class="ttdeci">static Color Black</div><div class="ttdef"><b>定义</b> <a href="_color_8cs_source.html#l00007">Color.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_819697851f82aaa78e1e98801cc3f64c.html">Screen</a></li><li class="navelem"><a href="_game_screen_8cs.html">GameScreen.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

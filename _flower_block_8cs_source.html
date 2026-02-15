@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Block/FlowerBlock.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_flower_block_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">FlowerBlock.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_flower_block_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="class_game_1_1_flower_block.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_flower_block.html">FlowerBlock</a> : <a class="code hl_class" href="class_game_1_1_cross_block.html">CrossBlock</a> {</div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_game_1_1_flower_block.html#a546555084e21a27ffd56515136f1fd00">    3</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_flower_block.html#a546555084e21a27ffd56515136f1fd00">GetFaceTextureSlot</a>(<span class="keywordtype">int</span> face, <span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="class_game_1_1_flower_block.html#a684d94b489fecd6f54ff1fbed8f86ac7">GetIsSmall</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value))) {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>                <span class="keywordflow">return</span> 11;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>            }</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>            <span class="keywordflow">return</span> base.GetFaceTextureSlot(face, value);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        }</div>
+</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_game_1_1_flower_block.html#af67e6f1143a85acd9c481208751b3527">   10</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_flower_block.html#af67e6f1143a85acd9c481208751b3527">GetDropValues</a>(<a class="code hl_class" href="class_game_1_1_subsystem_terrain.html">SubsystemTerrain</a> subsystemTerrain,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="keywordtype">int</span> oldValue,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordtype">int</span> newValue,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="keywordtype">int</span> toolLevel,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            List&lt;BlockDropValue&gt; dropValues,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            out <span class="keywordtype">bool</span> showDebris) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordtype">int</span> data = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(oldValue);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_game_1_1_flower_block.html#a684d94b489fecd6f54ff1fbed8f86ac7">GetIsSmall</a>(data)) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                dropValues.Add(<span class="keyword">new</span> <a class="code hl_struct" href="struct_game_1_1_block_drop_value.html">BlockDropValue</a> { Value = <a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">MakeBlockValue</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">ExtractContents</a>(oldValue), 0, data), Count = 1 });</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            showDebris = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_game_1_1_flower_block.html#aee7d40ed2780b9c8b2efab45dcceefea">   23</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_flower_block.html#aee7d40ed2780b9c8b2efab45dcceefea">GetShadowStrength</a>(<span class="keywordtype">int</span> value) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_game_1_1_flower_block.html#a684d94b489fecd6f54ff1fbed8f86ac7">GetIsSmall</a>(<a class="code hl_class" href="class_game_1_1_terrain.html">Terrain</a>.<a class="code hl_function" href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">ExtractData</a>(value))) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_block.html#ac9fca97e5c50ca17503dfe0d03550049">DefaultShadowStrength</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_1_1_block.html#ac9fca97e5c50ca17503dfe0d03550049">DefaultShadowStrength</a> / 2;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_game_1_1_flower_block.html#a684d94b489fecd6f54ff1fbed8f86ac7">   30</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_flower_block.html#a684d94b489fecd6f54ff1fbed8f86ac7">GetIsSmall</a>(<span class="keywordtype">int</span> data) =&gt; (data &amp; 1) != 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_game_1_1_flower_block.html#a0b306ec490c06db1e0ca22466526a8e0">   32</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_game_1_1_flower_block.html#a0b306ec490c06db1e0ca22466526a8e0">SetIsSmall</a>(<span class="keywordtype">int</span> data, <span class="keywordtype">bool</span> isSmall) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">if</span> (!isSmall) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">return</span> data &amp; -2;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">return</span> data | 1;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="ttc" id="aclass_game_1_1_block_html_ac9fca97e5c50ca17503dfe0d03550049"><div class="ttname"><a href="class_game_1_1_block.html#ac9fca97e5c50ca17503dfe0d03550049">Game.Block.DefaultShadowStrength</a></div><div class="ttdeci">int DefaultShadowStrength</div><div class="ttdef"><b>定义</b> <a href="_block_8cs_source.html#l00077">Block.cs:77</a></div></div>
+<div class="ttc" id="aclass_game_1_1_cross_block_html"><div class="ttname"><a href="class_game_1_1_cross_block.html">Game.CrossBlock</a></div><div class="ttdef"><b>定义</b> <a href="_cross_block_8cs_source.html#l00005">CrossBlock.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_flower_block_html"><div class="ttname"><a href="class_game_1_1_flower_block.html">Game.FlowerBlock</a></div><div class="ttdef"><b>定义</b> <a href="#l00002">FlowerBlock.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_flower_block_html_a0b306ec490c06db1e0ca22466526a8e0"><div class="ttname"><a href="class_game_1_1_flower_block.html#a0b306ec490c06db1e0ca22466526a8e0">Game.FlowerBlock.SetIsSmall</a></div><div class="ttdeci">static int SetIsSmall(int data, bool isSmall)</div><div class="ttdef"><b>定义</b> <a href="#l00032">FlowerBlock.cs:32</a></div></div>
+<div class="ttc" id="aclass_game_1_1_flower_block_html_a546555084e21a27ffd56515136f1fd00"><div class="ttname"><a href="class_game_1_1_flower_block.html#a546555084e21a27ffd56515136f1fd00">Game.FlowerBlock.GetFaceTextureSlot</a></div><div class="ttdeci">override int GetFaceTextureSlot(int face, int value)</div><div class="ttdef"><b>定义</b> <a href="#l00003">FlowerBlock.cs:3</a></div></div>
+<div class="ttc" id="aclass_game_1_1_flower_block_html_a684d94b489fecd6f54ff1fbed8f86ac7"><div class="ttname"><a href="class_game_1_1_flower_block.html#a684d94b489fecd6f54ff1fbed8f86ac7">Game.FlowerBlock.GetIsSmall</a></div><div class="ttdeci">static bool GetIsSmall(int data)</div><div class="ttdef"><b>定义</b> <a href="#l00030">FlowerBlock.cs:30</a></div></div>
+<div class="ttc" id="aclass_game_1_1_flower_block_html_aee7d40ed2780b9c8b2efab45dcceefea"><div class="ttname"><a href="class_game_1_1_flower_block.html#aee7d40ed2780b9c8b2efab45dcceefea">Game.FlowerBlock.GetShadowStrength</a></div><div class="ttdeci">override int GetShadowStrength(int value)</div><div class="ttdef"><b>定义</b> <a href="#l00023">FlowerBlock.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_1_1_flower_block_html_af67e6f1143a85acd9c481208751b3527"><div class="ttname"><a href="class_game_1_1_flower_block.html#af67e6f1143a85acd9c481208751b3527">Game.FlowerBlock.GetDropValues</a></div><div class="ttdeci">override void GetDropValues(SubsystemTerrain subsystemTerrain, int oldValue, int newValue, int toolLevel, List&lt; BlockDropValue &gt; dropValues, out bool showDebris)</div><div class="ttdef"><b>定义</b> <a href="#l00010">FlowerBlock.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_terrain_html"><div class="ttname"><a href="class_game_1_1_subsystem_terrain.html">Game.SubsystemTerrain</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_terrain_8cs_source.html#l00006">SubsystemTerrain.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html"><div class="ttname"><a href="class_game_1_1_terrain.html">Game.Terrain</a></div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00005">Terrain.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_a221de37baa4a0f91e934920030005677"><div class="ttname"><a href="class_game_1_1_terrain.html#a221de37baa4a0f91e934920030005677">Game.Terrain.ExtractContents</a></div><div class="ttdeci">static int ExtractContents(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00303">Terrain.cs:303</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aea9a8c0114bc872225f02ebc8b7b8b9f"><div class="ttname"><a href="class_game_1_1_terrain.html#aea9a8c0114bc872225f02ebc8b7b8b9f">Game.Terrain.MakeBlockValue</a></div><div class="ttdeci">static int MakeBlockValue(int contents)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00298">Terrain.cs:298</a></div></div>
+<div class="ttc" id="aclass_game_1_1_terrain_html_aec56ea916e034b2e4db00d1814fdadba"><div class="ttname"><a href="class_game_1_1_terrain.html#aec56ea916e034b2e4db00d1814fdadba">Game.Terrain.ExtractData</a></div><div class="ttdeci">static int ExtractData(int value)</div><div class="ttdef"><b>定义</b> <a href="_terrain_8cs_source.html#l00307">Terrain.cs:307</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_game_1_1_block_drop_value_html"><div class="ttname"><a href="struct_game_1_1_block_drop_value.html">Game.BlockDropValue</a></div><div class="ttdef"><b>定义</b> <a href="_block_drop_value_8cs_source.html#l00004">BlockDropValue.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_407fceb6d650316801e32c7b7f8f0e13.html">Block</a></li><li class="navelem"><a href="_flower_block_8cs.html">FlowerBlock.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

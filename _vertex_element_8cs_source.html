@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Engine/Engine.Graphics/VertexElement.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_vertex_element_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">VertexElement.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_vertex_element_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">VertexElement</a> : IEquatable&lt;VertexElement&gt; {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#af5c0494a9918425b78f84d35963f740f">    3</a></span>        readonly <span class="keywordtype">int</span> <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_vertex_element.html#af5c0494a9918425b78f84d35963f740f">m_hashCode</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#a57cdeb77cd2db416c96041fcf203285f">    5</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a57cdeb77cd2db416c96041fcf203285f">Offset</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#acc1a94cb1cb6c46f9843e2f2c56b03d2">    7</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a> <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#acc1a94cb1cb6c46f9843e2f2c56b03d2">Format</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#a5b0cfd762cb50f67adec7be4e6754a97">    9</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a5b0cfd762cb50f67adec7be4e6754a97">Semantic</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#a86ba7586e4266ea52ce3c0647d50cee2">   11</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a86ba7586e4266ea52ce3c0647d50cee2">SemanticName</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#ae66b56f866cacc1f4bca942fc2465946">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#ae66b56f866cacc1f4bca942fc2465946">SemanticIndex</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">   15</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">VertexElement</a>(<a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a> format, <span class="keywordtype">string</span> semantic) : this(-1, format, semantic) { }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#ad28334cc236c8cb61ec0d9a64f931d78">   17</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#ad28334cc236c8cb61ec0d9a64f931d78">VertexElement</a>(<a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a> format, <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a> semantic) : this(-1, format, semantic) { }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#a80c63d14ecc28f5e549cf26007414b0f">   19</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a80c63d14ecc28f5e549cf26007414b0f">VertexElement</a>(<span class="keywordtype">int</span> offset, <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a> format, <span class="keywordtype">string</span> semantic) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(semantic)) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot;semantic cannot be empty or null.&quot;</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordtype">int</span> num = semantic.Length;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">while</span> (num &gt; 0</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                &amp;&amp; <span class="keywordtype">char</span>.IsDigit(semantic[num - 1])) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                num--;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordflow">if</span> (num == 0) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot;semantic cannot start with a digit.&quot;</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a57cdeb77cd2db416c96041fcf203285f">Offset</a> = offset;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#acc1a94cb1cb6c46f9843e2f2c56b03d2">Format</a> = format;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a5b0cfd762cb50f67adec7be4e6754a97">Semantic</a> = semantic;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a86ba7586e4266ea52ce3c0647d50cee2">SemanticName</a> = semantic.Substring(0, num);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#ae66b56f866cacc1f4bca942fc2465946">SemanticIndex</a> = num &lt; semantic.Length ? <span class="keywordtype">int</span>.Parse(semantic.Substring(num)) : 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_vertex_element.html#af5c0494a9918425b78f84d35963f740f">m_hashCode</a> = <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a57cdeb77cd2db416c96041fcf203285f">Offset</a>.GetHashCode() + <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#acc1a94cb1cb6c46f9843e2f2c56b03d2">Format</a>.GetHashCode() + <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a5b0cfd762cb50f67adec7be4e6754a97">Semantic</a>.GetHashCode();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#ac8400aacdbe8016f8f5ca55c52f244cf">   39</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#ac8400aacdbe8016f8f5ca55c52f244cf">VertexElement</a>(<span class="keywordtype">int</span> offset, <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">VertexElementFormat</a> format, <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a> semantic) : this(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            offset,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            format,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            semantic.GetSemanticString()</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        ) { }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#ab1dcf3999600cf2d9d612d712498e00d">   45</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#ab1dcf3999600cf2d9d612d712498e00d">GetHashCode</a>() =&gt; <a class="code hl_variable" href="class_engine_1_1_graphics_1_1_vertex_element.html#af5c0494a9918425b78f84d35963f740f">m_hashCode</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#a97bf014f0c4dc2da0c7b45c4da336865">   47</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a97bf014f0c4dc2da0c7b45c4da336865">Equals</a>(<span class="keywordtype">object</span> other) =&gt; other is <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">VertexElement</a> &amp;&amp; <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a97bf014f0c4dc2da0c7b45c4da336865">Equals</a>((<a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">VertexElement</a>)other);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#adff8e8a2bb37959c217b68c821a7a02f">   49</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#adff8e8a2bb37959c217b68c821a7a02f">Equals</a>(<a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">VertexElement</a> other) =&gt; other != <span class="keyword">null</span> &amp;&amp; other.Offset == <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a57cdeb77cd2db416c96041fcf203285f">Offset</a> &amp;&amp; other.Format == <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#acc1a94cb1cb6c46f9843e2f2c56b03d2">Format</a> &amp;&amp; other.Semantic == <a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_element.html#a5b0cfd762cb50f67adec7be4e6754a97">Semantic</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#a27d0579871b27c4b3a3a9c354c47bb87">   51</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a27d0579871b27c4b3a3a9c354c47bb87">operator ==</a>(<a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">VertexElement</a> ve1, <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">VertexElement</a> ve2) =&gt; ve1?.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a97bf014f0c4dc2da0c7b45c4da336865">Equals</a>(ve2) ?? ((object)ve2 == <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_engine_1_1_graphics_1_1_vertex_element.html#afd0537a243bd56bac2000beb81a9ce53">   53</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#afd0537a243bd56bac2000beb81a9ce53">operator !=</a>(<a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">VertexElement</a> ve1, <a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">VertexElement</a> ve2) =&gt; !(ve1 == ve2);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_a27d0579871b27c4b3a3a9c354c47bb87"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#a27d0579871b27c4b3a3a9c354c47bb87">Engine.Graphics.VertexElement.operator==</a></div><div class="ttdeci">static bool operator==(VertexElement ve1, VertexElement ve2)</div><div class="ttdef"><b>定义</b> <a href="#l00051">VertexElement.cs:51</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_a57cdeb77cd2db416c96041fcf203285f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#a57cdeb77cd2db416c96041fcf203285f">Engine.Graphics.VertexElement.Offset</a></div><div class="ttdeci">int Offset</div><div class="ttdef"><b>定义</b> <a href="#l00005">VertexElement.cs:5</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_a5b0cfd762cb50f67adec7be4e6754a97"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#a5b0cfd762cb50f67adec7be4e6754a97">Engine.Graphics.VertexElement.Semantic</a></div><div class="ttdeci">string Semantic</div><div class="ttdef"><b>定义</b> <a href="#l00009">VertexElement.cs:9</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_a6f6f47881af70bcedc242c32e3a92783"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#a6f6f47881af70bcedc242c32e3a92783">Engine.Graphics.VertexElement.VertexElement</a></div><div class="ttdeci">VertexElement(VertexElementFormat format, string semantic)</div><div class="ttdef"><b>定义</b> <a href="#l00015">VertexElement.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_a80c63d14ecc28f5e549cf26007414b0f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#a80c63d14ecc28f5e549cf26007414b0f">Engine.Graphics.VertexElement.VertexElement</a></div><div class="ttdeci">VertexElement(int offset, VertexElementFormat format, string semantic)</div><div class="ttdef"><b>定义</b> <a href="#l00019">VertexElement.cs:19</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_a86ba7586e4266ea52ce3c0647d50cee2"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#a86ba7586e4266ea52ce3c0647d50cee2">Engine.Graphics.VertexElement.SemanticName</a></div><div class="ttdeci">string SemanticName</div><div class="ttdef"><b>定义</b> <a href="#l00011">VertexElement.cs:11</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_a97bf014f0c4dc2da0c7b45c4da336865"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#a97bf014f0c4dc2da0c7b45c4da336865">Engine.Graphics.VertexElement.Equals</a></div><div class="ttdeci">override bool Equals(object other)</div><div class="ttdef"><b>定义</b> <a href="#l00047">VertexElement.cs:47</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_ab1dcf3999600cf2d9d612d712498e00d"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#ab1dcf3999600cf2d9d612d712498e00d">Engine.Graphics.VertexElement.GetHashCode</a></div><div class="ttdeci">override int GetHashCode()</div><div class="ttdef"><b>定义</b> <a href="#l00045">VertexElement.cs:45</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_ac8400aacdbe8016f8f5ca55c52f244cf"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#ac8400aacdbe8016f8f5ca55c52f244cf">Engine.Graphics.VertexElement.VertexElement</a></div><div class="ttdeci">VertexElement(int offset, VertexElementFormat format, VertexElementSemantic semantic)</div><div class="ttdef"><b>定义</b> <a href="#l00039">VertexElement.cs:39</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_acc1a94cb1cb6c46f9843e2f2c56b03d2"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#acc1a94cb1cb6c46f9843e2f2c56b03d2">Engine.Graphics.VertexElement.Format</a></div><div class="ttdeci">VertexElementFormat Format</div><div class="ttdef"><b>定义</b> <a href="#l00007">VertexElement.cs:7</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_ad28334cc236c8cb61ec0d9a64f931d78"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#ad28334cc236c8cb61ec0d9a64f931d78">Engine.Graphics.VertexElement.VertexElement</a></div><div class="ttdeci">VertexElement(VertexElementFormat format, VertexElementSemantic semantic)</div><div class="ttdef"><b>定义</b> <a href="#l00017">VertexElement.cs:17</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_adff8e8a2bb37959c217b68c821a7a02f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#adff8e8a2bb37959c217b68c821a7a02f">Engine.Graphics.VertexElement.Equals</a></div><div class="ttdeci">bool Equals(VertexElement other)</div><div class="ttdef"><b>定义</b> <a href="#l00049">VertexElement.cs:49</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_ae66b56f866cacc1f4bca942fc2465946"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#ae66b56f866cacc1f4bca942fc2465946">Engine.Graphics.VertexElement.SemanticIndex</a></div><div class="ttdeci">int SemanticIndex</div><div class="ttdef"><b>定义</b> <a href="#l00013">VertexElement.cs:13</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_af5c0494a9918425b78f84d35963f740f"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#af5c0494a9918425b78f84d35963f740f">Engine.Graphics.VertexElement.m_hashCode</a></div><div class="ttdeci">readonly int m_hashCode</div><div class="ttdef"><b>定义</b> <a href="#l00003">VertexElement.cs:3</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_element_html_afd0537a243bd56bac2000beb81a9ce53"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_element.html#afd0537a243bd56bac2000beb81a9ce53">Engine.Graphics.VertexElement.operator!=</a></div><div class="ttdeci">static bool operator!=(VertexElement ve1, VertexElement ve2)</div><div class="ttdef"><b>定义</b> <a href="#l00053">VertexElement.cs:53</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a2cb466449756b8d4b70f1eaf5c27c611"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">Engine.Graphics.VertexElementSemantic</a></div><div class="ttdeci">VertexElementSemantic</div><div class="ttdef"><b>定义</b> <a href="_vertex_element_semantic_8cs_source.html#l00002">VertexElementSemantic.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_abe4ada163c38a037539b4adb821f488a"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#abe4ada163c38a037539b4adb821f488a">Engine.Graphics.VertexElementFormat</a></div><div class="ttdeci">VertexElementFormat</div><div class="ttdef"><b>定义</b> <a href="_vertex_element_format_8cs_source.html#l00002">VertexElementFormat.cs:2</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_f82fbe3e59435edfdb2f72b0925093a7.html">Engine</a></li><li class="navelem"><a href="dir_45a969ac2810c86187bf086c7866e423.html">Engine.Graphics</a></li><li class="navelem"><a href="_vertex_element_8cs.html">VertexElement.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

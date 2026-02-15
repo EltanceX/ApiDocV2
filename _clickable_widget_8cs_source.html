@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Widget/ClickableWidget.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_clickable_widget_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ClickableWidget.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_clickable_widget_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00002" data-start="{" data-end="};">
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="class_game_1_1_clickable_widget.html">    2</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_clickable_widget.html">ClickableWidget</a> : <a class="code hl_function" href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Widget</a> {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_game_1_1_clickable_widget.html#a5ad1ce63c590eaf9bc74e5f018b9ee4c">    3</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a5ad1ce63c590eaf9bc74e5f018b9ee4c">SoundName</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_clickable_widget.html#a3d275693f8f5160e0613d221717e32d3">    5</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a3d275693f8f5160e0613d221717e32d3">IsPressed</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_clickable_widget.html#aefc8197c33f4167b7e7a4cbdc08123ae">    7</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_clickable_widget.html#aefc8197c33f4167b7e7a4cbdc08123ae">IsClicked</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_clickable_widget.html#a5b885563101e7aefbf1661db4b05df39">    9</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a5b885563101e7aefbf1661db4b05df39">IsTapped</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_clickable_widget.html#ab6f53138a74338f442d49ce88ead7d24">   11</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_clickable_widget.html#ab6f53138a74338f442d49ce88ead7d24">IsChecked</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_clickable_widget.html#a571f89a70623b20f0067f38571ec2ff1">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a571f89a70623b20f0067f38571ec2ff1">IsAutoCheckingEnabled</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_clickable_widget.html#a05591372e6138440f4d6cac272ae9755">   15</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_clickable_widget.html#a05591372e6138440f4d6cac272ae9755">UpdateCeases</a>() {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            base.UpdateCeases();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a3d275693f8f5160e0613d221717e32d3">IsPressed</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_property" href="class_game_1_1_clickable_widget.html#aefc8197c33f4167b7e7a4cbdc08123ae">IsClicked</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a5b885563101e7aefbf1661db4b05df39">IsTapped</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_clickable_widget.html#af685e44c09c07d701415758b9e7d0c01">   22</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_clickable_widget.html#af685e44c09c07d701415758b9e7d0c01">Update</a>() {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_class" href="class_game_1_1_widget_input.html">WidgetInput</a> input = <a class="code hl_property" href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Input</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a3d275693f8f5160e0613d221717e32d3">IsPressed</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a5b885563101e7aefbf1661db4b05df39">IsTapped</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_property" href="class_game_1_1_clickable_widget.html#aefc8197c33f4167b7e7a4cbdc08123ae">IsClicked</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">if</span> (input.<a class="code hl_property" href="class_game_1_1_widget_input.html#a505bf1aa79472443cdfa416641639dd6">Press</a>.HasValue</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                &amp;&amp; <a class="code hl_function" href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">HitTestGlobal</a>(input.<a class="code hl_property" href="class_game_1_1_widget_input.html#a505bf1aa79472443cdfa416641639dd6">Press</a>.Value) == <span class="keyword">this</span>) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a3d275693f8f5160e0613d221717e32d3">IsPressed</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">if</span> (input.<a class="code hl_property" href="class_game_1_1_widget_input.html#aaadedfb1002047ffba301617d0880b7e">Tap</a>.HasValue</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                &amp;&amp; <a class="code hl_function" href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">HitTestGlobal</a>(input.<a class="code hl_property" href="class_game_1_1_widget_input.html#aaadedfb1002047ffba301617d0880b7e">Tap</a>.Value) == <span class="keyword">this</span>) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <a class="code hl_property" href="class_game_1_1_clickable_widget.html#a5b885563101e7aefbf1661db4b05df39">IsTapped</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">if</span> (input.<a class="code hl_property" href="class_game_1_1_widget_input.html#ab1bae3898a3645fb8c1021c375d3b92d">Click</a>.HasValue</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                &amp;&amp; <a class="code hl_function" href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">HitTestGlobal</a>(input.<a class="code hl_property" href="class_game_1_1_widget_input.html#ab1bae3898a3645fb8c1021c375d3b92d">Click</a>.Value.<a class="code hl_variable" href="struct_game_1_1_segment2.html#a6bb6a263224b69d28afcc778651a4c65">Start</a>) == <span class="keyword">this</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                &amp;&amp; <a class="code hl_function" href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">HitTestGlobal</a>(input.<a class="code hl_property" href="class_game_1_1_widget_input.html#ab1bae3898a3645fb8c1021c375d3b92d">Click</a>.Value.<a class="code hl_variable" href="struct_game_1_1_segment2.html#a04bba08e82d047be9b5afad449503d39">End</a>) == <span class="keyword">this</span>) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <a class="code hl_property" href="class_game_1_1_clickable_widget.html#aefc8197c33f4167b7e7a4cbdc08123ae">IsClicked</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_clickable_widget.html#a571f89a70623b20f0067f38571ec2ff1">IsAutoCheckingEnabled</a>) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    <a class="code hl_property" href="class_game_1_1_clickable_widget.html#ab6f53138a74338f442d49ce88ead7d24">IsChecked</a> = !<a class="code hl_property" href="class_game_1_1_clickable_widget.html#ab6f53138a74338f442d49ce88ead7d24">IsChecked</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_property" href="class_game_1_1_clickable_widget.html#a5ad1ce63c590eaf9bc74e5f018b9ee4c">SoundName</a>)) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <a class="code hl_class" href="class_game_1_1_audio_manager.html">AudioManager</a>.<a class="code hl_function" href="class_game_1_1_audio_manager.html#aed470aaf8941e38156b9b125c8bc9de0">PlaySound</a>(<a class="code hl_property" href="class_game_1_1_clickable_widget.html#a5ad1ce63c590eaf9bc74e5f018b9ee4c">SoundName</a>, 1f, 0f, 0f);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="ttc" id="aclass_game_1_1_audio_manager_html"><div class="ttname"><a href="class_game_1_1_audio_manager.html">Game.AudioManager</a></div><div class="ttdef"><b>定义</b> <a href="_audio_manager_8cs_source.html#l00005">AudioManager.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_audio_manager_html_aed470aaf8941e38156b9b125c8bc9de0"><div class="ttname"><a href="class_game_1_1_audio_manager.html#aed470aaf8941e38156b9b125c8bc9de0">Game.AudioManager.PlaySound</a></div><div class="ttdeci">static void PlaySound(string name, float volume, float pitch, float pan)</div><div class="ttdef"><b>定义</b> <a href="_audio_manager_8cs_source.html#l00008">AudioManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html"><div class="ttname"><a href="class_game_1_1_clickable_widget.html">Game.ClickableWidget</a></div><div class="ttdef"><b>定义</b> <a href="#l00002">ClickableWidget.cs:2</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html_a05591372e6138440f4d6cac272ae9755"><div class="ttname"><a href="class_game_1_1_clickable_widget.html#a05591372e6138440f4d6cac272ae9755">Game.ClickableWidget.UpdateCeases</a></div><div class="ttdeci">override void UpdateCeases()</div><div class="ttdef"><b>定义</b> <a href="#l00015">ClickableWidget.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html_a3d275693f8f5160e0613d221717e32d3"><div class="ttname"><a href="class_game_1_1_clickable_widget.html#a3d275693f8f5160e0613d221717e32d3">Game.ClickableWidget.IsPressed</a></div><div class="ttdeci">bool IsPressed</div><div class="ttdef"><b>定义</b> <a href="#l00005">ClickableWidget.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html_a571f89a70623b20f0067f38571ec2ff1"><div class="ttname"><a href="class_game_1_1_clickable_widget.html#a571f89a70623b20f0067f38571ec2ff1">Game.ClickableWidget.IsAutoCheckingEnabled</a></div><div class="ttdeci">bool IsAutoCheckingEnabled</div><div class="ttdef"><b>定义</b> <a href="#l00013">ClickableWidget.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html_a5ad1ce63c590eaf9bc74e5f018b9ee4c"><div class="ttname"><a href="class_game_1_1_clickable_widget.html#a5ad1ce63c590eaf9bc74e5f018b9ee4c">Game.ClickableWidget.SoundName</a></div><div class="ttdeci">string SoundName</div><div class="ttdef"><b>定义</b> <a href="#l00003">ClickableWidget.cs:3</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html_a5b885563101e7aefbf1661db4b05df39"><div class="ttname"><a href="class_game_1_1_clickable_widget.html#a5b885563101e7aefbf1661db4b05df39">Game.ClickableWidget.IsTapped</a></div><div class="ttdeci">bool IsTapped</div><div class="ttdef"><b>定义</b> <a href="#l00009">ClickableWidget.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html_ab6f53138a74338f442d49ce88ead7d24"><div class="ttname"><a href="class_game_1_1_clickable_widget.html#ab6f53138a74338f442d49ce88ead7d24">Game.ClickableWidget.IsChecked</a></div><div class="ttdeci">bool IsChecked</div><div class="ttdef"><b>定义</b> <a href="#l00011">ClickableWidget.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html_aefc8197c33f4167b7e7a4cbdc08123ae"><div class="ttname"><a href="class_game_1_1_clickable_widget.html#aefc8197c33f4167b7e7a4cbdc08123ae">Game.ClickableWidget.IsClicked</a></div><div class="ttdeci">bool IsClicked</div><div class="ttdef"><b>定义</b> <a href="#l00007">ClickableWidget.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_clickable_widget_html_af685e44c09c07d701415758b9e7d0c01"><div class="ttname"><a href="class_game_1_1_clickable_widget.html#af685e44c09c07d701415758b9e7d0c01">Game.ClickableWidget.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>定义</b> <a href="#l00022">ClickableWidget.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a1ee7e699b3058c09d3b226f985b7db48"><div class="ttname"><a href="class_game_1_1_widget.html#a1ee7e699b3058c09d3b226f985b7db48">Game.Widget.HitTestGlobal</a></div><div class="ttdeci">virtual Widget HitTestGlobal(Vector2 point, Func&lt; Widget, bool &gt; predicate=null)</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00696">Widget.cs:696</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a2e6ce445c2f889d95ef1328d72e25dcb"><div class="ttname"><a href="class_game_1_1_widget.html#a2e6ce445c2f889d95ef1328d72e25dcb">Game.Widget.Widget</a></div><div class="ttdeci">Widget()</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00479">Widget.cs:479</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_html_a3738facfe6a7f955f8539fcf8de3b387"><div class="ttname"><a href="class_game_1_1_widget.html#a3738facfe6a7f955f8539fcf8de3b387">Game.Widget.Input</a></div><div class="ttdeci">WidgetInput Input</div><div class="ttdef"><b>定义</b> <a href="_widget_8cs_source.html#l00296">Widget.cs:296</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_input_html"><div class="ttname"><a href="class_game_1_1_widget_input.html">Game.WidgetInput</a></div><div class="ttdef"><b>定义</b> <a href="_widget_input_8cs_source.html#l00007">WidgetInput.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_input_html_a505bf1aa79472443cdfa416641639dd6"><div class="ttname"><a href="class_game_1_1_widget_input.html#a505bf1aa79472443cdfa416641639dd6">Game.WidgetInput.Press</a></div><div class="ttdeci">Vector2? Press</div><div class="ttdef"><b>定义</b> <a href="_widget_input_8cs_source.html#l00074">WidgetInput.cs:74</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_input_html_aaadedfb1002047ffba301617d0880b7e"><div class="ttname"><a href="class_game_1_1_widget_input.html#aaadedfb1002047ffba301617d0880b7e">Game.WidgetInput.Tap</a></div><div class="ttdeci">Vector2? Tap</div><div class="ttdef"><b>定义</b> <a href="_widget_input_8cs_source.html#l00076">WidgetInput.cs:76</a></div></div>
+<div class="ttc" id="aclass_game_1_1_widget_input_html_ab1bae3898a3645fb8c1021c375d3b92d"><div class="ttname"><a href="class_game_1_1_widget_input.html#ab1bae3898a3645fb8c1021c375d3b92d">Game.WidgetInput.Click</a></div><div class="ttdeci">Segment2? Click</div><div class="ttdef"><b>定义</b> <a href="_widget_input_8cs_source.html#l00078">WidgetInput.cs:78</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_game_1_1_segment2_html_a04bba08e82d047be9b5afad449503d39"><div class="ttname"><a href="struct_game_1_1_segment2.html#a04bba08e82d047be9b5afad449503d39">Game.Segment2.End</a></div><div class="ttdeci">Vector2 End</div><div class="ttdef"><b>定义</b> <a href="_segment2_8cs_source.html#l00007">Segment2.cs:7</a></div></div>
+<div class="ttc" id="astruct_game_1_1_segment2_html_a6bb6a263224b69d28afcc778651a4c65"><div class="ttname"><a href="struct_game_1_1_segment2.html#a6bb6a263224b69d28afcc778651a4c65">Game.Segment2.Start</a></div><div class="ttdeci">Vector2 Start</div><div class="ttdef"><b>定义</b> <a href="_segment2_8cs_source.html#l00005">Segment2.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_9004415dc1f05bd7e1956a698547a4d3.html">Widget</a></li><li class="navelem"><a href="_clickable_widget_8cs.html">ClickableWidget.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

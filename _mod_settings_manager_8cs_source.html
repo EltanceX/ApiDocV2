@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/ModsManager/ModSettingsManager.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_mod_settings_manager_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ModSettingsManager.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_mod_settings_manager_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Text;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Xml.Linq;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_xml_utilities.html">XmlUtilities</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_mod_settings_manager.html">ModSettingsManager</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#a9ac9011a6844f23b99d553088fdb3bb4">   12</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, XElement&gt; <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#a9ac9011a6844f23b99d553088fdb3bb4">ModSettingsCache</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#ae5bbd3f4d83a563a5db0d50f8c625a88">   17</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, ValuesDictionary&gt; <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#ae5bbd3f4d83a563a5db0d50f8c625a88">ModKeyboardMapSettings</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#aab275d88087027ff418f1682aaa19bd5">   22</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, ValuesDictionary&gt; <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#aab275d88087027ff418f1682aaa19bd5">ModGamepadMapSettings</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#adc35cb8a6aeecc6055730d40a0c123fa">   27</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, ValuesDictionary&gt; <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#adc35cb8a6aeecc6055730d40a0c123fa">ModCameraManageSettings</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">   29</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a> = <span class="stringliteral">&quot;ModSettingsManager&quot;</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#ab263d405537d632c442982b27f1fc412">   31</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, object&gt; <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#ab263d405537d632c442982b27f1fc412">CombinedKeyboardMappingSettings</a> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">get</span> { <span class="comment">//合并模组设置和原版设置</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                Dictionary&lt;string, object&gt; dictionary = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item <span class="keywordflow">in</span> <a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_property" href="class_game_1_1_settings_manager.html#afa79ccec0d20bf599b303df270cafdbd">KeyboardMappingSettings</a>) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    dictionary.TryAdd(item.Key, item.Value);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> item <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#ae5bbd3f4d83a563a5db0d50f8c625a88">ModKeyboardMapSettings</a>.Values) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item2 <span class="keywordflow">in</span> item) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                        dictionary.TryAdd(item2.Key, item2.Value);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keywordflow">return</span> dictionary;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#a434a52e0189257eea9bdac3ab6173b1e">   45</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, object&gt; <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#a434a52e0189257eea9bdac3ab6173b1e">CombinedGamepadMappingSettings</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keyword">get</span> { <span class="comment">//合并模组设置和原版设置</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                Dictionary&lt;string, object&gt; dictionary = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item <span class="keywordflow">in</span> <a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_property" href="class_game_1_1_settings_manager.html#a70b8af5d1ed1966f0ed792e1a3728f10">GamepadMappingSettings</a>) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    dictionary.TryAdd(item.Key, item.Value);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> item <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#aab275d88087027ff418f1682aaa19bd5">ModGamepadMapSettings</a>.Values) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item2 <span class="keywordflow">in</span> item) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                        dictionary.TryAdd(item2.Key, item2.Value);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <span class="keywordflow">return</span> dictionary;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="};">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#ac6eab36d99b6193f71d6a1fc5371905a">   60</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;string, int&gt; <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#ac6eab36d99b6193f71d6a1fc5371905a">CombinedCameraManageSettings</a> {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keyword">get</span> {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                Dictionary&lt;string, int&gt; dictionary = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item <span class="keywordflow">in</span> <a class="code hl_class" href="class_game_1_1_settings_manager.html">SettingsManager</a>.<a class="code hl_property" href="class_game_1_1_settings_manager.html#a71fd73a79bbd1d3f03d2e7fcf9a68199">CameraManageSettings</a>) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    dictionary.TryAdd(item.Key, Convert.ToInt32(item.Value));</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> item <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#adc35cb8a6aeecc6055730d40a0c123fa">ModCameraManageSettings</a>.Values) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item2 <span class="keywordflow">in</span> item) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        dictionary.TryAdd(item2.Key, Convert.ToInt32(item2.Value));</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">return</span> dictionary;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#a37f55e8c6dbac8b6138aa54ffb6e48a3">   75</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_mod_settings_manager.html#a37f55e8c6dbac8b6138aa54ffb6e48a3">LoadModSettings</a>() {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a99d6c83e1e607a8037faa718810f9321">FileExists</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a2507c021b6d130816afb6404c68bc286">ModsSettingsPath</a>)) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="comment">//读取设置并且加入到ModSettings表内</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keyword">using</span> (Stream stream = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a2507c021b6d130816afb6404c68bc286">ModsSettingsPath</a>, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.Read)) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    XElement element = XElement.Load(stream);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    <span class="keywordflow">foreach</span> (XElement modXElement <span class="keywordflow">in</span> element.Elements(<span class="stringliteral">&quot;Mod&quot;</span>)) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                        <span class="keywordtype">string</span> packageName = <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">GetAttributeValue</a>&lt;<span class="keywordtype">string</span>&gt;(modXElement, <span class="stringliteral">&quot;PackageName&quot;</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                        <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#a9ac9011a6844f23b99d553088fdb3bb4">ModSettingsCache</a>[packageName] = modXElement;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#ade0511acc17db18ba7ac795bcc98fcb2">TryGet</a>(out <span class="keywordtype">string</span> str, <a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a>, <span class="stringliteral">&quot;1&quot;</span>)) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                    str = <span class="stringliteral">&quot;Error serializing mod settings file:&quot;</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#ad3c8a97d36cba145c0159ad596a815b4">Warning</a>($<span class="stringliteral">&quot;{str} {e.Message}&quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="comment">//遍历每个模组，加载设置项，如果设置项已加载，就从ModSettingsCache中删除</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_mod_entity.html">ModEntity</a> modEntity <span class="keywordflow">in</span> <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_variable" href="class_mods_manager.html#a9ca0df7f87225505a9c8309198a0a269">ModList</a>) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    <span class="keywordtype">string</span> packageName = modEntity.<a class="code hl_variable" href="class_game_1_1_mod_entity.html#acb6b055f0f3df9d48632949010886328">modInfo</a>.<a class="code hl_variable" href="class_game_1_1_mod_info.html#abf2f73b6cc2bdeb2a081d91830fc7198">PackageName</a>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> modKeyboardSettings = [];</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                    <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> modGamepadSettings = [];</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                    <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> modCameraSettings = [];</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                    IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; keysToAdd = modEntity.<a class="code hl_property" href="class_game_1_1_mod_entity.html#afacabe437615151084e5909f571d0d62">Loader</a>?.<a class="code hl_function" href="class_game_1_1_mod_loader.html#af304959f60356030a0769fb44816b365">GetKeyboardMappings</a>() ?? []; <span class="comment">//初始化模组默认键位设置</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; gamepadKeysToAdd = modEntity.<a class="code hl_property" href="class_game_1_1_mod_entity.html#afacabe437615151084e5909f571d0d62">Loader</a>?.<a class="code hl_function" href="class_game_1_1_mod_loader.html#a0cedb2ea3ff51c1cdc51093f0cb4416d">GetGamepadMappings</a>() ?? []; <span class="comment">//初始化模组默认键位设置</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    IEnumerable&lt;KeyValuePair&lt;string, int&gt;&gt; camerasToAdd = modEntity.<a class="code hl_property" href="class_game_1_1_mod_entity.html#afacabe437615151084e5909f571d0d62">Loader</a>?.<a class="code hl_function" href="class_game_1_1_mod_loader.html#a137f0809d4b0bb6b9e48ac72424b00f6">GetCameraList</a>() ?? []; <span class="comment">//初始化模组默认相机设置</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item1 <span class="keywordflow">in</span> keysToAdd) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                        modKeyboardSettings.Add(item1.Key, item1.Value);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item1 <span class="keywordflow">in</span> gamepadKeysToAdd) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        modGamepadSettings.Add(item1.Key, item1.Value);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, int&gt; item2 <span class="keywordflow">in</span> camerasToAdd) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                        modCameraSettings.Add(item2.Key, item2.Value);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                    }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                    <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#a9ac9011a6844f23b99d553088fdb3bb4">ModSettingsCache</a>.TryGetValue(packageName, out XElement setting)) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                        modEntity.<a class="code hl_function" href="class_game_1_1_mod_entity.html#a5ccb9fd9713a36018c5fafad1e661a01">LoadSettings</a>(setting);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                        <span class="keywordflow">if</span> (setting != <span class="keyword">null</span>) { <span class="comment">//加载模组保存的键位映射、相机设置</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                            XElement keyboardMapping = setting.Element(<span class="stringliteral">&quot;KeyboardMapping&quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                            <span class="keywordflow">if</span> (keyboardMapping != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                                modKeyboardSettings.ApplyOverrides(keyboardMapping, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                            }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                            XElement gamepadMapping = setting.Element(<span class="stringliteral">&quot;GamepadMapping&quot;</span>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                            <span class="keywordflow">if</span> (gamepadMapping != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                                modGamepadSettings.ApplyOverrides(gamepadMapping);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                            }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                            XElement cameraList = setting.Element(<span class="stringliteral">&quot;CameraList&quot;</span>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                            <span class="keywordflow">if</span> (cameraList != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                                modCameraSettings.ApplyOverrides(cameraList, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                            }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                        }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                    <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#ae5bbd3f4d83a563a5db0d50f8c625a88">ModKeyboardMapSettings</a>[packageName] = modKeyboardSettings;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                    <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#aab275d88087027ff418f1682aaa19bd5">ModGamepadMapSettings</a>[packageName] = modGamepadSettings;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                    <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#adc35cb8a6aeecc6055730d40a0c123fa">ModCameraManageSettings</a>[packageName] = modCameraSettings;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#ade0511acc17db18ba7ac795bcc98fcb2">TryGet</a>(out <span class="keywordtype">string</span> info, <a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a>, <span class="stringliteral">&quot;2&quot;</span>)) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                    info = <span class="stringliteral">&quot;Loaded mod settings&quot;</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#aa6253fafb5f70f91507047f962fcbcba">Information</a>(info);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#ade0511acc17db18ba7ac795bcc98fcb2">TryGet</a>(out <span class="keywordtype">string</span> str, <a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a>, <span class="stringliteral">&quot;3&quot;</span>)) {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                    str = <span class="stringliteral">&quot;Error loading mod settings:&quot;</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#ad3c8a97d36cba145c0159ad596a815b4">Warning</a>($<span class="stringliteral">&quot;{str} {e}&quot;</span>);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        }</div>
+</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#a90c6ab534f9c3fae04d58da2a35a4f2f">  151</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_mod_settings_manager.html#a90c6ab534f9c3fae04d58da2a35a4f2f">SaveModSettings</a>() {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_mod_entity.html">ModEntity</a> modEntity <span class="keywordflow">in</span> <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_variable" href="class_mods_manager.html#a9ca0df7f87225505a9c8309198a0a269">ModList</a>) {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                <span class="keywordtype">string</span> packageName = modEntity.<a class="code hl_variable" href="class_game_1_1_mod_entity.html#acb6b055f0f3df9d48632949010886328">modInfo</a>.<a class="code hl_variable" href="class_game_1_1_mod_info.html#abf2f73b6cc2bdeb2a081d91830fc7198">PackageName</a>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                XElement settingsElement = <span class="keyword">new</span>(<span class="stringliteral">&quot;Mod&quot;</span>);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">SetAttributeValue</a>(settingsElement, <span class="stringliteral">&quot;PackageName&quot;</span>, packageName);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                    modEntity.<a class="code hl_function" href="class_game_1_1_mod_entity.html#a7af8ee3c8f223d92c12676c2857d381b">SaveSettings</a>(settingsElement);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                    <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#ade0511acc17db18ba7ac795bcc98fcb2">TryGet</a>(out <span class="keywordtype">string</span> str, <a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a>, <span class="stringliteral">&quot;4&quot;</span>)) {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                        str = <span class="stringliteral">&quot;Error saving the mod settings of [{0}]:&quot;</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                    }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                    <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#ad3c8a97d36cba145c0159ad596a815b4">Warning</a>($<span class="stringliteral">&quot;{string.Format(str, packageName)} {e}&quot;</span>);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <span class="comment">//保存模组的键盘鼠标键位映射设置</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                XElement keyboardMapping = <span class="keyword">new</span>(<span class="stringliteral">&quot;KeyboardMapping&quot;</span>);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#ae5bbd3f4d83a563a5db0d50f8c625a88">ModKeyboardMapSettings</a>.TryGetValue(packageName, out <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> modKeyboardSettings)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    &amp;&amp; modKeyboardSettings.Count &gt; 0) {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                    modKeyboardSettings.Save(keyboardMapping);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                    settingsElement.Add(keyboardMapping);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                <span class="comment">//保存模组的手柄键位映射设置</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                XElement gamepadMapping = <span class="keyword">new</span>(<span class="stringliteral">&quot;GamepadMapping&quot;</span>);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#aab275d88087027ff418f1682aaa19bd5">ModGamepadMapSettings</a>.TryGetValue(packageName, out <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> modGamepadSettings)</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    &amp;&amp; modGamepadSettings.Count &gt; 0) {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                    modGamepadSettings.Save(gamepadMapping);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                    settingsElement.Add(gamepadMapping);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                <span class="comment">//保存模组的相机设置</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                XElement cameraList = <span class="keyword">new</span>(<span class="stringliteral">&quot;CameraList&quot;</span>);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#adc35cb8a6aeecc6055730d40a0c123fa">ModCameraManageSettings</a>.TryGetValue(packageName, out <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> modCameraSettings)</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                    &amp;&amp; modCameraSettings.Count &gt; 0) {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                    modCameraSettings.Save(cameraList);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                    settingsElement.Add(cameraList);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                <span class="comment">//模组保存了设置</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                <span class="keywordflow">if</span> (settingsElement.Elements().Any()</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                    || settingsElement.Attributes().Count() &gt; 1) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                    <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#a9ac9011a6844f23b99d553088fdb3bb4">ModSettingsCache</a>[packageName] = settingsElement;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            XElement xElement = <span class="keyword">new</span>(<span class="stringliteral">&quot;ModSettings&quot;</span>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, XElement&gt; settingElement <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#a9ac9011a6844f23b99d553088fdb3bb4">ModSettingsCache</a>) {</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                xElement.Add(settingElement.Value);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                <span class="keyword">using</span> (Stream stream = <a class="code hl_class" href="class_engine_1_1_storage.html">Storage</a>.<a class="code hl_function" href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">OpenFile</a>(<a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_property" href="class_mods_manager.html#a2507c021b6d130816afb6404c68bc286">ModsSettingsPath</a>, <a class="code hl_enumeration" href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">OpenFileMode</a>.Create)) {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                    <a class="code hl_class" href="class_xml_utilities_1_1_xml_utils.html">XmlUtils</a>.<a class="code hl_function" href="class_xml_utilities_1_1_xml_utils.html#ad88716f073eb951e2062a83754959ede">SaveXmlToStream</a>(xElement, stream, Encoding.UTF8, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                }</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            }</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#ade0511acc17db18ba7ac795bcc98fcb2">TryGet</a>(out <span class="keywordtype">string</span> str, <a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a>, <span class="stringliteral">&quot;5&quot;</span>)) {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                    str = <span class="stringliteral">&quot;Error saving mod settings file:&quot;</span>;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#ad3c8a97d36cba145c0159ad596a815b4">Warning</a>($<span class="stringliteral">&quot;{str} {e.Message}&quot;</span>);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            }</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#ade0511acc17db18ba7ac795bcc98fcb2">TryGet</a>(out <span class="keywordtype">string</span> info, <a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a>, <span class="stringliteral">&quot;6&quot;</span>)) {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                info = <span class="stringliteral">&quot;Saved mod settings&quot;</span>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#aa6253fafb5f70f91507047f962fcbcba">Information</a>(info);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        }</div>
+</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="foldopen" id="foldopen00213" data-start="{" data-end="}">
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#ad248063265713612f25ee6ab357fe7f4">  213</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_mod_settings_manager.html#ad248063265713612f25ee6ab357fe7f4">ResetModsKeyboardMappingSettings</a>() {</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_mod_entity.html">ModEntity</a> modEntity <span class="keywordflow">in</span> <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_variable" href="class_mods_manager.html#a9ca0df7f87225505a9c8309198a0a269">ModList</a>) {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                <span class="keywordtype">string</span> packageName = modEntity.<a class="code hl_variable" href="class_game_1_1_mod_entity.html#acb6b055f0f3df9d48632949010886328">modInfo</a>.<a class="code hl_variable" href="class_game_1_1_mod_info.html#abf2f73b6cc2bdeb2a081d91830fc7198">PackageName</a>;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#ae5bbd3f4d83a563a5db0d50f8c625a88">ModKeyboardMapSettings</a>.TryGetValue(packageName, out <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> keyboardSettings)) {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                    keyboardSettings.Clear();</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                    IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; keysToAdd = modEntity.<a class="code hl_property" href="class_game_1_1_mod_entity.html#afacabe437615151084e5909f571d0d62">Loader</a>?.<a class="code hl_function" href="class_game_1_1_mod_loader.html#af304959f60356030a0769fb44816b365">GetKeyboardMappings</a>() ?? [];</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                    <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item1 <span class="keywordflow">in</span> keysToAdd) {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                        keyboardSettings.Add(item1.Key, item1.Value);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                    }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#aa6253fafb5f70f91507047f962fcbcba">Information</a>(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a>, <span class="stringliteral">&quot;7&quot;</span>));</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        }</div>
+</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="foldopen" id="foldopen00227" data-start="{" data-end="}">
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#a4ade357df9f3336e328a578f24e769a8">  227</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_mod_settings_manager.html#a4ade357df9f3336e328a578f24e769a8">ResetModsGamepadMappingSettings</a>() {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_mod_entity.html">ModEntity</a> modEntity <span class="keywordflow">in</span> <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_variable" href="class_mods_manager.html#a9ca0df7f87225505a9c8309198a0a269">ModList</a>) {</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                <span class="keywordtype">string</span> packageName = modEntity.<a class="code hl_variable" href="class_game_1_1_mod_entity.html#acb6b055f0f3df9d48632949010886328">modInfo</a>.<a class="code hl_variable" href="class_game_1_1_mod_info.html#abf2f73b6cc2bdeb2a081d91830fc7198">PackageName</a>;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#aab275d88087027ff418f1682aaa19bd5">ModGamepadMapSettings</a>.TryGetValue(packageName, out <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> gamepadSettings)) {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                    gamepadSettings.Clear();</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                    IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; keysToAdd = modEntity.<a class="code hl_property" href="class_game_1_1_mod_entity.html#afacabe437615151084e5909f571d0d62">Loader</a>?.<a class="code hl_function" href="class_game_1_1_mod_loader.html#a0cedb2ea3ff51c1cdc51093f0cb4416d">GetGamepadMappings</a>() ?? [];</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                    <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, object&gt; item1 <span class="keywordflow">in</span> keysToAdd) {</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                        gamepadSettings.Add(item1.Key, item1.Value);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                    }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                }</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#aa6253fafb5f70f91507047f962fcbcba">Information</a>(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a>, <span class="stringliteral">&quot;9&quot;</span>));</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        }</div>
+</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="foldopen" id="foldopen00241" data-start="{" data-end="}">
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="class_game_1_1_mod_settings_manager.html#a3b753af0ce91c3369fd4a2b0f208fef4">  241</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_mod_settings_manager.html#a3b753af0ce91c3369fd4a2b0f208fef4">ResetModsCameraManageSettings</a>() {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_mod_entity.html">ModEntity</a> modEntity <span class="keywordflow">in</span> <a class="code hl_class" href="class_mods_manager.html">ModsManager</a>.<a class="code hl_variable" href="class_mods_manager.html#a9ca0df7f87225505a9c8309198a0a269">ModList</a>) {</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                <span class="keywordtype">string</span> packageName = modEntity.<a class="code hl_variable" href="class_game_1_1_mod_entity.html#acb6b055f0f3df9d48632949010886328">modInfo</a>.<a class="code hl_variable" href="class_game_1_1_mod_info.html#abf2f73b6cc2bdeb2a081d91830fc7198">PackageName</a>;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_game_1_1_mod_settings_manager.html#adc35cb8a6aeecc6055730d40a0c123fa">ModCameraManageSettings</a>.TryGetValue(packageName, out <a class="code hl_class" href="class_templates_database_1_1_values_dictionary.html">ValuesDictionary</a> cameraSettings)) {</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                    cameraSettings.Clear();</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                    IEnumerable&lt;KeyValuePair&lt;string, int&gt;&gt; camerasToAdd = modEntity.<a class="code hl_property" href="class_game_1_1_mod_entity.html#afacabe437615151084e5909f571d0d62">Loader</a>?.<a class="code hl_function" href="class_game_1_1_mod_loader.html#a137f0809d4b0bb6b9e48ac72424b00f6">GetCameraList</a>() ?? [];</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                    <span class="keywordflow">foreach</span> (KeyValuePair&lt;string, int&gt; item1 <span class="keywordflow">in</span> camerasToAdd) {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                        cameraSettings.Add(item1.Key, item1.Value);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                    }</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                }</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <a class="code hl_class" href="class_engine_1_1_log.html">Log</a>.<a class="code hl_function" href="class_engine_1_1_log.html#aa6253fafb5f70f91507047f962fcbcba">Information</a>(<a class="code hl_class" href="class_game_1_1_language_control.html">LanguageControl</a>.<a class="code hl_function" href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Get</a>(<a class="code hl_variable" href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">fName</a>, <span class="stringliteral">&quot;8&quot;</span>));</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        }</div>
+</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
+</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_log_html"><div class="ttname"><a href="class_engine_1_1_log.html">Engine.Log</a></div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00002">Log.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_log_html_aa6253fafb5f70f91507047f962fcbcba"><div class="ttname"><a href="class_engine_1_1_log.html#aa6253fafb5f70f91507047f962fcbcba">Engine.Log.Information</a></div><div class="ttdeci">static void Information(object message)</div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00056">Log.cs:56</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_log_html_ad3c8a97d36cba145c0159ad596a815b4"><div class="ttname"><a href="class_engine_1_1_log.html#ad3c8a97d36cba145c0159ad596a815b4">Engine.Log.Warning</a></div><div class="ttdeci">static void Warning(object message)</div><div class="ttdef"><b>定义</b> <a href="_log_8cs_source.html#l00068">Log.cs:68</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html"><div class="ttname"><a href="class_engine_1_1_storage.html">Engine.Storage</a></div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00024">Storage.cs:24</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a3a6586a9f70dd693b5c907a1b4a3dbea"><div class="ttname"><a href="class_engine_1_1_storage.html#a3a6586a9f70dd693b5c907a1b4a3dbea">Engine.Storage.OpenFile</a></div><div class="ttdeci">static Stream OpenFile(string path, OpenFileMode openFileMode)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00093">Storage.cs:93</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_storage_html_a99d6c83e1e607a8037faa718810f9321"><div class="ttname"><a href="class_engine_1_1_storage.html#a99d6c83e1e607a8037faa718810f9321">Engine.Storage.FileExists</a></div><div class="ttdeci">static bool FileExists(string path)</div><div class="ttdef"><b>定义</b> <a href="_storage_8cs_source.html#l00077">Storage.cs:77</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html"><div class="ttname"><a href="class_game_1_1_language_control.html">Game.LanguageControl</a></div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00008">LanguageControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_ade0511acc17db18ba7ac795bcc98fcb2"><div class="ttname"><a href="class_game_1_1_language_control.html#ade0511acc17db18ba7ac795bcc98fcb2">Game.LanguageControl.TryGet</a></div><div class="ttdeci">static bool TryGet(out string result, params string[] keys)</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00318">LanguageControl.cs:318</a></div></div>
+<div class="ttc" id="aclass_game_1_1_language_control_html_af36efea897c983592a38e243e6451d2c"><div class="ttname"><a href="class_game_1_1_language_control.html#af36efea897c983592a38e243e6451d2c">Game.LanguageControl.Get</a></div><div class="ttdeci">static string Get(string className, int key)</div><div class="ttdoc">获取在当前语言类名键对应的字符串</div><div class="ttdef"><b>定义</b> <a href="_language_control_8cs_source.html#l00247">LanguageControl.cs:247</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html"><div class="ttname"><a href="class_game_1_1_mod_entity.html">Game.ModEntity</a></div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00008">ModEntity.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_a5ccb9fd9713a36018c5fafad1e661a01"><div class="ttname"><a href="class_game_1_1_mod_entity.html#a5ccb9fd9713a36018c5fafad1e661a01">Game.ModEntity.LoadSettings</a></div><div class="ttdeci">virtual void LoadSettings(XElement xElement)</div><div class="ttdoc">加载设置</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00428">ModEntity.cs:428</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_a7af8ee3c8f223d92c12676c2857d381b"><div class="ttname"><a href="class_game_1_1_mod_entity.html#a7af8ee3c8f223d92c12676c2857d381b">Game.ModEntity.SaveSettings</a></div><div class="ttdeci">virtual void SaveSettings(XElement xElement)</div><div class="ttdoc">保存设置</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00420">ModEntity.cs:420</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_acb6b055f0f3df9d48632949010886328"><div class="ttname"><a href="class_game_1_1_mod_entity.html#acb6b055f0f3df9d48632949010886328">Game.ModEntity.modInfo</a></div><div class="ttdeci">ModInfo modInfo</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00009">ModEntity.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_entity_html_afacabe437615151084e5909f571d0d62"><div class="ttname"><a href="class_game_1_1_mod_entity.html#afacabe437615151084e5909f571d0d62">Game.ModEntity.Loader</a></div><div class="ttdeci">ModLoader Loader</div><div class="ttdef"><b>定义</b> <a href="_mod_entity_8cs_source.html#l00022">ModEntity.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_info_html_abf2f73b6cc2bdeb2a081d91830fc7198"><div class="ttname"><a href="class_game_1_1_mod_info.html#abf2f73b6cc2bdeb2a081d91830fc7198">Game.ModInfo.PackageName</a></div><div class="ttdeci">string PackageName</div><div class="ttdef"><b>定义</b> <a href="_mod_info_8cs_source.html#l00012">ModInfo.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_loader_html_a0cedb2ea3ff51c1cdc51093f0cb4416d"><div class="ttname"><a href="class_game_1_1_mod_loader.html#a0cedb2ea3ff51c1cdc51093f0cb4416d">Game.ModLoader.GetGamepadMappings</a></div><div class="ttdeci">virtual IEnumerable&lt; KeyValuePair&lt; string, object &gt; &gt; GetGamepadMappings()</div><div class="ttdoc">用于添加新的手柄按键映射，在重置按键设置时也会使用这里的设置作为默认值。 使用yield return可返回多个键值对。键：映射名；值：按键(Key)或鼠标按钮(MouseButton)</div><div class="ttdef"><b>定义</b> <a href="_mod_loader_8cs_source.html#l01841">ModLoader.cs:1841</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_loader_html_a137f0809d4b0bb6b9e48ac72424b00f6"><div class="ttname"><a href="class_game_1_1_mod_loader.html#a137f0809d4b0bb6b9e48ac72424b00f6">Game.ModLoader.GetCameraList</a></div><div class="ttdeci">virtual IEnumerable&lt; KeyValuePair&lt; string, int &gt; &gt; GetCameraList()</div><div class="ttdoc">用于添加新的摄像机顺序，在重置摄像机列表时也会使用这里的设置作为默认值。 使用yield return可返回多个键值对。键：摄像机类名；值：顺序</div><div class="ttdef"><b>定义</b> <a href="_mod_loader_8cs_source.html#l01856">ModLoader.cs:1856</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_loader_html_af304959f60356030a0769fb44816b365"><div class="ttname"><a href="class_game_1_1_mod_loader.html#af304959f60356030a0769fb44816b365">Game.ModLoader.GetKeyboardMappings</a></div><div class="ttdeci">virtual IEnumerable&lt; KeyValuePair&lt; string, object &gt; &gt; GetKeyboardMappings()</div><div class="ttdoc">用于添加新的键盘鼠标按键映射，在重置按键设置时也会使用这里的设置作为默认值。 使用yield return可返回多个键值对。键：映射名；值：按键(Key)或鼠标按钮(MouseButton)</div><div class="ttdef"><b>定义</b> <a href="_mod_loader_8cs_source.html#l01834">ModLoader.cs:1834</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html">Game.ModSettingsManager</a></div><div class="ttdef"><b>定义</b> <a href="#l00008">ModSettingsManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_a2cf1eba612fef59379482c91b597fb93"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#a2cf1eba612fef59379482c91b597fb93">Game.ModSettingsManager.fName</a></div><div class="ttdeci">const string fName</div><div class="ttdef"><b>定义</b> <a href="#l00029">ModSettingsManager.cs:29</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_a37f55e8c6dbac8b6138aa54ffb6e48a3"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#a37f55e8c6dbac8b6138aa54ffb6e48a3">Game.ModSettingsManager.LoadModSettings</a></div><div class="ttdeci">static void LoadModSettings()</div><div class="ttdef"><b>定义</b> <a href="#l00075">ModSettingsManager.cs:75</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_a3b753af0ce91c3369fd4a2b0f208fef4"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#a3b753af0ce91c3369fd4a2b0f208fef4">Game.ModSettingsManager.ResetModsCameraManageSettings</a></div><div class="ttdeci">static void ResetModsCameraManageSettings()</div><div class="ttdef"><b>定义</b> <a href="#l00241">ModSettingsManager.cs:241</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_a434a52e0189257eea9bdac3ab6173b1e"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#a434a52e0189257eea9bdac3ab6173b1e">Game.ModSettingsManager.CombinedGamepadMappingSettings</a></div><div class="ttdeci">static Dictionary&lt; string, object &gt; CombinedGamepadMappingSettings</div><div class="ttdef"><b>定义</b> <a href="#l00045">ModSettingsManager.cs:45</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_a4ade357df9f3336e328a578f24e769a8"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#a4ade357df9f3336e328a578f24e769a8">Game.ModSettingsManager.ResetModsGamepadMappingSettings</a></div><div class="ttdeci">static void ResetModsGamepadMappingSettings()</div><div class="ttdef"><b>定义</b> <a href="#l00227">ModSettingsManager.cs:227</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_a90c6ab534f9c3fae04d58da2a35a4f2f"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#a90c6ab534f9c3fae04d58da2a35a4f2f">Game.ModSettingsManager.SaveModSettings</a></div><div class="ttdeci">static void SaveModSettings()</div><div class="ttdef"><b>定义</b> <a href="#l00151">ModSettingsManager.cs:151</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_a9ac9011a6844f23b99d553088fdb3bb4"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#a9ac9011a6844f23b99d553088fdb3bb4">Game.ModSettingsManager.ModSettingsCache</a></div><div class="ttdeci">static Dictionary&lt; string, XElement &gt; ModSettingsCache</div><div class="ttdoc">储存每一个没有使用到的Mod设置的键值对，键：Mod的包名，值：Mod的设置信息XElement</div><div class="ttdef"><b>定义</b> <a href="#l00012">ModSettingsManager.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_aab275d88087027ff418f1682aaa19bd5"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#aab275d88087027ff418f1682aaa19bd5">Game.ModSettingsManager.ModGamepadMapSettings</a></div><div class="ttdeci">static Dictionary&lt; string, ValuesDictionary &gt; ModGamepadMapSettings</div><div class="ttdoc">储存每个模组的手柄键位映射设置，键：模组包名，值：模组的键位映射设置</div><div class="ttdef"><b>定义</b> <a href="#l00022">ModSettingsManager.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_ab263d405537d632c442982b27f1fc412"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#ab263d405537d632c442982b27f1fc412">Game.ModSettingsManager.CombinedKeyboardMappingSettings</a></div><div class="ttdeci">static Dictionary&lt; string, object &gt; CombinedKeyboardMappingSettings</div><div class="ttdef"><b>定义</b> <a href="#l00031">ModSettingsManager.cs:31</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_ac6eab36d99b6193f71d6a1fc5371905a"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#ac6eab36d99b6193f71d6a1fc5371905a">Game.ModSettingsManager.CombinedCameraManageSettings</a></div><div class="ttdeci">static Dictionary&lt; string, int &gt; CombinedCameraManageSettings</div><div class="ttdef"><b>定义</b> <a href="#l00060">ModSettingsManager.cs:60</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_ad248063265713612f25ee6ab357fe7f4"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#ad248063265713612f25ee6ab357fe7f4">Game.ModSettingsManager.ResetModsKeyboardMappingSettings</a></div><div class="ttdeci">static void ResetModsKeyboardMappingSettings()</div><div class="ttdef"><b>定义</b> <a href="#l00213">ModSettingsManager.cs:213</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_adc35cb8a6aeecc6055730d40a0c123fa"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#adc35cb8a6aeecc6055730d40a0c123fa">Game.ModSettingsManager.ModCameraManageSettings</a></div><div class="ttdeci">static Dictionary&lt; string, ValuesDictionary &gt; ModCameraManageSettings</div><div class="ttdoc">储存每个模组的相机设置，键：模组包名，值：模组的相机设置</div><div class="ttdef"><b>定义</b> <a href="#l00027">ModSettingsManager.cs:27</a></div></div>
+<div class="ttc" id="aclass_game_1_1_mod_settings_manager_html_ae5bbd3f4d83a563a5db0d50f8c625a88"><div class="ttname"><a href="class_game_1_1_mod_settings_manager.html#ae5bbd3f4d83a563a5db0d50f8c625a88">Game.ModSettingsManager.ModKeyboardMapSettings</a></div><div class="ttdeci">static Dictionary&lt; string, ValuesDictionary &gt; ModKeyboardMapSettings</div><div class="ttdoc">储存每个模组的键盘鼠标键位映射设置，键：模组包名，值：模组的键位映射设置</div><div class="ttdef"><b>定义</b> <a href="#l00017">ModSettingsManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html"><div class="ttname"><a href="class_game_1_1_settings_manager.html">Game.SettingsManager</a></div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00011">SettingsManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_a70b8af5d1ed1966f0ed792e1a3728f10"><div class="ttname"><a href="class_game_1_1_settings_manager.html#a70b8af5d1ed1966f0ed792e1a3728f10">Game.SettingsManager.GamepadMappingSettings</a></div><div class="ttdeci">static ValuesDictionary GamepadMappingSettings</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00409">SettingsManager.cs:409</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_a71fd73a79bbd1d3f03d2e7fcf9a68199"><div class="ttname"><a href="class_game_1_1_settings_manager.html#a71fd73a79bbd1d3f03d2e7fcf9a68199">Game.SettingsManager.CameraManageSettings</a></div><div class="ttdeci">static ValuesDictionary CameraManageSettings</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00410">SettingsManager.cs:410</a></div></div>
+<div class="ttc" id="aclass_game_1_1_settings_manager_html_afa79ccec0d20bf599b303df270cafdbd"><div class="ttname"><a href="class_game_1_1_settings_manager.html#afa79ccec0d20bf599b303df270cafdbd">Game.SettingsManager.KeyboardMappingSettings</a></div><div class="ttdeci">static ValuesDictionary KeyboardMappingSettings</div><div class="ttdef"><b>定义</b> <a href="_settings_manager_8cs_source.html#l00408">SettingsManager.cs:408</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html"><div class="ttname"><a href="class_mods_manager.html">ModsManager</a></div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00019">ModsManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a2507c021b6d130816afb6404c68bc286"><div class="ttname"><a href="class_mods_manager.html#a2507c021b6d130816afb6404c68bc286">ModsManager.ModsSettingsPath</a></div><div class="ttdeci">static string ModsSettingsPath</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00064">ModsManager.cs:64</a></div></div>
+<div class="ttc" id="aclass_mods_manager_html_a9ca0df7f87225505a9c8309198a0a269"><div class="ttname"><a href="class_mods_manager.html#a9ca0df7f87225505a9c8309198a0a269">ModsManager.ModList</a></div><div class="ttdeci">static List&lt; ModEntity &gt; ModList</div><div class="ttdoc">所有已启用的模组</div><div class="ttdef"><b>定义</b> <a href="_mods_manager_8cs_source.html#l00112">ModsManager.cs:112</a></div></div>
+<div class="ttc" id="aclass_templates_database_1_1_values_dictionary_html"><div class="ttname"><a href="class_templates_database_1_1_values_dictionary.html">TemplatesDatabase.ValuesDictionary</a></div><div class="ttdef"><b>定义</b> <a href="_values_dictionary_8cs_source.html#l00009">ValuesDictionary.cs:9</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html">XmlUtilities.XmlUtils</a></div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00010">XmlUtils.cs:10</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a25d3e91fe37b8d97d8dc55e7aa141441"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a25d3e91fe37b8d97d8dc55e7aa141441">XmlUtilities.XmlUtils.SetAttributeValue</a></div><div class="ttdeci">static void SetAttributeValue(XElement node, string attributeName, object value)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00037">XmlUtils.cs:37</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_a7247d2c34e2bbc55abc84aa86bdd6d23"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#a7247d2c34e2bbc55abc84aa86bdd6d23">XmlUtilities.XmlUtils.GetAttributeValue</a></div><div class="ttdeci">static object GetAttributeValue(XElement node, string attributeName, Type type)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00011">XmlUtils.cs:11</a></div></div>
+<div class="ttc" id="aclass_xml_utilities_1_1_xml_utils_html_ad88716f073eb951e2062a83754959ede"><div class="ttname"><a href="class_xml_utilities_1_1_xml_utils.html#ad88716f073eb951e2062a83754959ede">XmlUtilities.XmlUtils.SaveXmlToStream</a></div><div class="ttdeci">static void SaveXmlToStream(XElement node, Stream stream, Encoding encoding, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00092">XmlUtils.cs:92</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_engine_html_ae47610d75f8bb133c22ca5f9de906ae3"><div class="ttname"><a href="namespace_engine.html#ae47610d75f8bb133c22ca5f9de906ae3">Engine.OpenFileMode</a></div><div class="ttdeci">OpenFileMode</div><div class="ttdef"><b>定义</b> <a href="_open_file_mode_8cs_source.html#l00002">OpenFileMode.cs:2</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="anamespace_xml_utilities_html"><div class="ttname"><a href="namespace_xml_utilities.html">XmlUtilities</a></div><div class="ttdef"><b>定义</b> <a href="_xml_utils_8cs_source.html#l00009">XmlUtils.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_76e7375bc96a75ae21201cc55869c5d4.html">ModsManager</a></li><li class="navelem"><a href="_mod_settings_manager_8cs.html">ModSettingsManager.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

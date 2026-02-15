@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Subsystem/SubsystemItemsScanner.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_subsystem_items_scanner_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SubsystemItemsScanner.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_subsystem_items_scanner_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_templates_database.html">TemplatesDatabase</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_1_1_subsystem_items_scanner.html">SubsystemItemsScanner</a> : <a class="code hl_class" href="class_game_entity_system_1_1_subsystem.html">Subsystem</a>, <a class="code hl_interface" href="interface_game_1_1_i_updateable.html">IUpdateable</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#a7c06ebd75808c7c042e0acacf1f3a0af">    7</a></span>        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a7c06ebd75808c7c042e0acacf1f3a0af">m_automaticScanPeriod</a> = 60f;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#a662c795b18db854edbcc0275fe11999c">    9</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a662c795b18db854edbcc0275fe11999c">m_nextAutomaticScanTime</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">   11</a></span>        <span class="keyword">public</span> List&lt;ScannedItemData&gt; <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">m_items</a> = [];</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#a698a4d04b7d6b262fa75cde5978f8903">   13</a></span>        <span class="keyword">public</span> <a class="code hl_property" href="class_game_1_1_subsystem_items_scanner.html#a698a4d04b7d6b262fa75cde5978f8903">UpdateOrder</a> <a class="code hl_property" href="class_game_1_1_subsystem_items_scanner.html#a698a4d04b7d6b262fa75cde5978f8903">UpdateOrder</a> =&gt; <a class="code hl_property" href="class_game_1_1_subsystem_items_scanner.html#a698a4d04b7d6b262fa75cde5978f8903">UpdateOrder</a>.Default;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#a51ab0cae0b3f15a714e40a4737f4c39b">   15</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> Action&lt;ReadOnlyList&lt;ScannedItemData&gt;&gt; <a class="code hl_property" href="class_game_1_1_subsystem_items_scanner.html#a51ab0cae0b3f15a714e40a4737f4c39b">ItemsScanned</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#aee8cab655151c832a97e1191bc82f7c5">   17</a></span>        <span class="keyword">public</span> ReadOnlyList&lt;ScannedItemData&gt; <a class="code hl_function" href="class_game_1_1_subsystem_items_scanner.html#aee8cab655151c832a97e1191bc82f7c5">ScanItems</a>() {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">m_items</a>.Clear();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_entity_system_1_1_subsystem.html">Subsystem</a> subsystem <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.Subsystems) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <span class="comment">// ReSharper disable SuspiciousTypeConversion.Global</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">if</span> (subsystem is <a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a> inventory)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    <span class="comment">// ReSharper restore SuspiciousTypeConversion.Global</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    <a class="code hl_function" href="class_game_1_1_subsystem_items_scanner.html#a7184c95236e86a5c045b272a4a420c68">ScanInventory</a>(inventory, <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">m_items</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.Entities) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a> component <span class="keywordflow">in</span> entity.<a class="code hl_property" href="class_game_entity_system_1_1_entity.html#a96fee1921742d1d65c8c1aeb3fa5b8de">Components</a>) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    <span class="keywordflow">if</span> (component is <a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a> inventory2) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                        <a class="code hl_function" href="class_game_1_1_subsystem_items_scanner.html#a7184c95236e86a5c045b272a4a420c68">ScanInventory</a>(inventory2, <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">m_items</a>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_struct" href="struct_game_1_1_scanned_item_data.html">ScannedItemData</a> item;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_pickable.html">Pickable</a> pickable <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_pickables.html">SubsystemPickables</a>&gt;(<span class="keyword">true</span>).<a class="code hl_property" href="class_game_1_1_subsystem_pickables.html#a44999ab893cb1669595acfca8e614601">Pickables</a>) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keywordflow">if</span> (pickable.<a class="code hl_variable" href="class_game_1_1_pickable.html#ae6710d6f36f294a1b3390b225b8eebe0">Count</a> &gt; 0</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    &amp;&amp; pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Value</a> != 0) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    List&lt;ScannedItemData&gt; items = <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">m_items</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    item = <span class="keyword">new</span> <a class="code hl_struct" href="struct_game_1_1_scanned_item_data.html">ScannedItemData</a> { Container = pickable, Value = pickable.<a class="code hl_variable" href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Value</a>, Count = pickable.Count };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    items.Add(item);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_projectile.html">Projectile</a> projectile <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_projectiles.html">SubsystemProjectiles</a>&gt;(<span class="keyword">true</span>).<a class="code hl_property" href="class_game_1_1_subsystem_projectiles.html#abb10da0beb7452c55a6bd21257589373">Projectiles</a>) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordflow">if</span> (projectile.<a class="code hl_variable" href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Value</a> != 0) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    List&lt;ScannedItemData&gt; items2 = <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">m_items</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    item = <span class="keyword">new</span> <a class="code hl_struct" href="struct_game_1_1_scanned_item_data.html">ScannedItemData</a> { Container = projectile, Value = projectile.<a class="code hl_variable" href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Value</a>, Count = 1 };</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    items2.Add(item);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">foreach</span> (<a class="code hl_interface" href="interface_game_1_1_i_moving_block_set.html">IMovingBlockSet</a> movingBlockSet <span class="keywordflow">in</span> <a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">Project</a>.FindSubsystem&lt;<a class="code hl_class" href="class_game_1_1_subsystem_moving_blocks.html">SubsystemMovingBlocks</a>&gt;(<span class="keyword">true</span>).<a class="code hl_property" href="class_game_1_1_subsystem_moving_blocks.html#ac1a01c2d55cf09679f6957dea4f56e4a">MovingBlockSets</a>) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; movingBlockSet.<a class="code hl_property" href="interface_game_1_1_i_moving_block_set.html#aae6e2338b98ac9a9f8311046eb8a6b0a">Blocks</a>.Count; i++) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    List&lt;ScannedItemData&gt; items3 = <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">m_items</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    item = <span class="keyword">new</span> <a class="code hl_struct" href="struct_game_1_1_scanned_item_data.html">ScannedItemData</a> {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                        Container = movingBlockSet, Value = movingBlockSet.<a class="code hl_property" href="interface_game_1_1_i_moving_block_set.html#aae6e2338b98ac9a9f8311046eb8a6b0a">Blocks</a>[i].Value, Count = 1, IndexInContainer = i</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    };</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    items3.Add(item);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> ReadOnlyList&lt;ScannedItemData&gt;(<a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">m_items</a>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#aa6a312d3c851cec56da1873333c2689e">   62</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_game_1_1_subsystem_items_scanner.html#aa6a312d3c851cec56da1873333c2689e">TryModifyItem</a>(<a class="code hl_struct" href="struct_game_1_1_scanned_item_data.html">ScannedItemData</a> itemData, <span class="keywordtype">int</span> newValue) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">if</span> (itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a118d3fd3ce7879d4c7ed914a181a8ab0">Container</a> is <a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a>) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a> obj = (<a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a>)itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a118d3fd3ce7879d4c7ed914a181a8ab0">Container</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordtype">int</span> slotCapacity = obj.<a class="code hl_function" href="interface_game_1_1_i_inventory.html#a67a9bad5c015e24a001a8cf735e526c3">GetSlotCapacity</a>(itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a497975ee6f38fedb5de5c23564d6b372">IndexInContainer</a>, newValue);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">if</span> (slotCapacity &lt; itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a5159ebc919f31c13f4e64a9f77406d07">Count</a>) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                obj.<a class="code hl_function" href="interface_game_1_1_i_inventory.html#a000ad7c573c38a766dd3f2a4e4550d7e">RemoveSlotItems</a>(itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a497975ee6f38fedb5de5c23564d6b372">IndexInContainer</a>, itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a5159ebc919f31c13f4e64a9f77406d07">Count</a>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                obj.<a class="code hl_function" href="interface_game_1_1_i_inventory.html#a6d0b9ef25793f46fb034a7dae48761b1">AddSlotItems</a>(itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a497975ee6f38fedb5de5c23564d6b372">IndexInContainer</a>, newValue, itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a5159ebc919f31c13f4e64a9f77406d07">Count</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">if</span> (itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a118d3fd3ce7879d4c7ed914a181a8ab0">Container</a> is <a class="code hl_class" href="class_game_1_1_world_item.html">WorldItem</a>) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                ((<a class="code hl_class" href="class_game_1_1_world_item.html">WorldItem</a>)itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a118d3fd3ce7879d4c7ed914a181a8ab0">Container</a>).Value = newValue;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">if</span> (itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a118d3fd3ce7879d4c7ed914a181a8ab0">Container</a> is <a class="code hl_interface" href="interface_game_1_1_i_moving_block_set.html">IMovingBlockSet</a>) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <a class="code hl_interface" href="interface_game_1_1_i_moving_block_set.html">IMovingBlockSet</a> obj2 = (<a class="code hl_interface" href="interface_game_1_1_i_moving_block_set.html">IMovingBlockSet</a>)itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a118d3fd3ce7879d4c7ed914a181a8ab0">Container</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <a class="code hl_class" href="class_game_1_1_moving_block.html">MovingBlock</a> movingBlock = obj2.<a class="code hl_property" href="interface_game_1_1_i_moving_block_set.html#aae6e2338b98ac9a9f8311046eb8a6b0a">Blocks</a>.ElementAt(itemData.<a class="code hl_variable" href="struct_game_1_1_scanned_item_data.html#a497975ee6f38fedb5de5c23564d6b372">IndexInContainer</a>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                obj2.<a class="code hl_function" href="interface_game_1_1_i_moving_block_set.html#aefc944aaacc8b1b660b256421b42f133">SetBlock</a>(movingBlock.<a class="code hl_variable" href="class_game_1_1_moving_block.html#ae0b1f3c39e1623082aad640c395e7335">Offset</a>, newValue);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#af1173e21b6f48b03f6b401fcb6cb3bfb">   86</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_items_scanner.html#af1173e21b6f48b03f6b401fcb6cb3bfb">Update</a>(<span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_engine_1_1_time.html">Time</a>.<a class="code hl_property" href="class_engine_1_1_time.html#aed08efe8243e7f2c006cc947e1d0554e">FrameStartTime</a> &gt;= <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a662c795b18db854edbcc0275fe11999c">m_nextAutomaticScanTime</a>) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a662c795b18db854edbcc0275fe11999c">m_nextAutomaticScanTime</a> = <a class="code hl_property" href="class_engine_1_1_time.html#aed08efe8243e7f2c006cc947e1d0554e">Time.FrameStartTime</a> + 60.0;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <a class="code hl_property" href="class_game_1_1_subsystem_items_scanner.html#a51ab0cae0b3f15a714e40a4737f4c39b">ItemsScanned</a>?.Invoke(<a class="code hl_function" href="class_game_1_1_subsystem_items_scanner.html#aee8cab655151c832a97e1191bc82f7c5">ScanItems</a>());</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#aacc375fa571990f9678ed15a49137053">   93</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_items_scanner.html#aacc375fa571990f9678ed15a49137053">Load</a>(<a class="code hl_property" href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">ValuesDictionary</a> valuesDictionary) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_variable" href="class_game_1_1_subsystem_items_scanner.html#a662c795b18db854edbcc0275fe11999c">m_nextAutomaticScanTime</a> = <a class="code hl_property" href="class_engine_1_1_time.html#aed08efe8243e7f2c006cc947e1d0554e">Time.FrameStartTime</a> + 60.0;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_game_1_1_subsystem_items_scanner.html#a7184c95236e86a5c045b272a4a420c68">   97</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_1_1_subsystem_items_scanner.html#a7184c95236e86a5c045b272a4a420c68">ScanInventory</a>(<a class="code hl_interface" href="interface_game_1_1_i_inventory.html">IInventory</a> inventory, List&lt;ScannedItemData&gt; items) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; inventory.<a class="code hl_property" href="interface_game_1_1_i_inventory.html#af022ea46a42cfe1feb5683ad85097225">SlotsCount</a>; i++) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keywordtype">int</span> slotCount = inventory.<a class="code hl_function" href="interface_game_1_1_i_inventory.html#a5a1e74df2aa929c92b1bff8f3382674b">GetSlotCount</a>(i);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="keywordflow">if</span> (slotCount &gt; 0) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    <span class="keywordtype">int</span> slotValue = inventory.<a class="code hl_function" href="interface_game_1_1_i_inventory.html#ae5b15914db42130533623ffb73d62fb4">GetSlotValue</a>(i);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    <span class="keywordflow">if</span> (slotValue != 0) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                        items.Add(<span class="keyword">new</span> <a class="code hl_struct" href="struct_game_1_1_scanned_item_data.html">ScannedItemData</a> { Container = inventory, IndexInContainer = i, Value = slotValue, Count = slotCount });</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                    }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_time_html"><div class="ttname"><a href="class_engine_1_1_time.html">Engine.Time</a></div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00004">Time.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_time_html_aed08efe8243e7f2c006cc947e1d0554e"><div class="ttname"><a href="class_engine_1_1_time.html#aed08efe8243e7f2c006cc947e1d0554e">Engine.Time.FrameStartTime</a></div><div class="ttdeci">static double FrameStartTime</div><div class="ttdef"><b>定义</b> <a href="_time_8cs_source.html#l00042">Time.cs:42</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html"><div class="ttname"><a href="class_game_1_1_moving_block.html">Game.MovingBlock</a></div><div class="ttdef"><b>定义</b> <a href="_moving_block_8cs_source.html#l00007">MovingBlock.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_moving_block_html_ae0b1f3c39e1623082aad640c395e7335"><div class="ttname"><a href="class_game_1_1_moving_block.html#ae0b1f3c39e1623082aad640c395e7335">Game.MovingBlock.Offset</a></div><div class="ttdeci">Point3 Offset</div><div class="ttdef"><b>定义</b> <a href="_moving_block_8cs_source.html#l00091">MovingBlock.cs:91</a></div></div>
+<div class="ttc" id="aclass_game_1_1_pickable_html"><div class="ttname"><a href="class_game_1_1_pickable.html">Game.Pickable</a></div><div class="ttdef"><b>定义</b> <a href="_pickable_8cs_source.html#l00007">Pickable.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_pickable_html_ae6710d6f36f294a1b3390b225b8eebe0"><div class="ttname"><a href="class_game_1_1_pickable.html#ae6710d6f36f294a1b3390b225b8eebe0">Game.Pickable.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>定义</b> <a href="_pickable_8cs_source.html#l00008">Pickable.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_projectile_html"><div class="ttname"><a href="class_game_1_1_projectile.html">Game.Projectile</a></div><div class="ttdef"><b>定义</b> <a href="_projectile_8cs_source.html#l00007">Projectile.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html">Game.SubsystemItemsScanner</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">SubsystemItemsScanner.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_a1ed63c0f2dfbdc5b0bde84d671b0a136"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#a1ed63c0f2dfbdc5b0bde84d671b0a136">Game.SubsystemItemsScanner.m_items</a></div><div class="ttdeci">List&lt; ScannedItemData &gt; m_items</div><div class="ttdef"><b>定义</b> <a href="#l00011">SubsystemItemsScanner.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_a51ab0cae0b3f15a714e40a4737f4c39b"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#a51ab0cae0b3f15a714e40a4737f4c39b">Game.SubsystemItemsScanner.ItemsScanned</a></div><div class="ttdeci">virtual Action&lt; ReadOnlyList&lt; ScannedItemData &gt; &gt; ItemsScanned</div><div class="ttdef"><b>定义</b> <a href="#l00015">SubsystemItemsScanner.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_a662c795b18db854edbcc0275fe11999c"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#a662c795b18db854edbcc0275fe11999c">Game.SubsystemItemsScanner.m_nextAutomaticScanTime</a></div><div class="ttdeci">double m_nextAutomaticScanTime</div><div class="ttdef"><b>定义</b> <a href="#l00009">SubsystemItemsScanner.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_a698a4d04b7d6b262fa75cde5978f8903"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#a698a4d04b7d6b262fa75cde5978f8903">Game.SubsystemItemsScanner.UpdateOrder</a></div><div class="ttdeci">UpdateOrder UpdateOrder</div><div class="ttdef"><b>定义</b> <a href="#l00013">SubsystemItemsScanner.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_a7184c95236e86a5c045b272a4a420c68"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#a7184c95236e86a5c045b272a4a420c68">Game.SubsystemItemsScanner.ScanInventory</a></div><div class="ttdeci">void ScanInventory(IInventory inventory, List&lt; ScannedItemData &gt; items)</div><div class="ttdef"><b>定义</b> <a href="#l00097">SubsystemItemsScanner.cs:97</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_a7c06ebd75808c7c042e0acacf1f3a0af"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#a7c06ebd75808c7c042e0acacf1f3a0af">Game.SubsystemItemsScanner.m_automaticScanPeriod</a></div><div class="ttdeci">const float m_automaticScanPeriod</div><div class="ttdef"><b>定义</b> <a href="#l00007">SubsystemItemsScanner.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_aa6a312d3c851cec56da1873333c2689e"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#aa6a312d3c851cec56da1873333c2689e">Game.SubsystemItemsScanner.TryModifyItem</a></div><div class="ttdeci">bool TryModifyItem(ScannedItemData itemData, int newValue)</div><div class="ttdef"><b>定义</b> <a href="#l00062">SubsystemItemsScanner.cs:62</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_aacc375fa571990f9678ed15a49137053"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#aacc375fa571990f9678ed15a49137053">Game.SubsystemItemsScanner.Load</a></div><div class="ttdeci">override void Load(ValuesDictionary valuesDictionary)</div><div class="ttdef"><b>定义</b> <a href="#l00093">SubsystemItemsScanner.cs:93</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_aee8cab655151c832a97e1191bc82f7c5"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#aee8cab655151c832a97e1191bc82f7c5">Game.SubsystemItemsScanner.ScanItems</a></div><div class="ttdeci">ReadOnlyList&lt; ScannedItemData &gt; ScanItems()</div><div class="ttdef"><b>定义</b> <a href="#l00017">SubsystemItemsScanner.cs:17</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_items_scanner_html_af1173e21b6f48b03f6b401fcb6cb3bfb"><div class="ttname"><a href="class_game_1_1_subsystem_items_scanner.html#af1173e21b6f48b03f6b401fcb6cb3bfb">Game.SubsystemItemsScanner.Update</a></div><div class="ttdeci">virtual void Update(float dt)</div><div class="ttdef"><b>定义</b> <a href="#l00086">SubsystemItemsScanner.cs:86</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_moving_blocks_html"><div class="ttname"><a href="class_game_1_1_subsystem_moving_blocks.html">Game.SubsystemMovingBlocks</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_moving_blocks_8cs_source.html#l00010">SubsystemMovingBlocks.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_moving_blocks_html_ac1a01c2d55cf09679f6957dea4f56e4a"><div class="ttname"><a href="class_game_1_1_subsystem_moving_blocks.html#ac1a01c2d55cf09679f6957dea4f56e4a">Game.SubsystemMovingBlocks.MovingBlockSets</a></div><div class="ttdeci">List&lt; IMovingBlockSet &gt; MovingBlockSets</div><div class="ttdef"><b>定义</b> <a href="_subsystem_moving_blocks_8cs_source.html#l00137">SubsystemMovingBlocks.cs:137</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_pickables_html"><div class="ttname"><a href="class_game_1_1_subsystem_pickables.html">Game.SubsystemPickables</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_pickables_8cs_source.html#l00008">SubsystemPickables.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_pickables_html_a44999ab893cb1669595acfca8e614601"><div class="ttname"><a href="class_game_1_1_subsystem_pickables.html#a44999ab893cb1669595acfca8e614601">Game.SubsystemPickables.Pickables</a></div><div class="ttdeci">ReadOnlyList&lt; Pickable &gt; Pickables</div><div class="ttdef"><b>定义</b> <a href="_subsystem_pickables_8cs_source.html#l00046">SubsystemPickables.cs:46</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_projectiles_html"><div class="ttname"><a href="class_game_1_1_subsystem_projectiles.html">Game.SubsystemProjectiles</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_projectiles_8cs_source.html#l00009">SubsystemProjectiles.cs:9</a></div></div>
+<div class="ttc" id="aclass_game_1_1_subsystem_projectiles_html_abb10da0beb7452c55a6bd21257589373"><div class="ttname"><a href="class_game_1_1_subsystem_projectiles.html#abb10da0beb7452c55a6bd21257589373">Game.SubsystemProjectiles.Projectiles</a></div><div class="ttdeci">ReadOnlyList&lt; Projectile &gt; Projectiles</div><div class="ttdef"><b>定义</b> <a href="_subsystem_projectiles_8cs_source.html#l00052">SubsystemProjectiles.cs:52</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html"><div class="ttname"><a href="class_game_1_1_world_item.html">Game.WorldItem</a></div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00005">WorldItem.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_world_item_html_af0ede2c07cebb2fac063328e8aaa9694"><div class="ttname"><a href="class_game_1_1_world_item.html#af0ede2c07cebb2fac063328e8aaa9694">Game.WorldItem.Value</a></div><div class="ttdeci">int Value</div><div class="ttdef"><b>定义</b> <a href="_world_item_8cs_source.html#l00006">WorldItem.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html"><div class="ttname"><a href="class_game_entity_system_1_1_component.html">GameEntitySystem.Component</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00007">Component.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html">GameEntitySystem.Entity</a></div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00010">Entity.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_a96fee1921742d1d65c8c1aeb3fa5b8de"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#a96fee1921742d1d65c8c1aeb3fa5b8de">GameEntitySystem.Entity.Components</a></div><div class="ttdeci">List&lt; Component &gt; Components</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00073">Entity.cs:73</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html">GameEntitySystem.Subsystem</a></div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00005">Subsystem.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a24b8e8b6ac383c2d7666a4c4bfa995a2"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a24b8e8b6ac383c2d7666a4c4bfa995a2">GameEntitySystem.Subsystem.ValuesDictionary</a></div><div class="ttdeci">ValuesDictionary ValuesDictionary</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00012">Subsystem.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_subsystem_html_a646bbedf1e95de23007334891e1f77c0"><div class="ttname"><a href="class_game_entity_system_1_1_subsystem.html#a646bbedf1e95de23007334891e1f77c0">GameEntitySystem.Subsystem.Project</a></div><div class="ttdeci">Project Project</div><div class="ttdef"><b>定义</b> <a href="_subsystem_8cs_source.html#l00010">Subsystem.cs:10</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html"><div class="ttname"><a href="interface_game_1_1_i_inventory.html">Game.IInventory</a></div><div class="ttdef"><b>定义</b> <a href="_i_inventory_8cs_source.html#l00005">IInventory.cs:5</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html_a000ad7c573c38a766dd3f2a4e4550d7e"><div class="ttname"><a href="interface_game_1_1_i_inventory.html#a000ad7c573c38a766dd3f2a4e4550d7e">Game.IInventory.RemoveSlotItems</a></div><div class="ttdeci">int RemoveSlotItems(int slotIndex, int count)</div><div class="ttdoc">实际移除的数量</div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html_a5a1e74df2aa929c92b1bff8f3382674b"><div class="ttname"><a href="interface_game_1_1_i_inventory.html#a5a1e74df2aa929c92b1bff8f3382674b">Game.IInventory.GetSlotCount</a></div><div class="ttdeci">int GetSlotCount(int slotIndex)</div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html_a67a9bad5c015e24a001a8cf735e526c3"><div class="ttname"><a href="interface_game_1_1_i_inventory.html#a67a9bad5c015e24a001a8cf735e526c3">Game.IInventory.GetSlotCapacity</a></div><div class="ttdeci">int GetSlotCapacity(int slotIndex, int value)</div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html_a6d0b9ef25793f46fb034a7dae48761b1"><div class="ttname"><a href="interface_game_1_1_i_inventory.html#a6d0b9ef25793f46fb034a7dae48761b1">Game.IInventory.AddSlotItems</a></div><div class="ttdeci">void AddSlotItems(int slotIndex, int value, int count)</div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html_ae5b15914db42130533623ffb73d62fb4"><div class="ttname"><a href="interface_game_1_1_i_inventory.html#ae5b15914db42130533623ffb73d62fb4">Game.IInventory.GetSlotValue</a></div><div class="ttdeci">int GetSlotValue(int slotIndex)</div></div>
+<div class="ttc" id="ainterface_game_1_1_i_inventory_html_af022ea46a42cfe1feb5683ad85097225"><div class="ttname"><a href="interface_game_1_1_i_inventory.html#af022ea46a42cfe1feb5683ad85097225">Game.IInventory.SlotsCount</a></div><div class="ttdeci">int SlotsCount</div><div class="ttdef"><b>定义</b> <a href="_i_inventory_8cs_source.html#l00008">IInventory.cs:8</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_moving_block_set_html"><div class="ttname"><a href="interface_game_1_1_i_moving_block_set.html">Game.IMovingBlockSet</a></div><div class="ttdef"><b>定义</b> <a href="_i_moving_block_set_8cs_source.html#l00004">IMovingBlockSet.cs:4</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_moving_block_set_html_aae6e2338b98ac9a9f8311046eb8a6b0a"><div class="ttname"><a href="interface_game_1_1_i_moving_block_set.html#aae6e2338b98ac9a9f8311046eb8a6b0a">Game.IMovingBlockSet.Blocks</a></div><div class="ttdeci">List&lt; MovingBlock &gt; Blocks</div><div class="ttdef"><b>定义</b> <a href="_i_moving_block_set_8cs_source.html#l00013">IMovingBlockSet.cs:13</a></div></div>
+<div class="ttc" id="ainterface_game_1_1_i_moving_block_set_html_aefc944aaacc8b1b660b256421b42f133"><div class="ttname"><a href="interface_game_1_1_i_moving_block_set.html#aefc944aaacc8b1b660b256421b42f133">Game.IMovingBlockSet.SetBlock</a></div><div class="ttdeci">void SetBlock(Point3 offset, int value)</div></div>
+<div class="ttc" id="ainterface_game_1_1_i_updateable_html"><div class="ttname"><a href="interface_game_1_1_i_updateable.html">Game.IUpdateable</a></div><div class="ttdef"><b>定义</b> <a href="_i_updateable_8cs_source.html#l00002">IUpdateable.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="anamespace_templates_database_html"><div class="ttname"><a href="namespace_templates_database.html">TemplatesDatabase</a></div><div class="ttdef"><b>定义</b> <a href="_database_8cs_source.html#l00006">Database.cs:6</a></div></div>
+<div class="ttc" id="astruct_game_1_1_scanned_item_data_html"><div class="ttname"><a href="struct_game_1_1_scanned_item_data.html">Game.ScannedItemData</a></div><div class="ttdef"><b>定义</b> <a href="_scanned_item_data_8cs_source.html#l00004">ScannedItemData.cs:4</a></div></div>
+<div class="ttc" id="astruct_game_1_1_scanned_item_data_html_a118d3fd3ce7879d4c7ed914a181a8ab0"><div class="ttname"><a href="struct_game_1_1_scanned_item_data.html#a118d3fd3ce7879d4c7ed914a181a8ab0">Game.ScannedItemData.Container</a></div><div class="ttdeci">object Container</div><div class="ttdef"><b>定义</b> <a href="_scanned_item_data_8cs_source.html#l00006">ScannedItemData.cs:6</a></div></div>
+<div class="ttc" id="astruct_game_1_1_scanned_item_data_html_a497975ee6f38fedb5de5c23564d6b372"><div class="ttname"><a href="struct_game_1_1_scanned_item_data.html#a497975ee6f38fedb5de5c23564d6b372">Game.ScannedItemData.IndexInContainer</a></div><div class="ttdeci">int IndexInContainer</div><div class="ttdef"><b>定义</b> <a href="_scanned_item_data_8cs_source.html#l00008">ScannedItemData.cs:8</a></div></div>
+<div class="ttc" id="astruct_game_1_1_scanned_item_data_html_a5159ebc919f31c13f4e64a9f77406d07"><div class="ttname"><a href="struct_game_1_1_scanned_item_data.html#a5159ebc919f31c13f4e64a9f77406d07">Game.ScannedItemData.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>定义</b> <a href="_scanned_item_data_8cs_source.html#l00012">ScannedItemData.cs:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_cfd599bdb16193bdab9c37cf24ea5615.html">Subsystem</a></li><li class="navelem"><a href="_subsystem_items_scanner_8cs.html">SubsystemItemsScanner.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

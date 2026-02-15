@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/EntitySystem/GameEntitySystem/IdToEntityMap.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_id_to_entity_map_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IdToEntityMap.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_id_to_entity_map_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game_entity_system.html">GameEntitySystem</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_entity_system_1_1_id_to_entity_map.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_entity_system_1_1_id_to_entity_map.html#a4b5a3744019991639573d69f3ab3766c">IdToEntityMap</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_game_entity_system_1_1_id_to_entity_map.html#aa045b1a0d3b866711b83c688f51e931a">    6</a></span>        Dictionary&lt;int, Entity&gt; <a class="code hl_variable" href="class_game_entity_system_1_1_id_to_entity_map.html#aa045b1a0d3b866711b83c688f51e931a">m_map</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_game_entity_system_1_1_id_to_entity_map.html#a4b5a3744019991639573d69f3ab3766c">    8</a></span>        <span class="keyword">internal</span> <a class="code hl_function" href="class_game_entity_system_1_1_id_to_entity_map.html#a4b5a3744019991639573d69f3ab3766c">IdToEntityMap</a>(Dictionary&lt;int, Entity&gt; map) =&gt; <a class="code hl_variable" href="class_game_entity_system_1_1_id_to_entity_map.html#aa045b1a0d3b866711b83c688f51e931a">m_map</a> = map;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        [Obsolete(<span class="stringliteral">&quot;Use Project.FindEntity instead.&quot;</span>, <span class="keyword">true</span>)]</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_entity_system_1_1_id_to_entity_map.html#aeb873ccd32ffca27fe379a932ac59f4a">   11</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> <a class="code hl_function" href="class_game_entity_system_1_1_id_to_entity_map.html#aeb873ccd32ffca27fe379a932ac59f4a">FindEntity</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_entity_system_1_1_id_to_entity_map.html#aa045b1a0d3b866711b83c688f51e931a">m_map</a>.TryGetValue(<span class="keywordtype">id</span>, out <a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> value)) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        }</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        [Obsolete(<span class="stringliteral">&quot;Use Project.FindEntity()?.FindComponent() instead.&quot;</span>, <span class="keyword">true</span>)]</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_game_entity_system_1_1_id_to_entity_map.html#a93d790d703d078864fa9c014b1356ffe">   19</a></span>        <span class="keyword">public</span> T <a class="code hl_function" href="class_game_entity_system_1_1_id_to_entity_map.html#a93d790d703d078864fa9c014b1356ffe">FindComponent&lt;T&gt;</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">string</span> name) where T : <a class="code hl_class" href="class_game_entity_system_1_1_component.html">Component</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_class" href="class_game_entity_system_1_1_entity.html">Entity</a> entity = <a class="code hl_function" href="class_game_entity_system_1_1_id_to_entity_map.html#aeb873ccd32ffca27fe379a932ac59f4a">FindEntity</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">if</span> (entity != <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <span class="keywordflow">return</span> entity.<a class="code hl_function" href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">FindComponent</a>&lt;T&gt;(name, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="ttc" id="aclass_game_entity_system_1_1_component_html"><div class="ttname"><a href="class_game_entity_system_1_1_component.html">GameEntitySystem.Component</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00007">Component.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html">GameEntitySystem.Entity</a></div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00010">Entity.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_entity_html_afbe091d90718bd24bc5b528daa3245cf"><div class="ttname"><a href="class_game_entity_system_1_1_entity.html#afbe091d90718bd24bc5b528daa3245cf">GameEntitySystem.Entity.FindComponent</a></div><div class="ttdeci">Component FindComponent(Type type, string name, bool throwOnError)</div><div class="ttdef"><b>定义</b> <a href="_entity_8cs_source.html#l00132">Entity.cs:132</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html_a4b5a3744019991639573d69f3ab3766c"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html#a4b5a3744019991639573d69f3ab3766c">GameEntitySystem.IdToEntityMap.IdToEntityMap</a></div><div class="ttdeci">IdToEntityMap(Dictionary&lt; int, Entity &gt; map)</div><div class="ttdef"><b>定义</b> <a href="#l00008">IdToEntityMap.cs:8</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html_a93d790d703d078864fa9c014b1356ffe"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html#a93d790d703d078864fa9c014b1356ffe">GameEntitySystem.IdToEntityMap.FindComponent&lt; T &gt;</a></div><div class="ttdeci">T FindComponent&lt; T &gt;(int id, string name)</div><div class="ttdef"><b>定义</b> <a href="#l00019">IdToEntityMap.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html_aa045b1a0d3b866711b83c688f51e931a"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html#aa045b1a0d3b866711b83c688f51e931a">GameEntitySystem.IdToEntityMap.m_map</a></div><div class="ttdeci">Dictionary&lt; int, Entity &gt; m_map</div><div class="ttdef"><b>定义</b> <a href="#l00006">IdToEntityMap.cs:6</a></div></div>
+<div class="ttc" id="aclass_game_entity_system_1_1_id_to_entity_map_html_aeb873ccd32ffca27fe379a932ac59f4a"><div class="ttname"><a href="class_game_entity_system_1_1_id_to_entity_map.html#aeb873ccd32ffca27fe379a932ac59f4a">GameEntitySystem.IdToEntityMap.FindEntity</a></div><div class="ttdeci">Entity FindEntity(int id)</div><div class="ttdef"><b>定义</b> <a href="#l00011">IdToEntityMap.cs:11</a></div></div>
+<div class="ttc" id="anamespace_game_entity_system_html"><div class="ttname"><a href="namespace_game_entity_system.html">GameEntitySystem</a></div><div class="ttdef"><b>定义</b> <a href="_component_8cs_source.html#l00006">Component.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_292d907b3205a0225a4c31bdc9de5e31.html">EntitySystem</a></li><li class="navelem"><a href="dir_321312145c2486481763f16f599eec9f.html">GameEntitySystem</a></li><li class="navelem"><a href="_id_to_entity_map_8cs.html">IdToEntityMap.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

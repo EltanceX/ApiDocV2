@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Survivalcraft API 1.8.2.3: E:/sc/doxygen/SurvivalcraftApi 1.8.2.3/Survivalcraft.Windows/Managers/InstancedModelsManager.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Survivalcraft API 1.8.2.3<span id="projectnumber">&#160;v1.8.2.3</span>
+   </div>
+   <div id="projectbrief">Survivalcraft 2.4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_instanced_models_manager_8cs_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">InstancedModelsManager.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_instanced_models_manager_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_engine_1_1_graphics.html">Engine.Graphics</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_game.html">Game</a> {</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_game_1_1_instanced_models_manager.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code hl_function" href="class_game_1_1_instanced_models_manager.html#adb459132bacec42af761893113bc82c5">InstancedModelsManager</a> {</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html">    6</a></span>        <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html">SourceModelVertex</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a7444d4720578708f54a50720b71d578b">    7</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a7444d4720578708f54a50720b71d578b">X</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#aa013d618a2c1a1e2910a28cff3b7b6a1">    9</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#aa013d618a2c1a1e2910a28cff3b7b6a1">Y</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#acb7192b72d2ae4aaf6b731b95094aac0">   11</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#acb7192b72d2ae4aaf6b731b95094aac0">Z</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a5a14ff4773f44971ea4002e8fc17e678">   13</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a5a14ff4773f44971ea4002e8fc17e678">Nx</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a119fd1eaab8088f69875780af59fc770">   15</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a119fd1eaab8088f69875780af59fc770">Ny</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#ad8a83af247b3a3a7c4e9ec4bab8e1391">   17</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#ad8a83af247b3a3a7c4e9ec4bab8e1391">Nz</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a2fc495fdae4a781ddd398f01835e3d99">   19</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a2fc495fdae4a781ddd398f01835e3d99">Tx</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a96139149739017f536edd3c987496ae9">   21</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a96139149739017f536edd3c987496ae9">Ty</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html">   24</a></span>        <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html">InstancedVertex</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#ae40bcd8156f3b5ac17cebfb45f2479d3">   25</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#ae40bcd8156f3b5ac17cebfb45f2479d3">X</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#ab1ddc4715b2a88167d1dd7f4e86f9703">   27</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#ab1ddc4715b2a88167d1dd7f4e86f9703">Y</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#af324f84010090a68706604e2cd2a83b0">   29</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#af324f84010090a68706604e2cd2a83b0">Z</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a11ccb3b620881fe84342fe138c8dc53a">   31</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a11ccb3b620881fe84342fe138c8dc53a">Nx</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a87a9df3443f31c97c9310716f8e6b44d">   33</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a87a9df3443f31c97c9310716f8e6b44d">Ny</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a183254e97f12b7e48610c2a84e311d4c">   35</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a183254e97f12b7e48610c2a84e311d4c">Nz</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a80f1a430c5918d34303c97221ae97409">   37</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a80f1a430c5918d34303c97221ae97409">Tx</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a4165c04ba7f5ebc16581fc7d1308e57c">   39</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a4165c04ba7f5ebc16581fc7d1308e57c">Ty</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a11d538a9f3abff8a535c4b2bd44ef573">   41</a></span>            <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a11d538a9f3abff8a535c4b2bd44ef573">Instance</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_game_1_1_instanced_models_manager.html#a81d1092e8811593e320ddd8eccc44468">   44</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Dictionary&lt;Model, InstancedModelData&gt; <a class="code hl_variable" href="class_game_1_1_instanced_models_manager.html#a81d1092e8811593e320ddd8eccc44468">m_cache</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_game_1_1_instanced_models_manager.html#adb459132bacec42af761893113bc82c5">   46</a></span>        <span class="keyword">static</span> <a class="code hl_function" href="class_game_1_1_instanced_models_manager.html#adb459132bacec42af761893113bc82c5">InstancedModelsManager</a>() {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_variable" href="class_game_1_1_instanced_models_manager.html#a81d1092e8811593e320ddd8eccc44468">m_cache</a> = [];</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            Display.DeviceReset += delegate {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_game_1_1_instanced_model_data.html">InstancedModelData</a> value <span class="keywordflow">in</span> <a class="code hl_variable" href="class_game_1_1_instanced_models_manager.html#a81d1092e8811593e320ddd8eccc44468">m_cache</a>.Values) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    value.<a class="code hl_variable" href="class_game_1_1_instanced_model_data.html#a1b95bfea3127a4e68078051e36a4ee3c">VertexBuffer</a>.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_vertex_buffer.html#ad82f7daf3a10e2081d6760f906bb2e59">Dispose</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    value.<a class="code hl_variable" href="class_game_1_1_instanced_model_data.html#a7e580ed89bff5d8ee9a200e351ab2662">IndexBuffer</a>.<a class="code hl_function" href="class_engine_1_1_graphics_1_1_index_buffer.html#a7da3394c63ce08741c887422f210e1d0">Dispose</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <a class="code hl_variable" href="class_game_1_1_instanced_models_manager.html#a81d1092e8811593e320ddd8eccc44468">m_cache</a>.Clear();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            };</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_game_1_1_instanced_models_manager.html#a747d3cc277a7e9c32e4b1e0de89d7858">   57</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_game_1_1_instanced_model_data.html">InstancedModelData</a> <a class="code hl_function" href="class_game_1_1_instanced_models_manager.html#a747d3cc277a7e9c32e4b1e0de89d7858">GetInstancedModelData</a>(<a class="code hl_class" href="class_engine_1_1_graphics_1_1_model.html">Model</a> model, <span class="keywordtype">int</span>[] meshDrawOrders) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_game_1_1_instanced_models_manager.html#a81d1092e8811593e320ddd8eccc44468">m_cache</a>.TryGetValue(model, out <a class="code hl_class" href="class_game_1_1_instanced_model_data.html">InstancedModelData</a> value)) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                value = <a class="code hl_function" href="class_game_1_1_instanced_models_manager.html#a361d3f2999ac6480471e10658bf2ec37">CreateInstancedModelData</a>(model, meshDrawOrders);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <a class="code hl_variable" href="class_game_1_1_instanced_models_manager.html#a81d1092e8811593e320ddd8eccc44468">m_cache</a>.Add(model, value);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_game_1_1_instanced_models_manager.html#a361d3f2999ac6480471e10658bf2ec37">   65</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_game_1_1_instanced_model_data.html">InstancedModelData</a> <a class="code hl_function" href="class_game_1_1_instanced_models_manager.html#a361d3f2999ac6480471e10658bf2ec37">CreateInstancedModelData</a>(<a class="code hl_class" href="class_engine_1_1_graphics_1_1_model.html">Model</a> model, <span class="keywordtype">int</span>[] meshDrawOrders) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            DynamicArray&lt;InstancedVertex&gt; dynamicArray = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            DynamicArray&lt;int&gt; dynamicArray2 = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; meshDrawOrders.Length; i++) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_model_mesh.html">ModelMesh</a> modelMesh = model.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_model.html#af146bc3129e2c1f5eb87a3349d5709b2">Meshes</a>[meshDrawOrders[i]];</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <span class="keywordflow">foreach</span> (<a class="code hl_class" href="class_engine_1_1_graphics_1_1_model_mesh_part.html">ModelMeshPart</a> meshPart <span class="keywordflow">in</span> modelMesh.MeshParts) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    _ = dynamicArray.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Count</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    <a class="code hl_class" href="class_engine_1_1_graphics_1_1_vertex_buffer.html">VertexBuffer</a> vertexBuffer = meshPart.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_model_mesh_part.html#add0af833b3bdbb09ee8c7aca3ef9a3f4">VertexBuffer</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    <a class="code hl_class" href="class_engine_1_1_graphics_1_1_index_buffer.html">IndexBuffer</a> indexBuffer = meshPart.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ac2f399b1294246022085bb790c2f448d">IndexBuffer</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    ReadOnlyList&lt;VertexElement&gt; vertexElements = vertexBuffer.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_buffer.html#a1e8448c44288ff67228cfcf8d39336dc">VertexDeclaration</a>.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_vertex_declaration.html#a64239bc23958caa1ac54e7d8e96ce261">VertexElements</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                    <span class="keywordtype">int</span>[] indexData = <a class="code hl_class" href="class_game_1_1_block_mesh.html">BlockMesh</a>.GetIndexData&lt;<span class="keywordtype">int</span>&gt;(indexBuffer);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    Dictionary&lt;int, int&gt; dictionary = <span class="keyword">new</span>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    <span class="keywordflow">if</span> (vertexElements.<a class="code hl_property" href="struct_engine_1_1_read_only_list-1-g.html#a103928eef031966581ff9f7c28d5f90f">Count</a> != 3</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                        || vertexElements[0].Offset != 0</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                        || !(vertexElements[0].Semantic == <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.Position.GetSemanticString())</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                        || vertexElements[1].Offset != 12</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        || !(vertexElements[1].Semantic == <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.Normal.GetSemanticString())</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                        || vertexElements[2].Offset != 24</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        || !(vertexElements[2].Semantic == <a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">VertexElementSemantic</a>.TextureCoordinate.GetSemanticString())) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unsupported vertex format.&quot;</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                    <a class="code hl_struct" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html">SourceModelVertex</a>[] vertexData = <a class="code hl_class" href="class_game_1_1_block_mesh.html">BlockMesh</a>.GetVertexData&lt;<a class="code hl_struct" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html">SourceModelVertex</a>&gt;(vertexBuffer);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = meshPart.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ada7bdf721b8c98ee4d524ef843714fcf">StartIndex</a>; j &lt; meshPart.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ada7bdf721b8c98ee4d524ef843714fcf">StartIndex</a> + meshPart.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ab17e6dffc6434c55ff0cc7049f2c1907">IndicesCount</a>; j++) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                        <span class="keywordtype">int</span> num = indexData[j];</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        <span class="keywordflow">if</span> (!dictionary.ContainsKey(num)) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                            dictionary.Add(num, dynamicArray.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Count</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                            <a class="code hl_struct" href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html">InstancedVertex</a> item = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                            <a class="code hl_struct" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html">SourceModelVertex</a> sourceModelVertex = vertexData[num];</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                            item.X = sourceModelVertex.<a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a7444d4720578708f54a50720b71d578b">X</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                            item.Y = sourceModelVertex.<a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#aa013d618a2c1a1e2910a28cff3b7b6a1">Y</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                            item.Z = sourceModelVertex.<a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#acb7192b72d2ae4aaf6b731b95094aac0">Z</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                            item.Nx = sourceModelVertex.<a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a5a14ff4773f44971ea4002e8fc17e678">Nx</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                            item.Ny = sourceModelVertex.<a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a119fd1eaab8088f69875780af59fc770">Ny</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                            item.Nz = sourceModelVertex.<a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#ad8a83af247b3a3a7c4e9ec4bab8e1391">Nz</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                            item.Tx = sourceModelVertex.<a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a2fc495fdae4a781ddd398f01835e3d99">Tx</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                            item.Ty = sourceModelVertex.<a class="code hl_variable" href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a96139149739017f536edd3c987496ae9">Ty</a>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                            item.Instance = modelMesh.ParentBone.Index;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                            dynamicArray.<a class="code hl_function" href="class_engine_1_1_dynamic_array-1-g.html#a68eb0286ac2f5fd9051b532e89f97adf">Add</a>(item);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                        }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                    }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; meshPart.IndicesCount / 3; k++) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                        dynamicArray2.<a class="code hl_function" href="class_engine_1_1_dynamic_array-1-g.html#a68eb0286ac2f5fd9051b532e89f97adf">Add</a>(dictionary[indexData[meshPart.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ada7bdf721b8c98ee4d524ef843714fcf">StartIndex</a> + 3 * k]]);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                        dynamicArray2.<a class="code hl_function" href="class_engine_1_1_dynamic_array-1-g.html#a68eb0286ac2f5fd9051b532e89f97adf">Add</a>(dictionary[indexData[meshPart.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ada7bdf721b8c98ee4d524ef843714fcf">StartIndex</a> + 3 * k + 1]]);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                        dynamicArray2.<a class="code hl_function" href="class_engine_1_1_dynamic_array-1-g.html#a68eb0286ac2f5fd9051b532e89f97adf">Add</a>(dictionary[indexData[meshPart.<a class="code hl_property" href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ada7bdf721b8c98ee4d524ef843714fcf">StartIndex</a> + 3 * k + 2]]);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <a class="code hl_class" href="class_game_1_1_instanced_model_data.html">InstancedModelData</a> instancedModelData = <span class="keyword">new</span>() {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_vertex_buffer.html">VertexBuffer</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_engine_1_1_graphics_1_1_vertex_buffer.html">VertexBuffer</a>(<a class="code hl_class" href="class_game_1_1_instanced_model_data.html">InstancedModelData</a>.<a class="code hl_variable" href="class_game_1_1_instanced_model_data.html#a32b94dae45c48678a513e026408605f8">VertexDeclaration</a>, dynamicArray.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Count</a>),</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <a class="code hl_class" href="class_engine_1_1_graphics_1_1_index_buffer.html">IndexBuffer</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_engine_1_1_graphics_1_1_index_buffer.html">IndexBuffer</a>(<a class="code hl_enumeration" href="namespace_engine_1_1_graphics.html#a201abc89989cf8e317b620f68cf644ed">IndexFormat</a>.ThirtyTwoBits, dynamicArray2.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Count</a>)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            };</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            instancedModelData.<a class="code hl_variable" href="class_game_1_1_instanced_model_data.html#a1b95bfea3127a4e68078051e36a4ee3c">VertexBuffer</a>.SetData(dynamicArray.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a68bda61881f1ddbeae0a1e4defeb5093">Array</a>, 0, dynamicArray.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Count</a>);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            instancedModelData.<a class="code hl_variable" href="class_game_1_1_instanced_model_data.html#a7e580ed89bff5d8ee9a200e351ab2662">IndexBuffer</a>.SetData(dynamicArray2.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a68bda61881f1ddbeae0a1e4defeb5093">Array</a>, 0, dynamicArray2.<a class="code hl_property" href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Count</a>);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">return</span> instancedModelData;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
+</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+<div class="ttc" id="aclass_engine_1_1_dynamic_array-1-g_html_a20becafe5aa7ed6b772ba44dea80f1ab"><div class="ttname"><a href="class_engine_1_1_dynamic_array-1-g.html#a20becafe5aa7ed6b772ba44dea80f1ab">Engine.DynamicArray-1-g.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>定义</b> <a href="_dynamic_array_8cs_source.html#l00064">DynamicArray.cs:64</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_dynamic_array-1-g_html_a68bda61881f1ddbeae0a1e4defeb5093"><div class="ttname"><a href="class_engine_1_1_dynamic_array-1-g.html#a68bda61881f1ddbeae0a1e4defeb5093">Engine.DynamicArray-1-g.Array</a></div><div class="ttdeci">T[] Array</div><div class="ttdef"><b>定义</b> <a href="_dynamic_array_8cs_source.html#l00087">DynamicArray.cs:87</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_dynamic_array-1-g_html_a68eb0286ac2f5fd9051b532e89f97adf"><div class="ttname"><a href="class_engine_1_1_dynamic_array-1-g.html#a68eb0286ac2f5fd9051b532e89f97adf">Engine.DynamicArray-1-g.Add</a></div><div class="ttdeci">void Add(T item)</div><div class="ttdef"><b>定义</b> <a href="_dynamic_array_8cs_source.html#l00121">DynamicArray.cs:121</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_index_buffer_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_index_buffer.html">Engine.Graphics.IndexBuffer</a></div><div class="ttdef"><b>定义</b> <a href="_index_buffer_8cs_source.html#l00010">IndexBuffer.cs:10</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_index_buffer_html_a7da3394c63ce08741c887422f210e1d0"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_index_buffer.html#a7da3394c63ce08741c887422f210e1d0">Engine.Graphics.IndexBuffer.Dispose</a></div><div class="ttdeci">override void Dispose()</div><div class="ttdef"><b>定义</b> <a href="_index_buffer_8cs_source.html#l00046">IndexBuffer.cs:46</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model.html">Engine.Graphics.Model</a></div><div class="ttdef"><b>定义</b> <a href="_model_8cs_source.html#l00004">Model.cs:4</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_html_af146bc3129e2c1f5eb87a3349d5709b2"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model.html#af146bc3129e2c1f5eb87a3349d5709b2">Engine.Graphics.Model.Meshes</a></div><div class="ttdeci">ReadOnlyList&lt; ModelMesh &gt; Meshes</div><div class="ttdef"><b>定义</b> <a href="_model_8cs_source.html#l00015">Model.cs:15</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_mesh_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model_mesh.html">Engine.Graphics.ModelMesh</a></div><div class="ttdef"><b>定义</b> <a href="_model_mesh_8cs_source.html#l00002">ModelMesh.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_mesh_part_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model_mesh_part.html">Engine.Graphics.ModelMeshPart</a></div><div class="ttdef"><b>定义</b> <a href="_model_mesh_part_8cs_source.html#l00002">ModelMeshPart.cs:2</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_mesh_part_html_ab17e6dffc6434c55ff0cc7049f2c1907"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ab17e6dffc6434c55ff0cc7049f2c1907">Engine.Graphics.ModelMeshPart.IndicesCount</a></div><div class="ttdeci">int IndicesCount</div><div class="ttdef"><b>定义</b> <a href="_model_mesh_part_8cs_source.html#l00014">ModelMeshPart.cs:14</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_mesh_part_html_ac2f399b1294246022085bb790c2f448d"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ac2f399b1294246022085bb790c2f448d">Engine.Graphics.ModelMeshPart.IndexBuffer</a></div><div class="ttdeci">IndexBuffer IndexBuffer</div><div class="ttdef"><b>定义</b> <a href="_model_mesh_part_8cs_source.html#l00010">ModelMeshPart.cs:10</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_mesh_part_html_ada7bdf721b8c98ee4d524ef843714fcf"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model_mesh_part.html#ada7bdf721b8c98ee4d524ef843714fcf">Engine.Graphics.ModelMeshPart.StartIndex</a></div><div class="ttdeci">int StartIndex</div><div class="ttdef"><b>定义</b> <a href="_model_mesh_part_8cs_source.html#l00012">ModelMeshPart.cs:12</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_model_mesh_part_html_add0af833b3bdbb09ee8c7aca3ef9a3f4"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_model_mesh_part.html#add0af833b3bdbb09ee8c7aca3ef9a3f4">Engine.Graphics.ModelMeshPart.VertexBuffer</a></div><div class="ttdeci">VertexBuffer VertexBuffer</div><div class="ttdef"><b>定义</b> <a href="_model_mesh_part_8cs_source.html#l00008">ModelMeshPart.cs:8</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_buffer_html"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_buffer.html">Engine.Graphics.VertexBuffer</a></div><div class="ttdef"><b>定义</b> <a href="_vertex_buffer_8cs_source.html#l00010">VertexBuffer.cs:10</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_buffer_html_a1e8448c44288ff67228cfcf8d39336dc"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_buffer.html#a1e8448c44288ff67228cfcf8d39336dc">Engine.Graphics.VertexBuffer.VertexDeclaration</a></div><div class="ttdeci">VertexDeclaration VertexDeclaration</div><div class="ttdef"><b>定义</b> <a href="_vertex_buffer_8cs_source.html#l00035">VertexBuffer.cs:35</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_buffer_html_ad82f7daf3a10e2081d6760f906bb2e59"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_buffer.html#ad82f7daf3a10e2081d6760f906bb2e59">Engine.Graphics.VertexBuffer.Dispose</a></div><div class="ttdeci">override void Dispose()</div><div class="ttdef"><b>定义</b> <a href="_vertex_buffer_8cs_source.html#l00046">VertexBuffer.cs:46</a></div></div>
+<div class="ttc" id="aclass_engine_1_1_graphics_1_1_vertex_declaration_html_a64239bc23958caa1ac54e7d8e96ce261"><div class="ttname"><a href="class_engine_1_1_graphics_1_1_vertex_declaration.html#a64239bc23958caa1ac54e7d8e96ce261">Engine.Graphics.VertexDeclaration.VertexElements</a></div><div class="ttdeci">ReadOnlyList&lt; VertexElement &gt; VertexElements</div><div class="ttdef"><b>定义</b> <a href="_vertex_declaration_8cs_source.html#l00007">VertexDeclaration.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_block_mesh_html"><div class="ttname"><a href="class_game_1_1_block_mesh.html">Game.BlockMesh</a></div><div class="ttdef"><b>定义</b> <a href="_block_mesh_8cs_source.html#l00007">BlockMesh.cs:7</a></div></div>
+<div class="ttc" id="aclass_game_1_1_instanced_model_data_html"><div class="ttname"><a href="class_game_1_1_instanced_model_data.html">Game.InstancedModelData</a></div><div class="ttdef"><b>定义</b> <a href="_instanced_model_data_8cs_source.html#l00004">InstancedModelData.cs:4</a></div></div>
+<div class="ttc" id="aclass_game_1_1_instanced_model_data_html_a1b95bfea3127a4e68078051e36a4ee3c"><div class="ttname"><a href="class_game_1_1_instanced_model_data.html#a1b95bfea3127a4e68078051e36a4ee3c">Game.InstancedModelData.VertexBuffer</a></div><div class="ttdeci">VertexBuffer VertexBuffer</div><div class="ttdef"><b>定义</b> <a href="_instanced_model_data_8cs_source.html#l00012">InstancedModelData.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_1_1_instanced_model_data_html_a32b94dae45c48678a513e026408605f8"><div class="ttname"><a href="class_game_1_1_instanced_model_data.html#a32b94dae45c48678a513e026408605f8">Game.InstancedModelData.VertexDeclaration</a></div><div class="ttdeci">static readonly VertexDeclaration VertexDeclaration</div><div class="ttdef"><b>定义</b> <a href="_instanced_model_data_8cs_source.html#l00005">InstancedModelData.cs:5</a></div></div>
+<div class="ttc" id="aclass_game_1_1_instanced_model_data_html_a7e580ed89bff5d8ee9a200e351ab2662"><div class="ttname"><a href="class_game_1_1_instanced_model_data.html#a7e580ed89bff5d8ee9a200e351ab2662">Game.InstancedModelData.IndexBuffer</a></div><div class="ttdeci">IndexBuffer IndexBuffer</div><div class="ttdef"><b>定义</b> <a href="_instanced_model_data_8cs_source.html#l00014">InstancedModelData.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_1_1_instanced_models_manager_html_a361d3f2999ac6480471e10658bf2ec37"><div class="ttname"><a href="class_game_1_1_instanced_models_manager.html#a361d3f2999ac6480471e10658bf2ec37">Game.InstancedModelsManager.CreateInstancedModelData</a></div><div class="ttdeci">static InstancedModelData CreateInstancedModelData(Model model, int[] meshDrawOrders)</div><div class="ttdef"><b>定义</b> <a href="#l00065">InstancedModelsManager.cs:65</a></div></div>
+<div class="ttc" id="aclass_game_1_1_instanced_models_manager_html_a747d3cc277a7e9c32e4b1e0de89d7858"><div class="ttname"><a href="class_game_1_1_instanced_models_manager.html#a747d3cc277a7e9c32e4b1e0de89d7858">Game.InstancedModelsManager.GetInstancedModelData</a></div><div class="ttdeci">static InstancedModelData GetInstancedModelData(Model model, int[] meshDrawOrders)</div><div class="ttdef"><b>定义</b> <a href="#l00057">InstancedModelsManager.cs:57</a></div></div>
+<div class="ttc" id="aclass_game_1_1_instanced_models_manager_html_a81d1092e8811593e320ddd8eccc44468"><div class="ttname"><a href="class_game_1_1_instanced_models_manager.html#a81d1092e8811593e320ddd8eccc44468">Game.InstancedModelsManager.m_cache</a></div><div class="ttdeci">static Dictionary&lt; Model, InstancedModelData &gt; m_cache</div><div class="ttdef"><b>定义</b> <a href="#l00044">InstancedModelsManager.cs:44</a></div></div>
+<div class="ttc" id="aclass_game_1_1_instanced_models_manager_html_adb459132bacec42af761893113bc82c5"><div class="ttname"><a href="class_game_1_1_instanced_models_manager.html#adb459132bacec42af761893113bc82c5">Game.InstancedModelsManager.InstancedModelsManager</a></div><div class="ttdeci">static InstancedModelsManager()</div><div class="ttdef"><b>定义</b> <a href="#l00046">InstancedModelsManager.cs:46</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html"><div class="ttname"><a href="namespace_engine_1_1_graphics.html">Engine.Graphics</a></div><div class="ttdef"><b>定义</b> <a href="_base_batch_8cs_source.html#l00001">BaseBatch.cs:1</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a201abc89989cf8e317b620f68cf644ed"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a201abc89989cf8e317b620f68cf644ed">Engine.Graphics.IndexFormat</a></div><div class="ttdeci">IndexFormat</div><div class="ttdef"><b>定义</b> <a href="_index_format_8cs_source.html#l00002">IndexFormat.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_1_1_graphics_html_a2cb466449756b8d4b70f1eaf5c27c611"><div class="ttname"><a href="namespace_engine_1_1_graphics.html#a2cb466449756b8d4b70f1eaf5c27c611">Engine.Graphics.VertexElementSemantic</a></div><div class="ttdeci">VertexElementSemantic</div><div class="ttdef"><b>定义</b> <a href="_vertex_element_semantic_8cs_source.html#l00002">VertexElementSemantic.cs:2</a></div></div>
+<div class="ttc" id="anamespace_engine_html"><div class="ttname"><a href="namespace_engine.html">Engine</a></div><div class="ttdef"><b>定义</b> <a href="_base_sound_8cs_source.html#l00010">BaseSound.cs:10</a></div></div>
+<div class="ttc" id="anamespace_game_html"><div class="ttname"><a href="namespace_game.html">Game</a></div><div class="ttdef"><b>定义</b> <a href="_content_file_bridge_8cs_source.html#l00004">ContentFileBridge.cs:4</a></div></div>
+<div class="ttc" id="astruct_engine_1_1_read_only_list-1-g_html_a103928eef031966581ff9f7c28d5f90f"><div class="ttname"><a href="struct_engine_1_1_read_only_list-1-g.html#a103928eef031966581ff9f7c28d5f90f">Engine.ReadOnlyList-1-g.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>定义</b> <a href="_read_only_list_8cs_source.html#l00037">ReadOnlyList.cs:37</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html">Game.InstancedModelsManager.InstancedVertex</a></div><div class="ttdef"><b>定义</b> <a href="#l00024">InstancedModelsManager.cs:24</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html_a11ccb3b620881fe84342fe138c8dc53a"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a11ccb3b620881fe84342fe138c8dc53a">Game.InstancedModelsManager.InstancedVertex.Nx</a></div><div class="ttdeci">float Nx</div><div class="ttdef"><b>定义</b> <a href="#l00031">InstancedModelsManager.cs:31</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html_a11d538a9f3abff8a535c4b2bd44ef573"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a11d538a9f3abff8a535c4b2bd44ef573">Game.InstancedModelsManager.InstancedVertex.Instance</a></div><div class="ttdeci">float Instance</div><div class="ttdef"><b>定义</b> <a href="#l00041">InstancedModelsManager.cs:41</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html_a183254e97f12b7e48610c2a84e311d4c"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a183254e97f12b7e48610c2a84e311d4c">Game.InstancedModelsManager.InstancedVertex.Nz</a></div><div class="ttdeci">float Nz</div><div class="ttdef"><b>定义</b> <a href="#l00035">InstancedModelsManager.cs:35</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html_a4165c04ba7f5ebc16581fc7d1308e57c"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a4165c04ba7f5ebc16581fc7d1308e57c">Game.InstancedModelsManager.InstancedVertex.Ty</a></div><div class="ttdeci">float Ty</div><div class="ttdef"><b>定义</b> <a href="#l00039">InstancedModelsManager.cs:39</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html_a80f1a430c5918d34303c97221ae97409"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a80f1a430c5918d34303c97221ae97409">Game.InstancedModelsManager.InstancedVertex.Tx</a></div><div class="ttdeci">float Tx</div><div class="ttdef"><b>定义</b> <a href="#l00037">InstancedModelsManager.cs:37</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html_a87a9df3443f31c97c9310716f8e6b44d"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#a87a9df3443f31c97c9310716f8e6b44d">Game.InstancedModelsManager.InstancedVertex.Ny</a></div><div class="ttdeci">float Ny</div><div class="ttdef"><b>定义</b> <a href="#l00033">InstancedModelsManager.cs:33</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html_ab1ddc4715b2a88167d1dd7f4e86f9703"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#ab1ddc4715b2a88167d1dd7f4e86f9703">Game.InstancedModelsManager.InstancedVertex.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="#l00027">InstancedModelsManager.cs:27</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html_ae40bcd8156f3b5ac17cebfb45f2479d3"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#ae40bcd8156f3b5ac17cebfb45f2479d3">Game.InstancedModelsManager.InstancedVertex.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="#l00025">InstancedModelsManager.cs:25</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_instanced_vertex_html_af324f84010090a68706604e2cd2a83b0"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_instanced_vertex.html#af324f84010090a68706604e2cd2a83b0">Game.InstancedModelsManager.InstancedVertex.Z</a></div><div class="ttdeci">float Z</div><div class="ttdef"><b>定义</b> <a href="#l00029">InstancedModelsManager.cs:29</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_source_model_vertex_html"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html">Game.InstancedModelsManager.SourceModelVertex</a></div><div class="ttdef"><b>定义</b> <a href="#l00006">InstancedModelsManager.cs:6</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_source_model_vertex_html_a119fd1eaab8088f69875780af59fc770"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a119fd1eaab8088f69875780af59fc770">Game.InstancedModelsManager.SourceModelVertex.Ny</a></div><div class="ttdeci">float Ny</div><div class="ttdef"><b>定义</b> <a href="#l00015">InstancedModelsManager.cs:15</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_source_model_vertex_html_a2fc495fdae4a781ddd398f01835e3d99"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a2fc495fdae4a781ddd398f01835e3d99">Game.InstancedModelsManager.SourceModelVertex.Tx</a></div><div class="ttdeci">float Tx</div><div class="ttdef"><b>定义</b> <a href="#l00019">InstancedModelsManager.cs:19</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_source_model_vertex_html_a5a14ff4773f44971ea4002e8fc17e678"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a5a14ff4773f44971ea4002e8fc17e678">Game.InstancedModelsManager.SourceModelVertex.Nx</a></div><div class="ttdeci">float Nx</div><div class="ttdef"><b>定义</b> <a href="#l00013">InstancedModelsManager.cs:13</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_source_model_vertex_html_a7444d4720578708f54a50720b71d578b"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a7444d4720578708f54a50720b71d578b">Game.InstancedModelsManager.SourceModelVertex.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>定义</b> <a href="#l00007">InstancedModelsManager.cs:7</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_source_model_vertex_html_a96139149739017f536edd3c987496ae9"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#a96139149739017f536edd3c987496ae9">Game.InstancedModelsManager.SourceModelVertex.Ty</a></div><div class="ttdeci">float Ty</div><div class="ttdef"><b>定义</b> <a href="#l00021">InstancedModelsManager.cs:21</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_source_model_vertex_html_aa013d618a2c1a1e2910a28cff3b7b6a1"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#aa013d618a2c1a1e2910a28cff3b7b6a1">Game.InstancedModelsManager.SourceModelVertex.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> <a href="#l00009">InstancedModelsManager.cs:9</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_source_model_vertex_html_acb7192b72d2ae4aaf6b731b95094aac0"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#acb7192b72d2ae4aaf6b731b95094aac0">Game.InstancedModelsManager.SourceModelVertex.Z</a></div><div class="ttdeci">float Z</div><div class="ttdef"><b>定义</b> <a href="#l00011">InstancedModelsManager.cs:11</a></div></div>
+<div class="ttc" id="astruct_game_1_1_instanced_models_manager_1_1_source_model_vertex_html_ad8a83af247b3a3a7c4e9ec4bab8e1391"><div class="ttname"><a href="struct_game_1_1_instanced_models_manager_1_1_source_model_vertex.html#ad8a83af247b3a3a7c4e9ec4bab8e1391">Game.InstancedModelsManager.SourceModelVertex.Nz</a></div><div class="ttdeci">float Nz</div><div class="ttdef"><b>定义</b> <a href="#l00017">InstancedModelsManager.cs:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c1d66f85ba34403104938677339277dd.html">SurvivalcraftApi 1.8.2.3</a></li><li class="navelem"><a href="dir_855c58e83a209d2a16e42f1455e634bf.html">Survivalcraft.Windows</a></li><li class="navelem"><a href="dir_1f8d5a022218767e6dfb00698735ed73.html">Managers</a></li><li class="navelem"><a href="_instanced_models_manager_8cs.html">InstancedModelsManager.cs</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>
